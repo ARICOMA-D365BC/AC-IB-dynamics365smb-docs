@@ -36,7 +36,7 @@ Say goodbye to unnecessary chaos in warehouse management and embrace a system th
 
 To make your work easier, we provide an overview of the most common scenarios you may encounter in everyday practice:
 
-- **Setting Up a New Packaging Type**
+- **Setting Up a New Package**
 - **Setting the Initial Quantity of Packaging**
 - **Purchasing Goods Including Returnable Packaging**
 - **Selling Goods Including Returnable Packaging**
@@ -101,7 +101,7 @@ The Returnable Packaging Journal includes the following fields:
 4. Based on your preferences, select either the **Post** action or **Post and Print** for processing.
 
 > [!WARNING]
-> When using the Correction option in the Returnable Packaging Journal, posting does not pair entries based on the configured criteria.
+> When using the Correction option in the Returnable Packaging Journal, posting does not apply entries based on the configured criteria.
 
 ### Purchasing Goods Including Returnable Packaging
 
@@ -109,19 +109,19 @@ When purchasing goods that include returnable packaging, it is essential to ensu
 
 #### Scenario
 
-The purchasing department has decided to place an order with the supplier, Wide World Importers, in response to increased demand. The purchase order includes 5 units of **Athens Table (1896-S)** and 20 units of **Paris Chair, Black (1900-S)**. According to the supplier, the goods will be delivered on 6 pallets, which will be recorded as returnable packaging. Proper tracking of these pallets will enable efficient management and monitoring of their balances.
+The purchasing department has decided to place an order with the vendor, Wide World Importers, in response to increased demand. The purchase order includes 5 units of **Athens Table (1896-S)** and 20 units of **Paris Chair, Black (1900-S)**. According to the vendor, the goods will be delivered on 6 pallets, which will be recorded as returnable packaging. Proper tracking of these pallets will enable efficient management and monitoring of their balances.
 
 #### Solution
 
 1. Create a new purchase order.
-2. Fill in the supplier details in the General tab.
+2. Fill in the vendor details in the General tab.
 3. On the order lines, select the desired items and quantities.
 4. Additionally, manually add the item created for the returnable packaging.
 
 ![Purchase Order including Returnable Packaging](media/return-packing-purchase-order.png)
 
 > [!IMPORTANT]
-> For proper functionality, the item card must be linked to the returnable packaging card, as outlined in **Setting Up a New Packaging Type**.
+> For proper functionality, the item card must be linked to the returnable packaging card, as outlined in **Setting Up a New Package**.
 
 ### Selling Goods Including Returnable Packaging
 
@@ -129,7 +129,7 @@ When selling goods that include returnable packaging, it’s essential to ensure
 
 #### Scenario
 
-A customer has ordered 1 unit of **Athens Table (1896-S)** and 4 units of **Paris Chair, Black (1900-S)**. To fulfill this order, a sales order must be created that includes not only the items themselves but also the returnable packaging item—a pallet that will be used for transporting the goods.
+A customer has ordered 1 unit of **Athens Table (1896-S)** and 4 units of **Paris Chair, Black (1900-S)**. To fulfill this order, it is necessary to create a sales order, to which, in addition to the goods, we will also add a returnable packaging item — a pallet on which the goods will be transported.
 
 #### Solution
 
@@ -141,7 +141,7 @@ A customer has ordered 1 unit of **Athens Table (1896-S)** and 4 units of **Pari
 ![Sales Order including Returnable Packaging](media/return-packing-sales-order.png)
 
 > [!IMPORTANT]
-> For proper functionality, the item card must be linked to the returnable packaging card, as outlined in **Setting Up a New Packaging Type**.
+> For proper functionality, the item card must be linked to the returnable packaging card, as outlined in **Setting Up a New Package**.
 
 ## Reports
 
