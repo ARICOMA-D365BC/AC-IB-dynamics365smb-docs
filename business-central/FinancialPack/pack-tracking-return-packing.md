@@ -42,7 +42,7 @@ To make your work easier, we provide an overview of the most common scenarios yo
 - **Selling Goods Including Returnable Packaging**
 - **Reports**
 
-### Setting Up a New Packaging Type
+### Setting Up a New Package
 
 1. Select the icon ![Magnifying glass icon that opens "Tell Me" feature](media/ui-search/search_small.png "Tell me what you want to do"), enter **Return. Packing List** and then select the related link.
 2. On the **Return. Packing List** page, select the **New** action.
