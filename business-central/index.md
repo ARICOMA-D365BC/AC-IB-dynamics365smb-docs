@@ -16,12 +16,12 @@ ms.author: v-makune
 Moduly a addony pro D365 Business Central pro rozšíření funkcí systému.
 
 
-- Productivity Pack 
 - Financial Pack
-- SK Legistavie pack
+- Productivity Pack 
+- SK Legislative pack
  
 
 ## Viz také
 [Financial Pack](FinancialPack/finance-pack.md)  
 [Productivity Pack](ProductivityPack/productivity-pack.md)  
-[SK Legislativní balíček](SK/sk-legislative-pack.md)
+[SK Legislative Pack](SK/sk-legislative-pack.md)
