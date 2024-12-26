@@ -11,7 +11,7 @@ ms.search.keywords: Czech, productivity, additional functions, sale, warehouse, 
 ms.author: v-makune
 ---
 
-# Solutins
+# Solutions
 
 Moduly a addony pro D365 Business Central pro rozšíření funkcí systému.
 
