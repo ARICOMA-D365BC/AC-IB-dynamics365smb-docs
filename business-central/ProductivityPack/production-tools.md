@@ -45,7 +45,7 @@ To make your work easier, here is an overview of the most common scenarios you m
 1. Select the icon ![production tools](media/ui-search/search_small.png), then type **Tool List** in the search bar and choose the related link.
 2. On the **Tool List page**, select the **+New** action.
 
-![production tools](media/production-tools-tool-list-en.png)
+![production tools](media/)
 
 3.	After selecting the New action, the **Tool Record** Card will open.
 
