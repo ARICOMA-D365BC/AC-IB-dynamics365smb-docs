@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <!--[if IE]><![endif]-->
 <html>
   
@@ -60,18 +60,18 @@
         <div class="article row grid">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="solutions">Solutions</h1>
+<h1 id="solutions" sourcefile="index.md" sourcestartlinenumber="14">Solutions</h1>
 
-<p>Moduly a addony pro D365 Business Central pro rozšíření funkcí systému.</p>
-<ul>
-<li>Financial Pack</li>
-<li>Productivity Pack</li>
-<li>SK Legislative pack</li>
+<p sourcefile="index.md" sourcestartlinenumber="16">Moduly a addony pro D365 Business Central pro rozšíření funkcí systému.</p>
+<ul sourcefile="index.md" sourcestartlinenumber="19">
+<li sourcefile="index.md" sourcestartlinenumber="19">Financial Pack</li>
+<li sourcefile="index.md" sourcestartlinenumber="20">Productivity Pack</li>
+<li sourcefile="index.md" sourcestartlinenumber="21">SK Legislative pack</li>
 </ul>
-<h2 id="viz-také">Viz také</h2>
-<p><a href="FinancialPack/finance-pack.html">Financial Pack</a><br>
-<a href="ProductivityPack/productivity-pack.html">Productivity Pack</a><br>
-<a href="SK/sk-legislative-pack.html">SK Legislative Pack</a></p>
+<h2 id="viz-také" sourcefile="index.md" sourcestartlinenumber="24">Viz také</h2>
+<p sourcefile="index.md" sourcestartlinenumber="25"><a href="FinancialPack/finance-pack.html" sourcefile="index.md" sourcestartlinenumber="25">Financial Pack</a><br>
+<a href="ProductivityPack/productivity-pack.html" sourcefile="index.md" sourcestartlinenumber="26">Productivity Pack</a><br>
+<a href="SK/sk-legislative-pack.html" sourcefile="index.md" sourcestartlinenumber="27">SK Legislative Pack</a></p>
 </article>
           </div>
           

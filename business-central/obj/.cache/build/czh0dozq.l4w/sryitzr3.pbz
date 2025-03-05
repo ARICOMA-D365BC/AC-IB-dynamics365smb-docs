@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>ARICOMA SOLUTIONS - Financial pack | Microsoft Docs </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="ARICOMA SOLUTIONS - Financial pack | Microsoft Docs ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../TOC.html">
+    <meta property="docfx:tocrel" content="TOC.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="png" src="../logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="financial-pack" sourcefile="FinancialPack/finance-pack.md" sourcestartlinenumber="14">Financial Pack</h1>
+
+<p sourcefile="FinancialPack/finance-pack.md" sourcestartlinenumber="16">Addon set to extend finance functionality for D365 Business Central.</p>
+<table sourcefile="FinancialPack/finance-pack.md" sourcestartlinenumber="18">
+<thead>
+<tr sourcefile="FinancialPack/finance-pack.md" sourcestartlinenumber="18">
+<th sourcefile="FinancialPack/finance-pack.md" sourcestartlinenumber="18">See</th>
+<th sourcefile="FinancialPack/finance-pack.md" sourcestartlinenumber="18">Also</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="FinancialPack/finance-pack.md" sourcestartlinenumber="20">
+<td sourcefile="FinancialPack/finance-pack.md" sourcestartlinenumber="20">Extension set for finance.</td>
+<td sourcefile="FinancialPack/finance-pack.md" sourcestartlinenumber="20"><a href="controling-basic.html" sourcefile="FinancialPack/finance-pack.md" sourcestartlinenumber="20">Application extension set</a></td>
+</tr>
+<tr sourcefile="FinancialPack/finance-pack.md" sourcestartlinenumber="21">
+<td sourcefile="FinancialPack/finance-pack.md" sourcestartlinenumber="21">The Insolvency Register is a public list that records statutory data on entities undergoing insolvency proceedings in the Czech Republic.</td>
+<td sourcefile="FinancialPack/finance-pack.md" sourcestartlinenumber="21"><a href="insolvence-register.html" sourcefile="FinancialPack/finance-pack.md" sourcestartlinenumber="21">Insolvency Register</a></td>
+</tr>
+<tr sourcefile="FinancialPack/finance-pack.md" sourcestartlinenumber="22">
+<td sourcefile="FinancialPack/finance-pack.md" sourcestartlinenumber="22">Factoring extends the capabilities of the Dynamics 365 Business Central Financial Management area with the ability to record and post receivables assignment and create factoring contracts.</td>
+<td sourcefile="FinancialPack/finance-pack.md" sourcestartlinenumber="22"><a href="factoring.html" sourcefile="FinancialPack/finance-pack.md" sourcestartlinenumber="22">Faktoring</a></td>
+</tr>
+<tr sourcefile="FinancialPack/finance-pack.md" sourcestartlinenumber="23">
+<td sourcefile="FinancialPack/finance-pack.md" sourcestartlinenumber="23">Multiple payments extends the standard of sales documents, where instead of one method of payment it is possible to define more methods.</td>
+<td sourcefile="FinancialPack/finance-pack.md" sourcestartlinenumber="23"><a href="multiple-payments.html" sourcefile="FinancialPack/finance-pack.md" sourcestartlinenumber="23">Multiple payment methods</a></td>
+</tr>
+<tr sourcefile="FinancialPack/finance-pack.md" sourcestartlinenumber="24">
+<td sourcefile="FinancialPack/finance-pack.md" sourcestartlinenumber="24">Fiscal printers are used to create and print a cash receipt on a VAROS fiscal printer.</td>
+<td sourcefile="FinancialPack/finance-pack.md" sourcestartlinenumber="24"><a href="fiscal-printers.html" sourcefile="FinancialPack/finance-pack.md" sourcestartlinenumber="24">Fiscal printers</a></td>
+</tr>
+<tr sourcefile="FinancialPack/finance-pack.md" sourcestartlinenumber="25">
+<td sourcefile="FinancialPack/finance-pack.md" sourcestartlinenumber="25">Packaging records make it possible to automatically record and report the amount of packaging material or other quantitative data in connection with the movements of goods in the system.</td>
+<td sourcefile="FinancialPack/finance-pack.md" sourcestartlinenumber="25"><a href="pack-tracking-basic.html" sourcefile="FinancialPack/finance-pack.md" sourcestartlinenumber="25">Packaging records</a></td>
+</tr>
+<tr sourcefile="FinancialPack/finance-pack.md" sourcestartlinenumber="26">
+<td sourcefile="FinancialPack/finance-pack.md" sourcestartlinenumber="26">Returnable packaging records are an extension of the Inventory module in Dynamics 365 Business Central. Allows monitoring of the circulation of returnable packaging and pallet management.</td>
+<td sourcefile="FinancialPack/finance-pack.md" sourcestartlinenumber="26"><a href="pack-tracking-return-packing.html" sourcefile="FinancialPack/finance-pack.md" sourcestartlinenumber="26">Returnable Packaging records</a></td>
+</tr>
+<tr sourcefile="FinancialPack/finance-pack.md" sourcestartlinenumber="27">
+<td sourcefile="FinancialPack/finance-pack.md" sourcestartlinenumber="27">List of Deprecated features</td>
+<td sourcefile="FinancialPack/finance-pack.md" sourcestartlinenumber="27"><a href="fp-deprecated-features.html" sourcefile="FinancialPack/finance-pack.md" sourcestartlinenumber="27">Deprecated features</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="see-also" sourcefile="FinancialPack/finance-pack.md" sourcestartlinenumber="29">See also</h2>
+<p sourcefile="FinancialPack/finance-pack.md" sourcestartlinenumber="30"><a href="../index.html" sourcefile="FinancialPack/finance-pack.md" sourcestartlinenumber="30">ARICOMA Solution</a><br>
+<a href="../ProductivityPack/productivity-pack.html" sourcefile="FinancialPack/finance-pack.md" sourcestartlinenumber="31">Productivity Pack</a><br>
+<a href="../SK/sk-legislative-pack.html" sourcefile="FinancialPack/finance-pack.md" sourcestartlinenumber="32">Slovak Legislative Pack</a></p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/AutoContCZ/AC-IB-dynamics365smb-docs/blob/master/business-central/FinancialPack/finance-pack.md/#L1" class="contribution-link">Improve this document</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+           <span><a href="https://www.aricoma.com/docs/en-us/dynamics365/business-central/Solutions/solutions.html"><strong>ENGLISH</strong><strong>/</strong><a href="https://www.aricoma.com/docs/cs-cz/dynamics365/business-central/Solutions/solutions.html"><strong>CZECH</strong></a></a></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
