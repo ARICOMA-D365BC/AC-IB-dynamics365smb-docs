@@ -44,7 +44,7 @@ For full utilization of the module, it must be configured according to the speci
 7. Check the **Default Nos.** box if you want the system to automatically generate numbers within this series.
 8. Save the number series by clicking **Save**.
 
-![production tools](media/production-tools-addNOseries-en.png)
+![production tools](media/production-tools-add-NOseries.png)
 
 ### Tool Entry Types Setup 
 
@@ -62,7 +62,7 @@ Each Tool Journal Template can have defined mandatory field validations. Follow 
 
 5. For each Entry Type, define the mandatory fields that must be filled in the Tool Journal.
 
-![production tools](media/production-tools-tool-entry-types-setup-en.png)
+![production tools](media/production-tools-tool-entry-types-setup.png)
 
 > [!NOTE]  
 > Mandatory fields help ensure the accuracy of records in the journal and proper tracking of tools 
@@ -82,7 +82,7 @@ The Damage Types Setup helps differentiate recorded damaged tools. This informat
 
 5. Complete the fields as needed and save the settings.
 
-![production tools](media/production-tools-damage-types-en.png)
+![production tools](media/production-tools-damage-types.png)
 
 > [!NOTE]  
 > Properly defining **Damage Types** allows for more accurate tracking and better analysis of tool conditions in the future. 

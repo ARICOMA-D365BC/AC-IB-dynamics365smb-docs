@@ -11,11 +11,11 @@ ms.search.keywords: Czech, Production tools, Productivity pack
 ms.author: v-makune
 ---
 # Production Tools
-Gain full control over your tools and equipment with our smart solution, seamlessly integrated into the Business Central system. Track tool movements, minimize losses, and extend their lifespan with an easy-to-use overview of records, loans, inspections, and maintenance. 
- 
-The Production Tools Module addresses the management of tools, equipment, molds, and other assets that are typically tracked through the system's inventory management. This module is built on the foundation of asset management, ensuring a unified tracking system for both fixed asset monitoring and production-related needs, such as tool and equipment loans. 
+Gain full control over your tools and equipment with our smart solution, seamlessly integrated into the Business Central system. Track tool movements, minimize losses, and extend their lifespan with an easy-to-use overview of records, loans, inspections, and maintenance.
 
-![production tools](media/production-tools-tool-card-en.png)
+The Production Tools Module addresses the management of tools, equipment, molds, and other assets that are typically tracked through the system's inventory management. This module is built on the foundation of asset management, ensuring a unified tracking system for both fixed asset monitoring and production-related needs, such as tool and equipment loans.
+
+![production tools](media/production-tools-tool-card.png)
 
 ### Key Features of the Module
 
@@ -28,7 +28,7 @@ The Production Tools Module addresses the management of tools, equipment, molds,
 
 The use of tools follows this sequence
 
-Sem vložit obrázek schéma
+![production tools](media/production-tools-scheme.png)
 
 ### Use Cases for the Production Tools Module
 
@@ -45,9 +45,9 @@ To make your work easier, here is an overview of the most common scenarios you m
 1. Select the icon ![production tools](media/ui-search/search_small.png), then type **Tool List** in the search bar and choose the related link.
 2. On the **Tool List page**, select the **+New** action.
 
-![production tools](media/)
+![production tools](media/production-tools-adding-tool.png)
 
-3.	After selecting the New action, the **Tool Record** Card will open.
+3. After selecting the New action, the **Tool Record** Card will open.
 
 Each Tool Record Card contains the following fields:
 
@@ -78,7 +78,7 @@ Each Tool Record Card contains the following fields:
 
 **Change Log Entries** – Allows viewing the history of changes made to fixed asset records. This function is useful for auditing purposes or tracking modifications retrospectively.
 
-![production tools](media/production-tools-tool-card-related1-en.png)
+![production tools](media/production-tools-tool-card-related.png)
 
 ### Tool acquisition
 
@@ -93,10 +93,10 @@ Each Tool Record Card contains the following fields:
 9. Click **Post** to save the entry into the records.
 10. All created entries can be tracked on the **Tool Ledger Entries** page.
 
-![production tools](media/production-tools-tool-journal-templates.png)
+![production tools](media/production-tools-tool-journal-template-list.png)
 
 **Tool journal Lines:**
-![production tools](media/production-tools-tool-journal-lines1-en.png)
+![production tools](media/production-tools-tool-journal-lines1.png)
 
 > [!IMPORTANT]  
 > **Mandatory Fields for Entry Type "Positive Adjustment":** External Document No., Employee No., Serial No., Cost. 
@@ -113,10 +113,10 @@ Each Tool Record Card contains the following fields:
 8. Click **Post** to save the entry into the records.
 9. All created entries can be tracked on the **Tool Ledger Entries** page
 
-![production tools](media/production-tools-tool-journal-templates.png)
+![production tools](media/production-tools-tool-journal-template-list.png)
 
 **Tool journal Lines:**
-![production tools](media/production-tools-tool-journal-lines2-en.png)
+![production tools](media/production-tools-tool-journal-lines2.png)
 
 > [!IMPORTANT]  
 > **Mandatory Fields for Entry Type "Lend":** Employee No., Serial No. 
@@ -135,10 +135,10 @@ Each Tool Record Card contains the following fields:
 10. Click **Post** to save the entry into the records.
 11. All created entries can be tracked on the **Tool Ledger Entries** page.
 
-![production tools](media/production-tools-tool-journal-templates.png)
+![production tools](media/production-tools-tool-journal-template-list.png)
 
 **Tool journal Lines:**
-![production tools](media/production-tools-tool-journal-lines3-en.png)
+![production tools](media/production-tools-tool-journal-lines3%20(1).png)
 
 > [!IMPORTANT]  
 > **Mandatory Fields for Entry Type "Return":** Employee No., Damage Code, Serial No. 
@@ -156,10 +156,10 @@ Each Tool Record Card contains the following fields:
 9. Click **Post** to save the entry into the records.
 10. All created entries can be tracked on the **Tool Ledger Entries** page.
 
-![production tools](media/production-tools-tool-journal-templates.png)
+![production tools](media/production-tools-tool-journal-template-list.png)
 
 **Tool journal Lines:**
-![production tools](media/production-tools-tool-journal-lines4-en.png)
+![production tools](media/production-tools-tool-journal-lines4.png)
 
 > [!IMPORTANT]  
 > **Mandatory Fields for Entry Type "Tool Issuance":** Employee No., Damage Code, Serial No. 
@@ -171,7 +171,7 @@ As mentioned earlier, all created entries can be tracked on the Tool Ledger Entr
 1. Select the icon and type **Tool Ledger Entries** in the search bar, then choose the related link.
 2. The **Tool Ledger Entries** page will open, where you can monitor all recorded transactions.
 
-![production tools](media/production-tools-tool-ledger-entries-en.png)
+![production tools](media/production-tools-tool-ledger-entries.png)
 
 > [!TIP]
 > You can also access the **Tool Ledger Entries** page using the keyboard shortcut **CTRL + F7** from the **Tool List page** or from individual tool records. 
