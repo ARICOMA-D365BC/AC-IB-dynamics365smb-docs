@@ -12,15 +12,15 @@ ms.author: v-makune
 ---
 # Production tools - setup
 
-The **Production Tools** Module addresses the management of tools, equipment, molds, and other assets that are typically tracked through the system’s inventory management. This module is built on the foundation of asset management, ensuring a unified tracking system for both fixed asset monitoring and production-related needs, such as tool and equipment loans.
+Our **Production Tool** Module addresses the management of tools, equipment, molds, and other assets that are typically tracked through the system's inventory management. is built on the foundation of fixed assets accounting and unifies the records for fixed asset tracking and production records, including tool rental.
 
 For full utilization of the module, it must be configured according to the specific needs of the company. The following sections describe the individual setup components. 
 
 ### Tool Journal Templates 
 
 1. Select the icon![production tools](media/ui-search/search_small.png) and type **Tool Journal Templates** in the search bar and choose the related link. 
-2. The **Tool Journal Templates** page will open. 
-3. Click the **+ New button** to create a new template. 
+2. The **Tool Journal Templates** page will open.
+3. Click the **+ New button** to create a new template.
 4. In the Template **Name field**, enter a name that best describes the purpose of the template.
 5. In the **Default Entry Type field**, select an entry type, such as **Lend**, if the template is intended solely for loan tracking. 
 6. In the **Document No. Series** field, enter or select the numbering series that will be used for transaction records. 

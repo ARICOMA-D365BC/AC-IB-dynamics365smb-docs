@@ -11,9 +11,9 @@ ms.search.keywords: Czech, Production tools, Productivity pack
 ms.author: v-makune
 ---
 # Production Tools
-Gain full control over your tools and equipment with our smart solution, seamlessly integrated into the Business Central system. Track tool movements, minimize losses, and extend their lifespan with an easy-to-use overview of records, loans, inspections, and maintenance.
+Gain full control over your tools and equipment with our smart solution, directly integrated into the Business Central. Track tool movements, minimize losses, and extend their lifespan with an easy-to-use overview of records, loans, inspections, and maintenance.
 
-The Production Tools Module addresses the management of tools, equipment, molds, and other assets that are typically tracked through the system's inventory management. This module is built on the foundation of asset management, ensuring a unified tracking system for both fixed asset monitoring and production-related needs, such as tool and equipment loans.
+Our **Production Tool** Module addresses the management of tools, equipment, molds, and other assets that are typically tracked through the system's inventory management. is built on the foundation of fixed assets accounting and unifies the records for fixed asset tracking and production records, including tool rental.
 
 ![production tools](media/production-tools-tool-card.png)
 
@@ -47,16 +47,21 @@ To make your work easier, here is an overview of the most common scenarios you m
 
 ![production tools](media/production-tools-adding-tool.png)
 
-3. After selecting the New action, the **Tool Record** Card will open.
+3. After selecting the **+New** action, the **Tool Record** Card will open.
 
 Each Tool Record Card contains the following fields:
 
-- **No.:** Select the numbering series for tool records.
+- **No.:** Select the NO. series for tool records.
 - **Description:** The name of the tool.
 - **Serial No.:** The tool’s serial number.
-- **Main Asset/Component:** Defines the primary data source of the tool.
+- **Main Asset/Component:** Specifies the main asset of the tool.
+- **Responsible Employee:**Specifies a responsible employee for the tool.
+- **Component of Main Asset:** Specifies the component of the main asset.
+- **Search Description:** Specifies whether the tool is blocked.
+- **Inactive:** Specifies whether the tool is active.
+- **Blocked:** Specifies whether the tool is blocked.
 
-4. After filling in the fields in the Tool Record Card, the tool will be saved in our **Tool List**.
+4. After filling in the fields in the **Tool Card**, the tool will be saved in our **Tool List**.
 
 **List** – Displays a summary view of the currently selected fixed asset. This overview includes key information such as asset description, accounting category, current balances, and other relevant details.
 
@@ -80,7 +85,7 @@ Each Tool Record Card contains the following fields:
 
 ![production tools](media/production-tools-tool-card-related.png)
 
-### Tool acquisition
+### Tool Receipt
 
 1. Select the icon ![production tools](media/ui-search/search_small.png), then type **Tool Journal** in the search bar and choose the related link.
 2. Choose a template that best fits your needs.
@@ -105,13 +110,15 @@ Each Tool Record Card contains the following fields:
 
 1. Select the icon  and type **Tool Journal** in the search bar, then choose the related link.
 2. Choose a template that best fits your needs.
-3. Fill in the **Fixed Asset No.** field.
-4. In the **Employee No.** field, select the employee borrowing the tool.
-5. Enter the **Quantity**.
-6. Fill in the **Serial No.** field with the specific tool being loaned.
-7. If you use barcode scanners, you can also enter the **EAN Code**.
-8. Click **Post** to save the entry into the records.
-9. All created entries can be tracked on the **Tool Ledger Entries** page
+3. **Enter External Document No.** if needed.
+4. For **Entry Type**, select **Lend**.
+5. Fill in the **Fixed Asset No.** field.
+6. In the **Employee No.** field, select the employee borrowing the tool.
+7. Enter the **Quantity**.
+8. Fill in the **File No.** field with the specific tool being borrowed.
+9. If you use barcode scanners, you can also enter the **EAN Code**.
+10. Click **Post** to save the entry into the records.
+11. All created entries can be tracked on the **Tool Ledger Entries** page
 
 ![production tools](media/production-tools-tool-journal-template-list.png)
 
@@ -119,21 +126,22 @@ Each Tool Record Card contains the following fields:
 ![production tools](media/production-tools-tool-journal-lines2.png)
 
 > [!IMPORTANT]  
-> **Mandatory Fields for Entry Type "Lend":** Employee No., Serial No. 
+> **Mandatory Fields for Entry Type "Lend":** Employee No., File No. 
 
 ### Tool Return
 
 1. Select the icon  and type **Tool Journal** in the search bar, then choose the related link.
 2. Choose a template that best fits your needs.
-3. For **Entry Type**, select **Return**.
-4. In the **FA No.** field, select the tool you want to return.
-5. Fill in the **Employee No.** field for the employee returning the tool.
-6. Enter the **Quantity** field with the number of tools being returned.
-7. Fill in the **Serial No.** field to uniquely identify the specific tool.
-8. If applicable, enter a value in the **Damage Code field**.
-9. If you use barcode scanners, you can also enter the **EAN Code**.
-10. Click **Post** to save the entry into the records.
-11. All created entries can be tracked on the **Tool Ledger Entries** page.
+3. **Enter External Document No.** if needed.
+4. For **Entry Type**, select **Return**.
+5. In the **FA No.** field, select the tool you want to return.
+6. Fill in the **Employee No.** field for the employee returning the tool.
+7. Enter the **Quantity** field with the number of tools being returned.
+8. Fill in the **File No.** field to uniquely identify the specific tool.
+9. If applicable, enter a value in the **Damage Code field**.
+10. If you use barcode scanners, you can also enter the **EAN Code**.
+11. Click **Post** to save the entry into the records.
+12. All created entries can be tracked on the **Tool Ledger Entries** page.
 
 ![production tools](media/production-tools-tool-journal-template-list.png)
 
@@ -141,20 +149,21 @@ Each Tool Record Card contains the following fields:
 ![production tools](media/production-tools-tool-journal-lines3%20(1).png)
 
 > [!IMPORTANT]  
-> **Mandatory Fields for Entry Type "Return":** Employee No., Damage Code, Serial No. 
+> **Mandatory Fields for Entry Type "Return":** Employee No., Damage Code, File No.
 
 ### Tool Disposal
 
 1. Select the icon and type **Tool Journal** in the search bar, then choose the related link.
 2. Choose a template that best fits your needs.
-3. For **Entry Type**, select **Negative Adjustment**.
-4. In the **FA No.** field, select the tool you want to issue.
-5. Fill in the **Employee No.** field with the person performing the action.
-6. Enter the **Serial No.** field to uniquely identify the specific tool.
-7. If applicable, enter a value in the **Damage Code field**.
-8. If you use barcode scanners, you can also enter the **EAN Code**.
-9. Click **Post** to save the entry into the records.
-10. All created entries can be tracked on the **Tool Ledger Entries** page.
+3. **Enter External Document No.** if needed.
+4. For **Entry Type**, select **Negative Adjustment**.
+5. In the **FA No.** field, select the tool you want to issue.
+6. Fill in the **Employee No.** field with the person performing the action.
+7. Enter the **Serial No.** field to uniquely identify the specific tool.
+8. If applicable, enter a value in the **Damage Code field**.
+9. If you use barcode scanners, you can also enter the **EAN Code**.
+10. Click **Post** to save the entry into the records.
+11. All created entries can be tracked on the **Tool Ledger Entries** page.
 
 ![production tools](media/production-tools-tool-journal-template-list.png)
 
@@ -166,7 +175,7 @@ Each Tool Record Card contains the following fields:
 
 ### Tool Ledger Entries
 
-As mentioned earlier, all created entries can be tracked on the Tool Ledger Entries page. Here’s how to access this page:
+As mentioned earlier, all created entries can be tracked on the **Tool Ledger Entries** page. Here’s how to access this page:
 
 1. Select the icon and type **Tool Ledger Entries** in the search bar, then choose the related link.
 2. The **Tool Ledger Entries** page will open, where you can monitor all recorded transactions.
