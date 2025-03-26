@@ -1,69 +1,91 @@
 ---
-title: Aricoma - Pack Tracking Basic Setup | Microsoft Docs
-description:  This section describes Aricoma Pack Tracking Basic AddOn Setup
-author: ACPJanousek
-ms.service: dynamics365-business-central
-ms.topic: article
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.search.keywords: Pack tracking, setup, rapidstart, item
-ms.date: 01/31/2020 TODO
-ms.author: v-pejano
+title: Packaging Records (EKO-KOM) – Setup
+description: Guide for setting up the Packaging Records (EKOKOM) module
+author: Makowka-Tomas
+date: 3/20/2025
+reviewer: janousek
+ms.service: dynamics-365-business-central
+ms.search.keywords: pack tracking, return packing, financial pack, rapidstart, help, report
 ---
 
-# Packaging records - Setup
-To ensure the functioning of the add-on module **Pack Tracking Basic**, it is necessary to perform the necessary setup steps.
+# Packaging Records (EKO-KOM) – Setup
 
-## Establish a Packaging Statement
-The necessary number of different Packaging Statements can be created in the system. Choose the ![Lightbulb that opens the Tell Me feature.](media/ui-search/search_small.png "Tell me what you want to do") icon, enter **Packing Statements** and then choose the related link.
+> Updated: 03/01/2025
 
-> [!NOTE]  
-> If you are going to import the provided EKO-KOM parameterization files, you must create a Packaging Report with the code **EKO-KOM**.
+The first step when working with the **Packaging Records** module is to create **Packing Statements**. These represent the main categories that serve as the foundation for further packaging record configuration. You can create any number of statements in the system, each containing specific data based on company or legislative needs.
 
-## Parameterization of the EKO-KOM Packaging Report
-The add-on module Pack Tracking is supplied with excel files *ekokom_def.xlsx* and *ekokom.xlsx* containing the parameterization for **EKO-KOM Packaging Statements**.  
-The parameterisation files can be uploaded to the system using the **RapidStart Service**.<s
+If you plan to work with **EKO-KOM** system parametrization, you must first create a **Packing Statement with the code EKO-KOM**. This step enables the correct import of files with predefined values.
 
-## Packing Statement Element Definition
-For each created report, it is necessary to define its elements. Choose the ![Lightbulb that opens the Tell Me feature.](media/ui-search/search_small.png "Tell me what you want to do") icon, enter **Packing Statement Element Def.** and then choose the related link.
-Elements in the report can be grouped into positions on the report. A total of 10 positions can be defined (grouping of elements). Elements within a position are further assigned a code.
+Once the Packing Statement is created, you define detailed parameters that structure and characterize the packaging records. This process includes grouping packaging into specific categories and classifying them according to set criteria. Proper configuration ensures accurate records and simplifies legislative reporting.
 
-Packing Statement Element Definition form fields:
+Follow these steps for correct setup:
 
-| Field | Description |
-|---------------|---------------|  
-| **Statement Code** | The report code created in the previous step |
-| **Position** | User-specified group of schedule elements |
-| **Code** | Element code within a position |
-| **Description** | Description of the schedule element |
-| **Statement Placement** | Text descriptive information |
+- **Create Packing Statement**
+- **Parameterize EKO-KOM Packing Statement**
+- **Define Packing Statement Elements Def. (statement structure)**
+- **Create Packing Statement Elements (define the statement itself)**
+- **Create exceptions in the Packing Statement**
 
+## Creating the Packing Statement
 
-For example, you can create a table with the following values:
+1. Select the ![Lightbulb icon that opens the Tell Me feature](media/ui-search/search_small.png "Tell me what you want to do"), enter **Packing Statements**, and select the related link.
+2. On the **Packing Statements** page, create a new line with the **Code** EKO-KOM.
 
-| Reporting code | Position | Code | Description |
-|----------|----------|----------|----------|
-| EKO-KOM | P1 | 1 | Single-use packaging |
-| EKO-KOM | P1 | 2 | Reusable packaging |
-| EKO-KOM | P2 | 1 | Charged |
-| EKO-KOM | P2 | 2 | Prepaid |
-| EKO-KOM | P2 | 3 | Unpaid |
+![Packing Statements](media/pack-tracking-packing-statements.png)
 
-## Creating Elements in a Packing Statements (Defining a Custom Statement)
+After filling in the **Code** and **Description**, you can also choose:
 
-Definice vlastního výkazu se provádí založením prvků Výkazu obalů. Choose the ![Lightbulb that opens the Tell Me feature.](media/ui-search/search_small.png "Tell me what you want to do") icon, enter ** Packing Statement Elements** and then choose the related link. In the form, individual statement lines are defined by selecting from previously defined elements for each statement position. The *Description* field is then added by the system depending on the field on the **Packing Statement Element Definition**page.
+- **VRP Statement** – Indicates if this statement will be used to define visible recycling fees.
+- **Calculate VRP when posting sales document** – Enables automatic recycling fee calculation on sales documents.
+- **VRP Account Type** – Defines the account type used to record visible recycling fees in the sales document.
+- **VRP Account Number** – Specifies the exact account for posting recycling fees.
 
-For example **Packing Statement Elements** page might look like this:
+## Parameterizing the EKO-KOM Packing Statement
 
-| Reporting code | Code | Description |
-|---------------|---------------|---------------|
-| EKO-KOM | 13 | Single-use packaging free of charge |
+For correct EKO-KOM reporting functionality, appropriate parameterization is required. All necessary setup files will be uploaded using configuration packages, ensuring fast and error-free data import.
 
-## Creating exceptions in the Packaging Statements
+To simplify this process, we have prepared a guided setup that will lead you through the entire configuration step by step. This way, you can easily apply the required data without manually setting each parameter.
 
-In each **Packaging Statement** that you create, you can define exceptions, specified by the status of the lines in the Item journal, that will not be included in the report. Choose the **Lightbulb that opens the Tell Me feature.![Tell me what you want to do](media/ui-search/search_small.png ", icon, enter ")Packing Stat. El. Exceptions</g4> and then choose the related link.  The exception is defined by the data entered in the **Movement Type**, **Field no.**, **Field Value** and **Position** fields (in the report). You must also specify the **Element Code** to create an exception.
+1. Select the ![Lightbulb icon that opens the Tell Me feature](media/ui-search/search_small.png "Tell me what you want to do"), enter **Assisted Setup**, and select the related link.
+2. On the **Assisted Setup** page, under the **ARICOMA Extension Setup** tab, find **Setup Packaging Records EKO-KOM**.
+3. Start the setup.
 
-## See also
+## Defining Packing Statement Elements Def.
+
+Each created statement must have its elements defined. Each category (Position) contains individual elements (Code) describing specific packaging characteristics.
+
+1. Select the ![Lightbulb icon that opens the Tell Me feature](media/ui-search/search_small.png "Tell me what you want to do"), enter **Packing Statement Elements Def.**, and select the related link.
+2. On the **Packing Statement Elements Def.** page, fill in the lines based on the following criteria:
+    - **Statement Code** - Code of the statement created earlier.
+    - **Position** - Defines the group of elements within the statement.
+    - **Code** - Unique identifier of the element in the given position.
+    - **Description** - Description of the statement element.
+    - **Statement Placement** - Additional description specifying the element’s location within the statement.
+
+For EKO-KOM, the completed table looks as follows:
+
+![Packing Statement Elements Def.](media/pack-tracking-packing-statement-elements-def.png)
+
+## Creating Packing Statement Elements
+
+On the **Packing Statement Elements** page, you define specific statement lines based on previously defined elements. Each line consists of a combination of categories and their individual elements, allowing precise identification of packaging materials based on their properties. The system automatically generates the description based on assigned values, eliminating classification errors.
+
+1. Select the ![Lightbulb icon that opens the Tell Me feature](media/ui-search/search_small.png "Tell me what you want to do"), enter **Packing Statement Elements**, and select the related link.
+2. From the previously defined elements, define individual statement lines here.
+3. The **Description** field is automatically completed by the system based on the values from the **Packing Statement Elements Def.** page.
+
+![Packing Statement Elements](media/pack-tracking-packing-statement-elements.png)
+
+## Creating Exceptions in the Packing Statement
+
+You can define exceptions in each created **Packing Statement**, specified by item journal line conditions that will not be included in the statement.
+
+1. Select the ![Lightbulb icon that opens the Tell Me feature](media/ui-search/search_small.png "Tell me what you want to do"), enter **Packing Stat. El. Exceptions**, and select the related link.
+2. On the **Packing Stat. El. Exceptions** page, specify **Statement Code**, **Movement Type**, **Field Number**, **Field Value**, and **Position**.
+
+![Packing Statement Element Exceptions](media/pack-tracking-exceptions.png)
+
+## See Also
+
 [Packaging records](pack-tracking-basic.md)  
 [Financial Pack](finance-pack.md)

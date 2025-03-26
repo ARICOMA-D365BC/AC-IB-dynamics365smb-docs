@@ -46,7 +46,7 @@ Each item and its unit of measure can be assigned to one or more **Packing State
 
 The **Packaging Records** module provides comprehensive tools for packaging management reporting. With the integrated system, you can easily generate reporting outputs and ensure compliance with legal requirements.
 
-1. Select the ![Lightbulb icon that opens the Tell Me feature](media/ui-search/search_small.png "Tell me what you want to do"), enter **Packing Statement Base** and then select the related link.
+1. Select the ![Lightbulb icon that opens the Tell Me feature](media/ui-search/search_small.png "Tell me what you want to do"), enter **Packing Statement Basis** and then select the related link.
 2. A dialog box with report setup options will appear.
 
 In this report, you can configure:
