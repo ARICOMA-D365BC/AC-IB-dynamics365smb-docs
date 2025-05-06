@@ -13,6 +13,8 @@ ms.search.keywords: Czech, Analytics Suite, Streamline Tools
 
 Analytics Suite provides companies with a powerful tool for data analysis and visualization of key indicators. It allows easy connection, filtering, and analysis of financial, sales, and operational data, leading to faster and more efficient decision-making. With interactive dashboards and automated reports, you gain better insight into company performance and uncover new business opportunities.
 
+![Analytics Suite](media/analytics-suite-bc.png "Analytics Suite - Power BI solution for Dynamics 365 Business Central")
+
 ## Covered Areas
 
 - Finance
