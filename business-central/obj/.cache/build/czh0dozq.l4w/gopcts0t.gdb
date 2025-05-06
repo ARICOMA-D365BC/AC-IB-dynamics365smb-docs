@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>ARICOMA SOLUTIONS | Microsoft Docs </title>
+    <title>ARICOMA SOLUTIONS - Financial pack | Microsoft Docs </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="ARICOMA SOLUTIONS | Microsoft Docs ">
+    <meta name="title" content="ARICOMA SOLUTIONS - Financial pack | Microsoft Docs ">
     <meta name="generator" content="docfx 2.59.4.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
@@ -67,8 +67,9 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="streamline-tools">Streamline Tools</h1>
+<h1 id="financial-pack">Financial Pack</h1>
 
+<p>Addon set to extend finance functionality for D365 Business Central.</p>
 <table>
 <thead>
 <tr>
@@ -78,32 +79,43 @@
 </thead>
 <tbody>
 <tr>
-<td><strong>Analytics Suite</strong> - Power BI solution provides companies with a powerful tool for data analysis and visualization.</td>
-<td><a href="analytics-suite.html">Analytics Suite</a></td>
+<td>Extension set for finance.</td>
+<td><a href="controling-basic.html">Application extension set</a></td>
 </tr>
 <tr>
-<td>The <strong>Attribute Tool</strong> module is an extension for bulk work with product attributes so that the user does not have to enter product attributes for individual products, but can add, edit or delete them for all products on one page.</td>
-<td><a href="attribute-tool.html">Attribute Tool</a></td>
+<td>The Insolvency Register is a public list that records statutory data on entities undergoing insolvency proceedings in the Czech Republic.</td>
+<td><a href="insolvence-register.html">Insolvency Register</a></td>
 </tr>
 <tr>
-<td><strong>Business Pack</strong> integrates frequently used fields and fact boxes directly into your pages.</td>
-<td><a href="Business-Pack.html">Business Pack</a></td>
+<td>Factoring extends the capabilities of the Dynamics 365 Business Central Financial Management area with the ability to record and post receivables assignment and create factoring contracts.</td>
+<td><a href="factoring.html">Faktoring</a></td>
 </tr>
 <tr>
-<td><strong>GP tom integration</strong> extends the functionality of Dynamics 365 Business Central with the ability to integrate with the Tom payment system from Global Payments.</td>
-<td><a href="gptom-integration.html">GP tom integration</a></td>
+<td>Multiple payments extends the standard of sales documents, where instead of one method of payment it is possible to define more methods.</td>
+<td><a href="multiple-payments.html">Multiple payment methods</a></td>
 </tr>
 <tr>
-<td><strong>SK Fiscal Printers Integration</strong> is an extension for the Microsoft Dynamics 365 Business Central information system that provides direct integration with fiscal printers from VAROS.</td>
-<td><a href="SK-FiscalPrinters-Integration.html">SK Fiscal Printers Integration</a></td>
+<td>Fiscal printers are used to create and print a cash receipt on a VAROS fiscal printer.</td>
+<td><a href="fiscal-printers.html">Fiscal printers</a></td>
+</tr>
+<tr>
+<td>Packaging records make it possible to automatically record and report the amount of packaging material or other quantitative data in connection with the movements of goods in the system.</td>
+<td><a href="pack-tracking-basic.html">Packaging records</a></td>
+</tr>
+<tr>
+<td>Returnable packaging records are an extension of the Inventory module in Dynamics 365 Business Central. Allows monitoring of the circulation of returnable packaging and pallet management.</td>
+<td><a href="pack-tracking-return-packing.html">Returnable Packaging records</a></td>
+</tr>
+<tr>
+<td>List of Deprecated features</td>
+<td><a href="fp-deprecated-features.html">Deprecated features</a></td>
 </tr>
 </tbody>
 </table>
-<h2 id="see-also">See Also</h2>
-<p><a href="../index.html">ARICOMA Solutions</a><br>
-<a href="../FinancialPack/finance-pack.html">Financial Pack</a><br>
+<h2 id="see-also">See also</h2>
+<p><a href="../index.html">ARICOMA Solution</a><br>
 <a href="../ProductivityPack/productivity-pack.html">Productivity Pack</a><br>
-<a href="../SK/sk-legislative-pack.html">SK Legislative Pack</a></p>
+<a href="../SK/sk-legislative-pack.html">Slovak Legislative Pack</a></p>
 </article>
           </div>
           
@@ -112,7 +124,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/ARICOMA-D365BC/AC-IB-dynamics365smb-docs/blob/master/business-central/StreamlineTools/streamlinetools.md/#L1" class="contribution-link">Improve this document</a>
+                    <a href="https://github.com/AutoContCZ/AC-IB-dynamics365smb-docs/blob/master/business-central/FinancialPack/finance-pack.md/#L1" class="contribution-link">Improve this document</a>
                   </li>
                 </ul>
               </div>
