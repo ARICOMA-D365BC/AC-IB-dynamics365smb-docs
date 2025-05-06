@@ -1,0 +1,37 @@
+﻿
+<div id="sidetoggle">
+  <div>
+    <div class="sidefilter">
+      <form class="toc-filter">
+        <span class="glyphicon glyphicon-filter filter-icon"></span>
+        <span class="glyphicon glyphicon-remove clear-icon" id="toc_filter_clear"></span>
+        <input type="text" id="toc_filter_input" placeholder="Enter here to filter..." onkeypress="if(event.keyCode==13) {return false;}">
+      </form>
+    </div>
+    <div class="sidetoc">
+      <div class="toc" id="toc">
+          
+          <ul class="nav level1">
+                <li>
+                    <a href="Solutions/solutions.html" name="" title="ARICOMA Solutions">ARICOMA Solutions</a>
+                </li>
+                <li>
+                    <a href="ProductivityPack/productivity-pack.html" name="" title="Productivity PACK">Productivity PACK</a>
+                </li>
+                <li>
+                    <a href="FinancialPack/finance-pack.html" name="" title="Financial PACK">Financial PACK</a>
+                </li>
+                <li>
+                    <a href="SK/sk-legislative-pack.html" name="" title="SK PACK">SK PACK</a>
+                </li>
+                <li>
+                    <a href="StreamlineTools/streamlinetools.html" name="" title="StreamLine Tools">StreamLine Tools</a>
+                </li>
+                <li>
+                    <a href="support/support.html" name="" title="Support">Support</a>
+                </li>
+          </ul>
+      </div>
+    </div>
+  </div>
+</div>
