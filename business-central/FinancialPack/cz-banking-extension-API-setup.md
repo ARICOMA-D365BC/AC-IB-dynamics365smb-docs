@@ -1,18 +1,14 @@
 ---
-title: AC - Financial pack -  Extended Banking | Microsoft Docs
-description: Extended CZ Banking
+title: CZ Banking Extension - API connector settings
+description: CZ Banking Extension - API connector settings
 author: RobertJelen
-
-ms.service: dynamics365-business-central
-ms.topic: article
-ms.devlang: na
-ms.tgt_pltfrm: na
+date: 05/30/2025
+reviewer: janousek
+ms.service: dynamics-365-business-central
 ms.search.keywords: banking, finance, czech, API
-ms.date: 04/30/2025
-ms.author: RobertJelen
 ---
 # API connector settings
-> Update 30.04.2025
+> Update 30.05.2025
 
 ## CSOB API connector
 
@@ -121,18 +117,11 @@ The next step is to set up access in Business Central:
 2.	In the new window that automatically opens, the bank's dialogue will appear, where after logging in you will be asked to give consent to use the "Aricoma KB Connector" application.
 3. Immediately afterwards, another login prompt will appear, after which you will select the bank accounts to which "Aricoma KB connector" should have access.
 
-### Specific parameters for KB API connector
+<!-- ### Specific parameters for KB API connector
+-->
 
+**See also**  
 
-
-**See also**
-
-[Extended CZ Banking Setup](ext-cz-banking-setup.md)  
-[Extended CZ Banking](ext-cz-banking.md)  
-[Financial Pack](finance-pack.md)
-
-NOTE
-TIP
-CAUTION
-WARNING
-IMPORTANT
+[CZ Banking Extension Setup](cz-banking-extension-setup.md)  
+[CZ Banking Extension](cz-banking-extension.md)  
+[Financial Pack](finance-pack.md)  
