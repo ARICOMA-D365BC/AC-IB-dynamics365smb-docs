@@ -24,7 +24,7 @@ The module allows to support users in processing statements in 2 levels: basic a
 You gain access to the functionality by purchasing a subscription for your first bank account. This option does not determine the number of accounts for which you will use it. However, the work is manual within the company and for a specific bank, and in the case of multiple accounts with one bank, it supports importing multiple statements at once.
 Also for this variant it is possible to purchase one of the offered add-ons for API communications with the bank.
 
-![Basic variant of the CZ Banking extension module](media/ExtCZbanking-schema_Basic.png)
+![Basic variant of the CZ Banking extension module](media/cz-banking-ext-schema-basic.png)
 
 ### Payment orders
 In the basic version, the standard Export function on the Issued Payment Order page is used. In the case of a configured API, the statement is sent without downloading the file to the client computer.

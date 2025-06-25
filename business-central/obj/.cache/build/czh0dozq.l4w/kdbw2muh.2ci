@@ -1,0 +1,231 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>CZ Banking Extension - API connector settings </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="CZ Banking Extension - API connector settings ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../TOC.html">
+    <meta property="docfx:tocrel" content="TOC.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="png" src="../logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="api-connector-settings">API connector settings</h1>
+
+<blockquote>
+<p>Update 30.05.2025</p>
+</blockquote>
+<h2 id="csob-api-connector">CSOB API connector</h2>
+<h3 id="launch-of-the-čsob-business-connector-service">Launch of the ČSOB Business Connector service</h3>
+<p>The steps to get the service up and running are as follows:</p>
+<ul>
+<li>Enabling the CSOB Business Connector service for the CEB service contract,</li>
+<li>obtaining a certificate from a certification authority or directly from the bank,</li>
+<li>registering the certificate for use in the CSOB Business Connector service in the portal,</li>
+<li>configuring the CSOB Business Connector service in the portal,</li>
+<li>setting up the client application in Business Central</li>
+</ul>
+<p><strong>Enabling the CSOB Business Connector service for the CEB service contract</strong></p>
+<p>Disabling or enabling the CSOB Business Connector service can be done in the portal or at a bank branch</p>
+<p><strong>Obtaining a certificate</strong></p>
+<p>The ČSOB Business Connector service enables the use of certificates issued by certification authorities I. Certification Authority and PostSignum. Only so-called Server Commercial Certificates are suitable for use in the CSOB Business Connector service and must enable so-called Client Authentication.</p>
+<p>The certificate can also be obtained directly from the bank, which can be done in basically 2 ways, either</p>
+<ul>
+<li>by Windows means (e.g. with the help of an IT person)
+<ul>
+<li>Manually creating a certificate request on the client computer (e.g. using the Windows tool <em>certmgr.msc</em>),</li>
+<li>Submitting a certificate request and issuing the certificate (CEB -&gt; Business Connector -&gt; <em>Request Certificate</em> and then downloading the certificate by selecting <em>Download</em>)</li>
+<li>Installing the issued certificate on the client computer (e.g. using the Windows <em>certmgr.msc</em> tool)</li>
+</ul>
+</li>
+<li>or using the <em>CSOB Business Connector</em> application (obtaining a communication certificate is described in the <a href="https://www.csob.cz/documents/10710/15532355/csob-business-connector-prirucka.pdf?v2401">csob-business-connector-implementacni-prirurucka.pdf</a> manual). This is
+<ul>
+<li>installation of the CSOB Business Connector application on a computer (chapter 2)</li>
+<li>obtaining a communication certificate (chapter 3).</li>
+</ul>
+</li>
+</ul>
+<div class="TIP">
+<h5>Tip</h5>
+<p>The CSOB Business Connector application will not be used for normal work. However, it is recommended to set up a certificate expiry notification (see the guide in the chapter Renewing the communication certificate).</p>
+</div>
+<p><strong>Certificate registration</strong></p>
+<p>In the case of a certificate from a bank (see above), it is automatically registered.</p>
+<p><strong>Configuring the CSOB Business Connector service in the portal</strong></p>
+<p>In the portal, it is necessary to enable the required operations that the client will use using the CSOB Business Connector. In our case, these are <em>Download statements for specific accounts</em> and <em>Send signed payment order files for specific accounts</em>.</p>
+<p><strong>Setting up a client application in Business Central</strong></p>
+<p>To set up Business Central, you need to download a communication certificate in pfx format:</p>
+<ol>
+<li>Press Windows key + R and type certmgr.msc in the window that opens and press OK.</li>
+<li>In the certmgr tool, expand Personal on the left side and find the certificate line in the list. It will have the CEB Business Connector CA issuer and the subject name you selected.</li>
+<li>Press the right mouse button on the certificate and select All Tasks and Export... from the context menu.</li>
+<li>In the certificate export wizard, select Yes, export private key and then export to a PKCS #12 file with a .pfx extension. You will need the password you entered in the next step.</li>
+</ol>
+<p>The next step is to set up access in Business Central:</p>
+<ol>
+<li>Choose the <img src="media/ui-search/search_small.png" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong>Clients of CSOB CEB</strong> and then choose the related link.</li>
+<li>Enter &quot;CSOB&quot; in the <strong>Code</strong> field on the new line.</li>
+<li>Enter e.g. &quot;CSOB API&quot; in the <strong>Description</strong> field.</li>
+<li>Leave the value &quot;Production Environment&quot; in the <strong>API</strong> field.</li>
+<li>In the <strong>Available for</strong> field, leave the value &quot;Company&quot; to set up common access for all authorized users of the module.</li>
+<li>In the <strong>Contract Number</strong> field, enter the value from the API access contract you signed with the bank.</li>
+<li>Run the <em>Upload Certificate</em> action and select the certificate file in pfx format.</li>
+<li>Enter a password for the certificate in the <strong>Certificate Password</strong> field.</li>
+</ol>
+<div class="TIP">
+<h5>Tip</h5>
+<p>If you want to determine access according to the user's login, each user must make the above-mentioned settings of the ČSOB CEB Client. In the <strong>Available for</strong> field, select the value &quot;User&quot;.</p>
+</div>
+<h3 id="specific-parameters-for-čsob-api-connector">Specific parameters for ČSOB API connector</h3>
+<p>The following parameters must be added to the Advanced Settings if you want to use the CSOB API connector to import bank statements:</p>
+<ol>
+<li>Choose the <img src="media/ui-search/search_small.png" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong>Bank Export/Import Settings</strong> and then choose the related link.</li>
+<li>Navigate to the selected Import type row.</li>
+<li>Run the <em>Advanced Settings</em> action.</li>
+<li>In the <strong>Bank Statement Provider</strong> field, select &quot;CSOB CEN Connector&quot;.</li>
+<li>In the <strong>CSOB CEB Client Code</strong> field, select the client code defined in the previous section.</li>
+<li>In the <strong>CSOB CEB File Format</strong> field, select the GPC option representing the ABO format.</li>
+<li>In the <strong>Content Encoding</strong> field, add a value - see <a href="ext-cz-banking-setup.md/#Import-encoding-settings">Setting the encoding for import</a></li>
+<li>In the <strong>Processing Procedure ID</strong> field, check that the value 52057431 (Bank Stmt.Imp.-ABO Acb) has been added.</li>
+</ol>
+<p>The following parameters must be added to the Advanced Settings if you want to use the CSOB API connector to export payment orders:</p>
+<ol>
+<li>Choose the <img src="media/ui-search/search_small.png" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong>Bank Export/Import Settings</strong> and then choose the related link.</li>
+<li>Navigate to the selected Export type row.</li>
+<li>Run the <em>Advanced Settings</em> action.</li>
+<li>In the <strong>Bank Statement Provider</strong> field, select &quot;CSOB CEN Connector&quot;.</li>
+<li>In the <strong>CSOB CEB Client Code</strong> field, select the client code defined in the previous section.</li>
+<li>In the <strong>CSOB CEB File Format</strong> field, select the KPC option representing the ABO format.</li>
+<li>In the <strong>Processing Procedure ID</strong> field, check that the value 52057438 (Paym.Order Export-ABO acb) has been added.</li>
+</ol>
+<h2 id="kb-api-connector">KB API connector</h2>
+<h3 id="launch-of-the-api-business-suite-service">Launch of the API Business suite service</h3>
+<p>In order to use the <a href="https://www.kb.cz/cs/kbapi/sluzby-kb-api/api-business-suite">API Business suite</a> service from Komerční banka, you must have activated the selected internet banking application (<em>Moje Banka Business</em>, or <em>Profibanka</em>, or <em>Mobilní banka Business</em>).
+The basic steps to make the API interface operational are:</p>
+<ul>
+<li>The company activates the API Business Suite service in KB</li>
+<li>The company applies to Aricoma for an Authorization Key, which will be generated specifically for the company and thanks to which Aricoma will register the KB API connector with KB.</li>
+<li>The company sets up the module in Business Central</li>
+<li>The company gives consent to the BC application to download data from KB and selects the bank accounts to which BC will have access</li>
+</ul>
+<p><strong>Obtaining the Authorization Key</strong>
+Contact us by email at bc_sales@aricoma.com. All we need is your company name, and we will send you an Authorization Key in reply. This is for your company's use only and must not be used by anyone else.
+<strong>Setting up the module in BC</strong>
+The next step is to set up access in Business Central:</p>
+<ol>
+<li>Choose the <img src="media/ui-search/search_small.png" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong>KB API Clients</strong> and then choose the related link.</li>
+<li>On the KB API Clients page, enter &quot;KB&quot; in the <strong>Code</strong> field on the new line.</li>
+<li>For example, type &quot;KB API&quot; in the **Description **field.</li>
+<li>Leave the value &quot;Production environment&quot; in the <strong>API</strong> field.</li>
+<li>In the <strong>Authorization Key</strong> field, enter the value you received from Aricoma (see previous paragraph).</li>
+<li>In the <strong>Number of days of transaction history</strong> field, enter 10</li>
+</ol>
+<p><strong>Granting consent</strong></p>
+<ol>
+<li>On the KB API Clients page, run the <em>Authorize Client</em> action.</li>
+<li>In the new window that automatically opens, the bank's dialogue will appear, where after logging in you will be asked to give consent to use the &quot;Aricoma KB Connector&quot; application.</li>
+<li>Immediately afterwards, another login prompt will appear, after which you will select the bank accounts to which &quot;Aricoma KB connector&quot; should have access.</li>
+</ol>
+<!-- ### Specific parameters for KB API connector
+-->
+<p><strong>See also</strong></p>
+<p><a href="cz-banking-extension-setup.html">CZ Banking Extension Setup</a><br>
+<a href="cz-banking-extension.html">CZ Banking Extension</a><br>
+<a href="finance-pack.md">Financial Pack</a></p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/ARICOMA-D365BC/AC-IB-dynamics365smb-docs/blob/master/business-central/Solutions/cz-banking-extension-API-setup.md/#L1" class="contribution-link">Improve this document</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+           <span><a href="https://www.aricoma.com/docs/en-us/dynamics365/business-central/Solutions/solutions.html"><strong>ENGLISH</strong><strong>/</strong><a href="https://www.aricoma.com/docs/cs-cz/dynamics365/business-central/Solutions/solutions.html"><strong>CZECH</strong></a></a></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
