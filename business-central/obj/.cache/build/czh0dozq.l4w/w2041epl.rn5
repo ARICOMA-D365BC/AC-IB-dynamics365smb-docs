@@ -10,11 +10,11 @@
     <meta name="title" content="ARICOMA SOLUTIONS | Microsoft Docs ">
     <meta name="generator" content="docfx 2.59.4.0">
     
-    <link rel="shortcut icon" href="../favicon.ico">
-    <link rel="stylesheet" href="../styles/docfx.vendor.css">
-    <link rel="stylesheet" href="../styles/docfx.css">
-    <link rel="stylesheet" href="../styles/main.css">
-    <meta property="docfx:navrel" content="../TOC.html">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/docfx.vendor.css">
+    <link rel="stylesheet" href="styles/docfx.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <meta property="docfx:navrel" content="TOC.html">
     <meta property="docfx:tocrel" content="TOC.html">
     
     
@@ -34,8 +34,8 @@
                 <span class="icon-bar"></span>
               </button>
               
-              <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="png" src="../logo.png" alt="">
+              <a class="navbar-brand" href="index.html">
+                <img id="logo" class="png" src="logo.png" alt="">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -57,53 +57,21 @@
         </div>
       </header>
       <div role="main" class="container body-content hide-when-search">
-        
-        <div class="sidenav hide-when-search">
-          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
-          <div class="sidetoggle collapse" id="sidetoggle">
-            <div id="sidetoc"></div>
-          </div>
-        </div>
-        <div class="article row grid-right">
+        <div class="article row grid">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="streamline-tools">Streamline Tools</h1>
+<h1 id="solutions">Solutions</h1>
 
-<table>
-<thead>
-<tr>
-<th>See</th>
-<th>Also</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Analytics Suite</strong> - Power BI solution provides companies with a powerful tool for data analysis and visualization.</td>
-<td><a href="analytics-suite.html">Analytics Suite</a></td>
-</tr>
-<tr>
-<td>The <strong>Attribute Tool</strong> module is an extension for bulk work with product attributes so that the user does not have to enter product attributes for individual products, but can add, edit or delete them for all products on one page.</td>
-<td><a href="attribute-tool.html">Attribute Tool</a></td>
-</tr>
-<tr>
-<td><strong>Business Pack</strong> integrates frequently used fields and fact boxes directly into your pages.</td>
-<td><a href="Business-Pack.html">Business Pack</a></td>
-</tr>
-<tr>
-<td><strong>GP tom integration</strong> extends the functionality of Dynamics 365 Business Central with the ability to integrate with the Tom payment system from Global Payments.</td>
-<td><a href="gptom-integration.html">GP tom integration</a></td>
-</tr>
-<tr>
-<td><strong>SK Fiscal Printers Integration</strong> is an extension for the Microsoft Dynamics 365 Business Central information system that provides direct integration with fiscal printers from VAROS.</td>
-<td><a href="SK-FiscalPrinters-Integration.html">SK Fiscal Printers Integration</a></td>
-</tr>
-</tbody>
-</table>
-<h2 id="see-also">See Also</h2>
-<p><a href="../index.html">ARICOMA Solutions</a><br>
-<a href="../FinancialPack/finance-pack.html">Financial Pack</a><br>
-<a href="../ProductivityPack/productivity-pack.html">Productivity Pack</a><br>
-<a href="../SK/sk-legislative-pack.html">SK Legislative Pack</a></p>
+<p>Moduly a addony pro D365 Business Central pro rozšíření funkcí systému.</p>
+<ul>
+<li>Financial Pack</li>
+<li>Productivity Pack</li>
+<li>SK Legislative pack</li>
+</ul>
+<h2 id="viz-také">Viz také</h2>
+<p><a href="FinancialPack/finance-pack.html">Financial Pack</a><br>
+<a href="ProductivityPack/productivity-pack.html">Productivity Pack</a><br>
+<a href="SK/sk-legislative-pack.html">SK Legislative Pack</a></p>
 </article>
           </div>
           
@@ -112,7 +80,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/ARICOMA-D365BC/AC-IB-dynamics365smb-docs/blob/master/business-central/StreamlineTools/streamlinetools.md/#L1" class="contribution-link">Improve this document</a>
+                    <a href="https://github.com/ARICOMA-D365BC/AC-IB-dynamics365smb-docs/blob/master/business-central/index.md/#L1" class="contribution-link">Improve this document</a>
                   </li>
                 </ul>
               </div>
@@ -139,8 +107,8 @@
       </footer>
     </div>
     
-    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
-    <script type="text/javascript" src="../styles/docfx.js"></script>
-    <script type="text/javascript" src="../styles/main.js"></script>
+    <script type="text/javascript" src="styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="styles/docfx.js"></script>
+    <script type="text/javascript" src="styles/main.js"></script>
   </body>
 </html>

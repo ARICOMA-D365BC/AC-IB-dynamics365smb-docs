@@ -1,25 +1,22 @@
 ---
-title: AC - Financial pack -  Extended Banking | Microsoft Docs
-description: Extended CZ Banking
+title: CZ Banking Extension  
+description: CZ Banking Extension
 author: RobertJelen
-
-ms.service: dynamics365-business-central
-ms.topic: article
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.search.keywords: banking, finance, czech
-ms.date: 04/30/2025
-ms.author: RobertJelen
+date: 05/30/2025
+reviewer: janousek
+ms.service: dynamics-365-business-central
+ms.search.keywords: banking, finance, czech, API
 ---
-# Extended CZ Banking
-> Update 30.04.2025
+# CZ Banking Extension
 
-The module extends the functionality "Banking documents for Czech Republic (extension)", which is part of the Czech local functionality of D365 Business Central (hereinafter referred to as BC). 
+> Update 30.05.2025
 
-The main benefit of the Extended Banking module is to simplify the import and subsequent processing of bank statements, thereby reducing routine user activities. 
+The module extends the functionality "Banking documents for Czech Republic (extension)", which is part of the Czech local functionality of D365 Business Central (hereinafter referred to as BC).
 
-The advantage is the variability in the setting of the import of bank statements into BC and their subsequent processing, where you can individually set the mode for each bank account separately. 
- 
+The main benefit of the Extended Banking module is to simplify the import and subsequent processing of bank statements, thereby reducing routine user activities.
+
+The advantage is the variability in the setting of the import of bank statements into BC and their subsequent processing, where you can individually set the mode for each bank account separately.
+
 The module allows to support users in processing statements in 2 levels: basic and advanced.
 
 ## Basic variant
@@ -40,7 +37,7 @@ The advanced option provides the ability to automate all steps:
 - triggering bank statement imports across companies
 - automating the processing of statements through to the creation of Payment Journal entries, including the suggestion of matching
 
-![Advanced variant of the CZ Banking extension module](media/ExtCZbanking-schema_Advanced.png)
+![Advanced variant of the CZ Banking extension module](media/cz-banking-ext-schema-advanced.png)
 
 ### Payment orders
 As part of the development of the module, support for automating the sending of Issued Payment Orders across companies and bank accounts will be completed during 2026.
@@ -87,7 +84,7 @@ The procedure for importing a bank statement is the same as described in Importi
 Exporting payment orders is performed on the Issued Payment Order tab by running the Export action.
 
 > [!NOTE]
-> If you purchase one of the [API extensions](ext-cz-banking-API-setup.md), you can export the order directly to your bank's system.
+> If you purchase one of the [API extensions](cz-banking-extension-API-setup.md), you can export the order directly to your bank's system.
 
 ### Advanced - manual import to multiple companies
 The scenario describes a situation where there are multiple companies in the BC environment and the import of bank statements will be done centrally for multiple companies at once from a local repository.
@@ -121,10 +118,10 @@ This method of processing may be useful in a situation with a large number of ac
 5. Clicking on the value in the **Status** field (or directly on the *Bank Statement Number**) in the row will open either a Bank Statement, Payment Journal or Issued Bank Statement depending on the value of the Status field. Perform the next steps to post the statement in the Payment Journal.
 6. Return to the Central Bank Statement Stack and continue with additional statements or another company. 
 
-![Central Bank Statement Stack](media/ExtCZbanking-Central_Stack.png)
+![Central Bank Statement Stack](media/cz-banking-ext-central-stack.png)
 
 > [!TIP]
-> If a bank statement has not been created, or you are importing a new bank account, check the settings see [Bank Statement Processing Settings](ext-cz-banking-setup.md/#Advanced-automated-processing-of-statements)
+> If a bank statement has not been created, or you are importing a new bank account, check the settings see [Bank Statement Processing Settings](cz-banking-extension-setup.md/#Advanced-automated-processing-of-statements)
 
 
 ### Advanced - automated processing of statements
@@ -140,7 +137,7 @@ Through the Central Bank Statement Stack page, the user has an overview of the p
 5.	Return to the Central Bank Statement Stack and continue through the other rows until all are in the Posted status.
 
 > [!NOTE]
-> Verify settings for automation see [Supporting settings for automatic processing](ext-cz-banking-setup.md/#Support-settings-for-automatic-processing-of-statements).
+> Verify settings for automation see [Supporting settings for automatic processing](cz-banking-extension-setup.md/#Support-settings-for-automatic-processing-of-statements).
 
 
 > [!IMPORTANT]
@@ -151,6 +148,6 @@ The functionality will be added during 2026.
 
 **See also**
 
-[Extended CZ Banking Setup](ext-cz-banking-setup.md)  
-[APIs for Extended CZ Banking Setup](ext-cz-banking-API-setup.md)  
+[CZ Banking Extension Setup](cz-banking-extension-setup.md)  
+[CZ Banking Extension APIs Setup](cz-banking-extension-API-setup.md)  
 [Financial Pack](finance-pack.md)

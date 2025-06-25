@@ -1,18 +1,14 @@
 ---
-title: AC - Financial pack -  Extended Banking | Microsoft Docs
-description: Extended CZ Banking
+title: CZ Banking Extension - Setup
+description: CZ Banking Extension - Setup
 author: RobertJelen
-
-ms.service: dynamics365-business-central
-ms.topic: article
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.search.keywords: banking, finance, czech
-ms.date: 04/30/2025
-ms.author: RobertJelen
+date: 05/30/2025
+reviewer: janousek
+ms.service: dynamics-365-business-central
+ms.search.keywords: banking, finance, czech, API
 ---
 # CZ Banking Extension Setup
-> Update 30.04.2025
+> Update 30.05.2025
 
 The CZ Banking Extension module needs to be activated, in the production environment the user will be asked to activate the subscription (see [documentation on monetization](https://www.aricoma.com/docs/en-us/dynamics365/business-central/ProductivityPack/monetization.html)).
 1. Choose the ![Lightbulb that opens the Tell Me feature.](media/ui-search/search_small.png "Tell me what you want to do") icon, enter **CZ Banking Extension Settings** and then choose the related link.
@@ -163,7 +159,7 @@ The bank statement processing functionality automatically numbers bank statement
 ### Check bank statement turnover (optional)
 When "Issuing" a bank statement, the function checks if the statement turnover matches the difference between the Starting and Ending balance of the statement as shown on the bank statement header. The Starting and Ending balance of the statement is imported from the Bank Statement file. 
 1. Choose the ![Lightbulb that opens the Tell Me feature.](media/ui-search/search_small.png "Tell me what you want to do") icon, enter **Bank Accounts** and then choose the related link.
-2.	Activate the **Check Bank Statement Turnover** field. 
+2.	Activate the **Check Bank Statement Turnover** field.
 
 
 ## Custom modifications
@@ -220,9 +216,8 @@ The stack should be populated with unformatted data as it is directly in the ban
 ### Custom format for import
 If you download statements in a different format or if you need a specifically customized import, your partner must create a custom process codeunit to import bank statements into the bank statement stack.
 
+**See also**  
 
-**See also**
-
-[APIs for Extended CZ Banking Setup](ext-cz-banking-API-setup.md)  
-[Extended CZ Banking](ext-cz-banking.md)  
+[CZ Banking Extension APIs Setup](cz-banking-extension-API-setup.md)  
+[CZ Banking Extension](cz-banking-extension.md)  
 [Financial Pack](finance-pack.md)

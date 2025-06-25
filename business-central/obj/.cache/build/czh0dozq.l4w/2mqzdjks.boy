@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <!--[if IE]><![endif]-->
 <html>
   
@@ -67,43 +67,43 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="streamline-tools">Streamline Tools</h1>
+<h1 id="streamline-tools" sourcefile="StreamlineTools/streamlinetools.md" sourcestartlinenumber="15">Streamline Tools</h1>
 
-<table>
+<table sourcefile="StreamlineTools/streamlinetools.md" sourcestartlinenumber="17">
 <thead>
-<tr>
-<th>See</th>
-<th>Also</th>
+<tr sourcefile="StreamlineTools/streamlinetools.md" sourcestartlinenumber="17">
+<th sourcefile="StreamlineTools/streamlinetools.md" sourcestartlinenumber="17">See</th>
+<th sourcefile="StreamlineTools/streamlinetools.md" sourcestartlinenumber="17">Also</th>
 </tr>
 </thead>
 <tbody>
-<tr>
-<td><strong>Analytics Suite</strong> - Power BI solution provides companies with a powerful tool for data analysis and visualization.</td>
-<td><a href="analytics-suite.html">Analytics Suite</a></td>
+<tr sourcefile="StreamlineTools/streamlinetools.md" sourcestartlinenumber="19">
+<td sourcefile="StreamlineTools/streamlinetools.md" sourcestartlinenumber="19"><strong sourcefile="StreamlineTools/streamlinetools.md" sourcestartlinenumber="19">Analytics Suite</strong> - Power BI solution provides companies with a powerful tool for data analysis and visualization.</td>
+<td sourcefile="StreamlineTools/streamlinetools.md" sourcestartlinenumber="19"><a href="analytics-suite.html" sourcefile="StreamlineTools/streamlinetools.md" sourcestartlinenumber="19">Analytics Suite</a></td>
 </tr>
-<tr>
-<td>The <strong>Attribute Tool</strong> module is an extension for bulk work with product attributes so that the user does not have to enter product attributes for individual products, but can add, edit or delete them for all products on one page.</td>
-<td><a href="attribute-tool.html">Attribute Tool</a></td>
+<tr sourcefile="StreamlineTools/streamlinetools.md" sourcestartlinenumber="20">
+<td sourcefile="StreamlineTools/streamlinetools.md" sourcestartlinenumber="20">The <strong sourcefile="StreamlineTools/streamlinetools.md" sourcestartlinenumber="20">Attribute Tool</strong> module is an extension for bulk work with product attributes so that the user does not have to enter product attributes for individual products, but can add, edit or delete them for all products on one page.</td>
+<td sourcefile="StreamlineTools/streamlinetools.md" sourcestartlinenumber="20"><a href="attribute-tool.html" sourcefile="StreamlineTools/streamlinetools.md" sourcestartlinenumber="20">Attribute Tool</a></td>
 </tr>
-<tr>
-<td><strong>Business Pack</strong> integrates frequently used fields and fact boxes directly into your pages.</td>
-<td><a href="Business-Pack.html">Business Pack</a></td>
+<tr sourcefile="StreamlineTools/streamlinetools.md" sourcestartlinenumber="21">
+<td sourcefile="StreamlineTools/streamlinetools.md" sourcestartlinenumber="21"><strong sourcefile="StreamlineTools/streamlinetools.md" sourcestartlinenumber="21">Business Pack</strong> integrates frequently used fields and fact boxes directly into your pages.</td>
+<td sourcefile="StreamlineTools/streamlinetools.md" sourcestartlinenumber="21"><a href="Business-Pack.html" sourcefile="StreamlineTools/streamlinetools.md" sourcestartlinenumber="21">Business Pack</a></td>
 </tr>
-<tr>
-<td><strong>GP tom integration</strong> extends the functionality of Dynamics 365 Business Central with the ability to integrate with the Tom payment system from Global Payments.</td>
-<td><a href="gptom-integration.html">GP tom integration</a></td>
+<tr sourcefile="StreamlineTools/streamlinetools.md" sourcestartlinenumber="22">
+<td sourcefile="StreamlineTools/streamlinetools.md" sourcestartlinenumber="22"><strong sourcefile="StreamlineTools/streamlinetools.md" sourcestartlinenumber="22">GP tom integration</strong> extends the functionality of Dynamics 365 Business Central with the ability to integrate with the Tom payment system from Global Payments.</td>
+<td sourcefile="StreamlineTools/streamlinetools.md" sourcestartlinenumber="22"><a href="gptom-integration.html" sourcefile="StreamlineTools/streamlinetools.md" sourcestartlinenumber="22">GP tom integration</a></td>
 </tr>
-<tr>
-<td><strong>SK Fiscal Printers Integration</strong> is an extension for the Microsoft Dynamics 365 Business Central information system that provides direct integration with fiscal printers from VAROS.</td>
-<td><a href="SK-FiscalPrinters-Integration.html">SK Fiscal Printers Integration</a></td>
+<tr sourcefile="StreamlineTools/streamlinetools.md" sourcestartlinenumber="23">
+<td sourcefile="StreamlineTools/streamlinetools.md" sourcestartlinenumber="23"><strong sourcefile="StreamlineTools/streamlinetools.md" sourcestartlinenumber="23">SK Fiscal Printers Integration</strong> is an extension for the Microsoft Dynamics 365 Business Central information system that provides direct integration with fiscal printers from VAROS.</td>
+<td sourcefile="StreamlineTools/streamlinetools.md" sourcestartlinenumber="23"><a href="SK-FiscalPrinters-Integration.html" sourcefile="StreamlineTools/streamlinetools.md" sourcestartlinenumber="23">SK Fiscal Printers Integration</a></td>
 </tr>
 </tbody>
 </table>
-<h2 id="see-also">See Also</h2>
-<p><a href="../index.html">ARICOMA Solutions</a><br>
-<a href="../FinancialPack/finance-pack.html">Financial Pack</a><br>
-<a href="../ProductivityPack/productivity-pack.html">Productivity Pack</a><br>
-<a href="../SK/sk-legislative-pack.html">SK Legislative Pack</a></p>
+<h2 id="see-also" sourcefile="StreamlineTools/streamlinetools.md" sourcestartlinenumber="26">See Also</h2>
+<p sourcefile="StreamlineTools/streamlinetools.md" sourcestartlinenumber="27"><a href="../index.html" sourcefile="StreamlineTools/streamlinetools.md" sourcestartlinenumber="27">ARICOMA Solutions</a><br>
+<a href="../FinancialPack/finance-pack.html" sourcefile="StreamlineTools/streamlinetools.md" sourcestartlinenumber="28">Financial Pack</a><br>
+<a href="../ProductivityPack/productivity-pack.html" sourcefile="StreamlineTools/streamlinetools.md" sourcestartlinenumber="29">Productivity Pack</a><br>
+<a href="../SK/sk-legislative-pack.html" sourcefile="StreamlineTools/streamlinetools.md" sourcestartlinenumber="30">SK Legislative Pack</a></p>
 </article>
           </div>
           

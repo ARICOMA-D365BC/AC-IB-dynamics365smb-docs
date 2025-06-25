@@ -78,10 +78,6 @@
 </thead>
 <tbody>
 <tr>
-<td><strong>Analytics Suite</strong> - Power BI solution provides companies with a powerful tool for data analysis and visualization.</td>
-<td><a href="analytics-suite.html">Analytics Suite</a></td>
-</tr>
-<tr>
 <td>The <strong>Attribute Tool</strong> module is an extension for bulk work with product attributes so that the user does not have to enter product attributes for individual products, but can add, edit or delete them for all products on one page.</td>
 <td><a href="attribute-tool.html">Attribute Tool</a></td>
 </tr>

@@ -67,43 +67,16 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="streamline-tools">Streamline Tools</h1>
+<h1 id="support">Support</h1>
 
-<table>
-<thead>
-<tr>
-<th>See</th>
-<th>Also</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Analytics Suite</strong> - Power BI solution provides companies with a powerful tool for data analysis and visualization.</td>
-<td><a href="analytics-suite.html">Analytics Suite</a></td>
-</tr>
-<tr>
-<td>The <strong>Attribute Tool</strong> module is an extension for bulk work with product attributes so that the user does not have to enter product attributes for individual products, but can add, edit or delete them for all products on one page.</td>
-<td><a href="attribute-tool.html">Attribute Tool</a></td>
-</tr>
-<tr>
-<td><strong>Business Pack</strong> integrates frequently used fields and fact boxes directly into your pages.</td>
-<td><a href="Business-Pack.html">Business Pack</a></td>
-</tr>
-<tr>
-<td><strong>GP tom integration</strong> extends the functionality of Dynamics 365 Business Central with the ability to integrate with the Tom payment system from Global Payments.</td>
-<td><a href="gptom-integration.html">GP tom integration</a></td>
-</tr>
-<tr>
-<td><strong>SK Fiscal Printers Integration</strong> is an extension for the Microsoft Dynamics 365 Business Central information system that provides direct integration with fiscal printers from VAROS.</td>
-<td><a href="SK-FiscalPrinters-Integration.html">SK Fiscal Printers Integration</a></td>
-</tr>
-</tbody>
-</table>
-<h2 id="see-also">See Also</h2>
-<p><a href="../index.html">ARICOMA Solutions</a><br>
-<a href="../FinancialPack/finance-pack.html">Financial Pack</a><br>
-<a href="../ProductivityPack/productivity-pack.html">Productivity Pack</a><br>
-<a href="../SK/sk-legislative-pack.html">SK Legislative Pack</a></p>
+<p><img src="media/support.png" alt="Support"></p>
+<p><strong>Applications for our solutions</strong> can be found on GitHub <a href="https://github.com/ARICOMA-D365BC/ARICOMA-SOLUTIONS">ARICOMA Solutions</a>.</p>
+<p><strong>Documentation on our solutions</strong> can be found on our website <a href="https://www.aricoma.com/docs/en-us/dynamics365/business-central/Solutions/solutions.html">ARICOMA Solutions</a>.</p>
+<p><strong>Our apps</strong> for Business Central online can also be found at <a href="https://appsource.microsoft.com/en-us/marketplace/apps?page=1&amp;search=aricoma&amp;product=dynamics-365-business-central">Microsoft Appsource</a>.</p>
+<p><strong>Documentation on changes to our apps (changelog)</strong> can be found on the GitHub site <a href="https://aricoma-d365bc.github.io/ARICOMA-SOLUTIONS/">ARICOMA Apps Update</a>.</p>
+<h2 id="contact">Contact</h2>
+<p>Comments, suggestions, or bugs can be reported via <a href="https://github.com/ARICOMA-D365BC/AC-Solutions/issues">Issues</a> on the GitHub site or by email bc_support@aricoma.com.</p>
+<p>For business information and requirements, please use <a href="https://www.aricoma.com/cs/co-delame/podnikove-aplikace/informacni-systemy-microsoft/erp-pro-stredni-a-mensi-firmy#contact">Contact</a>.</p>
 </article>
           </div>
           
@@ -112,7 +85,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/ARICOMA-D365BC/AC-IB-dynamics365smb-docs/blob/master/business-central/StreamlineTools/streamlinetools.md/#L1" class="contribution-link">Improve this document</a>
+                    <a href="https://github.com/ARICOMA-D365BC/AC-IB-dynamics365smb-docs/blob/master/business-central/support/support.md/#L1" class="contribution-link">Improve this document</a>
                   </li>
                 </ul>
               </div>
