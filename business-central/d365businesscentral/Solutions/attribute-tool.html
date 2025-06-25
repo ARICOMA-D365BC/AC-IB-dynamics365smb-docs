@@ -1,0 +1,149 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Attribute Tool </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Attribute Tool ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../TOC.html">
+    <meta property="docfx:tocrel" content="TOC.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="png" src="../logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="attribute-management">Attribute Management</h1>
+
+<p>The <strong>Attribute Tool</strong> module is an extension for bulk work with product attributes so that the user does not have to enter product attributes for individual products, but can add, edit or delete them for all products on one page. The tool also includes export and import of attributes to an excel file</p>
+<p>The functionality is available on the <strong>Attribute Tool</strong> page, from where individual functions for working with attributes are launched.</p>
+<h2 id="creating-new-attributes">Creating new attributes</h2>
+<ol>
+<li>Select the <img src="media/ui-search/search_small.png" alt="Light bulb icon to open the Tell Me feature" title="Tell me what you want to do">, type <strong>Attribute Tool</strong>, then select the associated link.</li>
+<li>On the <strong>Attribute Tool</strong> page, select the <strong>New</strong> icon.</li>
+<li>Enter the <strong>Item Number</strong>, <strong>Attribute Name</strong>, and <strong>Attribute Value</strong>.</li>
+<li>The <strong>Create</strong> value is automatically added to the <strong>Action</strong> field.</li>
+<li>Now select the <strong>Write Data</strong> icon.</li>
+</ol>
+<p><img src="media/CreateNew.png" alt="Creating new attributes"></p>
+<p>To check, you can view the <strong>Items</strong> page and verify the attributes you have entered for the item.</p>
+<h2 id="edit-existing-attributes">Edit existing attributes</h2>
+<p>Once attributes have been created, you can edit or delete attributes.
+But first, you need to view the existing attributes as follows:</p>
+<ol>
+<li>Select the <img src="media/ui-search/search_small.png" alt="Bulb icon to open the Tell Me" title="Tell me what you want to do"> function, type <strong>Attribute Tool</strong>, and then select the associated link.</li>
+<li>On the <strong>Attribute Tool</strong> page, select the <strong>Load Data</strong> icon and you can now filter which product attributes you want to load by product or attribute name.</li>
+<li>Once filtered, click the <strong>OK</strong> button.</li>
+</ol>
+<p><img src="media/FilterAttributes.png" alt="Filter Attributes"></p>
+<p>You can edit the displayed data as you wish. If you wish to change the value of a given item attribute, change the value in the <strong>Attribute Value</strong> field and the system will automatically change the value of the action field to <strong>Edit</strong>. If you wish to delete the attribute, change the value of the action field to <strong>Delete</strong>. Once you have made all the edits, select the <strong>Write Data</strong> icon to apply the changes to the item data.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Unless you select the <strong>Write Data</strong> icon, the data will remain unchanged. Loading data via the <strong>Load Data</strong> icon automatically overwrites data already written to the page and is not applied to the item attributes.</p>
+</div>
+<p><img src="media/Changes.png" alt="Changes"></p>
+<p>If you wish to delete multiple product attributes in bulk, click on <strong>Three dots</strong> next to one of the records and click <strong>Select more</strong>. This will allow you to select multiple records. Once you have selected all of the desired records, select the <strong>Set to Delete</strong> icon to set the action field value for the selected records to <strong>Delete</strong>. To apply the changes, select the <strong>Write Data</strong> icon again.</p>
+<p><img src="media/SetToDelete.png" alt="Set To Delete"></p>
+<h2 id="modifying-attributes-in-excel">Modifying attributes in Excel</h2>
+<p>Another option for editing attributes is using Excel.</p>
+<p>Again, as in the previous section, you can filter and load the data in Business Central. You can export this data to an Excel file using the <strong>Export Data</strong> icon. Alternatively, you can give <strong>Export Data</strong> without filtering and loading the data first, giving you an excel file with a layout for attribute management.</p>
+<p><img src="media/ExcelAttributes.png" alt="Excel Attributes"></p>
+<p>In the Excel file, you can edit the values as needed and then click on the <strong>Import Data</strong> icon in Business Central and paste the Excel file there. Once pasted, the data will be displayed in Business Central. The value of the <strong>Action</strong> field will be determined by the value you entered in Excel. If you did not enter one, it will be adjusted according to the changes made to the attribute. For example, if you enter the item number and attribute name of an existing item attribute, but you enter a different value for the attribute than the one that is currently there, the field value will automatically be changed to <strong>Edit</strong>.</p>
+<p>You can check and edit the imported data in this way. After checking, select the <strong>Write Data</strong> icon and the data will be overwritten to the item.</p>
+<p><img src="media/ImportedAttributes.png" alt="Imported Attributes"></p>
+<p><strong>See also</strong></p>
+<p><a href="https://learn.microsoft.com/en-us/dynamics365/business-central/inventory-how-work-item-attributes">Working with Item Attributes</a></p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/ARICOMA-D365BC/AC-IB-dynamics365smb-docs/blob/master/business-central/Solutions/attribute-tool.md/#L1" class="contribution-link">Improve this document</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+           <span><a href="https://www.aricoma.com/docs/en-us/dynamics365/business-central/Solutions/solutions.html"><strong>ENGLISH</strong><strong>/</strong><a href="https://www.aricoma.com/docs/cs-cz/dynamics365/business-central/Solutions/solutions.html"><strong>CZECH</strong></a></a></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
