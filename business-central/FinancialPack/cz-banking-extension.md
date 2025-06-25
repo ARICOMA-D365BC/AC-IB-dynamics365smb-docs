@@ -37,7 +37,7 @@ The advanced option provides the ability to automate all steps:
 - triggering bank statement imports across companies
 - automating the processing of statements through to the creation of Payment Journal entries, including the suggestion of matching
 
-![Advanced variant of the CZ Banking extension module](media/ExtCZbanking-schema_Advanced.png)
+![Advanced variant of the CZ Banking extension module](media/cz-banking-ext-schema-advanced.png)
 
 ### Payment orders
 As part of the development of the module, support for automating the sending of Issued Payment Orders across companies and bank accounts will be completed during 2026.
@@ -118,7 +118,7 @@ This method of processing may be useful in a situation with a large number of ac
 5. Clicking on the value in the **Status** field (or directly on the *Bank Statement Number**) in the row will open either a Bank Statement, Payment Journal or Issued Bank Statement depending on the value of the Status field. Perform the next steps to post the statement in the Payment Journal.
 6. Return to the Central Bank Statement Stack and continue with additional statements or another company. 
 
-![Central Bank Statement Stack](media/ExtCZbanking-Central_Stack.png)
+![Central Bank Statement Stack](media/cz-banking-ext-central-stack.png)
 
 > [!TIP]
 > If a bank statement has not been created, or you are importing a new bank account, check the settings see [Bank Statement Processing Settings](cz-banking-extension-setup.md/#Advanced-automated-processing-of-statements)
@@ -149,5 +149,5 @@ The functionality will be added during 2026.
 **See also**
 
 [CZ Banking Extension Setup](cz-banking-extension-setup.md)  
-[CZ Banking Extension API Setup](cz-banking-extension-API-setup.md)  
+[CZ Banking Extension APIs Setup](cz-banking-extension-API-setup.md)  
 [Financial Pack](finance-pack.md)
