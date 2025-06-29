@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>ARICOMA SOLUTIONS - Parcels - Balikobot integration - setup | Microsoft Docs </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="ARICOMA SOLUTIONS - Parcels - Balikobot integration - setup | Microsoft Docs ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../TOC.html">
+    <meta property="docfx:tocrel" content="TOC.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="png" src="../logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="setup---parcels---balíkobot-integration" sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="15">Setup - Parcels - Balíkobot Integration</h1>
+
+<blockquote sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="16">
+<p sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="16">Update: 08.04.2022</p>
+</blockquote>
+<p sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="19">There are several areas that need to be set up for the AC Parcel addon to work properly. The addon is initially set up using the wizard and then the settings can be changed manually.</p>
+<h2 id="addon-settings-areas" sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="21">Addon settings areas:</h2>
+<ul sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="22">
+<li sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="22">Numbered series</li>
+<li sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="23">Expedition places</li>
+<li sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="24">Parcels settings</li>
+<li sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="25">Shipping agents</li>
+<li sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="26">Location Settings</li>
+<li sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="27">Shipment parameters</li>
+<li sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="28">Print Settings</li>
+<li sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="29">Payment settings (COD)</li>
+<li sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="30">Automatic updates</li>
+<li sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="31">Settings in the Sandbox environment</li>
+</ul>
+<p sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="34">Other code lists (Carrier Services, Handling Units and Carrier Branches) are downloaded from the Balíkobot API.</p>
+<h2 id="setting-up-parcels-using-the-wizard" sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="35">Setting up Parcels using the wizard</h2>
+<ol sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="37">
+<li sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="37">Choose the <img src="media/ui-search/search_small.png" sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="37" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="37">Assisted Setup</strong> and then choose the related link.</li>
+<li sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="38">Select Shipment Settings</li>
+<li sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="39">After reading the instructions, click <strong sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="39">Next</strong>.</li>
+<li sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="40">If you want you can import the RapidStart package manually, or you can click <strong sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="40">Next and the package will download and import itself</strong>.</li>
+<li sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="41">Next, create a new shipping location using the <strong sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="41">New</strong> button and fill in the fields:
+<ul sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="42">
+<li sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="42">Code</li>
+<li sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="43">Username</li>
+<li sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="44">Password</li>
+</ul>
+</li>
+<li sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="45">You can also fill in additional information:
+<ul sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="46">
+<li sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="46">Description</li>
+<li sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="47">Name</li>
+<li sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="48">Address</li>
+<li sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="49">City</li>
+<li sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="50">Postcode</li>
+</ul>
+</li>
+<li sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="51">In the <strong sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="51">Expedition Places</strong>, select the newly created record.</li>
+<li sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="52">In the next step, select the location created by the shipping location and click Next.</li>
+<li sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="53">Create a new Shipping Agent using the fields:
+<ul sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="54">
+<li sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="54">Code</li>
+<li sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="55">Name</li>
+<li sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="56">Integration services: Balíkobot.cz</li>
+<li sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="57">Balíkobot code</li>
+<li sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="58">Allow multiple packages - YES</li>
+<li sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="59">Master data synchronization - YES</li>
+</ul>
+</li>
+<li sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="60">Select the <strong sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="60">Synchronize master data</strong>function.</li>
+<li sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="61">In the Number Series field, select the appropriate number series for shipments.</li>
+<li sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="62">Once you have filled in everything and clicked <strong sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="62">Finish</strong>, the assisted guide will close and the master data will begin to synchronize.</li>
+</ol>
+<h2 id="manual-adjustment-of-settings" sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="64">Manual adjustment of settings</h2>
+<h3 id="expedition-places" sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="65">Expedition places</h3>
+<p sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="67">The Expedition Places are locations of your warehouses from where shipments are dispatched. A user can have several expedition places. A different API is required for each expedition place, and the expedition place is associated with one location of your company.</p>
+<ol sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="69">
+<li sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="69">Choose the <img src="media/ui-search/search_small.png" sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="69" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="69">Expedition Places</strong> and then choose the related link.</li>
+<li sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="70">Choose the function <strong sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="70">New</strong>.</li>
+<li sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="71">Insert <strong sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="71">Code</strong> for expedition place, description, address and <strong sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="71">User Name and password</strong> to yours API.</li>
+<li sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="72">Close the list of Expedition places.</li>
+</ol>
+<p sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="74"><img src="media/BB_exp_pl.png" sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="74" alt="Parcels settings"></p>
+<h3 id="location-settings" sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="76">Location Settings</h3>
+<p sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="77">On the tab of the given location it is necessary to select the dispatch place that is connected with the given API. If there are more locations, it is necessary to set the appropriate dispatch point for each. This serves to reduce the error rate of users so that they cannot combine documents with different shipping points into the shipment.</p>
+<p sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="79">To assign a shipping location to a location, you need to set the <strong sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="79">Expedition Places Code</strong>.</p>
+<ol sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="81">
+<li sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="81">Choose the <img src="media/ui-search/search_small.png" sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="81" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="81">Locations</strong> and then choose the related link.</li>
+<li sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="82">Open the desired location tab</li>
+<li sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="83">Fill in <strong sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="83">Expedition Places Code</strong> field on the General tab</li>
+</ol>
+<p sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="85"><img src="media/BB_lokace.png" sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="85" alt="Parcels settings"></p>
+<h3 id="parcels-settings" sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="86">Parcels settings</h3>
+<p sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="88">Basic Package Setup must be made on the <strong sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="88">Parcels Settings</strong>page.
+<img src="media/BB_setup.png" sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="89" alt="Parcels settings"></p>
+<p sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="91">Parcels Management Setup page contain:</p>
+<ul sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="92">
+<li sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="92"><strong sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="92">Parcels No.</strong> - Specifies the No. Series for parcels.</li>
+<li sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="93"><strong sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="93">Default Expediton Place Code</strong> - Specifies the API credentials and shipment location from where the parcel will be shipped.</li>
+<li sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="94"><strong sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="94">Print Handover After Order</strong> – Automatic print of Handover protocols after collection order.</li>
+<li sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="95"><strong sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="95">Default Printer Name</strong> – Specifies the printer for printing labels</li>
+<li sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="96"><strong sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="96">Limit Response Time</strong> – Specifies the timeout of communication.</li>
+<li sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="97"><strong sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="97">Activity Log Enabled</strong> - Starts activity log tracking.</li>
+<li sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="98"><strong sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="98">Debug Mode</strong> – Allows you to intercept messages in communication with the service</li>
+<li sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="99"><strong sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="99">Automatic master data synchronization</strong> - Runs a procedure on the job queue that updates all data from the Package in a certain time period.</li>
+<li sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="100"><strong sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="100">Automatic Transportation Status Update</strong> - Runs a procedure on the job queue that updates the shipment transfer status for the last month in a specific time period.</li>
+</ul>
+<p sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="103">Basic settings are made using the application setup wizard.
+The other tables are downloaded and filled after master data synchronization is enabled.
+These data are updated manually using the &quot;Resynchronize master data&quot; function.</p>
+<h4 id="basic-settings-of-parcels---balíkobot-integration" sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="106">Basic settings of Parcels - Balíkobot integration</h4>
+<p sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="107">To start the balíkobot functions, you need to make the following settings:</p>
+<ol sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="109">
+<li sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="109">Choose the <img src="media/ui-search/search_small.png" sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="109" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="109">Parcels setup</strong> and then choose the related link.</li>
+<li sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="110">Select a number series for shipments</li>
+<li sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="111">Select default Expedition Places</li>
+<li sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="112">Enable or disable automatic printing of collection reports</li>
+<li sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="113">Enable or disable Activity Log</li>
+</ol>
+<h3 id="shipping-agents-setup" sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="115">Shipping Agents setup</h3>
+<p sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="116">The basic codebook is loaded using the RapidStart package for Business Central. This package contains data that is not downloaded from the Balíkobot API:</p>
+<h4 id="table-of-shipping-agents" sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="117">Table of Shipping Agents</h4>
+<p sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="119">Other tables are downloaded and filled after synchronization of master data and in the Shipping Agent table.
+The update of this data is done manually using the &quot;Resynchronization of master data&quot; function.
+<img src="media/BB_shipping-agents.png" sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="121" alt="Balíkobot setup"></p>
+<p sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="123">The overview also includes carriers that you do not have configured with Balíkobot. Additional data is not imported for such data (see below).</p>
+<h3 id="on-the-carrier-overview-there-are-several-fields-to-set-up" sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="124">On the carrier overview, there are several fields to set up:</h3>
+<ul sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="125">
+<li sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="125">Integration Service<strong sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="125">Integrační služba</strong> – Determines through which integration service the shipping agent is used (in this case Balikobot.cz)</li>
+<li sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="126"><strong sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="126">Enable master data synchronization</strong> – Master data may become available after switching on</li>
+<li sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="127"><strong sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="127">Last master data synchronization</strong> – Date of last master data synchronization</li>
+<li sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="128"><strong sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="128">Enabled for Balíkobot</strong> - Carrier is enabled and can be used</li>
+<li sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="129"><strong sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="129">Allow multiple packages</strong> - When creating a shipment, the feature allows you to create multiple packages within one shipment.</li>
+<li sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="130"><strong sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="130">Pallet transport</strong></li>
+<li sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="131"><strong sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="131">Number of handling units</strong> - For pallet transport it is possible to set more handling units.</li>
+<li sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="132"><strong sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="132">Branch only</strong> – Specifies that the carrier serves only as a pickup point.</li>
+<li sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="133"><strong sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="133">Maximum address length</strong> – set the address length for the selected carrier.</li>
+</ul>
+<h3 id="functions-over-shipping-agents" sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="134">Functions over shipping agents</h3>
+<ul sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="135">
+<li sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="135"><strong sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="135">Connection Test</strong> – Test communication between the integration service and Business Central</li>
+<li sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="136"><strong sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="136">Master data synchronization</strong> – Starts master data synchronization</li>
+<li sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="137"><strong sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="137">Shipping Agent Services</strong> - Table of services of individual shipping agent</li>
+<li sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="138"><strong sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="138">Shipping Agent Branches</strong> - Table of locations, where customers can take goods from the carrier</li>
+<li sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="139"><strong sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="139">Handling units</strong> - Table of pallet handling units</li>
+<li sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="140"><strong sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="140">ADR units of the carrier</strong> – Table of ADR units of the carrier</li>
+</ul>
+<p sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="142">If you add a carrier after the first setup has been made using assisted setup, you must fill in the fields correctly:</p>
+<ul sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="143">
+<li sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="143">Code</li>
+<li sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="144">Package Tracking URL</li>
+<li sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="145">Integration service</li>
+<li sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="146">Balíkobot code</li>
+</ul>
+<p sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="148">Then you need to use <strong sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="148">the Synronization function of master data</strong>!</p>
+<h3 id="set-up-shipping-agent-services" sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="149">Set up Shipping Agent Services</h3>
+<p sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="151">Shipping Agent Services are downloaded automatically using the Balikobot API. It is possible to force certain settings for individual Shipping Agents services. To set it up, you must:</p>
+<ol sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="152">
+<li sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="152">Choose the <img src="media/ui-search/search_small.png" sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="152" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="152">Shipping Agents</strong> and then choose the related link.</li>
+<li sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="153">Select the desired carrier from the list and select <strong sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="153">Shipping Agent Services</strong> feature</li>
+<li sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="154">Fill in the fields on the following page as needed:
+<ul sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="155">
+<li sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="155"><strong sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="155">Enabled for Balikobot</strong> - The service can be used (enabled by default)</li>
+<li sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="156"><strong sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="156">Enforce Shipment Weight</strong></li>
+<li sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="157"><strong sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="157">Force shipment volume</strong></li>
+<li sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="158"><strong sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="158">Enforce Shipment Price</strong></li>
+<li sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="159"><strong sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="159">Force cash on delivery</strong></li>
+<li sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="160"><strong sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="160">Enforce shipment variable symbol</strong></li>
+<li sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="161"><strong sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="161">Weight on line</strong> - Weight must be filled in the shipment line</li>
+<li sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="162"><strong sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="162">Services of ČP</strong> – Only for Czech Post service - a long text string of postal services above the parcel
+o	<a href="https://www.balikobot.cz/dokumentace/cp_ciselnik_sluzeb.pdf" sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="163">https://www.balikobot.cz/dokumentace/cp_ciselnik_sluzeb.pdf</a></li>
+</ul>
+</li>
+</ol>
+<h3 id="balikobot-api-settings" sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="166">Balikobot API settings</h3>
+<p sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="168">This system table allows you to configure extended carrier settings. These are settings for API communication, where you can select communication versions and more for selected carriers.</p>
+<p sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="170">From an admin point of view, there is an option to set the shipping agent code for communication in case of changes from Balíkobot (Shipping Agent API Code) when the API shipper name is longer than 10 characters (for example DHL Freight EuroConnect, which had the API name &quot;dhlfreight&quot; and now uses &quot;dhlfreightec&quot;).</p>
+<h2 id="shipment-parameters" sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="175">Shipment parameters</h2>
+<p sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="177">Parameters for individual shipping agents are downloaded from the package package API</p>
+<h3 id="payment-method-settings---cash-on-delivery" sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="179">Payment method settings - Cash on delivery</h3>
+<p sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="181">To set up and use the cash on delivery function, it is necessary to set up booeal <strong sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="181">Cash on delivery</strong> on the payment method.</p>
+<ol sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="183">
+<li sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="183">Choose the <img src="media/ui-search/search_small.png" sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="183" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="183">Payment Method</strong> and then choose the related link.</li>
+<li sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="184">In the overview, check the <strong sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="184">Cash on delivery</strong> option.</li>
+<li sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="185">Close the payment method overview.</li>
+</ol>
+<h2 id="print-settings" sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="186">Print Settings</h2>
+<h3 id="pdf-reader" sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="187">PDF reader</h3>
+<p sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="188">You need to have a PDF reader installed to print labels. To work with labels, we recommend Foxit pdf and also have it set as the default program for PDF files.</p>
+<h3 id="print-format-selection---client-zone" sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="189">Print Format Selection - Client Zone</h3>
+<p sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="190">The basic step in setting up label printing is to define how the PDF with labels will be generated by Package. In the client zone (<a href="https://client.balikobot.cz/" sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="190">https://client.balikobot.cz/</a>), the user must set whether to print in full page format or according to positions on A4 size paper. It all depends on what printer it will be printed on. The label printing position does not need to be selected for printing to the label printer.</p>
+<h3 id="printer-selection" sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="192">Printer selection</h3>
+<p sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="193">To set up label printing, you need to set the report ID and assign a printer to the user. The Print Labels feature is set to print to a defined printer.</p>
+<p sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="195">To define a printer, it is necessary:</p>
+<ol sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="196">
+<li sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="196">Choose the <img src="media/ui-search/search_small.png" sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="196" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="196">Printer Selections</strong> and then choose the related link.</li>
+<li sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="197">Choose <strong sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="197">New</strong>.</li>
+<li sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="198">Select User ID, Report ID 52068430, and Printer Name</li>
+</ol>
+<p sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="200">Printing of the handover protocol is printed automatically after ordering the collection. If the user does not want automatic printing, just turn off Boolean - Printing handover protocols in the Balíkobot Settings. Printing is done from the Default Printer according to your device. Alternatively, if you have the default printer set in <strong sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="200">Printer Selections</strong> as the rest of your print reports.</p>
+<h2 id="automatic-updates" sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="202">Automatic updates</h2>
+<h3 id="automatic-master-data-update" sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="204">Automatic master data update</h3>
+<p sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="205">The automatic update of the master data starts a procedure on the job queue, which updates all data from Balikobot in a certain period of time (By default on Sunday at 14:00).</p>
+<p sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="207">To turn on this feature, follow these steps:</p>
+<ol sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="208">
+<li sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="208">Choose the <img src="media/ui-search/search_small.png" sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="208" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="208">Parcels setup</strong> and then choose the related link.</li>
+<li sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="209">In Parcels Management Setup, turn on &quot;Run Master Data Sync. Task&quot;.</li>
+<li sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="210">The user will be prompted to create and open a new job queue item that will be in the &quot;Ready&quot; state.</li>
+<li sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="211">After that, you can close the settings.</li>
+</ol>
+<h3 id="automatic-update-of-the-transport-status" sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="213">Automatic update of the transport status</h3>
+<p sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="214">Automatic shipment status update triggers a procedure on the job queue that updates the shipment shipment status for the last month over a period of time.</p>
+<p sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="216">To turn on this feature, follow these steps:</p>
+<ol sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="217">
+<li sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="217">Choose the <img src="media/ui-search/search_small.png" sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="217" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="217">Parcels setup</strong> and then choose the related link.</li>
+<li sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="218">In Parcels Management Setup, turn on &quot;Run Track Status Update Task&quot;.</li>
+<li sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="219">The user will be prompted to create and open a new job queue item that will be in the &quot;Ready&quot; state.</li>
+<li sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="220">After that, you can close the settings.</li>
+</ol>
+<h2 id="settings-in-the-sandbox-environment" sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="222">Settings in the Sandbox environment</h2>
+<h3 id="runtime-deadlock" sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="223">Runtime deadlock</h3>
+<p sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="225">When setting up the add-on with assistance, the message &quot;<em sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="225">The request was blocked by the runtime</em>&quot; may be displayed.</p>
+<p sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="227">To resolve this issue, follow these steps:</p>
+<ol sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="228">
+<li sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="228">Choose the <img src="media/ui-search/search_small.png" sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="228" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="228">Extension Management</strong> and then choose the related link.</li>
+<li sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="229"><strong sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="229">The Installed Extensions</strong> page opens.</li>
+<li sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="230">Select the line extension <strong sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="230">Parcels</strong> and then use the action <strong sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="230">Configuration</strong>.</li>
+<li sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="231">On the <strong sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="231">Extension Configuration</strong> page, enable the <strong sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="231">Enable HttpClient requests</strong> switch.</li>
+<li sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="232">You can then close the page and run the Guided Wizard again.</li>
+</ol>
+<h2 id="paperless-trade-settings" sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="234">PaperLess Trade settings</h2>
+<h3 id="turn-on-paperless-trade-at-the-carrier" sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="236">Turn on Paperless Trade at the carrier</h3>
+<p sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="238">Paperless Trade is used to send an electronic invoice (in the case of a pro-forma invoice) for customs clearance.</p>
+<p sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="240">To set it up correctly, follow these steps:</p>
+<ol sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="242">
+<li sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="242">Choose the <img src="media/ui-search/search_small.png" sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="242" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="242">Shipping Agents</strong> and then choose the related link.</li>
+<li sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="243">On the carriers overview, select the carrier for which you want to turn on the service.</li>
+<li sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="244">To turn on the service, select the <strong sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="244">Paperless Trade</strong> field.</li>
+<li sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="245">After setup, you can close the page</li>
+</ol>
+<h3 id="automatically-attach-an-invoice-to-a-shipment" sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="247">Automatically attach an invoice to a shipment</h3>
+<p sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="249">For Paperless Trade to work properly, you must attach a PDF file of the invoice (pro-forma invoice) to the shipment.</p>
+<p sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="251">In the case of creating a shipment from a billed sales invoice, it is possible to generate a document and attach it automatically when creating the shipment. To make the correct settings, proceed as follows:</p>
+<ol sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="253">
+<li sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="253">Choose the <img src="media/ui-search/search_small.png" sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="253" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="253">Shipping Agents</strong> and then choose the related link.</li>
+<li sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="254">In the carriers overview, select the carrier for which you want to turn on automatic document creation.</li>
+<li sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="255">To turn on automatic PLT document creation, select the <strong sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="255">Create PLT Document</strong>field.</li>
+<li sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="256">Once set up, you can close the page.</li>
+</ol>
+<h2 id="see-also" sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="260">See also</h2>
+<p sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="261"><a href="parcels.html" sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="261">Parcels</a><br>
+<a href="productivity-pack.html" sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="262">Productivity Pack</a><br>
+<a href="../index.html" sourcefile="ProductivityPack/parcels-setup.md" sourcestartlinenumber="263">ARICOMA Solutions</a></p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/ARICOMA-D365BC/AC-IB-dynamics365smb-docs/blob/master/business-central/ProductivityPack/parcels-setup.md/#L1" class="contribution-link">Improve this document</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+           <span><a href="https://www.aricoma.com/docs/en-us/dynamics365/business-central/Solutions/solutions.html"><strong>ENGLISH</strong><strong>/</strong><a href="https://www.aricoma.com/docs/cs-cz/dynamics365/business-central/Solutions/solutions.html"><strong>CZECH</strong></a></a></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
