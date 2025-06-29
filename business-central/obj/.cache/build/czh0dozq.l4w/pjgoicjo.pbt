@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>ARICOMA SOLUTIONS </title>
+    <title>AC - Financial pack -  Factoring | Microsoft Docs </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="ARICOMA SOLUTIONS ">
+    <meta name="title" content="AC - Financial pack -  Factoring | Microsoft Docs ">
     <meta name="generator" content="docfx 2.59.4.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
@@ -67,36 +67,57 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="microsoft-dynamics-365-business-central">Microsoft Dynamics 365 Business Central</h1>
+<h1 id="factoring-setup">Factoring Setup</h1>
 
-<p>Microsoft Dynamics 365 Business Central is a modern information system for small and medium-sized companies looking for a simple and easily customizable solution with comprehensive coverage of their needs and an intuitive user experience. It offers increased productivity and competitiveness, saves upfront investment and reduces operational and safety concerns.</p>
-<p><img src="media/ARICOMAD365BC_SaaS_1280x720.png" alt="Microsoft Dynamics 365 Business Central" title="Microsoft Dynamics 365 Business Central"></p>
-<p>Data is available anytime and from anywhere. Operation of the information system is possible in the cloud or in your own environment. Online system operation in the cloud has a major advantage in lower initial implementation costs, ensured security, and easier system updates. Users can connect from a computer, smartphone or tablet with Google Android or Apple iOS.</p>
-<p>More information about Business Central can be found on our <a href="https://www.acdynamics365.cz/aplikace/provoz-mensi-firmy">website ACDynamics365.cz</a>.</p>
-<p><strong>Implementing Microsoft Dynamics 365 Business Central from ARICOMA is easy and fast thanks to a wide range of extension modules and industry solutions.</strong></p>
-<h2 id="aricoma-extension-modules">ARICOMA EXTENSION MODULES</h2>
-<p>We are expanding the standard Dynamics 365 Business Central system with a range of functionality complementing legislative requirements and best practices.</p>
-<h2 id="slovak-localization">Slovak Localization</h2>
-<p>For Slovak companies we provide extension to <a href="sk-legislative-pack.html">Slovak legislation and Slovak language</a>.</p>
-<h2 id="aricoma-industry-solutions">ARICOMA INDUSTRY SOLUTIONS</h2>
-<p>In addition to the expansion modules, the specialized industry solutions listed below are available.</p>
+<p>Basic settings of the facoring add-on.</p>
+<h2 id="setup-of-factoring-add-on">Setup of Factoring add-on</h2>
+<h3 id="necessary-business-central-settings">Necessary Business Central settings</h3>
+<p>For the correct function of the add-on, it is necessary to set and create other settings in Business Central.</p>
+<table>
+<thead>
+<tr>
+<th>Settings</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Chart of Accounts</strong></td>
+<td>Chart of Accounts It is necessary to open financial accounts for tracking receivables, cost and revenue accounts for factoring re-accounting; if they no longer exist.</td>
+</tr>
+<tr>
+<td><strong>Factoring group account</strong></td>
+<td>hrough the Customer group account, it is necessary to create a new factoring group account, which will be used for factoring accounting. <img src="media/faktoring_setup_groupes.png" alt="Factoring groups"></td>
+</tr>
+<tr>
+<td><strong>Customer Group Alternate Account</strong></td>
+<td>New customer group account substitution combinations must be created (available from the Customer Posting Group Substitute page).<img src="media/faktoring_setup_groupes_alt.png" alt="Substitute accounting groups for factoring"></td>
+</tr>
+</tbody>
+</table>
+<h3 id="factoring-settings">Factoring settings</h3>
+<p>On the Factoring Settings page, you need to make the basic settings for the factoring module:</p>
+<ol>
+<li>Choose the <img src="media/ui-search/search_small.png" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong>Factoring Setup</strong> and then choose the related link.</li>
+<li>Fill in the following fields on the Factoring setup:
 <ul>
-<li>Spa, hotel and wellness</li>
-<li>Transport and logistics</li>
-<li>Project and order management</li>
-<li>Assembly production</li>
-<li>Nonprofit organizations</li>
-<li>Service companies</li>
-<li>Holding companies</li>
-<li>Publishing</li>
-<li>Pharmaceutical and cosmetics industry</li>
-<li>Wholesale and retail, distribution</li>
-<li>and a number of other</li>
+<li><strong>Factoring Posting Group</strong> –  the posting group that is used for posting a factoring receivable</li>
+<li><strong>Cost Bal. Account No.</strong> – the account to which the receivable from the customer is posted</li>
+<li><strong>Icome Bal. Account No. 2</strong> – the account to which the factoring income is recognised</li>
+<li><strong>DPH účto skupina zboží faktoringu</strong> – here you need to set up a VAT posting group of goods, which in combination with the VAT business posting group from the customer-factor represents posting without VAT</li>
+<li><strong>Orig. Entry Advanced Posting</strong> – the YES option allows you to continue tracking the receivable from the original customer on off-balance sheet accounts</li>
+<li><strong>Adv. Posting Group</strong> and <strong>Adv. Posting Bal. Account No.</strong> – off-balance sheet accounts on which the receivable from the original customer will be further monitored</li>
+<li><strong>Factoring Nos.</strong> – number series by which factoring will be numbered<br>
+<img src="media/faktoring_setup.png" alt="Factoring Setup"></li>
 </ul>
-<h2 id="see-also">See also</h2>
-<p><a href="finance-pack.html">Financial Pack</a><br>
-<a href="productivity-pack.html">Productivity Pack</a><br>
-<a href="sk-legislative-pack.html">SK Legislative Pack</a></p>
+</li>
+<li>After filling in the fields, you can close the page.</li>
+</ol>
+<h3 id="factoring-templates">Factoring Templates</h3>
+<p>It is possible to define templates for converting factoring agreements into Microsoft Word documents. You can create a document on the factoring tab by using the <strong>Create Factoring Document</strong> feature.</p>
+<p><strong>See also</strong></p>
+<p><a href="factoring.html">Factoring</a><br>
+<a href="finance-pack.html">Financial Pack</a></p>
 </article>
           </div>
           
@@ -105,7 +126,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/ARICOMA-D365BC/AC-IB-dynamics365smb-docs/blob/master/business-central/Solutions/solutions.md/#L1" class="contribution-link">Improve this document</a>
+                    <a href="https://github.com/ARICOMA-D365BC/AC-IB-dynamics365smb-docs/blob/master/business-central/Solutions/factoring-setup.md/#L1" class="contribution-link">Improve this document</a>
                   </li>
                 </ul>
               </div>

@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>ARICOMA SOLUTIONS </title>
+    <title>Business Pack </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="ARICOMA SOLUTIONS ">
+    <meta name="title" content="Business Pack ">
     <meta name="generator" content="docfx 2.59.4.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
@@ -67,36 +67,30 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="microsoft-dynamics-365-business-central">Microsoft Dynamics 365 Business Central</h1>
+<h1 id="business-pack">Business Pack</h1>
 
-<p>Microsoft Dynamics 365 Business Central is a modern information system for small and medium-sized companies looking for a simple and easily customizable solution with comprehensive coverage of their needs and an intuitive user experience. It offers increased productivity and competitiveness, saves upfront investment and reduces operational and safety concerns.</p>
-<p><img src="media/ARICOMAD365BC_SaaS_1280x720.png" alt="Microsoft Dynamics 365 Business Central" title="Microsoft Dynamics 365 Business Central"></p>
-<p>Data is available anytime and from anywhere. Operation of the information system is possible in the cloud or in your own environment. Online system operation in the cloud has a major advantage in lower initial implementation costs, ensured security, and easier system updates. Users can connect from a computer, smartphone or tablet with Google Android or Apple iOS.</p>
-<p>More information about Business Central can be found on our <a href="https://www.acdynamics365.cz/aplikace/provoz-mensi-firmy">website ACDynamics365.cz</a>.</p>
-<p><strong>Implementing Microsoft Dynamics 365 Business Central from ARICOMA is easy and fast thanks to a wide range of extension modules and industry solutions.</strong></p>
-<h2 id="aricoma-extension-modules">ARICOMA EXTENSION MODULES</h2>
-<p>We are expanding the standard Dynamics 365 Business Central system with a range of functionality complementing legislative requirements and best practices.</p>
-<h2 id="slovak-localization">Slovak Localization</h2>
-<p>For Slovak companies we provide extension to <a href="sk-legislative-pack.html">Slovak legislation and Slovak language</a>.</p>
-<h2 id="aricoma-industry-solutions">ARICOMA INDUSTRY SOLUTIONS</h2>
-<p>In addition to the expansion modules, the specialized industry solutions listed below are available.</p>
+<p><strong>Business Pack integrates frequently used fields and fact boxes directly into your pages.</strong></p>
+<p>Tired of manually setting up field views in your Business Central?<br>
+Business Pack automatically adds useful and frequently used fields and fact boxes directly to pages so you can focus on what matters – your business.</p>
+<p><img src="media/SalesPack1_1280x720.png" alt="Sales Orders"></p>
+<h2 id="main-benefits-of-business-pack">Main Benefits of Business Pack</h2>
 <ul>
-<li>Spa, hotel and wellness</li>
-<li>Transport and logistics</li>
-<li>Project and order management</li>
-<li>Assembly production</li>
-<li>Nonprofit organizations</li>
-<li>Service companies</li>
-<li>Holding companies</li>
-<li>Publishing</li>
-<li>Pharmaceutical and cosmetics industry</li>
-<li>Wholesale and retail, distribution</li>
-<li>and a number of other</li>
+<li>Automatic display of key fields – adds fields for important data such as recipient's address and city, delivery date, payment method, company ID, and VAT number.</li>
+<li>Fact boxes on key pages – quick access to important information on pages such as Sales and Purchase Orders, Deliveries, and Invoices.</li>
+<li>Easy visibility and editing – all fields and fact boxes are visible by default.</li>
 </ul>
-<h2 id="see-also">See also</h2>
-<p><a href="finance-pack.html">Financial Pack</a><br>
-<a href="productivity-pack.html">Productivity Pack</a><br>
-<a href="sk-legislative-pack.html">SK Legislative Pack</a></p>
+<h2 id="key-features-of-the-application-include">Key Features of the Application Include</h2>
+<ul>
+<li>Overviews of sales and purchase orders with key information.</li>
+<li>Adding new fact boxes and fields for better data management.</li>
+<li>Adding notes to customers and sales documents.</li>
+<li>Detailed overviews of items and their inventory.</li>
+</ul>
+<p><img src="media/SalesPack4_1280x720.png" alt="Item Overview"></p>
+<p>Simplify your work and increase productivity with Business Pack!</p>
+<h2 id="see-also">See Also</h2>
+<p><a href="solutions.html">ARICOMA Solutions</a><br>
+<a href="streamlinetools.html">Streamline Tools</a></p>
 </article>
           </div>
           
@@ -105,7 +99,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/ARICOMA-D365BC/AC-IB-dynamics365smb-docs/blob/master/business-central/Solutions/solutions.md/#L1" class="contribution-link">Improve this document</a>
+                    <a href="https://github.com/ARICOMA-D365BC/AC-IB-dynamics365smb-docs/blob/master/business-central/Solutions/Business-Pack.md/#L1" class="contribution-link">Improve this document</a>
                   </li>
                 </ul>
               </div>
