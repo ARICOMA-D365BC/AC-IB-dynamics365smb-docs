@@ -1,4 +1,4 @@
-﻿
+
 <div id="sidetoggle">
   <div>
     <div class="sidefilter">
@@ -14,275 +14,275 @@
           <ul class="nav level1">
                 <li>
                     <span class="expand-stub"></span>
-                    <a href="solutions.html" name="" title="Solutions">Solutions</a>
+                    <a href="../Solutions/solutions.html" name="" title="Solutions">Solutions</a>
                     
                     <ul class="nav level2">
                           <li>
                               <span class="expand-stub"></span>
-                              <a href="analytics-suite.html" name="" title="Analytics Suite">Analytics Suite</a>
+                              <a href="../Solutions/analytics-suite.html" name="" title="Analytics Suite">Analytics Suite</a>
                               
                               <ul class="nav level3">
                                     <li>
-                                        <a href="analytics-suite-setup.html" name="" title="Settings - Analytics Suite">Settings - Analytics Suite</a>
+                                        <a href="../Solutions/analytics-suite-setup.html" name="" title="Settings - Analytics Suite">Settings - Analytics Suite</a>
                                     </li>
                               </ul>
                           </li>
                           <li>
                               <span class="expand-stub"></span>
-                              <a href="controling-basic.html" name="" title="Application extension set">Application extension set</a>
+                              <a href="../Solutions/controling-basic.html" name="" title="Application extension set">Application extension set</a>
                               
                               <ul class="nav level3">
                                     <li>
-                                        <a href="controling-basic-setup.html" name="" title="Settings - Application extension set">Settings - Application extension set</a>
+                                        <a href="../Solutions/controling-basic-setup.html" name="" title="Settings - Application extension set">Settings - Application extension set</a>
                                     </li>
                               </ul>
                           </li>
                           <li>
-                              <a href="attribute-tool.html" name="" title="Attribute Tool">Attribute Tool</a>
+                              <a href="../Solutions/attribute-tool.html" name="" title="Attribute Tool">Attribute Tool</a>
                           </li>
                           <li>
-                              <a href="Business-Pack.html" name="" title="Business Pack">Business Pack</a>
-                          </li>
-                          <li>
-                              <span class="expand-stub"></span>
-                              <a href="centraldatabase.html" name="" title="Central Database">Central Database</a>
-                              
-                              <ul class="nav level3">
-                                    <li>
-                                        <a href="centraldatabase-setup.html" name="" title="Settings - Central Database">Settings - Central Database</a>
-                                    </li>
-                              </ul>
+                              <a href="../Solutions/Business-Pack.html" name="" title="Business Pack">Business Pack</a>
                           </li>
                           <li>
                               <span class="expand-stub"></span>
-                              <a href="complaints-management.html" name="" title="Complaints Management">Complaints Management</a>
+                              <a href="../Solutions/centraldatabase.html" name="" title="Central Database">Central Database</a>
                               
                               <ul class="nav level3">
                                     <li>
-                                        <a href="complaints-management-setup.html" name="" title="Settings - Complaints Management">Settings - Complaints Management</a>
+                                        <a href="../Solutions/centraldatabase-setup.html" name="" title="Settings - Central Database">Settings - Central Database</a>
                                     </li>
                               </ul>
                           </li>
                           <li>
                               <span class="expand-stub"></span>
-                              <a href="cz-banking-extension.html" name="" title="CZ Banking Extension">CZ Banking Extension</a>
+                              <a href="../Solutions/complaints-management.html" name="" title="Complaints Management">Complaints Management</a>
                               
                               <ul class="nav level3">
                                     <li>
-                                        <a href="cz-banking-extension-setup.html" name="" title="Settings - CZ Banking Extension">Settings - CZ Banking Extension</a>
-                                    </li>
-                                    <li>
-                                        <a href="cz-banking-extension-API-setup.html" name="" title="Settings - API Connectors">Settings - API Connectors</a>
+                                        <a href="../Solutions/complaints-management-setup.html" name="" title="Settings - Complaints Management">Settings - Complaints Management</a>
                                     </li>
                               </ul>
                           </li>
                           <li>
                               <span class="expand-stub"></span>
-                              <a href="data-boxes.html" name="" title="Data boxes">Data boxes</a>
+                              <a href="../Solutions/cz-banking-extension.html" name="" title="CZ Banking Extension">CZ Banking Extension</a>
                               
                               <ul class="nav level3">
                                     <li>
-                                        <a href="data-boxes-setup.html" name="" title="Settings - Data Boxes">Settings - Data Boxes</a>
+                                        <a href="../Solutions/cz-banking-extension-setup.html" name="" title="Settings - CZ Banking Extension">Settings - CZ Banking Extension</a>
+                                    </li>
+                                    <li>
+                                        <a href="../Solutions/cz-banking-extension-API-setup.html" name="" title="Settings - API Connectors">Settings - API Connectors</a>
                                     </li>
                               </ul>
                           </li>
                           <li>
                               <span class="expand-stub"></span>
-                              <a href="document-links.html" name="" title="Document Links (Sharepoint)">Document Links (Sharepoint)</a>
+                              <a href="../Solutions/data-boxes.html" name="" title="Data boxes">Data boxes</a>
                               
                               <ul class="nav level3">
                                     <li>
-                                        <a href="document-links-setup.html" name="" title="Settings - Document Links (Sharepoint)">Settings - Document Links (Sharepoint)</a>
+                                        <a href="../Solutions/data-boxes-setup.html" name="" title="Settings - Data Boxes">Settings - Data Boxes</a>
                                     </li>
                               </ul>
                           </li>
                           <li>
                               <span class="expand-stub"></span>
-                              <a href="edi-connector-basic.html" name="" title="EDI connector base">EDI connector base</a>
+                              <a href="../Solutions/document-links.html" name="" title="Document Links (Sharepoint)">Document Links (Sharepoint)</a>
                               
                               <ul class="nav level3">
                                     <li>
-                                        <a href="edi-connector-basic-setup.html" name="" title="Settings - EDI connector base">Settings - EDI connector base</a>
+                                        <a href="../Solutions/document-links-setup.html" name="" title="Settings - Document Links (Sharepoint)">Settings - Document Links (Sharepoint)</a>
                                     </li>
                               </ul>
                           </li>
                           <li>
                               <span class="expand-stub"></span>
-                              <a href="elektronic-dokuments.html" name="" title="Electronic invoicing">Electronic invoicing</a>
+                              <a href="../Solutions/edi-connector-basic.html" name="" title="EDI connector base">EDI connector base</a>
                               
                               <ul class="nav level3">
                                     <li>
-                                        <a href="elektronic-dokuments-setup.html" name="" title="Settings - Electronic invoicing">Settings - Electronic invoicing</a>
+                                        <a href="../Solutions/edi-connector-basic-setup.html" name="" title="Settings - EDI connector base">Settings - EDI connector base</a>
                                     </li>
                               </ul>
                           </li>
                           <li>
                               <span class="expand-stub"></span>
-                              <a href="factoring.html" name="" title="Factoring">Factoring</a>
+                              <a href="../Solutions/elektronic-dokuments.html" name="" title="Electronic invoicing">Electronic invoicing</a>
                               
                               <ul class="nav level3">
                                     <li>
-                                        <a href="factoring-setup.html" name="" title="Settings - Factoring">Settings - Factoring</a>
+                                        <a href="../Solutions/elektronic-dokuments-setup.html" name="" title="Settings - Electronic invoicing">Settings - Electronic invoicing</a>
                                     </li>
                               </ul>
                           </li>
                           <li>
                               <span class="expand-stub"></span>
-                              <a href="general-parameters.html" name="" title="General parameters">General parameters</a>
+                              <a href="../Solutions/factoring.html" name="" title="Factoring">Factoring</a>
                               
                               <ul class="nav level3">
                                     <li>
-                                        <a href="general-parameters-setup.html" name="" title="Settings - General Parameters">Settings - General Parameters</a>
+                                        <a href="../Solutions/factoring-setup.html" name="" title="Settings - Factoring">Settings - Factoring</a>
                                     </li>
                               </ul>
                           </li>
                           <li>
                               <span class="expand-stub"></span>
-                              <a href="gptom-integration.html" name="" title="GP Tom Integration">GP Tom Integration</a>
+                              <a href="../Solutions/general-parameters.html" name="" title="General parameters">General parameters</a>
                               
                               <ul class="nav level3">
                                     <li>
-                                        <a href="gptom-integration-setup.html" name="" title="Settings - GP Tom Integration">Settings - GP Tom Integration</a>
+                                        <a href="../Solutions/general-parameters-setup.html" name="" title="Settings - General Parameters">Settings - General Parameters</a>
                                     </li>
                               </ul>
                           </li>
                           <li>
                               <span class="expand-stub"></span>
-                              <a href="helpdesk.html" name="" title="HelpDesk">HelpDesk</a>
+                              <a href="../Solutions/gptom-integration.html" name="" title="GP Tom Integration">GP Tom Integration</a>
                               
                               <ul class="nav level3">
                                     <li>
-                                        <a href="helpdesk-setup.html" name="" title="Settings - HelpDesk">Settings - HelpDesk</a>
+                                        <a href="../Solutions/gptom-integration-setup.html" name="" title="Settings - GP Tom Integration">Settings - GP Tom Integration</a>
                                     </li>
                               </ul>
                           </li>
                           <li>
                               <span class="expand-stub"></span>
-                              <a href="insolvence-register.html" name="" title="Insolvency Register">Insolvency Register</a>
+                              <a href="../Solutions/helpdesk.html" name="" title="HelpDesk">HelpDesk</a>
                               
                               <ul class="nav level3">
                                     <li>
-                                        <a href="insolvence-register-setup.html" name="" title="Settings - Insolvency Register">Settings - Insolvency Register</a>
+                                        <a href="../Solutions/helpdesk-setup.html" name="" title="Settings - HelpDesk">Settings - HelpDesk</a>
                                     </li>
                               </ul>
                           </li>
                           <li>
                               <span class="expand-stub"></span>
-                              <a href="job-queue-extension.html" name="" title="Job Queue Extension">Job Queue Extension</a>
+                              <a href="../Solutions/insolvence-register.html" name="" title="Insolvency Register">Insolvency Register</a>
                               
                               <ul class="nav level3">
                                     <li>
-                                        <a href="job-queue-extension-setup.html" name="" title="Settings - Job Queue Extension">Settings - Job Queue Extension</a>
+                                        <a href="../Solutions/insolvence-register-setup.html" name="" title="Settings - Insolvency Register">Settings - Insolvency Register</a>
                                     </li>
                               </ul>
                           </li>
                           <li>
                               <span class="expand-stub"></span>
-                              <a href="incoming-mail.html" name="" title="Mail records">Mail records</a>
+                              <a href="../Solutions/job-queue-extension.html" name="" title="Job Queue Extension">Job Queue Extension</a>
                               
                               <ul class="nav level3">
                                     <li>
-                                        <a href="incoming-mail-setup.html" name="" title="Settings - Mail records">Settings - Mail records</a>
+                                        <a href="../Solutions/job-queue-extension-setup.html" name="" title="Settings - Job Queue Extension">Settings - Job Queue Extension</a>
                                     </li>
                               </ul>
                           </li>
                           <li>
                               <span class="expand-stub"></span>
-                              <a href="multiple-payment-methods.html" name="" title="Multiple Payment Methods">Multiple Payment Methods</a>
+                              <a href="../Solutions/incoming-mail.html" name="" title="Mail records">Mail records</a>
                               
                               <ul class="nav level3">
                                     <li>
-                                        <a href="multiple-payment-methods-setup.html" name="" title="Settings - Multiple Payment Methods">Settings - Multiple Payment Methods</a>
+                                        <a href="../Solutions/incoming-mail-setup.html" name="" title="Settings - Mail records">Settings - Mail records</a>
                                     </li>
                               </ul>
                           </li>
                           <li>
                               <span class="expand-stub"></span>
-                              <a href="notifications.html" name="" title="Notifications">Notifications</a>
+                              <a href="../Solutions/multiple-payment-methods.html" name="" title="Multiple Payment Methods">Multiple Payment Methods</a>
                               
                               <ul class="nav level3">
                                     <li>
-                                        <a href="notifications-setup.html" name="" title="Settings - Notifications">Settings - Notifications</a>
+                                        <a href="../Solutions/multiple-payment-methods-setup.html" name="" title="Settings - Multiple Payment Methods">Settings - Multiple Payment Methods</a>
                                     </li>
                               </ul>
                           </li>
                           <li>
                               <span class="expand-stub"></span>
-                              <a href="pack-tracking-basic.html" name="" title="Packaging records">Packaging records</a>
+                              <a href="../Solutions/notifications.html" name="" title="Notifications">Notifications</a>
                               
                               <ul class="nav level3">
                                     <li>
-                                        <a href="pack-tracking-basic-setup.html" name="" title="Settings - Packaging records">Settings - Packaging records</a>
+                                        <a href="../Solutions/notifications-setup.html" name="" title="Settings - Notifications">Settings - Notifications</a>
                                     </li>
                               </ul>
                           </li>
                           <li>
                               <span class="expand-stub"></span>
-                              <a href="pack-tracking-return-packing.html" name="" title="Packaging records - Returnable packaging ">Packaging records - Returnable packaging </a>
+                              <a href="../Solutions/pack-tracking-basic.html" name="" title="Packaging records">Packaging records</a>
                               
                               <ul class="nav level3">
                                     <li>
-                                        <a href="pack-tracking-return-packing-setup.html" name="" title="Settings - Returnable Packaging">Settings - Returnable Packaging</a>
+                                        <a href="../Solutions/pack-tracking-basic-setup.html" name="" title="Settings - Packaging records">Settings - Packaging records</a>
                                     </li>
                               </ul>
                           </li>
                           <li>
                               <span class="expand-stub"></span>
-                              <a href="parcels.html" name="" title="Parcels">Parcels</a>
+                              <a href="../Solutions/pack-tracking-return-packing.html" name="" title="Packaging records - Returnable packaging ">Packaging records - Returnable packaging </a>
                               
                               <ul class="nav level3">
                                     <li>
-                                        <a href="parcels-setup.html" name="" title="Settings - Parcels">Settings - Parcels</a>
+                                        <a href="../Solutions/pack-tracking-return-packing-setup.html" name="" title="Settings - Returnable Packaging">Settings - Returnable Packaging</a>
                                     </li>
                               </ul>
                           </li>
                           <li>
                               <span class="expand-stub"></span>
-                              <a href="production-tools.html" name="" title="Production Tools">Production Tools</a>
+                              <a href="../Solutions/parcels.html" name="" title="Parcels">Parcels</a>
                               
                               <ul class="nav level3">
                                     <li>
-                                        <a href="production-tools-setup.html" name="" title="Settings - Production Tools">Settings - Production Tools</a>
+                                        <a href="../Solutions/parcels-setup.html" name="" title="Settings - Parcels">Settings - Parcels</a>
                                     </li>
                               </ul>
                           </li>
                           <li>
                               <span class="expand-stub"></span>
-                              <a href="spooler.html" name="" title="Spooler">Spooler</a>
+                              <a href="../Solutions/production-tools.html" name="" title="Production Tools">Production Tools</a>
                               
                               <ul class="nav level3">
                                     <li>
-                                        <a href="spooler-setup.html" name="" title="Settings - Spooler">Settings - Spooler</a>
+                                        <a href="../Solutions/production-tools-setup.html" name="" title="Settings - Production Tools">Settings - Production Tools</a>
                                     </li>
                               </ul>
                           </li>
                           <li>
                               <span class="expand-stub"></span>
-                              <a href="workflow-status-management.html" name="" title="Status Management (WorkFlow)">Status Management (WorkFlow)</a>
+                              <a href="../Solutions/spooler.html" name="" title="Spooler">Spooler</a>
                               
                               <ul class="nav level3">
                                     <li>
-                                        <a href="workflow-status-management-setup.html" name="" title="Settings - Status Management (WorkFlow)">Settings - Status Management (WorkFlow)</a>
+                                        <a href="../Solutions/spooler-setup.html" name="" title="Settings - Spooler">Settings - Spooler</a>
                                     </li>
                               </ul>
                           </li>
                           <li>
                               <span class="expand-stub"></span>
-                              <a href="transport-basic.html" name="" title="Transport - Basic">Transport - Basic</a>
+                              <a href="../Solutions/workflow-status-management.html" name="" title="Status Management (WorkFlow)">Status Management (WorkFlow)</a>
                               
                               <ul class="nav level3">
                                     <li>
-                                        <a href="transport-basic-setup.html" name="" title="Settings - Transport - Basic">Settings - Transport - Basic</a>
+                                        <a href="../Solutions/workflow-status-management-setup.html" name="" title="Settings - Status Management (WorkFlow)">Settings - Status Management (WorkFlow)</a>
                                     </li>
                               </ul>
                           </li>
                           <li>
                               <span class="expand-stub"></span>
-                              <a href="transport-planning.html" name="" title="Transport - Planning">Transport - Planning</a>
+                              <a href="../Solutions/transport-basic.html" name="" title="Transport - Basic">Transport - Basic</a>
                               
                               <ul class="nav level3">
                                     <li>
-                                        <a href="transport-planning-setup.html" name="" title="Settings - Transport - Planning">Settings - Transport - Planning</a>
+                                        <a href="../Solutions/transport-basic-setup.html" name="" title="Settings - Transport - Basic">Settings - Transport - Basic</a>
+                                    </li>
+                              </ul>
+                          </li>
+                          <li>
+                              <span class="expand-stub"></span>
+                              <a href="../Solutions/transport-planning.html" name="" title="Transport - Planning">Transport - Planning</a>
+                              
+                              <ul class="nav level3">
+                                    <li>
+                                        <a href="../Solutions/transport-planning-setup.html" name="" title="Settings - Transport - Planning">Settings - Transport - Planning</a>
                                     </li>
                               </ul>
                           </li>
@@ -290,82 +290,82 @@
                 </li>
                 <li>
                     <span class="expand-stub"></span>
-                    <a href="sk-legislative-pack.html" name="" title="Slovak Legislative Pack">Slovak Legislative Pack</a>
+                    <a href="sk-legislative-pack.md" name="" title="Slovak Legislative Pack">Slovak Legislative Pack</a>
                     
                     <ul class="nav level2">
                           <li>
-                              <a href="sk-language.html" name="" title="Slovak language for Business Central">Slovak language for Business Central</a>
+                              <a href="../Solutions/sk-language.html" name="" title="Slovak language for Business Central">Slovak language for Business Central</a>
                           </li>
                           <li>
                               <span class="expand-stub"></span>
-                              <a href="sk-vat-statement-export.html" name="" title="Export VAT Statement">Export VAT Statement</a>
+                              <a href="../Solutions/sk-vat-statement-export.html" name="" title="Export VAT Statement">Export VAT Statement</a>
                               
                               <ul class="nav level3">
                                     <li>
-                                        <a href="sk-vat-statement-setup.html" name="" title="Settings - Export VAT Statement">Settings - Export VAT Statement</a>
+                                        <a href="../Solutions/sk-vat-statement-setup.html" name="" title="Settings - Export VAT Statement">Settings - Export VAT Statement</a>
                                     </li>
                               </ul>
                           </li>
                           <li>
-                              <a href="sk-vies.html" name="" title="Settings - VIES and Intrastat export.">Settings - VIES and Intrastat export.</a>
+                              <a href="../Solutions/sk-vies.html" name="" title="Settings - VIES and Intrastat export.">Settings - VIES and Intrastat export.</a>
                           </li>
                           <li>
-                              <a href="sk-balance-sheet-income-statement.html" name="" title="Balance sheet and income statement">Balance sheet and income statement</a>
+                              <a href="../Solutions/sk-balance-sheet-income-statement.html" name="" title="Balance sheet and income statement">Balance sheet and income statement</a>
                           </li>
                           <li>
-                              <a href="sk-balance-sheet-income-statement-setup.html" name="" title="Settings - Statutory statements">Settings - Statutory statements</a>
+                              <a href="../Solutions/sk-balance-sheet-income-statement-setup.html" name="" title="Settings - Statutory statements">Settings - Statutory statements</a>
                           </li>
                           <li>
                               <span class="expand-stub"></span>
-                              <a href="sk-vat-statement-export.html" name="" title="VAT Statement">VAT Statement</a>
+                              <a href="../Solutions/sk-vat-statement-export.html" name="" title="VAT Statement">VAT Statement</a>
                               
                               <ul class="nav level3">
                                     <li>
-                                        <a href="sk-vat-statement-setup.html" name="" title="Settings - VAT Statement">Settings - VAT Statement</a>
+                                        <a href="../Solutions/sk-vat-statement-setup.html" name="" title="Settings - VAT Statement">Settings - VAT Statement</a>
                                     </li>
                               </ul>
                           </li>
                           <li>
                               <span class="expand-stub"></span>
-                              <a href="sk-vat-check-report-export.html" name="" title="VAT Control Report">VAT Control Report</a>
+                              <a href="../Solutions/sk-vat-check-report-export.html" name="" title="VAT Control Report">VAT Control Report</a>
                               
                               <ul class="nav level3">
                                     <li>
-                                        <a href="sk-vat-check-report-setup.html" name="" title="Settings - VAT Control Statement">Settings - VAT Control Statement</a>
+                                        <a href="../Solutions/sk-vat-check-report-setup.html" name="" title="Settings - VAT Control Statement">Settings - VAT Control Statement</a>
                                     </li>
                               </ul>
                           </li>
                           <li>
-                              <a href="sk-intrastat.html" name="" title="Intrastat">Intrastat</a>
+                              <a href="../Solutions/sk-intrastat.html" name="" title="Intrastat">Intrastat</a>
                           </li>
                           <li>
-                              <a href="sk-vies.html" name="" title="VIES">VIES</a>
+                              <a href="../Solutions/sk-vies.html" name="" title="VIES">VIES</a>
                           </li>
                           <li>
-                              <a href="sk-sepa.html" name="" title="SEPA payments">SEPA payments</a>
+                              <a href="../Solutions/sk-sepa.html" name="" title="SEPA payments">SEPA payments</a>
                           </li>
                           <li>
-                              <a href="sk-unreability-payer.html" name="" title="Institute of the payer's unreliability">Institute of the payer's unreliability</a>
+                              <a href="../Solutions/sk-unreability-payer.html" name="" title="Institute of the payer's unreliability">Institute of the payer's unreliability</a>
                           </li>
                           <li>
-                              <a href="sk-balance-reconciliation.html" name="" title="Balance reconciliation">Balance reconciliation</a>
+                              <a href="../Solutions/sk-balance-reconciliation.html" name="" title="Balance reconciliation">Balance reconciliation</a>
                           </li>
                           <li>
-                              <a href="sk-tax-depreciation.html" name="" title="Tax depreciation">Tax depreciation</a>
+                              <a href="../Solutions/sk-tax-depreciation.html" name="" title="Tax depreciation">Tax depreciation</a>
                           </li>
                           <li>
-                              <a href="sk-ECB.html" name="" title="Import of exchange rates">Import of exchange rates</a>
+                              <a href="../Solutions/sk-ECB.html" name="" title="Import of exchange rates">Import of exchange rates</a>
                           </li>
                           <li>
-                              <a href="SK-FiscalPrinters-Integration.html" name="" title="SK Fiscal Printers Integration">SK Fiscal Printers Integration</a>
+                              <a href="../Solutions/SK-FiscalPrinters-Integration.html" name="" title="SK Fiscal Printers Integration">SK Fiscal Printers Integration</a>
                           </li>
                     </ul>
                 </li>
                 <li>
-                    <a href="fp-deprecated-features.html" name="" title="Deprecated Features">Deprecated Features</a>
+                    <a href="../Solutions/fp-deprecated-features.html" name="" title="Deprecated Features">Deprecated Features</a>
                 </li>
                 <li>
-                    <a href="monetization.html" name="" title="Purchase and administration of Aricoma modules">Purchase and administration of Aricoma modules</a>
+                    <a href="../Solutions/monetization.html" name="" title="Purchase and administration of Aricoma modules">Purchase and administration of Aricoma modules</a>
                 </li>
                 <li>
                     <a href="support.html" name="" title="Support">Support</a>
