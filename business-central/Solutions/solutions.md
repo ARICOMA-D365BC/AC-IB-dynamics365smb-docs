@@ -1,19 +1,12 @@
 ---
-title: ARICOMA SOLUTIONS | Microsoft Docs
+title: ARICOMA SOLUTIONS
 description: This section describes ARICOMA Solutions - Addons
 author: kunes
-ms.service: dynamics365-business-central
-ms.topic: article
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+date: 05/30/2025
+reviewer: janousek
+ms.service: dynamics-365-business-central
 ms.search.keywords: Czech, productivity, additional functions, sale, warehouse, invoicing, barcode, claims, transportation, workflow
-ms.author: v-makune
 ---
-# Autocont changes to Aricoma
-Autocont is changing. Like the other brands in the group, it adopts the new name Aricoma. This brings together companies focused on IT infrastructure, cloud technology, enterprise applications, cybersecurity, public sector digitalization and systems integration. As Aricoma, we want to offer customers an extension of services and solutions under a single brand and a more comprehensive approach to their needs.
-
-
 # Microsoft Dynamics 365 Business Central
 
 Microsoft Dynamics 365 Business Central is a modern information system for small and medium-sized companies looking for a simple and easily customizable solution with comprehensive coverage of their needs and an intuitive user experience. It offers increased productivity and competitiveness, saves upfront investment and reduces operational and safety concerns.
@@ -29,35 +22,10 @@ More information about Business Central can be found on our [website ACDynamics3
 ## ARICOMA EXTENSION MODULES
 
 We are expanding the standard Dynamics 365 Business Central system with a range of functionality complementing legislative requirements and best practices.
-We have grouped the individual functionalities into the following packages.
 
-### [Financial Pack](finance-pack.md) - extension for finance
-- App Extension Set
-- Insolvency register
-- Factoring
-- More payments
-- Fiscal printers
-- Pack Tracking Basic (EKOKOM)
-- Pack Tracking - Return Packing
+## Slovak Localization
 
-### [Productivity Pack](productivity-pack.md) - productivity extension
-- Electronic invoicing
-- Data boxes
-- Incoming Mail
-- General parameters
-- SharePoint publishing
-- Job Queue extension
-- Transport - basic
-- Transport - planning
-- WorkFlow - State Management
-- Notifications
-- Complaints Management
-- HelpDesk
-- Central Database
-- Spooler
-- Production Tools
-- Parcels
-### [SK Legislative Pack](sk-legislative-pack.md) - extension to Slovak legislation and Slovak language
+For Slovak companies we provide extension to [Slovak legislation and Slovak language](sk-legislative-pack.md).  
 
 ## ARICOMA INDUSTRY SOLUTIONS
 In addition to the expansion modules, the specialized industry solutions listed below are available.
@@ -74,10 +42,8 @@ In addition to the expansion modules, the specialized industry solutions listed 
 - Wholesale and retail, distribution
 - and a number of other
 
+## See also  
 
-
-
-## See also
 [Financial Pack](finance-pack.md)  
 [Productivity Pack](productivity-pack.md)  
-[SK Legislative Pack](sk-legislative-pack.md)
+[SK Legislative Pack](sk-legislative-pack.md)  
