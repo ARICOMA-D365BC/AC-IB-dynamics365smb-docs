@@ -78,7 +78,7 @@
 <li>Click on <strong>Settings</strong> icon, select <strong>My Settings</strong> and change language to: &quot;Slovak&quot;.</li>
 <li>After Business Central refresh is finished, your Business Central is in Slovak.</li>
 </ol>
-<p><a href="solutions.html">ARICOMA Řešení</a><br>
+<p><a href="../index.html">ARICOMA Řešení</a><br>
 <a href="sk-legislative-pack.html">SK Legislativní balíček</a></p>
 </article>
           </div>
@@ -88,7 +88,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/ARICOMA-D365BC/AC-IB-dynamics365smb-docs/blob/master/business-central/Solutions/sk-language.md/#L1" class="contribution-link">Improve this document</a>
+                    <a href="https://github.com/AutoContCZ/AC-IB-dynamics365smb-docs/blob/master/business-central/SK/sk-language.md/#L1" class="contribution-link">Improve this document</a>
                   </li>
                 </ul>
               </div>

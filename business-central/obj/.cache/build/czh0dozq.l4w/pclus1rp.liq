@@ -1,13 +1,13 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <!--[if IE]><![endif]-->
 <html>
   
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>ARICOMA SOLUTIONS - SK language | Microsoft Docs </title>
+    <title>ARICOMA SOLUTIONS - SK Legistaltive Pack| Microsoft Docs </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="ARICOMA SOLUTIONS - SK language | Microsoft Docs ">
+    <meta name="title" content="ARICOMA SOLUTIONS - SK Legistaltive Pack| Microsoft Docs ">
     <meta name="generator" content="docfx 2.59.4.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
@@ -67,19 +67,20 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="slovak-language-for-business-central">Slovak language for Business Central</h1>
+<h1 id="vat-statements---export" sourcefile="Solutions/sk-vat-statement-export.md" sourcestartlinenumber="13">VAT Statements - Export</h1>
 
-<p>This help will help you set up Business Central in Slovak language.</p>
-<p>To change the language, follow this procedure:</p>
-<ol>
-<li>Install <strong>SK language pack</strong> app.</li>
-<li>Run and log into Business Central.</li>
-<li>Open <strong>Purchase of an ARICOMA product</strong> page and activate <strong>SK language pack</strong> (mandatory for next update)</li>
-<li>Click on <strong>Settings</strong> icon, select <strong>My Settings</strong> and change language to: &quot;Slovak&quot;.</li>
-<li>After Business Central refresh is finished, your Business Central is in Slovak.</li>
+<p sourcefile="Solutions/sk-vat-statement-export.md" sourcestartlinenumber="15">The standard functionality of the VAT Statement is used for the processing of the VAT Statement. Due to the incorporation of Slovak legislative specifics, the standard functionality of the VAT Statement has been extended with additional functionality to ensure correct calculation of the VAT statement amounts and to export the XML file in the required format. The exported file can be imported into the Financial Administration portal of the Slovak Republic or into the eDane application.</p>
+<p sourcefile="Solutions/sk-vat-statement-export.md" sourcestartlinenumber="17">To export a VAT statement, follow these steps:</p>
+<ol sourcefile="Solutions/sk-vat-statement-export.md" sourcestartlinenumber="19">
+<li sourcefile="Solutions/sk-vat-statement-export.md" sourcestartlinenumber="19">Choose the <img src="media/ui-search/search_small.png" sourcefile="Solutions/sk-vat-statement-export.md" sourcestartlinenumber="19" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong sourcefile="Solutions/sk-vat-statement-export.md" sourcestartlinenumber="19">VAT Statements</strong> and then choose the related link.</li>
+<li sourcefile="Solutions/sk-vat-statement-export.md" sourcestartlinenumber="20">In the <strong sourcefile="Solutions/sk-vat-statement-export.md" sourcestartlinenumber="20">Name</strong> field select the vat statement name that you want.</li>
+<li sourcefile="Solutions/sk-vat-statement-export.md" sourcestartlinenumber="21">Then choose the <strong sourcefile="Solutions/sk-vat-statement-export.md" sourcestartlinenumber="21">Export SK</strong> function.</li>
+<li sourcefile="Solutions/sk-vat-statement-export.md" sourcestartlinenumber="22">Fill in the required fields and choose the <strong sourcefile="Solutions/sk-vat-statement-export.md" sourcestartlinenumber="22">OK</strong> function, which will create a .xml file.</li>
 </ol>
-<p><a href="solutions.html">ARICOMA Řešení</a><br>
-<a href="sk-legislative-pack.html">SK Legislativní balíček</a></p>
+<h2 id="see-also" sourcefile="Solutions/sk-vat-statement-export.md" sourcestartlinenumber="24">See also</h2>
+<p sourcefile="Solutions/sk-vat-statement-export.md" sourcestartlinenumber="26"><a href="solutions.html" sourcefile="Solutions/sk-vat-statement-export.md" sourcestartlinenumber="26">ARICOMA Solutions</a><br>
+<a href="sk-legislative-pack.html" sourcefile="Solutions/sk-vat-statement-export.md" sourcestartlinenumber="27">SK Legislative Pack</a><br>
+<a href="sk-vat-statement-setup.html" sourcefile="Solutions/sk-vat-statement-export.md" sourcestartlinenumber="28">VAT Statement - Setup</a></p>
 </article>
           </div>
           
@@ -88,7 +89,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/ARICOMA-D365BC/AC-IB-dynamics365smb-docs/blob/master/business-central/Solutions/sk-language.md/#L1" class="contribution-link">Improve this document</a>
+                    <a href="https://github.com/ARICOMA-D365BC/AC-IB-dynamics365smb-docs/blob/master/business-central/Solutions/sk-vat-statement-export.md/#L1" class="contribution-link">Improve this document</a>
                   </li>
                 </ul>
               </div>

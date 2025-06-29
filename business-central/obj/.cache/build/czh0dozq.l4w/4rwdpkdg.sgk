@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <!--[if IE]><![endif]-->
 <html>
   
@@ -67,19 +67,19 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="slovak-language-for-business-central">Slovak language for Business Central</h1>
+<h1 id="slovak-language-for-business-central" sourcefile="SK/sk-language.md" sourcestartlinenumber="14">Slovak language for Business Central</h1>
 
-<p>This help will help you set up Business Central in Slovak language.</p>
-<p>To change the language, follow this procedure:</p>
-<ol>
-<li>Install <strong>SK language pack</strong> app.</li>
-<li>Run and log into Business Central.</li>
-<li>Open <strong>Purchase of an ARICOMA product</strong> page and activate <strong>SK language pack</strong> (mandatory for next update)</li>
-<li>Click on <strong>Settings</strong> icon, select <strong>My Settings</strong> and change language to: &quot;Slovak&quot;.</li>
-<li>After Business Central refresh is finished, your Business Central is in Slovak.</li>
+<p sourcefile="SK/sk-language.md" sourcestartlinenumber="16">This help will help you set up Business Central in Slovak language.</p>
+<p sourcefile="SK/sk-language.md" sourcestartlinenumber="18">To change the language, follow this procedure:</p>
+<ol sourcefile="SK/sk-language.md" sourcestartlinenumber="20">
+<li sourcefile="SK/sk-language.md" sourcestartlinenumber="20">Install <strong sourcefile="SK/sk-language.md" sourcestartlinenumber="20">SK language pack</strong> app.</li>
+<li sourcefile="SK/sk-language.md" sourcestartlinenumber="21">Run and log into Business Central.</li>
+<li sourcefile="SK/sk-language.md" sourcestartlinenumber="22">Open <strong sourcefile="SK/sk-language.md" sourcestartlinenumber="22">Purchase of an ARICOMA product</strong> page and activate <strong sourcefile="SK/sk-language.md" sourcestartlinenumber="22">SK language pack</strong> (mandatory for next update)</li>
+<li sourcefile="SK/sk-language.md" sourcestartlinenumber="23">Click on <strong sourcefile="SK/sk-language.md" sourcestartlinenumber="23">Settings</strong> icon, select <strong sourcefile="SK/sk-language.md" sourcestartlinenumber="23">My Settings</strong> and change language to: &quot;Slovak&quot;.</li>
+<li sourcefile="SK/sk-language.md" sourcestartlinenumber="24">After Business Central refresh is finished, your Business Central is in Slovak.</li>
 </ol>
-<p><a href="solutions.html">ARICOMA Řešení</a><br>
-<a href="sk-legislative-pack.html">SK Legislativní balíček</a></p>
+<p sourcefile="SK/sk-language.md" sourcestartlinenumber="27"><a href="../index.html" sourcefile="SK/sk-language.md" sourcestartlinenumber="27">ARICOMA Řešení</a><br>
+<a href="sk-legislative-pack.html" sourcefile="SK/sk-language.md" sourcestartlinenumber="28">SK Legislativní balíček</a></p>
 </article>
           </div>
           
@@ -88,7 +88,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/ARICOMA-D365BC/AC-IB-dynamics365smb-docs/blob/master/business-central/Solutions/sk-language.md/#L1" class="contribution-link">Improve this document</a>
+                    <a href="https://github.com/AutoContCZ/AC-IB-dynamics365smb-docs/blob/master/business-central/SK/sk-language.md/#L1" class="contribution-link">Improve this document</a>
                   </li>
                 </ul>
               </div>
