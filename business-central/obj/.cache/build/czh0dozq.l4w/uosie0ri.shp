@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>HelpDesk </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="HelpDesk ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../TOC.html">
+    <meta property="docfx:tocrel" content="TOC.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="png" src="../logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="helpdesk" sourcefile="Solutions/helpdesk.md" sourcestartlinenumber="10">HelpDesk</h1>
+
+<p sourcefile="Solutions/helpdesk.md" sourcestartlinenumber="12">The Helpdesk module is used for centralized entry, registration, processing and evaluation of various user requests in Microsoft Dynamics 365 Business Central. Users can enter requests for service operations, for providing support, modifying or supplementing functionality, register complaints and so on. It also allows you to categorize requests, set priorities, and manage processing by assigned solvers. There is also a history of closed HelpDesk requests.</p>
+<h2 id="creating-a-request" sourcefile="Solutions/helpdesk.md" sourcestartlinenumber="14">Creating a request</h2>
+<p sourcefile="Solutions/helpdesk.md" sourcestartlinenumber="16">After making the necessary settings, you can enter HelpDesk requests. You can make requests manually or through the Wizard. You can define whether to use the wizard in <strong sourcefile="Solutions/helpdesk.md" sourcestartlinenumber="16">Help Desk Settings</strong> by selecting the <strong sourcefile="Solutions/helpdesk.md" sourcestartlinenumber="16">New Helpdesk with Wizard</strong> check box. For more information about setting up a HelpDesk, visit <a href="helpdesk-setup.html" sourcefile="Solutions/helpdesk.md" sourcestartlinenumber="16">HelpDesk - Setup</a>.</p>
+<h3 id="create-a-request-by-using-the-request-wizard" sourcefile="Solutions/helpdesk.md" sourcestartlinenumber="18">Create a request by using the Request Wizard</h3>
+<ol sourcefile="Solutions/helpdesk.md" sourcestartlinenumber="19">
+<li sourcefile="Solutions/helpdesk.md" sourcestartlinenumber="19">Choose the <img src="media/ui-search/search_small.png" sourcefile="Solutions/helpdesk.md" sourcestartlinenumber="19" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong sourcefile="Solutions/helpdesk.md" sourcestartlinenumber="19">New Request</strong> and then choose the related link.</li>
+<li sourcefile="Solutions/helpdesk.md" sourcestartlinenumber="20">The first step in the wizard is to specify <strong sourcefile="Solutions/helpdesk.md" sourcestartlinenumber="20">Taskmaster Code</strong> and <strong sourcefile="Solutions/helpdesk.md" sourcestartlinenumber="20">Request Priority</strong>. (Both fields are required - you cannot continue without filling in both values.)</li>
+<li sourcefile="Solutions/helpdesk.md" sourcestartlinenumber="21">The next step is to enter <strong sourcefile="Solutions/helpdesk.md" sourcestartlinenumber="21">Request Short Description</strong> (title) and <strong sourcefile="Solutions/helpdesk.md" sourcestartlinenumber="21">Request Description</strong> of the request.</li>
+<li sourcefile="Solutions/helpdesk.md" sourcestartlinenumber="22">Then it is possible to choose settings to predefined categories (1-3). Once you have made a suitable selection, click <strong sourcefile="Solutions/helpdesk.md" sourcestartlinenumber="22">Next</strong>.</li>
+<li sourcefile="Solutions/helpdesk.md" sourcestartlinenumber="23">In the next step of the wizard, you will find the <strong sourcefile="Solutions/helpdesk.md" sourcestartlinenumber="23">Publish Documents</strong> option. When you select this option, the Publish Wizard starts automatically. Publishing a document requires <strong sourcefile="Solutions/helpdesk.md" sourcestartlinenumber="23">SharePoint Publishing</strong> module.</li>
+<li sourcefile="Solutions/helpdesk.md" sourcestartlinenumber="24">The last step is the <strong sourcefile="Solutions/helpdesk.md" sourcestartlinenumber="24">Finish</strong> button, which you use to create the specified request.</li>
+</ol>
+<h2 id="helpdesk-requests" sourcefile="Solutions/helpdesk.md" sourcestartlinenumber="26">Helpdesk Requests</h2>
+<p sourcefile="Solutions/helpdesk.md" sourcestartlinenumber="27">The list of helpdesk requests can be viewed as follows:</p>
+<ol sourcefile="Solutions/helpdesk.md" sourcestartlinenumber="29">
+<li sourcefile="Solutions/helpdesk.md" sourcestartlinenumber="29">Choose the <img src="media/ui-search/search_small.png" sourcefile="Solutions/helpdesk.md" sourcestartlinenumber="29" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong sourcefile="Solutions/helpdesk.md" sourcestartlinenumber="29">Helpdesk Request List</strong> and then choose the related link.</li>
+<li sourcefile="Solutions/helpdesk.md" sourcestartlinenumber="30">If you click <strong sourcefile="Solutions/helpdesk.md" sourcestartlinenumber="30">Request number</strong> in the list of requests, the appropriate request tab is displayed.</li>
+</ol>
+<p sourcefile="Solutions/helpdesk.md" sourcestartlinenumber="32">The Helpdesk Request Card displays relevant information related to the selected request. The data in the white fields can be edited (e.g. it is possible to add the priority of the dispatcher, edit the data of the response or solution, or change the classification into categories on the Categories tab).</p>
+<p sourcefile="Solutions/helpdesk.md" sourcestartlinenumber="34">A requirement can also be assigned to a specific job. If the project does not already exist, you can create it directly from the request tab on the <strong sourcefile="Solutions/helpdesk.md" sourcestartlinenumber="34">Actions</strong> tab by using the <strong sourcefile="Solutions/helpdesk.md" sourcestartlinenumber="34">Create Job</strong> action. This operation creates a new project with the same code as the request number (even with the same description), and this code is automatically added to the <strong sourcefile="Solutions/helpdesk.md" sourcestartlinenumber="34">Job number</strong> field.</p>
+<p sourcefile="Solutions/helpdesk.md" sourcestartlinenumber="36">On the <strong sourcefile="Solutions/helpdesk.md" sourcestartlinenumber="36">Lines</strong> page, after creating a request, a new record appears with the default state as defined in the Helpdesk Status Management template. Each time the request state changes, if you have the <strong sourcefile="Solutions/helpdesk.md" sourcestartlinenumber="36">Log Status Control action</strong> set for this state (52068291 WriteStatusChangeHlpDesk), an additional line with the corresponding values is generated (see a more detailed description below for request processing).</p>
+<h3 id="request-comments" sourcefile="Solutions/helpdesk.md" sourcestartlinenumber="38">Request Comments</h3>
+<p sourcefile="Solutions/helpdesk.md" sourcestartlinenumber="40">It is possible to add Comment Lines to each created request. The first entry into notes is possible when you create a request in the wizard, as described above.</p>
+<p sourcefile="Solutions/helpdesk.md" sourcestartlinenumber="42">Users can use 2 forms of notes:</p>
+<ul sourcefile="Solutions/helpdesk.md" sourcestartlinenumber="43">
+<li sourcefile="Solutions/helpdesk.md" sourcestartlinenumber="43"><strong sourcefile="Solutions/helpdesk.md" sourcestartlinenumber="43">Comment Line</strong> - available on the Note Lines tab - These structured notes contain date, Note (100 characters), and Code.</li>
+<li sourcefile="Solutions/helpdesk.md" sourcestartlinenumber="44"><strong sourcefile="Solutions/helpdesk.md" sourcestartlinenumber="44">Free notes</strong> - available on the Detailed Info tab - these notes allow you to enter any text, which can also be displayed in the information window in the Details tab.</li>
+</ul>
+<p sourcefile="Solutions/helpdesk.md" sourcestartlinenumber="46"><img src="media/HD_detail_description.png" sourcefile="Solutions/helpdesk.md" sourcestartlinenumber="46" alt="Helpdesk - detailed description"></p>
+<p sourcefile="Solutions/helpdesk.md" sourcestartlinenumber="48">It is up to the administrator to decide which form of notes will be used throughout the company.</p>
+<h3 id="documents" sourcefile="Solutions/helpdesk.md" sourcestartlinenumber="50">Documents</h3>
+<p sourcefile="Solutions/helpdesk.md" sourcestartlinenumber="52">If <strong sourcefile="Solutions/helpdesk.md" sourcestartlinenumber="52">the SharePoint Publishing</strong> module is installed, then it is possible to publish a document for each request in the HelpDesk Request on the <strong sourcefile="Solutions/helpdesk.md" sourcestartlinenumber="52">Actions</strong> tab using the <strong sourcefile="Solutions/helpdesk.md" sourcestartlinenumber="52">Publish</strong> button and <strong sourcefile="Solutions/helpdesk.md" sourcestartlinenumber="52">View</strong> for view the published document.</p>
+<p sourcefile="Solutions/helpdesk.md" sourcestartlinenumber="54">For more information about publishing documents, see <a href="sharepoint-publisher.html" sourcefile="Solutions/helpdesk.md" sourcestartlinenumber="54">Publish SharePoint</a></p>
+<p sourcefile="Solutions/helpdesk.md" sourcestartlinenumber="56"><img src="media/HD_sharepoint.png" sourcefile="Solutions/helpdesk.md" sourcestartlinenumber="56" alt="Helpdesk - SharePoint publishing"></p>
+<h3 id="printing" sourcefile="Solutions/helpdesk.md" sourcestartlinenumber="58">Printing</h3>
+<p sourcefile="Solutions/helpdesk.md" sourcestartlinenumber="60">Clicking on the <strong sourcefile="Solutions/helpdesk.md" sourcestartlinenumber="60">Reports</strong> and then <strong sourcefile="Solutions/helpdesk.md" sourcestartlinenumber="60">Print</strong> action in the HelpDesk Requests Overview launches the Helpdesk Requests report (the number of the currently displayed request is offered in the input filter). The print range can then be specified in more detail through filters and parameters.</p>
+<h2 id="processing-of-requests" sourcefile="Solutions/helpdesk.md" sourcestartlinenumber="62">Processing of requests</h2>
+<p sourcefile="Solutions/helpdesk.md" sourcestartlinenumber="64">Once a request has been created, it can be further processed. To do this, the <strong sourcefile="Solutions/helpdesk.md" sourcestartlinenumber="64">Processing</strong> tab or the <strong sourcefile="Solutions/helpdesk.md" sourcestartlinenumber="64">Request Status Change</strong> Function is used on the Helpdesk Request Card.</p>
+<h3 id="solutions" sourcefile="Solutions/helpdesk.md" sourcestartlinenumber="66">Solutions</h3>
+<p sourcefile="Solutions/helpdesk.md" sourcestartlinenumber="68">When processing a HelpDesk request, the relevant data is filled in on the request card on the Processing tab, in particular <strong sourcefile="Solutions/helpdesk.md" sourcestartlinenumber="68">Solution Code</strong>, <strong sourcefile="Solutions/helpdesk.md" sourcestartlinenumber="68">Duration</strong>, <strong sourcefile="Solutions/helpdesk.md" sourcestartlinenumber="68">Processing Description</strong> (max. 250 characters) and <strong sourcefile="Solutions/helpdesk.md" sourcestartlinenumber="68">Code of the next responsible person</strong>. The solution code is selected from a predefined table of possible solutions from the <strong sourcefile="Solutions/helpdesk.md" sourcestartlinenumber="68">Solutions</strong> page.</p>
+<p sourcefile="Solutions/helpdesk.md" sourcestartlinenumber="70"><strong sourcefile="Solutions/helpdesk.md" sourcestartlinenumber="70">Duration</strong> is entered in days, hours, minutes, seconds, or milliseconds, either directly by writing out the number and unit (you can use the abbreviation of the beginning of the word – e.g. d=day, m=minute, mil=millisecond, etc.) or by entering only a number that is interpreted as an hourly figure. For example, the figure of 28.35 is converted to 1 day 4 hours 21 minutes.</p>
+<h3 id="status-change" sourcefile="Solutions/helpdesk.md" sourcestartlinenumber="72">Status change</h3>
+<p sourcefile="Solutions/helpdesk.md" sourcestartlinenumber="74">If you have correctly entered the information on the Solution tab, you can press the function <strong sourcefile="Solutions/helpdesk.md" sourcestartlinenumber="74">Process → Change status</strong>to go to the next phase of solving the request.</p>
+<p sourcefile="Solutions/helpdesk.md" sourcestartlinenumber="76">A dialog box appears with additional state control states that are considered according to the additional state filter definition.</p>
+<p sourcefile="Solutions/helpdesk.md" sourcestartlinenumber="78">When the operation is complete, <strong sourcefile="Solutions/helpdesk.md" sourcestartlinenumber="78">the Status Control status code</strong> is updated on the General tab of the request tab. If a status control action with assigned codeunit 52068291 – WriteStatusChangeHlpDesk, is set in the selected state control state, the duration value is added to the total duration on the General tab and another line is generated to the request helpdesk items, which displays the history of the solution progress - date, solver, solution code, description, duration.</p>
+<h2 id="helpdesk-dispatch-board" sourcefile="Solutions/helpdesk.md" sourcestartlinenumber="80">Helpdesk Dispatch Board</h2>
+<ol sourcefile="Solutions/helpdesk.md" sourcestartlinenumber="82">
+<li sourcefile="Solutions/helpdesk.md" sourcestartlinenumber="82">Select the <img src="media/ui-search/search_small.png" sourcefile="Solutions/helpdesk.md" sourcestartlinenumber="82" alt="Light Bulb icon that opens Tell Me feature." title=" me what you want to do">, enter <strong sourcefile="Solutions/helpdesk.md" sourcestartlinenumber="82">Helpdesk Dispatch Board</strong>, and then select the related link.</li>
+</ol>
+<ul sourcefile="Solutions/helpdesk.md" sourcestartlinenumber="84">
+<li sourcefile="Solutions/helpdesk.md" sourcestartlinenumber="84">Dispatch Board allows a summary view of the specified requirements. This HelpDesk option offers an overview view of requests with preset optional filters in the header for easier searching. Requests can be filtered, for example, by status, by user, responsible person, taskmaster or by category. In addition, the displayed list of requirements can be sorted by different keys, especially by number, priority, workflow status or categories.</li>
+</ul>
+<p sourcefile="Solutions/helpdesk.md" sourcestartlinenumber="86"><img src="media/HD_dispatch_board.png" sourcefile="Solutions/helpdesk.md" sourcestartlinenumber="86" alt="Helpdesk - Helpdesk Dispatch Board"></p>
+<ol start="2" sourcefile="Solutions/helpdesk.md" sourcestartlinenumber="88">
+<li sourcefile="Solutions/helpdesk.md" sourcestartlinenumber="88">In the rows, select a specific request.</li>
+<li sourcefile="Solutions/helpdesk.md" sourcestartlinenumber="89">Click <strong sourcefile="Solutions/helpdesk.md" sourcestartlinenumber="89">Process</strong>, and then <strong sourcefile="Solutions/helpdesk.md" sourcestartlinenumber="89">Card</strong> to display the tab for the request.</li>
+</ol>
+<h2 id="request-priorities" sourcefile="Solutions/helpdesk.md" sourcestartlinenumber="91">Request Priorities</h2>
+<p sourcefile="Solutions/helpdesk.md" sourcestartlinenumber="93">One of the most important criteria for deciding on the planning and coordination of capacities to address requirements is the degree of urgency with which a particular requirement must be addressed. An important aid to the dispatcher in this process can be an indicator of the overall priority of the request, as calculated by the program based on the input parameters:</p>
+<ul sourcefile="Solutions/helpdesk.md" sourcestartlinenumber="95">
+<li sourcefile="Solutions/helpdesk.md" sourcestartlinenumber="95">Weight of the beneficiary, i.e. the taskmaster of the request</li>
+<li sourcefile="Solutions/helpdesk.md" sourcestartlinenumber="96">Request priority set by the taskmaster when creating</li>
+<li sourcefile="Solutions/helpdesk.md" sourcestartlinenumber="97">Priority of the request set by the helpdesk dispatcher during any subsequent reassessment of the request's importance.</li>
+</ul>
+<h3 id="the-overall-priority-is-calculated-as" sourcefile="Solutions/helpdesk.md" sourcestartlinenumber="99">The overall priority is calculated as:</h3>
+<ul sourcefile="Solutions/helpdesk.md" sourcestartlinenumber="100">
+<li sourcefile="Solutions/helpdesk.md" sourcestartlinenumber="100">the product of <strong sourcefile="Solutions/helpdesk.md" sourcestartlinenumber="100">Taskmaster weight</strong> (the value on the appropriate authorized person card) and <strong sourcefile="Solutions/helpdesk.md" sourcestartlinenumber="100">Request priority</strong> set by the sponsor unless the dispatcher sets a different priority (i.e., the dispatcher priority is blank).</li>
+<li sourcefile="Solutions/helpdesk.md" sourcestartlinenumber="101">the product of <strong sourcefile="Solutions/helpdesk.md" sourcestartlinenumber="101">Weight</strong> of the requestor and <strong sourcefile="Solutions/helpdesk.md" sourcestartlinenumber="101">Priority</strong> of the request set by the dispatcher (i.e. the dispatcher's priority is filled).</li>
+</ul>
+<h2 id="reports" sourcefile="Solutions/helpdesk.md" sourcestartlinenumber="103">Reports</h2>
+<p sourcefile="Solutions/helpdesk.md" sourcestartlinenumber="105">Menu of print reports assigned to the HelpDesk module:</p>
+<ol sourcefile="Solutions/helpdesk.md" sourcestartlinenumber="106">
+<li sourcefile="Solutions/helpdesk.md" sourcestartlinenumber="106">Choose the <img src="media/ui-search/search_small.png" sourcefile="Solutions/helpdesk.md" sourcestartlinenumber="106" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong sourcefile="Solutions/helpdesk.md" sourcestartlinenumber="106">Helpdesk Requests (Reports and Analysis)</strong> and then choose the related link.</li>
+<li sourcefile="Solutions/helpdesk.md" sourcestartlinenumber="107">According to the specified filters, individual request cards, delayed requests and a list of helpdesk requests are printed.</li>
+</ol>
+<h2 id="view-closed-requests" sourcefile="Solutions/helpdesk.md" sourcestartlinenumber="109">View closed requests</h2>
+<ol sourcefile="Solutions/helpdesk.md" sourcestartlinenumber="111">
+<li sourcefile="Solutions/helpdesk.md" sourcestartlinenumber="111">Choose the <img src="media/ui-search/search_small.png" sourcefile="Solutions/helpdesk.md" sourcestartlinenumber="111" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong sourcefile="Solutions/helpdesk.md" sourcestartlinenumber="111">Helpdesk Closed Request List</strong> and then choose the related link.</li>
+<li sourcefile="Solutions/helpdesk.md" sourcestartlinenumber="112">A page will appear that contains a list of already completed helpdesk requests.</li>
+</ol>
+<ul sourcefile="Solutions/helpdesk.md" sourcestartlinenumber="114">
+<li sourcefile="Solutions/helpdesk.md" sourcestartlinenumber="114">Requests are closed automatically through the Status Control states set after the transition to one of the final states.</li>
+</ul>
+<h2 id="export-helpdesk-requests" sourcefile="Solutions/helpdesk.md" sourcestartlinenumber="116">Export HelpDesk requests</h2>
+<ol sourcefile="Solutions/helpdesk.md" sourcestartlinenumber="118">
+<li sourcefile="Solutions/helpdesk.md" sourcestartlinenumber="118">Choose the <img src="media/ui-search/search_small.png" sourcefile="Solutions/helpdesk.md" sourcestartlinenumber="118" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong sourcefile="Solutions/helpdesk.md" sourcestartlinenumber="118">Export Helpdesk Requests</strong> and then choose the related link.</li>
+<li sourcefile="Solutions/helpdesk.md" sourcestartlinenumber="119">Fill in the report input filters.
+<ul sourcefile="Solutions/helpdesk.md" sourcestartlinenumber="120">
+<li sourcefile="Solutions/helpdesk.md" sourcestartlinenumber="120">Number, New Request, Closed Request</li>
+</ul>
+</li>
+<li sourcefile="Solutions/helpdesk.md" sourcestartlinenumber="121">Confirm the export of the request with the <strong sourcefile="Solutions/helpdesk.md" sourcestartlinenumber="121">OK</strong> button.</li>
+</ol>
+<h2 id="see-also" sourcefile="Solutions/helpdesk.md" sourcestartlinenumber="123">See also</h2>
+<p sourcefile="Solutions/helpdesk.md" sourcestartlinenumber="124"><a href="helpdesk-setup.html" sourcefile="Solutions/helpdesk.md" sourcestartlinenumber="124">HelpDesk - Setup</a><br>
+<a href="productivity-pack.html" sourcefile="Solutions/helpdesk.md" sourcestartlinenumber="125">Productivity Pack</a></p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/ARICOMA-D365BC/AC-IB-dynamics365smb-docs/blob/master/business-central/Solutions/helpdesk.md/#L1" class="contribution-link">Improve this document</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+           <span><a href="https://www.aricoma.com/docs/en-us/dynamics365/business-central/Solutions/solutions.html"><strong>ENGLISH</strong><strong>/</strong><a href="https://www.aricoma.com/docs/cs-cz/dynamics365/business-central/Solutions/solutions.html"><strong>CZECH</strong></a></a></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

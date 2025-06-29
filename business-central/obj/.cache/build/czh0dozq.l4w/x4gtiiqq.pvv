@@ -1,0 +1,199 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Transport basic | Microsoft Docs </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Transport basic | Microsoft Docs ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../TOC.html">
+    <meta property="docfx:tocrel" content="TOC.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="png" src="../logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="transport---basic">Transport - Basic</h1>
+
+<p>The Transport add-on solves the issue of vehicle registration, vehicle maintenance planning, driver records, logbook records and fuel consumption records (including the possibility of importing purchase files on fuel cards, e.g. CCS).</p>
+<h2 id="definition-of-drivers">Definition of drivers</h2>
+<p>The driver card defines the monitored person and the information linked to it.</p>
+<p>To create a new driver, follow these steps:</p>
+<ol>
+<li>Choose the <img src="media/ui-search/search_small.png" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong>Driver List</strong> and then choose the related link.</li>
+<li>In the overview, select <strong>New</strong>.</li>
+<li>Na kartě řidiče vyplňte potřebné informace.</li>
+</ol>
+<p><img src="media/transport_drivercard.png" alt="Driver Card"></p>
+<p>It is possible to store &quot;<strong>Competencies</strong>&quot; to the driver - i.e. things related to the person as a driver - driving licences, special licences and at the same time to set the validity of these competencies. You can find the Professional Qualifications in the navigation section of the driver card page.
+<img src="media/transport_driver_zp.png" alt="Driver Qualifications"></p>
+<h2 id="definition-of-vehicles">Definition of vehicles</h2>
+<p>Vehicles are defined for consumption monitoring and maintenance needs. It is possible to record information about the vehicle as its own, as well as a link to the assigned payment card (for the purpose of importing the drawdown), the assigned (default driver) and links to other records (Property, source....)</p>
+<p>To create a vehicle card, follow these steps:</p>
+<ol>
+<li>Choose the <img src="media/ui-search/search_small.png" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong>Vehicle List</strong> and then choose the related link.</li>
+<li>In the overview, select <strong>New</strong>.</li>
+<li>Na kartě vozidla vyplňte potřebné informace.</li>
+</ol>
+<p><img src="media/transport_vehiclecard.png" alt="Vehicle Card"></p>
+<p>Additional data can be defined for the vehicle:</p>
+<ul>
+<li><strong>Equipment</strong> – the equipment with which an individual vehicle is equipped.</li>
+<li><strong>Units of measure</strong> – used with this vehicle.</li>
+<li><strong>Cost</strong> – standard costs/prices for each type of operation.</li>
+<li><strong>Consumption</strong> – standard vehicle consumption for individual types of operation.</li>
+<li><strong>Maintenance records</strong> – monitoring of vehicle maintenance incl. dates of next maintenance.</li>
+</ul>
+<h2 id="refuelling-statement">Refuelling Statement</h2>
+<p>The &quot;Refuelling Statement&quot; is used to enter the fuel consumption for vehicles. These drawdowns are ready for import from the vendor file, alternatively they can be entered manually.</p>
+<p>To create a Refuelling Statement, follow these steps:</p>
+<ol>
+<li>Choose the <img src="media/ui-search/search_small.png" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong>Refuelling Statement</strong> and then choose the related link.</li>
+<li>In the overview, select <strong>New</strong>.</li>
+<li>Fill in the necessary information on the card.</li>
+<li>Fill in the individual lines and issue the document.</li>
+</ol>
+<p>Refuelling Statement List</p>
+<ol start="5">
+<li><p>The next step in processing the statement is its &quot;Issue&quot;. The following functions can be used on the Issued Refuelling Statement:
+<img src="media/transport_phm_PHM_release.png" alt="Issued Refuelling Statement"></p>
+<ul>
+<li>Create Fuel Journal – to record pumping items to the vehicle</li>
+<li>Create Purchase Invoice – to create a purchase invoice based on a drawdow</li>
+</ul>
+</li>
+<li><p>The last step is to post the Fuel Journal:
+<img src="media/transport_phm_journal.png" alt="Fuel Journal"></p>
+</li>
+</ol>
+<h2 id="drive-journal">Drive Journal</h2>
+<p>It is used to record the operation of the vehicle, it is entered via the Drive Journal</p>
+<p>To fill in the Drive Journal, follow these steps:</p>
+<ol>
+<li>Choose the <img src="media/ui-search/search_small.png" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong>Drive Journal</strong> and then choose the related link.</li>
+<li>Fill in the lines as needed.
+<ul>
+<li>Drive Type, Vehicle No., Description, Driver No., Opeation Type Code and more.</li>
+</ul>
+</li>
+<li>Post the journal.</li>
+</ol>
+<p><img src="media/transport_rides_journal.png" alt="Drive Journal"></p>
+<p>If the extended traffic planning functionality is used, the function for pre-generation of the Drive Journal based on the issued driving commands can be used.</p>
+<h2 id="transport-planning">Transport planning</h2>
+<p>This section is part of the extended version of  <strong>Transportation – Planning</strong>.</p>
+<p>As part of the planning, the so-called <strong>Transport request</strong>, which is a record of the anticipated transport, these requests can be created from <strong>Sales order</strong>, <strong>Purchase order</strong>, <strong>Transfer order</strong> using the <strong>Create shipping request</strong> function.</p>
+<p>To create a request from a purchase order, follow these steps:</p>
+<ol>
+<li>Choose the <img src="media/ui-search/search_small.png" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong>Purchase Order</strong> and then choose the related link.</li>
+<li>Open an existing order or create a new one.</li>
+<li>Use the <strong>Create Transport Request</strong>feature to create a shipping request.</li>
+<li>Complete the Shipping Request Wizard.</li>
+</ol>
+<p>This function is a wizard where it pre-fills the maximum amount of data from the input document. The prerequisite is that these requests are made by ordinary users processing documents.</p>
+<p><img src="media/transport_planning.png" alt="Create Transport Request"></p>
+<p>The next phase is the actual &quot;<strong>Transport Planning</strong>&quot; using the &quot;Transport Dispatcher Board&quot; page - where the responsible employee can see the individual requests and can process them - plan data, assign vehicles/drivers, combine according to available capacities, etc.</p>
+<p>Demand states are addressed in the planning process:</p>
+<ul>
+<li>New – only created</li>
+<li>Scheduled – A driving command is created</li>
+<li>Closed – Transport completed</li>
+</ul>
+<p><img src="media/transport_rideorder.png" alt="Create Drive Order"></p>
+<p><strong>See also</strong></p>
+<p><a href="transport-basic-setup.html">Transport - Basic - Setup</a><br>
+<a href="productivity-pack.html">Productivity Pack</a></p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/ARICOMA-D365BC/AC-IB-dynamics365smb-docs/blob/master/business-central/Solutions/transport-basic.md/#L1" class="contribution-link">Improve this document</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+           <span><a href="https://www.aricoma.com/docs/en-us/dynamics365/business-central/Solutions/solutions.html"><strong>ENGLISH</strong><strong>/</strong><a href="https://www.aricoma.com/docs/cs-cz/dynamics365/business-central/Solutions/solutions.html"><strong>CZECH</strong></a></a></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
