@@ -127,4 +127,4 @@ On the Spooler Tasks form, you can use the Function button to export, import, vi
 ## See also
 [Spooler](spooler.md)
 [Productivity Pack](productivity-pack.md)  
-[ARICOMA Solutions](../index.md)
+[ARICOMA Solutions](solutions.md)

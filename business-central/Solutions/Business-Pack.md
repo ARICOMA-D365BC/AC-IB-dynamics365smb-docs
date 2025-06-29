@@ -34,5 +34,5 @@ Business Pack automatically adds useful and frequently used fields and fact boxe
 Simplify your work and increase productivity with Business Pack!  
 
 ## See Also
-[ARICOMA Solutions](../index.md)  
-[Streamline Tools](../StreamlineTools/streamlinetools.md)
+[ARICOMA Solutions](solutions.md)  
+[Streamline Tools](streamlinetools.md)

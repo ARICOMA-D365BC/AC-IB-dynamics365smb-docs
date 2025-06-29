@@ -85,4 +85,4 @@ This administrative operation can be carried out directly from the BC, but of co
 ## See also
 [Setup - GP tom integration](GPtom-Integration-setup.md)  
 [Streamline Tools](streamlinetools.md)  
-[ARICOMA Solution](../index.md)
+[ARICOMA Solution](solutions.md)

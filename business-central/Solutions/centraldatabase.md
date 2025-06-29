@@ -43,4 +43,4 @@ When you synchronize manually, you can use filters to specify exactly what table
 ## See also
 [Central Database - Setup](centraldatabase-setup.md)  
 [Productivity Pack](productivity-pack.md)  
-[ARICOMA řešení](../index.md)
+[ARICOMA řešení](solutions.md)

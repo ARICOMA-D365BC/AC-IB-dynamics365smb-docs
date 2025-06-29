@@ -73,6 +73,6 @@ It is necessary to set columns for individual sections, which will be exported t
 
 ## See also
 
-[ARICOMA Solutions](../index.md)  
+[ARICOMA Solutions](solutions.md)  
 [SK Legislative Pack](sk-legislative-pack.md)  
 [VAT Control Report](sk-vat-check-report-export.md)

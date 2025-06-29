@@ -111,4 +111,4 @@ Use the settings to specify relational bindings that ensure that related records
 
 [Central Database](centraldatabase.md)`  
 [Productivity Pack](productivity-pack.md)  
-[ARICOMA Solutions](../index.md)
+[ARICOMA Solutions](solutions.md)

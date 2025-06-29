@@ -104,6 +104,6 @@ In General ledger setup and VAT posting setup, you can enable system controls wh
 
 ## See also
 
-[ARICOMA Solutions](../index.md)  
+[ARICOMA Solutions](solutions.md)  
 [SK Legislative Pack](sk-legislative-pack.md)   
 [VAT Statement - Export](sk-vat-statement-export.md)

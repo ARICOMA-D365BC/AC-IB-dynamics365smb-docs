@@ -27,7 +27,7 @@ Addon set to extend finance functionality for D365 Business Central.
 |List of Deprecated features|[Deprecated features](fp-deprecated-features.md)
 
 ## See also
-[ARICOMA Solution](../index.md)  
-[Productivity Pack](../ProductivityPack/productivity-pack.md)    
-[Slovak Legislative Pack](../SK/sk-legislative-pack.md)
+[ARICOMA Solution](solutions.md)  
+[Productivity Pack](productivity-pack.md)    
+[Slovak Legislative Pack](sk-legislative-pack.md)
 

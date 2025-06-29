@@ -37,6 +37,6 @@ Set of addons to extend the functionality of the operational part of the system 
 |Functionality enabling the user to manage ARICOMA product subscriptions in the Business Central environment.|[AC Monetization](monetization.md)|
 
 ## See also
-[ARICOMA Solution](../index.md)  
-[Financial Pack](../FinancialPack/finance-pack.md)  
-[Slovak Legislative Pack](../SK/sk-legislative-pack.md)
+[ARICOMA Solution](solutions.md)  
+[Financial Pack](finance-pack.md)  
+[Slovak Legislative Pack](sk-legislative-pack.md)

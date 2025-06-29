@@ -26,5 +26,5 @@ The exchange rate table imports the exchange rate with the validity date moved f
 
 ## See also
 
-[ARICOMA Solution](../index.md)  
+[ARICOMA Solution](solutions.md)  
 [SK Legislative Pack](sk-legislative-pack.md)

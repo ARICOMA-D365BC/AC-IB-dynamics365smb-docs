@@ -260,4 +260,4 @@ In the case of creating a shipment from a billed sales invoice, it is possible t
 ## See also
 [Parcels](parcels.md)  
 [Productivity Pack](productivity-pack.md)  
-[ARICOMA Solutions](../index.md)
+[ARICOMA Solutions](solutions.md)

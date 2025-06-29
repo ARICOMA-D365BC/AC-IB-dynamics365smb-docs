@@ -89,5 +89,5 @@ Product turnover is a key indicator of warehouse management efficiency. Analysis
 Do you want a tool in your company that provides immediate access to important data, increases decision-making efficiency, and facilitates strategic management? Contact us for a non-binding consultation and find out how Power BI Analytics Suite for Dynamics 365 Business Central can bring you a competitive advantage.
 
 ## See Also
-[ARICOMA Solutions](../index.md)  
-[Streamline Tools](../StreamlineTools/streamlinetools.md)
+[ARICOMA Solutions](solutions.md)  
+[Streamline Tools](streamlinetools.md)

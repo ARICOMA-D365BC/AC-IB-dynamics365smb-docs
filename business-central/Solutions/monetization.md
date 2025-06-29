@@ -59,5 +59,5 @@ To manage subscriptions, use the **ARICOMA Subscription page**, where the user:
 
 
 ## See also
-
-[Productivity Pack](productivity-pack.md)
+[Financial Pack](finance-pack.md)  
+[Productivity Pack](productivity-pack.md)  

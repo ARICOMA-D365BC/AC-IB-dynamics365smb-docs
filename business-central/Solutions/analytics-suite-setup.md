@@ -76,4 +76,4 @@ To display reports and dashboards correctly, you need to link the Power BI appli
 ## See also
 
 [Analytics Suite – Overview](analytics-suite.md)  
-[Streamline Tools](../StreamlineTools/streamlinetools.md)
+[Streamline Tools](streamlinetools.md)

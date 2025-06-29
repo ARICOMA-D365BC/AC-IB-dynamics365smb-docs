@@ -33,6 +33,6 @@ Processing and exporting VAT Control Report.|[VAT Control Report](sk-vat-check-r
 
 ## See also
 
-[ARICOMA Solution](../index.md)  
-[Financial Pack](../FinancialPack/finance-pack.md)  
-[Productivity Pack](../ProductivityPack/productivity-pack.md)
+[ARICOMA Solution](solutions.md)  
+[Financial Pack](finance-pack.md)  
+[Productivity Pack](productivity-pack.md)

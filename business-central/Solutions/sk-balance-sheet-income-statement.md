@@ -37,6 +37,6 @@ Then it is enough to import the resulting file into the electronic form of the f
 
 ## See also
 
-[ARICOMA Solutions](../index.md)  
+[ARICOMA Solutions](solutions.md)  
 [SK Legislative Pack](sk-legislative-pack.md)   
 [Export of financial statements - SK - Setup](sk-balance-sheet-income-statement-setup.md)

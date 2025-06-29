@@ -218,4 +218,4 @@ There is also the possibility of notifications from Balíkobot either by e-mail,
 ## See also
 [Setup - Parcels - Balíkobot Integration](parcels-setup.md)  
 [Productivity Pack](productivity-pack.md)  
-[ARICOMA Solution](../index.md)
+[ARICOMA Solution](solutions.md)

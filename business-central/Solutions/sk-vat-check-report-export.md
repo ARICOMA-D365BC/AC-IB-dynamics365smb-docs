@@ -48,6 +48,6 @@ The control report must be closed only after the data have been checked. When th
 
 ## See also
 
-[ARICOMA Solutions](../index.md)  
+[ARICOMA Solutions](solutions.md)  
 [SK Legislative pack](sk-legislative-pack.md)  
 [VAT Control Report - Settings](sk-vat-check-report-setup.md)

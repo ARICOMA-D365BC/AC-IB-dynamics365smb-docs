@@ -42,6 +42,6 @@ You can see an example in the picture below:
 
 ## See also
 
-[ARICOMA Solutions](../index.md)  
+[ARICOMA Solutions](solutions.md)  
 [SK Legislative pack](sk-legislative-pack.md)  
 [Export of financial statements - SK](sk-balance-sheet-income-statement.md)

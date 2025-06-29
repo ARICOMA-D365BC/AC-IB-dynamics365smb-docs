@@ -51,5 +51,5 @@ portal.
 
 ## See also
 
-[ARICOMA Solutions](../index.md)  
+[ARICOMA Solutions](solutions.md)  
 [Slovak Legislative Pack](sk-legislative-pack.md)

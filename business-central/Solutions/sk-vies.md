@@ -40,5 +40,5 @@ Import the current XML schema template into the XML schemas by following these s
 
 ## See also
 
-[ARICOMA Solution](../index.md)  
+[ARICOMA Solution](solutions.md)  
 [SK Legislative Pack](sk-legislative-pack.md)

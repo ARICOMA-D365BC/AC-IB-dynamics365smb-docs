@@ -28,5 +28,5 @@ ms.search.keywords: Czech, GP Tom Integration, Streamline Tools
 
 ## See Also
 
-[ARICOMA Solutions](../index.md)  
-[Streamline Tools](../StreamlineTools/streamlinetools.md)
+[ARICOMA Solutions](solutions.md)  
+[Streamline Tools](streamlinetools.md)

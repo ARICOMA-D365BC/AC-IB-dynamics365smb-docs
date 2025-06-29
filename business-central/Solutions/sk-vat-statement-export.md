@@ -23,6 +23,6 @@ To export a VAT statement, follow these steps:
 
 ## See also
 
-[ARICOMA Solutions](../index.md)  
+[ARICOMA Solutions](solutions.md)  
 [SK Legislative Pack](sk-legislative-pack.md)  
 [VAT Statement - Setup](sk-vat-statement-setup.md)

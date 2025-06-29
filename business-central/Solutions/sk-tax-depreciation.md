@@ -33,5 +33,5 @@ According to the Income Tax Act No. 595/2003 Coll., a taxpayer may apply annual 
 
 ## See also
 
-[ARICOMA Solution](../index.md)  
+[ARICOMA Solution](solutions.md)  
 [SK Legislative Pack](sk-legislative-pack.md)

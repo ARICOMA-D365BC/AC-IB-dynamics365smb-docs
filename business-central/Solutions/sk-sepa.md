@@ -27,5 +27,5 @@ For the processing of a payment order or statement in SEPA format, the standard 
 
 ## See also
 
-[ARICOMA Solution](../index.md)  
+[ARICOMA Solution](solutions.md)  
 [SK Legislative Pack](sk-legislative-pack.md)

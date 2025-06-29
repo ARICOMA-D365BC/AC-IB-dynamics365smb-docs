@@ -47,5 +47,5 @@ The settings are used to map fields in the application to nodes .xml. This table
 
 
 
-[ARICOMA Solution](../index.md)  
+[ARICOMA Solution](solutions.md)  
 [SK Legislative Pack](sk-legislative-pack.md)

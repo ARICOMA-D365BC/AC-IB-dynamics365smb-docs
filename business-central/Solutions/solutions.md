@@ -31,7 +31,7 @@ More information about Business Central can be found on our [website ACDynamics3
 We are expanding the standard Dynamics 365 Business Central system with a range of functionality complementing legislative requirements and best practices.
 We have grouped the individual functionalities into the following packages.
 
-### [Financial Pack](../FinancialPack/finance-pack.md) - extension for finance
+### [Financial Pack](finance-pack.md) - extension for finance
 - App Extension Set
 - Insolvency register
 - Factoring
@@ -40,7 +40,7 @@ We have grouped the individual functionalities into the following packages.
 - Pack Tracking Basic (EKOKOM)
 - Pack Tracking - Return Packing
 
-### [Productivity Pack](../ProductivityPack/productivity-pack.md) - productivity extension
+### [Productivity Pack](productivity-pack.md) - productivity extension
 - Electronic invoicing
 - Data boxes
 - Incoming Mail
@@ -57,7 +57,7 @@ We have grouped the individual functionalities into the following packages.
 - Spooler
 - Production Tools
 - Parcels
-### [SK Legislative Pack](../SK/sk-legislative-pack.md) - extension to Slovak legislation and Slovak language
+### [SK Legislative Pack](sk-legislative-pack.md) - extension to Slovak legislation and Slovak language
 
 ## ARICOMA INDUSTRY SOLUTIONS
 In addition to the expansion modules, the specialized industry solutions listed below are available.
@@ -78,6 +78,6 @@ In addition to the expansion modules, the specialized industry solutions listed 
 
 
 ## See also
-[Financial Pack](../FinancialPack/finance-pack.md)  
-[Productivity Pack](../ProductivityPack/productivity-pack.md)  
-[SK Legislative Pack](../SK/sk-legislative-pack.md)
+[Financial Pack](finance-pack.md)  
+[Productivity Pack](productivity-pack.md)  
+[SK Legislative Pack](sk-legislative-pack.md)

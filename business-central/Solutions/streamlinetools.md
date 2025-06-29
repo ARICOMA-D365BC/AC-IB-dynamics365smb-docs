@@ -24,7 +24,7 @@ ms.author: martinkunes
 
 
 ## See Also
-[ARICOMA Solutions](../index.md)  
-[Financial Pack](../FinancialPack/finance-pack.md)  
-[Productivity Pack](../ProductivityPack/productivity-pack.md)  
-[SK Legislative Pack](../SK/sk-legislative-pack.md)
+[ARICOMA Solutions](solutions.md)  
+[Financial Pack](finance-pack.md)  
+[Productivity Pack](productivity-pack.md)  
+[SK Legislative Pack](sk-legislative-pack.md)

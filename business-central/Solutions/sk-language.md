@@ -24,5 +24,5 @@ To change the language, follow this procedure:
 5.	After Business Central refresh is finished, your Business Central is in Slovak.
 
 
-[ARICOMA Řešení](../index.md)  
+[ARICOMA Řešení](solutions.md)  
 [SK Legislativní balíček](sk-legislative-pack.md)
