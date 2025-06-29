@@ -1,4 +1,4 @@
-# [Solutions](solutions/solutions.md)
+# [Solutions](solutions.md)
 ## [Analytics Suite](analytics-suite.md)
 ### [Settings - Analytics Suite](analytics-suite-setup.md)
 ## [Application extension set](controling-basic.md)
