@@ -1,0 +1,177 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>General parameters | Microsoft Docs </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="General parameters | Microsoft Docs ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../TOC.html">
+    <meta property="docfx:tocrel" content="TOC.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="png" src="../logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="general-parameters---setup">General Parameters - Setup</h1>
+
+<blockquote>
+<p>Update 17.03.2022</p>
+</blockquote>
+<h2 id="creating-and-setting-up-general-parameters">Creating and setting up general parameters</h2>
+<p>To create a code list of general parameters, proceed as follows:</p>
+<ol>
+<li>Choose the <img src="media/ui-search/search_small.png" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong>General Parameters</strong> and then choose the related link.</li>
+<li>In the overview, select <strong>New</strong>.</li>
+<li>Enter the <strong>Code</strong> for the parameter, <strong>Description</strong>, <strong>Data Type</strong> and <strong>Input Method</strong>.</li>
+</ol>
+<p><img src="media/general_parameters_list.png" alt="Overview of general parameters"></p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The functionality offers more options, but the following data types <strong>Text, Code, Integer, Decimal, Boolean, Datetime, DateFormula, Date, Time, Duration, RecordID</strong> are suitable for general parameters.
+Using the Table input method is related to populating the Table ID and Field ID fields, and using the Function input method is related to populating the Function ID.</p>
+</div>
+<h3 id="define-parameter-values">Define parameter values</h3>
+<p>To define parameter values, follow these steps:</p>
+<ol>
+<li>Choose the <img src="media/ui-search/search_small.png" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong>General Parameters</strong> and then choose the related link.</li>
+<li>In the overview, select the parameter for which you want to set values.</li>
+<li>In the Related section, select the <strong>Values</strong> function in the <strong>Parameter</strong> group.</li>
+<li>A window for entering the values of the selected parameter will open, where you will fill in the rows as needed.</li>
+</ol>
+<p><img src="media/general_parameters_values.png" alt="General Parameter Values"></p>
+<p>Setting parameter values is necessary especially for parameters with <strong>Input method - Selection</strong>. However, it is also possible to define values for parameters entered by Manual input. Here, in addition to the values ​​entered in this way, it is possible to enter any other values ​​when entering general parameters. The values entered in the settings are then used to simplify input.</p>
+<blockquote>
+<p><img src="media/general_parameters_values_lookup.png" alt="Input Method - Selection"></p>
+</blockquote>
+<h3 id="definition-of-parameter-translations">Definition of parameter translations</h3>
+<p>To define parameter translations, follow these steps:</p>
+<ol>
+<li>Choose the <img src="media/ui-search/search_small.png" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong>General Parameters</strong> and then choose the related link.</li>
+<li>In the report, select the parameter you want to set up translations for.</li>
+<li>In the Related section, in the <strong>Parameter</strong> group select <strong>Translations</strong>.</li>
+<li>A window will open for entering translations of the selected parameter, where you will fill in the <strong>Language Code</strong> and <strong>Descriptionpis</strong> as needed.</li>
+</ol>
+<p><img src="media/general_parameters_values_translation.png" alt="Parameter translations"></p>
+<h3 id="define-translations-of-parameter-values">Define translations of parameter values</h3>
+<p>To define translations of parameter values, follow these steps:</p>
+<ol>
+<li>Choose the <img src="media/ui-search/search_small.png" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong>General Parameters</strong> and then choose the related link.</li>
+<li>In the report, select the parameter you want to set up translations for.</li>
+<li>In the Related section, in the <strong>Value</strong> group, and select <strong>Translations</strong>.</li>
+<li>A window for entering translations of the values of the selected parameter will open, where you will fill in <strong>the Language Code</strong> and <strong>Description</strong> as needed.</li>
+</ol>
+<p><img src="media/general_parameters_values_translations_value.png" alt="Parameter value translations"></p>
+<h2 id="set-up-general-parameter-templates">Set up general parameter templates</h2>
+<p>To set up general parameter templates for use on selected entities, proceed as follows:</p>
+<ol>
+<li>Choose the <img src="media/ui-search/search_small.png" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong>General Parameter Templates</strong> and then choose the related link.</li>
+<li>In the overview, select <strong>New</strong>.</li>
+<li>Enter <strong>Name</strong>, <strong>Description</strong>, and <strong>Table ID</strong>.</li>
+</ol>
+<p><img src="media/general_parameters_templates.png" alt="General parameter template"></p>
+<h3 id="enter-parameters-for-the-selected-template">Enter parameters for the selected template</h3>
+<ol>
+<li>Choose the <img src="media/ui-search/search_small.png" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong>General Parameter Templates</strong> and then choose the related link.</li>
+<li>In the list of templates, select the template for which you want to enter parameters.</li>
+<li>In the Related section, in <strong>Template</strong> group, select <strong>Parameters</strong>.</li>
+<li>The selected template window opens, where you can add parameters. Additionally, you can set the parameters to be the default template, mandatory, or you can specify a priority.</li>
+</ol>
+<p><img src="media/general_parameters_templates_values.png" alt="General Parameters Template Parameters"></p>
+<h2 id="see-also">See also</h2>
+<p><a href="general-parameters.html">General Parameters</a><br>
+<a href="productivity-pack.html">Productivity Pack</a></p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/ARICOMA-D365BC/AC-IB-dynamics365smb-docs/blob/master/business-central/Solutions/general-parameters-setup.md/#L1" class="contribution-link">Improve this document</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+           <span><a href="https://www.aricoma.com/docs/en-us/dynamics365/business-central/Solutions/solutions.html"><strong>ENGLISH</strong><strong>/</strong><a href="https://www.aricoma.com/docs/cs-cz/dynamics365/business-central/Solutions/solutions.html"><strong>CZECH</strong></a></a></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
