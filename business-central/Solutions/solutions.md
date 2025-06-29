@@ -19,7 +19,7 @@ More information about Business Central can be found on our [website ACDynamics3
 
 **Implementing Microsoft Dynamics 365 Business Central from ARICOMA is easy and fast thanks to a wide range of extension modules and industry solutions.**
 
-## ARICOMA EXTENSION MODULES
+## Aricoma Extension Modules
 
 We are expanding the standard Dynamics 365 Business Central system with a range of functionality complementing legislative requirements and best practices.
 
@@ -27,7 +27,8 @@ We are expanding the standard Dynamics 365 Business Central system with a range 
 
 For Slovak companies we provide extension to [Slovak legislation and Slovak language](sk-legislative-pack.md).  
 
-## ARICOMA INDUSTRY SOLUTIONS
+## Aricoma Industry Solutions
+
 In addition to the expansion modules, the specialized industry solutions listed below are available.
 
 - Spa, hotel and wellness
