@@ -79,4 +79,4 @@
 
 # [Purchase and administration of Aricoma modules](monetization.md)
 
-# [Support](../support/support.md)
+# [Support](support.md)
