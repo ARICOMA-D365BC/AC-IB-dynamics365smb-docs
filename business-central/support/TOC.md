@@ -80,3 +80,5 @@
 # [Purchase and administration of Aricoma modules](../solutions/monetization.md)
 
 # [Support](support.md)
+
+<!-- Update: 2025-06-29 -->
