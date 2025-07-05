@@ -1,14 +1,11 @@
 ---
-title: ARICOMA SOLUTIONS - Odesílání elektronických dokladů | Microsoft Docs
-description: Electronic documents Setup
+title: ARICOMA SOLUTIONS - Electronic Documents Sending - Setup  
+description: Setup for Electronic documents sending module for Dynamics 365 Business Central
 author: kunes
-ms.service: dynamics365-business-central
-ms.topic: article
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.search.keywords: Czech, Electronic documents setup, additional functions
-ms.author: v-makune
+date: 07/01/2025
+reviewer: janousek
+ms.service: dynamics-365-business-central
+ms.search.keywords: Czech, Electronic documents, Electronic invoicing, ISDOC, PEPPOL, XML 
 ---
 # Electronic Documents Sending - Settings
 > Update 20.06.2023
