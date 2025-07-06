@@ -4,7 +4,7 @@ description: Feature that are Moved, Removed or Replaced
 author: ACMartinKunes
 ms.service: dynamics-365-business-central
 ms.search.keywords: Controling basic, finance 
-ms.date: 01/31/2021
+ms.date: 07/01/2025
 ms.author: AC MartinKunes
 ---
 
