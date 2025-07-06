@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>ARICOMA SOLUTIONS - Electronic Documents Sending - Setup </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="ARICOMA SOLUTIONS - Electronic Documents Sending - Setup ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../TOC.html">
+    <meta property="docfx:tocrel" content="TOC.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="png" src="../logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="electronic-documents-sending---settings" sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="10">Electronic Documents Sending - Settings</h1>
+
+<blockquote sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="11">
+<p sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="11">Update 20.06.2023</p>
+</blockquote>
+<p sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="13">Before you can take advantage of the enhanced capabilities of sending electronic documents, you must configure the rules and values that define the company's requirements in this area.</p>
+<h2 id="document-sending-profiles" sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="15">Document sending profiles</h2>
+<p sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="16">If your company uses more than one way to send documents to customers or vendors, it is advisable to define document sending profiles for all of them. You can define one method as the default and then assign specific ones to selected partners.</p>
+<p sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="18"><img src="media/elect_dom_set1.png" sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="18" alt="Document sending profiles"></p>
+<p sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="20">For more information, see <a href="https://docs.microsoft.com/en-us/dynamics365/business-central/sales-how-setup-document-send-profiles" sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="20">Set Up Document Sending Profile</a>.</p>
+<div class="NOTE" sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="22">
+<h5>Note</h5>
+<p sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="23">You must create as many sending profiles as the number of different sending combinations the company will use (e.g., if you are sending invoices via email in XML or PEPPOL format, you must have 2 sending profiles).</p>
+</div>
+<div class="WARNING" sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="25">
+<h5>Warning</h5>
+<p sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="26">This module is not adapted to use the „Electronic Document“ value in the Email Attachment field. Instead, you must use the value „Through Document Exchange Service“ in the Electronic document field (see also ISDOC and XML format settings).</p>
+</div>
+<h2 id="document-sending-profiles-by-document-type" sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="28">Document Sending Profiles by Document Type</h2>
+<h3 id="default-settings" sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="29">Default settings:</h3>
+<ol sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="30">
+<li sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="30">Choose the <img src="media/ui-search/search_small.png" sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="30" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="30">Electronic Document Setup</strong> and then choose the related link.</li>
+<li sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="31">On the Electronic Document Setup page, run the <em sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="31">Documents Partner Setup</em> action.</li>
+<li sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="32">On the row in the Usage column, select the document for which you want to set the default sending method (<em sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="32">Document Sending Profile column</em>).</li>
+</ol>
+<h3 id="specific-settings" sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="35">Specific settings:</h3>
+<ol sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="36">
+<li sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="36">Choose the <img src="media/ui-search/search_small.png" sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="36" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="36">Customers</strong> and then choose the related link.</li>
+<li sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="37">Locate the appropriate customer and open their tab.</li>
+<li sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="38">On the customer's card page, run the <em sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="38">Electronic Documents Partner Setup</em> action.</li>
+<li sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="39">On the row in the Usage column, select the document for which you want to set a specific sending method for the customer (<em sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="39">Document Sending Profile column</em>) and other parameters (email, etc.).</li>
+</ol>
+<div class="NOTE" sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="42">
+<h5>Note</h5>
+<p sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="43">If necessary, you can also define different parameters for individual Ship-to Addresses. Similar functionality is available on the Supplier tab and on the Order Addresses tab.</p>
+</div>
+<h2 id="automatic-sending-of-documents" sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="45">Automatic sending of documents</h2>
+<ol sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="46">
+<li sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="46">Choose the <img src="media/ui-search/search_small.png" sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="46" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="46">Customers</strong> and then choose the related link.</li>
+<li sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="47">Turn on field <strong sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="47">Auto.Send Documents</strong>.</li>
+<li sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="48">Close the page.</li>
+</ol>
+<p sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="50">The function creates Job Queue entries for workdays with an interval of 30 minutes. If necessary, you can modify the parameters.</p>
+<h2 id="sending-logging" sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="52">Sending logging</h2>
+<p sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="54">If you turn on logging of Send activities, you will find each use of the Send function on documents in the Activity Log.</p>
+<ol sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="56">
+<li sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="56">Choose the <img src="media/ui-search/search_small.png" sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="56" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="56">Electronic Document Setup</strong> and then choose the related link.</li>
+<li sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="57">Turn on field <em sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="57">Use Activity Log</em>.</li>
+<li sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="58">Close the page.</li>
+</ol>
+<h2 id="isdoc-and-xml-format-settings" sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="60">ISDOC and XML format settings</h2>
+<p sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="62">To set up the ISDOC and XML formats correctly, use the assisted setup to add the basic settings to the Electronic Document Formats list for Sales Invoice and Sales Credit Note documents. You can create your own exports and adjust the settings within the customizations.</p>
+<p sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="64">Formats with the code &quot;AC_ISDOC_6&quot; (or &quot;AC_XML&quot;) are for use on document sending profiles where the Email field is set as the delivery method for the electronic document (Email attachment = PDF &amp; Electronic Document).</p>
+<p sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="66">In contrast, formats with a code ending in SPOOLER are for use on document sending profiles where the Electronic Document field is set as the delivery method.</p>
+<p sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="68">Note: The wizard will also add settings for sending PDF using the Spooler functionality (&quot;AC_PDF_SPOOLER&quot;).</p>
+<h2 id="isdoc-settings---payment-methods" sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="70">ISDOC Settings - Payment Methods</h2>
+<p sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="71">To use the ISDOC format, it is necessary to set the mapping of the payment methods used in BC to the payment methods defined in the ISDOC format by the &quot;PaymentMeansCodeType&quot; element.</p>
+<ol sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="73">
+<li sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="73">Choose the <img src="media/ui-search/search_small.png" sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="73" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="73">Payment Methods</strong> and then choose the related link.</li>
+<li sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="74">On the Payment Methods page, navigate to the row corresponding to the cash payment.</li>
+<li sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="75">Enter 10 in the ISDOC Method Code column.</li>
+<li sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="76">Repeat for the other payment methods used (42 - Bank transfer, 48 - Card payment,... see more at <a href="https://isdoc.cz/6.0.2/xsd/isdoc-invoice-6.0.2.xsd" sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="76">isdoc.cz/6.0.2/xsd/isdoc-invoice-6.0.2.xsd</a>)</li>
+</ol>
+<h2 id="general-emails---settings" sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="78">General emails - settings</h2>
+<h3 id="basic-setup" sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="79">Basic setup</h3>
+<ol sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="80">
+<li sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="80">Choose the <img src="media/ui-search/search_small.png" sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="80" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="80">General Email Sending Setup List</strong> , and then choose the related link.</li>
+<li sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="81">On the General Email Sending Setup List page, run the <em sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="81">New</em> action.</li>
+<li sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="82">On the General Email Sending Setup card, select <em sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="82">Type</em> and <em sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="82">Language Code</em>, which are the determining combinations for finding the correct email template. A blank language code is valid for all languages unless a setting for a specific code is found.</li>
+<li sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="83">In the <em sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="83">Email Scenario</em> field, select the method of sending the email.</li>
+<li sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="84">In the <em sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="84">Subject</em> field, you can define the subject text of the email (optional).</li>
+<li sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="85">In <em sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="85">CC Emails</em> and <em sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="85">BCC Emails</em>, enter the recipients' emails to be sent beyond the defined recipients passed in the function call (not required).</li>
+<li sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="86">In the <em sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="86">Body Table ID</em> field, select the table from whose data the actual email will be created.</li>
+<li sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="87">In the <em sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="87">Body Report ID</em> field, select the report that defines the body of the email.</li>
+<li sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="88">Then, in the <em sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="88">Body Layout Code</em> field, select the specific layout you want to use to create the email (e.g., a different language).</li>
+<li sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="89">When the settings are complete, turn on the <em sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="89">Active</em> flag and close the card.</li>
+</ol>
+<div class="NOTE" sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="91">
+<h5>Note</h5>
+<p sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="92">For the Status Management addon, there is an Action (codeunit 52067906 SMActionSendEMail_ach) that you can use to trigger the creation and sending of a generic email when the state changes.
+Description of the action parameters: 1 = Type, 2 = Email, 3 = Language Code (Optional), 4 = Subject (Optional), 5 = CC Emails (Optional), 6 = BCC Emails (Optional)</p>
+</div>
+<h3 id="e-mail-attachments" sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="95">E-mail attachments</h3>
+<p sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="96">You can also have attachments inserted into the email by running the report over any table. However, when calling the function, you must pass a link to the appropriate table record and the functionality will find all attachment settings for the same table and create a PDF attachment.
+To set it up, do the following:</p>
+<ol sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="98">
+<li sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="98">Choose the <img src="media/ui-search/search_small.png" sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="98" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="98">General Email Sending Setup List</strong> , and then choose the related link.</li>
+<li sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="99">On the General Email Sending Setup List page,  run the <em sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="99">Edit</em> action on the selected row.</li>
+<li sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="100">On the General Email Sending Setup card, create the new line on Gen. Email Sending Setup Attachments tab.</li>
+<li sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="101">In the <em sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="101">Attachment Name</em> field, enter the name of the file you want it to have when you insert it into the email. You can take a value from any field in the table, e.g. the definition &quot;Order No. [3].pdf&quot; will name the file &quot;Order No. 101123.pdf&quot;.</li>
+<li sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="102">In the <em sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="102">Attachment table number</em> field, select the table from whose data the attachment is to be created.</li>
+<li sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="103">In the <em sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="103">Attachment Report No.</em> field, select the report to create the email attachment.</li>
+<li sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="104">If you need to set specific report parameters, run the Fill Parameters action and define them in the open report page.</li>
+<li sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="105">Close the card.</li>
+</ol>
+<h3 id="example-of-a-function-to-create-an-email" sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="107">Example of a function to create an email</h3>
+<p sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="108">The following code illustrates the function call that first creates the email, then passes the function call to create attachments over the record from which the email itself is created. The next function creates the email session. The last function is to queue the email for sending.
+{
+...
+EMailManagement.InitEMail(EmailTypeEnum, LanguageCode, SrcRecordRef, Recipients, Subject, CC, BCC);
+EMailManagement.AddEMailAttachments(SrcRecordRef);
+IF AddEPrimaryEmailRelation THEN
+EMailManagement.AddEMailPrimaryRelation(SrcRecordRef);
+IF AddRelatedEmailRelation THEN
+EMailManagement.AddEMailRelatedRelation(SrcRecordRef);
+EMailManagement.EnqueueEMail();
+...
+}</p>
+<h2 id="optional---sending-via-spooler" sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="121">Optional - Sending via Spooler</h2>
+<p sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="122">If you have the Spooler module enabled, you can send documents through it. It is not recommended for sending emails, but rather to cover customer requests with the need for logged communication.</p>
+<p sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="124">You must set the default process type designation for the Sending Electronic Documents module.</p>
+<ol sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="126">
+<li sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="126">Choose the <img src="media/ui-search/search_small.png" sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="126" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="126">Electronic Document Setup</strong> and then choose the related link.</li>
+<li sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="127">On the Electronic Document Setup page, fill in <strong sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="127">Spooler Process Type</strong>.</li>
+<li sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="128">Close the page.</li>
+</ol>
+<p sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="131">Then, for each customer, you need to set specific parameters for sending via Spooler.</p>
+<h3 id="document-delivery-parameters" sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="133">Document delivery parameters</h3>
+<ol sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="135">
+<li sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="135">Choose the <img src="media/ui-search/search_small.png" sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="135" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="135">Customers</strong> and then choose the related link.</li>
+<li sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="136">Open the relevant customer card, and then choose the Electronic Documents Partner Setup action.</li>
+<li sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="137">Fill in Spooler Process Type, Spooler Destination System and Spooler Interaction Parameter for required Usage and relevant Document Sending Profile.</li>
+<li sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="138">Close the page.</li>
+</ol>
+<p sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="141">For more information, see the <a href="https://muj.autocont.cz/docs/en-us/dynamics365/business-central/ProductivityPack/spooler.html" sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="141">Spooler</a>.</p>
+<h2 id="onprem---sending-via-data-box" sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="143">OnPrem - Sending via Data Box</h2>
+<p sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="145"><strong sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="145">The described functionality is only available in the OnPrem version!</strong></p>
+<p sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="148">If you have purchased the Data Mailbox module, you can also send documents via this communication channel. The advantage of such communication is that the reliability of the delivery of data messages is ensured.</p>
+<p sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="150">In order to use the Data Mailbox for sending documents, you need to define which Outgoing Mail Template the messages should be sent through.</p>
+<ol sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="152">
+<li sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="152">Choose the <img src="media/ui-search/search_small.png" sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="152" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="152">Electronic Document Setup</strong> and then choose the related link.</li>
+<li sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="153">In the <strong sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="153">Databox Mail Template</strong> field, choose the template to use.</li>
+<li sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="154">Close the page.</li>
+</ol>
+<div class="IMPORTANT" sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="156">
+<h5>Important</h5>
+<p sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="157">You must also set the Electronic Document Formats. Then create your own formats analogous to the settings for Spooler, for Data Boxes you need to change the value in the Delivery ID field to 52067927.</p>
+</div>
+<p sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="159">If the single Data Box ID entered on the Customer tab is not sufficient, it is possible to set Data Mailbox IDs specific to different documents:</p>
+<ol sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="160">
+<li sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="160">Choose the <img src="media/ui-search/search_small.png" sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="160" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="160">Customers</strong> and then choose the related link.</li>
+<li sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="161">Find the relevant customer and open their card.</li>
+<li sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="162">On the Customer Card page, run the Electronic Documents Partner Setup action.</li>
+<li sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="163">On the line with the desired combination of Usage and Document Sending Profile, enter the <strong sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="163">Data Box ID</strong>.</li>
+</ol>
+<h2 id="onprem---electronic-signing-of-documents" sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="167">OnPrem - Electronic signing of documents</h2>
+<p sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="168"><strong sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="168">The described functionality is only available in the OnPrem version!!</strong></p>
+<p sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="170">It is recommended to use the Setup Wizard to make the necessary settings for signing PDF documents.</p>
+<p sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="172">There are 3 steps:</p>
+<h3 id="installing-a-certificate-for-signing" sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="174">Installing a certificate for signing</h3>
+<ol sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="176">
+<li sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="176">Choose the <img src="media/ui-search/search_small.png" sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="176" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="176">Electronic Document Setup</strong> and then choose the related link.</li>
+<li sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="177">On the Electronic Document Setup page, choose the Import action in Pfx Certificate SubMenu.</li>
+<li sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="178">Select the Pfx file, and open it.</li>
+<li sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="179">On the Electronic Document Setup page, fill in Pfx Certificate password.</li>
+<li sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="180">Close the page.</li>
+</ol>
+<h2 id="installing-pdfxchange" sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="183">Installing PDFXchange</h2>
+<p sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="185">The PDFXchange application must be installed on the server on which you are running the middle tier. A license for the application for background use is included with the addon. However, if you want to use the application other than through Business Central, you must purchase a license.</p>
+<p sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="187">The installation files can be found on the manufacturer's website at  <a href="https://www.pdfxchange.cz/download" sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="187">https://www.pdfxchange.cz/download</a>, , and you can use any of the available editions (Editor, Standard or PRO).</p>
+<h2 id="time-stamp-settings" sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="189">Time stamp settings</h2>
+<p sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="191">This is an optional step if you use a paid service from such a service provider. If you want to adjust the basic settings manually, open the Electronic Document Settings.</p>
+<ol sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="193">
+<li sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="193">Choose the <img src="media/ui-search/search_small.png" sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="193" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="193">Electronic Document Setup</strong> and then choose the related link.</li>
+<li sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="194">Enter an URL address of your timestamp service provider in the TimeStamp Server URL field.</li>
+<li sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="195">Enter an account name given by your service provider in the TimeStamp Server Account field.</li>
+<li sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="196">Enter a password for the timestamp account in the TimeStamp Server password field.</li>
+<li sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="197">Close the page.</li>
+</ol>
+<h2 id="viz-také" sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="201">Viz také</h2>
+<p sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="203"><a href="electronic-documents.html" sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="203">Odesílání elektronických dokladů</a><br>
+<a href="productivity-pack.html" sourcefile="Solutions/electronic-documents-setup.md" sourcestartlinenumber="204">Productivity Pack</a></p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/ARICOMA-D365BC/AC-IB-dynamics365smb-docs/blob/master/business-central/Solutions/electronic-documents-setup.md/#L1" class="contribution-link">Improve this document</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+           <span><a href="https://www.aricoma.com/docs/en-us/dynamics365/business-central/Solutions/solutions.html"><strong>ENGLISH</strong><strong>/</strong><a href="https://www.aricoma.com/docs/cs-cz/dynamics365/business-central/Solutions/solutions.html"><strong>CZECH</strong></a></a></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

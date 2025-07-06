@@ -1,0 +1,281 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>ARICOMA SOLUTIONS - Electronic Documents Sending - Setup </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="ARICOMA SOLUTIONS - Electronic Documents Sending - Setup ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../TOC.html">
+    <meta property="docfx:tocrel" content="TOC.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="png" src="../logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="electronic-documents-sending---settings">Electronic Documents Sending - Settings</h1>
+
+<blockquote>
+<p>Update 20.06.2023</p>
+</blockquote>
+<p>Before you can take advantage of the enhanced capabilities of sending electronic documents, you must configure the rules and values that define the company's requirements in this area.</p>
+<h2 id="document-sending-profiles">Document sending profiles</h2>
+<p>If your company uses more than one way to send documents to customers or vendors, it is advisable to define document sending profiles for all of them. You can define one method as the default and then assign specific ones to selected partners.</p>
+<p><img src="media/elect_dom_set1.png" alt="Document sending profiles"></p>
+<p>For more information, see <a href="https://docs.microsoft.com/en-us/dynamics365/business-central/sales-how-setup-document-send-profiles">Set Up Document Sending Profile</a>.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>You must create as many sending profiles as the number of different sending combinations the company will use (e.g., if you are sending invoices via email in XML or PEPPOL format, you must have 2 sending profiles).</p>
+</div>
+<div class="WARNING">
+<h5>Warning</h5>
+<p>This module is not adapted to use the „Electronic Document“ value in the Email Attachment field. Instead, you must use the value „Through Document Exchange Service“ in the Electronic document field (see also ISDOC and XML format settings).</p>
+</div>
+<h2 id="document-sending-profiles-by-document-type">Document Sending Profiles by Document Type</h2>
+<h3 id="default-settings">Default settings:</h3>
+<ol>
+<li>Choose the <img src="media/ui-search/search_small.png" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong>Electronic Document Setup</strong> and then choose the related link.</li>
+<li>On the Electronic Document Setup page, run the <em>Documents Partner Setup</em> action.</li>
+<li>On the row in the Usage column, select the document for which you want to set the default sending method (<em>Document Sending Profile column</em>).</li>
+</ol>
+<h3 id="specific-settings">Specific settings:</h3>
+<ol>
+<li>Choose the <img src="media/ui-search/search_small.png" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong>Customers</strong> and then choose the related link.</li>
+<li>Locate the appropriate customer and open their tab.</li>
+<li>On the customer's card page, run the <em>Electronic Documents Partner Setup</em> action.</li>
+<li>On the row in the Usage column, select the document for which you want to set a specific sending method for the customer (<em>Document Sending Profile column</em>) and other parameters (email, etc.).</li>
+</ol>
+<div class="NOTE">
+<h5>Note</h5>
+<p>If necessary, you can also define different parameters for individual Ship-to Addresses. Similar functionality is available on the Supplier tab and on the Order Addresses tab.</p>
+</div>
+<h2 id="automatic-sending-of-documents">Automatic sending of documents</h2>
+<ol>
+<li>Choose the <img src="media/ui-search/search_small.png" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong>Customers</strong> and then choose the related link.</li>
+<li>Turn on field <strong>Auto.Send Documents</strong>.</li>
+<li>Close the page.</li>
+</ol>
+<p>The function creates Job Queue entries for workdays with an interval of 30 minutes. If necessary, you can modify the parameters.</p>
+<h2 id="sending-logging">Sending logging</h2>
+<p>If you turn on logging of Send activities, you will find each use of the Send function on documents in the Activity Log.</p>
+<ol>
+<li>Choose the <img src="media/ui-search/search_small.png" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong>Electronic Document Setup</strong> and then choose the related link.</li>
+<li>Turn on field <em>Use Activity Log</em>.</li>
+<li>Close the page.</li>
+</ol>
+<h2 id="isdoc-and-xml-format-settings">ISDOC and XML format settings</h2>
+<p>To set up the ISDOC and XML formats correctly, use the assisted setup to add the basic settings to the Electronic Document Formats list for Sales Invoice and Sales Credit Note documents. You can create your own exports and adjust the settings within the customizations.</p>
+<p>Formats with the code &quot;AC_ISDOC_6&quot; (or &quot;AC_XML&quot;) are for use on document sending profiles where the Email field is set as the delivery method for the electronic document (Email attachment = PDF &amp; Electronic Document).</p>
+<p>In contrast, formats with a code ending in SPOOLER are for use on document sending profiles where the Electronic Document field is set as the delivery method.</p>
+<p>Note: The wizard will also add settings for sending PDF using the Spooler functionality (&quot;AC_PDF_SPOOLER&quot;).</p>
+<h2 id="isdoc-settings---payment-methods">ISDOC Settings - Payment Methods</h2>
+<p>To use the ISDOC format, it is necessary to set the mapping of the payment methods used in BC to the payment methods defined in the ISDOC format by the &quot;PaymentMeansCodeType&quot; element.</p>
+<ol>
+<li>Choose the <img src="media/ui-search/search_small.png" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong>Payment Methods</strong> and then choose the related link.</li>
+<li>On the Payment Methods page, navigate to the row corresponding to the cash payment.</li>
+<li>Enter 10 in the ISDOC Method Code column.</li>
+<li>Repeat for the other payment methods used (42 - Bank transfer, 48 - Card payment,... see more at <a href="https://isdoc.cz/6.0.2/xsd/isdoc-invoice-6.0.2.xsd">isdoc.cz/6.0.2/xsd/isdoc-invoice-6.0.2.xsd</a>)</li>
+</ol>
+<h2 id="general-emails---settings">General emails - settings</h2>
+<h3 id="basic-setup">Basic setup</h3>
+<ol>
+<li>Choose the <img src="media/ui-search/search_small.png" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong>General Email Sending Setup List</strong> , and then choose the related link.</li>
+<li>On the General Email Sending Setup List page, run the <em>New</em> action.</li>
+<li>On the General Email Sending Setup card, select <em>Type</em> and <em>Language Code</em>, which are the determining combinations for finding the correct email template. A blank language code is valid for all languages unless a setting for a specific code is found.</li>
+<li>In the <em>Email Scenario</em> field, select the method of sending the email.</li>
+<li>In the <em>Subject</em> field, you can define the subject text of the email (optional).</li>
+<li>In <em>CC Emails</em> and <em>BCC Emails</em>, enter the recipients' emails to be sent beyond the defined recipients passed in the function call (not required).</li>
+<li>In the <em>Body Table ID</em> field, select the table from whose data the actual email will be created.</li>
+<li>In the <em>Body Report ID</em> field, select the report that defines the body of the email.</li>
+<li>Then, in the <em>Body Layout Code</em> field, select the specific layout you want to use to create the email (e.g., a different language).</li>
+<li>When the settings are complete, turn on the <em>Active</em> flag and close the card.</li>
+</ol>
+<div class="NOTE">
+<h5>Note</h5>
+<p>For the Status Management addon, there is an Action (codeunit 52067906 SMActionSendEMail_ach) that you can use to trigger the creation and sending of a generic email when the state changes.
+Description of the action parameters: 1 = Type, 2 = Email, 3 = Language Code (Optional), 4 = Subject (Optional), 5 = CC Emails (Optional), 6 = BCC Emails (Optional)</p>
+</div>
+<h3 id="e-mail-attachments">E-mail attachments</h3>
+<p>You can also have attachments inserted into the email by running the report over any table. However, when calling the function, you must pass a link to the appropriate table record and the functionality will find all attachment settings for the same table and create a PDF attachment.
+To set it up, do the following:</p>
+<ol>
+<li>Choose the <img src="media/ui-search/search_small.png" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong>General Email Sending Setup List</strong> , and then choose the related link.</li>
+<li>On the General Email Sending Setup List page,  run the <em>Edit</em> action on the selected row.</li>
+<li>On the General Email Sending Setup card, create the new line on Gen. Email Sending Setup Attachments tab.</li>
+<li>In the <em>Attachment Name</em> field, enter the name of the file you want it to have when you insert it into the email. You can take a value from any field in the table, e.g. the definition &quot;Order No. [3].pdf&quot; will name the file &quot;Order No. 101123.pdf&quot;.</li>
+<li>In the <em>Attachment table number</em> field, select the table from whose data the attachment is to be created.</li>
+<li>In the <em>Attachment Report No.</em> field, select the report to create the email attachment.</li>
+<li>If you need to set specific report parameters, run the Fill Parameters action and define them in the open report page.</li>
+<li>Close the card.</li>
+</ol>
+<h3 id="example-of-a-function-to-create-an-email">Example of a function to create an email</h3>
+<p>The following code illustrates the function call that first creates the email, then passes the function call to create attachments over the record from which the email itself is created. The next function creates the email session. The last function is to queue the email for sending.
+{
+...
+EMailManagement.InitEMail(EmailTypeEnum, LanguageCode, SrcRecordRef, Recipients, Subject, CC, BCC);
+EMailManagement.AddEMailAttachments(SrcRecordRef);
+IF AddEPrimaryEmailRelation THEN
+EMailManagement.AddEMailPrimaryRelation(SrcRecordRef);
+IF AddRelatedEmailRelation THEN
+EMailManagement.AddEMailRelatedRelation(SrcRecordRef);
+EMailManagement.EnqueueEMail();
+...
+}</p>
+<h2 id="optional---sending-via-spooler">Optional - Sending via Spooler</h2>
+<p>If you have the Spooler module enabled, you can send documents through it. It is not recommended for sending emails, but rather to cover customer requests with the need for logged communication.</p>
+<p>You must set the default process type designation for the Sending Electronic Documents module.</p>
+<ol>
+<li>Choose the <img src="media/ui-search/search_small.png" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong>Electronic Document Setup</strong> and then choose the related link.</li>
+<li>On the Electronic Document Setup page, fill in <strong>Spooler Process Type</strong>.</li>
+<li>Close the page.</li>
+</ol>
+<p>Then, for each customer, you need to set specific parameters for sending via Spooler.</p>
+<h3 id="document-delivery-parameters">Document delivery parameters</h3>
+<ol>
+<li>Choose the <img src="media/ui-search/search_small.png" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong>Customers</strong> and then choose the related link.</li>
+<li>Open the relevant customer card, and then choose the Electronic Documents Partner Setup action.</li>
+<li>Fill in Spooler Process Type, Spooler Destination System and Spooler Interaction Parameter for required Usage and relevant Document Sending Profile.</li>
+<li>Close the page.</li>
+</ol>
+<p>For more information, see the <a href="https://muj.autocont.cz/docs/en-us/dynamics365/business-central/ProductivityPack/spooler.html">Spooler</a>.</p>
+<h2 id="onprem---sending-via-data-box">OnPrem - Sending via Data Box</h2>
+<p><strong>The described functionality is only available in the OnPrem version!</strong></p>
+<p>If you have purchased the Data Mailbox module, you can also send documents via this communication channel. The advantage of such communication is that the reliability of the delivery of data messages is ensured.</p>
+<p>In order to use the Data Mailbox for sending documents, you need to define which Outgoing Mail Template the messages should be sent through.</p>
+<ol>
+<li>Choose the <img src="media/ui-search/search_small.png" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong>Electronic Document Setup</strong> and then choose the related link.</li>
+<li>In the <strong>Databox Mail Template</strong> field, choose the template to use.</li>
+<li>Close the page.</li>
+</ol>
+<div class="IMPORTANT">
+<h5>Important</h5>
+<p>You must also set the Electronic Document Formats. Then create your own formats analogous to the settings for Spooler, for Data Boxes you need to change the value in the Delivery ID field to 52067927.</p>
+</div>
+<p>If the single Data Box ID entered on the Customer tab is not sufficient, it is possible to set Data Mailbox IDs specific to different documents:</p>
+<ol>
+<li>Choose the <img src="media/ui-search/search_small.png" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong>Customers</strong> and then choose the related link.</li>
+<li>Find the relevant customer and open their card.</li>
+<li>On the Customer Card page, run the Electronic Documents Partner Setup action.</li>
+<li>On the line with the desired combination of Usage and Document Sending Profile, enter the <strong>Data Box ID</strong>.</li>
+</ol>
+<h2 id="onprem---electronic-signing-of-documents">OnPrem - Electronic signing of documents</h2>
+<p><strong>The described functionality is only available in the OnPrem version!!</strong></p>
+<p>It is recommended to use the Setup Wizard to make the necessary settings for signing PDF documents.</p>
+<p>There are 3 steps:</p>
+<h3 id="installing-a-certificate-for-signing">Installing a certificate for signing</h3>
+<ol>
+<li>Choose the <img src="media/ui-search/search_small.png" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong>Electronic Document Setup</strong> and then choose the related link.</li>
+<li>On the Electronic Document Setup page, choose the Import action in Pfx Certificate SubMenu.</li>
+<li>Select the Pfx file, and open it.</li>
+<li>On the Electronic Document Setup page, fill in Pfx Certificate password.</li>
+<li>Close the page.</li>
+</ol>
+<h2 id="installing-pdfxchange">Installing PDFXchange</h2>
+<p>The PDFXchange application must be installed on the server on which you are running the middle tier. A license for the application for background use is included with the addon. However, if you want to use the application other than through Business Central, you must purchase a license.</p>
+<p>The installation files can be found on the manufacturer's website at  <a href="https://www.pdfxchange.cz/download">https://www.pdfxchange.cz/download</a>, , and you can use any of the available editions (Editor, Standard or PRO).</p>
+<h2 id="time-stamp-settings">Time stamp settings</h2>
+<p>This is an optional step if you use a paid service from such a service provider. If you want to adjust the basic settings manually, open the Electronic Document Settings.</p>
+<ol>
+<li>Choose the <img src="media/ui-search/search_small.png" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong>Electronic Document Setup</strong> and then choose the related link.</li>
+<li>Enter an URL address of your timestamp service provider in the TimeStamp Server URL field.</li>
+<li>Enter an account name given by your service provider in the TimeStamp Server Account field.</li>
+<li>Enter a password for the timestamp account in the TimeStamp Server password field.</li>
+<li>Close the page.</li>
+</ol>
+<h2 id="viz-také">Viz také</h2>
+<p><a href="electronic-documents.html">Odesílání elektronických dokladů</a><br>
+<a href="productivity-pack.html">Productivity Pack</a></p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/ARICOMA-D365BC/AC-IB-dynamics365smb-docs/blob/master/business-central/Solutions/electronic-documents-setup.md/#L1" class="contribution-link">Improve this document</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+           <span><a href="https://www.aricoma.com/docs/en-us/dynamics365/business-central/Solutions/solutions.html"><strong>ENGLISH</strong><strong>/</strong><a href="https://www.aricoma.com/docs/cs-cz/dynamics365/business-central/Solutions/solutions.html"><strong>CZECH</strong></a></a></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
