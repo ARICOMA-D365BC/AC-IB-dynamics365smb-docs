@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <!--[if IE]><![endif]-->
 <html>
   
@@ -67,11 +67,11 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="job-queue-extension---setup">Job Queue extension - Setup</h1>
+<h1 id="job-queue-extension---setup" sourcefile="Solutions/job-queue-extension-setup.md" sourcestartlinenumber="13">Job Queue extension - Setup</h1>
 
-<p><strong>See also</strong></p>
-<p><a href="job-queue-extension.html">Job Queue extension</a><br>
-<a href="productivity-pack.html">Productivity Pack</a></p>
+<p sourcefile="Solutions/job-queue-extension-setup.md" sourcestartlinenumber="15"><strong sourcefile="Solutions/job-queue-extension-setup.md" sourcestartlinenumber="15">See also</strong></p>
+<p sourcefile="Solutions/job-queue-extension-setup.md" sourcestartlinenumber="17"><a href="job-queue-extension.html" sourcefile="Solutions/job-queue-extension-setup.md" sourcestartlinenumber="17">Job Queue extension</a><br>
+<a href="productivity-pack.html" sourcefile="Solutions/job-queue-extension-setup.md" sourcestartlinenumber="18">Productivity Pack</a></p>
 </article>
           </div>
           

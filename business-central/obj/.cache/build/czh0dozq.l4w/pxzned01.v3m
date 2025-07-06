@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Job Queue extension | Microsoft Docs </title>
+    <title>ARICOMA SOLUTIONS - SK Legistaltive Pack| Microsoft Docs </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Job Queue extension | Microsoft Docs ">
+    <meta name="title" content="ARICOMA SOLUTIONS - SK Legistaltive Pack| Microsoft Docs ">
     <meta name="generator" content="docfx 2.59.4.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
@@ -67,11 +67,20 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="job-queue-extension---setup">Job Queue extension - Setup</h1>
+<h1 id="vat-statements---export">VAT Statements - Export</h1>
 
-<p><strong>See also</strong></p>
-<p><a href="job-queue-extension.html">Job Queue extension</a><br>
-<a href="productivity-pack.html">Productivity Pack</a></p>
+<p>The standard functionality of the VAT Statement is used for the processing of the VAT Statement. Due to the incorporation of Slovak legislative specifics, the standard functionality of the VAT Statement has been extended with additional functionality to ensure correct calculation of the VAT statement amounts and to export the XML file in the required format. The exported file can be imported into the Financial Administration portal of the Slovak Republic or into the eDane application.</p>
+<p>To export a VAT statement, follow these steps:</p>
+<ol>
+<li>Choose the <img src="media/ui-search/search_small.png" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong>VAT Statements</strong> and then choose the related link.</li>
+<li>In the <strong>Name</strong> field select the vat statement name that you want.</li>
+<li>Then choose the <strong>Export SK</strong> function.</li>
+<li>Fill in the required fields and choose the <strong>OK</strong> function, which will create a .xml file.</li>
+</ol>
+<h2 id="see-also">See also</h2>
+<p><a href="../index.html">ARICOMA Solutions</a><br>
+<a href="sk-legislative-pack.html">SK Legislative Pack</a><br>
+<a href="sk-vat-statement-setup.html">VAT Statement - Setup</a></p>
 </article>
           </div>
           
@@ -80,7 +89,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/ARICOMA-D365BC/AC-IB-dynamics365smb-docs/blob/master/business-central/Solutions/job-queue-extension-setup.md/#L1" class="contribution-link">Improve this document</a>
+                    <a href="https://github.com/ARICOMA-D365BC/AC-IB-dynamics365smb-docs/blob/master/business-central/SK/sk-vat-statement-export.md/#L1" class="contribution-link">Improve this document</a>
                   </li>
                 </ul>
               </div>

@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Job Queue extension | Microsoft Docs </title>
+    <title>Production tools | Microsoft Docs </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Job Queue extension | Microsoft Docs ">
+    <meta name="title" content="Production tools | Microsoft Docs ">
     <meta name="generator" content="docfx 2.59.4.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
@@ -67,10 +67,12 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="job-queue-extension---setup">Job Queue extension - Setup</h1>
+<h1 id="production-tools">Production Tools</h1>
 
+<p>Add-on modul Evidence nářadí a pomůcek řeší problematiku evidence nářadí, pomůcek, nástrojů, forem a jiných potřeb obvykle evidovaných pomocí skladové evidence systému. Tento modul je postaven nad základy evidence majetku, s ohledem na sjednocení evidence pro potřeby sledování dlouhodobého majetku a evidence výrobní, tj. půjčování nářadí a pomůcek.</p>
+<p><img src="media/tools.png" alt="Evidence nářadí a pomůcek" title="Evidence nářadí a pomůcek"></p>
 <p><strong>See also</strong></p>
-<p><a href="job-queue-extension.html">Job Queue extension</a><br>
+<p><a href="production-tools-setup.html">Evidence nářadí a pomůcek - nastavení</a><br>
 <a href="productivity-pack.html">Productivity Pack</a></p>
 </article>
           </div>
@@ -80,7 +82,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/ARICOMA-D365BC/AC-IB-dynamics365smb-docs/blob/master/business-central/Solutions/job-queue-extension-setup.md/#L1" class="contribution-link">Improve this document</a>
+                    <a href="https://github.com/ARICOMA-D365BC/AC-IB-dynamics365smb-docs/blob/master/business-central/Solutions/production-tools.md/#L1" class="contribution-link">Improve this document</a>
                   </li>
                 </ul>
               </div>

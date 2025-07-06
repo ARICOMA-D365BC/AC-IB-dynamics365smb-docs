@@ -1,13 +1,13 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <!--[if IE]><![endif]-->
 <html>
   
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Job Queue extension | Microsoft Docs </title>
+    <title>Data boxes Setup | Microsoft Docs </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Job Queue extension | Microsoft Docs ">
+    <meta name="title" content="Data boxes Setup | Microsoft Docs ">
     <meta name="generator" content="docfx 2.59.4.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
@@ -67,11 +67,11 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="job-queue-extension---setup">Job Queue extension - Setup</h1>
+<h1 id="data-boxes---setup" sourcefile="Solutions/data-boxes-setup.md" sourcestartlinenumber="13">Data Boxes - Setup</h1>
 
-<p><strong>See also</strong></p>
-<p><a href="job-queue-extension.html">Job Queue extension</a><br>
-<a href="productivity-pack.html">Productivity Pack</a></p>
+<p sourcefile="Solutions/data-boxes-setup.md" sourcestartlinenumber="16"><strong sourcefile="Solutions/data-boxes-setup.md" sourcestartlinenumber="16">See also</strong></p>
+<p sourcefile="Solutions/data-boxes-setup.md" sourcestartlinenumber="18"><a href="data-boxes.html" sourcefile="Solutions/data-boxes-setup.md" sourcestartlinenumber="18">Data Boxes</a><br>
+<a href="productivity-pack.html" sourcefile="Solutions/data-boxes-setup.md" sourcestartlinenumber="19">Productivity Pack</a></p>
 </article>
           </div>
           
@@ -80,7 +80,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/ARICOMA-D365BC/AC-IB-dynamics365smb-docs/blob/master/business-central/Solutions/job-queue-extension-setup.md/#L1" class="contribution-link">Improve this document</a>
+                    <a href="https://github.com/ARICOMA-D365BC/AC-IB-dynamics365smb-docs/blob/master/business-central/Solutions/data-boxes-setup.md/#L1" class="contribution-link">Improve this document</a>
                   </li>
                 </ul>
               </div>

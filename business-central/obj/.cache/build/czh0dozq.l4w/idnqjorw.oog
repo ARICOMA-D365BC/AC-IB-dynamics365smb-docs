@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Job Queue extension | Microsoft Docs </title>
+    <title>ARICOMA SOLUTIONS - SK Legistaltive Pack| Microsoft Docs </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Job Queue extension | Microsoft Docs ">
+    <meta name="title" content="ARICOMA SOLUTIONS - SK Legistaltive Pack| Microsoft Docs ">
     <meta name="generator" content="docfx 2.59.4.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
@@ -67,11 +67,45 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="job-queue-extension---setup">Job Queue extension - Setup</h1>
+<h1 id="vat-control-report">VAT Control Report</h1>
 
-<p><strong>See also</strong></p>
-<p><a href="job-queue-extension.html">Job Queue extension</a><br>
-<a href="productivity-pack.html">Productivity Pack</a></p>
+<p>The functionality enables the processing of the VAT Control Report and its export to an xml file, which can be imported to the portal of the Financial Administration of the Slovak Republic or to the eDane application.</p>
+<h2 id="generate-a-vat-control-report">Generate a VAT Control Report</h2>
+<ol>
+<li>Choose the <img src="media/ui-search/search_small.png" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong>VAT Check Report List</strong> and then choose the related link.</li>
+<li>To create a new Control Report, choose the <strong>New</strong> function.</li>
+<li>On the VAT Control Report Card, fill in the appropriate fields on the header. On the Other tab, it is necessary to fill in the <strong>XML schema</strong> field correctly.</li>
+<li>To fill the statement lines, run the <strong>Fill report lines</strong> function.</li>
+<li>For a simple check, choose the <strong>Preview</strong> function.</li>
+</ol>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The <strong>Detailed item</strong> field in CHR rows is used for the system designation of the row. If YES, the item is not selected for the control report (it is not transferred to xml and is not reported to the Financial Administration) When you close the CHR, the items that will have a value of YES in this field are also closed.</p>
+</div>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The <strong>Warning</strong> field in CHR rows is an informative field that warns about missing data for individual documents loaded into CHR.</p>
+</div>
+<h2 id="adjustments-to-the-vat-control-report">Adjustments to the VAT control report</h2>
+<p>It is possible to open individual lines of the control report for editing. After the end of the modifications, it is necessary to recalculate the entris in the CHR.</p>
+<ol>
+<li>On the VAT Control Report page, select the <strong>Edit</strong> feature for editing</li>
+<li>When you are finished editing, close the window. The system will automatically ask if you want to recalculate the total rows. Confirm with <strong>Yes</strong>.</li>
+</ol>
+<h2 id="export-the-vat-control-report-to-xml">Export the VAT Control Report to XML</h2>
+<ol>
+<li>On the VAT Control Statement card, choose the <strong>Preview</strong> feature.</li>
+<li>Then choose <strong>Export to XML</strong> and confirm the system query with <strong>Yes</strong>.</li>
+</ol>
+<h2 id="closing-the-vat-control-report">Closing the VAT Control Report</h2>
+<p>The control report must be closed only after the data have been checked. When the control report is closed, the system blocks the reloading of data into the form. The data generated before its closure can no longer be changed or added. Uzavřený formulář není možné vymazat ze seznamu vygenerovaných CHR. When the form is closed, the entries in the VAT entry table the Closed box selected for the control report.</p>
+<ol>
+<li>Select the <strong>Close</strong> function on the VAT Control report Card to close it.</li>
+</ol>
+<h2 id="see-also">See also</h2>
+<p><a href="solutions.html">ARICOMA Solutions</a><br>
+<a href="sk-legislative-pack.html">SK Legislative pack</a><br>
+<a href="sk-vat-check-report-setup.html">VAT Control Report - Settings</a></p>
 </article>
           </div>
           
@@ -80,7 +114,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/ARICOMA-D365BC/AC-IB-dynamics365smb-docs/blob/master/business-central/Solutions/job-queue-extension-setup.md/#L1" class="contribution-link">Improve this document</a>
+                    <a href="https://github.com/ARICOMA-D365BC/AC-IB-dynamics365smb-docs/blob/master/business-central/Solutions/sk-vat-check-report-export.md/#L1" class="contribution-link">Improve this document</a>
                   </li>
                 </ul>
               </div>

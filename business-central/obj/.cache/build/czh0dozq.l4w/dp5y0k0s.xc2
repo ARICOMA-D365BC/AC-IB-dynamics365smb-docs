@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Job Queue extension | Microsoft Docs </title>
+    <title>ARICOMA SOLUTIONS | Microsoft Docs </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Job Queue extension | Microsoft Docs ">
+    <meta name="title" content="ARICOMA SOLUTIONS | Microsoft Docs ">
     <meta name="generator" content="docfx 2.59.4.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
@@ -67,11 +67,43 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="job-queue-extension---setup">Job Queue extension - Setup</h1>
+<h1 id="streamline-tools">Streamline Tools</h1>
 
-<p><strong>See also</strong></p>
-<p><a href="job-queue-extension.html">Job Queue extension</a><br>
-<a href="productivity-pack.html">Productivity Pack</a></p>
+<table>
+<thead>
+<tr>
+<th>See</th>
+<th>Also</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Analytics Suite</strong> - Power BI solution provides companies with a powerful tool for data analysis and visualization.</td>
+<td><a href="analytics-suite.html">Analytics Suite</a></td>
+</tr>
+<tr>
+<td>The <strong>Attribute Tool</strong> module is an extension for bulk work with product attributes so that the user does not have to enter product attributes for individual products, but can add, edit or delete them for all products on one page.</td>
+<td><a href="attribute-tool.html">Attribute Tool</a></td>
+</tr>
+<tr>
+<td><strong>Business Pack</strong> integrates frequently used fields and fact boxes directly into your pages.</td>
+<td><a href="Business-Pack.html">Business Pack</a></td>
+</tr>
+<tr>
+<td><strong>GP tom integration</strong> extends the functionality of Dynamics 365 Business Central with the ability to integrate with the Tom payment system from Global Payments.</td>
+<td><a href="gptom-integration.html">GP tom integration</a></td>
+</tr>
+<tr>
+<td><strong>SK Fiscal Printers Integration</strong> is an extension for the Microsoft Dynamics 365 Business Central information system that provides direct integration with fiscal printers from VAROS.</td>
+<td><a href="SK-FiscalPrinters-Integration.html">SK Fiscal Printers Integration</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="see-also">See Also</h2>
+<p><a href="../index.html">ARICOMA Solutions</a><br>
+<a href="../FinancialPack/finance-pack.html">Financial Pack</a><br>
+<a href="../ProductivityPack/productivity-pack.html">Productivity Pack</a><br>
+<a href="../SK/sk-legislative-pack.html">SK Legislative Pack</a></p>
 </article>
           </div>
           
@@ -80,7 +112,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/ARICOMA-D365BC/AC-IB-dynamics365smb-docs/blob/master/business-central/Solutions/job-queue-extension-setup.md/#L1" class="contribution-link">Improve this document</a>
+                    <a href="https://github.com/ARICOMA-D365BC/AC-IB-dynamics365smb-docs/blob/master/business-central/StreamlineTools/streamlinetools.md/#L1" class="contribution-link">Improve this document</a>
                   </li>
                 </ul>
               </div>

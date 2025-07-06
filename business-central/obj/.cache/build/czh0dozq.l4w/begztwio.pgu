@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <!--[if IE]><![endif]-->
 <html>
   
@@ -67,11 +67,14 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="job-queue-extension---setup">Job Queue extension - Setup</h1>
+<h1 id="job-queue-extension-job-queue" sourcefile="Solutions/job-queue-extension.md" sourcestartlinenumber="13">Job Queue Extension (Job Queue)</h1>
 
-<p><strong>See also</strong></p>
-<p><a href="job-queue-extension.html">Job Queue extension</a><br>
-<a href="productivity-pack.html">Productivity Pack</a></p>
+<p sourcefile="Solutions/job-queue-extension.md" sourcestartlinenumber="15"><strong sourcefile="Solutions/job-queue-extension.md" sourcestartlinenumber="15">Job Queue</strong> module enables automated execution of reports or procedures in Dynamics 365 Business Central at scheduled intervals. It is mainly used for automatic periodic reporting, allowing you to send the resulting reports as an e-mail attachment in HTML format, save them, or publish them to SharePoint. Managers, in particular, have up-to-date results or overviews available at a specified location without having to manually generate the report each time. Another possible use is the regular unattended execution of batch jobs, such as adjustment or billing of goods.</p>
+<p sourcefile="Solutions/job-queue-extension.md" sourcestartlinenumber="17">The Job Queue Extension is an additional module that allows you to define the parameters of job execution and actions performed at the start, successful or unsuccessful completion of the task, such as sending a notification email.</p>
+<p sourcefile="Solutions/job-queue-extension.md" sourcestartlinenumber="19"><img src="media/job_queue.png" sourcefile="Solutions/job-queue-extension.md" sourcestartlinenumber="19" alt="Job Queue Extension" title="Job Queue Extension"></p>
+<h2 id="see-also" sourcefile="Solutions/job-queue-extension.md" sourcestartlinenumber="21">See also</h2>
+<p sourcefile="Solutions/job-queue-extension.md" sourcestartlinenumber="23"><a href="job-queue-extension-setup.html" sourcefile="Solutions/job-queue-extension.md" sourcestartlinenumber="23">Job Queue Extension (Job Queue) - Setup</a><br>
+<a href="productivity-pack.html" sourcefile="Solutions/job-queue-extension.md" sourcestartlinenumber="24">Productivity Pack</a></p>
 </article>
           </div>
           
@@ -80,7 +83,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/ARICOMA-D365BC/AC-IB-dynamics365smb-docs/blob/master/business-central/Solutions/job-queue-extension-setup.md/#L1" class="contribution-link">Improve this document</a>
+                    <a href="https://github.com/ARICOMA-D365BC/AC-IB-dynamics365smb-docs/blob/master/business-central/Solutions/job-queue-extension.md/#L1" class="contribution-link">Improve this document</a>
                   </li>
                 </ul>
               </div>

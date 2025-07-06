@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Job Queue extension | Microsoft Docs </title>
+    <title>GP Tom Integration </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Job Queue extension | Microsoft Docs ">
+    <meta name="title" content="GP Tom Integration ">
     <meta name="generator" content="docfx 2.59.4.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
@@ -67,11 +67,24 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="job-queue-extension---setup">Job Queue extension - Setup</h1>
+<h1 id="gp-tom-integration-for-dynamics-365-business-central">GP Tom Integration for Dynamics 365 Business Central</h1>
 
-<p><strong>See also</strong></p>
-<p><a href="job-queue-extension.html">Job Queue extension</a><br>
-<a href="productivity-pack.html">Productivity Pack</a></p>
+<p><strong>GP Tom Integration</strong> extends the functionality of Dynamics 365 Business Central with the ability to integrate with the Tom payment system from Global Payments. This application allows the acceptance of card payments through a mobile terminal (<a href="https://www.globalpayments.cz/cs-cz/terminal-v-mobilu">https://www.globalpayments.cz/cs-cz/terminal-v-mobilu</a>), providing businesses with flexibility in payment solutions. This global solution is ideal for companies looking to streamline their business processes and increase the mobility of their workers.</p>
+<h2 id="main-benefits-of-gp-tom-integration">Main Benefits of GP Tom Integration</h2>
+<ul>
+<li>Immediate use – after a simple installation and setup of access credentials, the application is ready for immediate use. Thanks to the pre-prepared form, payments can be processed immediately without the need for complex modifications or additional programming.</li>
+<li>Integration into customer processes – easily add integration to any page in the Dynamics 365 Business Central system and customize it to the specific needs of customers.</li>
+<li>Mobile solution – in combination with the Dynamics 365 Business Central mobile app and a terminal with a printer, you get a fully mobile solution, ideal for field sales teams, gastronomy, markets, or mobile sales points.</li>
+<li>Efficient payments – thanks to integration with the Global Payments solution, you gain access to secure and fast payment processing, which increases your company's credibility with customers. Payments can be made in both the online and on-premise versions of Dynamics 365 Business Central.</li>
+<li>Flexible use – the payment device with the Tom application can also be used independently without the need for connection to Dynamics 365 Business Central.</li>
+</ul>
+<p><img src="media/GPTomIntg1_1280x720.png" alt="Payment Terminal Settings"></p>
+<p><img src="media/GPTomIntg2_1280x720.png" alt="Payment Terminal"></p>
+<p><img src="media/GPTomIntg3_1280x720.png" alt="Payment Terminal"></p>
+<p><img src="media/GPTomIntg4_1280x720.png" alt="Payment Terminal"></p>
+<h2 id="see-also">See Also</h2>
+<p><a href="../index.html">ARICOMA Solutions</a><br>
+<a href="streamlinetools.html">Streamline Tools</a></p>
 </article>
           </div>
           
@@ -80,7 +93,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/ARICOMA-D365BC/AC-IB-dynamics365smb-docs/blob/master/business-central/Solutions/job-queue-extension-setup.md/#L1" class="contribution-link">Improve this document</a>
+                    <a href="https://github.com/ARICOMA-D365BC/AC-IB-dynamics365smb-docs/blob/master/business-central/StreamlineTools/GPTom-Integration_OLD.md/#L1" class="contribution-link">Improve this document</a>
                   </li>
                 </ul>
               </div>
