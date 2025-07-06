@@ -10,9 +10,9 @@ ms.workload: na
 ms.search.keywords: Czech, Job Queue extension setup, additional functions
 ms.author: v-makune
 ---
-# Rozšíření fronty  úloh (Job Queue) - Nastavení
+# Job Queue extension - Setup
 
 **See also**
 
-[Rozšíření fronty  úloh (Job Queue)](job-queue-extension.md)  
+[Job Queue extension](job-queue-extension.md)  
 [Productivity Pack](productivity-pack.md)
