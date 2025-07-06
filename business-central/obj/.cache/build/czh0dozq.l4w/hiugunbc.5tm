@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Deprecated Features from Financial Pack </title>
+    <title>AC - Financial pack -  Multiple payments | Microsoft Docs </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Deprecated Features from Financial Pack ">
+    <meta name="title" content="AC - Financial pack -  Multiple payments | Microsoft Docs ">
     <meta name="generator" content="docfx 2.59.4.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
@@ -67,72 +67,11 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="deprecated-features-from-financial-pack">Deprecated Features from Financial Pack</h1>
+<h1 id="více-úhrad---nastavení">Více úhrad - nastavení</h1>
 
-<p>This page contains a list of features that have been moved, removed or replaced from the Financial Pack.</p>
-<h2 id="visible-fee">Visible fee</h2>
-<table>
-<thead>
-<tr>
-<th>Moved, Deleted or Replaced?</th>
-<th>When?</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Deleted</td>
-<td>from version BC15</td>
-</tr>
-</tbody>
-</table>
-<h2 id="finance---tax-liability-transferred">Finance - Tax liability transferred</h2>
-<table>
-<thead>
-<tr>
-<th>Moved, Deleted or Replaced?</th>
-<th>When?</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Deleted</td>
-<td>from version BC15</td>
-</tr>
-</tbody>
-</table>
-<h2 id="discount-credits-for-cz">Discount credits for CZ</h2>
-<table>
-<thead>
-<tr>
-<th>Moved, Deleted or Replaced?</th>
-<th>When?</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Replaced</td>
-<td>from version BC15</td>
-</tr>
-</tbody>
-</table>
-<p>Since the basic functionality for creating sales credit notes has been omitted from the CZ localization, the extended functionality is no longer part of the Application Extension Set module.</p>
-<h2 id="excise-duty">Excise duty</h2>
-<table>
-<thead>
-<tr>
-<th>Moved, Deleted or Replaced?</th>
-<th>When?</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Deleted</td>
-<td>from version BC15</td>
-</tr>
-</tbody>
-</table>
-<h2 id="see-also">See also</h2>
-<p><a href="finance-pack.html">Financial Pack</a></p>
+<p><strong>See also</strong></p>
+<p><a href="multiple-payments.html">Více úhad</a><br>
+<a href="finance-pack.html">Financial Pack</a></p>
 </article>
           </div>
           
@@ -141,7 +80,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/ARICOMA-D365BC/AC-IB-dynamics365smb-docs/blob/master/business-central/Solutions/fp-deprecated-features.md/#L1" class="contribution-link">Improve this document</a>
+                    <a href="https://github.com/ARICOMA-D365BC/AC-IB-dynamics365smb-docs/blob/master/business-central/Solutions/multiple-payments-setup.md/#L1" class="contribution-link">Improve this document</a>
                   </li>
                 </ul>
               </div>

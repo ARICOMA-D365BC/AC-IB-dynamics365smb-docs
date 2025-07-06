@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Deprecated Features from Financial Pack </title>
+    <title>SK Fiscal Printers Integration </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Deprecated Features from Financial Pack ">
+    <meta name="title" content="SK Fiscal Printers Integration ">
     <meta name="generator" content="docfx 2.59.4.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
@@ -67,72 +67,22 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="deprecated-features-from-financial-pack">Deprecated Features from Financial Pack</h1>
+<h1 id="sk-fiscal-printers-integration-for-dynamics-365-business-central">SK Fiscal Printers Integration for Dynamics 365 Business Central</h1>
 
-<p>This page contains a list of features that have been moved, removed or replaced from the Financial Pack.</p>
-<h2 id="visible-fee">Visible fee</h2>
-<table>
-<thead>
-<tr>
-<th>Moved, Deleted or Replaced?</th>
-<th>When?</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Deleted</td>
-<td>from version BC15</td>
-</tr>
-</tbody>
-</table>
-<h2 id="finance---tax-liability-transferred">Finance - Tax liability transferred</h2>
-<table>
-<thead>
-<tr>
-<th>Moved, Deleted or Replaced?</th>
-<th>When?</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Deleted</td>
-<td>from version BC15</td>
-</tr>
-</tbody>
-</table>
-<h2 id="discount-credits-for-cz">Discount credits for CZ</h2>
-<table>
-<thead>
-<tr>
-<th>Moved, Deleted or Replaced?</th>
-<th>When?</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Replaced</td>
-<td>from version BC15</td>
-</tr>
-</tbody>
-</table>
-<p>Since the basic functionality for creating sales credit notes has been omitted from the CZ localization, the extended functionality is no longer part of the Application Extension Set module.</p>
-<h2 id="excise-duty">Excise duty</h2>
-<table>
-<thead>
-<tr>
-<th>Moved, Deleted or Replaced?</th>
-<th>When?</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Deleted</td>
-<td>from version BC15</td>
-</tr>
-</tbody>
-</table>
-<h2 id="see-also">See also</h2>
-<p><a href="finance-pack.html">Financial Pack</a></p>
+<p><strong>SK Fiscal Printers Integration</strong> is an extension for the Microsoft Dynamics 365 Business Central information system that provides direct integration with fiscal printers from VAROS, specifically the <a href="http://www.varos.sk/vyrobky-FT5000">eKASA FT5000</a> series. This solution is designed to fully comply with Slovak legislative requirements according to Act 289/2008 Z.z., which regulates the recording of sales from goods and services in cash or other methods (e.g., payment cards, meal vouchers, or checks). The module simplifies compliance with legislative obligations by automating the registration and printing of fiscal receipts directly from the Dynamics 365 Business Central environment.</p>
+<h2 id="main-benefits-of-sk-fiscal-printers-integration">Main Benefits of SK Fiscal Printers Integration</h2>
+<ul>
+<li>Full legislative compliance – Allows printing and electronic registration of tax documents according to current Slovak legislation, including the payment of advance invoices, ensuring that your company is always in compliance with legal regulations.</li>
+<li>Streamlined document management – The module enables automatic processing of payment receipts and provides the option to print copies additionally. Customers also have the option to manually register documents and mark them as registered, offering greater flexibility in document handling.</li>
+<li>Access to document history – Users can easily view the complete history of fiscal documents directly in Dynamics 365 Business Central, improving the clarity and management of financial records.</li>
+<li>Simple and reliable API connection – The module uses the API interface from VAROS for seamless communication with fiscal printers. The API fee is included in the module price, eliminating additional implementation costs.</li>
+</ul>
+<p>With this integration, companies can significantly simplify their administrative and accounting processes. Automation of fiscal records and easy document management reduces errors in manual entry and saves time. Additionally, the module provides transparent and quick access to sales records, facilitating control and audits. This solution achieves higher efficiency in compliance with legal requirements while improving customer comfort through quick issuance and registration of fiscal receipts.</p>
+<p>For technical information from VAROS, see <a href="http://www.varos.sk/manualy.php">Manuals</a>.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The module requires the &quot;Core Localization Pack for Czech&quot;. To meet other Slovak legislative requirements, choose the <a href="https://appsource.microsoft.com/en-us/product/dynamics-365-business-central/PUBID.autocontas%7CAID.pas_2021_3%7CPAPPID.6faf8513-1781-444c-8c20-032a6f1efe06?tab=Overview">SK Legislative Pack</a> and the <a href="https://appsource.microsoft.com/en-us/product/project-madeira/PUBID.autocontas%7CAID.pas_2021_5%7CPAPPID.a90b83b0-d99d-4156-9c65-526b37fe3497">SK Language Pack</a> from Aricoma.</p>
+</div>
 </article>
           </div>
           
@@ -141,7 +91,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/ARICOMA-D365BC/AC-IB-dynamics365smb-docs/blob/master/business-central/Solutions/fp-deprecated-features.md/#L1" class="contribution-link">Improve this document</a>
+                    <a href="https://github.com/ARICOMA-D365BC/AC-IB-dynamics365smb-docs/blob/master/business-central/Solutions/SK-FiscalPrinters-Integration.md/#L1" class="contribution-link">Improve this document</a>
                   </li>
                 </ul>
               </div>

@@ -1,0 +1,186 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Incoming mail | Microsoft Docs </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Incoming mail | Microsoft Docs ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../TOC.html">
+    <meta property="docfx:tocrel" content="TOC.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="png" src="../logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="mail-record">Mail Record</h1>
+
+<p>The <strong>Mail record</strong> extends <strong>the Purchase</strong> and <strong>Sales</strong> modules of the Microsoft Dynamics 365 Business Central system to support the registration of incoming and outgoing mail. Registered mail can be processed in a controlled manner using the <strong>Workflow module (Status Management),</strong> linked to purchase or sales documents, and through the <strong>SharePoint Publishing</strong> module or <strong>Incoming Documents</strong> module to attach a scanned or electronically received document to the registered mail card. Another option is to link the mail records card with the record in the <strong>Data Boxes</strong> module.</p>
+<h2 id="create-a-new-mail-record-card">Create a new Mail Record Card</h2>
+<p>After making the necessary settings, you can create Mail Record documents. Documents can be created manually by:</p>
+<ol>
+<li>Choose the <img src="media/ui-search/search_small.png" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong>Mail Record</strong> and then choose the related link.</li>
+<li>On the <strong>Mail Record Templates</strong> page select the code for the correct Mail Record Template.
+<img src="media/IM-mail-record-templates.png" alt="Mail Record Template">
+<img src="media/IM-incoming-mail.png" alt="Mail Record"></li>
+<li>In the <strong>Mail Records list,</strong> select <strong>New</strong> feature.</li>
+<li>Create a new Mail Record document.
+<img src="media/IM-incoming-mail-card.png" alt="Mail Record Card"></li>
+</ol>
+<p><strong>Mail Record Card</strong> displays relevant information related to the document. The <strong>Number</strong> field is automatically populated with another number from the number series <strong>Contact Type</strong> and <strong>Contact No.</strong> specify which document it is - Vendor, Customer, Contact (to be filled in if the Supplier or Customer does not yet exist).</p>
+<p>All data in the white fields can be edited (it is therefore possible to fill in the <strong>Description</strong> field, all date fields, <strong>Payment Terms</strong>, <strong>Salesperson/Purchaser code, Currency Code, External Document Number,</strong> etc., which are then taken over into the created document. You can also enter the fields <strong>Amount including VAT</strong> and <strong>Amount excluding VAT</strong>.
+<img src="media/IM-incoming-card-mail.png" alt="Mail Record Card">
+In the  <strong>Status</strong> a new record will appear after creation with the default status as defined in the status control template. It is also possible to fill in - <strong>Additional responsible person</strong> (either from Users or from the Employees module) and the <strong>Status Description</strong> text field.</p>
+<p>On the <strong>Related Incoming Document</strong> tab, you can create or attach or disconnect the Incoming Document. This is a link to the <strong>Incoming Mail module (for more details, see the Inbox module)</strong>.</p>
+<p><img src="media/IM-data_record.png" alt="Record of Data Boxes">
+If it is a document created from the Data Box, it is possible to have the original document displayed via the function - <strong>Process / Data recording. mailboxes (for more details, see the module - Data mailboxes)</strong>.</p>
+<p><strong>Dimensions</strong> are automatically filled in when filling in individual fields on the mail records card, i.e. based on filling in <strong>Contact Number</strong>, <strong>Salesperson/Purchaser Code</strong>. If the user wants to edit or change these dimensions, there is the <strong>Mail/Dimensions</strong> function.</p>
+<p>After filling in all the necessary data, it is advisable to approve the document and prevent its changes. This is the <strong>Process/Issue</strong> function.</p>
+<h3 id="request-comments">Request Comments</h3>
+<p>Users can enter comment lines available as <strong>Related/Mail/Comments</strong>. These are Request Comment Line on the request card—these structured notes contain the Date, Note (100 characters), and Code fields.
+<img src="media/IM-sheet.png" alt="Mail Record Comment Sheet"></p>
+<h3 id="documents">Documents</h3>
+<p>If <strong>the SharePoint Publishing</strong> module is installed, then it is possible to publish a document using the <strong>Documents/Publish</strong> function for each Mail Registration Card and view the published document using the <strong>View</strong> function <strong>(for more details, see module - SharePoint)</strong>.
+<img src="media/IM-doc_publish.png" alt="Documents"></p>
+<h3 id="attached-documents">Attached documents</h3>
+<p>Using <strong>the Related/Mail/Attachments</strong> function, any document can be attached to the card, which is then stored in a Microsoft Dynamics 365 Business Central table.
+<img src="media/IM-doc_attached.png" alt="Attached documents"></p>
+<h3 id="printing">Printing</h3>
+<p>Using the <strong>Reports/Print</strong> function on the <strong>Mail Records Card</strong> page, the <strong>Mail Records</strong> report is launched (the number of the currently displayed request is offered to the input filter, the print range can then be specified in more detail through filters and parameters.</p>
+<h2 id="processing-of-requests">Processing of requests</h2>
+<p>After creating the Mail Registration Card, the document can be further processed.</p>
+<h3 id="request-approval">Request approval</h3>
+<p>If the Incoming Document Exchange workflow is created and enabled and the Approval user settings are created, you can Send request for approval – <strong>Action/Send request for approval function (for more details, see module – Approval)</strong>. If the mail card has not been approved, you cannot create a document.
+<img src="media/IM-send_request.png" alt="Send request for approval">
+The approval request can be approved using the function - <strong>Related/Post/Approval</strong> or cancelled using the function - <strong>Action/Cancel Approval Request</strong></p>
+<h3 id="creating-an-interaction">Creating an interaction</h3>
+<p>After select <strong>Create Interaction</strong> function, the corresponding Interaction Log Entry is created for the Contact Card according to <strong>Interaction Template Setup</strong> for <strong>Incoming</strong> and <strong>Outgoing Mail (for more details, see module - Marketing)</strong>.</p>
+<h3 id="creating-a-documents">Creating a documents</h3>
+<p>You can use the <strong>Create Document</strong> function. The user is asked which document to create and after creation, the new document tab is automatically displayed.</p>
+<p><img src="media/IM-doc_create.png" alt="Create a document"></p>
+<p>All data from the Mail Record Card are transferred to the header of the created document. If dimensions are filled in on the Mail Records card and the Transfer dimensions to document check box is selected in the Mail Registration Template, the dimensions will also be transferred to the created document. This document can be opened by the standard Navigation functionality, via the navigation function or Mail Related documents.</p>
+<h3 id="contact-orders">Contact orders</h3>
+<p>Use the <strong>Contact's Orders</strong> feature to view an overview of Purchase or Sales Lines by Contact type. Rows are filtered:</p>
+<ul>
+<li><strong>Purchase order</strong> or <strong>Purchase Return Order lines</strong> to the specified Vendor number.</li>
+<li>lines <strong>Sales Orders</strong> or <strong>Sales Return Order Lines</strong> to the Customer number entered.
+<img src="media/IM-order.png" alt="Contact orders"></li>
+</ul>
+<h3 id="navigate-mail-related-documents">Navigate (Mail Related Documents)</h3>
+<p>The standard <strong>Navigate</strong> feature displays the Mail Records tab and <strong>the Related Mail Documents tab</strong>.
+<img src="media/IM-navigate.png" alt="Navigate">
+Using the <strong>Mail Related Documents</strong> function or the <strong>View Related Items</strong> function within Navigation, you will see a detailed overview of all related documents for the selected mail records tab.
+<img src="media/IM-related_item.png" alt="Related Entries"></p>
+<h2 id="mail-record-board">Mail Record Board</h2>
+<p>Mail Record Board is available as follows.</p>
+<ul>
+<li>Choose the <img src="media/ui-search/search_small.png" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong>Mail Record Board</strong> and then choose the related link.</li>
+</ul>
+<p>This page provides a summary view of unclosed mail records cards. It offers an overview view of requirements with preset optional filters in the header for easier searching and orientation. First of all, it is necessary to choose which cards of mail records it is, i.e. the template of mail records. Furthermore, requests can be filtered by, for example, <strong>Customer</strong> or <strong>Vendors</strong>, <strong>Status</strong>, <strong>Responsible Person</strong> or <strong>Mail Type</strong>. In addition, the displayed list of requirements can be sorted by different keys, especially by number, customer or supplier, date or responsible person. At the bottom of the list of cards there is additional information about <strong>Request Status</strong>, <strong>Amout of document</strong>, <strong>Amount to Approve</strong> and <strong>Approved Amount</strong>.</p>
+<p>The selected request can then be displayed by selecting <strong>Card</strong>. There are also functions for <strong>Create Interaction</strong>, <strong>Download Messages from Data Box</strong>, <strong>Navigate</strong> or Add <strong>Notes</strong>, or view attached <strong>Documents</strong>.
+<img src="media/IM-mail.png" alt="Displayed request"></p>
+<h2 id="closed-mail-record">Closed Mail Record</h2>
+<p>Closed mail records are available:</p>
+<ul>
+<li>Choose the <img src="media/ui-search/search_small.png" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong>Closed Mail Record</strong> and then choose the related link.
+Viewing the <strong>Closed Mail Record</strong> page displays closed requests, that is, requests that have already been processed. Requests are closed manually through the Close Mail Records feature.
+The selected request can then be displayed by selecting <strong>View</strong>. There are also functions for displaying ** Related Mail Documents** and <strong>Data Box Record</strong>.
+<img src="media/IM-closed_mail.png" alt="Closed Mail Record"></li>
+</ul>
+<h2 id="see-also">See also</h2>
+<p><a href="incoming-mail-setup.html">Mail Record - Setup</a><br>
+<a href="productivity-pack.html">Productivity Pack</a></p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/ARICOMA-D365BC/AC-IB-dynamics365smb-docs/blob/master/business-central/Solutions/incoming-mail.md/#L1" class="contribution-link">Improve this document</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+           <span><a href="https://www.aricoma.com/docs/en-us/dynamics365/business-central/Solutions/solutions.html"><strong>ENGLISH</strong><strong>/</strong><a href="https://www.aricoma.com/docs/cs-cz/dynamics365/business-central/Solutions/solutions.html"><strong>CZECH</strong></a></a></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

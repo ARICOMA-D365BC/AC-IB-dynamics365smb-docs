@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Deprecated Features from Financial Pack </title>
+    <title>Workflow status management | Microsoft Docs </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Deprecated Features from Financial Pack ">
+    <meta name="title" content="Workflow status management | Microsoft Docs ">
     <meta name="generator" content="docfx 2.59.4.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
@@ -67,72 +67,26 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="deprecated-features-from-financial-pack">Deprecated Features from Financial Pack</h1>
+<h1 id="workflow---state-management">WorkFlow - State Management</h1>
 
-<p>This page contains a list of features that have been moved, removed or replaced from the Financial Pack.</p>
-<h2 id="visible-fee">Visible fee</h2>
-<table>
-<thead>
-<tr>
-<th>Moved, Deleted or Replaced?</th>
-<th>When?</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Deleted</td>
-<td>from version BC15</td>
-</tr>
-</tbody>
-</table>
-<h2 id="finance---tax-liability-transferred">Finance - Tax liability transferred</h2>
-<table>
-<thead>
-<tr>
-<th>Moved, Deleted or Replaced?</th>
-<th>When?</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Deleted</td>
-<td>from version BC15</td>
-</tr>
-</tbody>
-</table>
-<h2 id="discount-credits-for-cz">Discount credits for CZ</h2>
-<table>
-<thead>
-<tr>
-<th>Moved, Deleted or Replaced?</th>
-<th>When?</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Replaced</td>
-<td>from version BC15</td>
-</tr>
-</tbody>
-</table>
-<p>Since the basic functionality for creating sales credit notes has been omitted from the CZ localization, the extended functionality is no longer part of the Application Extension Set module.</p>
-<h2 id="excise-duty">Excise duty</h2>
-<table>
-<thead>
-<tr>
-<th>Moved, Deleted or Replaced?</th>
-<th>When?</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Deleted</td>
-<td>from version BC15</td>
-</tr>
-</tbody>
-</table>
+<p>The <strong>State Management</strong> add-on adds status management tools to Microsoft Dynamics 365 Business Central as one or more users process jobs sequentially. Allows you to configure the processing states in which the task (document, record) can be located. It also allows you to monitor the current status and progress of processing and then automatically fill in forms and records with defined values or run any program actions when the status of the task (document, record) changes. It is mainly used for controlled approval and circulation of documents.</p>
+<p>The Status Management add-on is all about the correct settings. If you want to use this add-on, the main functionality is the status change.</p>
+<h2 id="status-change">Status change</h2>
+<p>To move to the next stage of solving a task (document, record), click on the <strong>Process</strong> function and then on the <strong>Change Status</strong> option (you can also find this function in the information panel for the task, document or record for which state control is set)</p>
+<p><img src="media/WF_change_status.png" alt="State Management - Status Management Templates"></p>
+<p>When you click on this function, additional state control states are offered, which according to the definition of the next state filter are considered.</p>
+<p>When the operation is complete, the <strong>Status Management Status Code</strong> on the Job, Document, or Record tab is updated.</p>
+<h2 id="checked-tables">Checked Tables</h2>
+<p>The function of the checked table extends the functionality of the State Management add-on by the ability to check records or fields in tables bound to a table that is controlled by Status management.</p>
+<p>The Status Management status is then allowed to be changed only if all checks within the scanned tables match. Practical uses may include the following:</p>
+<ul>
+<li>If Status Management is used on a voucher with headers and lines, such as a Sales Order, you can check whether there are any lines or lines of any type or content for the header. For example, that the order contains at least one line with the goods, or that it has a price or location or glob filled in on all lines.</li>
+<li>It is possible to check whether the source record for any field in the table with the used Status Management contains the necessary data in other fields - eg if the Vendor code field is filled in the document header, then it checks whether this seller has filled in the email.</li>
+</ul>
+<p><img src="media/workflow_tables.png" alt="WorkFlow - Linker Tables" title=" WorkFlow - Linker Tables"></p>
 <h2 id="see-also">See also</h2>
-<p><a href="finance-pack.html">Financial Pack</a></p>
+<p><a href="workflow-status-management-setup.html">WorkFlow - State Management - Setup</a><br>
+<a href="productivity-pack.html">Productivity Pack</a></p>
 </article>
           </div>
           
@@ -141,7 +95,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/ARICOMA-D365BC/AC-IB-dynamics365smb-docs/blob/master/business-central/Solutions/fp-deprecated-features.md/#L1" class="contribution-link">Improve this document</a>
+                    <a href="https://github.com/ARICOMA-D365BC/AC-IB-dynamics365smb-docs/blob/master/business-central/Solutions/workflow-status-management.md/#L1" class="contribution-link">Improve this document</a>
                   </li>
                 </ul>
               </div>

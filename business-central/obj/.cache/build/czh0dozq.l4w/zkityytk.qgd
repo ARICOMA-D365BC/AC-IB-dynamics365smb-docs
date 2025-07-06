@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Deprecated Features from Financial Pack </title>
+    <title>ARICOMA SOLUTIONS - AC Monetization | Microsoft Docs </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Deprecated Features from Financial Pack ">
+    <meta name="title" content="ARICOMA SOLUTIONS - AC Monetization | Microsoft Docs ">
     <meta name="generator" content="docfx 2.59.4.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
@@ -67,72 +67,48 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="deprecated-features-from-financial-pack">Deprecated Features from Financial Pack</h1>
+<h1 id="ac-monetization">AC Monetization</h1>
 
-<p>This page contains a list of features that have been moved, removed or replaced from the Financial Pack.</p>
-<h2 id="visible-fee">Visible fee</h2>
-<table>
-<thead>
-<tr>
-<th>Moved, Deleted or Replaced?</th>
-<th>When?</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Deleted</td>
-<td>from version BC15</td>
-</tr>
-</tbody>
-</table>
-<h2 id="finance---tax-liability-transferred">Finance - Tax liability transferred</h2>
-<table>
-<thead>
-<tr>
-<th>Moved, Deleted or Replaced?</th>
-<th>When?</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Deleted</td>
-<td>from version BC15</td>
-</tr>
-</tbody>
-</table>
-<h2 id="discount-credits-for-cz">Discount credits for CZ</h2>
-<table>
-<thead>
-<tr>
-<th>Moved, Deleted or Replaced?</th>
-<th>When?</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Replaced</td>
-<td>from version BC15</td>
-</tr>
-</tbody>
-</table>
-<p>Since the basic functionality for creating sales credit notes has been omitted from the CZ localization, the extended functionality is no longer part of the Application Extension Set module.</p>
-<h2 id="excise-duty">Excise duty</h2>
-<table>
-<thead>
-<tr>
-<th>Moved, Deleted or Replaced?</th>
-<th>When?</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Deleted</td>
-<td>from version BC15</td>
-</tr>
-</tbody>
-</table>
+<blockquote>
+<p>Update 03.02.2022</p>
+</blockquote>
+<p>It is a functionality that allows the user to manage subscriptions to ARICOMA products in the Business Central environment.</p>
+<h2 id="trial-period-activation">Trial Period Activation</h2>
+<p>Each product has a 30-day trial period to verify that the functionality suits the customer. Activation can be done either:</p>
+<ul>
+<li><strong>Automatically</strong> when you start the Assisted Setup of the respective product (Installation &amp; Extensions -&gt; Assisted Setup, section Set up ARICOMA extension).</li>
+<li>By opening the <strong>Purchase of an ARICOMA Product</strong> page and running the <strong>Buy Product</strong> action (note: the list contains all commercially available extensions; installation of the extension is required before activation).</li>
+</ul>
+<p><img src="media/monetization.png" alt="Purchase of an ARICOMA product "></p>
+<p>In both cases, a short activation wizard will start, during which you must enter the following:</p>
+<ul>
+<li><p>Email - this will be used for communication regarding subscriptions, e.g. to send notifications of the upcoming subscription end date, etc.</p>
+</li>
+<li><p>Consent to <a href="https://www.autocont.cz/podnikove-aplikace/PAS-predplatne-podminky">Terms and Conditions</a>.</p>
+</li>
+</ul>
+<p>Note: If you are not prompted to confirm that the user really wants to create a trial subscription (and the window for selecting a subscription plan opens directly), then the trial period has already been activated in this tenant sometime before.</p>
+<h2 id="purchase-of-the-product">Purchase of the product</h2>
+<p>At any time during the trial period, it is possible to purchase the product with the understanding that the customer will not lose the remainder of the trial period.</p>
+<p>A notification on the Home page with a link to the <strong>Purchase of an ARICOMA Product</strong> page informs the user that the trial period is about to end.</p>
+<p>The <strong>Buy</strong> <strong>Product function on the ARICOMA Product Purchase</strong> page guides the user through the steps:</p>
+<ul>
+<li><strong>Plan selection</strong> - First, you need to choose whether you want to renew your subscription monthly or annually.</li>
+<li><strong>Customer Details</strong> – Fill in missing company details required for ordering and billing.</li>
+<li><strong>Payment Card Details</strong> – Entering the payment card details that will be stored in STRIPE.</li>
+</ul>
+<h2 id="subscription-management">Subscription management</h2>
+<p>To manage subscriptions, use the <strong>ARICOMA Subscription page</strong>, where the user:</p>
+<ul>
+<li>Get an overview of ARICOMA's subscription products,</li>
+<li>has the possibility to terminate the subscription of the selected product,</li>
+<li>can cancel the subscription,</li>
+<li>can update customer information (Update Customer Information action),</li>
+<li>can change the payment card - when updating the information (see previous), you can select Update payment card, then the Stripe dialog will appear.</li>
+</ul>
 <h2 id="see-also">See also</h2>
-<p><a href="finance-pack.html">Financial Pack</a></p>
+<p><a href="finance-pack.html">Financial Pack</a><br>
+<a href="productivity-pack.html">Productivity Pack</a></p>
 </article>
           </div>
           
@@ -141,7 +117,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/ARICOMA-D365BC/AC-IB-dynamics365smb-docs/blob/master/business-central/Solutions/fp-deprecated-features.md/#L1" class="contribution-link">Improve this document</a>
+                    <a href="https://github.com/ARICOMA-D365BC/AC-IB-dynamics365smb-docs/blob/master/business-central/Solutions/monetization.md/#L1" class="contribution-link">Improve this document</a>
                   </li>
                 </ul>
               </div>
