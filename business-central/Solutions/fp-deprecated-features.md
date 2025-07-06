@@ -1,5 +1,5 @@
 ---
-title: AC - Financial pack - Feature that are Moved, Removed or Replaced | Microsoft Docs
+title: Deprecated Features from Financial Pack
 description: Feature that are Moved, Removed or Replaced
 author: ACMartinKunes
 ms.service: dynamics-365-business-central
