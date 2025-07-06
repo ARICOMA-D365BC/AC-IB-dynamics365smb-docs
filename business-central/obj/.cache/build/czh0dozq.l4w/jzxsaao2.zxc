@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>AC - Financial pack - Feature that are Moved, Removed or Replaced | Microsoft Docs </title>
+    <title>ARICOMA SOLUTIONS - SK Legistaltive Pack| Microsoft Docs </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="AC - Financial pack - Feature that are Moved, Removed or Replaced | Microsoft Docs ">
+    <meta name="title" content="ARICOMA SOLUTIONS - SK Legistaltive Pack| Microsoft Docs ">
     <meta name="generator" content="docfx 2.59.4.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
@@ -67,72 +67,29 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="deprecated-features-from-financial-pack">Deprecated Features from Financial Pack</h1>
+<h1 id="tax-depreciation">Tax depreciation</h1>
 
-<p>This page contains a list of features that have been moved, removed or replaced from the Financial Pack.</p>
-<h2 id="visible-fee">Visible fee</h2>
-<table>
-<thead>
-<tr>
-<th>Moved, Deleted or Replaced?</th>
-<th>When?</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Deleted</td>
-<td>from version BC15</td>
-</tr>
-</tbody>
-</table>
-<h2 id="finance---tax-liability-transferred">Finance - Tax liability transferred</h2>
-<table>
-<thead>
-<tr>
-<th>Moved, Deleted or Replaced?</th>
-<th>When?</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Deleted</td>
-<td>from version BC15</td>
-</tr>
-</tbody>
-</table>
-<h2 id="discount-credits-for-cz">Discount credits for CZ</h2>
-<table>
-<thead>
-<tr>
-<th>Moved, Deleted or Replaced?</th>
-<th>When?</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Replaced</td>
-<td>from version BC15</td>
-</tr>
-</tbody>
-</table>
-<p>Since the basic functionality for creating sales credit notes has been omitted from the CZ localization, the extended functionality is no longer part of the Application Extension Set module.</p>
-<h2 id="excise-duty">Excise duty</h2>
-<table>
-<thead>
-<tr>
-<th>Moved, Deleted or Replaced?</th>
-<th>When?</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Deleted</td>
-<td>from version BC15</td>
-</tr>
-</tbody>
-</table>
+<p>According to the Income Tax Act No. 595/2003 Coll., a taxpayer may apply annual depreciation in the first year of depreciation only in an amount corresponding to the number of calendar months in which the property was used to secure income.</p>
+<h2 id="depreciation-reduction-setting-in-the-1st-year">Depreciation reduction setting in the 1st year</h2>
+<ol>
+<li>Choose the <img src="media/ui-search/search_small.png" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong>Fixed Asset Setup</strong> and then choose the related link.</li>
+<li>Check the box <strong>Depreciation Reduction First Year</strong>.</li>
+<li>Confirm with <strong>OK</strong>.</li>
+</ol>
+<h2 id="calculation-of-depreciation">Calculation of depreciation</h2>
+<ol>
+<li>Choose the <img src="media/ui-search/search_small.png" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong>SK Calculate Depreciation</strong> and then choose the related link.</li>
+<li>In the fields of the window that appears, enter the parameters for depreciation.
+Do not activate the <strong>Use Force No. of Days</strong> field, and do not enter a value in the <strong>Force No. of Days</strong>.</li>
+<li>Confirm with <strong>OK</strong>.</li>
+</ol>
+<div class="NOTE">
+<h5>Note</h5>
+<p>On the <strong>FA card</strong> in tax <strong>FA Depreciation Books</strong> enter the first day of the month in the <strong>Starting date of depreciation</strong> field.</p>
+</div>
 <h2 id="see-also">See also</h2>
-<p><a href="finance-pack.html">Financial Pack</a></p>
+<p><a href="../index.html">ARICOMA Solution</a><br>
+<a href="sk-legislative-pack.html">SK Legislative Pack</a></p>
 </article>
           </div>
           
@@ -141,7 +98,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/ARICOMA-D365BC/AC-IB-dynamics365smb-docs/blob/master/business-central/Solutions/fp-deprecated-features.md/#L1" class="contribution-link">Improve this document</a>
+                    <a href="https://github.com/ARICOMA-D365BC/AC-IB-dynamics365smb-docs/blob/master/business-central/SK/sk-tax-depreciation.md/#L1" class="contribution-link">Improve this document</a>
                   </li>
                 </ul>
               </div>

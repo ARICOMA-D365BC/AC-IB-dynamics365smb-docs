@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <!--[if IE]><![endif]-->
 <html>
   
@@ -67,72 +67,72 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="deprecated-features-from-financial-pack">Deprecated Features from Financial Pack</h1>
+<h1 id="deprecated-features-from-financial-pack" sourcefile="Solutions/fp-deprecated-features.md" sourcestartlinenumber="15">Deprecated Features from Financial Pack</h1>
 
-<p>This page contains a list of features that have been moved, removed or replaced from the Financial Pack.</p>
-<h2 id="visible-fee">Visible fee</h2>
-<table>
+<p sourcefile="Solutions/fp-deprecated-features.md" sourcestartlinenumber="17">This page contains a list of features that have been moved, removed or replaced from the Financial Pack.</p>
+<h2 id="visible-fee" sourcefile="Solutions/fp-deprecated-features.md" sourcestartlinenumber="19">Visible fee</h2>
+<table sourcefile="Solutions/fp-deprecated-features.md" sourcestartlinenumber="21">
 <thead>
-<tr>
-<th>Moved, Deleted or Replaced?</th>
-<th>When?</th>
+<tr sourcefile="Solutions/fp-deprecated-features.md" sourcestartlinenumber="21">
+<th sourcefile="Solutions/fp-deprecated-features.md" sourcestartlinenumber="21">Moved, Deleted or Replaced?</th>
+<th sourcefile="Solutions/fp-deprecated-features.md" sourcestartlinenumber="21">When?</th>
 </tr>
 </thead>
 <tbody>
-<tr>
-<td>Deleted</td>
-<td>from version BC15</td>
+<tr sourcefile="Solutions/fp-deprecated-features.md" sourcestartlinenumber="23">
+<td sourcefile="Solutions/fp-deprecated-features.md" sourcestartlinenumber="23">Deleted</td>
+<td sourcefile="Solutions/fp-deprecated-features.md" sourcestartlinenumber="23">from version BC15</td>
 </tr>
 </tbody>
 </table>
-<h2 id="finance---tax-liability-transferred">Finance - Tax liability transferred</h2>
-<table>
+<h2 id="finance---tax-liability-transferred" sourcefile="Solutions/fp-deprecated-features.md" sourcestartlinenumber="25">Finance - Tax liability transferred</h2>
+<table sourcefile="Solutions/fp-deprecated-features.md" sourcestartlinenumber="27">
 <thead>
-<tr>
-<th>Moved, Deleted or Replaced?</th>
-<th>When?</th>
+<tr sourcefile="Solutions/fp-deprecated-features.md" sourcestartlinenumber="27">
+<th sourcefile="Solutions/fp-deprecated-features.md" sourcestartlinenumber="27">Moved, Deleted or Replaced?</th>
+<th sourcefile="Solutions/fp-deprecated-features.md" sourcestartlinenumber="27">When?</th>
 </tr>
 </thead>
 <tbody>
-<tr>
-<td>Deleted</td>
-<td>from version BC15</td>
+<tr sourcefile="Solutions/fp-deprecated-features.md" sourcestartlinenumber="29">
+<td sourcefile="Solutions/fp-deprecated-features.md" sourcestartlinenumber="29">Deleted</td>
+<td sourcefile="Solutions/fp-deprecated-features.md" sourcestartlinenumber="29">from version BC15</td>
 </tr>
 </tbody>
 </table>
-<h2 id="discount-credits-for-cz">Discount credits for CZ</h2>
-<table>
+<h2 id="discount-credits-for-cz" sourcefile="Solutions/fp-deprecated-features.md" sourcestartlinenumber="31">Discount credits for CZ</h2>
+<table sourcefile="Solutions/fp-deprecated-features.md" sourcestartlinenumber="33">
 <thead>
-<tr>
-<th>Moved, Deleted or Replaced?</th>
-<th>When?</th>
+<tr sourcefile="Solutions/fp-deprecated-features.md" sourcestartlinenumber="33">
+<th sourcefile="Solutions/fp-deprecated-features.md" sourcestartlinenumber="33">Moved, Deleted or Replaced?</th>
+<th sourcefile="Solutions/fp-deprecated-features.md" sourcestartlinenumber="33">When?</th>
 </tr>
 </thead>
 <tbody>
-<tr>
-<td>Replaced</td>
-<td>from version BC15</td>
+<tr sourcefile="Solutions/fp-deprecated-features.md" sourcestartlinenumber="35">
+<td sourcefile="Solutions/fp-deprecated-features.md" sourcestartlinenumber="35">Replaced</td>
+<td sourcefile="Solutions/fp-deprecated-features.md" sourcestartlinenumber="35">from version BC15</td>
 </tr>
 </tbody>
 </table>
-<p>Since the basic functionality for creating sales credit notes has been omitted from the CZ localization, the extended functionality is no longer part of the Application Extension Set module.</p>
-<h2 id="excise-duty">Excise duty</h2>
-<table>
+<p sourcefile="Solutions/fp-deprecated-features.md" sourcestartlinenumber="37">Since the basic functionality for creating sales credit notes has been omitted from the CZ localization, the extended functionality is no longer part of the Application Extension Set module.</p>
+<h2 id="excise-duty" sourcefile="Solutions/fp-deprecated-features.md" sourcestartlinenumber="39">Excise duty</h2>
+<table sourcefile="Solutions/fp-deprecated-features.md" sourcestartlinenumber="41">
 <thead>
-<tr>
-<th>Moved, Deleted or Replaced?</th>
-<th>When?</th>
+<tr sourcefile="Solutions/fp-deprecated-features.md" sourcestartlinenumber="41">
+<th sourcefile="Solutions/fp-deprecated-features.md" sourcestartlinenumber="41">Moved, Deleted or Replaced?</th>
+<th sourcefile="Solutions/fp-deprecated-features.md" sourcestartlinenumber="41">When?</th>
 </tr>
 </thead>
 <tbody>
-<tr>
-<td>Deleted</td>
-<td>from version BC15</td>
+<tr sourcefile="Solutions/fp-deprecated-features.md" sourcestartlinenumber="43">
+<td sourcefile="Solutions/fp-deprecated-features.md" sourcestartlinenumber="43">Deleted</td>
+<td sourcefile="Solutions/fp-deprecated-features.md" sourcestartlinenumber="43">from version BC15</td>
 </tr>
 </tbody>
 </table>
-<h2 id="see-also">See also</h2>
-<p><a href="finance-pack.html">Financial Pack</a></p>
+<h2 id="see-also" sourcefile="Solutions/fp-deprecated-features.md" sourcestartlinenumber="45">See also</h2>
+<p sourcefile="Solutions/fp-deprecated-features.md" sourcestartlinenumber="46"><a href="finance-pack.html" sourcefile="Solutions/fp-deprecated-features.md" sourcestartlinenumber="46">Financial Pack</a></p>
 </article>
           </div>
           

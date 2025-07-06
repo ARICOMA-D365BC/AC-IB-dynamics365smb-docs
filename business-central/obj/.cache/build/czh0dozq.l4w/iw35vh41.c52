@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>AC - Financial pack - Feature that are Moved, Removed or Replaced | Microsoft Docs </title>
+    <title>ARICOMA SOLUTIONS - SK Legistaltive Pack | Microsoft Docs </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="AC - Financial pack - Feature that are Moved, Removed or Replaced | Microsoft Docs ">
+    <meta name="title" content="ARICOMA SOLUTIONS - SK Legistaltive Pack | Microsoft Docs ">
     <meta name="generator" content="docfx 2.59.4.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
@@ -67,72 +67,30 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="deprecated-features-from-financial-pack">Deprecated Features from Financial Pack</h1>
+<h1 id="export-of-financial-statements---sk">Export of financial statements - SK</h1>
 
-<p>This page contains a list of features that have been moved, removed or replaced from the Financial Pack.</p>
-<h2 id="visible-fee">Visible fee</h2>
-<table>
-<thead>
-<tr>
-<th>Moved, Deleted or Replaced?</th>
-<th>When?</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Deleted</td>
-<td>from version BC15</td>
-</tr>
-</tbody>
-</table>
-<h2 id="finance---tax-liability-transferred">Finance - Tax liability transferred</h2>
-<table>
-<thead>
-<tr>
-<th>Moved, Deleted or Replaced?</th>
-<th>When?</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Deleted</td>
-<td>from version BC15</td>
-</tr>
-</tbody>
-</table>
-<h2 id="discount-credits-for-cz">Discount credits for CZ</h2>
-<table>
-<thead>
-<tr>
-<th>Moved, Deleted or Replaced?</th>
-<th>When?</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Replaced</td>
-<td>from version BC15</td>
-</tr>
-</tbody>
-</table>
-<p>Since the basic functionality for creating sales credit notes has been omitted from the CZ localization, the extended functionality is no longer part of the Application Extension Set module.</p>
-<h2 id="excise-duty">Excise duty</h2>
-<table>
-<thead>
-<tr>
-<th>Moved, Deleted or Replaced?</th>
-<th>When?</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Deleted</td>
-<td>from version BC15</td>
-</tr>
-</tbody>
-</table>
+<p>According to the requirements of the Financial Administration of the Slovak Republic, the Slovak Statutory Statements, Balance Sheet and Profit and Loss Statement are imported merged, in one .xml file.</p>
+<p>To ensure this requirement, the standard functionality of accounting schemes is used in D365 BC and extended by additional adjustments. The export itself works with the saved results of account schedules.</p>
+<h2 id="saving-the-results-of-accounting-schemes-for-export">Saving the results of accounting schemes for export</h2>
+<ol>
+<li>Choose the <img src="media/ui-search/search_small.png" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong>Account Schedule</strong> and then choose the related link.</li>
+<li>On the <strong>Account Schedules page</strong>, choose the <strong>Process</strong> action and <strong>Overview</strong> feature.</li>
+<li>Enter the filters you want as the Date Filter or other filters, select the <strong>Action</strong> button, and then select the <strong>Results</strong> and <strong>Save Results</strong> feature.</li>
+<li>In the <strong>Save Acc. Schedule Result</strong> fill in the fields as needed.</li>
+<li>Confirm with the <strong>OK</strong> button.</li>
+</ol>
+<p>The results of accounting schemes are stored in a list in the chronological sequence of their formation. The number series set in General Ledger Setup is used to mark the results of the reports.</p>
+<h2 id="export-to-xml-format">Export to .xml format</h2>
+<ol>
+<li>Choose the <img src="media/ui-search/search_small.png" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong>Export Merged Acc. schedule to XML</strong> and then choose the related link.</li>
+<li>On the <strong>Exp.Merged Acc.Schedule to XML</strong> page, fill in the required fields. Select Result Code in the Section for Balance Sheet and Profit and Loss.</li>
+<li>Confirm with the <strong>OK</strong> button.</li>
+</ol>
+<p>Then it is enough to import the resulting file into the electronic form of the financial administration.</p>
 <h2 id="see-also">See also</h2>
-<p><a href="finance-pack.html">Financial Pack</a></p>
+<p><a href="solutions.html">ARICOMA Solutions</a><br>
+<a href="sk-legislative-pack.html">SK Legislative Pack</a><br>
+<a href="sk-balance-sheet-income-statement-setup.html">Export of financial statements - SK - Setup</a></p>
 </article>
           </div>
           
@@ -141,7 +99,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/ARICOMA-D365BC/AC-IB-dynamics365smb-docs/blob/master/business-central/Solutions/fp-deprecated-features.md/#L1" class="contribution-link">Improve this document</a>
+                    <a href="https://github.com/ARICOMA-D365BC/AC-IB-dynamics365smb-docs/blob/master/business-central/Solutions/sk-balance-sheet-income-statement.md/#L1" class="contribution-link">Improve this document</a>
                   </li>
                 </ul>
               </div>
