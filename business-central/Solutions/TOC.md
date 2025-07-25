@@ -74,6 +74,7 @@
 ## [Tax depreciation](sk-tax-depreciation.md)
 ## [Import of exchange rates](sk-ECB.md)
 ## [SK Fiscal Printers Integration](SK-FiscalPrinters-Integration.md)
+### [Settings - SK Fiscal Printers Integration](SK-FiscalPrinters-Integration-setup.md)
 
 # [Deprecated Features](fp-deprecated-features.md)
 
