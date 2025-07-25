@@ -35,7 +35,7 @@ The following text describes the scenarios supported by the Fiscal Printers Inte
 ### Creating a tax document on a fiscal printer
 
 1. Choose the ![Lightbulb that opens the Tell Me feature.](media/ui-search/search_small.png "Tell me what you want to do") icon, enter **Sales Invoices** and then choose the related link.
-2. On the Sales Invoices page, click New to create a new sales invoice.
+2. On the Sales Invoices page, click *New* to create a new sales invoice.
 3. Complete the lines of the document as needed.
 
 > [!IMPORTANT]
