@@ -55,7 +55,7 @@
 ## [Transport - Planning](transport-planning.md)
 ### [Settings - Transport - Planning](transport-planning-setup.md)
 
-# [Slovak Legislative Pack](sk-legislative-pack.md)
+# [Slovak Localization](sk-legislative-pack.md)
 ## [Slovak language for Business Central](sk-language.md)
 ## [Export VAT Statement](sk-vat-statement-export.md)
 ### [Settings - Export VAT Statement](sk-vat-statement-setup.md)

@@ -2,18 +2,17 @@
 title: ARICOMA SOLUTIONS - SK Legistaltive Pack | Microsoft Docs
 description: This section describes ARICOMA Solutions - Slovak legislation
 author: kunes
-ms.service: dynamics365-business-central
-ms.topic: article
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+date: 07/31/2025
+reviewer: janousek
+ms.service: dynamics-365-business-central
 ms.search.keywords: Slovak, , additional functions, sale, VAT
-ms.author: v-makune
 ---
 
-# Slovak Legislative Pack
+# Slovak Localization
 
-The Slovak Localization module complements the Dynamics 365 Business Central CZ system with functionalities to support Slovak legislation. For the most part, the Czech functionality also covers Slovak legislative requirements. This module then complements only the differential functionalities, to cover the specific requirements of Slovak legislation.
+> Update 31.07.2025
+
+The Slovak Localization complements the Dynamics 365 Business Central CZ system with functionalities to support Slovak legislation. For the most part, the Czech functionality also covers Slovak legislative requirements. This module then complements only the differential functionalities, to cover the specific requirements of Slovak legislation.
 
 |See| also|
 | - | - |
@@ -30,6 +29,7 @@ Processing and exporting VAT Control Report.|[VAT Control Report](sk-vat-check-r
 |Import of data for business entities for which there were grounds for deregistration of value added tax payer.|[Institute of unreliability of the payer](sk-unreability-payer.md)|
 |Reconciliation of customer and vendor balance |[Reconciliation of the balance](sk-balance-reconciliation.md)|
 |Application of tax depreciation according to the number of calendar months according to the Income Tax Act. |[Tax depreciation](sk-tax-depreciation.md)|
+| SK Fiscal Printers Integration provides direct integration with fiscal printers from VAROS company. | [SK Fiscal Printers Integration](SK-FiscalPrinters-Integration.md)|
 
 ## See also
 
