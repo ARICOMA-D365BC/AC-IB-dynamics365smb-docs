@@ -12,6 +12,7 @@ ms.author: v-makune
 ---
 
 # VAT Control Report - Setup
+> Update 31.07.2025
 
 To ensure proper functionality, you need to set up several areas below
 
@@ -46,12 +47,24 @@ To ensure the correct reporting of the VAT Control Report, it is necessary to se
 - Source Code filter
 - Document type
 - Document type filter
-- VAT Control Report Section
-- VAT Check Report Section for individuals
+- Check VAT Report Section
+- Ch.VAT R. S. for Persons
 
 ![Import of unreliable VAT payers from xml format](media/VAT_check_report.png)
 
 3. Confirm with the **OK** button.
+
+> [!WARNING]
+> The **Check VAT Report Section** field must be set on only one line of the VAT statement for the same values in the fields:
+>
+> - Gen. Posting Type
+> - VAT Bus. Posting Group
+> - VAT Prod. Posting Group
+> - Amount Type
+> - Document Type Filter
+> - Source Code Filter
+>
+> If the same section value is set on more than one line for the same field values above, duplication of amounts occurs.
 
 ## Setting the sections of the VAT Control Report
 
