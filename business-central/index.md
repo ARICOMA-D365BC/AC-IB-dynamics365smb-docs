@@ -1,27 +1,24 @@
 ---
-title: ARICOMA SOLUTIONS | Microsoft Docs
-description: This section describes ARICOMA Solutions - Addons
+title: ARICOMA SOLUTIONS  
+description: This section describes ARICOMA Solutions - Modules for Dynamics 365 Business Central
 author: kunes
-ms.service: dynamics365-business-central
-ms.topic: article
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+date: 07/31/2025
+reviewer: janousek
+ms.service: dynamics-365-business-central
 ms.search.keywords: Czech, productivity, additional functions, sale, warehouse, invoicing, barcode, claims, transportation, workflow
-ms.author: v-makune
 ---
 
 # Solutions
 
-Moduly a addony pro D365 Business Central pro rozšíření funkcí systému.
-
+Modules for Dynamics 365 Business Central that enhance and extend system functionality.
 
 - Financial Pack
-- Productivity Pack 
-- SK Legislative pack
- 
+- Productivity Pack
+- Streamline Tools
+- SK Legislative Pack
 
-## Viz také
-[Financial Pack](FinancialPack/finance-pack.md)  
-[Productivity Pack](ProductivityPack/productivity-pack.md)  
-[SK Legislative Pack](SK/sk-legislative-pack.md)
+## See Also
+[Financial Pack](Solutions/finance-pack.md)  
+[Productivity Pack](Solutions/productivity-pack.md)  
+[Streamline Tools](Solutions/streamline-tools.md)  
+[SK Legislative Pack](Solutions/sk-legislative-pack.md)

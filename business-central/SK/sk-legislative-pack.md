@@ -1,19 +1,17 @@
 ---
-title: ARICOMA SOLUTIONS - SK Legistaltive Pack | Microsoft Docs
-description: This section describes ARICOMA Solutions - Slovak legislation
+title: ARICOMA SOLUTIONS - SK Legistaltive Pack
+description: This section describes ARICOMA Solutions - Slovak legislationlocalization
 author: kunes
+date: 07/31/2025
+reviewer: janousek
+ms.service: dynamics-365-business-central
 ms.service: dynamics365-business-central
-ms.topic: article
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
 ms.search.keywords: Slovak, , additional functions, sale, VAT
-ms.author: v-makune
 ---
 
-# Slovak Legislative Pack
+# Slovak Localization
 
-The Slovak Localization module complements the Dynamics 365 Business Central CZ system with functionalities to support Slovak legislation. For the most part, the Czech functionality also covers Slovak legislative requirements. This module then complements only the differential functionalities, to cover the specific requirements of Slovak legislation.
+Slovak Localization complements the Dynamics 365 Business Central CZ system with functionalities to support Slovak legislation. For the most part, the Czech functionality also covers Slovak legislative requirements. This module then complements only the differential functionalities, to cover the specific requirements of Slovak legislation.
 
 |See| also|
 | - | - |
@@ -33,6 +31,5 @@ Processing and exporting VAT Control Report.|[VAT Control Report](sk-vat-check-r
 
 ## See also
 
-[ARICOMA Solution](../index.md)  
-[Financial Pack](../FinancialPack/finance-pack.md)  
-[Productivity Pack](../ProductivityPack/productivity-pack.md)
+[ARICOMA Solutions](../Solutions/solutions.md)  
+
