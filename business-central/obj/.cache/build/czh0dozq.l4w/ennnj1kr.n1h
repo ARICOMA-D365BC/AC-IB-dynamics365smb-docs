@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Returnable Packaging records - Setup </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Returnable Packaging records - Setup ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../TOC.html">
+    <meta property="docfx:tocrel" content="../StreamlineTools/TOC.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="png" src="../logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="returnable-packaging-records---setup" sourcefile="FinancialPack/pack-tracking-return-packing-setup.md" sourcestartlinenumber="11">Returnable Packaging records - Setup</h1>
+
+<blockquote sourcefile="FinancialPack/pack-tracking-return-packing-setup.md" sourcestartlinenumber="12">
+<p sourcefile="FinancialPack/pack-tracking-return-packing-setup.md" sourcestartlinenumber="12">Update: 01.01.2025</p>
+</blockquote>
+<p sourcefile="FinancialPack/pack-tracking-return-packing-setup.md" sourcestartlinenumber="14">The Returnable Packaging Management module is an extension of the Inventory module. It enables tracking the circulation of returnable packaging and pallet management. The module allows monitoring packaging balances of business partners, linked to relevant business transactions (Purchase, Sale, Positive Adjustment, Negative Adjustment, Transfer, Consumption, and Production) as well as tracking the current value of the packaging.</p>
+<p sourcefile="FinancialPack/pack-tracking-return-packing-setup.md" sourcestartlinenumber="16">To ensure the proper functionality of the Returnable Packaging Management module, certain settings must be configured in advance:</p>
+<ul sourcefile="FinancialPack/pack-tracking-return-packing-setup.md" sourcestartlinenumber="18">
+<li sourcefile="FinancialPack/pack-tracking-return-packing-setup.md" sourcestartlinenumber="18"><strong sourcefile="FinancialPack/pack-tracking-return-packing-setup.md" sourcestartlinenumber="18">Configure calculation formulas</strong></li>
+<li sourcefile="FinancialPack/pack-tracking-return-packing-setup.md" sourcestartlinenumber="19"><strong sourcefile="FinancialPack/pack-tracking-return-packing-setup.md" sourcestartlinenumber="19">Set up No. series</strong></li>
+<li sourcefile="FinancialPack/pack-tracking-return-packing-setup.md" sourcestartlinenumber="20"><strong sourcefile="FinancialPack/pack-tracking-return-packing-setup.md" sourcestartlinenumber="20">Create returnable packaging categories</strong></li>
+<li sourcefile="FinancialPack/pack-tracking-return-packing-setup.md" sourcestartlinenumber="21"><strong sourcefile="FinancialPack/pack-tracking-return-packing-setup.md" sourcestartlinenumber="21">Create returnable packaging journal templates</strong></li>
+</ul>
+<h2 id="setting-up-expiration-date-formulas-and-no-series" sourcefile="FinancialPack/pack-tracking-return-packing-setup.md" sourcestartlinenumber="23">Setting Up Expiration Date Formulas and No. Series</h2>
+<ol sourcefile="FinancialPack/pack-tracking-return-packing-setup.md" sourcestartlinenumber="25">
+<li sourcefile="FinancialPack/pack-tracking-return-packing-setup.md" sourcestartlinenumber="25">Select the icon <img src="media/ui-search/search_small.png" sourcefile="FinancialPack/pack-tracking-return-packing-setup.md" sourcestartlinenumber="25" alt="Magnifying glass icon that opens &quot;Tell Me&quot; feature" title="Tell me what you want to do">, enter <strong sourcefile="FinancialPack/pack-tracking-return-packing-setup.md" sourcestartlinenumber="25">Return. Packing Setup</strong> and then select the related link.</li>
+<li sourcefile="FinancialPack/pack-tracking-return-packing-setup.md" sourcestartlinenumber="26">On the <strong sourcefile="FinancialPack/pack-tracking-return-packing-setup.md" sourcestartlinenumber="26">Return. Packing Setup</strong> page, under the <strong sourcefile="FinancialPack/pack-tracking-return-packing-setup.md" sourcestartlinenumber="26">General</strong> tab, you need to configure the relevant formulas, such as <strong sourcefile="FinancialPack/pack-tracking-return-packing-setup.md" sourcestartlinenumber="26">Expir. Date Form. in Sale</strong>, <strong sourcefile="FinancialPack/pack-tracking-return-packing-setup.md" sourcestartlinenumber="26">Expir. Date Form. in Purchase</strong>, and <strong sourcefile="FinancialPack/pack-tracking-return-packing-setup.md" sourcestartlinenumber="26">Safety Return Time</strong>.</li>
+</ol>
+<p sourcefile="FinancialPack/pack-tracking-return-packing-setup.md" sourcestartlinenumber="28"><img src="media/return-packing-setup.png" sourcefile="FinancialPack/pack-tracking-return-packing-setup.md" sourcestartlinenumber="28" alt="Return. Packing Setup"></p>
+<p sourcefile="FinancialPack/pack-tracking-return-packing-setup.md" sourcestartlinenumber="30">The General tab includes the following fields:</p>
+<ul sourcefile="FinancialPack/pack-tracking-return-packing-setup.md" sourcestartlinenumber="32">
+<li sourcefile="FinancialPack/pack-tracking-return-packing-setup.md" sourcestartlinenumber="32"><strong sourcefile="FinancialPack/pack-tracking-return-packing-setup.md" sourcestartlinenumber="32">Expir. Date Form. in Sale</strong> – Enter the period within which the customer is obligated to return the returnable packaging.</li>
+<li sourcefile="FinancialPack/pack-tracking-return-packing-setup.md" sourcestartlinenumber="33"><strong sourcefile="FinancialPack/pack-tracking-return-packing-setup.md" sourcestartlinenumber="33">Expir. Date Form. in Purchase</strong> – Enter the period within which you are obligated to return the returnable packaging to the supplier.</li>
+<li sourcefile="FinancialPack/pack-tracking-return-packing-setup.md" sourcestartlinenumber="34"><strong sourcefile="FinancialPack/pack-tracking-return-packing-setup.md" sourcestartlinenumber="34">Safety Return Time</strong> – This feature allows setting an additional time frame to the standard return period for returnable packaging. After this &quot;safety period&quot; expires, the system will notify you about packaging that was not returned on time.</li>
+<li sourcefile="FinancialPack/pack-tracking-return-packing-setup.md" sourcestartlinenumber="35"><strong sourcefile="FinancialPack/pack-tracking-return-packing-setup.md" sourcestartlinenumber="35">Mark Undo as Correction</strong> - Enables marking undo actions as corrections.</li>
+<li sourcefile="FinancialPack/pack-tracking-return-packing-setup.md" sourcestartlinenumber="36"><strong sourcefile="FinancialPack/pack-tracking-return-packing-setup.md" sourcestartlinenumber="36">Applies not Sale. Entry</strong> – If this option is enabled, automatic reconciliation of returnable packaging entries during crediting (sales) is disabled.</li>
+<li sourcefile="FinancialPack/pack-tracking-return-packing-setup.md" sourcestartlinenumber="37"><strong sourcefile="FinancialPack/pack-tracking-return-packing-setup.md" sourcestartlinenumber="37">Applies not Purch. Entry</strong> – If this option is enabled, automatic reconciliation of returnable packaging entries during crediting (purchases) is disabled.</li>
+<li sourcefile="FinancialPack/pack-tracking-return-packing-setup.md" sourcestartlinenumber="38"><strong sourcefile="FinancialPack/pack-tracking-return-packing-setup.md" sourcestartlinenumber="38">Applies Wickedly Bill-to</strong> – This option sets the reconciliation of returnable packaging entries according to the bill-to customer specified on the sales document. If unchecked, reconciliation is performed based on the customer.</li>
+<li sourcefile="FinancialPack/pack-tracking-return-packing-setup.md" sourcestartlinenumber="39"><strong sourcefile="FinancialPack/pack-tracking-return-packing-setup.md" sourcestartlinenumber="39">Applies Wickedly Pay-to</strong> – This option sets the reconciliation of returnable packaging entries according to the pay-to vendor specified on the purchase document. If unchecked, reconciliation is performed based on the supplier.</li>
+<li sourcefile="FinancialPack/pack-tracking-return-packing-setup.md" sourcestartlinenumber="40"><strong sourcefile="FinancialPack/pack-tracking-return-packing-setup.md" sourcestartlinenumber="40">Applies Wickedly Item</strong> – This option sets the reconciliation of returnable packaging entries according to the item associated with the returnable packaging. If unchecked, reconciliation is performed based on the returnable packaging itself.</li>
+</ul>
+<ol start="3" sourcefile="FinancialPack/pack-tracking-return-packing-setup.md" sourcestartlinenumber="42">
+<li sourcefile="FinancialPack/pack-tracking-return-packing-setup.md" sourcestartlinenumber="42">For proper functionality, it is also necessary to configure the number series for returnable packaging on the <strong sourcefile="FinancialPack/pack-tracking-return-packing-setup.md" sourcestartlinenumber="42">Return. Packing Setup</strong> page under the <strong sourcefile="FinancialPack/pack-tracking-return-packing-setup.md" sourcestartlinenumber="42">Numbering</strong> tab.</li>
+</ol>
+<p sourcefile="FinancialPack/pack-tracking-return-packing-setup.md" sourcestartlinenumber="44"><img src="media/return-packing-setup-numbering.png" sourcefile="FinancialPack/pack-tracking-return-packing-setup.md" sourcestartlinenumber="44" alt="Setting Up Numbering for Returnable Packaging"></p>
+<ol start="4" sourcefile="FinancialPack/pack-tracking-return-packing-setup.md" sourcestartlinenumber="46">
+<li sourcefile="FinancialPack/pack-tracking-return-packing-setup.md" sourcestartlinenumber="46">If you do not have a number series created for returnable packaging, expand the Return. Packing Nos. line, click the New function, and create a new number series.</li>
+<li sourcefile="FinancialPack/pack-tracking-return-packing-setup.md" sourcestartlinenumber="47">Enter the <strong sourcefile="FinancialPack/pack-tracking-return-packing-setup.md" sourcestartlinenumber="47">Code</strong>, <strong sourcefile="FinancialPack/pack-tracking-return-packing-setup.md" sourcestartlinenumber="47">Description</strong>, <strong sourcefile="FinancialPack/pack-tracking-return-packing-setup.md" sourcestartlinenumber="47">Starting No.</strong>, and <strong sourcefile="FinancialPack/pack-tracking-return-packing-setup.md" sourcestartlinenumber="47">Ending No.</strong> of the number series.</li>
+<li sourcefile="FinancialPack/pack-tracking-return-packing-setup.md" sourcestartlinenumber="48">Check the <strong sourcefile="FinancialPack/pack-tracking-return-packing-setup.md" sourcestartlinenumber="48">Default Nos.</strong> box to enable automatic number assignment when entering new requests.</li>
+</ol>
+<p sourcefile="FinancialPack/pack-tracking-return-packing-setup.md" sourcestartlinenumber="50"><img src="media/return-packing-no-series.png" sourcefile="FinancialPack/pack-tracking-return-packing-setup.md" sourcestartlinenumber="50" alt="Number Series for Returnable Packaging"></p>
+<h2 id="setting-up-returnable-packaging-categories" sourcefile="FinancialPack/pack-tracking-return-packing-setup.md" sourcestartlinenumber="52">Setting Up Returnable Packaging Categories</h2>
+<p sourcefile="FinancialPack/pack-tracking-return-packing-setup.md" sourcestartlinenumber="54">The next step is setting up returnable packaging categories. These categories are used for filtering in overview functions and print reports.</p>
+<ol sourcefile="FinancialPack/pack-tracking-return-packing-setup.md" sourcestartlinenumber="56">
+<li sourcefile="FinancialPack/pack-tracking-return-packing-setup.md" sourcestartlinenumber="56">Select the icon <img src="media/ui-search/search_small.png" sourcefile="FinancialPack/pack-tracking-return-packing-setup.md" sourcestartlinenumber="56" alt="Magnifying glass icon that opens &quot;Tell Me&quot; feature" title="Tell me what you want to do">, enter <strong sourcefile="FinancialPack/pack-tracking-return-packing-setup.md" sourcestartlinenumber="56">Return. Packing Categories</strong> and then select the related link.</li>
+<li sourcefile="FinancialPack/pack-tracking-return-packing-setup.md" sourcestartlinenumber="57">On the <strong sourcefile="FinancialPack/pack-tracking-return-packing-setup.md" sourcestartlinenumber="57">Return. Packing Categories</strong> page, select the <strong sourcefile="FinancialPack/pack-tracking-return-packing-setup.md" sourcestartlinenumber="57">New</strong> action and then enter the <strong sourcefile="FinancialPack/pack-tracking-return-packing-setup.md" sourcestartlinenumber="57">Code</strong> and <strong sourcefile="FinancialPack/pack-tracking-return-packing-setup.md" sourcestartlinenumber="57">Description</strong>.</li>
+</ol>
+<p sourcefile="FinancialPack/pack-tracking-return-packing-setup.md" sourcestartlinenumber="59"><img src="media/return-packing-categories.png" sourcefile="FinancialPack/pack-tracking-return-packing-setup.md" sourcestartlinenumber="59" alt="Return. Packing Categories"></p>
+<h2 id="setup-of-returnable-packaging-journal-templates" sourcefile="FinancialPack/pack-tracking-return-packing-setup.md" sourcestartlinenumber="61">Setup of Returnable Packaging Journal Templates</h2>
+<p sourcefile="FinancialPack/pack-tracking-return-packing-setup.md" sourcestartlinenumber="63">Journal templates are used to predefine journals for accounting for returnable packaging (similar functionality to item journal templates).</p>
+<ol sourcefile="FinancialPack/pack-tracking-return-packing-setup.md" sourcestartlinenumber="65">
+<li sourcefile="FinancialPack/pack-tracking-return-packing-setup.md" sourcestartlinenumber="65">Select the icon <img src="media/ui-search/search_small.png" sourcefile="FinancialPack/pack-tracking-return-packing-setup.md" sourcestartlinenumber="65" alt="Magnifying glass icon that opens &quot;Tell Me&quot; feature" title="Tell me what you want to do">, enter <strong sourcefile="FinancialPack/pack-tracking-return-packing-setup.md" sourcestartlinenumber="65">Return. Packing Journal Templ.</strong> and then select the related link.</li>
+<li sourcefile="FinancialPack/pack-tracking-return-packing-setup.md" sourcestartlinenumber="66">On the <strong sourcefile="FinancialPack/pack-tracking-return-packing-setup.md" sourcestartlinenumber="66">Returnable Packaging Journal Template</strong> page, select the <strong sourcefile="FinancialPack/pack-tracking-return-packing-setup.md" sourcestartlinenumber="66">New</strong> action and then enter the <strong sourcefile="FinancialPack/pack-tracking-return-packing-setup.md" sourcestartlinenumber="66">Name</strong>, <strong sourcefile="FinancialPack/pack-tracking-return-packing-setup.md" sourcestartlinenumber="66">Description</strong>, <strong sourcefile="FinancialPack/pack-tracking-return-packing-setup.md" sourcestartlinenumber="66">No. Series</strong>, <strong sourcefile="FinancialPack/pack-tracking-return-packing-setup.md" sourcestartlinenumber="66">Posting No. Series</strong>, and <strong sourcefile="FinancialPack/pack-tracking-return-packing-setup.md" sourcestartlinenumber="66">Source Code</strong>.</li>
+</ol>
+<p sourcefile="FinancialPack/pack-tracking-return-packing-setup.md" sourcestartlinenumber="68"><img src="media/return-packing-journal-template.png" sourcefile="FinancialPack/pack-tracking-return-packing-setup.md" sourcestartlinenumber="68" alt="Returnable Packaging Journal Template"></p>
+<h2 id="setting-up-returnable-packaging-cards" sourcefile="FinancialPack/pack-tracking-return-packing-setup.md" sourcestartlinenumber="70">Setting Up Returnable Packaging Cards</h2>
+<ol sourcefile="FinancialPack/pack-tracking-return-packing-setup.md" sourcestartlinenumber="72">
+<li sourcefile="FinancialPack/pack-tracking-return-packing-setup.md" sourcestartlinenumber="72">Select the icon <img src="media/ui-search/search_small.png" sourcefile="FinancialPack/pack-tracking-return-packing-setup.md" sourcestartlinenumber="72" alt="Magnifying glass icon that opens &quot;Tell Me&quot; feature" title="Tell me what you want to do">, enter <strong sourcefile="FinancialPack/pack-tracking-return-packing-setup.md" sourcestartlinenumber="72">Return. Packing List</strong> and then select the related link.</li>
+<li sourcefile="FinancialPack/pack-tracking-return-packing-setup.md" sourcestartlinenumber="73">On the <strong sourcefile="FinancialPack/pack-tracking-return-packing-setup.md" sourcestartlinenumber="73">Return. Packing List</strong> page, select the <strong sourcefile="FinancialPack/pack-tracking-return-packing-setup.md" sourcestartlinenumber="73">New</strong> action.</li>
+</ol>
+<p sourcefile="FinancialPack/pack-tracking-return-packing-setup.md" sourcestartlinenumber="75"><img src="media/return-packing-list.png" sourcefile="FinancialPack/pack-tracking-return-packing-setup.md" sourcestartlinenumber="75" alt="Return. Packing List"></p>
+<ol start="3" sourcefile="FinancialPack/pack-tracking-return-packing-setup.md" sourcestartlinenumber="77">
+<li sourcefile="FinancialPack/pack-tracking-return-packing-setup.md" sourcestartlinenumber="77">After selecting the <strong sourcefile="FinancialPack/pack-tracking-return-packing-setup.md" sourcestartlinenumber="77">New</strong> action, the <strong sourcefile="FinancialPack/pack-tracking-return-packing-setup.md" sourcestartlinenumber="77">Return. Packing Card</strong> opens.</li>
+</ol>
+<p sourcefile="FinancialPack/pack-tracking-return-packing-setup.md" sourcestartlinenumber="79"><img src="media/return-packing-card.png" sourcefile="FinancialPack/pack-tracking-return-packing-setup.md" sourcestartlinenumber="79" alt="Return. Packing Card"></p>
+<p sourcefile="FinancialPack/pack-tracking-return-packing-setup.md" sourcestartlinenumber="81">Each <strong sourcefile="FinancialPack/pack-tracking-return-packing-setup.md" sourcestartlinenumber="81">Returnable Packaging Card</strong> contains the following fields:</p>
+<ul sourcefile="FinancialPack/pack-tracking-return-packing-setup.md" sourcestartlinenumber="83">
+<li sourcefile="FinancialPack/pack-tracking-return-packing-setup.md" sourcestartlinenumber="83"><strong sourcefile="FinancialPack/pack-tracking-return-packing-setup.md" sourcestartlinenumber="83">No.</strong> – Select the number series for returnable packaging.</li>
+<li sourcefile="FinancialPack/pack-tracking-return-packing-setup.md" sourcestartlinenumber="84"><strong sourcefile="FinancialPack/pack-tracking-return-packing-setup.md" sourcestartlinenumber="84">Description</strong> – Name of the returnable packaging.</li>
+<li sourcefile="FinancialPack/pack-tracking-return-packing-setup.md" sourcestartlinenumber="85"><strong sourcefile="FinancialPack/pack-tracking-return-packing-setup.md" sourcestartlinenumber="85">Return. Packing Category Code</strong> – Identification of the returnable packaging category.</li>
+<li sourcefile="FinancialPack/pack-tracking-return-packing-setup.md" sourcestartlinenumber="86"><strong sourcefile="FinancialPack/pack-tracking-return-packing-setup.md" sourcestartlinenumber="86">Search Description</strong> - A description used for search purposes.</li>
+<li sourcefile="FinancialPack/pack-tracking-return-packing-setup.md" sourcestartlinenumber="87"><strong sourcefile="FinancialPack/pack-tracking-return-packing-setup.md" sourcestartlinenumber="87">Net Change</strong> – A non-editable field with a link to the &quot;<strong sourcefile="FinancialPack/pack-tracking-return-packing-setup.md" sourcestartlinenumber="87">Return. Packing Ledger Entries</strong>&quot; table. The displayed value indicates the balance status of the returnable packaging.</li>
+<li sourcefile="FinancialPack/pack-tracking-return-packing-setup.md" sourcestartlinenumber="88"><strong sourcefile="FinancialPack/pack-tracking-return-packing-setup.md" sourcestartlinenumber="88">Expir. Date Form. in Sale</strong> – Enter the period within which the customer is obligated to return the returnable packaging.</li>
+<li sourcefile="FinancialPack/pack-tracking-return-packing-setup.md" sourcestartlinenumber="89"><strong sourcefile="FinancialPack/pack-tracking-return-packing-setup.md" sourcestartlinenumber="89">Expir. Date Form. in Purchase</strong> – Enter the period within which you are obligated to return the returnable packaging to the supplier.</li>
+<li sourcefile="FinancialPack/pack-tracking-return-packing-setup.md" sourcestartlinenumber="90"><strong sourcefile="FinancialPack/pack-tracking-return-packing-setup.md" sourcestartlinenumber="90">Blocked</strong> – A field to block (prevent) further use of the specific returnable packaging card.</li>
+</ul>
+<p sourcefile="FinancialPack/pack-tracking-return-packing-setup.md" sourcestartlinenumber="92">If specific values are set, they take precedence over general settings.</p>
+<p sourcefile="FinancialPack/pack-tracking-return-packing-setup.md" sourcestartlinenumber="94">From the card, you can also use the Related action to view <strong sourcefile="FinancialPack/pack-tracking-return-packing-setup.md" sourcestartlinenumber="94">Return. Packing Ledger Entries</strong> and <strong sourcefile="FinancialPack/pack-tracking-return-packing-setup.md" sourcestartlinenumber="94">Comments</strong>.</p>
+<p sourcefile="FinancialPack/pack-tracking-return-packing-setup.md" sourcestartlinenumber="96"><strong sourcefile="FinancialPack/pack-tracking-return-packing-setup.md" sourcestartlinenumber="96">See also</strong></p>
+<p sourcefile="FinancialPack/pack-tracking-return-packing-setup.md" sourcestartlinenumber="98"><a href="pack-tracking-return-packing.html" sourcefile="FinancialPack/pack-tracking-return-packing-setup.md" sourcestartlinenumber="98">Returnable Packaging records</a><br>
+<a href="finance-pack.html" sourcefile="FinancialPack/pack-tracking-return-packing-setup.md" sourcestartlinenumber="99">Financial Pack</a></p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/ARICOMA-D365BC/AC-IB-dynamics365smb-docs/blob/master/business-central/FinancialPack/pack-tracking-return-packing-setup.md/#L1" class="contribution-link">Improve this document</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+           <span><a href="https://www.aricoma.com/docs/en-us/dynamics365/business-central/Solutions/solutions.html"><strong>ENGLISH</strong><strong>/</strong><a href="https://www.aricoma.com/docs/cs-cz/dynamics365/business-central/Solutions/solutions.html"><strong>CZECH</strong></a></a></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

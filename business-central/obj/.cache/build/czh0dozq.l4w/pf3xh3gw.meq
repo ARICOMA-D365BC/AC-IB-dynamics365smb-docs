@@ -1,0 +1,272 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Returnable Packaging records </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Returnable Packaging records ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../TOC.html">
+    <meta property="docfx:tocrel" content="../StreamlineTools/TOC.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="png" src="../logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="returnable-packaging-records">Returnable Packaging records</h1>
+
+<blockquote>
+<p>Update: 01.01.2025</p>
+</blockquote>
+<p>In today's world, where <strong>sustainability and efficiency are key</strong>, returnable packaging plays a crucial role in modern businesses. Designed for repeated use, this packaging not only reduces the costs associated with single-use materials but also minimizes the environmental footprint. Companies use returnable packaging for transporting and storing goods, ensuring the safety and protection of products throughout the entire logistics process. Typical returnable packaging includes <strong>pallets</strong>, <strong>crates</strong>, <strong>barrels</strong>, <strong>bottles</strong> used for beverages, <strong>containers</strong>, and reusable <strong>boxes</strong>. Each type serves a specific purpose – from transporting heavy materials on pallets to storing liquids in barrels and beverages in bottles. Businesses track the movement of this packaging using modern information systems, ensuring efficient record-keeping, maintenance, and process optimization. This leads to significant cost savings and increased overall efficiency.</p>
+<p><img src="media/return-packing-item-card.png" alt="Item Card"></p>
+<h2 id="the-new-benchmark-in-packaging-management-efficiency">The New Benchmark in Packaging Management Efficiency</h2>
+<p>The <strong>Returnable Packaging</strong> module in Dynamics 365 Business Central is your key to gaining complete control over packaging management. This module helps you <strong>optimize the circulation of returnable packaging</strong>, bringing <strong>clarity</strong> and <strong>cost savings</strong> to your business. Whether you are tracking <strong>partner balances</strong>, <strong>managing purchase and sales transactions</strong>, or requiring <strong>detailed reporting</strong>, this module has you covered.</p>
+<p>Say goodbye to unnecessary chaos in warehouse management and embrace a system that saves you time, money, and the environment. See for yourself how easy it can be to manage complex returnable packaging records and contribute to a more sustainable future.</p>
+<h3 id="key-features-of-the-returnable-packaging-module">Key Features of the Returnable Packaging Module</h3>
+<ul>
+<li><strong>Standalone Returnable Packaging Records:</strong> Our solution enables detailed tracking of returnable packaging, including numbers, descriptions, categories, and other key details. This ensures every package is always under control.</li>
+<li><strong>Integration with Inventory:</strong> Within the standard inventory functionality, corresponding returnable packaging can be assigned to item cards. For example, an item card &quot;Pallet&quot; can be created and linked to a returnable packaging card &quot;Pallet.&quot; This system ensures smooth integration and easy tracking of packaging during every item movement.</li>
+<li><strong>Automation on Documents:</strong> Item cards with assigned returnable packaging can be added to purchase and sales documents. When documents are posted, returnable packaging entries are created to track the inflow and outflow of packaging. This process enables efficient tracking of supplier or customer packaging balances.</li>
+<li><strong>Returnable Packaging Journal:</strong> For manual movements of returnable packaging, the Returnable Packaging Journal allows manual receipts and issues, setting initial balances, or making corrections based on actual conditions. This tool provides flexibility and accuracy in packaging management.</li>
+</ul>
+<p><img src="media/return-packing-card.png" alt="Return. Packing Card"></p>
+<p><img src="media/return-packing-purch-order.png" alt="Purchase Order with Returnable Packaging"></p>
+<h2 id="use-cases-for-returnable-packaging">Use Cases for Returnable Packaging</h2>
+<p>To make your work easier, we provide an overview of the most common scenarios you may encounter in everyday practice:</p>
+<ul>
+<li><strong>Setting Up a New Package</strong></li>
+<li><strong>Setting the Initial Quantity of Packaging</strong></li>
+<li><strong>Purchasing Goods Including Returnable Packaging</strong></li>
+<li><strong>Selling Goods Including Returnable Packaging</strong></li>
+<li><strong>Reports</strong></li>
+</ul>
+<h3 id="setting-up-a-new-package">Setting Up a New Package</h3>
+<ol>
+<li>Select the icon <img src="media/ui-search/search_small.png" alt="Magnifying glass icon that opens &quot;Tell Me&quot; feature" title="Tell me what you want to do">, enter <strong>Return. Packing List</strong> and then select the related link.</li>
+<li>On the <strong>Return. Packing List</strong> page, select the <strong>New</strong> action.</li>
+</ol>
+<p><img src="media/return-packing-list.png" alt="Return. Packing List"></p>
+<ol start="3">
+<li>After selecting the <strong>New</strong> action, the <strong>Return. Packing Card</strong> opens.</li>
+</ol>
+<p><img src="media/return-packing-card.png" alt="Return. Packing Card"></p>
+<p>Each <strong>Returnable Packaging Card</strong> contains the following fields:</p>
+<ul>
+<li><strong>No.</strong> – Select the number series for returnable packaging.</li>
+<li><strong>Description</strong> – Name of the returnable packaging.</li>
+<li><strong>Return. Packing Category Code</strong> – Identification of the returnable packaging category.</li>
+<li><strong>Search Description</strong> - A description used for search purposes.</li>
+<li><strong>Net Change</strong> – A non-editable field with a link to the &quot;<strong>Return. Packing Ledger Entries</strong>&quot; table. The displayed value indicates the balance status of the returnable packaging.</li>
+<li><strong>Expir. Date Form. in Sale</strong> – Enter the period within which the customer is obligated to return the returnable packaging.</li>
+<li><strong>Expir. Date Form. in Purchase</strong> – Enter the period within which you are obligated to return the returnable packaging to the supplier.</li>
+<li><strong>Blocked</strong> – A field to block (prevent) further use of the specific returnable packaging card.</li>
+</ul>
+<p>If specific values are set, they take precedence over general settings.</p>
+<p>From the card, you can also use the Related action to view <strong>Return. Packing Ledger Entries</strong> and <strong>Comments</strong>.</p>
+<p>Since each Returnable Packaging is considered an item, it is necessary to create an item card for the given returnable packaging and assign it a Returnable Packaging number. The choice of &quot;dual&quot; tracking is made to separate the monitoring of returnable packaging expiration from accounting operations.</p>
+<ol>
+<li>Select the icon <img src="media/ui-search/search_small.png" alt="Magnifying glass icon that opens &quot;Tell Me&quot; feature" title="Tell me what you want to do">, enter <strong>Items</strong> and then select the related link.</li>
+<li>On the <strong>Items</strong> page, select the <strong>New</strong> action.</li>
+<li>The <strong>Item Card</strong> opens. Here, you enter information about the returnable packaging and assign the <strong>Return. Packing No.</strong></li>
+</ol>
+<p><img src="media/return-packing-item-card.png" alt="Karta zboží"></p>
+<h3 id="setting-the-initial-quantity-of-packaging">Setting the Initial Quantity of Packaging</h3>
+<p>To set the initial balances of packaging, we use the returnable packaging journals, which are also used for making adjustments and corrections.</p>
+<ol>
+<li>Select the icon <img src="media/ui-search/search_small.png" alt="Magnifying glass icon that opens &quot;Tell Me&quot; feature" title="Tell me what you want to do">, enter <strong>Return. Packing Journal</strong> and then select the related link.</li>
+<li>On the <strong>Return. Packing Journal</strong> page, fill in the following fields.</li>
+</ol>
+<p><img src="media/return-packing-journal.png" alt="Return. Packing Journal"></p>
+<p>The Returnable Packaging Journal includes the following fields:</p>
+<ul>
+<li><strong>Entry Type</strong> – Select whether it is Purchase, Sale, Positive Adjustment, or Negative Adjustment.</li>
+<li><strong>Document No.</strong> – Enter the document number.</li>
+<li><strong>Returnable Packaging No.</strong> – Select the number of the related returnable packaging card.</li>
+<li><strong>Item No.</strong> – Select the number of the related item card.</li>
+<li><strong>Source Type</strong> – A non-editable field automatically filled based on the Entry Type.</li>
+<li><strong>Source No.</strong> – Select the number of the specific vendor.</li>
+<li><strong>Description</strong> – Name of the returnable packaging.</li>
+<li><strong>Quantity</strong> – Enter the quantity of returnable packaging units.</li>
+<li><strong>Applies-to Entry</strong> – Select the entry to reconcile.</li>
+</ul>
+<ol start="3">
+<li>Once the required fields are filled out, use the <strong>Print</strong> action to verify that all entries are correct and complete.</li>
+<li>Based on your preferences, select either the <strong>Post</strong> action or <strong>Post and Print</strong> for processing.</li>
+</ol>
+<div class="WARNING">
+<h5>Warning</h5>
+<p>When using the Correction option in the Returnable Packaging Journal, posting does not apply entries based on the configured criteria.</p>
+</div>
+<h3 id="purchasing-goods-including-returnable-packaging">Purchasing Goods Including Returnable Packaging</h3>
+<p>When purchasing goods that include returnable packaging, it is essential to ensure that the packaging is properly recorded in the system. Returnable packaging is often used for transporting goods, making it crucial to include them on the purchase order to track their status and balances effectively.</p>
+<h4 id="scenario">Scenario</h4>
+<p>The purchasing department has decided to place an order with the vendor, Wide World Importers, in response to increased demand. The purchase order includes 5 units of <strong>Athens Table (1896-S)</strong> and 20 units of <strong>Paris Chair, Black (1900-S)</strong>. According to the vendor, the goods will be delivered on 6 pallets, which will be recorded as returnable packaging. Proper tracking of these pallets will enable efficient management and monitoring of their balances.</p>
+<h4 id="solution">Solution</h4>
+<ol>
+<li>Create a new purchase order.</li>
+<li>Fill in the vendor details in the General tab.</li>
+<li>On the order lines, select the desired items and quantities.</li>
+<li>Additionally, manually add the item created for the returnable packaging.</li>
+</ol>
+<p><img src="media/return-packing-purchase-order.png" alt="Purchase Order including Returnable Packaging"></p>
+<div class="IMPORTANT">
+<h5>Important</h5>
+<p>For proper functionality, the item card must be linked to the returnable packaging card, as outlined in <strong>Setting Up a New Package</strong>.</p>
+</div>
+<h3 id="selling-goods-including-returnable-packaging">Selling Goods Including Returnable Packaging</h3>
+<p>When selling goods that include returnable packaging, it’s essential to ensure the packaging is accurately recorded in the system. Returnable packaging is often used for transporting sold goods, so it’s important to include them on the sales order. This ensures precise tracking of their status and balances.</p>
+<h4 id="scenario-1">Scenario</h4>
+<p>A customer has ordered 1 unit of <strong>Athens Table (1896-S)</strong> and 4 units of <strong>Paris Chair, Black (1900-S)</strong>. To fulfill this order, it is necessary to create a sales order, to which, in addition to the goods, we will also add a returnable packaging item — a pallet on which the goods will be transported.</p>
+<h4 id="solution-1">Solution</h4>
+<ol>
+<li>Create a new <strong>Sales Order</strong>.</li>
+<li>Fill in the customer details in the <strong>General</strong> tab.</li>
+<li>On the order lines, add the ordered items and their quantities.</li>
+<li>Additionally, manually include the item created for the returnable packaging.</li>
+</ol>
+<p><img src="media/return-packing-sales-order.png" alt="Sales Order including Returnable Packaging"></p>
+<div class="IMPORTANT">
+<h5>Important</h5>
+<p>For proper functionality, the item card must be linked to the returnable packaging card, as outlined in <strong>Setting Up a New Package</strong>.</p>
+</div>
+<h2 id="reports">Reports</h2>
+<p>For efficient management of returnable packaging, various reports are available within the relevant module pages. These reports provide an overview of movements, balances, and other details related to returnable packaging.</p>
+<p>Select the icon <img src="media/ui-search/search_small.png" alt="Magnifying glass icon that opens &quot;Tell Me&quot; feature" title="Tell me what you want to do">, enter the desired report, and then choose the related link to have the report printed.</p>
+<ul>
+<li><strong>Packing Statement Basis:</strong> Used to prepare documentation for reporting purposes.</li>
+<li><strong>Return. Packing Posting - Test:</strong> Allows testing the accuracy of returnable packaging posting.</li>
+<li><strong>Return. Packing Registers:</strong> A record is created in the Returnable Packaging Registers (similar to the Item Journal) every time a returnable packaging entry is posted.</li>
+</ul>
+<p><img src="media/return-packing-registers.png" alt="Return. Packing Registers"></p>
+<ul>
+<li><strong>Return. Packing Register - Quantity:</strong> Provides detailed quantity movements for individual returnable packaging journals.
+<ul>
+<li>On the line <strong>No.</strong>, select the specific journal for which you want to view the details.</li>
+</ul>
+</li>
+</ul>
+<p><img src="media/return-packing-quantity.png" alt="Return. Packing Register - Quantity"></p>
+<ul>
+<li>If the line is left blank, the report will print details for all journals. See the image below for reference.</li>
+</ul>
+<p><img src="media/return-packing-quantity-print.png" alt="Return. Packing Register - Quantity print"></p>
+<ul>
+<li><strong>Return. Packing - Detail:</strong> Provides a detailed history of all returnable packaging movements.</li>
+<li><strong>Return. Packing Movement:</strong> Offers an overview of returnable packaging movement between warehouses or customers.</li>
+<li><strong>Cust. Return. Packing Balance:</strong> Displays the current balance of returnable packaging for individual customers.
+<ul>
+<li>You need to specify the customer <strong>No.</strong> and the period (date) for which you want to check the balance.</li>
+<li>The report can be run for either the <strong>Sell-to</strong> or the <strong>Bill-to</strong>.</li>
+</ul>
+</li>
+</ul>
+<p><img src="media/return-packing-customer-balance.png" alt="Cust. Return. Packing Balance"></p>
+<p><img src="media/return-packing-customer-balance-detail.png" alt="Cust. Return. Packing Balance print"></p>
+<ul>
+<li><strong>Vend. Return. Packing Balance:</strong> Displays the balance of returnable packaging with your vendors.
+<ul>
+<li>You need to specify the vendor <strong>No.</strong> and the period (date) for which you want to check the balance.</li>
+<li>The report can be run for either the <strong>Buy-to</strong> or the <strong>Pay-to</strong>.</li>
+</ul>
+</li>
+</ul>
+<p><img src="media/return-packing-vendor-balance.png" alt="Vend. Return. Packing Balance"></p>
+<p><img src="media/return-packing-vendor-balance-detail.png" alt="Vend. Return. Packing Balance print"></p>
+<h2 id="see-also">See also</h2>
+<p><a href="pack-tracking-return-packing-setup.html">Returnable Packaging records - Setup</a><br>
+<a href="finance-pack.html">Financial Pack</a></p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/ARICOMA-D365BC/AC-IB-dynamics365smb-docs/blob/master/business-central/FinancialPack/pack-tracking-return-packing.md/#L1" class="contribution-link">Improve this document</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+           <span><a href="https://www.aricoma.com/docs/en-us/dynamics365/business-central/Solutions/solutions.html"><strong>ENGLISH</strong><strong>/</strong><a href="https://www.aricoma.com/docs/cs-cz/dynamics365/business-central/Solutions/solutions.html"><strong>CZECH</strong></a></a></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
