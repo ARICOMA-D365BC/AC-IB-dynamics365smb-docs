@@ -1,6 +1,6 @@
 ---
 title: ARICOMA SOLUTIONS - SK Legistaltive Pack
-description: This section describes ARICOMA Solutions - Slovak legislationlocalization
+description: This section describes ARICOMA Solutions - Slovak legislation
 author: kunes
 date: 07/31/2025
 reviewer: janousek
@@ -32,4 +32,3 @@ Processing and exporting VAT Control Report.|[VAT Control Report](sk-vat-check-r
 ## See also
 
 [ARICOMA Solutions](../Solutions/solutions.md)  
-
