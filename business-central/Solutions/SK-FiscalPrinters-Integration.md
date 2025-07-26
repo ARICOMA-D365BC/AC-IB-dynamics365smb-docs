@@ -167,4 +167,4 @@ In case of confusion, it is possible to view the files exchanged between the BC 
 
 [SK Fiscal Printers Integration Setup](SK-FiscalPrinters-Integration-setup.md)  
 [Streamline Tools](streamlinetools.md)  
-[ARICOMA Solution](../index.md)
+[ARICOMA Solution](solutions.md)

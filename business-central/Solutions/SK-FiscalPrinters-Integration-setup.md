@@ -108,4 +108,4 @@ The following table shows the specific VAT schemes applicable to fiscal printers
 
 [SK Fiscal Printers Integration](SK-FiscalPrinters-Integration.md)  
 [Streamline Tools](streamlinetools.md)  
-[ARICOMA Solution](../index.md)
+[ARICOMA Solution](solutions.md)
