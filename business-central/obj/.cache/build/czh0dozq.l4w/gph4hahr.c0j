@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>CZ Banking Extension - API connector settings </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="CZ Banking Extension - API connector settings ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../TOC.html">
+    <meta property="docfx:tocrel" content="TOC.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="png" src="../logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="api-connector-settings" sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="10">API connector settings</h1>
+
+<blockquote sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="12">
+<p sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="12">Update 19.08.2025</p>
+</blockquote>
+<h2 id="csob-api-connector" sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="14">CSOB API connector</h2>
+<h3 id="launch-of-the-čsob-business-connector-service" sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="16">Launch of the ČSOB Business Connector service</h3>
+<p sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="18">The steps to get the service up and running are as follows:</p>
+<ul sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="20">
+<li sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="20">Enabling the CSOB Business Connector service for the CEB service contract,</li>
+<li sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="21">obtaining a certificate from a certification authority or directly from the bank,</li>
+<li sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="22">registering the certificate for use in the CSOB Business Connector service in the portal,</li>
+<li sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="23">configuring the CSOB Business Connector service in the portal,</li>
+<li sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="24">setting up the client application in Business Central</li>
+</ul>
+<p sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="26"><strong sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="26">Enabling the CSOB Business Connector service for the CEB service contract</strong></p>
+<p sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="28">Disabling or enabling the CSOB Business Connector service can be done in the portal or at a bank branch</p>
+<p sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="30"><strong sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="30">Obtaining a certificate</strong></p>
+<p sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="32">The ČSOB Business Connector service enables the use of certificates issued by certification authorities I. Certification Authority and PostSignum. Only so-called Server Commercial Certificates are suitable for use in the CSOB Business Connector service and must enable so-called Client Authentication.</p>
+<p sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="34">The certificate can also be obtained directly from the bank, which can be done in basically 2 ways, either</p>
+<ul sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="36">
+<li sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="36">by Windows means (e.g. with the help of an IT person)
+<ul sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="37">
+<li sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="37">Manually creating a certificate request on the client computer (e.g. using the Windows tool <em sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="37">certmgr.msc</em>),</li>
+<li sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="38">Submitting a certificate request and issuing the certificate (CEB -&gt; Business Connector -&gt; <em sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="38">Request Certificate</em> and then downloading the certificate by selecting <em sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="38">Download</em>)</li>
+<li sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="39">Installing the issued certificate on the client computer (e.g. using the Windows <em sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="39">certmgr.msc</em> tool)</li>
+</ul>
+</li>
+<li sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="40">or using the <em sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="40">CSOB Business Connector</em> application (obtaining a communication certificate is described in the <a href="https://www.csob.cz/documents/10710/15532355/csob-business-connector-prirucka.pdf?v2401" sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="40">csob-business-connector-implementacni-prirurucka.pdf</a> manual). This is
+<ul sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="41">
+<li sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="41">installation of the CSOB Business Connector application on a computer (chapter 2)</li>
+<li sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="42">obtaining a communication certificate (chapter 3).</li>
+</ul>
+</li>
+</ul>
+<div class="TIP" sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="44">
+<h5>Tip</h5>
+<p sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="45">The CSOB Business Connector application will not be used for normal work. However, it is recommended to set up a certificate expiry notification (see the guide in the chapter Renewing the communication certificate).</p>
+</div>
+<p sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="47"><strong sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="47">Certificate registration</strong></p>
+<p sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="49">In the case of a certificate from a bank (see above), it is automatically registered.</p>
+<p sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="51"><strong sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="51">Configuring the CSOB Business Connector service in the portal</strong></p>
+<p sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="53">In the portal, it is necessary to enable the required operations that the client will use using the CSOB Business Connector. In our case, these are <em sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="53">Download statements for specific accounts</em> and <em sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="53">Send signed payment order files for specific accounts</em>.</p>
+<p sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="55"><strong sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="55">Setting up a client application in Business Central</strong></p>
+<p sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="57">To set up Business Central, you need to download a communication certificate in pfx format:</p>
+<ol sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="59">
+<li sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="59">Press Windows key + R and type certmgr.msc in the window that opens and press OK.</li>
+<li sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="60">In the certmgr tool, expand Personal on the left side and find the certificate line in the list. It will have the CEB Business Connector CA issuer and the subject name you selected.</li>
+<li sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="61">Press the right mouse button on the certificate and select All Tasks and Export... from the context menu.</li>
+<li sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="62">In the certificate export wizard, select Yes, export private key and then export to a PKCS #12 file with a .pfx extension. You will need the password you entered in the next step.</li>
+</ol>
+<p sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="64">The next step is to set up access in Business Central:</p>
+<ol sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="66">
+<li sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="66">Choose the <img src="media/ui-search/search_small.png" sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="66" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="66">Clients of CSOB CEB</strong> and then choose the related link.</li>
+<li sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="67">Enter &quot;CSOB&quot; in the <strong sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="67">Code</strong> field on the new line.</li>
+<li sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="68">Enter e.g. &quot;CSOB API&quot; in the <strong sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="68">Description</strong> field.</li>
+<li sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="69">Leave the value &quot;Production Environment&quot; in the <strong sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="69">API</strong> field.</li>
+<li sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="70">In the <strong sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="70">Available for</strong> field, leave the value &quot;Company&quot; to set up common access for all authorized users of the module.</li>
+<li sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="71">In the <strong sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="71">Contract Number</strong> field, enter the value from the API access contract you signed with the bank.</li>
+<li sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="72">Run the <em sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="72">Upload Certificate</em> action and select the certificate file in pfx format.</li>
+<li sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="73">Enter a password for the certificate in the <strong sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="73">Certificate Password</strong> field.</li>
+</ol>
+<div class="TIP" sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="75">
+<h5>Tip</h5>
+<p sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="76">If you want to determine access according to the user's login, each user must make the above-mentioned settings of the ČSOB CEB Client. In the <strong sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="76">Available for</strong> field, select the value &quot;User&quot;.</p>
+</div>
+<h3 id="specific-parameters-for-čsob-api-connector" sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="78">Specific parameters for ČSOB API connector</h3>
+<p sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="80">The following parameters must be added to the Advanced Settings if you want to use the CSOB API connector to import bank statements:</p>
+<ol sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="82">
+<li sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="82">Choose the <img src="media/ui-search/search_small.png" sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="82" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="82">Bank Export/Import Settings</strong> and then choose the related link.</li>
+<li sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="83">Navigate to the selected Import type row.</li>
+<li sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="84">Run the <em sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="84">Advanced Settings</em> action.</li>
+<li sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="85">In the <strong sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="85">Bank Statement Provider</strong> field, select &quot;CSOB CEN Connector&quot;.</li>
+<li sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="86">In the <strong sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="86">CSOB CEB Client Code</strong> field, select the client code defined in the previous section.</li>
+<li sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="87">In the <strong sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="87">CSOB CEB File Format</strong> field, select the GPC option representing the ABO format.</li>
+<li sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="88">In the <strong sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="88">Content Encoding</strong> field, add a value - see <a href="ext-cz-banking-setup.md/#Import-encoding-settings" sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="88">Setting the encoding for import</a></li>
+<li sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="89">In the <strong sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="89">Processing Procedure ID</strong> field, check that the value 52057431 (Bank Stmt.Imp.-ABO Acb) has been added.</li>
+</ol>
+<p sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="91">The following parameters must be added to the Advanced Settings if you want to use the CSOB API connector to export payment orders:</p>
+<ol sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="93">
+<li sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="93">Choose the <img src="media/ui-search/search_small.png" sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="93" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="93">Bank Export/Import Settings</strong> and then choose the related link.</li>
+<li sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="94">Navigate to the selected Export type row.</li>
+<li sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="95">Run the <em sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="95">Advanced Settings</em> action.</li>
+<li sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="96">In the <strong sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="96">Bank Statement Provider</strong> field, select &quot;CSOB CEN Connector&quot;.</li>
+<li sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="97">In the <strong sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="97">CSOB CEB Client Code</strong> field, select the client code defined in the previous section.</li>
+<li sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="98">In the <strong sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="98">CSOB CEB File Format</strong> field, select the KPC option representing the ABO format.</li>
+<li sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="99">In the <strong sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="99">Processing Procedure ID</strong> field, check that the value 52057438 (Paym.Order Export-ABO acb) has been added.</li>
+</ol>
+<h2 id="kb-api-connector" sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="101">KB API connector</h2>
+<h3 id="launch-of-the-api-business-suite-service" sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="103">Launch of the API Business suite service</h3>
+<p sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="105">In order to use the <a href="https://www.kb.cz/cs/kbapi/sluzby-kb-api/api-business-suite" sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="105">API Business suite</a> service from Komerční banka, you must have activated the selected internet banking application (<em sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="105">Moje Banka Business</em>, or <em sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="105">Profibanka</em>, or <em sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="105">Mobilní banka Business</em>).
+The basic steps to make the API interface operational are:</p>
+<ul sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="108">
+<li sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="108">The company activates the API Business Suite service in KB</li>
+<li sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="109">The company applies to Aricoma for an Authorization Key, which will be generated specifically for the company and thanks to which Aricoma will register the KB API connector with KB.</li>
+<li sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="110">The company sets up the module in Business Central</li>
+<li sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="111">The company gives consent to the BC application to download data from KB and selects the bank accounts to which BC will have access</li>
+</ul>
+<p sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="113"><strong sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="113">Obtaining the Authorization Key</strong>
+Contact us by email at <a href="mailto:bc_sales@aricoma.com" sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="114">bc_sales@aricoma.com</a>. All we need is your company name, and we will send you an Authorization Key in reply. This is for your company's use only and must not be used by anyone else.</p>
+<p sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="116"><strong sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="116">Setting up the module in BC</strong>
+The next step is to set up access in Business Central:</p>
+<ol sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="119">
+<li sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="119">Choose the <img src="media/ui-search/search_small.png" sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="119" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="119">KB API Clients</strong> and then choose the related link.</li>
+<li sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="120">On the KB API Clients page, enter &quot;KB&quot; in the <strong sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="120">Code</strong> field on the new line.</li>
+<li sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="121">For example, type &quot;KB API&quot; in the <strong sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="121">Description</strong> field.</li>
+<li sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="122">Leave the value &quot;Production environment&quot; in the <strong sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="122">API</strong> field.</li>
+<li sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="123">In the <strong sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="123">Authorization Key</strong> field, enter the value you received from Aricoma (see previous paragraph).</li>
+<li sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="124">In the <strong sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="124">Number of days of transaction history</strong> field, enter 10</li>
+</ol>
+<p sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="126"><strong sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="126">Granting consent</strong></p>
+<ol sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="128">
+<li sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="128">On the KB API Clients page, run the <em sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="128">Authorize Client</em> action.</li>
+<li sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="129">In the new window that automatically opens, the bank's dialogue will appear, where after logging in you will be asked to give consent to use the &quot;Aricoma KB Connector&quot; application.</li>
+<li sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="130">Immediately afterwards, another login prompt will appear, after which you will select the bank accounts to which &quot;Aricoma KB connector&quot; should have access.</li>
+</ol>
+<!-- ### Specific parameters for KB API connector
+-->
+<h2 id="erste-api-connector" sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="135">Erste API connector</h2>
+<h3 id="activating-the-premium-api-service" sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="137">Activating the Premium API service</h3>
+<p sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="139">To activate the API interface, you need to</p>
+<ul sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="141">
+<li sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="141">register on the Erste Developer Portal (EDP),</li>
+<li sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="142">create an application on the portal,</li>
+<li sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="143">request access for the application to the production environment, and</li>
+<li sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="144">set up the module in Business Central.</li>
+</ul>
+<p sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="146"><strong sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="146">Company registration in EDP</strong></p>
+<p sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="148">When registering, fill in the required information about your company, see <a href="https://developers.erstegroup.com/docs/tutorial/step-by-step#registrujte-se" sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="148">Registration procedure</a>.</p>
+<p sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="150"><strong sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="150">Creating an application</strong></p>
+<p sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="152">You need to create a new &quot;application&quot; in your organization and connect it to the bank, see <a href="https://developers.erstegroup.com/docs/guides/general-user-manual-application/#p-ipojen-k-bance" sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="152">procedure</a>. Fill in the following parameters:</p>
+<table sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="154">
+<thead>
+<tr sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="154">
+<th sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="154">Property</th>
+<th sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="154">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="156">
+<td sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="156">Application name</td>
+<td sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="156">Aricoma Erste API Connector</td>
+</tr>
+<tr sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="157">
+<td sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="157">Type</td>
+<td sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="157">Web</td>
+</tr>
+<tr sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="158">
+<td sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="158">Platform</td>
+<td sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="158">Server</td>
+</tr>
+<tr sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="159">
+<td sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="159">Language</td>
+<td sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="159">Other</td>
+</tr>
+<tr sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="160">
+<td sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="160">Application use</td>
+<td sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="160">Final API Consumer</td>
+</tr>
+</tbody>
+</table>
+<p sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="162">Banks:</p>
+<ul sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="164">
+<li sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="164">Česká spořitelna, a.s.</li>
+</ul>
+<p sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="166">Connecting to the API:</p>
+<ul sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="168">
+<li sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="168">Select <em sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="168">Premium - Accounts API</em> and <em sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="168">Premium - Payments API</em></li>
+<li sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="169">Enable OAuth2</li>
+</ul>
+<p sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="171"><strong sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="171">Request for access to the production environment</strong></p>
+<p sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="173">If everything is set up correctly (and confirmed by the bank), you can generate access data on the Production tab.</p>
+<p sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="175"><strong sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="175">Setting up the module in BC</strong>
+The next step is to set up access in Business Central:</p>
+<ol sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="178">
+<li sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="178">Choose the <img src="media/ui-search/search_small.png" sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="178" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="178">Erste API Clients</strong> and then choose the related link.</li>
+<li sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="179">On the Erste API Clients page, enter &quot;ČS&quot; in the <strong sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="179">Code</strong> field on a new line.</li>
+<li sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="180">In the <strong sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="180">Description</strong> field, enter, for example, &quot;ČS API&quot;.</li>
+<li sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="181">In the <strong sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="181">Connected Bank</strong> field, select &quot;Česká spořitelna&quot;.</li>
+<li sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="182">In the <strong sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="182">API Environment</strong> field, select the value &quot;Production environment&quot;.</li>
+<li sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="183">In the <strong sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="183">API Key</strong> field, enter the value obtained from the portal (see previous paragraph).</li>
+<li sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="184">In the <strong sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="184">Client ID</strong> field, enter the value obtained from the portal (see previous paragraph).</li>
+<li sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="185">In the <strong sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="185">Client Secret</strong> field, enter the value obtained from the portal (see previous paragraph).</li>
+<li sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="186">In the <strong sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="186">Authorization Validity</strong> field, you can change the authorization validity to a period shorter than the maximum allowed period of 180 days.</li>
+<li sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="187">Run the <em sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="187">Authorize Client</em> action; success will be indicated by a change in the <strong sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="187">Client Is Authorized</strong> flag.</li>
+</ol>
+<p sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="189"><strong sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="189">See also</strong></p>
+<p sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="191"><a href="cz-banking-extension-setup.html" sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="191">CZ Banking Extension Setup</a><br>
+<a href="cz-banking-extension.html" sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="192">CZ Banking Extension</a><br>
+<a href="finance-pack.html" sourcefile="Solutions/cz-banking-extension-API-setup.md" sourcestartlinenumber="193">Financial Pack</a></p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/ARICOMA-D365BC/AC-IB-dynamics365smb-docs/blob/master/business-central/Solutions/cz-banking-extension-API-setup.md/#L1" class="contribution-link">Improve this document</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+           <span><a href="https://www.aricoma.com/docs/en-us/dynamics365/business-central/Solutions/solutions.html"><strong>ENGLISH</strong><strong>/</strong><a href="https://www.aricoma.com/docs/cs-cz/dynamics365/business-central/Solutions/solutions.html"><strong>CZECH</strong></a></a></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
