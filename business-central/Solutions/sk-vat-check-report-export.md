@@ -1,16 +1,18 @@
 ---
-title: ARICOMA SOLUTIONS - SK Legistaltive Pack| Microsoft Docs
-description: This section describes ARICOMA Solutions - Slovak legislation
+title: ARICOMA SOLUTIONS - SK Legislative Pack| Microsoft Docs
+description: Description of the ARICOMA extension for Business Central
 author: kunes
 ms.service: dynamics365-business-central
 ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: Slovak, , additional functions, sale, VAT
-ms.author: v-makune
+ms.search.keywords: Slovak, localization, additional functions, VAT
+ms.author: Martin Kuneš
 ---
 # VAT Control Report
+
+> Update 21.09.2025
 
 The functionality enables the processing of the VAT Control Report and its export to an xml file, which can be imported to the portal of the Financial Administration of the Slovak Republic or to the eDane application.
 
@@ -24,7 +26,6 @@ The functionality enables the processing of the VAT Control Report and its expor
 
 > [!NOTE]
 > The **Detailed item** field in CHR rows is used for the system designation of the row. If YES, the item is not selected for the control report (it is not transferred to xml and is not reported to the Financial Administration) When you close the CHR, the items that will have a value of YES in this field are also closed.
-
 > [!NOTE]
 > The **Warning** field in CHR rows is an informative field that warns about missing data for individual documents loaded into CHR.
 
