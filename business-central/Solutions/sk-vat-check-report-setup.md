@@ -1,18 +1,19 @@
 ---
-title: ARICOMA SOLUTIONS - SK Legistaltive Pack| Microsoft Docs
-description: This section describes ARICOMA Solutions - Slovak legislation
+title: ARICOMA SOLUTIONS - SK Legislative Pack| Microsoft Docs
+description: Description of the ARICOMA extension for Business Central
 author: kunes
 ms.service: dynamics365-business-central
 ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: Slovak, , additional functions, sale, VAT
-ms.author: v-makune
+ms.search.keywords: Slovak, localization, additional functions, VAT
+ms.author: Martin Kuneš
 ---
 
 # VAT Control Report - Setup
-> Update 31.07.2025
+
+> Update 21.09.2025
 
 To ensure proper functionality, you need to set up several areas below
 
@@ -36,7 +37,6 @@ The XML schema for the VAT Control Report must be imported into the application 
 6. In the **Assing legislation** select **SK**.
 7. Confirm with the **OK** button.
 
-
 ## VAT report line settings - extensions
 
 To ensure the correct reporting of the VAT Control Report, it is necessary to set the fields in the lines of the VAT report:
@@ -44,13 +44,13 @@ To ensure the correct reporting of the VAT Control Report, it is necessary to se
 1. Choose the ![Lightbulb that opens the Tell Me feature.](media/ui-search/search_small.png "Tell me what you want to do") icon, enter **VAT Statements** and then choose the related link.
 2. For each line in the sales tax statement, define the following fields:
 
-- Source Code filter
-- Document type
-- Document type filter
-- Check VAT Report Section
-- Ch.VAT R. S. for Persons
+   - Source Code filter
+   - Document type
+   - Document type filter
+   - Check VAT Report Section
+   - Ch.VAT R. S. for Persons
 
-![Import of unreliable VAT payers from xml format](media/VAT_check_report.png)
+   ![Import of unreliable VAT payers from xml format](media/VAT_check_report.png)
 
 3. Confirm with the **OK** button.
 
@@ -83,6 +83,10 @@ It is necessary to set columns for individual sections, which will be exported t
 1. Choose the ![Lightbulb that opens the Tell Me feature.](media/ui-search/search_small.png "Tell me what you want to do") icon, enter **VAT Check Report Section** and then choose the related link.
 2. Select the row for which you want to set columns, and then choose **Action** -> **Section** -> **Column Selection Setup**.
 3. Enter the codes according to the valid reporting regulation. In the **Assigned Field field in the report line**, you can set from which system field the value will be populated into the Control Report.
+
+> [!WARNING]
+> To maintain the ability to export the Control Report according to various XML schemas, all columns must be defined for each schema.
+> ![Import of unreliable VAT payers from xml format](media/VAT_check_report_section_columns.png)
 
 ## See also
 
