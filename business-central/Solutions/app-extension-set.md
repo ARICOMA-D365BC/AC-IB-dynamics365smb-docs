@@ -364,19 +364,19 @@ The needs of companies in the field of working with number series tend to be mor
 
 Links can be used in a variety of areas, typically on purchase, sales, service documents or links to them, transfer orders, etc.
 
-For more information, visit the [Setup](controling-basic-setup#number-series-links-setup).
+For more information, visit the [Setup](app-extension-set-setup#number-series-links-setup).
 
 ## Rounding of the invoice according to the payment method
 
 In practice, there is often a need to address the rounding of invoices differently according to the context of the method of payment, eg differently for cash transactions, differently for payments from an account or differently for documents with payment by advance invoice. Today, the company has such an option for rounding using advanced settings based on the Payment Method Code.
 
-For more information, visit the [Setup](controling-basic-setup/#rounding-setup-according-to-the-method-of-payment).
+For more information, visit the [Setup](app-extension-set-setup/#rounding-setup-according-to-the-method-of-payment).
 
 ## Other functionalities
 
 This chapter describes other minor modifications or enhancements broken down by area.
 
-### General
+## General
 
 **Data migration functionality extension**  
 
@@ -439,5 +439,5 @@ The Set Processing Order feature has been added to the Configuration Workbook an
 
 ## See also
 
-[Application extension set - Setup](controling-basic-setup.md)  
+[Application extension set - Setup](app-extension-set-setup.md)  
 [Financial Pack](finance-pack.md)
