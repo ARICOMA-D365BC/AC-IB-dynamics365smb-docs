@@ -1,0 +1,252 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>SK Fiscal Printers Integration </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="SK Fiscal Printers Integration ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../TOC.html">
+    <meta property="docfx:tocrel" content="TOC.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="png" src="../logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="sk-fiscal-printers-integration-for-dynamics-365-business-central">SK Fiscal Printers Integration for Dynamics 365 Business Central</h1>
+
+<blockquote>
+<p>Update 31.07.2025</p>
+</blockquote>
+<p><strong>SK Fiscal Printers Integration</strong> is an extension for the Microsoft Dynamics 365 Business Central information system that provides direct integration with fiscal printers from VAROS, specifically the <a href="http://www.varos.sk/vyrobky-FT5000">eKASA FT5000</a> series. This solution is designed to fully comply with Slovak legislative requirements according to Act 289/2008 Z.z., which regulates the recording of sales from goods and services in cash or other methods (e.g., payment cards, meal vouchers, or checks).</p>
+<h2 id="key-benefits-of-the-module">Key benefits of the module</h2>
+<ul>
+<li><strong>Full legislative compliance</strong> – Allows printing and electronic registration of tax documents according to current Slovak legislation, including the payment of advance invoices, ensuring that your company is always in compliance with legal regulations.</li>
+<li><strong>Streamlined document management</strong> – The module enables automatic processing of payment receipts and provides the option to print copies additionally. Customers also have the option to manually register documents and mark them as registered, offering greater flexibility in document handling.</li>
+<li><strong>Access to document history</strong> – Users can easily view the complete history of fiscal documents directly in Dynamics 365 Business Central, improving the clarity and management of financial records.</li>
+<li><strong>Simple and reliable API connection</strong> – The module uses an API interface from VAROS for seamless Business Central Online communication with fiscal printers. For ease of management, the API fee is included in the module price (price based on number of devices).</li>
+</ul>
+<p>For technical information from VAROS, see <a href="http://www.varos.sk/manualy.php">Manuals</a>.</p>
+<div class="IMPORTANT">
+<h5>Important</h5>
+<p>The module requires the &quot;Core Localization Pack for Czech&quot;. To meet other Slovak legislative requirements, choose the <a href="https://appsource.microsoft.com/en-us/product/dynamics-365-business-central/PUBID.autocontas%7CAID.pas_2021_3%7CPAPPID.6faf8513-1781-444c-8c20-032a6f1efe06?tab=Overview">SK Legislative Pack</a> and the <a href="https://appsource.microsoft.com/en-us/product/project-madeira/PUBID.autocontas%7CAID.pas_2021_5%7CPAPPID.a90b83b0-d99d-4156-9c65-526b37fe3497">SK Language Pack</a> from Aricoma.</p>
+</div>
+<h2 id="usage">Usage</h2>
+<p>The following text describes the scenarios supported by the Fiscal Printers Integration module.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>A better user experience can be achieved when combined with the  <a href="multiple-payment-methods.html">Multiple Payment Methods</a> module.</p>
+</div>
+<h3 id="creating-a-tax-document-on-a-fiscal-printer">Creating a tax document on a fiscal printer</h3>
+<ol>
+<li>Choose the <img src="media/ui-search/search_small.png" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong>Sales Invoices</strong> and then choose the related link.</li>
+<li>On the Sales Invoices page, click <em>New</em> to create a new sales invoice.</li>
+<li>Complete the lines of the document as needed.</li>
+</ol>
+<div class="IMPORTANT">
+<h5>Important</h5>
+<p>The sales receipt must be set to <strong>Prices incl. VAT</strong> must be set to Yes. The system will notify the user of this when entering the Payment Method Code with the <strong>Fiscal Tax Document</strong> flag enabled.</p>
+</div>
+<ol start="4">
+<li>In the <strong>Payment Method Code</strong> field, select the payment method linked to a fiscal printer (see <a href="sk-fiscalprinters-integration-setup.html#payment-methods-settings">Setting payment methods</a> with the <strong>Fiscal Tax Document</strong> flag enabled).</li>
+<li>Post the document.</li>
+</ol>
+<p>If everything is set correctly, a Fiscal Item is created along with the others (see the <em>Find Entries</em> action) and a tax document containing the individual lines of the posted sales invoice is printed on the fiscal printer.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>In Fiscal Entries, you can determine whether the receipt is a tax document based on the value in the <strong>Tax document</strong> field.</p>
+</div>
+<h3 id="payment-of-the-posted-invoice-on-the-fiscal-printer">Payment of the posted invoice on the fiscal printer</h3>
+<p>This scenario describes cash payment of a posted invoice if the fiscal printer in BC is connected to the Bank Account entity. If connected to the Cash Desk entity, simply create a cash receipt in the usual way (similar to <a href="#payment-of-advance-invoice-on-the-fiscal-printer">Payment of advance invoice on the fiscal printer</a> below).</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>For more information, see <a href="sk-fiscalprinters-integration-setup.html#connecting-fiscal-printers-to-bank-accounts--cash-desks">Connecting Fiscal Printers to Bank Accounts / Cash Registers</a>.</p>
+</div>
+<ol>
+<li>Choose the <img src="media/ui-search/search_small.png" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong>Payment Journals</strong> and then choose the related link.</li>
+<li>On the <strong>Payment Journals</strong> page, create a new line.</li>
+<li>Add information to post the invoice payment (Line Type = Payment, Account Type = Customer, Account Number = Customer number from the invoice)</li>
+<li>Select the required document to be paid via the <strong>Applies-to Doc. No.</strong> field and confirm the selection</li>
+<li>Enter Bank Account in the <strong>Bal. Account Type</strong> field and the bank account with the fiscal printer set in the <strong>Bal. Account No.</strong> field.</li>
+<li>Before posting the document, manually adjust the amount to round to the nearest 5 cents. If the payment amount is not manually adjusted in the journal to round to 0.05, the system will warn the user and the transaction cannot be posted without correcting the payment rounding.</li>
+<li>Use the <em>Post</em> function to post the internal document.</li>
+</ol>
+<p>If everything is set up correctly, a Fiscal Ledger Entry is created along with others (see the <em>Find entries</em> action) and a “Invoice payment receipt” is printed on the fiscal printer (showing the invoice number and amount paid).</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>If the invoice needs to be paid with multiple payment types (e.g., a combination of card and cash), you will enter multiple journal lines with the required amounts and the appropriate bank accounts as a balance account. All these lines must then have the same document number.</p>
+</div>
+<h3 id="balancing-the-invoice-on-the-printer-during-posting">Balancing the invoice on the printer during posting</h3>
+<p>This is a case where the result of posting a sales document is to be a booked sales invoice and at the same time a Invoice payment receipt on the fiscal printer.
+The procedure is the same as in the chapter <a href="#creating-a-tax-document-on-a-fiscal-printer">Creating a Tax Document on a fiscal printer</a>. The only difference is that you use a Payment Method Code with the <strong>Fiscal Tax Document</strong> flag turned deactivated.</p>
+<h3 id="payment-of-advance-invoice-on-the-fiscal-printer">Payment of advance invoice on the fiscal printer</h3>
+<p>This scenario describes a case where the seller issues a sales advance invoice with an expected cashless payment method. Subsequently, the customer agrees with the seller on payment on the spot.</p>
+<ol>
+<li>Choose the <img src="media/ui-search/search_small.png" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong>Cash Documents</strong> and then choose the related link.</li>
+<li>On the <strong>Cash Documents</strong> page, click <em>New</em> to create a new cash document.</li>
+<li>In the <strong>Document Type</strong> field, select Receipt.</li>
+<li>In the document line, select the relevant customer's account number in the <strong>Account No.</strong> field and the required advance invoice in the <strong>Advance Letter No.</strong> field.</li>
+<li>Check the amount paid in the <strong>Amount</strong> field (the system will pre-fill the value for full payment).</li>
+<li>Use the <em>Post</em> function to post the cash receipt.</li>
+</ol>
+<p>If everything is set up correctly, posting the cash document created a Fiscal Ledger Entry (see the <em>Find entries</em> action) and a “Invoice payment receipt” is printed on the fiscal printer (showing the invoice number and amount paid).</p>
+<h3 id="cash-payment-of-purchase-credit-note">Cash payment of purchase credit note</h3>
+<p>Registration on a fiscal printer is also supported on the purchase side. Similar to <a href="#balancing-the-invoice-on-the-printer-during-posting">Balancing the invoice on the printer during posting</a>, it is controlled by selecting the <strong>Payment method code</strong> on the purchase document.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The <strong>Fiscal tax document</strong> flag on the Payment method code is ignored; on the purchase side, it is always just an “invoice payment.”</p>
+</div>
+<h3 id="subsidies-of-the-fiscal-cash-desk-from-another-cash-desk">Subsidies of the fiscal cash desk from another cash desk</h3>
+<p>This scenario concerns the transfer of cash from the regular cash desk to the cash desk representing the fiscal printer.</p>
+<p>The user creates and posts two Cash Documents:</p>
+<ul>
+<li>Withdrawal – on the document line, the G/L account “Money in transit.”</li>
+<li>Receipt – for the cash desk where the fiscal printer's payment method has the value <em>Cash</em>, on the document line G/L account “Money in transit”.</li>
+</ul>
+<p>If everything is set up correctly, posting the cash document created a Fiscal Ledger Entry (see the <em>Find entries</em> action) and the Cash Deposit document is printed on the fiscal printer.</p>
+<h3 id="cash-withdrawal-from-the-fiscal-cash-desk">Cash withdrawal from the fiscal cash desk</h3>
+<p>This scenario concerns the transfer of cash from a fiscal printer. If the transfer is to a regular cash register, proceed in the same way as in <a href="#subsidies-of-the-fiscal-cash-desk-from-another-cash-desk">Subsidies of the fiscal cash desk from another cash desk</a>.</p>
+<p>If the fiscal printer is linked to a bank account, the scenario of depositing cash into a bank account is carried out entirely in the General Journal:</p>
+<ul>
+<li>A line with a bank account representing the company's bank account; the Balance Account is &quot;Money in transit.&quot;</li>
+<li>A line with a bank account where the Fiscal Means Of Payment has the value Cash; the Balance Account is &quot;Money in transit&quot;</li>
+</ul>
+<p>If everything is set up correctly, the journal entry also created one fiscal item (see the <em>Find Items</em> action) and a Cash Withdrawal document is printed on the fiscal printer.</p>
+<h3 id="ekasa-functions-and-sales-overviews">eKASA functions and sales overviews</h3>
+<p>Other functions eKASA and Sales Overviews (Daily closing, Monthly...) are available in the Print Manager software.</p>
+<h3 id="cash-operations-without-business-central">Cash operations without Business Central</h3>
+<p>All the above cash operations (Tax Document, Deposit, Withdrawal, Invoice Payment, Invoice Cancellation, Coinage) can be done manually in the Print Manager software.
+Additionally, it is possible to perform the corresponding operations in the BC with the fiscal printer switched off and the created fiscal ledger entries are additionally manually marked as “Registered” (see below).</p>
+<h3 id="other-operations-with-fiscal-ledger-entries">Other operations with Fiscal Ledger Entries</h3>
+<h4 id="registering-entries">Registering entries</h4>
+<p>If the fiscal document does not print, the problem (apart from the problem with the printer itself) may be that for some reason the so-called “registration” of the item has failed. The Fiscal Ledger Entry carries the registration information - see the <strong>Registered</strong> and <strong>Registration DateTime</strong> columns.</p>
+<p>If it makes sense to re-register the entry (printer was turned off, etc.), the user can register the entry additionally:</p>
+<ol>
+<li>Choose the <img src="media/ui-search/search_small.png" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong>Fiscal Ledger Entries</strong> and then choose the related link.</li>
+<li>On the <strong>Fiscal Ledger Entries</strong> page, locate the appropriate record and run the <em>Register Entry</em> action.</li>
+</ol>
+<div class="NOTE">
+<h5>Note</h5>
+<p>In practice, using the Find Items action on a posted sales receipt is often a more convenient way to find the correct Fiscal Item.</p>
+</div>
+<p>If it is no longer practical to re-register the item (typically when the document has been printed and the item still does not contain information about a successful registration), the user can manually mark the item as already registered.</p>
+<ol>
+<li>Choose the <img src="media/ui-search/search_small.png" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong>Fiscal Ledger Entries</strong> and then choose the related link.</li>
+<li>On the <strong>Fiscal Ledger Entries</strong> page, locate the appropriate entry and run the <em>Manually Set As Registered</em> action.</li>
+</ol>
+<div class="NOTE">
+<h5>Note</h5>
+<p>In this case, consider setting a higher value in the <strong>Integration Timeout (ms)</strong> field for the appropriate fiscal printer (see <a href="sk-fiscalprinters-integration-setup.html#setting-up-fiscal-printers">Setting Up Fiscal Printers</a>)..</p>
+</div>
+<h4 id="printing-a-copy-of-a-fiscal-document">Printing a copy of a Fiscal document</h4>
+<p>If you need to print a copy of a fiscal document (paper ran out or the document was otherwise damaged during printing), you can print the document again directly from the BC:</p>
+<ol>
+<li>Choose the <img src="media/ui-search/search_small.png" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong>Fiscal Ledger Entries</strong> and then choose the related link.</li>
+<li>On the <strong>Fiscal Ledger Entries</strong> page, locate the appropriate entry and run the <em>Print Fiscal Document Copy</em> action.</li>
+</ol>
+<h4 id="viewing-exchanged-data">Viewing exchanged data</h4>
+<p>In case of confusion, it is possible to view the files exchanged between the BC and the fiscal printer. These are recorded directly in the entries:</p>
+<ol>
+<li>Choose the <img src="media/ui-search/search_small.png" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong>Fiscal Ledger Entries</strong> and then choose the related link.</li>
+<li>On the <strong>Fiscal Ledger Entries</strong> page, locate the appropriate record.</li>
+<li>Run the <em>Download Registration Batch</em> action (the data that was sent to the fiscal printer).</li>
+<li>Run the <em>Download Registration Confirmation</em> action (data received - internal registration data).</li>
+</ol>
+<h2 id="see-also">See also</h2>
+<p><a href="sk-fiscalprinters-integration-setup.html">SK Fiscal Printers Integration Setup</a><br>
+<a href="streamlinetools.html">Streamline Tools</a><br>
+<a href="solutions.html">ARICOMA Solution</a></p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/ARICOMA-D365BC/AC-IB-dynamics365smb-docs/blob/master/business-central/Solutions/sk-fiscalprinters-integration.md/#L1" class="contribution-link">Improve this document</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+           <span><a href="https://www.aricoma.com/docs/en-us/dynamics365/business-central/Solutions/solutions.html"><strong>ENGLISH</strong><strong>/</strong><a href="https://www.aricoma.com/docs/cs-cz/dynamics365/business-central/Solutions/solutions.html"><strong>CZECH</strong></a></a></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

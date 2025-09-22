@@ -1,0 +1,173 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Workflow status management setup </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Workflow status management setup ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../TOC.html">
+    <meta property="docfx:tocrel" content="TOC.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="png" src="../logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="status-management---setup">Status Management - Setup</h1>
+
+<h2 id="set-up-a-status-management-template">Set up a Status Management Template</h2>
+<ol>
+<li><p>Choose the <img src="media/ui-search/search_small.png" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong>Status Management Templates</strong> and then choose the related link.</p>
+</li>
+<li><p>On the <strong>Status Management Templates</strong> page choose <strong>New</strong> action.</p>
+</li>
+<li><p>Fill in the <strong>Code</strong>, <strong>Description</strong>, and <strong>Table No.</strong> fields (for which the template will be set).</p>
+</li>
+<li><p>If you want changes to be automatically logged, select the <strong>Log changes</strong> check box.</p>
+<p><img src="media/wf_templates.png" alt="Status Management - Status Management Templates"></p>
+</li>
+<li><p>To specify individual states for the newly created State Management, click on the  <strong>Statuses</strong>.</p>
+</li>
+</ol>
+<p>For each Status management state, you must define a <strong>Code</strong>, <strong>Description</strong>, and <strong>Next status filter</strong> that determines what other states can be accessed from that state. Just one of the states must be marked as <strong>Default Status</strong> (by checking the Default Status button). This state is then automatically filled in when a new row is created in the table with which the state control works (document, request, etc.).</p>
+<p>Some states may be labeled as <strong>Final Status</strong>, from which no further state is progressed.</p>
+<p>An example of state settings for State Control is shown in the figure below.</p>
+<p><img src="media/wf_states.png" alt="Status Management Settings - State Control Statuses"></p>
+<p>For the active row on the <strong>Status Mgt. Statuses</strong> page, you can specify:</p>
+<ul>
+<li><strong>Checked fields</strong></li>
+<li><strong>Checked Tables</strong></li>
+<li><strong>Set Fields</strong></li>
+<li><strong>Status management Actions</strong></li>
+</ul>
+<h3 id="checked-fields">Checked Fields</h3>
+<p>For each state (the row on the Status Management Statuses page), you can define fields to check when you enter that state.</p>
+<p>For the fields to be checked, it is necessary to fill in at least <strong>Code</strong>, <strong>Fields No.</strong> (where the field that should be checked is recorded) and the <strong>Value Checking</strong> field (indicates what type of check will be performed when the state is set):</p>
+<ul>
+<li><strong>Code Mandatory</strong> – If you enter this option in the Check value field, the system will check if any value is entered in the field (which you entered in the field Field No.). If the field is filled in arbitrarily, it will be possible to switch the state to the given state.</li>
+<li><strong>Same Code</strong> – This option indicates that the field (which is populated in the Field ID field) must be filled with the same value as the <strong>Value</strong> field on the Controlled Fields page. In this case, you can't fill in the Compare Condition field.</li>
+<li><strong>No Code</strong> – The field (which is filled in the field Field No.) must not be filled in when entering the given state.</li>
+<li><strong>Compare Value</strong> - When you select this option, the system compares the value in the field with the value filled in the <strong>Value</strong> field on the Status Management Checked Fields page. Therefore, the Value field must be filled in when you select this option. The difference to the Same Code option is that in the <strong>Condition</strong> field of the comparison you can select the comparison method (Equal, Not Equal, Less than, Less than or Equal, Greater than, Greater than or Equal).</li>
+<li><strong>Compare Fields</strong> - When selecting this option, it is important to fill in the <strong>Comparison Field No.</strong> field. This field determines which field we will compare the field to. It is also important to fill in the <strong>Compare Condition</strong>field, where we can also specify comparison methods as in the previous option.</li>
+</ul>
+<h3 id="set-fields">Set Fields</h3>
+<p>It is possible to define fields for each status, which will be set when entering this status.</p>
+<p>For the field you are setting, you must fill in <strong>Field No.</strong> and <strong>Value</strong> fields. The Value field specifies what value the field is set to when it goes to the Status Management status.</p>
+<h3 id="status-management-actions">Status Management Actions</h3>
+<p>The Actions define Codeunits, Reports and XMLPorts that can be run when entering a given status. Codeunits for events can be created by the partner himself according to his own needs in the object numbers allowed by his license.</p>
+<p>For each status, you can define the actions that will be performed when you transition to that state. For Action, you must define the <strong>Action Code</strong>, <strong>Field No. (Value),</strong> and <strong>Value</strong> fields.</p>
+<p>In the <strong>Field No. (Value)</strong> field, it is defined from which field the content is taken and passed as a parameter to the action (e.g. when the status on the customer card changes, it is possible to fill in the field number 102 and the contents of the E-mail field are passed to the action as a parameter). In the Value field, a value is entered directly, which is passed to the action as a parameter (for example, a specific email).
+Using the Mail Texts function, you can define the content of the mail (subject and custom text). It is possible to insert codes into the text, which are replaced by the contents of the fields when you send the mail. Codes are defined using the Mail Fields function</p>
+<h3 id="checked-tables">Checked Tables</h3>
+<p>This feature helps you check the field you set on another page (in a different table, such as the table you're currently working in). It is a similar feature to the Status Management Actions. With this function, you can verify or a field on another page is set as needed when you transition to the state where you are using this feature.</p>
+<p>If you click the Checked Tables feature, the Status management Checked Tables page opens, where the <strong>Template Code</strong> and <strong>Status Code</strong> fields are automatically populated. On this page, you need to fill in the <strong>Code</strong> field, <strong>Table ID</strong> in which you want to check a field, the <strong>Table Checking Condition</strong>, and possibly the <strong>Value</strong> field.</p>
+<h2 id="status-management-setup">Status Management Setup</h2>
+<p>This setting is used to link defined state management templates to the entity in which the state management is to be used.</p>
+<ol>
+<li>Choose the <img src="media/ui-search/search_small.png" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, type <strong>Status Mgt. Setup</strong> and then select the associated link.</li>
+<li>On the <strong>Status Mgt. Setup</strong> page, select the <strong>New</strong> action.</li>
+<li>Fill in the <strong>Table Number</strong> and <strong>Status Mgt. Templates</strong> fields.</li>
+<li>If you want to enable user checks, select the <strong>Status Mgt. User Checks</strong> check box.</li>
+</ol>
+<p><img src="media/wf_states_setup.png" alt="Status Management setup"></p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The state management settings will only be activated after users have logged out and logged back in, as indicated by the informational message.</p>
+</div>
+<h2 id="see-also">See also</h2>
+<p><a href="status-management.html">Status Management</a><br>
+<a href="productivity-pack.html">Productivity Pack</a></p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/ARICOMA-D365BC/AC-IB-dynamics365smb-docs/blob/master/business-central/Solutions/status-management-setup.md/#L1" class="contribution-link">Improve this document</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+           <span><a href="https://www.aricoma.com/docs/en-us/dynamics365/business-central/Solutions/solutions.html"><strong>ENGLISH</strong><strong>/</strong><a href="https://www.aricoma.com/docs/cs-cz/dynamics365/business-central/Solutions/solutions.html"><strong>CZECH</strong></a></a></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
