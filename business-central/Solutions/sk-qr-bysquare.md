@@ -30,5 +30,5 @@ If you have [set up the use of QR](sk-qr-bysquare-setup) for the payment method 
 ## See also
 
 [ARICOMA Solution](solutions.md)  
-[SK Legislative Pack](sk-legislative-pack.md)
-[QR codes on sales documents - Setup](sk-qr-bysquare-setup.md)
+[SK Legislative Pack](sk-legislative-pack.md)  
+[QR codes on sales documents - Setup](sk-qr-bysquare-setup.md)  

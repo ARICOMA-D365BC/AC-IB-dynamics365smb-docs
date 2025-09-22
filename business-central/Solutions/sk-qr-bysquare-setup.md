@@ -40,5 +40,5 @@ The main switch for QR code functionality on sales documents is in Sales Setting
 ## See also
 
 [ARICOMA Solution](solutions.md)  
-[SK Legislative Pack](sk-legislative-pack.md)
-[QR codes on sales documents](sk-qr-bysquare.md)
+[SK Legislative Pack](sk-legislative-pack.md)  
+[QR codes on sales documents](sk-qr-bysquare.md)  
