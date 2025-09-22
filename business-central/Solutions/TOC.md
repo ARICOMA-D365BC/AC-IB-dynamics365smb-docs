@@ -67,13 +67,13 @@
 ### [Settings - QR codes on sales documents](sk-qr-bysquare-setup.md)
 ## [SK Fiscal Printers Integration](SK-FiscalPrinters-Integration.md)
 ### [Settings - SK Fiscal Printers Integration](SK-FiscalPrinters-Integration-setup.md)
-## [Slovak language for Business Central](sk-language.md)
 ## [Tax depreciation](sk-tax-depreciation.md)
 ## [VAT - Export VAT Statement](sk-vat-statement-export.md)
 ### [Settings - Export VAT Statement](sk-vat-statement-setup.md)
 ## [VAT - VIES](sk-vies.md)
 ## [VAT Control Report](sk-vat-check-report-export.md)
 ### [Settings - VAT Control Statement](sk-vat-check-report-setup.md)
+## [Slovak language for Business Central](sk-language.md)
 
 # [Deprecated Features](fp-deprecated-features.md)
 
