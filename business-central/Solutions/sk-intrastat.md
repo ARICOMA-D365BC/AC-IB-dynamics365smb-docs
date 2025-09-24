@@ -13,6 +13,8 @@ ms.author: v-makune
 
 # Intrastat statement
 
+> Update 31.05.2024
+
 For the purpose of generating the Intrastat report, standard functionality is used.
 
 The difference from the standard functionality is in the structure of the file with the extension .xml generated for the purposes of Slovak reporting.

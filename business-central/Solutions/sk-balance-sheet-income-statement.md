@@ -13,6 +13,8 @@ ms.author: v-makune
 
 # Export of financial statements - SK
 
+> Update 31.05.2024
+
 According to the requirements of the Financial Administration of the Slovak Republic, the Slovak Statutory Statements, Balance Sheet and Profit and Loss Statement are imported merged, in one .xml file.
 
 To ensure this requirement, the standard functionality of accounting schemes is used in D365 BC and extended by additional adjustments. The export itself works with the saved results of account schedules.

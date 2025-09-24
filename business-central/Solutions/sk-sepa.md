@@ -13,6 +13,8 @@ ms.author: v-makune
 
 # SEPA Payments
 
+> Update 31.05.2024
+
 For the processing of a payment order or statement in SEPA format, the standard functionality of the system is used.
 
 ## SEPA payment settings:

@@ -13,6 +13,8 @@ ms.author: v-makune
 
 # Summary Report (VIES)
 
+> Update 31.05.2024
+
 Standard functionality is used to create the Summary Report.
 
 The difference compared to the standard functionality is in the structure of the XML file generated for the purposes of Slovak reporting.
