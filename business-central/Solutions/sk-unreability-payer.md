@@ -12,7 +12,8 @@ ms.author: v-makune
 ---
 
 # Institute of the payer's unreliability
-> Update: 03.03.2022
+
+> Update 31.05.2024
 
 Functionality includes system checks that alert users to unreliable VAT payers when processing documents. It also includes checks whether the used bank account of the partner is registered for business in the Slovak Republic according to Act 222/2004 Coll.
 

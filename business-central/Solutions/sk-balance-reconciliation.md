@@ -13,6 +13,8 @@ ms.author: v-makune
 
 # Reconciliation of receivables and payables
 
+> Update 31.05.2024
+
 In accordance with the provisions of §29 and §30 of Act no. 431/2002 Zz. on accounting, as amended, entities perform an inventory on the date of preparation of regular or extraordinary financial statements.
 For these purposes, the reports "Reconciliation of the supplier's balance" and "Reconciliation of the customer's balance" may be used.
 

@@ -13,6 +13,8 @@ ms.author: v-makune
 
 # VAT Statements - Setup
 
+> Update 31.05.2024
+
 The standard functionality of the system is used to generate the VAT statement. This functionality has been modified by the specifics of Slovak reporting.
 
 To ensure the correct calculation of the amounts of the VAT Statement and export to the required XML structure according to Slovak legislation, it is necessary to set up several areas listed below.

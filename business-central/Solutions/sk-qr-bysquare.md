@@ -13,6 +13,8 @@ ms.author: jelen
 
 # QR codes on sales documents
 
+> Update 21.09.2025
+
 This feature integrates Business Central with the **by square®** service. To use the service, you need to register your company and order one of the [packages](https://app.bysquare.com/App/BalikySluzieb) based on the number of QR codes generated.
 
 QR codes in **PAY by square** format are displayed on the following reports:

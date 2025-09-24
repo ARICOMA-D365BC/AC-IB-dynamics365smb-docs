@@ -13,6 +13,8 @@ ms.author: jelen
 
 # Setting up QR codes on sales documents
 
+> Update 21.09.2025
+
 ## API settings
 
 The registration details for accessing the **by square®** API service must be entered in Business Central.
