@@ -28,7 +28,7 @@ To activate Slovak functionality, follow these steps:
 ## Setting up XML schemas
 
 > [!TIP]
-> Complete settings for the VAT Control Statement can be found in the Configuration Package, which you can obtain by running the Assisted Setup *Set SK Localization* (either in a new Company or by selecting to replace an older package in an existing company).
+> You can find the complete XML schema settings in the Configuration Package, which you can obtain by running the Assisted Setup *Set Up SK Localization* (either import the latest version using the *AssistEdit* button in the existing company or perform a complete import of the sample parameterization in an empty company using the *Apply package* action).
 
 The XML schema for the VAT Control Report must be imported into the application into the XML schemas.
 
@@ -44,7 +44,9 @@ The XML schema for the VAT Control Report must be imported into the application 
 >
 > | XML port ID | Validity      |
 > |   --------  | -------       |
-> |   52068871  | from 1.1.2020 |
+> |   52068903  | from 1.1.2017 |
+> |   52068904  | from 1.1.2021 |
+> |   52068845  | from 1.1.2023 |
 > |   52068847  | from 1.1.2025 |
 
 ## VAT report line settings - extensions
