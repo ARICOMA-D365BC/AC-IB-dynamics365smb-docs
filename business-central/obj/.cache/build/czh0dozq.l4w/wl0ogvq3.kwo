@@ -1,0 +1,243 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>SK Fiscal Printers Integration - Setup </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="SK Fiscal Printers Integration - Setup ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../TOC.html">
+    <meta property="docfx:tocrel" content="TOC.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="png" src="../logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="sk-fiscal-printers-integration-setup">SK Fiscal Printers Integration Setup</h1>
+
+<blockquote>
+<p>Update 31.07.2025</p>
+</blockquote>
+<p>The integration with VAROS fiscal printers
+is based on the functionality of the VAROS Print Manager. This is
+to be installed in the company environment (see <a href="http://www.varos.sk/manualy.php">Manuals</a>) directly on the computer to which the printer is connected (typically via USB).
+Each fiscal printer must also be connected to the Internet via LAN (or
+via Wifi).</p>
+<h2 id="setting-user-permissions">Setting user permissions</h2>
+<p>Permission sets:</p>
+<ul>
+<li>FP_BASIC_ACC: Fiscal Printers - Basic</li>
+<li>FP_SETUP_ACC: Fiscal printers - Settings</li>
+</ul>
+<h2 id="setting-up-fiscal-printers">Setting up fiscal printers</h2>
+<p>Each physical device must be registered in the Fiscal Printers codebook. The description of the settings below corresponds to the most common configuration, where the <em>Print Manager</em> (&quot;Tlačový manažér&quot;) program is installed on each computer to which a fiscal printer is connected via USB port.</p>
+<div class="IMPORTANT">
+<h5>Important</h5>
+<p>API communication with fiscal printers requires an API key, for which you should contact the Aricoma sales department at <a href="mailto:bc_sales@aricoma.com">bc_sales@aricoma.com</a>.</p>
+</div>
+<ol>
+<li>Choose the <img src="media/ui-search/search_small.png" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong>Fiscal Printers</strong> and then choose the related link.</li>
+<li>On the Fiscal Printers page, click New to create a new fiscal printer.</li>
+<li>Enter the fiscal printer <strong>Code</strong> and <strong>Description</strong>.</li>
+<li>Enter 0.05 in the <strong>Minimum Cash Amount</strong> field.</li>
+<li>Enter 0.05 in the <strong>Cash Amount Rounding Precision</strong> field.</li>
+<li>Set the VAT level rates in the <strong>Code 1 VAT %</strong> to <strong>Code 4 VAT %</strong>.fields identically to the VAT level rates set in the Print Manager settings</li>
+<li>Select <em>Varos API</em> in the <strong>Integration Method</strong> field.</li>
+<li>Fill in the valid data in the <strong>Integration Service URL</strong> field; for the purposes of the test mode, set <a href="https://rps.test1.bts1.rdm.varos.sk">https://rps.test1.bts1.rdm.varos.sk</a></li>
+<li>In the <strong>Integration Service API key</strong> field of the integration service, enter the key (password) that you obtained from Aricoma.</li>
+<li>Set the <strong>Integration Timeout (s)</strong> to 60.</li>
+<li>In the <strong>Device ID</strong> field, enter the serial code of the Varos fiscal printer.</li>
+<li>In the <strong>Requested Binding Duration</strong> field, enter the number of days of validity, e.g. 365 days.</li>
+<li>Run the <em>Create Device Binding</em> action (VAROS API). The Varos printer generates and prints a verification code, which you enter in the BC dialog box and confirm. Verify that the fiscal printer has set the <strong>Device Binding Exists</strong> to Yes.</li>
+<li>In the <strong>Binding Valid to</strong> field, the system automatically adds the valid link to the fiscal printer.</li>
+</ol>
+<div class="NOTE">
+<h5>Note</h5>
+<p>With regard to the legislative regulation in Slovakia related to the adjustment of the amount of rounding of cash receipts to 0.05 cents, it is necessary to set in the system also the payment tolerance according to the currency of 0.05.</p>
+</div>
+<h2 id="connecting-fiscal-printers-to-bank-accounts--cash-desks">Connecting fiscal printers to Bank Accounts / Cash Desks</h2>
+<p>To ensure data reconciliation within the integration, it is necessary to have a separate bank account or cashier card for each type of payment used (Cash, Card, Meal voucher, etc.).</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Each method has its advantages and disadvantages, so try out which method is best suited to your business processes. Given the ease of use of the Cash Desk module from the Czech localization, this connection has recently become more popular.</p>
+</div>
+<h3 id="cash-desk-settings">Cash Desk settings</h3>
+<ol>
+<li>Choose the <img src="media/ui-search/search_small.png" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong>Cash Desks</strong> and then choose the related link.</li>
+<li>On the <strong>Cash Desks</strong> page, select the appropriate record and click the <em>Edit</em> action.</li>
+<li>In the <strong>Fiscal Printer Code</strong> field,  enter the corresponding fiscal printer.</li>
+<li>In the <strong>Fiscal Means Of Payment</strong> field, select the appropriate type according to the Print Manager settings.</li>
+</ol>
+<p>Also, don't forget to set the rounding in the <strong>Rounding method code</strong> field on the cash desk card.</p>
+<div class="IMPORTANT">
+<h5>Important</h5>
+<p>When using the cash desk documents functionality, Fiscal Ledger Entries are only created during cash desk document posting.</p>
+</div>
+<h3 id="bank-account-settings">Bank Account settings</h3>
+<ol>
+<li>Choose the <img src="media/ui-search/search_small.png" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong>Bank Accounts</strong> and then choose the related link.</li>
+<li>On the <strong>Bank Accounts</strong> page, select the appropriate record and click the <em>Edit</em> action.</li>
+<li>In the <strong>Fiscal Printer Code</strong> field,  enter the corresponding fiscal printer.</li>
+<li>In the <strong>Fiscal Means Of Payment</strong> field, select the appropriate type according to the Print Manager settings.</li>
+</ol>
+<h2 id="payment-methods-settings">Payment Methods settings</h2>
+<p>In the Payment Methods list, you must set up payment methods for all combinations of fiscal printer and payment means that can subsequently be used on sales and purchase documents to balance them during posting.</p>
+<p>If the fiscal printer is connected to a Bank Account card, select Bank Account in the <strong>Bal. Account Type</strong> field and select the bank account card number in the <strong>Bal. Account No.</strong> field. If the fiscal printer is connected to a &quot;regular&quot; cash register, select the desired value in the <strong>Cash Desk Code</strong> field (in the <strong>Cash Document Action</strong> field, select whether to release or post the document).</p>
+<div class="IMPORTANT">
+<h5>Important</h5>
+<p>In the <strong>Fiscal VAT Document</strong> field, specify whether you want to register the document as a tax document in eKASA or only record it as an &quot;invoice payment&quot; (i.e., without VAT information, which is contained in the tax document in BC).</p>
+</div>
+<h2 id="vat-posting-setup-of-fiscal-printer">VAT posting setup of fiscal printer</h2>
+<p>The following table shows the specific VAT schemes applicable to fiscal printers and instructions on what parameters to set for the respective VAT posting group combinations:</p>
+<table>
+<thead>
+<tr>
+<th>VAT scheme</th>
+<th>Setup instructions</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Discount</td>
+<td>Select “B - Discount” in the <strong>Fiscal Document Line Type</strong> field</td>
+</tr>
+<tr>
+<td>Voucher</td>
+<td>Select “D - Voucher” in the <strong>Fiscal document line type</strong> field</td>
+</tr>
+<tr>
+<td>Returnable Packaging</td>
+<td>Select “V - Returnable Packaging” in the <strong>Fiscal document line type</strong> field</td>
+</tr>
+<tr>
+<td>Rounding</td>
+<td>Select “RND - Rounding” in the <strong>Fiscal document line type</strong> field <br>Select “N - Exemption From Tax” in the <strong>Fiscal Exemption From VAT Reason</strong> field</td>
+</tr>
+<tr>
+<td>Travel Agencies</td>
+<td>Select “K - Travel Agencies” in the <strong>Fiscal Exemption From VAT Reason</strong> field</td>
+</tr>
+<tr>
+<td>Tax Exemption</td>
+<td>Select “N - Exemption From Tax” in the <strong>Fiscal Exemption From VAT Reason</strong> field</td>
+</tr>
+<tr>
+<td>Tax remittance</td>
+<td>Select “P - Transfer Of Tax Liability&quot; in the <strong>Fiscal Exemption From VAT Reason</strong> field</td>
+</tr>
+<tr>
+<td>Used Goods</td>
+<td>Select “T - Used Goods” in the <strong>Fiscal Exemption From VAT Reason</strong> field</td>
+</tr>
+<tr>
+<td>Works of Art</td>
+<td>Select “U - Works of Art” in the <strong>Fiscal Exemption From VAT Reason</strong> field</td>
+</tr>
+<tr>
+<td>Collectibles and Antiques</td>
+<td>Select “Z - Collectibles and Antiques” in the <strong>Fiscal Exemption From VAT Reason</strong> field</td>
+</tr>
+</tbody>
+</table>
+<ol>
+<li>Choose the <img src="media/ui-search/search_small.png" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong>Fiscal VAT Posting  Setup</strong> and then choose the related link.</li>
+<li>On the <strong>Fiscal VAT Posting Setup</strong> page, create rows for the relevant VAT account group combinations representing the specific VAT schemes used by the company in conjunction with fiscal printers.</li>
+</ol>
+<h2 id="see-also">See also</h2>
+<p><a href="sk-fiscalprinters-integration.html">SK Fiscal Printers Integration</a><br>
+<a href="streamlinetools.html">Streamline Tools</a><br>
+<a href="solutions.html">ARICOMA Solution</a></p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/ARICOMA-D365BC/AC-IB-dynamics365smb-docs/blob/master/business-central/Solutions/sk-fiscalprinters-integration-setup.md/#L1" class="contribution-link">Improve this document</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+           <span><a href="https://www.aricoma.com/docs/en-us/dynamics365/business-central/Solutions/solutions.html"><strong>ENGLISH</strong><strong>/</strong><a href="https://www.aricoma.com/docs/cs-cz/dynamics365/business-central/Solutions/solutions.html"><strong>CZECH</strong></a></a></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

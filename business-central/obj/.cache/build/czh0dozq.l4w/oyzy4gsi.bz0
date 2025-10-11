@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>ARICOMA SOLUTIONS - P&#345;ipojen&#233; dokumenty - Nastaven&#237; | Microsoft Docs </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="ARICOMA SOLUTIONS - P&#345;ipojen&#233; dokumenty - Nastaven&#237; | Microsoft Docs ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../TOC.html">
+    <meta property="docfx:tocrel" content="TOC.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="png" src="../logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="document-links---setup" sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="13">Document links - setup</h1>
+
+<blockquote sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="14">
+<p sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="14">Update 16.06.2023</p>
+</blockquote>
+<p sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="16">The following lines describe settings from those necessary for the actual commissioning (Application Registration in AAD, SharePoint Azure AD settings) to settings covering special customer requirements (e.g. when storing files or recording additional attributes).</p>
+<h2 id="registrace-aplikace-v-azure-active-directory" sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="18">Registrace aplikace v Azure Active Directory</h2>
+<p sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="19">The first task is to use Azure portal to register an application for Business Central on your Azure AD tenant. As part of the registration, you'll also give the relevant services access to the application. The purpose of registration is to ensure Business Central and the services know each other's Azure Active Directory (Azure AD) details.</p>
+<ol sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="21">
+<li sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="21"><p sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="21">Sign in to the Azure portal and register an application for Business Central in Azure Active Directory tenant.</p>
+<ul sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="22">
+<li sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="22">Follow the general guidelines at Register your application with your Azure Active Directory tenant.
+When you add an application to an Azure AD tenant, you must specify the following information:</li>
+</ul>
+<table sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="26">
+<thead>
+<tr sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="26">
+<th sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="26">Settings</th>
+<th sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="26">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="28">
+<td sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="28">Name</td>
+<td sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="28">Specify a name for your Business Central solution, such as Business Central - Sharepoint.</td>
+</tr>
+<tr sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="29">
+<td sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="29">Supported account types</td>
+<td sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="29">Select Accounts in this organizational directory only.</td>
+</tr>
+<tr sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="30">
+<td sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="30">Redirect URI</td>
+<td sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="30">Set the first box to Web to specify a web application. Enter the URL for your Business Central browser client, followed by OAuthLanding.htm, for example:  <a href="https://businesscentral.dynamics.com/OAuthLanding.htm" sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="30">https://businesscentral.dynamics.com/OAuthLanding.htm</a> or https://MyServer/BC200/OAuthLanding.htm</td>
+</tr>
+</tbody>
+</table>
+<ul sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="32">
+<li sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="32"><p sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="32">When completed, an Overview displays in the portal for the new application.</p>
+</li>
+<li sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="34"><p sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="34">Copy the** Application (Client) ID** that was assigned the application, the <strong sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="34">OAuth 2.0 authorization endpoint (v2)</strong> and also <strong sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="34">Redirect URL</strong> that you specified. You'll use this information later.</p>
+</li>
+</ul>
+</li>
+<li sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="36"><p sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="36">Create a client secret for the registered application</p>
+<ul sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="37">
+<li sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="37">Follow the general guidelines at Add credentials to your web application.</li>
+<li sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="38">Before you leave the Certificates &amp; secrets page, copy the secret's value to a temporary location. The value isn't accessible once you leave the page. You'll use this key later in your client application code.</li>
+</ul>
+</li>
+<li sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="39"><p sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="39">Grant the registered application delegated permission to access the required Sharepoint service.</p>
+</li>
+</ol>
+<p sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="41"><strong sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="41">From the registered application's overview page, select API permissions &gt; Add a permission. Then, use the Request API permissions pane to locate the API and add permissions. For more information, see Add permissions to access web APIs in the Azure documentation.</strong></p>
+<pre><code sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="43">Následující tabulka vám pomůže nastavit minimální oprávnění:
+</code></pre>
+<table sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="45">
+<thead>
+<tr sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="45">
+<th sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="45">API</th>
+<th sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="45">Permission name</th>
+<th sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="45">Type</th>
+<th sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="45">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="47">
+<td sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="47">Microsoft Graph</td>
+<td sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="47">User.Read.All</td>
+<td sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="47">Delegated</td>
+<td sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="47">Read and write items in all site collections</td>
+</tr>
+<tr sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="48">
+<td sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="1"></td>
+<td sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="48">Sites.ReadWrite.All</td>
+<td sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="48">Delegated</td>
+<td sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="48">Edit or delete items in all site collections</td>
+</tr>
+<tr sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="49">
+<td sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="1"></td>
+<td sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="49">Sites.Read.All</td>
+<td sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="49">Delegated</td>
+<td sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="49">Read items in all site collections</td>
+</tr>
+<tr sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="50">
+<td sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="1"></td>
+<td sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="50">Files.ReadWrite.All</td>
+<td sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="50">Delegated</td>
+<td sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="50">Have full access to all files user can access</td>
+</tr>
+</tbody>
+</table>
+<p sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="52">For the case of saving under an application account, you need to add the following::</p>
+<table sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="54">
+<thead>
+<tr sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="54">
+<th sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="54">API</th>
+<th sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="54">Název oprávnění</th>
+<th sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="54">Typ</th>
+<th sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="54">Popis</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="56">
+<td sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="56">Microsoft Graph</td>
+<td sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="56">User.Read.All</td>
+<td sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="56">Application</td>
+<td sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="56">Read all users' full profiles</td>
+</tr>
+<tr sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="57">
+<td sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="1"></td>
+<td sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="57">Sites.Selected</td>
+<td sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="57">Application</td>
+<td sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="57">Access selected site collections</td>
+</tr>
+</tbody>
+</table>
+<h2 id="sharepoint-azure-ad-apps" sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="59">Sharepoint Azure AD Apps</h2>
+<div class="WARNING" sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="61">
+<h5>Warning</h5>
+<p sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="62">Perform the initial setup using assisted setup, which guides you through the SharePoint Azure AD Apps setup and also adds other useful settings (such as transformation rules, see below).</p>
+</div>
+<p sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="64">For each SharePoint site that you will connect to Business Central, you need to define a connection:</p>
+<ol sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="65">
+<li sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="65">Choose the <img src="media/ui-search/search_small.png" sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="65" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="65">Sharepoint Azure AD Apps</strong> and then choose the related link.</li>
+<li sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="66">On the Sharepoint Azure AD App page, enter a Code and Description for the new record.</li>
+<li sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="67">In the <strong sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="67">Application/Client ID</strong> field, enter the application ID from the previous chapter.</li>
+<li sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="68">In the <strong sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="68">Client Secret</strong> field, type the key from the previous chapter.</li>
+<li sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="69">In the <strong sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="69">Authorization URL</strong> field, enter the URL from the previous chapter.</li>
+<li sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="70">In the <strong sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="70">Redirect URL</strong> field, enter the URL from the previous chapter.</li>
+<li sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="71">In the <strong sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="71">Grant Type</strong> field, select how the credentials are passed to the client side. (Authorization Code - Access to SharePoint will be under the user's permissions in the BC; Client Credentials - Access to SharePoint will be under the application's AAD permission).</li>
+<li sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="72">In the <strong sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="72">No UI Grant Type</strong> field, select Client Credentials as the method of passing credentials for jobs running in the background (typically using the Job Queue, etc.).</li>
+<li sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="73">Run the Sign In action to verify the functionality of the link.</li>
+<li sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="74">Close the page.</li>
+</ol>
+<h2 id="document-links-setup" sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="77">Document Links setup</h2>
+<p sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="78">You must enable the module functionality globally:</p>
+<ol sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="79">
+<li sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="79">Choose the <img src="media/ui-search/search_small.png" sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="79" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="79">Document Links Setup</strong> and then choose the related link.</li>
+<li sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="80">Activate the <strong sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="80">Enabled</strong> flag.</li>
+<li sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="81"><strong sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="81">BC onlin</strong>e: If the system does not find an active (or terminated) subscription for this module, it prompts the user to create a trial subscription (see AC Monetization documentation).
+<strong sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="82">BC OnPrem</strong>: Read the Third Party Terms and Conditions and confirm your acceptance with the Accept button.</li>
+<li sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="83">Close the page.</li>
+</ol>
+<h2 id="document-libraries" sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="86">Document libraries</h2>
+<ol sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="87">
+<li sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="87">Choose the <img src="media/ui-search/search_small.png" sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="87" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="87">Document Libraries</strong> and then choose the related link.</li>
+<li sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="88">On the Document Libraries page, run the <em sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="88">New action</em>.</li>
+<li sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="89">On the Document Library page, enter the Code and Name of the new library.</li>
+<li sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="90">In the <strong sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="90">Library Type</strong> field, select the SharePoint value.</li>
+<li sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="91">In the <strong sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="91">SharePoint Azure AD App</strong> field, select from the defined applications.</li>
+<li sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="92">Run the Set up SharePoint Drive action. On the Select SharePoint Libraries page, select the desired library.</li>
+<li sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="93">Close the page.</li>
+</ol>
+<div class="NOTE" sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="96">
+<h5>Note</h5>
+<p sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="97">When you enable &quot;Require document reservation before editing&quot; on the site, then you need to have <strong sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="97">Require Check Out</strong> enabled on the library.</p>
+</div>
+<div class="NOTE" sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="99">
+<h5>Note</h5>
+<p sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="100">If you need to use date and time information from file metadata, you must set the <strong sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="100">SharePoint TimeZone</strong> field. This will ensure consistency between this information from SharePoint and from BC.</p>
+</div>
+<h2 id="adding-document-links-to-selected-bc-functionality" sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="102">Adding Document Links to selected BC functionality</h2>
+<h3 id="step-1---add-to-page-as-pageextension" sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="103">Step 1 - Add to page as Pageextension</h3>
+<p sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="105">A &quot;DocumentLinksFactBox_ach&quot; must be added to all pages where the functionality is to be available. If you are not sure how to create a pageextension (see the following code), ask your BC partner.</p>
+<pre><code sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="107">{
+    layout
+    {
+        addlast(factboxes)
+        {
+            part(DocumentLinksFactBox_ach; &quot;Document Links FactBox_ach&quot;)
+            {
+                ApplicationArea = All;
+                Visible = false;
+            }
+        }
+    }
+
+    trigger OnAfterGetCurrRecord()
+    begin
+        UpdateDocumentLinksFactBox();
+    end;
+
+    local procedure UpdateDocumentLinksFactBox()
+    begin
+        CurrPage.DocumentLinksFactBox_ach.Page.SetContext(Rec);
+    end;
+}
+</code></pre>
+<h3 id="step-2---basic-document-links-template-setup" sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="132">Step 2 - Basic Document Links Template Setup</h3>
+<p sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="133">The following setup is for the Customer entity, where the Customers and Customer Card pages are basically supplemented with the necessary facts window.</p>
+<ol sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="134">
+<li sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="134">Choose the <img src="media/ui-search/search_small.png" sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="134" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="134">Document Links Templates</strong> and then choose the related link.</li>
+<li sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="135">On the Document Links Templates page, run the New action.</li>
+<li sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="136">On the Document Links Template page, enter the Code and Description for the new template.</li>
+<li sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="137">In the <strong sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="137">Table ID</strong> field, type 18.</li>
+<li sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="138">In the <strong sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="138">Library Code</strong> field, select the SharePoint library.</li>
+<li sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="139">Switch the <strong sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="139">Enabled</strong> flag to Yes.</li>
+<li sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="140">Close the page.</li>
+<li sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="141">Choose the <img src="media/ui-search/search_small.png" sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="141" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="141">Customers</strong> and then choose the related link.</li>
+<li sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="142">Run the Customize action.</li>
+<li sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="143">Locate the facts window labeled Document Links, left-click, and select View.</li>
+<li sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="144">For any customer, run the View action.</li>
+<li sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="145">Find the fact window titled Document Links, left-click, and select View.</li>
+<li sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="146">Stop Customization mode by clicking the red Done button.</li>
+</ol>
+<h2 id="different-templates-for-filtered-records" sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="149">Different templates for filtered records</h2>
+<p sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="150">If you need to have a template defined only for certain records, or different templates for differently filtered records, you can set a table filter on the template.</p>
+<p sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="152">Example - template for domestic customers:</p>
+<ol sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="155">
+<li sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="155">Choose the <img src="media/ui-search/search_small.png" sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="155" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="155">Document Links Templates</strong> and then choose the related link.</li>
+<li sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="156">Create a new document links template by following the procedure for basic setup.</li>
+<li sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="157">Expand AssistEdit next to the Table Filter field (visible by clicking Show More).</li>
+<li sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="158">On the Edit - Table Filter page, enter &quot;21&quot; in the Field Number field and &quot;TUZ*&quot; in the Filter field.</li>
+<li sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="159">Close the page.</li>
+</ol>
+<div class="NOTE" sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="162">
+<h5>Note</h5>
+<p sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="163">Creating new templates can be made easier by using the Copy Template action available on the Template tab.</p>
+</div>
+<h2 id="advanced-file-location-options" sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="166">Advanced file location options</h2>
+<p sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="167">You can flexibly set up file storage rules on the template when connecting to entities.</p>
+<h3 id="example---customer-contracts-are-stored-in-a-specified-subfolder" sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="169"><strong sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="169">Example - customer contracts are stored in a specified subfolder:</strong></h3>
+<ol sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="170">
+<li sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="170">Choose the <img src="media/ui-search/search_small.png" sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="170" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="170">Document Links Templates</strong> and then choose the related link.</li>
+<li sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="171">Create a new document links template for customer contracts following the procedure for basic setup.</li>
+<li sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="172">Next, on the Document Links Template page, click AssistEdit next to the <strong sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="172">Default Folder</strong> field.</li>
+<li sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="173">On the Folder Selection page, select an existing folder or create a new folder using the New Folder (or New Subfolder) function, and then confirm the selection by clicking OK.</li>
+<li sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="174">In the <strong sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="174">Default Folder</strong> field, check the path (e.g. &quot;/ZAK/Contracts&quot;)</li>
+<li sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="175">Close the page.</li>
+</ol>
+<h3 id="example---each-customer-automatically-has-its-own-folder-and-in-it-a-subfolder-for-contracts" sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="178">Example - each customer automatically has its own folder and in it a subfolder for contracts:**</h3>
+<ol sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="179">
+<li sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="179">Choose the <img src="media/ui-search/search_small.png" sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="179" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="179">Document Links Templates</strong> and then choose the related link.</li>
+<li sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="180">Create a new document links template for customer contracts following the procedure for basic setup.</li>
+<li sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="181">Run the <em sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="181">Template Parameters action</em>.</li>
+<li sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="182">On the Document Links Template Parameters page, create a new row for the parameter corresponding to the customer number (Parameter code = CISLO-ZAK; Description = Customer number; Data source = Source Table Field; Source Table Field No. = 1).</li>
+<li sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="183">Create another new row for the parameter corresponding to the customer name (Parameter code = NAME-ZAK; Description = Customer name; Data source = Source Table field; Source Table Field No. = 2).</li>
+<li sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="184">To remove any unauthorized characters in the customer name, select &quot;NAZEV_SHP&quot; in the T<strong sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="184">ransformation Rule</strong> field.</li>
+<li sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="185">Close the Document Links Template Parameters page.</li>
+<li sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="186">On the Document Links Template page, enter a value in the Relative Path Mask field (visible by clicking Show More): {{CISLO-ZAK}}-{{NAZEV-ZAK}}/Smlouvy</li>
+<li sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="187">Switch the <strong sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="187">Create folder If Not Exists</strong> flag to Yes.</li>
+<li sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="188">Close the page.</li>
+</ol>
+<div class="NOTE" sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="191">
+<h5>Note</h5>
+<p sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="192">In addition to the predefined data sources for the template parameters, you can have a custom function create the required string. This is the Custom Function data source, for which you then assign the number of the prepared codeunity in the <strong sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="192">Custom Function ID</strong> field.</p>
+</div>
+<h3 id="example---files-are-saved-with-a-generated-filename" sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="194">Example - files are saved with a generated filename:**</h3>
+<ol sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="195">
+<li sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="195">Choose the <img src="media/ui-search/search_small.png" sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="195" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="195">Document Links Templates</strong> and then choose the related link.</li>
+<li sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="196">Create a new document links template for customer contracts following the procedure for basic setup.</li>
+<li sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="197">Run the Template Parameters action.</li>
+<li sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="198">On the Document Links Template Parameters page, create a new row for the parameter corresponding to the number in the number series (Parameter Code = CISLO-CR; Description = Document Number; Data Source = Number Series; in the Number Series field, select as desired).</li>
+<li sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="199">Create another new row for the parameter corresponding to the customer name (Parameter code = NAZEV; Description = File name; Data source = File name; Transformation rule = NAZEV_SHP).</li>
+<li sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="200">Create another new row for the parameter corresponding to the customer name (Parameter code = File extension; Description = File extension; Data source = File extension).</li>
+<li sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="201">Close the Document Links Template Parameters page.</li>
+<li sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="202">On the Document Links Template page, enter a value in the <strong sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="202">Document Name Mask</strong> field (visible by clicking Show More): {{CISLO-CR}}-{{NAZEV}}.{{PRIPONA}}</li>
+<li sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="203">Close the page.</li>
+</ol>
+<h2 id="advanced-permission-settings" sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="206">Advanced permission settings</h2>
+<p sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="207">In some cases, you need to restrict user access to templates. There is an option to define nominally the users who should have access:</p>
+<ol sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="208">
+<li sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="208">Choose the <img src="media/ui-search/search_small.png" sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="208" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="208">Document Links Templates</strong> and then choose the related link.</li>
+<li sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="209">Select the template and run the User Permissions action.</li>
+<li sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="210">On the Document Links Template Users page, select the user with access.</li>
+<li sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="211">Close the page.</li>
+</ol>
+<h2 id="document-library-attributes-setup" sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="213">Document Library attributes setup</h2>
+<p sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="214">Most often, the attributes functionality in BC is used to add metadata (columns) to a file stored in a SharePoint library, either automatically or manually (see Create a column in a list or library - Microsoft Support).</p>
+<ol sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="216">
+<li sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="216">Choose the <img src="media/ui-search/search_small.png" sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="216" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="216">Document Libraries</strong> and then choose the related link.</li>
+<li sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="217">On the Document Libraries page, select the library and run the Document Attributes action.</li>
+<li sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="218">On the Document Library Attributes page, run the Add SharePoint column action.</li>
+<li sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="219">On the Select SharePoint Library Column page, select the SharePoint library column that you want to maintain through BC.</li>
+<li sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="220">Repeat the previous step until you have added all the required SharePoint columns.</li>
+<li sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="221">Close the page.</li>
+</ol>
+<div class="NOTE" sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="224">
+<h5>Note</h5>
+<p sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="225">If the SharePoint column value definitions (primarily the Option type) are modified over time, you must reflect these changes manually in the BC.</p>
+</div>
+<p sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="227">Je-li požadován atribut pro využití pouze na úrovni BC, je možné jej definovat. Následující příklad popisuje jeden povinný atribut pro evidenci jména prodejce</p>
+<ol sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="228">
+<li sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="228">Choose the <img src="media/ui-search/search_small.png" sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="228" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="228">Document Libraries</strong> and then choose the related link.</li>
+<li sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="229">On the Document Libraries page, select the library and run the Document Attributes action.</li>
+<li sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="230">On the Document Library Attributes page, create a new row for the attribute recording the customer rating (Name = Salesperson; Data Type = Text; Mandatory = Yes).</li>
+<li sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="231">On the Document Library Attributes page, create a new row for the attribute recording the customer rating (Name = Rating; Data Type = Option; Mandatory = No).</li>
+<li sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="232">For the Rating attribute, run the Attribute Values action.</li>
+<li sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="233">On the Document Library Attribute Values page, create three rows with the values Positive, Neutral, Negative, and close the page.</li>
+<li sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="234">Close the page.</li>
+</ol>
+<div class="NOTE" sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="237">
+<h5>Note</h5>
+<p sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="238">The value in the SharePoint Attribute column indicates which type of attribute it is.</p>
+</div>
+<h2 id="autocompletion-of-document-library-attributes-setup" sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="240">Autocompletion of document library attributes setup</h2>
+<p sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="241">The following scenario builds on the previous chapter, that is, we will automatically populate one of the defined document library attributes when we upload a file.</p>
+<ol sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="243">
+<li sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="243">Choose the <img src="media/ui-search/search_small.png" sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="243" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="243">Document Links Templates</strong> and then choose the related link.</li>
+<li sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="244">Select a template for connecting documents to customers.</li>
+<li sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="245">Run the Template Parameters action.</li>
+<li sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="246">On the Document Links Template Parameters page, create a new row for the parameter corresponding to the salesperson name defined on the customer card (Parameter Code = SPERSON; Description = Salesperson’s Name; Data Source = Related Table Field; Related Table ID = 13; Related Table Field No. = 1; in the Table Relation field, define Code = Salesperson Code).</li>
+<li sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="247">Close the page.</li>
+<li sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="248">On the Document Connection Template page, in the Document Attribute Mapping section, set the library attribute for the salesperson name to auto-populate (Attribute Name = Salesperson; Mapping to Parameter = SPERSON).</li>
+<li sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="249">Close the page.</li>
+</ol>
+<div class="NOTE" sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="252">
+<h5>Note</h5>
+<p sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="253">If you have multiple attributes defined on a library, you can use the Update Library Attributes action. This action will add any missing attributes defined for the associated Document Library to the mapping rows.</p>
+</div>
+<h2 id="implementing-custom-function" sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="255">Implementing Custom Function</h2>
+<p sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="257">This provides instructions for creating a custom function to define the attributes described in the Advanced file location options chapter.</p>
+<pre><code sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="259">{
+    TableNo = &quot;Doc.LinkTemplate Parameter_ach&quot;;
+
+    trigger OnRun()
+    begin
+        // Input/Output of this function is the global variable Rec that contains the current record of the template parameter whose value is to be evaluated
+        // The field Rec.&quot;Source RecordId&quot; contains the id of the record to which the document is linked
+        // The field Rec.&quot;Document FileName&quot; contains the name of the document file that is linked
+
+        // Here write your code to evaluate the parameter value
+        // ...
+
+        // Finally return the value formatted as Text data type in the Rec.&quot;Value&quot; field
+        Rec.&quot;Value&quot; := 'Result value';
+    end;
+}
+</code></pre>
+<h2 id="see-also" sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="277">See Also</h2>
+<p sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="279"><a href="document-links.html" sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="279">Document links</a><br>
+<a href="productivity-pack.html" sourcefile="ProductivityPack/document-links-setup.md" sourcestartlinenumber="280">Productivity Pack</a></p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/ARICOMA-D365BC/AC-IB-dynamics365smb-docs/blob/master/business-central/ProductivityPack/document-links-setup.md/#L1" class="contribution-link">Improve this document</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+           <span><a href="https://www.aricoma.com/docs/en-us/dynamics365/business-central/Solutions/solutions.html"><strong>ENGLISH</strong><strong>/</strong><a href="https://www.aricoma.com/docs/cs-cz/dynamics365/business-central/Solutions/solutions.html"><strong>CZECH</strong></a></a></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
