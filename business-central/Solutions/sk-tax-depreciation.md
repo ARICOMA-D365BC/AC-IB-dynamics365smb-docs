@@ -13,6 +13,8 @@ ms.author: v-makune
 
 # Tax depreciation
 
+> Update 31.05.2024
+
 According to the Income Tax Act No. 595/2003 Coll., a taxpayer may apply annual depreciation in the first year of depreciation only in an amount corresponding to the number of calendar months in which the property was used to secure income.
 
 ## Depreciation reduction setting in the 1st year

@@ -13,6 +13,8 @@ ms.author: v-makune
 
 # VAT Statements - Setup
 
+> Update 31.05.2024
+
 The standard functionality of the system is used to generate the VAT statement. This functionality has been modified by the specifics of Slovak reporting.
 
 To ensure the correct calculation of the amounts of the VAT Statement and export to the required XML structure according to Slovak legislation, it is necessary to set up several areas listed below.
@@ -27,16 +29,28 @@ To activate Slovak functionality, follow these steps:
 
 ## Setting up XML schemas
 
+> [!TIP]
+> You can find the complete XML schema settings in the Configuration Package, which you can obtain by running the Assisted Setup *Set Up SK Localization* (either import the latest version using the *AssistEdit* button in the existing company or perform a complete import of the sample parameterization in an empty company using the *Apply package* action).
+
 Import the current XML schema template into the XML schemas by following these steps:
 
 1. Choose the ![Lightbulb that opens the Tell Me feature.](media/ui-search/search_small.png "Tell me what you want to do") icon, enter **XML Schemas** and then choose the related link.
 2. On the **XML Schemas** page, in the **Actions** section, select the **Load Schema**action.
 3. An import window will open where you select the appropriate XML file.
 4. After import, a new line appears on the **XML Schemas**.
-5. In the appropriate row for each XML, select the correct number in the SML portID column.
-   For VAT Report from 2018 it is **52068861**, for VAT Report until 2017 it is **52068860**, for VAT Control Report **52068903** nd for Summary Report that is **52068870**.
+5. In the **XML port ID** field, select the value for the relevant year of validity - see the table below.
 6. In the **Assigned to legislation** field, select **SK**.
 7. Confirm with the **OK** button.
+
+For VAT Report from 2018 it is **52068861**, for VAT Report until 2017 it is **52068860**, for VAT Control Report **52068903** nd for Summary Report that is **52068870**.
+
+>[!NOTE]
+>
+> | XML port ID | Validity         |
+> |   --------  | -------          |
+> |   52068861  | from 1.1.2018    |
+> |   52068862  | from 1.1.2021    |
+> |   52068860  | from 1.1.2025    |
 
 ## VAT Statement template settings
 
@@ -58,10 +72,10 @@ To ensure proper VAT reporting, you need to set up fields in the VAT statement l
 1. Choose the ![Lightbulb that opens the Tell Me feature.](media/ui-search/search_small.png "Tell me what you want to do") icon, enter **VAT Statements** and then choose the related link.
 2. For each line in the sales tax statement, define the following fields:
 
-- Source Code filter
-- Document type
-- Document type filter
-- XML schema element ID - the VAT attribute code will be automatically filled in by the fill-in
+   - Source Code filter
+   - Document type
+   - Document type filter
+   - XML schema element ID - the VAT attribute code will be automatically filled in by the fill-in
 
 3. Confirm with the **OK** button.
 

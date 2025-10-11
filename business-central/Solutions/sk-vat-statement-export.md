@@ -12,6 +12,8 @@ ms.author: v-makune
 ---
 # VAT Statements - Export
 
+> Update 31.05.2024
+
 The standard functionality of the VAT Statement is used for the processing of the VAT Statement. Due to the incorporation of Slovak legislative specifics, the standard functionality of the VAT Statement has been extended with additional functionality to ensure correct calculation of the VAT statement amounts and to export the XML file in the required format. The exported file can be imported into the Financial Administration portal of the Slovak Republic or into the eDane application.
 
 To export a VAT statement, follow these steps:

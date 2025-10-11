@@ -13,6 +13,8 @@ ms.author: v-makune
 
 # Slovak language for Business Central
 
+> Update 31.05.2024
+
 This help will help you set up Business Central in Slovak language.
 
 To change the language, follow this procedure:

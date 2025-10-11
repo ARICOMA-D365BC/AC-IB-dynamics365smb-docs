@@ -13,6 +13,8 @@ ms.author: v-makune
 
 # Import of exchange rates from the ECB
 
+> Update 31.05.2024
+
 When importing exchange rates from the ECB, the date shift of the exchange rate validity is ensured.
 The exchange rate table imports the exchange rate with the validity date moved forward by 1 day compared to the announcement date on the ECB website.
 
