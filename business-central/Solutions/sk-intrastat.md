@@ -13,7 +13,7 @@ ms.author: v-makune
 
 # Intrastat statement
 
-> Update 31.05.2024
+> Update 17.10.2025
 
 For the purpose of generating the Intrastat report, standard functionality is used.
 
@@ -26,6 +26,9 @@ To activate Slovak functionality, these settings are needed, use the following p
 1. Choose the ![Lightbulb that opens the Tell Me feature.](media/ui-search/search_small.png "Tell me what you want to do") icon, enter **General Ledger Setup** and then choose the related link.
 2. On the **General Ledger Setup** page you must select**SK** in **Legislation**field.
 3. Confirm with the **OK** button.
+
+> [!IMPORTANT]
+> From version 25 onwards, it is necessary to have the basic functionality set up in *Intrastat reporting settings* (see [documentation](https://learn.microsoft.com/en-us/dynamics365/business-central/finance-how-setup-report-intrastat)).
 
 ## Intrastat file mapping
 
@@ -45,9 +48,6 @@ The settings are used to map fields in the application to nodes .xml. This table
 4. Confirm with the **OK** button.
 
 ## See also
-
-
-
 
 [ARICOMA Solution](solutions.md)  
 [SK Legislative Pack](sk-legislative-pack.md)
