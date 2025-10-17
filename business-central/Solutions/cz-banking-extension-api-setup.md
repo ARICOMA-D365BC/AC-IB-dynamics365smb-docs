@@ -108,7 +108,7 @@ The basic steps to make the API interface operational are:
 - The company activates the API Business Suite service in KB
 - The company applies to Aricoma for an Authorization Key, which will be generated specifically for the company and thanks to which Aricoma will register the KB API connector with KB.
 - The company sets up the module in Business Central
-- The company gives consent to the BC application to download data from KB and selects the bank accounts to which BC will have access
+- The company gives consent to the Business Central application to download data from KB and selects the bank accounts to which Business Central will have access
 
 **Obtaining the Authorization Key**
 Contact us by email at <bc_sales@aricoma.com>. All we need is your company name, and we will send you an Authorization Key in reply. This is for your company's use only and must not be used by anyone else.

@@ -43,7 +43,7 @@ Each physical device must be registered in the Fiscal Printers codebook. The des
 10. Set the **Integration Timeout (s)** to 60.
 11. In the **Device ID** field, enter the serial code of the Varos fiscal printer.
 12. In the **Requested Binding Duration** field, enter the number of days of validity, e.g. 365 days.
-13. Run the *Create Device Binding* action (VAROS API). The Varos printer generates and prints a verification code, which you enter in the BC dialog box and confirm. Verify that the fiscal printer has set the **Device Binding Exists** to Yes.
+13. Run the *Create Device Binding* action (VAROS API). The Varos printer generates and prints a verification code, which you enter in the Business Central dialog box and confirm. Verify that the fiscal printer has set the **Device Binding Exists** to Yes.
 14. In the **Binding Valid to** field, the system automatically adds the valid link to the fiscal printer.
 
 > [!NOTE]

@@ -10,7 +10,7 @@ ms.search.keywords: GP Tom Integration, Streamline Tools, Global Payments
 
 > Update 14.10.2024
 
-The **GP tom integration** addon is designed primarily for seamless integration of Business Central with payment terminals to make them a native part of business processes. In addition, it also enables related service operations to be performed directly from the BC environment.
+The **GP tom integration** addon is designed primarily for seamless integration of Business Central with payment terminals to make them a native part of business processes. In addition, it also enables related service operations to be performed directly from the Business Central environment.
 
 The module connects Microsoft Dynamics 365 Business Central with payment terminals, or with the solution [**tom**](https://www.gptom.com/) operated on the terminals.
 Thanks to this solution, you can enable your customers to pay not only with Visa and Mastercard, but also with Apple Pay, Google Pay, Edenred... More in [manual](https://www.gptom.com/en/docs/manual/zaciname/podporovana-karetni-schemata/).
@@ -21,7 +21,7 @@ The following text describes the use of the terminal for the most common case, i
 
 ### Payment registration on a terminal according to the default settings
 
-In this case, this is the standard BC functionality where the user uses the Post and Send function for posting. Each customer has a document posting profile set on his/her card, or the profile marked as default is used.
+In this case, this is the standard Business Central functionality where the user uses the Post and Send function for posting. Each customer has a document posting profile set on his/her card, or the profile marked as default is used.
 
 1. Choose the ![Lightbulb that opens the Tell Me feature.](media/ui-search/search_small.png "Tell me what you want to do") icon, enter **Payment Terminals** and then choose the related link.
 2. On the **Payment Terminals** page, select the terminal where you want to make the payment.
@@ -56,7 +56,7 @@ By specific settings we mean in particular the processing of tips and a differen
 5. On the Payment tab, click *Show more*.
 6. Enable the *Collect Tip* flag if the terminal should prompt the user to enter a tip. Then, in the *Tip Amount* field, enter the amount to appear on the terminal.
 7. In the *Currency* field, enter the currency in which the payment is to be made.
-8. In the *Reference No.* field, you can change the transaction designation used for traceability between the BC and GP Tom records.
+8. In the *Reference No.* field, you can change the transaction designation used for traceability between the Business Central and GP Tom records.
 9. On the Options tab, in the *Receipt Type* field, select Email or Phone; you must then enter an email address or phone number in the *Receipt Send To* field.
 10. Run the *Pay* action.
 11. The "Attach Card" dialog will appear on the terminal and proceed as described from step 6 onwards in the previous chapter.
@@ -73,7 +73,7 @@ This operation can be done directly from the BC, but of course also [on the term
 
 ### Transaction status update
 
-It may happen that the terminal processes a transaction longer than the set waiting time. Or that the transaction has been cancelled directly at the terminal. In such a case, the records in the BC need to be updated additionally to include the final status of the transaction.
+It may happen that the terminal processes a transaction longer than the set waiting time. Or that the transaction has been cancelled directly at the terminal. In such a case, the records in the Business Central need to be updated additionally to include the final status of the transaction.
 
 1. Choose the ![Lightbulb that opens the Tell Me feature.](media/ui-search/search_small.png "Tell me what you want to do") icon, enter **Payment Terminal Transactions** and then select the related link.
 2. On the **Payment Terminal Transactions** page, select the record which you want to update (with the value "Created" in the Transaction Status field).

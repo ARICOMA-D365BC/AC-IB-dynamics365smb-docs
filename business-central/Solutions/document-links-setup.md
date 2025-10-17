@@ -99,10 +99,10 @@ You must enable the module functionality globally:
 > [!NOTE]
 > If you need to use date and time information from file metadata, you must set the **SharePoint TimeZone** field. This will ensure consistency between this information from SharePoint and from BC.
 
-## Adding Document Links to selected BC functionality
+## Adding Document Links to selected Business Central functionality
 ### Step 1 - Add to page as Pageextension
 
-A "DocumentLinksFactBox_ach" must be added to all pages where the functionality is to be available. If you are not sure how to create a pageextension (see the following code), ask your BC partner.
+A "DocumentLinksFactBox_ach" must be added to all pages where the functionality is to be available. If you are not sure how to create a pageextension (see the following code), ask your Business Central partner.
 
     {
         layout
@@ -211,7 +211,7 @@ In some cases, you need to restrict user access to templates. There is an option
 4.	Close the page.
 
 ## Document Library attributes setup
-Most often, the attributes functionality in BC is used to add metadata (columns) to a file stored in a SharePoint library, either automatically or manually (see Create a column in a list or library - Microsoft Support).
+Most often, the attributes functionality in Business Central is used to add metadata (columns) to a file stored in a SharePoint library, either automatically or manually (see Create a column in a list or library - Microsoft Support).
 
 1. Choose the ![Lightbulb that opens the Tell Me feature.](media/ui-search/search_small.png "Tell me what you want to do") icon, enter **Document Libraries** and then choose the related link.
 2.	On the Document Libraries page, select the library and run the Document Attributes action.

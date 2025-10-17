@@ -51,7 +51,7 @@ If everything is set correctly, a Fiscal Item is created along with the others (
 
 ### Payment of the posted invoice on the fiscal printer
 
-This scenario describes cash payment of a posted invoice if the fiscal printer in BC is connected to the Bank Account entity. If connected to the Cash Desk entity, simply create a cash receipt in the usual way (similar to [Payment of advance invoice on the fiscal printer](#payment-of-advance-invoice-on-the-fiscal-printer) below).
+This scenario describes cash payment of a posted invoice if the fiscal printer in Business Central is connected to the Bank Account entity. If connected to the Cash Desk entity, simply create a cash receipt in the usual way (similar to [Payment of advance invoice on the fiscal printer](#payment-of-advance-invoice-on-the-fiscal-printer) below).
 
 > [!NOTE]
 > For more information, see [Connecting Fiscal Printers to Bank Accounts / Cash Registers](./SK-FiscalPrinters-Integration-setup.md#connecting-fiscal-printers-to-bank-accounts--cash-desks).
@@ -123,7 +123,7 @@ Other functions eKASA and Sales Overviews (Daily closing, Monthly...) are availa
 ### Cash operations without Business Central
 
 All the above cash operations (Tax Document, Deposit, Withdrawal, Invoice Payment, Invoice Cancellation, Coinage) can be done manually in the Print Manager software.
-Additionally, it is possible to perform the corresponding operations in the BC with the fiscal printer switched off and the created fiscal ledger entries are additionally manually marked as “Registered” (see below).
+Additionally, it is possible to perform the corresponding operations in the Business Central with the fiscal printer switched off and the created fiscal ledger entries are additionally manually marked as “Registered” (see below).
 
 ### Other operations with Fiscal Ledger Entries
 
@@ -156,7 +156,7 @@ If you need to print a copy of a fiscal document (paper ran out or the document 
 
 #### Viewing exchanged data
 
-In case of confusion, it is possible to view the files exchanged between the BC and the fiscal printer. These are recorded directly in the entries:
+In case of confusion, it is possible to view the files exchanged between the Business Central and the fiscal printer. These are recorded directly in the entries:
 
 1. Choose the ![Lightbulb that opens the Tell Me feature.](media/ui-search/search_small.png "Tell me what you want to do") icon, enter **Fiscal Ledger Entries** and then choose the related link.
 2. On the **Fiscal Ledger Entries** page, locate the appropriate record.

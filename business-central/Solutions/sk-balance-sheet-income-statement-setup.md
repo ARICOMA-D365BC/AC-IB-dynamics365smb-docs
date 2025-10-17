@@ -15,7 +15,7 @@ ms.author: v-makune
 
 > Update 31.05.2024
 
-To define the statutory statements of Slovak legislation (Balance Sheet and Profit and Loss Statement), the D365 BC system uses the standard functionality of accounting schemes supplemented by adjustments that allow the import of financial statements to the portal of the Financial Administration of the Slovak Republic through a .xml file.
+To define the statutory statements of Slovak legislation (Balance Sheet and Profit and Loss Statement), the D365 Business Central system uses the standard functionality of accounting schemes supplemented by adjustments that allow the import of financial statements to the portal of the Financial Administration of the Slovak Republic through a .xml file.
 
 To ensure the export of financial statements, it is necessary to set several areas listed below.
 

@@ -1,6 +1,6 @@
 ---
 title: Financial pack - Application extension set | Microsoft Docs
-description: BC addon documentation
+description: Business Central addon documentation
 author: RobertJelen
 
 ms.service: dynamics365-business-central
@@ -155,7 +155,7 @@ In the CreditCheck settings, it is possible to turn on the update of web feed cr
 
 ### Price Calculation Methods (from version 22.0, optionally from 18.0)
 
-Starting with version BC 22 (or BC 18 if you have "Feature Update: New Sales Price Experience" turned on in Feature Management), you turn on hierarchical item price suggestions as follows:
+Starting with version Business Central version 22 (or Business Central version 18 if you have "Feature Update: New Sales Price Experience" turned on in Feature Management), you turn on hierarchical item price suggestions as follows:
 
 1. Choose the ![Lightbulb that opens the Tell Me feature.](media/ui-search/search_small.png "Tell me what you want to do") icon, enter **Price Calculation Methods** and then choose the related link.
 2. Click to select the Lowest Price method.
@@ -166,10 +166,10 @@ Starting with version BC 22 (or BC 18 if you have "Feature Update: New Sales Pri
 1. Choose the ![Lightbulb that opens the Tell Me feature.](media/ui-search/search_small.png "Tell me what you want to do") icon, enter **Sales & Receivables Setup** and then choose the related link.
 
 > [!TIP]
-> The settings depend on the version you are using. In BC17, select **Hierarchical pricing enabled** to enable it.
+> The settings depend on the version you are using. In Business Central version 17, select **Hierarchical pricing enabled** to enable it.
 >![Hierarchical pricing allowed](media/Hierarchical_price_setup.png)
 > [!TIP]
-> From BC18 onwards, we recommend using the brand new pricing functionality in BC.
+> From Business Central version 18 onwards, we recommend using the brand new pricing functionality in BC.
 > Choose the ![Lightbulb that opens the Tell Me feature.](media/ui-search/search_small.png "Tell me what you want to do") icon, enter **Function Management** and then choose the related link. Verify that you have the **Feature Updates: New Sales Pricing Experience feature** enabled for all users.
 
 ## Payment cumulation settings

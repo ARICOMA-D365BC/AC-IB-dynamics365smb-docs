@@ -170,7 +170,7 @@ Specifies the last level of automatic processing of bank statements. The actual 
 
 ### Number Series (optional)
 
-The bank statement processing function can automatically number both unissued and issued bank statements in BC by inserting the year and serial number assigned by the bank according to a template.
+The bank statement processing function can automatically number both unissued and issued bank statements in Business Central by inserting the year and serial number assigned by the bank according to a template.
 
 It is necessary to set the same number series for unissued and issued bank statements on the Bank Account Card.
 This number series must have Manual Numbering enabled and a Mask filled in. The mask must contain at least 2 characters for the year (yy) and a free number (ccc).
