@@ -40,6 +40,9 @@ The settings are used to map fields in the application to nodes .xml. This table
 
 ![File Mapping](media/sk-intrastat.png)
 
+> [!TIP]
+> You can find the complete mapping in the Configuration Package, which you can obtain by running the Assisted Setup *Set Up SK Localization* (either import the latest version using the *AssistEdit* button in the existing company or perform a complete import of the sample parameterization in an empty company using the *Apply package* action).
+
 ## Export a file for Intrastat
 
 1. Choose the ![Lightbulb that opens the Tell Me feature.](media/ui-search/search_small.png "Tell me what you want to do") icon, enter **Intrastat Journals** and then choose the related link.
