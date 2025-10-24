@@ -13,7 +13,7 @@ ms.author: v-makune
 # Document links
 > Update 16.06.2023
 
-The Document Links module allows you to link documents stored in SharePoint Online to any entity in D365 Business Central (BC). It also allows you to take full advantage of the potential of such a link in the ability to automatically populate SharePoint columns according to the context obtained from the particular entity in BC to which the user attaches the document.
+The Document Links module allows you to link documents stored in SharePoint Online to any entity in D365 Business Central (BC). It also allows you to take full advantage of the potential of such a link in the ability to automatically populate SharePoint columns according to the context obtained from the particular entity in Business Central to which the user attaches the document.
 
 Not only that, when saving files, the options in the area of naming the files saved to SharePoint are also very useful (typically to avoid overwriting a file with another with the same name). 
 
@@ -27,7 +27,7 @@ The location of saved documents in the library can also be controlled in a simil
 -	Support for working with SharePoint lists for customer development
 
 
-## Uploading a document to the BC library
+## Uploading a document to the Business Central library
 I want to upload a document without binding.
 
 1. Choose the ![Lightbulb that opens the Tell Me feature.](media/ui-search/search_small.png "Tell me what you want to do") icon, enter **Sales Invoices** and then choose the related link..
@@ -39,10 +39,10 @@ I want to upload a document without binding.
 
 
 > [!NOTE]
-> To automatically add library items in BC for new files/folders added directly to SharePoint (content synchronization), you can enable the SharePoint Automatic Synchronization option on the document library.
+> To automatically add library items in Business Central for new files/folders added directly to SharePoint (content synchronization), you can enable the SharePoint Automatic Synchronization option on the document library.
 
-## Creating a folder in the BC library
-In addition to uploading a file, it is also possible to create a folder directly in the BC library that is automatically created in SharePoint.
+## Creating a folder in the Business Central library
+In addition to uploading a file, it is also possible to create a folder directly in the Business Central library that is automatically created in SharePoint.
 
 1. Choose the ![Lightbulb that opens the Tell Me feature.](media/ui-search/search_small.png "Tell me what you want to do") icon, enter **Document Libraries** and then choose the related link.
 1.	Select the icon  , type Document Libraries, and then select the associated link.
@@ -57,12 +57,12 @@ In addition to uploading a file, it is also possible to create a folder directly
 
 
 ## Documents Links
-If you want to find out to which all entities in BC the document is attached, do the following:
+If you want to find out to which all entities in Business Central the document is attached, do the following:
 
 1. Choose the ![Lightbulb that opens the Tell Me feature.](media/ui-search/search_small.png "Tell me what you want to do") icon, enter **Document Libraries** and then choose the related link.
 2.	Run the Items action to open a list of library items registered in BC.
 3.	Navigate to the desired document and run the Item Detail action.
-4.	On the Document Library Item Detail page, run the Document Links action to view all entities in BC to which the selected document is attached.
+4.	On the Document Library Item Detail page, run the Document Links action to view all entities in Business Central to which the selected document is attached.
 5.	Close the page. 
 
 > [!NOTE]
@@ -100,7 +100,7 @@ In normal use, it is possible to delete a document directly from individual part
 
 
 ## To upload a file and attach it to a specific entity in BC
-In the vast majority of files, this is how you add files, that is, saving a new file with a link to a specific record in BC. This is how it is added to the customer's card (see Adding Attached Documents to Selected BC Functionality).
+In the vast majority of files, this is how you add files, that is, saving a new file with a link to a specific record in BC. This is how it is added to the customer's card (see Adding Attached Documents to Selected Business Central Functionality).
 
 1. Choose the ![Lightbulb that opens the Tell Me feature.](media/ui-search/search_small.png "Tell me what you want to do") icon, enter **Customers** and then choose the related link.
 2.	Navigate to the record with the selected customer.

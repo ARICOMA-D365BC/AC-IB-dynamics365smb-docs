@@ -26,7 +26,7 @@ Last but not least, the functionality extends (in combination with other addons 
 
 The module also includes support for sending emails in connection with customer processes. A typical example is notifying customers about the status of their order. However, a programmatic modification is required in the form of a function call, which is described in the [module settings](https://www.aricoma.com/docs/en-us/dynamics365/business-central/ProductivityPack/electronic-documents-setup.html).
 
-## BC OnPrem only
+## Business Central on-premise only
 In cooperation with the [Data boxes](https://www.aricoma.com/docs/en-us/dynamics365/business-central/ProductivityPack/data-boxes.html) module, documents can also be sent via this communication channel. Data boxes work on a similar principle to a regular e-mail box, but the technical solution itself ensures the trustworthiness of the delivery of data messages, each one being provided with an electronic mark (e-stamp) and a time stamp (qualified time stamp). For more information, visit the [official website](https://info.mojedatovaschranka.cz/).
 
 If you prefer the PDF format, the module allows you to electronically sign or even e-time stamp these documents.
@@ -36,7 +36,7 @@ If you prefer the PDF format, the module allows you to electronically sign or ev
 The following text describes the most common use cases for the Electronic Documents Sending functionality.
 
 ### Posting a sales document with immediate dispatch with one Sending Profile for the customer
-In this case, this is the standard BC functionality where the user uses the Post and Send function for posting. Each customer has a document posting profile set on his/her card, or the profile marked as default is used.
+In this case, this is the standard Business Central functionality where the user uses the Post and Send function for posting. Each customer has a document posting profile set on his/her card, or the profile marked as default is used.
 
 > [!NOTE]
 > The "send" result varies depending on the Document Sending Profiles settings (see the official documentation Document Sending Profile Settings).[Document Sending Profiles settings](https://learn.microsoft.com/en-us/dynamics365/business-central/sales-how-setup-document-send-profiles)).

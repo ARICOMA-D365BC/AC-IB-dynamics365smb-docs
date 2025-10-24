@@ -15,7 +15,7 @@ The module extends the functionality "Banking documents for Czech Republic (exte
 
 The main benefit of the Extended Banking module is to simplify the import and subsequent processing of bank statements, thereby reducing routine user activities.
 
-The advantage is the variability in the setting of the import of bank statements into BC and their subsequent processing, where you can individually set the mode for each bank account separately.
+The advantage is the variability in the setting of the import of bank statements into Business Central and their subsequent processing, where you can individually set the mode for each bank account separately.
 
 The module allows to support users in processing statements in 2 levels: basic and advanced.
 
@@ -56,7 +56,7 @@ The example scenarios describe the import of statements in .gpc format, see the 
 
 ### Basic - Import and processing of one statement
 
-In this case, this is standard BC functionality. The user opens a new Bank Statement tab and starts the "Import Bank Statement" action.
+In this case, this is standard Business Central functionality. The user opens a new Bank Statement tab and starts the "Import Bank Statement" action.
 After importing, the user uses the Issue and Post function to post it.
 > [!NOTE]
 > For a detailed description of the functionality and settings see [CZ Bank Statements and Payment Orders](https://learn.microsoft.com/en-us/dynamics365/business-central/localfunctionality/czech/bank-feature?source=recommendations#bank-statement-and-payment-orders).
@@ -77,7 +77,7 @@ For functionality settings, see. Settings for batch import - bulk statement and 
 > [!TIP]
 > Most common errors:
 >
-> - The imported file already exists in BC --> in this case the status field shows the processing status in BC.
+> - The imported file already exists in Business Central --> in this case the status field shows the processing status in BC.
 > - Bank account number was not recognized --> in this case the field "Bank account number" is shown in red.
 >  - Either the imported file does not belong to the imported company
 >  - or the bank statement file contains an account number in a different format, usually a prefix and an account number without a hyphen.  In this case, make the settings according to Bank account number on the bank statement (optional)
@@ -89,7 +89,7 @@ The files need to be compressed into a single .zip file to be imported, with aut
 The procedure for importing a bank statement is the same as described in Importing and Processing a Bulk Bank Statement into a Single Company.
 
 > [!NOTE]
-> Multiple files can be passed at once directly in the file selection dialog (from BC26 version).
+> Multiple files can be passed at once directly in the file selection dialog (from Business Central version 26 version).
 
 ### Basic - Export Payment Order
 
@@ -100,7 +100,7 @@ Exporting payment orders is performed on the Issued Payment Order tab by running
 
 ### Advanced - manual import to multiple companies
 
-The scenario describes a situation where there are multiple companies in the BC environment and the import of bank statements will be done centrally for multiple companies at once from a local repository.
+The scenario describes a situation where there are multiple companies in the Business Central environment and the import of bank statements will be done centrally for multiple companies at once from a local repository.
 It is imported into the Central bank statement stack table. The table records are common to all companies. Imported statements are stored here for further processing. After processing, it is advisable to delete them on an ongoing basis.
 > [!TIP]
 > In the Advanced CZ Banking Settings, turn on automatic purging.
@@ -112,12 +112,12 @@ It is imported into the Central bank statement stack table. The table records ar
 
 > [!NOTE]
 > If you import a .zip file, the functionality will only import supported formats from compressed files. If there are unsupported formats in the .zip, the import ignores them. 
-> Multiple files can be passed at once directly in the file selection dialog (from BC26 version).
+> Multiple files can be passed at once directly in the file selection dialog (from Business Central version 26 version).
 
 ### Advanced - automated import to multiple companies
 
-This is a situation where there are multiple companies in the BC environment and the import of bank statements will be done centrally for all companies automatically without user intervention. 
-An example would be direct communication with the bank via API, where BC directly downloads statements or executed transactions and stores them in the Central Bank Statement Stack for further processing.
+This is a situation where there are multiple companies in the Business Central environment and the import of bank statements will be done centrally for all companies automatically without user intervention. 
+An example would be direct communication with the bank via API, where Business Central directly downloads statements or executed transactions and stores them in the Central Bank Statement Stack for further processing.
 > [!TIP]
 > See SettingsXXX for instructions on how to create your own import automation.
 

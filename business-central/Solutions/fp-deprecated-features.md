@@ -16,19 +16,19 @@ This page contains a list of features that have been moved, removed or replaced 
 
 | Moved, Deleted or Replaced? | When? |
 |----|----|
-| Deleted | from version BC15 |
+| Deleted | from version Business Central version 15 |
 
 ## Finance - Tax liability transferred
 
 | Moved, Deleted or Replaced? | When? |
 |----|----|
-| Deleted | from version BC15 |
+| Deleted | from version Business Central version 15 |
 
 ## Discount credits for CZ
 
 | Moved, Deleted or Replaced? | When? |
 |----|----|
-| Replaced | from version BC15 |
+| Replaced | from version Business Central version 15 |
 
 Since the basic functionality for creating sales credit notes has been omitted from the CZ localization, the extended functionality is no longer part of the Application Extension Set module.
 
@@ -36,7 +36,7 @@ Since the basic functionality for creating sales credit notes has been omitted f
 
 | Moved, Deleted or Replaced? | When? |
 |----|----|
-| Deleted | from version BC15 |
+| Deleted | from version Business Central version 15 |
 
 ## See also
 [Financial Pack](finance-pack.md)

@@ -1,6 +1,6 @@
 ---
 title: Financial pack - Application extension set | Microsoft Docs
-description: BC addon documentation
+description: Business Central addon documentation
 author: RobertJelen
 
 ms.service: dynamics365-business-central
@@ -163,7 +163,7 @@ The posting of such an invoice will also result in the amount of the overpayment
 > [!NOTE]
 > Neither the posting of assigned advances nor the posting of additional advances can be applied to a posted invoice that contains at least one line item charged as an overpayment.
 
-#### Purchase advance overpayment refund (BC14 and older)
+#### Purchase advance overpayment refund (Business Central version 17 and older)
 
 After creating the final purchase invoice and assigning the paid purchase deposit, in case of an over-payment on the deposit, it is possible to insert another line with the overpayment amount and the Intended for return refund flag (the flag is also on the posted invoice line).
 
@@ -174,7 +174,7 @@ By posting the invoice, an item of the Vendor type is created for each such line
 
 ## Credit Check
 
-This is the integration of BC into the commercial CreditCheck service, which is used to check the creditworthiness of partners.
+This is the integration of Business Central into the commercial CreditCheck service, which is used to check the creditworthiness of partners.
 
 Therefore, in order to have as much information about the selected partner in the system as possible, the information is imported via the Creditcheck ERP web service, see <http://www.creditcheck.cz/ProductDetail.aspx?id=02>.
 
@@ -405,7 +405,7 @@ The Set Processing Order feature has been added to the Configuration Workbook an
 
    Added Account and Print functions on Reconciliation Log.
 
-   NOTE: As of version BC19, it is recommended to use the newer Banking Documents functionality, which does not use the Reconciliation Log.
+   NOTE: As of version Business Central version 19, it is recommended to use the newer Banking Documents functionality, which does not use the Reconciliation Log.
 
 - **Cash Desks**
 
@@ -417,7 +417,7 @@ The Set Processing Order feature has been added to the Configuration Workbook an
 
    New CU 52057071 "QR Code_acb", where there is a function for the QR code for the sales invoice. The .NET component Microsoft.Dynamics.Nav.MX.dll, which is a standard AddIn from MS, is used. An example of use is in report 52057066 "Sales - Invoice QR_acb", only the printing of the QR code itself and an example of calling a function.
 
-   NOTE: In BC online it is necessary to use different method – see [Barcode Fonts with Business Central Online - Business Central | Microsoft Docs](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-report-barcode-fonts#one-dimensional-barcode-fonts-with-business-central-online)
+   NOTE: In Business Central online it is necessary to use different method – see [Barcode Fonts with Business Central Online - Business Central | Microsoft Docs](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-report-barcode-fonts#one-dimensional-barcode-fonts-with-business-central-online)
 
 ### Inventory
 

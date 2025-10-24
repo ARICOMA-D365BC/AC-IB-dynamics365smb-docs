@@ -68,7 +68,7 @@ In contrast, formats with a code ending in SPOOLER are for use on document sendi
 Note: The wizard will also add settings for sending PDF using the Spooler functionality ("AC_PDF_SPOOLER").
 
 ## ISDOC Settings - Payment Methods
-To use the ISDOC format, it is necessary to set the mapping of the payment methods used in BC to the payment methods defined in the ISDOC format by the "PaymentMeansCodeType" element.
+To use the ISDOC format, it is necessary to set the mapping of the payment methods used in Business Central to the payment methods defined in the ISDOC format by the "PaymentMeansCodeType" element.
 
 1. Choose the ![Lightbulb that opens the Tell Me feature.](media/ui-search/search_small.png "Tell me what you want to do") icon, enter **Payment Methods** and then choose the related link.
 2.	On the Payment Methods page, navigate to the row corresponding to the cash payment.

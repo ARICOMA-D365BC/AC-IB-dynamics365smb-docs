@@ -21,14 +21,14 @@ In the next steps, the user is guided through the registration of the first paym
 ### Terminal settings
 Each physical device must be registered in the Payment Terminals table. The description of the settings below corresponds to the most common configuration, which is the recording of card payments.
 >[!NOTE]
->The GP Tom application also allows the registration of cash or cryptocurrency payments, These options are supported, however no other settings are described in BC where the registration of such operations would make sense.
+>The GP Tom application also allows the registration of cash or cryptocurrency payments, These options are supported, however no other settings are described in Business Central where the registration of such operations would make sense.
 1.	Choose the ![Lightbulb that opens the Tell Me feature.](media/ui-search/search_small.png "Tell me what you want to do") icon, enter **Payment Terminals** and then select the related link. 
 2.	On the **Payment Terminals** page, click New to create a new payment terminal.
 3.	Enter the *Terminal Code* and *Description*.
 4.	In the *Terminal ID* field, enter the number assigned to the terminal.
 5.	In the *GP tom Merchant Username* field, enter the name (e-mail) of the terminal user.
 6.	In the *GP tom Merchant Password* field, enter the password of the terminal user.
-7.	In the *GP tom Transaction Timeout (s)* field, leave the default value unless you have a specific request to reduce or extend the time that BC does not finish waiting for a response from the terminal.
+7.	In the *GP tom Transaction Timeout (s)* field, leave the default value unless you have a specific request to reduce or extend the time that Business Central does not finish waiting for a response from the terminal.
 8.	In the Preferable *Payment Type* field, select Card. 
 9.	In the Preferable *Receipt Type* field, select if the receipt should be printed from the terminal or sent via email or mobile phone.
 10.	In the *Payment Document Nos.* field, select a number series to designate the payment records in BC.
