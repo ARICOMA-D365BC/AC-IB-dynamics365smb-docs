@@ -22,6 +22,8 @@
 ### [Settings - Electronic Document Sending](../solutions/electronic-documents-setup.md)
 ## [Factoring](../solutions/factoring.md)
 ### [Settings - Factoring](../solutions/factoring-setup.md)
+## [Fixed Asset Inventory](../solutions/fa-inventory.md)
+### [Settings - Fixed Asset Inventory](../solutions/fa-inventory-setup.md)
 ## [General parameters](../solutions/general-parameters.md)
 ### [Settings - General Parameters](../solutions/general-parameters-setup.md)
 ## [GP Tom Integration](../solutions/gptom-integration.md)
