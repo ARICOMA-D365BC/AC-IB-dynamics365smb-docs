@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>ARICOMA SOLUTIONS - P&#345;ipojen&#233; dokumenty | Microsoft Docs </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="ARICOMA SOLUTIONS - P&#345;ipojen&#233; dokumenty | Microsoft Docs ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../TOC.html">
+    <meta property="docfx:tocrel" content="TOC.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="png" src="../logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="document-links" sourcefile="Solutions/document-links.md" sourcestartlinenumber="13">Document links</h1>
+
+<blockquote sourcefile="Solutions/document-links.md" sourcestartlinenumber="14">
+<p sourcefile="Solutions/document-links.md" sourcestartlinenumber="14">Update 16.06.2023</p>
+</blockquote>
+<p sourcefile="Solutions/document-links.md" sourcestartlinenumber="16">The Document Links module allows you to link documents stored in SharePoint Online to any entity in D365 Business Central (BC). It also allows you to take full advantage of the potential of such a link in the ability to automatically populate SharePoint columns according to the context obtained from the particular entity in Business Central to which the user attaches the document.</p>
+<p sourcefile="Solutions/document-links.md" sourcestartlinenumber="18">Not only that, when saving files, the options in the area of naming the files saved to SharePoint are also very useful (typically to avoid overwriting a file with another with the same name).</p>
+<p sourcefile="Solutions/document-links.md" sourcestartlinenumber="20">The location of saved documents in the library can also be controlled in a similar way. For example, sometimes it may be appropriate to always store files in a new folder based on the current month or year, while other times it may be a requirement to store files in a folder created just for a specific entity value (e.g. for a specific customer, item, etc.).</p>
+<p sourcefile="Solutions/document-links.md" sourcestartlinenumber="22">Compared to the previously used SharePoint Publishing module, this is not addressed:</p>
+<ul sourcefile="Solutions/document-links.md" sourcestartlinenumber="23">
+<li sourcefile="Solutions/document-links.md" sourcestartlinenumber="23">Document Types/Main Document</li>
+<li sourcefile="Solutions/document-links.md" sourcestartlinenumber="24">Selecting attribute values from a code list (table)</li>
+<li sourcefile="Solutions/document-links.md" sourcestartlinenumber="25">Searching documents by attributes</li>
+<li sourcefile="Solutions/document-links.md" sourcestartlinenumber="26">Document location by filename/file extension mask</li>
+<li sourcefile="Solutions/document-links.md" sourcestartlinenumber="27">Support for working with SharePoint lists for customer development</li>
+</ul>
+<h2 id="uploading-a-document-to-the-business-central-library" sourcefile="Solutions/document-links.md" sourcestartlinenumber="30">Uploading a document to the Business Central library</h2>
+<p sourcefile="Solutions/document-links.md" sourcestartlinenumber="31">I want to upload a document without binding.</p>
+<ol sourcefile="Solutions/document-links.md" sourcestartlinenumber="33">
+<li sourcefile="Solutions/document-links.md" sourcestartlinenumber="33">Choose the <img src="media/ui-search/search_small.png" sourcefile="Solutions/document-links.md" sourcestartlinenumber="33" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong sourcefile="Solutions/document-links.md" sourcestartlinenumber="33">Sales Invoices</strong> and then choose the related link..</li>
+<li sourcefile="Solutions/document-links.md" sourcestartlinenumber="34">On the Document Library page, click the dashed rectangle in the information window labeled Upload Document.</li>
+<li sourcefile="Solutions/document-links.md" sourcestartlinenumber="35">Select the appropriate file from the file system and confirm by clicking Open.</li>
+<li sourcefile="Solutions/document-links.md" sourcestartlinenumber="36">Alternatively, you can drag and drop the file with the mouse onto the rectangle in step 2.</li>
+<li sourcefile="Solutions/document-links.md" sourcestartlinenumber="37">Verify that the value of the No. Of Items field has been incremented.</li>
+<li sourcefile="Solutions/document-links.md" sourcestartlinenumber="38">Close the page.</li>
+</ol>
+<div class="NOTE" sourcefile="Solutions/document-links.md" sourcestartlinenumber="41">
+<h5>Note</h5>
+<p sourcefile="Solutions/document-links.md" sourcestartlinenumber="42">To automatically add library items in Business Central for new files/folders added directly to SharePoint (content synchronization), you can enable the SharePoint Automatic Synchronization option on the document library.</p>
+</div>
+<h2 id="creating-a-folder-in-the-business-central-library" sourcefile="Solutions/document-links.md" sourcestartlinenumber="44">Creating a folder in the Business Central library</h2>
+<p sourcefile="Solutions/document-links.md" sourcestartlinenumber="45">In addition to uploading a file, it is also possible to create a folder directly in the Business Central library that is automatically created in SharePoint.</p>
+<ol sourcefile="Solutions/document-links.md" sourcestartlinenumber="47">
+<li sourcefile="Solutions/document-links.md" sourcestartlinenumber="47">Choose the <img src="media/ui-search/search_small.png" sourcefile="Solutions/document-links.md" sourcestartlinenumber="47" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong sourcefile="Solutions/document-links.md" sourcestartlinenumber="47">Document Libraries</strong> and then choose the related link.</li>
+<li sourcefile="Solutions/document-links.md" sourcestartlinenumber="48">Select the icon  , type Document Libraries, and then select the associated link.</li>
+<li sourcefile="Solutions/document-links.md" sourcestartlinenumber="49">Run the Items action to open a list of library items recorded in BC.</li>
+<li sourcefile="Solutions/document-links.md" sourcestartlinenumber="50">Use the existing folders shortcut to navigate to the desired level in the library (back using the Move Up button).</li>
+<li sourcefile="Solutions/document-links.md" sourcestartlinenumber="51">Run the New Folder action, enter a name for the folder, and confirm OK.</li>
+<li sourcefile="Solutions/document-links.md" sourcestartlinenumber="52">Verify that a new row has appeared with the Folder Item Type and the value entered in the Name field.</li>
+<li sourcefile="Solutions/document-links.md" sourcestartlinenumber="53">Close the page.</li>
+</ol>
+<p sourcefile="Solutions/document-links.md" sourcestartlinenumber="56"><img src="media/document-links-sample.png" sourcefile="Solutions/document-links.md" sourcestartlinenumber="56" alt="Příklad struktury"></p>
+<h2 id="documents-links" sourcefile="Solutions/document-links.md" sourcestartlinenumber="59">Documents Links</h2>
+<p sourcefile="Solutions/document-links.md" sourcestartlinenumber="60">If you want to find out to which all entities in Business Central the document is attached, do the following:</p>
+<ol sourcefile="Solutions/document-links.md" sourcestartlinenumber="62">
+<li sourcefile="Solutions/document-links.md" sourcestartlinenumber="62">Choose the <img src="media/ui-search/search_small.png" sourcefile="Solutions/document-links.md" sourcestartlinenumber="62" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong sourcefile="Solutions/document-links.md" sourcestartlinenumber="62">Document Libraries</strong> and then choose the related link.</li>
+<li sourcefile="Solutions/document-links.md" sourcestartlinenumber="63">Run the Items action to open a list of library items registered in BC.</li>
+<li sourcefile="Solutions/document-links.md" sourcestartlinenumber="64">Navigate to the desired document and run the Item Detail action.</li>
+<li sourcefile="Solutions/document-links.md" sourcestartlinenumber="65">On the Document Library Item Detail page, run the Document Links action to view all entities in Business Central to which the selected document is attached.</li>
+<li sourcefile="Solutions/document-links.md" sourcestartlinenumber="66">Close the page.</li>
+</ol>
+<div class="NOTE" sourcefile="Solutions/document-links.md" sourcestartlinenumber="68">
+<h5>Note</h5>
+<p sourcefile="Solutions/document-links.md" sourcestartlinenumber="69">In the default view, the Primary Key Field Value 1 column is visible. If desired, you can use Page Customization to view up to 2 additional primary key levels.</p>
+</div>
+<h2 id="renaming-an-item" sourcefile="Solutions/document-links.md" sourcestartlinenumber="72">Renaming an item</h2>
+<p sourcefile="Solutions/document-links.md" sourcestartlinenumber="74">To rename a file or folder, follow these steps:</p>
+<ol sourcefile="Solutions/document-links.md" sourcestartlinenumber="76">
+<li sourcefile="Solutions/document-links.md" sourcestartlinenumber="76">Choose the <img src="media/ui-search/search_small.png" sourcefile="Solutions/document-links.md" sourcestartlinenumber="76" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong sourcefile="Solutions/document-links.md" sourcestartlinenumber="76">Document Libraries</strong> and then choose the related link.</li>
+<li sourcefile="Solutions/document-links.md" sourcestartlinenumber="77">Run the Items action to open a list of library items registered in BC.</li>
+<li sourcefile="Solutions/document-links.md" sourcestartlinenumber="78">Navigate to the desired document and run the Item Detail action.</li>
+<li sourcefile="Solutions/document-links.md" sourcestartlinenumber="79">On the Document Library Item Detail page, run the Rename Item action, enter a new item name, and confirm by pressing OK.</li>
+<li sourcefile="Solutions/document-links.md" sourcestartlinenumber="80">Close the page.</li>
+</ol>
+<h2 id="delete-a-file-from-the-library" sourcefile="Solutions/document-links.md" sourcestartlinenumber="85">Delete a file from the library</h2>
+<p sourcefile="Solutions/document-links.md" sourcestartlinenumber="86">If you want to remove a file from the library, there are several ways to do so. One is to remove it directly from the document library items.</p>
+<ol sourcefile="Solutions/document-links.md" sourcestartlinenumber="88">
+<li sourcefile="Solutions/document-links.md" sourcestartlinenumber="88">Choose the <img src="media/ui-search/search_small.png" sourcefile="Solutions/document-links.md" sourcestartlinenumber="88" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong sourcefile="Solutions/document-links.md" sourcestartlinenumber="88">Document Libraries</strong> and then choose the related link.</li>
+<li sourcefile="Solutions/document-links.md" sourcestartlinenumber="89">Run the Items action to open a list of library items recorded in BC.</li>
+<li sourcefile="Solutions/document-links.md" sourcestartlinenumber="90">Navigate to the desired document and run the Delete action.</li>
+<li sourcefile="Solutions/document-links.md" sourcestartlinenumber="91">Confirm the query that appears if the file is attached to at least one entity in BC.</li>
+<li sourcefile="Solutions/document-links.md" sourcestartlinenumber="92">Close the page.</li>
+</ol>
+<p sourcefile="Solutions/document-links.md" sourcestartlinenumber="94">In normal use, it is possible to delete a document directly from individual parts of the BC.</p>
+<ol sourcefile="Solutions/document-links.md" sourcestartlinenumber="96">
+<li sourcefile="Solutions/document-links.md" sourcestartlinenumber="96">Choose the <img src="media/ui-search/search_small.png" sourcefile="Solutions/document-links.md" sourcestartlinenumber="96" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong sourcefile="Solutions/document-links.md" sourcestartlinenumber="96">Customers</strong> and then choose the related link.</li>
+<li sourcefile="Solutions/document-links.md" sourcestartlinenumber="97">Navigate to the record with the selected customer.</li>
+<li sourcefile="Solutions/document-links.md" sourcestartlinenumber="98">In the Document Links facts window, navigate to the row with the attached file and run the Document Detail function.</li>
+<li sourcefile="Solutions/document-links.md" sourcestartlinenumber="99">On the Document Library Item Detail page, click Delete at the top.</li>
+</ol>
+<h2 id="to-upload-a-file-and-attach-it-to-a-specific-entity-in-bc" sourcefile="Solutions/document-links.md" sourcestartlinenumber="102">To upload a file and attach it to a specific entity in BC</h2>
+<p sourcefile="Solutions/document-links.md" sourcestartlinenumber="103">In the vast majority of files, this is how you add files, that is, saving a new file with a link to a specific record in BC. This is how it is added to the customer's card (see Adding Attached Documents to Selected Business Central Functionality).</p>
+<ol sourcefile="Solutions/document-links.md" sourcestartlinenumber="105">
+<li sourcefile="Solutions/document-links.md" sourcestartlinenumber="105">Choose the <img src="media/ui-search/search_small.png" sourcefile="Solutions/document-links.md" sourcestartlinenumber="105" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong sourcefile="Solutions/document-links.md" sourcestartlinenumber="105">Customers</strong> and then choose the related link.</li>
+<li sourcefile="Solutions/document-links.md" sourcestartlinenumber="106">Navigate to the record with the selected customer.</li>
+<li sourcefile="Solutions/document-links.md" sourcestartlinenumber="107">In the Document Links facts window, click the window title and run the Upload Document action.</li>
+<li sourcefile="Solutions/document-links.md" sourcestartlinenumber="108">Select the appropriate file from the file system and confirm by clicking Open.</li>
+<li sourcefile="Solutions/document-links.md" sourcestartlinenumber="109">Alternatively, you can drag and drop the file with the mouse onto the dashed rectangle.</li>
+<li sourcefile="Solutions/document-links.md" sourcestartlinenumber="110">Verify that the file appears in the list in the facts window.</li>
+</ol>
+<div class="NOTE" sourcefile="Solutions/document-links.md" sourcestartlinenumber="112">
+<h5>Note</h5>
+<p sourcefile="Solutions/document-links.md" sourcestartlinenumber="113">If there are multiple valid templates for the entity, the user is also prompted to select the desired publishing template under which the file should be saved and filed.</p>
+</div>
+<h2 id="connect-an-existing-file-to-another-entity-in-bc" sourcefile="Solutions/document-links.md" sourcestartlinenumber="115">Connect an existing file to another entity in BC</h2>
+<p sourcefile="Solutions/document-links.md" sourcestartlinenumber="116">Sometimes a single file relates to multiple records (e.g. a framework agreement with a holding company relates to multiple customers). In this case, it is advisable to upload the file to the first record and just create a link to the others.</p>
+<ol sourcefile="Solutions/document-links.md" sourcestartlinenumber="118">
+<li sourcefile="Solutions/document-links.md" sourcestartlinenumber="118">Choose the <img src="media/ui-search/search_small.png" sourcefile="Solutions/document-links.md" sourcestartlinenumber="118" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong sourcefile="Solutions/document-links.md" sourcestartlinenumber="118">Customers</strong> and then choose the related link.</li>
+<li sourcefile="Solutions/document-links.md" sourcestartlinenumber="119">Navigate to the record with the selected customer.</li>
+<li sourcefile="Solutions/document-links.md" sourcestartlinenumber="120">In the Document Links facts window, click the title of the window and run the Link Document action.</li>
+<li sourcefile="Solutions/document-links.md" sourcestartlinenumber="121">On the Document Library Items page, select the desired document and confirm OK.</li>
+<li sourcefile="Solutions/document-links.md" sourcestartlinenumber="122">Verify that the file appears in the list in the fact window.</li>
+</ol>
+<div class="NOTE" sourcefile="Solutions/document-links.md" sourcestartlinenumber="125">
+<h5>Note</h5>
+<p sourcefile="Solutions/document-links.md" sourcestartlinenumber="126">In the case of multiple valid templates for an entity, the user is also prompted to select the desired publishing template under which to register the file.</p>
+</div>
+<h2 id="unlinking-a-file-to-an-entity-in-bc" sourcefile="Solutions/document-links.md" sourcestartlinenumber="128">Unlinking a file to an entity in BC</h2>
+<p sourcefile="Solutions/document-links.md" sourcestartlinenumber="129">The following procedure only unlinks the file to the entity in BC, the file still remains stored in the library.</p>
+<ol sourcefile="Solutions/document-links.md" sourcestartlinenumber="131">
+<li sourcefile="Solutions/document-links.md" sourcestartlinenumber="131">Choose the <img src="media/ui-search/search_small.png" sourcefile="Solutions/document-links.md" sourcestartlinenumber="131" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong sourcefile="Solutions/document-links.md" sourcestartlinenumber="131">Customers</strong> and then choose the related link.</li>
+<li sourcefile="Solutions/document-links.md" sourcestartlinenumber="132">Navigate to the record with the selected customer.</li>
+<li sourcefile="Solutions/document-links.md" sourcestartlinenumber="133">In the Document Links facts window, navigate to the row with the attached file and run the <em sourcefile="Solutions/document-links.md" sourcestartlinenumber="133">Delete Row action</em>.</li>
+</ol>
+<h2 id="quick-view-of-the-attached-file" sourcefile="Solutions/document-links.md" sourcestartlinenumber="135">Quick view of the attached file</h2>
+<p sourcefile="Solutions/document-links.md" sourcestartlinenumber="136">Simply click on the file name in the Document Links facts window to view the file.</p>
+<h2 id="document-library-attributes" sourcefile="Solutions/document-links.md" sourcestartlinenumber="138">Document library attributes</h2>
+<p sourcefile="Solutions/document-links.md" sourcestartlinenumber="139">If you have set attributes on your library (see Setting Document Library attributes setup), it is most beneficial from the users' perspective to set them to auto-populate during file upload (see Autocompletion of Document library attribute setup). In this case, everything is done in the background, otherwise the user is presented with the Edit - Document Attributes page to fill in the value of the mandatory attribute.</p>
+<p sourcefile="Solutions/document-links.md" sourcestartlinenumber="141">To display optional attributes during upload, you must have at least one of the following set on the template:</p>
+<ul sourcefile="Solutions/document-links.md" sourcestartlinenumber="142">
+<li sourcefile="Solutions/document-links.md" sourcestartlinenumber="142">mandatory attribute without autocomplete</li>
+<li sourcefile="Solutions/document-links.md" sourcestartlinenumber="143">a Show Dialog field with the value &quot;Always&quot;</li>
+</ul>
+<h2 id="viz-také" sourcefile="Solutions/document-links.md" sourcestartlinenumber="147">Viz také</h2>
+<p sourcefile="Solutions/document-links.md" sourcestartlinenumber="149"><a href="document-links-setup.html" sourcefile="Solutions/document-links.md" sourcestartlinenumber="149">Document links - Setup</a><br>
+<a href="productivity-pack.html" sourcefile="Solutions/document-links.md" sourcestartlinenumber="150">Productivity Pack</a></p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/ARICOMA-D365BC/AC-IB-dynamics365smb-docs/blob/master/business-central/Solutions/document-links.md/#L1" class="contribution-link">Improve this document</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+           <span><a href="https://www.aricoma.com/docs/en-us/dynamics365/business-central/Solutions/solutions.html"><strong>ENGLISH</strong><strong>/</strong><a href="https://www.aricoma.com/docs/cs-cz/dynamics365/business-central/Solutions/solutions.html"><strong>CZECH</strong></a></a></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

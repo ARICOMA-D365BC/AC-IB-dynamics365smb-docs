@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>CZ Banking Extension </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="CZ Banking Extension ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../TOC.html">
+    <meta property="docfx:tocrel" content="TOC.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="png" src="../logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="cz-banking-extension" sourcefile="Solutions/cz-banking-extension.md" sourcestartlinenumber="10">CZ Banking Extension</h1>
+
+<blockquote sourcefile="Solutions/cz-banking-extension.md" sourcestartlinenumber="12">
+<p sourcefile="Solutions/cz-banking-extension.md" sourcestartlinenumber="12">Update 19.08.2025</p>
+</blockquote>
+<p sourcefile="Solutions/cz-banking-extension.md" sourcestartlinenumber="14">The module extends the functionality &quot;Banking documents for Czech Republic (extension)&quot;, which is part of the Czech local functionality of D365 Business Central (hereinafter referred to as BC).</p>
+<p sourcefile="Solutions/cz-banking-extension.md" sourcestartlinenumber="16">The main benefit of the Extended Banking module is to simplify the import and subsequent processing of bank statements, thereby reducing routine user activities.</p>
+<p sourcefile="Solutions/cz-banking-extension.md" sourcestartlinenumber="18">The advantage is the variability in the setting of the import of bank statements into Business Central and their subsequent processing, where you can individually set the mode for each bank account separately.</p>
+<p sourcefile="Solutions/cz-banking-extension.md" sourcestartlinenumber="20">The module allows to support users in processing statements in 2 levels: basic and advanced.</p>
+<h2 id="basic-variant" sourcefile="Solutions/cz-banking-extension.md" sourcestartlinenumber="22">Basic variant</h2>
+<h3 id="bank-statements" sourcefile="Solutions/cz-banking-extension.md" sourcestartlinenumber="24">Bank statements</h3>
+<p sourcefile="Solutions/cz-banking-extension.md" sourcestartlinenumber="26">You gain access to the functionality by purchasing a subscription for your first bank account. This option does not determine the number of accounts for which you will use it. However, the work is manual within the company and for a specific bank, and in the case of multiple accounts with one bank, it supports importing multiple statements at once.
+Also for this variant it is possible to purchase one of the offered add-ons for API communications with the bank.</p>
+<p sourcefile="Solutions/cz-banking-extension.md" sourcestartlinenumber="29"><img src="media/cz-banking-ext-schema-basic.png" sourcefile="Solutions/cz-banking-extension.md" sourcestartlinenumber="29" alt="Basic variant of the CZ Banking extension module"></p>
+<h3 id="payment-orders" sourcefile="Solutions/cz-banking-extension.md" sourcestartlinenumber="31">Payment orders</h3>
+<p sourcefile="Solutions/cz-banking-extension.md" sourcestartlinenumber="33">In the basic version, the standard Export function on the Issued Payment Order page is used. In the case of a configured API, the statement is sent without downloading the file to the client computer.</p>
+<h2 id="advanced-variant" sourcefile="Solutions/cz-banking-extension.md" sourcestartlinenumber="35">Advanced variant</h2>
+<h3 id="bank-statements-1" sourcefile="Solutions/cz-banking-extension.md" sourcestartlinenumber="37">Bank statements</h3>
+<p sourcefile="Solutions/cz-banking-extension.md" sourcestartlinenumber="39">You can access the full automation functionality (except for the final posting of the Payment Journal) by purchasing a subscription for multiple bank accounts.
+The advanced option provides the ability to automate all steps:</p>
+<ul sourcefile="Solutions/cz-banking-extension.md" sourcestartlinenumber="42">
+<li sourcefile="Solutions/cz-banking-extension.md" sourcestartlinenumber="42">Uploading bank statements (using methods without manual input, typically API or other custom developed methods)</li>
+<li sourcefile="Solutions/cz-banking-extension.md" sourcestartlinenumber="43">triggering bank statement imports across companies</li>
+<li sourcefile="Solutions/cz-banking-extension.md" sourcestartlinenumber="44">automating statement processing through the option to create entries in the Payment Journal (including matching suggestions) up to journal posting.</li>
+</ul>
+<p sourcefile="Solutions/cz-banking-extension.md" sourcestartlinenumber="46"><img src="media/cz-banking-ext-schema-advanced.png" sourcefile="Solutions/cz-banking-extension.md" sourcestartlinenumber="46" alt="Advanced variant of the CZ Banking extension module"></p>
+<h3 id="payment-orders-1" sourcefile="Solutions/cz-banking-extension.md" sourcestartlinenumber="48">Payment orders</h3>
+<p sourcefile="Solutions/cz-banking-extension.md" sourcestartlinenumber="50">As part of the development of the module, support for automating the sending of Issued Payment Orders across companies and bank accounts will be completed during 2026.</p>
+<h2 id="use-cases" sourcefile="Solutions/cz-banking-extension.md" sourcestartlinenumber="52">Use cases</h2>
+<p sourcefile="Solutions/cz-banking-extension.md" sourcestartlinenumber="54">The following chapters describe the most common scenarios for using the functionality to import statements and export payment orders.
+The example scenarios describe the import of statements in .gpc format, see the section Bank statement and payment order formats.</p>
+<h3 id="basic---import-and-processing-of-one-statement" sourcefile="Solutions/cz-banking-extension.md" sourcestartlinenumber="57">Basic - Import and processing of one statement</h3>
+<p sourcefile="Solutions/cz-banking-extension.md" sourcestartlinenumber="59">In this case, this is standard Business Central functionality. The user opens a new Bank Statement tab and starts the &quot;Import Bank Statement&quot; action.
+After importing, the user uses the Issue and Post function to post it.</p>
+<div class="NOTE" sourcefile="Solutions/cz-banking-extension.md" sourcestartlinenumber="61">
+<h5>Note</h5>
+<p sourcefile="Solutions/cz-banking-extension.md" sourcestartlinenumber="62">For a detailed description of the functionality and settings see <a href="https://learn.microsoft.com/en-us/dynamics365/business-central/localfunctionality/czech/bank-feature?source=recommendations#bank-statement-and-payment-orders" sourcefile="Solutions/cz-banking-extension.md" sourcestartlinenumber="62">CZ Bank Statements and Payment Orders</a>.</p>
+</div>
+<h3 id="basic---import-and-processing-of-bulk-statement" sourcefile="Solutions/cz-banking-extension.md" sourcestartlinenumber="64">Basic - Import and processing of bulk statement</h3>
+<p sourcefile="Solutions/cz-banking-extension.md" sourcestartlinenumber="66">This is a situation where one bank statement file contains multiple bank statements for one or more bank accounts.
+For functionality settings, see. Settings for batch import - bulk statement and .zip, Supporting settings for BV import, Supporting settings for BV processing</p>
+<ol sourcefile="Solutions/cz-banking-extension.md" sourcestartlinenumber="69">
+<li sourcefile="Solutions/cz-banking-extension.md" sourcestartlinenumber="69">Choose the <img src="media/ui-search/search_small.png" sourcefile="Solutions/cz-banking-extension.md" sourcestartlinenumber="69" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong sourcefile="Solutions/cz-banking-extension.md" sourcestartlinenumber="69">Import Bank Statements</strong> and then choose the related link.</li>
+<li sourcefile="Solutions/cz-banking-extension.md" sourcestartlinenumber="70">Start the <strong sourcefile="Solutions/cz-banking-extension.md" sourcestartlinenumber="70">Import...</strong> action.</li>
+<li sourcefile="Solutions/cz-banking-extension.md" sourcestartlinenumber="71">Drag the file or click to browse and select the file</li>
+<li sourcefile="Solutions/cz-banking-extension.md" sourcestartlinenumber="72">When you press OK, the Bank Statement Stack automatically opens. This is a temporary table for viewing imported statements and processing them immediately. Therefore, it is necessary to continue with the next step.</li>
+<li sourcefile="Solutions/cz-banking-extension.md" sourcestartlinenumber="73">Run the <strong sourcefile="Solutions/cz-banking-extension.md" sourcestartlinenumber="73">Processing</strong> action to create the bank statement up to the set processing level.</li>
+</ol>
+<div class="NOTE" sourcefile="Solutions/cz-banking-extension.md" sourcestartlinenumber="75">
+<h5>Note</h5>
+<p sourcefile="Solutions/cz-banking-extension.md" sourcestartlinenumber="76">When importing after selecting a file, you may receive the message &quot;Nothing to import. Do you want to view a report with bank statements?&quot; Clicking YES will display the files with error details.</p>
+</div>
+<div class="TIP" sourcefile="Solutions/cz-banking-extension.md" sourcestartlinenumber="77">
+<h5>Tip</h5>
+<p sourcefile="Solutions/cz-banking-extension.md" sourcestartlinenumber="78">Most common errors:</p>
+<ul sourcefile="Solutions/cz-banking-extension.md" sourcestartlinenumber="80">
+<li sourcefile="Solutions/cz-banking-extension.md" sourcestartlinenumber="80">The imported file already exists in Business Central --&gt; in this case the status field shows the processing status in BC.</li>
+<li sourcefile="Solutions/cz-banking-extension.md" sourcestartlinenumber="81">Bank account number was not recognized --&gt; in this case the field &quot;Bank account number&quot; is shown in red.</li>
+<li sourcefile="Solutions/cz-banking-extension.md" sourcestartlinenumber="82">Either the imported file does not belong to the imported company</li>
+<li sourcefile="Solutions/cz-banking-extension.md" sourcestartlinenumber="83">or the bank statement file contains an account number in a different format, usually a prefix and an account number without a hyphen.  In this case, make the settings according to Bank account number on the bank statement (optional)</li>
+</ul>
+</div>
+<h3 id="basic---import-and-processing-of-multiple-statement-files" sourcefile="Solutions/cz-banking-extension.md" sourcestartlinenumber="85">Basic - Import and processing of multiple statement files</h3>
+<p sourcefile="Solutions/cz-banking-extension.md" sourcestartlinenumber="87">This is typically a situation where files containing only one bank statement are used and multiple files need to be imported at once.
+The files need to be compressed into a single .zip file to be imported, with automatic extraction taking place.
+The procedure for importing a bank statement is the same as described in Importing and Processing a Bulk Bank Statement into a Single Company.</p>
+<div class="NOTE" sourcefile="Solutions/cz-banking-extension.md" sourcestartlinenumber="91">
+<h5>Note</h5>
+<p sourcefile="Solutions/cz-banking-extension.md" sourcestartlinenumber="92">Multiple files can be passed at once directly in the file selection dialog (from Business Central version 26 version).</p>
+</div>
+<h3 id="basic---export-payment-order" sourcefile="Solutions/cz-banking-extension.md" sourcestartlinenumber="94">Basic - Export Payment Order</h3>
+<p sourcefile="Solutions/cz-banking-extension.md" sourcestartlinenumber="96">Exporting payment orders is performed on the Issued Payment Order tab by running the Export action.</p>
+<div class="NOTE" sourcefile="Solutions/cz-banking-extension.md" sourcestartlinenumber="98">
+<h5>Note</h5>
+<p sourcefile="Solutions/cz-banking-extension.md" sourcestartlinenumber="99">If you purchase one of the <a href="cz-banking-extension-api-setup.html" sourcefile="Solutions/cz-banking-extension.md" sourcestartlinenumber="99">API extensions</a>, you can export the order directly to your bank's system.</p>
+</div>
+<h3 id="advanced---manual-import-to-multiple-companies" sourcefile="Solutions/cz-banking-extension.md" sourcestartlinenumber="101">Advanced - manual import to multiple companies</h3>
+<p sourcefile="Solutions/cz-banking-extension.md" sourcestartlinenumber="103">The scenario describes a situation where there are multiple companies in the Business Central environment and the import of bank statements will be done centrally for multiple companies at once from a local repository.
+It is imported into the Central bank statement stack table. The table records are common to all companies. Imported statements are stored here for further processing. After processing, it is advisable to delete them on an ongoing basis.</p>
+<div class="TIP" sourcefile="Solutions/cz-banking-extension.md" sourcestartlinenumber="105">
+<h5>Tip</h5>
+<p sourcefile="Solutions/cz-banking-extension.md" sourcestartlinenumber="106">In the Advanced CZ Banking Settings, turn on automatic purging.</p>
+</div>
+<ol sourcefile="Solutions/cz-banking-extension.md" sourcestartlinenumber="108">
+<li sourcefile="Solutions/cz-banking-extension.md" sourcestartlinenumber="108">Choose the <img src="media/ui-search/search_small.png" sourcefile="Solutions/cz-banking-extension.md" sourcestartlinenumber="108" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong sourcefile="Solutions/cz-banking-extension.md" sourcestartlinenumber="108">Central Bank Statement Stack</strong> and then choose the related link.</li>
+<li sourcefile="Solutions/cz-banking-extension.md" sourcestartlinenumber="109">Start the Import... action.</li>
+<li sourcefile="Solutions/cz-banking-extension.md" sourcestartlinenumber="110">Drag the file or click to browse and select the file</li>
+<li sourcefile="Solutions/cz-banking-extension.md" sourcestartlinenumber="111">When you press OK, the statements will automatically import into the Central Bank Statement Stack rows. Each statement will be filed on a separate line.</li>
+</ol>
+<div class="NOTE" sourcefile="Solutions/cz-banking-extension.md" sourcestartlinenumber="113">
+<h5>Note</h5>
+<p sourcefile="Solutions/cz-banking-extension.md" sourcestartlinenumber="114">If you import a .zip file, the functionality will only import supported formats from compressed files. If there are unsupported formats in the .zip, the import ignores them.
+Multiple files can be passed at once directly in the file selection dialog (from Business Central version 26 version).</p>
+</div>
+<h3 id="advanced---automated-import-to-multiple-companies" sourcefile="Solutions/cz-banking-extension.md" sourcestartlinenumber="117">Advanced - automated import to multiple companies</h3>
+<p sourcefile="Solutions/cz-banking-extension.md" sourcestartlinenumber="119">This is a situation where there are multiple companies in the Business Central environment and the import of bank statements will be done centrally for all companies automatically without user intervention.
+An example would be direct communication with the bank via API, where Business Central directly downloads statements or executed transactions and stores them in the Central Bank Statement Stack for further processing.</p>
+<div class="TIP" sourcefile="Solutions/cz-banking-extension.md" sourcestartlinenumber="121">
+<h5>Tip</h5>
+<p sourcefile="Solutions/cz-banking-extension.md" sourcestartlinenumber="122">See SettingsXXX for instructions on how to create your own import automation.</p>
+</div>
+<h3 id="advanced---manual-processing-of-statements" sourcefile="Solutions/cz-banking-extension.md" sourcestartlinenumber="124">Advanced - manual processing of statements</h3>
+<p sourcefile="Solutions/cz-banking-extension.md" sourcestartlinenumber="126">Using the example of manual processing, we will show the steps that need to be performed after the statement has been loaded in order to reach the posting of the journal.</p>
+<p sourcefile="Solutions/cz-banking-extension.md" sourcestartlinenumber="128">This method of processing may be useful in a situation with a large number of accountants, where each person is responsible for one or a few companies with multiple bank accounts. In this case, each user creates statements from one place in the companies or for the banks they are in charge of:</p>
+<ol sourcefile="Solutions/cz-banking-extension.md" sourcestartlinenumber="130">
+<li sourcefile="Solutions/cz-banking-extension.md" sourcestartlinenumber="130">Choose the <img src="media/ui-search/search_small.png" sourcefile="Solutions/cz-banking-extension.md" sourcestartlinenumber="130" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong sourcefile="Solutions/cz-banking-extension.md" sourcestartlinenumber="130">Central Bank Statement Stack</strong> and then choose the related link.</li>
+<li sourcefile="Solutions/cz-banking-extension.md" sourcestartlinenumber="131">Choose the company name in the <strong sourcefile="Solutions/cz-banking-extension.md" sourcestartlinenumber="131">Company name</strong> field.</li>
+<li sourcefile="Solutions/cz-banking-extension.md" sourcestartlinenumber="132">Enable the <strong sourcefile="Solutions/cz-banking-extension.md" sourcestartlinenumber="132">Company Bank Statements Only</strong> flag to display statements belonging to the selected company.</li>
+<li sourcefile="Solutions/cz-banking-extension.md" sourcestartlinenumber="133">Select the <em sourcefile="Solutions/cz-banking-extension.md" sourcestartlinenumber="133">Process</em> function and confirm the execution by selecting <em sourcefile="Solutions/cz-banking-extension.md" sourcestartlinenumber="133">Yes</em>. This will create Bank Statements in the respective company for the rows for which they have not yet been created - you can see the result in the <strong sourcefile="Solutions/cz-banking-extension.md" sourcestartlinenumber="133">Status</strong> and <strong sourcefile="Solutions/cz-banking-extension.md" sourcestartlinenumber="133">Bank Statement Number</strong> columns.</li>
+<li sourcefile="Solutions/cz-banking-extension.md" sourcestartlinenumber="134">Clicking on the value in the <strong sourcefile="Solutions/cz-banking-extension.md" sourcestartlinenumber="134">Status</strong> field (or directly on the <em sourcefile="Solutions/cz-banking-extension.md" sourcestartlinenumber="134">Bank Statement Number</em>*) in the row will open either a Bank Statement, Payment Journal or Issued Bank Statement depending on the value of the Status field. Perform the next steps to post the statement in the Payment Journal.</li>
+<li sourcefile="Solutions/cz-banking-extension.md" sourcestartlinenumber="135">Return to the Central Bank Statement Stack and continue with additional statements or another company.</li>
+</ol>
+<p sourcefile="Solutions/cz-banking-extension.md" sourcestartlinenumber="137"><img src="media/cz-banking-ext-central-stack.png" sourcefile="Solutions/cz-banking-extension.md" sourcestartlinenumber="137" alt="Central Bank Statement Stack"></p>
+<div class="TIP" sourcefile="Solutions/cz-banking-extension.md" sourcestartlinenumber="139">
+<h5>Tip</h5>
+<p sourcefile="Solutions/cz-banking-extension.md" sourcestartlinenumber="140">If a bank statement has not been created, or you are importing a new bank account, check the settings see <a href="cz-banking-extension-setup/#Advanced-automated-processing-of-statements" sourcefile="Solutions/cz-banking-extension.md" sourcestartlinenumber="140">Bank Statement Processing Settings</a></p>
+</div>
+<h3 id="advanced---automated-processing-of-statements" sourcefile="Solutions/cz-banking-extension.md" sourcestartlinenumber="142">Advanced - automated processing of statements</h3>
+<p sourcefile="Solutions/cz-banking-extension.md" sourcestartlinenumber="144">Automated processing of imported statements is increasingly used not only in companies with a smaller number of accountants serving multiple companies with many bank accounts. The time saving consists in processing centrally imported statements according to set parameters, i.e. transferring them to individual companies including processing to a defined level (e.g. up to the draft lines in the Payment Journal).</p>
+<p sourcefile="Solutions/cz-banking-extension.md" sourcestartlinenumber="146">The functionality knows which statements have already been imported and only fills in the missing ones (if the input file is not yet available or if the operator deletes the record in the central stack) at an interval of 14 days.</p>
+<p sourcefile="Solutions/cz-banking-extension.md" sourcestartlinenumber="148">Through the Central Bank Statement Stack page, the user has an overview of the processing status of individual companies and can use it as a so-called dispatcher's counter (from the line, he can open a record in another company and change the status, e.g. post the statement):</p>
+<ol sourcefile="Solutions/cz-banking-extension.md" sourcestartlinenumber="150">
+<li sourcefile="Solutions/cz-banking-extension.md" sourcestartlinenumber="150">Choose the <img src="media/ui-search/search_small.png" sourcefile="Solutions/cz-banking-extension.md" sourcestartlinenumber="150" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong sourcefile="Solutions/cz-banking-extension.md" sourcestartlinenumber="150">Central Bank Statement Stack</strong> and then choose the related link.</li>
+<li sourcefile="Solutions/cz-banking-extension.md" sourcestartlinenumber="151">Choose the company name in the <strong sourcefile="Solutions/cz-banking-extension.md" sourcestartlinenumber="151">Company name</strong> field.</li>
+<li sourcefile="Solutions/cz-banking-extension.md" sourcestartlinenumber="152">Sort the <strong sourcefile="Solutions/cz-banking-extension.md" sourcestartlinenumber="152">Statement Date</strong> column in descending order.</li>
+<li sourcefile="Solutions/cz-banking-extension.md" sourcestartlinenumber="153">Scroll to the row where the Status is not Posted. Click on the value in the Status field to open the record and perform the next steps to post the statement in the Payment Journal.</li>
+<li sourcefile="Solutions/cz-banking-extension.md" sourcestartlinenumber="154">Return to the Central Bank Statement Stack and continue through the other rows until all are in the Posted status.</li>
+</ol>
+<div class="NOTE" sourcefile="Solutions/cz-banking-extension.md" sourcestartlinenumber="156">
+<h5>Note</h5>
+<p sourcefile="Solutions/cz-banking-extension.md" sourcestartlinenumber="157">Verify settings for automation see <a href="cz-banking-extension-setup/#Support-settings-for-automatic-processing-of-statements" sourcefile="Solutions/cz-banking-extension.md" sourcestartlinenumber="157">Supporting settings for automatic processing</a>.</p>
+</div>
+<div class="IMPORTANT" sourcefile="Solutions/cz-banking-extension.md" sourcestartlinenumber="158">
+<h5>Important</h5>
+<p sourcefile="Solutions/cz-banking-extension.md" sourcestartlinenumber="159">To work with the Central Bank Statement Stack, the user must have a standard set of permissions to create and process bank statements in the companies where the statements are to be served by this tool.</p>
+</div>
+<h3 id="advanced--immediate-automated-posting-of-individual-payments" sourcefile="Solutions/cz-banking-extension.md" sourcestartlinenumber="161">Advanced – immediate automated posting of individual payments</h3>
+<p sourcefile="Solutions/cz-banking-extension.md" sourcestartlinenumber="163">By combining the import of individual transactions throughout the day with the setting of automatic import and posting of statements, you can achieve almost real-time updating of your account balance. This can significantly speed up deliveries to customers after payment of a deposit, for example.
+The prerequisite is the use of an API connector from a bank that supports this option.</p>
+<h3 id="advanced---automated-export-of-payment-orders" sourcefile="Solutions/cz-banking-extension.md" sourcestartlinenumber="166">Advanced - automated export of Payment Orders</h3>
+<p sourcefile="Solutions/cz-banking-extension.md" sourcestartlinenumber="168">The functionality will be added during 2026.</p>
+<p sourcefile="Solutions/cz-banking-extension.md" sourcestartlinenumber="170"><strong sourcefile="Solutions/cz-banking-extension.md" sourcestartlinenumber="170">See also</strong></p>
+<p sourcefile="Solutions/cz-banking-extension.md" sourcestartlinenumber="172"><a href="cz-banking-extension-setup.html" sourcefile="Solutions/cz-banking-extension.md" sourcestartlinenumber="172">CZ Banking Extension Setup</a><br>
+<a href="cz-banking-extension-api-setup.html" sourcefile="Solutions/cz-banking-extension.md" sourcestartlinenumber="173">CZ Banking Extension APIs Setup</a><br>
+<a href="finance-pack.html" sourcefile="Solutions/cz-banking-extension.md" sourcestartlinenumber="174">Financial Pack</a></p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/ARICOMA-D365BC/AC-IB-dynamics365smb-docs/blob/master/business-central/Solutions/cz-banking-extension.md/#L1" class="contribution-link">Improve this document</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+           <span><a href="https://www.aricoma.com/docs/en-us/dynamics365/business-central/Solutions/solutions.html"><strong>ENGLISH</strong><strong>/</strong><a href="https://www.aricoma.com/docs/cs-cz/dynamics365/business-central/Solutions/solutions.html"><strong>CZECH</strong></a></a></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
