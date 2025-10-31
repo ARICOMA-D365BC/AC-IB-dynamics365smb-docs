@@ -34,11 +34,15 @@ No more chaotic spreadsheets, lost papers or endless searching for assets. It br
     - **GPS location** is automatically saved, which helps to make the records more accurate.  
     - Thanks to map display, you can **navigate to the last known location of the asset**.  
 
+![Inventory journal - suggestion](media/fa-inventory-mobile-gps-small.png)
+
 **3. Completing the inventory in the office**  
     - The system processes requests for changes (e.g. new location code, cost center, employee).  
     - You can also perform **"desk inventory"** – e.g. where there is no access to the asset.  
     - The inventory is approved and posted.  
     - Outputs can be **printed** or **published to SharePoint** for further use.  
+
+![Inventory journal - suggestion](media/fa-inventory-pc.png)
 
 ### Why choose fixed assets inventory using QR codes
 
@@ -56,7 +60,7 @@ No more chaotic spreadsheets, lost papers or endless searching for assets. It br
 
 - On the **FA Inventory Journal** page, select Actions/Functions **Calculate Asset Inventory.**  
 
-![Deník inventury - návrh](media/fa-inventory-calculate.png)
+![Inventory journal - suggestion](media/fa-inventory-calculate.png)
 
 The **Calculate FA Inventory** action contains these fields:
 
@@ -70,7 +74,7 @@ The **Calculate FA Inventory** action contains these fields:
 - **Cost Center Code (Global Dimension 1)** – select the cost center where you want to inventory assets.
 - **Job Code (Global Dimension 2)** – select the job for which you want to inventory assets.
 
-![Deník inventury](media/fa-inventory-journal.png)
+![Inventory journal](media/fa-inventory-journal-dimensions.png)
 
 **Printing labels or inventory reports for manual processing (supplementary processing method).**
 
@@ -78,16 +82,16 @@ The **Calculate FA Inventory** action contains these fields:
 - Choose the ![Lightbulb that opens the Tell Me feature](media/ui-search/search_small.png "Tell me what you want to do") icon, enter **FA Inventory Journal** and then choose the related link.
 - On the **FA Inventory Journal** page, select Actions/Posting **FA Inventory List**. Printing a form for manual inventory processing (supplementary processing method).
 
-![Tisk štítků](media/fa-inventory-qr2.png)
+![Label printing](media/fa-inventory-qr.png)
 
 ### Fixed Assets Inventory – processing (on mobile device)
 
 - On your mobile device, choose the ![Lightbulb that opens the Tell Me feature](media/ui-search/search_small.png "Tell me what you want to do") icon or directly the link to **FA Inventory Journal** (mobile).
 - Through the icon in the bottom right corner, you switch to the list of actions above the inventory journal. Through the **Select Journal** action, select the correct inventory list **Batch Name**.
-- Using the **Scan** action, which you can find by clicking through the 3 dots in the bottom right corner of the application, you switch to a page where you then load individual QR codes of assets and can optionally add a **Note** to them. It is advisable to define **Notes** in **Standard Text Codes** so that the user does not have to type the entire text. If the asset is not in the inventory journal, the system suggests and automatically creates a new line. If the **Save GPS location automatically when scanning** option is checked in **FA Physical Inventory Setup**, the system automatically saves GPS coordinates when scanning.
+- Using the **Scan** action, you switch to a page where you then load individual QR codes of assets and can optionally add a **Note** to them. It is advisable to define **Notes** in **Standard Text Codes** so that the user does not have to type the entire text. If the asset is not in the inventory journal, the system suggests and automatically creates a new line. If the **Save GPS location automatically when scanning** option is checked in **FA Physical Inventory Setup**, the system automatically saves GPS coordinates when scanning.
 - Using the **Online Maps** action, it is possible to display the asset's location on a map or navigate to the asset according to saved **GPS coordinates.**
 
-![Deník inventury](media/fa-inventory-mobile4.png)
+![Inventory journal](media/fa-inventory-scan.png)
 
 ### Fixed Assets Inventory – manual processing (supplementary processing method)
 
@@ -129,8 +133,8 @@ The **Calculate FA Inventory** action contains these fields:
   - **GPS Latitude**
   - **GPS Longitude**
 
-![Asset card - online maps](media/fa-inventory-maps1.png)
-![Asset location on map](media/fa-inventory-maps2.png)
+![Asset card - online maps](media/fa-inventory-get-gps.png)
+![Asset location on map](media/fa-inventory-maps.png)
 
 ## Related information
 [Fixed Assets Inventory - Setup](fa-inventory-setup.md)  
