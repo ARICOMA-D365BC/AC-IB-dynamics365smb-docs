@@ -1,0 +1,239 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Insolvence register </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Insolvence register ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../TOC.html">
+    <meta property="docfx:tocrel" content="TOC.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="png" src="../logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="insolvency-register">Insolvency Register</h1>
+
+<blockquote>
+<p>Update: 30.11.2025</p>
+</blockquote>
+<p><strong>Insolvency Register</strong> is an extension for Microsoft Dynamics 365 Business Central that enables automatic verification of payment capability of customers and vendors based on data downloaded from the official Insolvency Register of the Czech Republic <a href="https://isir.justice.cz">https://isir.justice.cz</a>. <strong>Insolvency Register (ISIR)</strong> is a publicly available online database managed by the <strong>Ministry of Justice of the Czech Republic</strong>, which records information about insolvency proceedings of natural and legal persons.</p>
+<p>The database contains:</p>
+<ul>
+<li>Insolvency court decisions (proceeding commencement, bankruptcy, debt relief, etc.)</li>
+<li>Creditor claim registrations</li>
+<li>Insolvency administrator reports</li>
+<li>Debtor identification data (name, Company ID, date of birth)</li>
+<li>Proceeding file documentation in chronological order</li>
+</ul>
+<p>The register is important for:</p>
+<ul>
+<li><strong>Creditors</strong> – for claim registration</li>
+<li><strong>Debtors</strong> – for monitoring proceeding progress</li>
+<li><strong>Entrepreneurs</strong> – for verifying business partners</li>
+<li><strong>Public</strong> – for verifying financial reliability of persons and companies</li>
+</ul>
+<p>Records remain in the register <strong>3 years after proceeding completion</strong>.</p>
+<p><strong>The Insolvency Register application</strong> for Business Central makes this public data available directly in Business Central so that the company has this information directly integrated into business processes. When a company enters a new partner (customer, vendor, contact) with a record in ISIR into the system, or if an existing partner subsequently appears in ISIR, the system user is informed of this fact.</p>
+<h2 id="key-features">Key Features</h2>
+<ul>
+<li>Display of insolvency proceeding information on customer, vendor, contact cards and Company Information</li>
+<li>User warnings when working with sales or service documents</li>
+<li>Setting to prevent document posting</li>
+<li>Ability to disable insolvency testing for a specific partner (customer, vendor)</li>
+<li>Allow posting during insolvency for a specific document</li>
+<li>Complete information about ongoing and completed insolvency proceedings of partners directly in Business Central</li>
+</ul>
+<h3 id="cloud-version-and-server-architecture">Cloud Version and Server Architecture</h3>
+<p>For cloud versions of Business Central, a <strong>server application component</strong> is used, which provides:</p>
+<ul>
+<li>Centralized loading of all records from ISIR (Insolvency Register)</li>
+<li>API provision for queries from the IR client part</li>
+<li>Automatic data synchronization between server and client applications</li>
+</ul>
+<p>The server architecture eliminates the need for each Business Central instance to download complete data from ISIR, which significantly increases service performance and reliability.</p>
+<p>For <strong>On-Premises versions</strong> of Business Central, you can choose between two implementation methods:</p>
+<ul>
+<li><strong>Server variant</strong> - uses a centralized server for downloading data from ISIR, same as the cloud version. This variant reduces database size as only data of entities that are recorded in the given Business Central instance as customers, vendors, or contacts are downloaded.</li>
+<li><strong>Direct download</strong> - complete data is downloaded from ISIR directly to the database of the specific Business Central instance without using a central server. This approach is suitable for organizations that prefer full control over their data and do not use cloud services.</li>
+</ul>
+<h2 id="usage">Usage</h2>
+<h3 id="displaying-partner-insolvency-information">Displaying Partner Insolvency Information</h3>
+<ul>
+<li>Choose the <img src="media/ui-search/search_small.png" alt="Lightbulb that opens the Tell Me feature" title="Tell me what you want to do"> icon, enter <strong>Customers</strong>, then choose the related link.</li>
+<li>Navigate to a customer record with an entry in the insolvency register.</li>
+<li>Choose <strong>Related &gt; Customer &gt; Insolvency Register</strong>. Alternatively, you can use the Insolvency Register FactBox, which displays the number of open Insolvency Register records.</li>
+<li>On the Insolvency Register Cases List page, you can see a list of open and closed customer insolvencies.</li>
+</ul>
+<p><img src="media/ir-customer-card2.png" alt="ir-customer-card2.png"></p>
+<p><img src="media/ir-customer-ir-events.png" alt="ir-customer-ir-events.png"></p>
+<p>The same information is also available on <strong>Vendor</strong> and <strong>Contact</strong> cards. Information about insolvencies against your own organization is available on the <strong>Company Information</strong> page.</p>
+<h4 id="insolvency-register-case-card">Insolvency Register Case Card</h4>
+<p><strong>The Insolvency Register Case Card</strong> provides a detailed view of a specific insolvency proceeding and serves to:</p>
+<ul>
+<li><strong>Display complete information</strong> about the insolvency proceeding including file number, commencement date, proceeding status, and proceeding type</li>
+<li><strong>Track progress</strong> of the insolvency proceeding with a chronological overview of all significant events</li>
+<li><strong>Identify the subject</strong> - displays complete information about the debtor (name, Company ID, address, legal form)</li>
+<li><strong>Overview of documents</strong> attached to the insolvency proceeding</li>
+<li><strong>Monitor changes</strong> in proceeding status over time</li>
+<li><strong>Access detailed information</strong> about the insolvency administrator and creditors</li>
+</ul>
+<p>The card is automatically updated when downloading new data from ISIR and provides users with current information about the development of insolvency proceedings of their business partners.</p>
+<p><img src="media/ir-event-card.png" alt="Insolvency Register Card"></p>
+<p>From the Insolvency Register Case Card, it is also possible to display detailed information about the <strong>subject</strong> of the insolvency proceeding by clicking on <strong>Persons</strong>. For the subject, it is also possible to display address information by clicking on <strong>Addresses</strong>.</p>
+<p><img src="media/ir-event-card-person.png" alt="Insolvency Register Subject"></p>
+<h3 id="sales-document-notifications">Sales Document Notifications</h3>
+<p>If <strong>Insolvency Check in Sales</strong> is enabled in <strong>Insolvency Register Setup</strong>, then when inserting a customer on a sales document (quote, order, invoice), if the customer has any record in the insolvency register, a <strong>notification</strong> will be displayed. From it, the user can directly open the <strong>Insolvency Register Cases List</strong>.</p>
+<h3 id="sales-document-posting-check">Sales Document Posting Check</h3>
+<p>When running the Post action on a sales order or invoice, according to the insolvency check in sales settings, a check is performed for <strong>open cases in the insolvency register</strong>. If such a record is found, the user is not allowed to perform posting. In the Insolvency Register Setup, you can specify the <strong>Block Sales Posting on Insolvency</strong> option: <strong>Shipment, Invoice, All, and blank (does not block posting)</strong>.</p>
+<h3 id="disabling-customer-insolvency-check">Disabling Customer Insolvency Check</h3>
+<p>A user with special permission can disable insolvency register testing for a customer on the customer card. A side effect is that insolvency records are not displayed for this customer (e.g., the Insolvency Register action on the customer card).</p>
+<ul>
+<li>Choose the <img src="media/ui-search/search_small.png" alt="Lightbulb that opens the Tell Me feature" title="Tell me what you want to do"> icon, enter <strong>Customers</strong>, then choose the related link.</li>
+<li>Navigate to a customer with a record in the insolvency register.</li>
+<li>On the <strong>Invoicing</strong> tab, enable <strong>Disable Insolvency Test</strong>.</li>
+<li>Verify that the Insolvency Register action displays an empty list. For immediate effect, you need to refresh the page, e.g., with the F5 key.</li>
+</ul>
+<p><img src="media/ir-customer-card1.png" alt="ir-customer-card1.png"></p>
+<p>The same setting is also available on the vendor card (Invoicing tab) and Contact (Foreign Trade tab). In these cases, records about these companies are not displayed in overviews and reports for insolvency register checking.</p>
+<h2 id="one-time-posting-check-disable-on-sales-and-service-documents">One-time Posting Check Disable on Sales and Service Documents</h2>
+<p>A user with special permission can disable posting restrictions based on the existence of an open insolvency proceeding on a sales document card (or service document). Then the document can be posted.</p>
+<ul>
+<li>Choose the <img src="media/ui-search/search_small.png" alt="Lightbulb that opens the Tell Me feature" title="Tell me what you want to do"> icon, enter <strong>Sales Orders</strong>, then choose the related link.</li>
+<li>Navigate to an order record for a customer with open insolvency and run the Edit action.</li>
+<li>On the <em>Shipping and Billing</em> tab, enable <strong>Allow Posting on Insolvency</strong>.</li>
+<li>Run the Post action.</li>
+<li>Close the page.</li>
+</ul>
+<p><img src="media/ir-sales-order-allow-posting.png" alt="Allow Posting on Insolvency"></p>
+<h3 id="insolvency-register-check-report">Insolvency Register Check Report</h3>
+<p>The report automatically alerts about business partner (contact/customer/vendor) entry into insolvency proceedings or about filing an insolvency proceeding proposal against your own company.</p>
+<ul>
+<li>Choose the <img src="media/ui-search/search_small.png" alt="Lightbulb that opens the Tell Me feature" title="Tell me what you want to do"> icon, enter <strong>Insolvency Register Check</strong>, then choose the related link.</li>
+<li>On the Insolvency Register Check page, define the execution parameters in options:
+<ul>
+<li>In the <strong>Back by</strong> field, enter for example &quot;5D&quot; to have the system search for records from the last 5 days</li>
+<li>Use other flags to define whether information about your own company, contacts, customers, or vendors should or should not be printed.</li>
+<li>Run the report with the <strong>Preview</strong> button.</li>
+</ul>
+</li>
+</ul>
+<p><img src="media/ir-check-report-setup.png" alt="Insolvency Register Check Report - setup"></p>
+<p><img src="media/ir-check-report.png" alt="Insolvency Register Check Report"></p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>You can set up regular user notifications to run the report and resolve issues. This can be set up through <strong><a href="https://learn.microsoft.com/en-us/dynamics365/business-central/across-user-tasks">User Tasks</a></strong>. Another option is to set up <strong>Report Inbox Schedule</strong>.</p>
+</div>
+<h2 id="insolvency-sales-documents-report">Insolvency Sales Documents Report</h2>
+<p>The report automatically alerts about the existence of documents in the system where the customer has a record in the insolvency register. These are the following documents and entries:</p>
+<ul>
+<li>Sales orders, invoices, quotes</li>
+<li>Reminders, Finance charge memos</li>
+<li>Open customer ledger entries of all types (invoice, payment, credit memo, reminder, finance charge memo)</li>
+</ul>
+<p>Running the Insolvency Sales Documents report:</p>
+<ul>
+<li>Choose the <img src="media/ui-search/search_small.png" alt="Lightbulb that opens the Tell Me feature" title="Tell me what you want to do"> icon, enter <strong>Insolvency Sales Documents</strong>, then choose the related link.</li>
+<li>On the Insolvency Sales Documents page, define in options whether the report should include closed insolvency proceedings.</li>
+<li>Run the report with the <strong>Preview</strong> button.</li>
+</ul>
+<p><img src="media/ir-sales-doc-report-setup.png" alt="Insolvency Sales Documents report - setup"></p>
+<p><img src="media/ir-sales-doc-report.png" alt="Insolvency Sales Documents report"></p>
+<h2 id="related-information">Related Information</h2>
+<p><a href="insolvence-register-setup.html">Setup - Insolvency Register</a><br>
+<a href="solutions.html">ARICOMA Solutions</a></p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/ARICOMA-D365BC/AC-IB-dynamics365smb-docs/blob/master/business-central/Solutions/insolvence-register.md/#L1" class="contribution-link">Improve this document</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+           <span><a href="https://www.aricoma.com/docs/en-us/dynamics365/business-central/Solutions/solutions.html"><strong>ENGLISH</strong><strong>/</strong><a href="https://www.aricoma.com/docs/cs-cz/dynamics365/business-central/Solutions/solutions.html"><strong>CZECH</strong></a></a></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
