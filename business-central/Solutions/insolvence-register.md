@@ -71,7 +71,7 @@ For **On-Premises versions** of Business Central, you can choose between two imp
 
 The same information is also available on **Vendor** and **Contact** cards. Information about insolvencies against your own organization is available on the **Company Information** page.
 
-#### Insolvency Register Case Card
+### Insolvency Register Case Card
 
 **The Insolvency Register Case Card** provides a detailed view of a specific insolvency proceeding and serves to:
 
@@ -111,7 +111,7 @@ A user with special permission can disable insolvency register testing for a cus
 
 The same setting is also available on the vendor card (Invoicing tab) and Contact (Foreign Trade tab). In these cases, records about these companies are not displayed in overviews and reports for insolvency register checking.
 
-## One-time Posting Check Disable on Sales and Service Documents
+### One-time Posting Check Disable on Sales and Service Documents
 
 A user with special permission can disable posting restrictions based on the existence of an open insolvency proceeding on a sales document card (or service document). Then the document can be posted.
 
@@ -140,7 +140,7 @@ The report automatically alerts about business partner (contact/customer/vendor)
 > [!NOTE]
 > You can set up regular user notifications to run the report and resolve issues. This can be set up through **[User Tasks](https://learn.microsoft.com/en-us/dynamics365/business-central/across-user-tasks)**. Another option is to set up **Report Inbox Schedule**.
 
-## Insolvency Sales Documents Report
+### Insolvency Sales Documents Report
 
 The report automatically alerts about the existence of documents in the system where the customer has a record in the insolvency register. These are the following documents and entries:
 
