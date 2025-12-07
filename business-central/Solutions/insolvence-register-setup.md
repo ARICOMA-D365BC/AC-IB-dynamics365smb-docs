@@ -15,7 +15,7 @@ First, you need to properly configure the Insolvency Register module and set up 
 
 ## Server Communication Setup (Modern)
 
-The new communication method is available for both **Online** and **On-premises** versions of Business Central. To set it up, you need to contact **ARICOMA** **(bc_sales@aricoma.com)** to obtain an access key.
+The new communication method is available for both **Online** and **On-premises** versions of Business Central. To set it up, you need to contact **ARICOMA (<bc_sales@aricoma.com>)** to obtain an access key.
 
 1. Choose the ![Lightbulb that opens the Tell Me feature](media/ui-search/search_small.png "Tell me what you want to do") icon, enter **Insolvency Register Setup**, then choose the related link.
 2. Verify that on the **Data Source** tab, the **Use Data from Remote Server** field is enabled.
