@@ -9,11 +9,13 @@ ms.search.keywords: Aricoma, Finance, Insolvency register
 ---
 # Insolvency Register Setup
 
+> Update: 30.11.2025
+
 First, you need to properly configure the Insolvency Register module and set up the way data from the Insolvency Register is downloaded to your Business Central database.
 
 ## Server Communication Setup (Modern)
 
-The new communication method is available for both **Online** and **On-premises** versions of Business Central. To set it up, you need to contact **ARICOMA (bc_sales@aricoma.com)** to obtain an access key.
+The new communication method is available for both **Online** and **On-premises** versions of Business Central. To set it up, you need to contact **ARICOMA** **(bc_sales@aricoma.com)** to obtain an access key.
 
 1. Choose the ![Lightbulb that opens the Tell Me feature](media/ui-search/search_small.png "Tell me what you want to do") icon, enter **Insolvency Register Setup**, then choose the related link.
 2. Verify that on the **Data Source** tab, the **Use Data from Remote Server** field is enabled.
@@ -28,7 +30,8 @@ The new communication method is available for both **Online** and **On-premises*
 
 ![Insolvency Register Setup](media/ir-setup.png)
 
-**IR Server Communication Schema**
+**IR Server Communication Schema**  
+
 ![IR Server Communication](media/ir-communication.png)
 
 Each of the periodic tasks creates a record in **Job Queue Entries** where you can monitor their status.

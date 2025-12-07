@@ -9,6 +9,8 @@ ms.search.keywords: Aricoma, Finance, Insolvency register
 ---
 # Insolvency Register
 
+> Update: 30.11.2025
+
 **Insolvency Register** is an extension for Microsoft Dynamics 365 Business Central that enables automatic verification of payment capability of customers and vendors based on data downloaded from the official Insolvency Register of the Czech Republic https://isir.justice.cz. **Insolvency Register (ISIR)** is a publicly available online database managed by the **Ministry of Justice of the Czech Republic**, which records information about insolvency proceedings of natural and legal persons.
 
 The database contains:
