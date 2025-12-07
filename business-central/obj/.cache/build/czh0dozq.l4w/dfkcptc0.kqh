@@ -1,0 +1,149 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>ARICOMA SOLUTIONS - SK Legistaltive Pack| Microsoft Docs </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="ARICOMA SOLUTIONS - SK Legistaltive Pack| Microsoft Docs ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../TOC.html">
+    <meta property="docfx:tocrel" content="TOC.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="png" src="../logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="intrastat-statement">Intrastat statement</h1>
+
+<blockquote>
+<p>Update 17.10.2025</p>
+</blockquote>
+<p>For the purpose of generating the Intrastat report, standard functionality is used.</p>
+<p>The difference from the standard functionality is in the structure of the file with the extension .xml generated for the purposes of Slovak reporting.</p>
+<p>To activate Slovak functionality, these settings are needed, use the following procedure:</p>
+<h2 id="general-ledger-setup">General Ledger Setup</h2>
+<ol>
+<li>Choose the <img src="media/ui-search/search_small.png" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong>General Ledger Setup</strong> and then choose the related link.</li>
+<li>On the <strong>General Ledger Setup</strong> page you must select<strong>SK</strong> in <strong>Legislation</strong>field.</li>
+<li>Confirm with the <strong>OK</strong> button.</li>
+</ol>
+<div class="IMPORTANT">
+<h5>Important</h5>
+<p>From version 25 onwards, it is necessary to have the basic functionality set up in <em>Intrastat reporting settings</em> (see <a href="https://learn.microsoft.com/en-us/dynamics365/business-central/finance-how-setup-report-intrastat">documentation</a>).</p>
+</div>
+<h2 id="intrastat-file-mapping">Intrastat file mapping</h2>
+<p>The settings are used to map fields in the application to nodes .xml. This table is part of the supplied configuration package.</p>
+<ol>
+<li>Choose the <img src="media/ui-search/search_small.png" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong>Intrastat File Mapping</strong> and then choose the related link.</li>
+<li>On the <strong>Intrastat File Mapping</strong> review or complete the settings.</li>
+<li>Confirm with the <strong>OK</strong> button.</li>
+</ol>
+<p><img src="media/sk-intrastat.png" alt="File Mapping"></p>
+<div class="TIP">
+<h5>Tip</h5>
+<p>You can find the complete mapping in the Configuration Package, which you can obtain by running the Assisted Setup <em>Set Up SK Localization</em> (either import the latest version using the <em>AssistEdit</em> button in the existing company or perform a complete import of the sample parameterization in an empty company using the <em>Apply package</em> action).</p>
+</div>
+<h2 id="export-a-file-for-intrastat">Export a file for Intrastat</h2>
+<ol>
+<li>Choose the <img src="media/ui-search/search_small.png" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong>Intrastat Journals</strong> and then choose the related link.</li>
+<li>Insert journal lines with the <strong>Suggest Lines...</strong> feature.</li>
+<li>Export using the function <strong>Export</strong>, it is necessary to fill in <em>Contact person</em>, <em>Type</em>, <em>Serial number of the statement</em></li>
+<li>Confirm with the <strong>OK</strong> button.</li>
+</ol>
+<h2 id="see-also">See also</h2>
+<p><a href="solutions.html">ARICOMA Solution</a><br>
+<a href="sk-legislative-pack.html">SK Legislative Pack</a></p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/ARICOMA-D365BC/AC-IB-dynamics365smb-docs/blob/master/business-central/Solutions/sk-intrastat.md/#L1" class="contribution-link">Improve this document</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+           <span><a href="https://www.aricoma.com/docs/en-us/dynamics365/business-central/Solutions/solutions.html"><strong>ENGLISH</strong><strong>/</strong><a href="https://www.aricoma.com/docs/cs-cz/dynamics365/business-central/Solutions/solutions.html"><strong>CZECH</strong></a></a></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

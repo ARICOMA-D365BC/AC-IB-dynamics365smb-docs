@@ -1,0 +1,190 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Production tools setup | Microsoft Docs </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Production tools setup | Microsoft Docs ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../TOC.html">
+    <meta property="docfx:tocrel" content="TOC.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="png" src="../logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="production-tools-setup">Production Tools Setup</h1>
+
+<blockquote>
+<p>Updated: 01.12.2024</p>
+</blockquote>
+<p>To use the module to its full potential, it must be configured according to the needs of the specific company. The individual configuration options are described below.</p>
+<h2 id="production-tools-journal-templates">Production Tools Journal Templates</h2>
+<ol>
+<li>Choose the <img src="media/ui-search/search_small.png" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong>Production Tools Journal Templates</strong> in the search field, then select the relevant link.</li>
+<li>The <strong>Production Tools Journal Templates</strong> page will open.</li>
+<li>Click the <strong>+ New</strong> button to create a <strong>New template</strong>.</li>
+<li>In the <strong>Template Name</strong> field, enter a name that best describes the purpose of this template.</li>
+<li>In the <strong>Default item type</strong> field, select the item type, for example, <strong>Loan</strong>, if you want the template to be used only for recording loans.</li>
+<li>In the <strong>Document number series</strong> field, enter or select the number series that will be used to record movements.</li>
+<li>Save the template by clicking the <strong>Save</strong> button</li>
+</ol>
+<p><img src="media/production-tools-tool-journal-template.png" alt="Tool and equipment records - template settings"></p>
+<div class="IMPORTANT">
+<h5>Important</h5>
+<p><strong>It is necessary to create at least one tool log template in order to enter tool movements</strong>.</p>
+</div>
+<div class="TIP">
+<h5>Tip</h5>
+<p>It is possible to have one template for all types of movements, i.e., a template where you do not enter any <strong>Default Item Type</strong> when creating it.</p>
+</div>
+<h2 id="adding-a-number-series">Adding a Number series</h2>
+<ol>
+<li>Click on the <strong>Number series</strong> field.</li>
+<li>The <strong>Number series</strong> page will open.</li>
+<li>Click on the <strong>+ New</strong> button to create a new number series.</li>
+<li>In the <strong>Code</strong> field, enter a unique identifier for the number series.</li>
+<li>In the <strong>Description</strong> field, enter a brief description explaining the purpose of the number series.</li>
+<li>In the <strong>Start Number</strong> and <strong>End Number</strong> fields, enter the start and end numbers of the series.</li>
+<li>Check the <strong>Default numbers</strong> box if you want the system to automatically generate numbers in this number series.</li>
+<li>Save the number series by clicking the <strong>Save</strong> button.</li>
+</ol>
+<p><img src="media/production-tools-add-no.series.png" alt="Tool and equipment records - adding a number series"></p>
+<h2 id="setting-tool-record-item-types">Setting tool record item types</h2>
+<p>Each log template can have mandatory data checks defined. Follow these steps:</p>
+<ol>
+<li>Choose the <img src="media/ui-search/search_small.png" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong>Tool record item type settings</strong> in the search field, then select the related link.</li>
+<li>The <strong>Tool record item type settings</strong> page will open.</li>
+<li>Click the <strong>+ New</strong> button to create a new row for the given item type.</li>
+<li>Select the item type. The following options are available:
+<ul>
+<li><strong>Receipt</strong> – entry of the recorded quantity of the tool.</li>
+<li><strong>Issue</strong> – removal of the tool from the inventory.</li>
+<li><strong>Loan</strong> – recording of tool loan.</li>
+<li><strong>Return</strong> – recording of the return of a loaned tool.</li>
+</ul>
+</li>
+<li>For each item type, set the mandatory information that must be filled in the tool log.</li>
+</ol>
+<p><img src="media/production-tools-tool-entry-type-setup.png" alt="Tool and equipment records - item type settings"></p>
+<div class="NOTE">
+<h5>Note</h5>
+<p><strong>Mandatory data helps ensure the accuracy of log entries and proper tool records</strong>.</p>
+</div>
+<h2 id="damage-type-settings">Damage Type Settings</h2>
+<p>Damage type settings are used to distinguish between damaged items in the inventory. This information can be used for possible compensation by employees who return damaged tools, or for later statistical evaluation.</p>
+<ol>
+<li>Choose the <img src="media/ui-search/search_small.png" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong>Damage types</strong> in the search field, then select the relevant link.</li>
+<li>The <strong>Damage types</strong> page will open.</li>
+<li>To add a new damage type, click the <strong>+ New</strong> button.</li>
+<li>Fill in the following fields:
+<ul>
+<li><strong>Code</strong> – a unique code for the damage type.</li>
+<li><strong>Description</strong> – a verbal description of the damage.</li>
+<li><strong>EAN</strong> – a barcode that can be used when working with barcode readers.</li>
+</ul>
+</li>
+<li>Fill in the fields as needed and save the settings.</li>
+</ol>
+<p><img src="media/production-tools-damage-types.png" alt="Tool and Equipment Records - Damage Type Settings"></p>
+<div class="NOTE">
+<h5>Note</h5>
+<p><strong>Correctly defining damage types allows for more accurate records and better analysis of tool condition in the future.</strong>.</p>
+</div>
+<p><strong>See also</strong></p>
+<p><a href="production-tools.html">Production Tools</a><br>
+<a href="productivity-pack.html">Productivity Pack</a></p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/ARICOMA-D365BC/AC-IB-dynamics365smb-docs/blob/master/business-central/Solutions/production-tools-setup.md/#L1" class="contribution-link">Improve this document</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+           <span><a href="https://www.aricoma.com/docs/en-us/dynamics365/business-central/Solutions/solutions.html"><strong>ENGLISH</strong><strong>/</strong><a href="https://www.aricoma.com/docs/cs-cz/dynamics365/business-central/Solutions/solutions.html"><strong>CZECH</strong></a></a></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
