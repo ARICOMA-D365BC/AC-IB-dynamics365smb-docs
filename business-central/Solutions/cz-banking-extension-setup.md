@@ -9,7 +9,7 @@ ms.search.keywords: banking, finance, czech, API
 ---
 # CZ Banking Extension Setup
 
-> Update 30.05.2025
+> Update 10.01.2026
 
 The CZ Banking Extension module needs to be activated, in the production environment the user will be asked to activate the subscription (see [documentation on monetization](https://www.aricoma.com/docs/en-us/dynamics365/business-central/ProductivityPack/monetization.html)).
 
@@ -21,13 +21,12 @@ The CZ Banking Extension module needs to be activated, in the production environ
 
 ## Bank statement and payment order formats
 
-The Extended CZ Banking module is designed primarily to optimise work with statements and orders, but it also includes a universal import of bank statements in ABO format (\*.gpc), which is supported in its basic form by most banks in the Czech Republic. It also allows you to export payment orders in ABO format (\*.kpc).
+The Extended CZ Banking module is designed primarily to optimise work with statements and orders, but it also includes a universal import of bank statements in ABO format (\*.gpc), which is supported in its basic form by most banks in the Czech Republic. It also allows you to export payment orders in ABO format (\*.kpc). The module now also supports the SEPA format (\*.xml).
 
 > [!TIP]
 > Use one of the add-ons to this addon for API communication with your bank.
-
-Processing Codeunit ID
-Processing Codeunit ID
+> [!TIP]
+> For Slovak customers, it may be useful to use the SEPA format with payment cumulation on payment orders.
 
 ### Settings for manual batch import of statements
 
@@ -181,6 +180,30 @@ When "Issuing" a bank statement, the function checks if the statement turnover m
 
 1. Choose the ![Lightbulb that opens the Tell Me feature.](media/ui-search/search_small.png "Tell me what you want to do") icon, enter **Bank Accounts** and then choose the related link.
 2. Activate the **Check Bank Statement Turnover** field.
+
+## Payment cumulation settings
+
+### Vendor settings for payment cumulation
+
+1. Choose the ![Lightbulb that opens the Tell Me feature.](media/ui-search/search_small.png "Tell me what you want to do") icon, enter **Vendors** and then choose the related link.
+2. Open the vendor card for which you want to allow payment cumulation.
+3. On the Vendor Card page, on the Payments tab, set **Cumulate Payments**.
+
+> [!NOTE]
+> The same setup you can do on the Customer Card page.
+
+### Setting the cumulation parameters on the bank account
+
+1. Choose the ![Lightbulb that opens the Tell Me feature.](media/ui-search/search_small.png "Tell me what you want to do") icon, enter **Banks** and then choose the related link.
+2. Open the bank account tab for which you want to set up payment cumulation.
+3. On the Bank Account Card page, in the CZ Banking Extension tab, set the cumulation of payments as required:
+
+    - Field **Cumulate payment orders lines** – enables / disables cumulation
+    - Field **Cumulative Variable Symbol Nos.** – if it is not accumulated according to VS, KS or SS, then the number according to the number series set here is added to the VS field (SS and KS are taken from the first merged line of the command)
+    - Field **Cumulative Line Description** – description for the created cumulative line
+    - Field **Group Per Variable Symbol** – cumulation after VS
+    - Field **Group Per Constant Symbol** – accumulates for KS
+    - Field **Group Per Specific Symbol** – accumulates after SS
 
 ## Custom modifications
 

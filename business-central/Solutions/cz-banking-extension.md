@@ -9,7 +9,7 @@ ms.search.keywords: banking, finance, czech, API
 ---
 # CZ Banking Extension
 
-> Update 19.08.2025
+> Update 10.01.2026
 
 The module extends the functionality "Banking documents for Czech Republic (extension)", which is part of the Czech local functionality of D365 Business Central (hereinafter referred to as BC).
 
@@ -47,7 +47,9 @@ The advanced option provides the ability to automate all steps:
 
 ### Payment orders
 
-As part of the development of the module, support for automating the sending of Issued Payment Orders across companies and bank accounts will be completed during 2026.
+The functionality allows you to merge payment order lines, which is useful if you need to pay for multiple purchase documents in a single amount. It is cumulated according to the Account Number, SWIFT, IBAN, Currency and optionally according to VS, KS and SS. The system also includes a report for vendor notifications, including the option of automated sending (typically by email).
+
+As part of the module's development, we plan to finalize support for **automating** the sending of issued payment orders across companies and bank accounts at once during 2026.
 
 ## Use cases
 
@@ -155,7 +157,7 @@ Through the Central Bank Statement Stack page, the user has an overview of the p
 
 > [!NOTE]
 > Verify settings for automation see [Supporting settings for automatic processing](cz-banking-extension-setup/#Support-settings-for-automatic-processing-of-statements).
-> [!IMPORTANT]
+> [!CAUTION]
 > To work with the Central Bank Statement Stack, the user must have a standard set of permissions to create and process bank statements in the companies where the statements are to be served by this tool.
 
 ### Advanced – immediate automated posting of individual payments
@@ -163,9 +165,26 @@ Through the Central Bank Statement Stack page, the user has an overview of the p
 By combining the import of individual transactions throughout the day with the setting of automatic import and posting of statements, you can achieve almost real-time updating of your account balance. This can significantly speed up deliveries to customers after payment of a deposit, for example.
 The prerequisite is the use of an API connector from a bank that supports this option.
 
-### Advanced - automated export of Payment Orders
+### Advanced – export of payment orders with payment accumulation
 
-The functionality will be added during 2026.
+This feature combines payment lines for suppliers or customers who are allowed to accumulate payments according to the rules set up in their bank account. For more information, see Payment Accumulation Settings.
+
+1. Select the ![Light bulb icon, which opens the Tell me function](media/ui-search/search_small.png "Tell me what you want to do"), enter **Payment orders** and then choose the related link.
+2. Select the bank number with payment accumulation set up for which you want to create a payment order and confirm with **OK**.
+3. Start the *Propose payments...* action (alternatively, you can enter the order lines manually or use the Import... function).
+4. Fill in the **Last due date** and **Amount available**, or adjust other parameters.
+5. Click **OK** to start generating the payment proposal.
+6. You can still manually edit the created payment order (to verify the functionality of payment accumulation, check that you have multiple payments to the same supplier account with payment accumulation enabled in the lines).
+7. On the payment order, start the *Issue* function.
+8. Confirm the Issue selection with the **OK** button.
+9. Select **Yes** to confirm opening the Issued Payment Order tab.
+10. Select *Cumulative lines* to open the list of cumulative lines and verify that the result corresponds to the expected method of accumulation. If you want to change the result, change the settings and run the *Update Cumulative payments* action.
+11. To export the order, run the *Export payment order...* action.
+
+> [!NOTE]
+> If accumulation is not performed according to symbols, the merged lines will be created with a variable symbol from the number series, and SS and KS will be taken from the first merged line of the order. The lowest date of maturity from the merged lines will be used.
+> [!IMPORTANT]
+> The Issue function on the bank statement checks each line to see if it was created by accumulation. If so, it resets the amount to zero and adds the original lines from the order to it.
 
 **See also**  
 
