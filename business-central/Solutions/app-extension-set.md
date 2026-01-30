@@ -370,13 +370,26 @@ For more information, visit the [Setup](app-extension-set-setup#number-series-li
 
 In practice, there is often a need to address the rounding of invoices differently according to the context of the method of payment, eg differently for cash transactions, differently for payments from an account or differently for documents with payment by advance invoice. Today, the company has such an option for rounding using advanced settings based on the Payment Method Code.
 
-For more information, visit the [Setup](app-extension-set-setup/#rounding-setup-according-to-the-method-of-payment).
+For more information, visit the [Setup](app-extension-set-setup#rounding-setup-according-to-the-method-of-payment).
+
+## Universal Permission
+
+The Universal Permission functionality allows for maximum control over data editing.  The main benefit is preventing unwanted changes to important data on documents when multiple users collaborate. The advantage is the precise setting of editing permissions at the level of individual Fields. With universal permissions, you can be sure that key information will not be overwritten and the data will remain protected.
+
+To enable the Universal Permissions functionality, follow these steps:
+
+1. Choose the ![Lightbulb that opens the Tell Me feature.](media/ui-search/search_small.png "Tell me what you want to do") icon, enter **General Ledger Setup** and then choose the related link.
+2. On the **General Ledger Setup** page, on the Application Extension Set From Aricoma FastTab, choose the **Universal Permission Allowed** check box, used to enable Universal Permission Allowed functionality.
+
+![General Ledger Setup](media/up-general-ledger-setup.png)
+
+For more information, visit the [Setup](app-extension-set-setup#universal-permission-setup).
 
 ## Other functionalities
 
 This chapter describes other minor modifications or enhancements broken down by area.
 
-## General
+### General
 
 **Data migration functionality extension**  
 
