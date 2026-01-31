@@ -9,7 +9,7 @@ ms.search.keywords: banking, finance, czech, API
 ---
 # CZ Banking Extension Setup
 
-> Update 10.01.2026
+> Update: 31.01.2026
 
 The CZ Banking Extension module needs to be activated, in the production environment the user will be asked to activate the subscription (see [documentation on monetization](https://www.aricoma.com/docs/en-us/dynamics365/business-central/ProductivityPack/monetization.html)).
 
@@ -137,7 +137,11 @@ We recommend that you continuously delete the already processed records in the C
 
 ### Automatic account number formatting (optional)
 
-Enabling this feature will automatically format bank account numbers in BC, eliminating problems with importing bank statements.
+Enabling this feature will automatically format bank account numbers in BC, eliminating problems with importing bank statements. Formatting is performed on:
+
+- Bank account
+- Customer bank account
+- Vendor bank account
 
 1. Choose the ![Lightbulb that opens the Tell Me feature.](media/ui-search/search_small.png "Tell me what you want to do") icon, enter **Company Information** and then choose the related link.
 2. Activate the **Format Account Number** field.
