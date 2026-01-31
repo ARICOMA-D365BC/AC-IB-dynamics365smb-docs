@@ -13,7 +13,7 @@ ms.author: Jitka Urxová
 ---
 # Application extension set - Settings
 
-> Update: 23.01.2026
+> Update: 31.01.2026
 
 ## VAT extensions setup
 
@@ -284,23 +284,27 @@ Rounding settings are made differently depending on the currency, as is the case
 
 ## Universal Permission Setup  
 
-The functionality allows you to set permissions for editing pages and their individual fields. This sets conditions for specific users on what they can or cannot change on the set pages and fields.
+First, you need to enable the Universal Permissions feature:
 
-1. Choose the ![Lightbulb that opens the Tell Me feature.](media/ui-search/search_small.png "Tell me what you want to do") icon, enter **Universal Permission Setup** and then choose the related link.
-2. On the **Universal Permission Setup** page fill in individual lines.
-![Universal Permission Setup](media/up-universal-permission-setup.png)
-3. In the **Table No.** field, select the table in which you want to set universal permissions. You can select the table from the list of all tables.
-4. The **Table Caption** field is automatically filled in after selecting **Table No.**.
-5. In the **Description** field enter any text, e.g. who and what the permission being set applies to.
-6. By clicking on a line in the **Table Filter** field, you enter a filter that determines which records or table values you want to set the given permission for. A new window will open, in which you fill in the **Field Number**. The **Field Caption** will be automatically filled in. Enter the desired filter in the **Field Filter** field.
-![Table Filter](media/up-table-filter.png)
-7. Return to the **Universal Permission Setup** page. If you want the permission to apply to all fields in the table, select "All fields" in the **Fields** field on the row. If the permission should apply to only some fields, select "Some fields". Next, select the row you are working with and click the **Fields** action. A new window appears in which you can set the individual fields. Fill in the **Field No.** in the row. You can select from the list of all fields.
+1. Choose the ![Lightbulb that opens the Tell Me feature.](media/ui-search/search_small.png "Tell me what you want to do") icon, enter **General Ledger Setup** and then choose the related link.
+2. On the **General Ledger Setup** page, on the Application Extension Set From Aricoma FastTab, choose the **Universal Permission Allowed** check box.
+
+Use the following procedure to set up special access to the table for selected users:
+
+1. Choose the ![Lightbulb that opens the Tell Me feature.](media/ui-search/search_small.png "Tell me what you want to do") icon, enter **Universal Permissions Settings**, nd then choose the related link.
+2. On the **Universal Permissions Settings** page, insert a new row and select the value corresponding to the entity for which you want to set permissions in the **Table Number** field.
+![Universal Permissions Setup](media/up-universal-permission-setup.png)
+3. In the **Description** field, enter any text, such as who and what the permission applies to.
+4. Click on the row in the **Table filter** field to enter a filter that determines for which records or table values you want to set the permission. A new window will open where you can fill in the **Field number**. Enter the desired filter in the **Field filter** field.
+![Table filter](media/up-table-filter.png)
+5. Return to the **Universal Permissions Settings** page. If you want the permission to apply to all fields in the table, select "All fields" in the **Field** field.
+If you want the permission to apply only to certain fields, select "Some fields," run the *Field* action, and select the desired fields to be checked on the page that opens.
 ![Fields](media/up-fields.png)
-8. Return to the **Universal Permissions Setup** page. Choose the row and click the Users action. A new window appears in which you can fill in the **User ID** field. This will set the individual users for whom the permission should apply.
-9. Return to the **Universal Permissions Setup** page. On the given line, decide what you want to check. Select the Test Modify, Test Insert, Test delete or Test Rename.
-10. Next, in the **Permission** field, select the option *Allow* or *Deny* depending on whether what is set on the line is prohibited or allowed for the user(s). When *Allow* is selected, everything specified on the line is allowed for the given users and everything else is prohibited, and vice versa.
-11. In the last field **Active**, you can check whether the given line is active (the field is checked) or not (the field is not checked). That is, whether the system should follow it or not.
-![Universal Permission Setup](media/up-universal-permission-setup-permission.png)
+6. Return to the **Universal Permissions Settings** page and set the scope of permissions. Check the **Test Modify**, **Test Insert**, **Test Delete**, or **Test Rename** boxes as needed.
+7. By launching the *Users* action, you can set up individual users for whom the permissions are to apply.
+8. In the **Permission** field, select "Allow" if you want to allow the selected users to perform the specified operations on the fields specified above. By selecting "Deny," you will deny the selected users from performing the selected operations on the selected fields.
+9. In the last field, **Active**, you can activate or deactivate the settings in the row.
+![Universal Permission Settings](media/up-universal-permission-setup-permission.png)
 
 ## See also
 
