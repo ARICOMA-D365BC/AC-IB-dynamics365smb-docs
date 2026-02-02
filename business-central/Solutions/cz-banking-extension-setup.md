@@ -61,7 +61,7 @@ In case of incorrect characters in the imported statement, you need to adjust th
 2. Go to the selected row (e.g., with the code "CZBE_ABO-EXP-LOCAL").
 3. Check that the **Processing Codeunit ID** field contains the value 52057437, which allows you to export statements using the *Export* action on the Issued Payment Order tab.
 4. Run the *Advanced settings* action.
-5. On the Advanced settings for exporting orders page, verify that the **Processing Codeunit ID** field contains the value 52057438, which is used to create a file in ABO format.
+5. On the Payment Export Extended Setup page, verify that the **Processing Codeunit ID** field contains the value 52057438, which is used to create a file in ABO format.
 
 The set export method must be entered on the Bank Account tab:
 
