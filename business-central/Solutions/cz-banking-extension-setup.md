@@ -42,9 +42,32 @@ If your bank supports electronic statements that contain multiple transactions f
 > [!TIP]
 > Enable the Support ZIP files field to allow importing multiple dump files at once within a single zip file.
 
+The import method you have set up must be entered on the Bank Account tab:
+
+1. Choose the ![Lightbulb that opens the Tell Me feature.](media/ui-search/search_small.png "Tell me what you want to do") icon, enter **Bank Accounts**, and then choose the related link.
+2. Select the appropriate account and start the *Edit* action.
+3. On the Transfer tab, select the export method (e.g., "CZBE_ABO-IMP-LOCAL") in the **Statement Import Format** field.
+
+> [!NOTE]
+> The *Import* function on the Bank Statement tab will work, but logically without additional functions for processing multiple files.
+
 #### Import encoding settings
 
-In case of incorrect characters in the imported statement, you need to adjust the encoding used. Set the correct encoding in the Content Encoding field. To verify the functionality of the set encoding, we recommend using the Test Content Encoding action on the Statements Import Extended Setup page.
+In case of incorrect characters in the imported statement, you need to adjust the encoding used. Set the correct encoding in the Content Encoding field. To verify the functionality of the set encoding, we recommend using the *Test Content Encoding* action on the Statements Import Extended Setup page.
+
+### Settings for manual export of payment orders
+
+1. Choose the ![Lightbulb that opens the Tell Me feature.](media/ui-search/search_small.png "Tell me what you want to do") icon, enter **Bank export/import settings** and then choose the related link.
+2. Go to the selected row (e.g., with the code "CZBE_ABO-EXP-LOCAL").
+3. Check that the **Processing Codeunit ID** field contains the value 52057437, which allows you to export statements using the *Export* action on the Issued Payment Order tab.
+4. Run the *Advanced settings* action.
+5. On the Advanced settings for exporting orders page, verify that the **Processing Codeunit ID** field contains the value 52057438, which is used to create a file in ABO format.
+
+The set export method must be entered on the Bank Account tab:
+
+1. Choose the ![Lightbulb that opens the Tell Me feature.](media/ui-search/search_small.png "Tell me what you want to do") icon, enter **Bank Accounts**, and then choose the related link.
+2. Select the appropriate account and start the Edit action.
+3. On the Transfer tab, select the export method in the **Payment export format** field (e.g., "CZBE_ABO-EXP-LOCAL" or "CZBE_SEPA-EXP-LOCAL").
 
 ### Settings for manual import of bank statements via API
 
