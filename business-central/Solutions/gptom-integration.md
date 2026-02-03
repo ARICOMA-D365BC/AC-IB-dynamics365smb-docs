@@ -8,12 +8,15 @@ ms.search.keywords: GP Tom Integration, Streamline Tools, Global Payments
 ---
 # GP tom integration
 
-> Update 14.10.2024
+> Update 03.02.2026
 
 The **GP tom integration** addon is designed primarily for seamless integration of Business Central with payment terminals to make them a native part of business processes. In addition, it also enables related service operations to be performed directly from the Business Central environment.
 
 The module connects Microsoft Dynamics 365 Business Central with payment terminals, or with the solution [**tom**](https://www.gptom.com/) operated on the terminals.
 Thanks to this solution, you can enable your customers to pay not only with Visa and Mastercard, but also with Apple Pay, Google Pay, Edenred... More in [manual](https://www.gptom.com/en/docs/manual/zaciname/podporovana-karetni-schemata/).
+
+> [!TIP]
+> It is now possible to select **QR code** as a payment method and thus avoid card company fees.
 
 ## Usage
 
