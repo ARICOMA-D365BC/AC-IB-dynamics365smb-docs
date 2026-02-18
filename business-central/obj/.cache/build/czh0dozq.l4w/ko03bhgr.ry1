@@ -1,0 +1,164 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Business Pack </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Business Pack ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../TOC.html">
+    <meta property="docfx:tocrel" content="TOC.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="png" src="../logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="business-pack">Business Pack</h1>
+
+<blockquote>
+<p>Update: 1.7.2025</p>
+</blockquote>
+<p><strong>Business Pack</strong> extends Microsoft Dynamics 365 Business Central with practical, frequently used fields and clear factboxes directly on key system pages. It provides users with immediate access to essential information without the need for manual setup, code changes, or custom development. All relevant data is displayed automatically exactly where it's needed.</p>
+<p>The module focuses exclusively on enriching existing tables and pages with helpful information that simplifies daily work, improves clarity, and enhances system navigation. The result is time savings and reduced error rates.</p>
+<p>Business Pack is an ideal solution for companies that want to harness the full potential of Business Central without complex modifications or expensive development.</p>
+<p><img src="media/business-pack-sales-orders.png" alt="Sales Orders"></p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>All fields and factboxes are <strong>automatically activated</strong> and visible on the relevant pages upon installation.</p>
+</div>
+<h2 id="added-fields">Added Fields</h2>
+<p>The extension includes clearly structured fields on the following pages:</p>
+<h3 id="sales-documents">Sales Documents</h3>
+<ul>
+<li><strong>Sales Orders</strong>: recipient's address and city, promised delivery date, payment method code, company ID (IČO), VAT ID (DIČ), inventory shipment status.</li>
+<li><strong>Posted Sales Shipments</strong>: original order number, recipient's address and city, related invoices.</li>
+<li><strong>Posted Sales Invoices</strong>: recipient's address and city, payment method code, list of related shipments.</li>
+</ul>
+<h3 id="purchase-documents">Purchase Documents</h3>
+<ul>
+<li><strong>Purchase Orders</strong>: recipient's address and city, vendor order number, promised receipt date, company ID (IČO), VAT ID (DIČ).</li>
+<li><strong>Warehouse Shipments / Warehouse Receipts</strong>: customer number and name, recipient's address, order number, and other logistics details.</li>
+</ul>
+<p><img src="media/business-pack-purchase-order.png" alt="Purchase Orders"></p>
+<h3 id="transfer-documents">Transfer Documents</h3>
+<p>Efficient warehouse transfer management requires accurate and accessible data right where users need it. Business Pack enriches transfer document lines with key fields – <strong>item number</strong>, <strong>description</strong>, <strong>quantity</strong>, and <strong>unit of measure</strong>.</p>
+<p>These additions provide a better overview of each transfer's content, improve control over operations, and help reduce errors when handling goods. Information that previously required navigating to other pages or manual lookup is now instantly available in context.</p>
+<h3 id="item-card">Item Card</h3>
+<p>Displays a summary overview: item number, type, note, assembly BOM, inventory levels, reservations, available quantity, items in transit, ordered and delivered quantities, invoicing status.</p>
+<p><img src="media/business-pack-items.png" alt="Item Overview"></p>
+<h2 id="new-factboxes">New FactBoxes</h2>
+<p>Business Pack introduces new factboxes that enhance visibility and reduce time spent searching for data. They are placed on key pages such as:</p>
+<ul>
+<li><strong>Sales and Purchase Orders</strong></li>
+<li><strong>Invoices and Shipments</strong></li>
+<li><strong>Item Cards</strong></li>
+</ul>
+<h3 id="inventory-by-location-factbox">“Inventory by Location” FactBox</h3>
+<p>Displays which warehouse locations hold the item and in what quantity. Accessible from the item list and the item card.</p>
+<h3 id="document-line-factboxes">Document Line FactBoxes</h3>
+<p>Allow users to view line details (item number, description, quantity, unit of measure) directly on sales and purchase order pages.</p>
+<h3 id="note-factboxes">Note FactBoxes</h3>
+<ul>
+<li><strong>Customer Notes</strong>: visible on Customer List and Customer Card, as well as on sales orders, invoices, and returns.</li>
+<li><strong>Document and Shipment Notes</strong>: ensure that important internal notes are always within reach.</li>
+</ul>
+<p><img src="media/business-pack-customers.png" alt="Customer Overview"></p>
+<h2 id="summary">Summary</h2>
+<p>Business Pack brings more context, greater efficiency, and faster navigation in Microsoft Dynamics 365 Business Central – with no code, no development, and no compromises.</p>
+<h2 id="see-also">See also</h2>
+<p><a href="solutions.html">ARICOMA Solutions</a><br>
+<a href="streamlinetools.html">Streamline Tools</a></p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/ARICOMA-D365BC/AC-IB-dynamics365smb-docs/blob/master/business-central/Solutions/business-pack.md/#L1" class="contribution-link">Improve this document</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+           <span><a href="https://www.aricoma.com/docs/en-us/dynamics365/business-central/Solutions/solutions.html"><strong>ENGLISH</strong><strong>/</strong><a href="https://www.aricoma.com/docs/cs-cz/dynamics365/business-central/Solutions/solutions.html"><strong>CZECH</strong></a></a></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

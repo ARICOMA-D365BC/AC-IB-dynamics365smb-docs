@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Insolvence register - setup </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Insolvence register - setup ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../TOC.html">
+    <meta property="docfx:tocrel" content="TOC.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="png" src="../logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="insolvency-register-setup" sourcefile="Solutions/insolvence-register-setup.md" sourcestartlinenumber="10">Insolvency Register Setup</h1>
+
+<blockquote sourcefile="Solutions/insolvence-register-setup.md" sourcestartlinenumber="12">
+<p sourcefile="Solutions/insolvence-register-setup.md" sourcestartlinenumber="12">Update: 30.11.2025</p>
+</blockquote>
+<p sourcefile="Solutions/insolvence-register-setup.md" sourcestartlinenumber="14">First, you need to properly configure the Insolvency Register module and set up the way data from the Insolvency Register is downloaded to your Business Central database.</p>
+<h2 id="server-communication-setup-modern" sourcefile="Solutions/insolvence-register-setup.md" sourcestartlinenumber="16">Server Communication Setup (Modern)</h2>
+<p sourcefile="Solutions/insolvence-register-setup.md" sourcestartlinenumber="18">The new communication method is available for both <strong sourcefile="Solutions/insolvence-register-setup.md" sourcestartlinenumber="18">Online</strong> and <strong sourcefile="Solutions/insolvence-register-setup.md" sourcestartlinenumber="18">On-premises</strong> versions of Business Central. To set it up, you need to contact <strong sourcefile="Solutions/insolvence-register-setup.md" sourcestartlinenumber="18">ARICOMA (<a href="mailto:bc_sales@aricoma.com" sourcefile="Solutions/insolvence-register-setup.md" sourcestartlinenumber="18">bc_sales@aricoma.com</a>)</strong> to obtain an access key.</p>
+<ol sourcefile="Solutions/insolvence-register-setup.md" sourcestartlinenumber="20">
+<li sourcefile="Solutions/insolvence-register-setup.md" sourcestartlinenumber="20">Choose the <img src="media/ui-search/search_small.png" sourcefile="Solutions/insolvence-register-setup.md" sourcestartlinenumber="20" alt="Lightbulb that opens the Tell Me feature" title="Tell me what you want to do"> icon, enter <strong sourcefile="Solutions/insolvence-register-setup.md" sourcestartlinenumber="20">Insolvency Register Setup</strong>, then choose the related link.</li>
+<li sourcefile="Solutions/insolvence-register-setup.md" sourcestartlinenumber="21">Verify that on the <strong sourcefile="Solutions/insolvence-register-setup.md" sourcestartlinenumber="21">Data Source</strong> tab, the <strong sourcefile="Solutions/insolvence-register-setup.md" sourcestartlinenumber="21">Use Data from Remote Server</strong> field is enabled.</li>
+<li sourcefile="Solutions/insolvence-register-setup.md" sourcestartlinenumber="22">Enter the value of the access key you received from ARICOMA in the <strong sourcefile="Solutions/insolvence-register-setup.md" sourcestartlinenumber="22">Secret Key</strong> field.</li>
+<li sourcefile="Solutions/insolvence-register-setup.md" sourcestartlinenumber="23">The <strong sourcefile="Solutions/insolvence-register-setup.md" sourcestartlinenumber="23">Check Insolvency Entities Immediately</strong> field enables immediate checking when making changes to customer/vendor cards.</li>
+<li sourcefile="Solutions/insolvence-register-setup.md" sourcestartlinenumber="24">The <strong sourcefile="Solutions/insolvence-register-setup.md" sourcestartlinenumber="24">Periodically Register Entities</strong> field ensures automatic registration of new customers/vendors to the server. Its setting automatically creates a job queue entry for this purpose.</li>
+<li sourcefile="Solutions/insolvence-register-setup.md" sourcestartlinenumber="25">The <strong sourcefile="Solutions/insolvence-register-setup.md" sourcestartlinenumber="25">Periodically Request Insolvency Data</strong> field ensures regular downloading of current insolvency information from the server. Its setting automatically creates a job queue entry for this purpose.</li>
+<li sourcefile="Solutions/insolvence-register-setup.md" sourcestartlinenumber="26">The <strong sourcefile="Solutions/insolvence-register-setup.md" sourcestartlinenumber="26">Periodically Send Modification Requests</strong> field is used to send pending data modification requests to the server. This field can only be activated when immediate insolvency entity checking is not enabled and is automatically deactivated when immediate checks are turned on. Its setting automatically creates a job queue entry for this purpose.</li>
+<li sourcefile="Solutions/insolvence-register-setup.md" sourcestartlinenumber="27">Activate the <strong sourcefile="Solutions/insolvence-register-setup.md" sourcestartlinenumber="27">Enabled</strong> flag.</li>
+<li sourcefile="Solutions/insolvence-register-setup.md" sourcestartlinenumber="28">If <strong sourcefile="Solutions/insolvence-register-setup.md" sourcestartlinenumber="28">Third Party Terms</strong> appear, read them and confirm your agreement by clicking <strong sourcefile="Solutions/insolvence-register-setup.md" sourcestartlinenumber="28">I Accept</strong>.</li>
+<li sourcefile="Solutions/insolvence-register-setup.md" sourcestartlinenumber="29">Close the page.</li>
+</ol>
+<p sourcefile="Solutions/insolvence-register-setup.md" sourcestartlinenumber="31"><img src="media/ir-setup.png" sourcefile="Solutions/insolvence-register-setup.md" sourcestartlinenumber="31" alt="Insolvency Register Setup"></p>
+<p sourcefile="Solutions/insolvence-register-setup.md" sourcestartlinenumber="33"><strong sourcefile="Solutions/insolvence-register-setup.md" sourcestartlinenumber="33">IR Server Communication Schema</strong></p>
+<p sourcefile="Solutions/insolvence-register-setup.md" sourcestartlinenumber="35"><img src="media/ir-communication.png" sourcefile="Solutions/insolvence-register-setup.md" sourcestartlinenumber="35" alt="IR Server Communication"></p>
+<p sourcefile="Solutions/insolvence-register-setup.md" sourcestartlinenumber="37">Each of the periodic tasks creates a record in <strong sourcefile="Solutions/insolvence-register-setup.md" sourcestartlinenumber="37">Job Queue Entries</strong> where you can monitor their status.</p>
+<p sourcefile="Solutions/insolvence-register-setup.md" sourcestartlinenumber="39"><img src="media/ir-job-queue.png" sourcefile="Solutions/insolvence-register-setup.md" sourcestartlinenumber="39" alt="Job Queue Entries"></p>
+<h2 id="communication-setup-classic" sourcefile="Solutions/insolvence-register-setup.md" sourcestartlinenumber="41">Communication Setup (Classic)</h2>
+<p sourcefile="Solutions/insolvence-register-setup.md" sourcestartlinenumber="43">In the <strong sourcefile="Solutions/insolvence-register-setup.md" sourcestartlinenumber="43">On-premises</strong> version, you can still use the data download mode to the database. The fundamental difference from the modern method described above is that in this mode, all Insolvency Register data is downloaded to the customer's database (in 2025, the size of IR data in BC is approximately 27GB).</p>
+<ol sourcefile="Solutions/insolvence-register-setup.md" sourcestartlinenumber="45">
+<li sourcefile="Solutions/insolvence-register-setup.md" sourcestartlinenumber="45">Choose the <img src="media/ui-search/search_small.png" sourcefile="Solutions/insolvence-register-setup.md" sourcestartlinenumber="45" alt="Lightbulb that opens the Tell Me feature" title="Tell me what you want to do"> icon, enter <strong sourcefile="Solutions/insolvence-register-setup.md" sourcestartlinenumber="45">Insolvency Register Setup</strong>, then choose the related link.</li>
+<li sourcefile="Solutions/insolvence-register-setup.md" sourcestartlinenumber="46">Verify that on the <strong sourcefile="Solutions/insolvence-register-setup.md" sourcestartlinenumber="46">Data Source</strong> tab, the <strong sourcefile="Solutions/insolvence-register-setup.md" sourcestartlinenumber="46">Use Data from Remote Server</strong> field is <strong sourcefile="Solutions/insolvence-register-setup.md" sourcestartlinenumber="46">disabled</strong>.</li>
+<li sourcefile="Solutions/insolvence-register-setup.md" sourcestartlinenumber="47">The <strong sourcefile="Solutions/insolvence-register-setup.md" sourcestartlinenumber="47">Set Default Web Service</strong> action can be used to set the web service address to the default state.</li>
+<li sourcefile="Solutions/insolvence-register-setup.md" sourcestartlinenumber="48">Check the required download period.</li>
+<li sourcefile="Solutions/insolvence-register-setup.md" sourcestartlinenumber="49">Activate the <strong sourcefile="Solutions/insolvence-register-setup.md" sourcestartlinenumber="49">Enabled</strong> flag.</li>
+<li sourcefile="Solutions/insolvence-register-setup.md" sourcestartlinenumber="50">Read the <strong sourcefile="Solutions/insolvence-register-setup.md" sourcestartlinenumber="50">Third Party Terms</strong> and confirm your agreement by clicking <strong sourcefile="Solutions/insolvence-register-setup.md" sourcestartlinenumber="50">I Accept</strong>.</li>
+<li sourcefile="Solutions/insolvence-register-setup.md" sourcestartlinenumber="51">Close the page.</li>
+</ol>
+<h2 id="insolvency-check-setup-for-sales-and-service" sourcefile="Solutions/insolvence-register-setup.md" sourcestartlinenumber="53">Insolvency Check Setup for Sales and Service</h2>
+<ol sourcefile="Solutions/insolvence-register-setup.md" sourcestartlinenumber="55">
+<li sourcefile="Solutions/insolvence-register-setup.md" sourcestartlinenumber="55">Choose the <img src="media/ui-search/search_small.png" sourcefile="Solutions/insolvence-register-setup.md" sourcestartlinenumber="55" alt="Lightbulb that opens the Tell Me feature" title="Tell me what you want to do"> icon, enter <strong sourcefile="Solutions/insolvence-register-setup.md" sourcestartlinenumber="55">Insolvency Register Setup</strong>, then choose the related link.</li>
+<li sourcefile="Solutions/insolvence-register-setup.md" sourcestartlinenumber="56">Activate <strong sourcefile="Solutions/insolvence-register-setup.md" sourcestartlinenumber="56">Insolvency Check in Sales</strong> to alert users when creating sales documents about the fact that the customer has an insolvency case (open or closed).</li>
+<li sourcefile="Solutions/insolvence-register-setup.md" sourcestartlinenumber="57">In the <strong sourcefile="Solutions/insolvence-register-setup.md" sourcestartlinenumber="57">Block Sales Posting on Insolvency</strong> field, set whether posting of shipments, invoices, or all should be blocked in case of an active Insolvency Proceeding.</li>
+<li sourcefile="Solutions/insolvence-register-setup.md" sourcestartlinenumber="58">Activate <strong sourcefile="Solutions/insolvence-register-setup.md" sourcestartlinenumber="58">Insolvency Check in Service</strong> to alert users when creating service documents about the fact that the customer has an insolvency case (open or closed).</li>
+<li sourcefile="Solutions/insolvence-register-setup.md" sourcestartlinenumber="59">In the <strong sourcefile="Solutions/insolvence-register-setup.md" sourcestartlinenumber="59">Block Service Posting on Insolvency</strong> field, set whether posting of shipments, invoices, or all should be blocked in case of an active Insolvency Proceeding.</li>
+<li sourcefile="Solutions/insolvence-register-setup.md" sourcestartlinenumber="60">Close the page.</li>
+</ol>
+<h2 id="user-setup-with-permission-to-disable-insolvency-check" sourcefile="Solutions/insolvence-register-setup.md" sourcestartlinenumber="62">User Setup with Permission to Disable Insolvency Check</h2>
+<ol sourcefile="Solutions/insolvence-register-setup.md" sourcestartlinenumber="64">
+<li sourcefile="Solutions/insolvence-register-setup.md" sourcestartlinenumber="64">Choose the <img src="media/ui-search/search_small.png" sourcefile="Solutions/insolvence-register-setup.md" sourcestartlinenumber="64" alt="Lightbulb that opens the Tell Me feature" title="Tell me what you want to do"> icon, enter <strong sourcefile="Solutions/insolvence-register-setup.md" sourcestartlinenumber="64">User Setup</strong>, then choose the related link.</li>
+<li sourcefile="Solutions/insolvence-register-setup.md" sourcestartlinenumber="65">Select the user and set the value in the <strong sourcefile="Solutions/insolvence-register-setup.md" sourcestartlinenumber="65">Allow Unlock Insolvency Block</strong> field to <strong sourcefile="Solutions/insolvence-register-setup.md" sourcestartlinenumber="65">Yes</strong>.</li>
+</ol>
+<h2 id="related-information" sourcefile="Solutions/insolvence-register-setup.md" sourcestartlinenumber="67">Related Information</h2>
+<p sourcefile="Solutions/insolvence-register-setup.md" sourcestartlinenumber="69"><a href="insolvence-register.html" sourcefile="Solutions/insolvence-register-setup.md" sourcestartlinenumber="69">Insolvency Register</a><br>
+<a href="solutions.html" sourcefile="Solutions/insolvence-register-setup.md" sourcestartlinenumber="70">ARICOMA Solutions</a></p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/ARICOMA-D365BC/AC-IB-dynamics365smb-docs/blob/master/business-central/Solutions/insolvence-register-setup.md/#L1" class="contribution-link">Improve this document</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+           <span><a href="https://www.aricoma.com/docs/en-us/dynamics365/business-central/Solutions/solutions.html"><strong>ENGLISH</strong><strong>/</strong><a href="https://www.aricoma.com/docs/cs-cz/dynamics365/business-central/Solutions/solutions.html"><strong>CZECH</strong></a></a></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
