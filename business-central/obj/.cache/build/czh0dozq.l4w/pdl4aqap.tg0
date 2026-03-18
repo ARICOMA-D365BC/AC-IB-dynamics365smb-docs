@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Analytics Suite &#8211; Setup </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Analytics Suite &#8211; Setup ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../TOC.html">
+    <meta property="docfx:tocrel" content="TOC.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="png" src="../logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="analytics-suite--setup" sourcefile="Solutions/analytics-suite-setup.md" sourcestartlinenumber="11">Analytics Suite – Setup</h1>
+
+<blockquote sourcefile="Solutions/analytics-suite-setup.md" sourcestartlinenumber="13">
+<p sourcefile="Solutions/analytics-suite-setup.md" sourcestartlinenumber="13">Updated: 01/06/2025</p>
+</blockquote>
+<p sourcefile="Solutions/analytics-suite-setup.md" sourcestartlinenumber="15">The <strong sourcefile="Solutions/analytics-suite-setup.md" sourcestartlinenumber="15">Analytics Suite</strong> module enhances data analysis and key performance indicators visualization capabilities within Dynamics 365 Business Central. To ensure proper functionality, follow these setup steps:</p>
+<ul sourcefile="Solutions/analytics-suite-setup.md" sourcestartlinenumber="17">
+<li sourcefile="Solutions/analytics-suite-setup.md" sourcestartlinenumber="17"><strong sourcefile="Solutions/analytics-suite-setup.md" sourcestartlinenumber="17">Install the extension in Business Central</strong></li>
+<li sourcefile="Solutions/analytics-suite-setup.md" sourcestartlinenumber="18"><strong sourcefile="Solutions/analytics-suite-setup.md" sourcestartlinenumber="18">Configure Analytics Suite in Business Central</strong></li>
+<li sourcefile="Solutions/analytics-suite-setup.md" sourcestartlinenumber="19"><strong sourcefile="Solutions/analytics-suite-setup.md" sourcestartlinenumber="19">Connect the Power BI application to your data</strong></li>
+</ul>
+<h2 id="install-the-extension-in-business-central" sourcefile="Solutions/analytics-suite-setup.md" sourcestartlinenumber="21">Install the extension in Business Central</h2>
+<ol sourcefile="Solutions/analytics-suite-setup.md" sourcestartlinenumber="23">
+<li sourcefile="Solutions/analytics-suite-setup.md" sourcestartlinenumber="23">Sign in to your Business Central environment.</li>
+<li sourcefile="Solutions/analytics-suite-setup.md" sourcestartlinenumber="24">Open <strong sourcefile="Solutions/analytics-suite-setup.md" sourcestartlinenumber="24">AppSource</strong> and search for <strong sourcefile="Solutions/analytics-suite-setup.md" sourcestartlinenumber="24">Analytics Suite</strong>.</li>
+</ol>
+<p sourcefile="Solutions/analytics-suite-setup.md" sourcestartlinenumber="26"><img src="media/analytics-suite-app-source.png" sourcefile="Solutions/analytics-suite-setup.md" sourcestartlinenumber="26" alt="Searching for the extension in AppSource"></p>
+<ol start="3" sourcefile="Solutions/analytics-suite-setup.md" sourcestartlinenumber="28">
+<li sourcefile="Solutions/analytics-suite-setup.md" sourcestartlinenumber="28">Select the <strong sourcefile="Solutions/analytics-suite-setup.md" sourcestartlinenumber="28">Analytics Suite for Business Central</strong> extension and click <strong sourcefile="Solutions/analytics-suite-setup.md" sourcestartlinenumber="28">Install app</strong>.</li>
+</ol>
+<p sourcefile="Solutions/analytics-suite-setup.md" sourcestartlinenumber="30"><img src="media/analytics-suite-app-install.png" sourcefile="Solutions/analytics-suite-setup.md" sourcestartlinenumber="30" alt="Installing the extension"></p>
+<ol start="4" sourcefile="Solutions/analytics-suite-setup.md" sourcestartlinenumber="32">
+<li sourcefile="Solutions/analytics-suite-setup.md" sourcestartlinenumber="32">Follow the installation wizard to complete the setup.</li>
+</ol>
+<p sourcefile="Solutions/analytics-suite-setup.md" sourcestartlinenumber="34"><img src="media/analytics-suite-app-install2.png" sourcefile="Solutions/analytics-suite-setup.md" sourcestartlinenumber="34" alt="Installation wizard"></p>
+<h2 id="configure-analytics-suite-in-business-central" sourcefile="Solutions/analytics-suite-setup.md" sourcestartlinenumber="36">Configure Analytics Suite in Business Central</h2>
+<ol sourcefile="Solutions/analytics-suite-setup.md" sourcestartlinenumber="38">
+<li sourcefile="Solutions/analytics-suite-setup.md" sourcestartlinenumber="38">Select the icon <img src="media/ui-search/search_small.png" sourcefile="Solutions/analytics-suite-setup.md" sourcestartlinenumber="38" alt="Lightbulb icon to open Tell Me" title="Tell me what you want to do">, type <strong sourcefile="Solutions/analytics-suite-setup.md" sourcestartlinenumber="38">Analytics Suite Setup</strong>, and then select the related link.</li>
+<li sourcefile="Solutions/analytics-suite-setup.md" sourcestartlinenumber="39">On the <strong sourcefile="Solutions/analytics-suite-setup.md" sourcestartlinenumber="39">Analytics Suite Setup</strong> page, activate the module by checking the <strong sourcefile="Solutions/analytics-suite-setup.md" sourcestartlinenumber="39">Enabled</strong> checkbox.</li>
+</ol>
+<p sourcefile="Solutions/analytics-suite-setup.md" sourcestartlinenumber="41"><img src="media/analytics-suite-setup-bc.png" sourcefile="Solutions/analytics-suite-setup.md" sourcestartlinenumber="41" alt="Analytics Suite setup"></p>
+<ol start="3" sourcefile="Solutions/analytics-suite-setup.md" sourcestartlinenumber="43">
+<li sourcefile="Solutions/analytics-suite-setup.md" sourcestartlinenumber="43">Select the icon <img src="media/ui-search/search_small.png" sourcefile="Solutions/analytics-suite-setup.md" sourcestartlinenumber="43" alt="Lightbulb icon to open Tell Me" title="Tell me what you want to do">, type <strong sourcefile="Solutions/analytics-suite-setup.md" sourcestartlinenumber="43">Company Information</strong>, and then select the related link.</li>
+<li sourcefile="Solutions/analytics-suite-setup.md" sourcestartlinenumber="44">On the <strong sourcefile="Solutions/analytics-suite-setup.md" sourcestartlinenumber="44">Company Information</strong> page (and for other companies you want to analyze in Analytics Suite), enable the option <strong sourcefile="Solutions/analytics-suite-setup.md" sourcestartlinenumber="44">Include in Analytics Suite</strong>.</li>
+</ol>
+<p sourcefile="Solutions/analytics-suite-setup.md" sourcestartlinenumber="46"><img src="media/analytics-suite-company-information.png" sourcefile="Solutions/analytics-suite-setup.md" sourcestartlinenumber="46" alt="Enable Analytics Suite"></p>
+<h2 id="connect-the-power-bi-application-to-your-data" sourcefile="Solutions/analytics-suite-setup.md" sourcestartlinenumber="48">Connect the Power BI application to your data</h2>
+<p sourcefile="Solutions/analytics-suite-setup.md" sourcestartlinenumber="50">To display reports and dashboards correctly, you need to link the Power BI application to your Business Central environment:</p>
+<ol sourcefile="Solutions/analytics-suite-setup.md" sourcestartlinenumber="52">
+<li sourcefile="Solutions/analytics-suite-setup.md" sourcestartlinenumber="52">Go to <a href="https://powerbi.com" sourcefile="Solutions/analytics-suite-setup.md" sourcestartlinenumber="52">powerbi.com</a> and sign in.</li>
+<li sourcefile="Solutions/analytics-suite-setup.md" sourcestartlinenumber="53">In the left-hand menu, select <strong sourcefile="Solutions/analytics-suite-setup.md" sourcestartlinenumber="53">Apps</strong>.</li>
+<li sourcefile="Solutions/analytics-suite-setup.md" sourcestartlinenumber="54">Click <strong sourcefile="Solutions/analytics-suite-setup.md" sourcestartlinenumber="54">Get Apps</strong>.</li>
+</ol>
+<p sourcefile="Solutions/analytics-suite-setup.md" sourcestartlinenumber="56"><img src="media/analytics-suite-get-apps.png" sourcefile="Solutions/analytics-suite-setup.md" sourcestartlinenumber="56" alt="Get Apps"></p>
+<ol start="4" sourcefile="Solutions/analytics-suite-setup.md" sourcestartlinenumber="58">
+<li sourcefile="Solutions/analytics-suite-setup.md" sourcestartlinenumber="58">In the search box, type <strong sourcefile="Solutions/analytics-suite-setup.md" sourcestartlinenumber="58">Analytics Suite</strong> and select the app by <strong sourcefile="Solutions/analytics-suite-setup.md" sourcestartlinenumber="58">Aricoma</strong>.</li>
+</ol>
+<p sourcefile="Solutions/analytics-suite-setup.md" sourcestartlinenumber="60"><img src="media/analytics-suite-application.png" sourcefile="Solutions/analytics-suite-setup.md" sourcestartlinenumber="60" alt="Power BI application"></p>
+<ol start="5" sourcefile="Solutions/analytics-suite-setup.md" sourcestartlinenumber="62">
+<li sourcefile="Solutions/analytics-suite-setup.md" sourcestartlinenumber="62">Click <strong sourcefile="Solutions/analytics-suite-setup.md" sourcestartlinenumber="62">Get it now</strong> and install the application.</li>
+</ol>
+<p sourcefile="Solutions/analytics-suite-setup.md" sourcestartlinenumber="64"><img src="media/analytics-suite-get-it-now.png" sourcefile="Solutions/analytics-suite-setup.md" sourcestartlinenumber="64" alt="Get it now"></p>
+<ol start="6" sourcefile="Solutions/analytics-suite-setup.md" sourcestartlinenumber="66">
+<li sourcefile="Solutions/analytics-suite-setup.md" sourcestartlinenumber="66">Open the <strong sourcefile="Solutions/analytics-suite-setup.md" sourcestartlinenumber="66">Analytics Suite</strong> app in the relevant workspace.</li>
+</ol>
+<p sourcefile="Solutions/analytics-suite-setup.md" sourcestartlinenumber="68"><img src="media/analytics-suite-app-list.png" sourcefile="Solutions/analytics-suite-setup.md" sourcestartlinenumber="68" alt="App"></p>
+<ol start="7" sourcefile="Solutions/analytics-suite-setup.md" sourcestartlinenumber="70">
+<li sourcefile="Solutions/analytics-suite-setup.md" sourcestartlinenumber="70">Click <strong sourcefile="Solutions/analytics-suite-setup.md" sourcestartlinenumber="70">Connect your data</strong>.</li>
+</ol>
+<p sourcefile="Solutions/analytics-suite-setup.md" sourcestartlinenumber="72"><img src="media/analytics-suite-connect-data.png" sourcefile="Solutions/analytics-suite-setup.md" sourcestartlinenumber="72" alt="Connect data"></p>
+<ol start="8" sourcefile="Solutions/analytics-suite-setup.md" sourcestartlinenumber="74">
+<li sourcefile="Solutions/analytics-suite-setup.md" sourcestartlinenumber="74">In the <strong sourcefile="Solutions/analytics-suite-setup.md" sourcestartlinenumber="74">EnvironmentName</strong> field, enter the name of your Business Central environment.</li>
+</ol>
+<h2 id="see-also" sourcefile="Solutions/analytics-suite-setup.md" sourcestartlinenumber="76">See also</h2>
+<p sourcefile="Solutions/analytics-suite-setup.md" sourcestartlinenumber="78"><a href="analytics-suite.html" sourcefile="Solutions/analytics-suite-setup.md" sourcestartlinenumber="78">Analytics Suite – Overview</a><br>
+<a href="streamlinetools.html" sourcefile="Solutions/analytics-suite-setup.md" sourcestartlinenumber="79">Streamline Tools</a></p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/ARICOMA-D365BC/AC-IB-dynamics365smb-docs/blob/master/business-central/Solutions/analytics-suite-setup.md/#L1" class="contribution-link">Improve this document</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+           <span><a href="https://www.aricoma.com/docs/en-us/dynamics365/business-central/Solutions/solutions.html"><strong>ENGLISH</strong><strong>/</strong><a href="https://www.aricoma.com/docs/cs-cz/dynamics365/business-central/Solutions/solutions.html"><strong>CZECH</strong></a></a></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

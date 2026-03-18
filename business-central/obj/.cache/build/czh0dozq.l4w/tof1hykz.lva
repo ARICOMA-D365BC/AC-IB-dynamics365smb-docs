@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Production tools | Microsoft Docs </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Production tools | Microsoft Docs ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../TOC.html">
+    <meta property="docfx:tocrel" content="TOC.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="png" src="../logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="production-tools" sourcefile="Solutions/production-tools.md" sourcestartlinenumber="13">Production Tools</h1>
+
+<blockquote sourcefile="Solutions/production-tools.md" sourcestartlinenumber="15">
+<p sourcefile="Solutions/production-tools.md" sourcestartlinenumber="15">Updated: December 1, 2024</p>
+</blockquote>
+<p sourcefile="Solutions/production-tools.md" sourcestartlinenumber="17">Gain full control over your tools and equipment with a smart solution that is directly integrated into Business Central. Track tool movements, minimize losses, and extend tool life with an easy overview of records, loans, inspections, and maintenance. Our <strong sourcefile="Solutions/production-tools.md" sourcestartlinenumber="17">Production Tools</strong> module solves the problem of recording tools, equipment, molds, and other supplies that are usually recorded using the system's inventory records. This module is based on asset records and unifies records for the purposes of tracking fixed assets and production records, including the lending of tools and equipment.</p>
+<p sourcefile="Solutions/production-tools.md" sourcestartlinenumber="19"><img src="media/production-tools-tool-card.png" sourcefile="Solutions/production-tools.md" sourcestartlinenumber="19" alt="Tool card"></p>
+<h2 id="key-features-of-the-module" sourcefile="Solutions/production-tools.md" sourcestartlinenumber="21">Key features of the module</h2>
+<ul sourcefile="Solutions/production-tools.md" sourcestartlinenumber="23">
+<li sourcefile="Solutions/production-tools.md" sourcestartlinenumber="23"><strong sourcefile="Solutions/production-tools.md" sourcestartlinenumber="23">Tool receipt:</strong> Allows easy registration of each new tool. You get an overview of the availability of equipment from the very beginning.</li>
+<li sourcefile="Solutions/production-tools.md" sourcestartlinenumber="24"><strong sourcefile="Solutions/production-tools.md" sourcestartlinenumber="24">Tool lending:</strong> Facilitates the management of loans, whether for short-term or long-term use. You can track who currently has tools on loan.</li>
+<li sourcefile="Solutions/production-tools.md" sourcestartlinenumber="25"><strong sourcefile="Solutions/production-tools.md" sourcestartlinenumber="25">Tool return:</strong> Provides an overview of the condition of tools upon return and allows for immediate updating of the records.</li>
+<li sourcefile="Solutions/production-tools.md" sourcestartlinenumber="26"><strong sourcefile="Solutions/production-tools.md" sourcestartlinenumber="26">Tool disposal:</strong> Allows for easy disposal of damaged or obsolete tools, creating space for new equipment.</li>
+</ul>
+<h3 id="tool-usage-process" sourcefile="Solutions/production-tools.md" sourcestartlinenumber="28">Tool usage process</h3>
+<p sourcefile="Solutions/production-tools.md" sourcestartlinenumber="30">Tools are used according to the following scheme:</p>
+<p sourcefile="Solutions/production-tools.md" sourcestartlinenumber="32"><img src="media/production-tools-process_720.png" sourcefile="Solutions/production-tools.md" sourcestartlinenumber="32" alt="Tool and equipment records - diagram"></p>
+<h3 id="scenarios-for-using-the-tool-and-equipment-register" sourcefile="Solutions/production-tools.md" sourcestartlinenumber="34">Scenarios for using the tool and equipment register</h3>
+<p sourcefile="Solutions/production-tools.md" sourcestartlinenumber="36">To make your work easier, we have compiled an overview of the most common scenarios you may encounter in everyday practice:</p>
+<ul sourcefile="Solutions/production-tools.md" sourcestartlinenumber="38">
+<li sourcefile="Solutions/production-tools.md" sourcestartlinenumber="38"><strong sourcefile="Solutions/production-tools.md" sourcestartlinenumber="38">Introducing a new tool</strong></li>
+<li sourcefile="Solutions/production-tools.md" sourcestartlinenumber="39"><strong sourcefile="Solutions/production-tools.md" sourcestartlinenumber="39">Receiving tools into stock</strong></li>
+<li sourcefile="Solutions/production-tools.md" sourcestartlinenumber="40"><strong sourcefile="Solutions/production-tools.md" sourcestartlinenumber="40">Loaning tools</strong></li>
+<li sourcefile="Solutions/production-tools.md" sourcestartlinenumber="41"><strong sourcefile="Solutions/production-tools.md" sourcestartlinenumber="41">Returning tools</strong></li>
+<li sourcefile="Solutions/production-tools.md" sourcestartlinenumber="42"><strong sourcefile="Solutions/production-tools.md" sourcestartlinenumber="42">Issuing tools</strong></li>
+</ul>
+<h3 id="introducing-a-new-tool" sourcefile="Solutions/production-tools.md" sourcestartlinenumber="44">Introducing a new tool</h3>
+<ol sourcefile="Solutions/production-tools.md" sourcestartlinenumber="46">
+<li sourcefile="Solutions/production-tools.md" sourcestartlinenumber="46"><p sourcefile="Solutions/production-tools.md" sourcestartlinenumber="46">Select the <img src="media/ui-search/search_small.png" sourcefile="Solutions/production-tools.md" sourcestartlinenumber="46" alt="Light bulb icon, which opens the Tell me function" title="Tell me what you want to do"> and enter <strong sourcefile="Solutions/production-tools.md" sourcestartlinenumber="46">Tool inventory overview</strong> in the search engine, then select the relevant link</p>
+</li>
+<li sourcefile="Solutions/production-tools.md" sourcestartlinenumber="47"><p sourcefile="Solutions/production-tools.md" sourcestartlinenumber="47">On the <strong sourcefile="Solutions/production-tools.md" sourcestartlinenumber="47">Tool inventory overview</strong> page, select the <strong sourcefile="Solutions/production-tools.md" sourcestartlinenumber="47">New</strong> action.
+<img src="media/production-tools-tool-list-new.png" sourcefile="Solutions/production-tools.md" sourcestartlinenumber="48" alt="Tool inventory overview - New"></p>
+</li>
+<li sourcefile="Solutions/production-tools.md" sourcestartlinenumber="49"><p sourcefile="Solutions/production-tools.md" sourcestartlinenumber="49">After selecting the <strong sourcefile="Solutions/production-tools.md" sourcestartlinenumber="49">New</strong> action, the <strong sourcefile="Solutions/production-tools.md" sourcestartlinenumber="49">Tool Record Card</strong> will open</p>
+<p sourcefile="Solutions/production-tools.md" sourcestartlinenumber="51"><strong sourcefile="Solutions/production-tools.md" sourcestartlinenumber="51">Each tool record card contains the following fields:</strong></p>
+<ul sourcefile="Solutions/production-tools.md" sourcestartlinenumber="53">
+<li sourcefile="Solutions/production-tools.md" sourcestartlinenumber="53"><strong sourcefile="Solutions/production-tools.md" sourcestartlinenumber="53">Number</strong> – select a number series for tool records</li>
+<li sourcefile="Solutions/production-tools.md" sourcestartlinenumber="54"><strong sourcefile="Solutions/production-tools.md" sourcestartlinenumber="54">Description</strong> – name of the tool</li>
+<li sourcefile="Solutions/production-tools.md" sourcestartlinenumber="55"><strong sourcefile="Solutions/production-tools.md" sourcestartlinenumber="55">Serial number</strong> – serial number of the tool</li>
+<li sourcefile="Solutions/production-tools.md" sourcestartlinenumber="56"><strong sourcefile="Solutions/production-tools.md" sourcestartlinenumber="56">Main asset/component</strong> – specifies the main data source of the tool</li>
+<li sourcefile="Solutions/production-tools.md" sourcestartlinenumber="57"><strong sourcefile="Solutions/production-tools.md" sourcestartlinenumber="57">Main data source component</strong> – specifies the component of the main data source</li>
+<li sourcefile="Solutions/production-tools.md" sourcestartlinenumber="58"><strong sourcefile="Solutions/production-tools.md" sourcestartlinenumber="58">Search description</strong> – description used to search for the tool</li>
+<li sourcefile="Solutions/production-tools.md" sourcestartlinenumber="59"><strong sourcefile="Solutions/production-tools.md" sourcestartlinenumber="59">Inactive</strong> – determines whether the tool is active</li>
+<li sourcefile="Solutions/production-tools.md" sourcestartlinenumber="60"><strong sourcefile="Solutions/production-tools.md" sourcestartlinenumber="60">Closed</strong> – determines whether the tool is blocked
+<img src="media/production-tools-tool-card-general.png" sourcefile="Solutions/production-tools.md" sourcestartlinenumber="61" alt="Tool card - general"></li>
+</ul>
+</li>
+<li sourcefile="Solutions/production-tools.md" sourcestartlinenumber="63"><p sourcefile="Solutions/production-tools.md" sourcestartlinenumber="63">After filling in the fields in the <strong sourcefile="Solutions/production-tools.md" sourcestartlinenumber="63">Tool Record Card</strong>, the tool will be saved in our <strong sourcefile="Solutions/production-tools.md" sourcestartlinenumber="63">Tool Records</strong>.</p>
+<p sourcefile="Solutions/production-tools.md" sourcestartlinenumber="65"><strong sourcefile="Solutions/production-tools.md" sourcestartlinenumber="65">From the card, you can also use the Related action in the Fixed Assets section</strong></p>
+<ul sourcefile="Solutions/production-tools.md" sourcestartlinenumber="67">
+<li sourcefile="Solutions/production-tools.md" sourcestartlinenumber="67"><strong sourcefile="Solutions/production-tools.md" sourcestartlinenumber="67">Overview</strong>: Displays a summary view of the currently selected fixed assets. This overview includes key information such as the description of the asset, its accounting category, current balances, and other relevant data.</li>
+<li sourcefile="Solutions/production-tools.md" sourcestartlinenumber="68"><strong sourcefile="Solutions/production-tools.md" sourcestartlinenumber="68">Depreciation books</strong>: Provides access to an overview of depreciation books associated with the asset (instrument). Here you can track the history of depreciation, depreciation methods used, and other information about accounting movements of the asset</li>
+<li sourcefile="Solutions/production-tools.md" sourcestartlinenumber="69"><strong sourcefile="Solutions/production-tools.md" sourcestartlinenumber="69">Notes</strong>: Used to add and manage notes related to specific fixed assets. For example, it allows you to record specific details that are not normally recorded in other parts of the system.</li>
+<li sourcefile="Solutions/production-tools.md" sourcestartlinenumber="70"><strong sourcefile="Solutions/production-tools.md" sourcestartlinenumber="70">Image</strong>: This feature allows you to attach or view images associated with fixed assets. Images can be useful, for example, for visual identification of assets or documentation.</li>
+<li sourcefile="Solutions/production-tools.md" sourcestartlinenumber="71"><strong sourcefile="Solutions/production-tools.md" sourcestartlinenumber="71">Maintenance records</strong>: Access to maintenance records for a given fixed asset. This feature is designed to track service interventions, repairs, and other maintenance activities. It helps ensure that assets are kept in working order.</li>
+<li sourcefile="Solutions/production-tools.md" sourcestartlinenumber="72"><strong sourcefile="Solutions/production-tools.md" sourcestartlinenumber="72">Asset components</strong>: Displays an overview of the components that make up the main asset. This feature is particularly relevant for complex assets that include multiple sub-parts.</li>
+<li sourcefile="Solutions/production-tools.md" sourcestartlinenumber="73"><strong sourcefile="Solutions/production-tools.md" sourcestartlinenumber="73">Copy DM</strong>: Allows you to create a copy of the current fixed asset record. This feature saves time when creating a new asset with similar parameters to an existing item.</li>
+<li sourcefile="Solutions/production-tools.md" sourcestartlinenumber="74"><strong sourcefile="Solutions/production-tools.md" sourcestartlinenumber="74">Main asset statistics</strong>: Provides a statistical overview of fixed assets, including, for example, an overview of asset value, depreciation, and balances. This data is useful for financial analysis and planning.</li>
+<li sourcefile="Solutions/production-tools.md" sourcestartlinenumber="75"><strong sourcefile="Solutions/production-tools.md" sourcestartlinenumber="75">Overview of asset accounting types</strong>: This function displays an overview of all accounting types that have been used for a given fixed asset. It allows you to quickly check how the asset is accounted for.</li>
+<li sourcefile="Solutions/production-tools.md" sourcestartlinenumber="76"><strong sourcefile="Solutions/production-tools.md" sourcestartlinenumber="76">Total insured amount</strong>: Provides information about the total value of insurance that applies to the asset. This feature helps verify that the asset is adequately insured.</li>
+<li sourcefile="Solutions/production-tools.md" sourcestartlinenumber="77"><strong sourcefile="Solutions/production-tools.md" sourcestartlinenumber="77">Change log items</strong>: Allows you to view the history of changes made to fixed asset records. This feature is useful for auditing purposes or tracking changes.</li>
+</ul>
+</li>
+</ol>
+<p sourcefile="Solutions/production-tools.md" sourcestartlinenumber="79"><img src="media/production-tools-tool-card-related-fa.png" sourcefile="Solutions/production-tools.md" sourcestartlinenumber="79" alt="Tool card - related"></p>
+<h3 id="accessing-the-tool" sourcefile="Solutions/production-tools.md" sourcestartlinenumber="81">Accessing the tool</h3>
+<ol sourcefile="Solutions/production-tools.md" sourcestartlinenumber="83">
+<li sourcefile="Solutions/production-tools.md" sourcestartlinenumber="83">Choose the <img src="media/ui-search/search_small.png" sourcefile="Solutions/production-tools.md" sourcestartlinenumber="83" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong sourcefile="Solutions/production-tools.md" sourcestartlinenumber="83">Tool Log</strong> in the search engine, then select the relevant link.</li>
+<li sourcefile="Solutions/production-tools.md" sourcestartlinenumber="84">Select the template that best suits your needs.</li>
+<li sourcefile="Solutions/production-tools.md" sourcestartlinenumber="85">Enter the <strong sourcefile="Solutions/production-tools.md" sourcestartlinenumber="85">external document number</strong> in the appropriate field.</li>
+<li sourcefile="Solutions/production-tools.md" sourcestartlinenumber="86">For <strong sourcefile="Solutions/production-tools.md" sourcestartlinenumber="86">Item Type</strong>, select <strong sourcefile="Solutions/production-tools.md" sourcestartlinenumber="86">Receipt</strong> and select the tool you want to register.</li>
+<li sourcefile="Solutions/production-tools.md" sourcestartlinenumber="87">Fill in the <strong sourcefile="Solutions/production-tools.md" sourcestartlinenumber="87">Employee Number</strong> field for the person responsible for receiving the tools.</li>
+<li sourcefile="Solutions/production-tools.md" sourcestartlinenumber="88">Enter the required values in the <strong sourcefile="Solutions/production-tools.md" sourcestartlinenumber="88">Quantity</strong> and <strong sourcefile="Solutions/production-tools.md" sourcestartlinenumber="88">Price</strong> fields.</li>
+<li sourcefile="Solutions/production-tools.md" sourcestartlinenumber="89">Enter the <strong sourcefile="Solutions/production-tools.md" sourcestartlinenumber="89">Registration Number</strong> of the tool so that individual tools can be clearly identified in future operations.</li>
+<li sourcefile="Solutions/production-tools.md" sourcestartlinenumber="90">If you use barcode readers, you can also enter the <strong sourcefile="Solutions/production-tools.md" sourcestartlinenumber="90">EAN code</strong>.</li>
+<li sourcefile="Solutions/production-tools.md" sourcestartlinenumber="91">Click the <strong sourcefile="Solutions/production-tools.md" sourcestartlinenumber="91">Account</strong> button to save the item to the register.</li>
+<li sourcefile="Solutions/production-tools.md" sourcestartlinenumber="92">All created items can be viewed on the <strong sourcefile="Solutions/production-tools.md" sourcestartlinenumber="92">tool register items</strong> page.</li>
+</ol>
+<p sourcefile="Solutions/production-tools.md" sourcestartlinenumber="94"><strong sourcefile="Solutions/production-tools.md" sourcestartlinenumber="94">Illustration using images:</strong></p>
+<p sourcefile="Solutions/production-tools.md" sourcestartlinenumber="96"><img src="media/resized_production-tools-journal-templatelist2.png" sourcefile="Solutions/production-tools.md" sourcestartlinenumber="96" alt="Tool Journal - Templates"></p>
+<p sourcefile="Solutions/production-tools.md" sourcestartlinenumber="98"><strong sourcefile="Solutions/production-tools.md" sourcestartlinenumber="98">Tool Journal Lines:</strong>
+<img src="media/production-tools-tool-journal-positiveadjustment.png" sourcefile="Solutions/production-tools.md" sourcestartlinenumber="99" alt="Tool Journal - Receipt"></p>
+<div class="IMPORTANT" sourcefile="Solutions/production-tools.md" sourcestartlinenumber="101">
+<h5>Important</h5>
+<p sourcefile="Solutions/production-tools.md" sourcestartlinenumber="102">Required fields for <strong sourcefile="Solutions/production-tools.md" sourcestartlinenumber="102">Item type</strong> <strong sourcefile="Solutions/production-tools.md" sourcestartlinenumber="102">Receipt</strong>: <strong sourcefile="Solutions/production-tools.md" sourcestartlinenumber="102">External document number</strong>, <strong sourcefile="Solutions/production-tools.md" sourcestartlinenumber="102">Employee number</strong>, <strong sourcefile="Solutions/production-tools.md" sourcestartlinenumber="102">Registration number</strong>, <strong sourcefile="Solutions/production-tools.md" sourcestartlinenumber="102">Price</strong>.</p>
+</div>
+<h3 id="tool-loan" sourcefile="Solutions/production-tools.md" sourcestartlinenumber="104">Tool Loan</h3>
+<ol sourcefile="Solutions/production-tools.md" sourcestartlinenumber="106">
+<li sourcefile="Solutions/production-tools.md" sourcestartlinenumber="106">Choose the <img src="media/ui-search/search_small.png" sourcefile="Solutions/production-tools.md" sourcestartlinenumber="106" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong sourcefile="Solutions/production-tools.md" sourcestartlinenumber="106">Tool Journal</strong> in the search engine, then select the relevant link.</li>
+<li sourcefile="Solutions/production-tools.md" sourcestartlinenumber="107">Select the template that best suits your needs.</li>
+<li sourcefile="Solutions/production-tools.md" sourcestartlinenumber="108">Fill in the <strong sourcefile="Solutions/production-tools.md" sourcestartlinenumber="108">DM Number</strong> field.</li>
+<li sourcefile="Solutions/production-tools.md" sourcestartlinenumber="109">In the <strong sourcefile="Solutions/production-tools.md" sourcestartlinenumber="109">Employee Number</strong> field, select the employee borrowing the tool.</li>
+<li sourcefile="Solutions/production-tools.md" sourcestartlinenumber="110">Fill in the <strong sourcefile="Solutions/production-tools.md" sourcestartlinenumber="110">Quantity</strong> field.</li>
+<li sourcefile="Solutions/production-tools.md" sourcestartlinenumber="111">Fill in the <strong sourcefile="Solutions/production-tools.md" sourcestartlinenumber="111">Registration number</strong> field, i.e., the specific tool to be borrowed.</li>
+<li sourcefile="Solutions/production-tools.md" sourcestartlinenumber="112">If you use barcode readers, you can also enter the <strong sourcefile="Solutions/production-tools.md" sourcestartlinenumber="112">EAN code</strong>.</li>
+<li sourcefile="Solutions/production-tools.md" sourcestartlinenumber="113">Click the <strong sourcefile="Solutions/production-tools.md" sourcestartlinenumber="113">Charge</strong> button to save the item in the register.</li>
+<li sourcefile="Solutions/production-tools.md" sourcestartlinenumber="114">All created items can be viewed on the <strong sourcefile="Solutions/production-tools.md" sourcestartlinenumber="114">tool inventory items</strong> page.</li>
+</ol>
+<p sourcefile="Solutions/production-tools.md" sourcestartlinenumber="116"><strong sourcefile="Solutions/production-tools.md" sourcestartlinenumber="116">Example using images:</strong></p>
+<p sourcefile="Solutions/production-tools.md" sourcestartlinenumber="118"><img src="media/resized_production-tools-journal-templatelist2.png" sourcefile="Solutions/production-tools.md" sourcestartlinenumber="118" alt="Tool Journal - Templates"></p>
+<p sourcefile="Solutions/production-tools.md" sourcestartlinenumber="120"><strong sourcefile="Solutions/production-tools.md" sourcestartlinenumber="120">Tool Journal Lines:</strong>
+<img src="media/production-tools-tool-journal-lend.png" sourcefile="Solutions/production-tools.md" sourcestartlinenumber="121" alt="Tool Journal - Loan"></p>
+<div class="IMPORTANT" sourcefile="Solutions/production-tools.md" sourcestartlinenumber="123">
+<h5>Important</h5>
+<p sourcefile="Solutions/production-tools.md" sourcestartlinenumber="124">Required fields for <strong sourcefile="Solutions/production-tools.md" sourcestartlinenumber="124">Item Type</strong> <strong sourcefile="Solutions/production-tools.md" sourcestartlinenumber="124">Loan</strong>: <strong sourcefile="Solutions/production-tools.md" sourcestartlinenumber="124">Employee Number</strong>, <strong sourcefile="Solutions/production-tools.md" sourcestartlinenumber="124">Registration Number</strong>.</p>
+</div>
+<h3 id="returning-a-tool" sourcefile="Solutions/production-tools.md" sourcestartlinenumber="126">Returning a tool</h3>
+<ol sourcefile="Solutions/production-tools.md" sourcestartlinenumber="128">
+<li sourcefile="Solutions/production-tools.md" sourcestartlinenumber="128">Choose the <img src="media/ui-search/search_small.png" sourcefile="Solutions/production-tools.md" sourcestartlinenumber="128" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong sourcefile="Solutions/production-tools.md" sourcestartlinenumber="128">Tool Log</strong> in the search box, then select the relevant link.</li>
+<li sourcefile="Solutions/production-tools.md" sourcestartlinenumber="129">Select the template that best suits your needs.</li>
+<li sourcefile="Solutions/production-tools.md" sourcestartlinenumber="130">For <strong sourcefile="Solutions/production-tools.md" sourcestartlinenumber="130">Item Type</strong>, select <strong sourcefile="Solutions/production-tools.md" sourcestartlinenumber="130">Return</strong>.</li>
+<li sourcefile="Solutions/production-tools.md" sourcestartlinenumber="131">In the <strong sourcefile="Solutions/production-tools.md" sourcestartlinenumber="131">DM Number</strong> field, select the tool you want to return.</li>
+<li sourcefile="Solutions/production-tools.md" sourcestartlinenumber="132">Fill in the <strong sourcefile="Solutions/production-tools.md" sourcestartlinenumber="132">Employee Number</strong> field for the employee returning the tool.</li>
+<li sourcefile="Solutions/production-tools.md" sourcestartlinenumber="133">Enter the value in the <strong sourcefile="Solutions/production-tools.md" sourcestartlinenumber="133">Quantity</strong> field corresponding to the number of tools being returned.</li>
+<li sourcefile="Solutions/production-tools.md" sourcestartlinenumber="134">Enter a value in the <strong sourcefile="Solutions/production-tools.md" sourcestartlinenumber="134">Registration Number</strong> field to uniquely identify the specific tool.</li>
+<li sourcefile="Solutions/production-tools.md" sourcestartlinenumber="135">Fill in the <strong sourcefile="Solutions/production-tools.md" sourcestartlinenumber="135">Damage Code</strong> field, if applicable.</li>
+<li sourcefile="Solutions/production-tools.md" sourcestartlinenumber="136">If you use barcode readers, you can also enter the <strong sourcefile="Solutions/production-tools.md" sourcestartlinenumber="136">EAN code</strong>.</li>
+<li sourcefile="Solutions/production-tools.md" sourcestartlinenumber="137">Click the <strong sourcefile="Solutions/production-tools.md" sourcestartlinenumber="137">Account</strong> button to save the item in the records.</li>
+<li sourcefile="Solutions/production-tools.md" sourcestartlinenumber="138">All created items can be viewed on the <strong sourcefile="Solutions/production-tools.md" sourcestartlinenumber="138">Tool Record Items</strong> page.</li>
+</ol>
+<p sourcefile="Solutions/production-tools.md" sourcestartlinenumber="140"><strong sourcefile="Solutions/production-tools.md" sourcestartlinenumber="140">Example using images:</strong></p>
+<p sourcefile="Solutions/production-tools.md" sourcestartlinenumber="142"><img src="media/resized_production-tools-journal-templatelist2.png" sourcefile="Solutions/production-tools.md" sourcestartlinenumber="142" alt="Tool Journal - Templates"></p>
+<p sourcefile="Solutions/production-tools.md" sourcestartlinenumber="144"><strong sourcefile="Solutions/production-tools.md" sourcestartlinenumber="144">Tool Journal Lines:</strong>
+<img src="media/production-tools-tool-journal-return.png" sourcefile="Solutions/production-tools.md" sourcestartlinenumber="145" alt="Tool Journal - Return"></p>
+<div class="IMPORTANT" sourcefile="Solutions/production-tools.md" sourcestartlinenumber="147">
+<h5>Important</h5>
+<p sourcefile="Solutions/production-tools.md" sourcestartlinenumber="148">Required fields for <strong sourcefile="Solutions/production-tools.md" sourcestartlinenumber="148">Item Type</strong> <strong sourcefile="Solutions/production-tools.md" sourcestartlinenumber="148">Return</strong>: <strong sourcefile="Solutions/production-tools.md" sourcestartlinenumber="148">Employee Number</strong>, <strong sourcefile="Solutions/production-tools.md" sourcestartlinenumber="148">Damage Code</strong>, <strong sourcefile="Solutions/production-tools.md" sourcestartlinenumber="148">Registration Number</strong>.</p>
+</div>
+<h3 id="tool-issuance" sourcefile="Solutions/production-tools.md" sourcestartlinenumber="150">Tool Issuance</h3>
+<ol sourcefile="Solutions/production-tools.md" sourcestartlinenumber="152">
+<li sourcefile="Solutions/production-tools.md" sourcestartlinenumber="152">Choose the <img src="media/ui-search/search_small.png" sourcefile="Solutions/production-tools.md" sourcestartlinenumber="152" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong sourcefile="Solutions/production-tools.md" sourcestartlinenumber="152">Tool Log</strong> in the search engine, then select the relevant link.</li>
+<li sourcefile="Solutions/production-tools.md" sourcestartlinenumber="153">Select the template that best suits your needs.</li>
+<li sourcefile="Solutions/production-tools.md" sourcestartlinenumber="154">For <strong sourcefile="Solutions/production-tools.md" sourcestartlinenumber="154">Item Type</strong>, select <strong sourcefile="Solutions/production-tools.md" sourcestartlinenumber="154">Issue</strong>.</li>
+<li sourcefile="Solutions/production-tools.md" sourcestartlinenumber="155">In the <strong sourcefile="Solutions/production-tools.md" sourcestartlinenumber="155">DM Number</strong> field, select the tool you want to issue.</li>
+<li sourcefile="Solutions/production-tools.md" sourcestartlinenumber="156">Fill in the <strong sourcefile="Solutions/production-tools.md" sourcestartlinenumber="156">Employee Number</strong> field with the number of the person performing the action.</li>
+<li sourcefile="Solutions/production-tools.md" sourcestartlinenumber="157">Enter a value in the <strong sourcefile="Solutions/production-tools.md" sourcestartlinenumber="157">Registration Number</strong> field to uniquely identify the specific tool.</li>
+<li sourcefile="Solutions/production-tools.md" sourcestartlinenumber="158">Fill in the <strong sourcefile="Solutions/production-tools.md" sourcestartlinenumber="158">Damage Code</strong> field, if relevant.</li>
+<li sourcefile="Solutions/production-tools.md" sourcestartlinenumber="159">If you use barcode readers, you can also enter the <strong sourcefile="Solutions/production-tools.md" sourcestartlinenumber="159">EAN code</strong>.</li>
+<li sourcefile="Solutions/production-tools.md" sourcestartlinenumber="160">Click the <strong sourcefile="Solutions/production-tools.md" sourcestartlinenumber="160">Account</strong> button to save the item in the records.</li>
+<li sourcefile="Solutions/production-tools.md" sourcestartlinenumber="161">All created items can be viewed on the <strong sourcefile="Solutions/production-tools.md" sourcestartlinenumber="161">Tool Record Items</strong> page.</li>
+</ol>
+<p sourcefile="Solutions/production-tools.md" sourcestartlinenumber="163"><strong sourcefile="Solutions/production-tools.md" sourcestartlinenumber="163">Example using images:</strong></p>
+<p sourcefile="Solutions/production-tools.md" sourcestartlinenumber="165"><img src="media/resized_production-tools-journal-templatelist2.png" sourcefile="Solutions/production-tools.md" sourcestartlinenumber="165" alt="Tool Journal - Templates"></p>
+<p sourcefile="Solutions/production-tools.md" sourcestartlinenumber="167"><strong sourcefile="Solutions/production-tools.md" sourcestartlinenumber="167">Tool Journal Lines:</strong>
+<img src="media/production-tools-tool-journal-negativeadjustment.png" sourcefile="Solutions/production-tools.md" sourcestartlinenumber="168" alt="Tool Journal - Issue"></p>
+<div class="IMPORTANT" sourcefile="Solutions/production-tools.md" sourcestartlinenumber="170">
+<h5>Important</h5>
+<p sourcefile="Solutions/production-tools.md" sourcestartlinenumber="171">Required fields for <strong sourcefile="Solutions/production-tools.md" sourcestartlinenumber="171">Item Type</strong> <strong sourcefile="Solutions/production-tools.md" sourcestartlinenumber="171">Issue</strong>: <strong sourcefile="Solutions/production-tools.md" sourcestartlinenumber="171">Employee Number</strong>, <strong sourcefile="Solutions/production-tools.md" sourcestartlinenumber="171">Damage Code</strong>, <strong sourcefile="Solutions/production-tools.md" sourcestartlinenumber="171">Registration Number</strong>.</p>
+</div>
+<h3 id="tool-inventory-items" sourcefile="Solutions/production-tools.md" sourcestartlinenumber="173">Tool inventory items</h3>
+<p sourcefile="Solutions/production-tools.md" sourcestartlinenumber="175">As mentioned above, all created items can be viewed on the <strong sourcefile="Solutions/production-tools.md" sourcestartlinenumber="175">Tool inventory items</strong> tab. Here is how to display this page:</p>
+<ol sourcefile="Solutions/production-tools.md" sourcestartlinenumber="177">
+<li sourcefile="Solutions/production-tools.md" sourcestartlinenumber="177">Choose the <img src="media/ui-search/search_small.png" sourcefile="Solutions/production-tools.md" sourcestartlinenumber="177" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enterChoose the <img src="media/ui-search/search_small.png" sourcefile="Solutions/production-tools.md" sourcestartlinenumber="177" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong sourcefile="Solutions/production-tools.md" sourcestartlinenumber="177">Tool inventory items</strong> in the search engine, then select the relevant link.</li>
+<li sourcefile="Solutions/production-tools.md" sourcestartlinenumber="178">The <strong sourcefile="Solutions/production-tools.md" sourcestartlinenumber="178">Tool Ledger Entries</strong> page will appear, where you can view all entries that have been created.</li>
+</ol>
+<p sourcefile="Solutions/production-tools.md" sourcestartlinenumber="180"><img src="media/production-tools-tool-ledger-entries.png" sourcefile="Solutions/production-tools.md" sourcestartlinenumber="180" alt="Tool Ledger Entries - Display"></p>
+<p sourcefile="Solutions/production-tools.md" sourcestartlinenumber="182"><strong sourcefile="Solutions/production-tools.md" sourcestartlinenumber="182">See also</strong></p>
+<p sourcefile="Solutions/production-tools.md" sourcestartlinenumber="184"><a href="production-tools-setup.html" sourcefile="Solutions/production-tools.md" sourcestartlinenumber="184">Production Tools setup</a><br>
+<a href="productivity-pack.html" sourcefile="Solutions/production-tools.md" sourcestartlinenumber="185">Productivity Pack</a></p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/ARICOMA-D365BC/AC-IB-dynamics365smb-docs/blob/master/business-central/Solutions/production-tools.md/#L1" class="contribution-link">Improve this document</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+           <span><a href="https://www.aricoma.com/docs/en-us/dynamics365/business-central/Solutions/solutions.html"><strong>ENGLISH</strong><strong>/</strong><a href="https://www.aricoma.com/docs/cs-cz/dynamics365/business-central/Solutions/solutions.html"><strong>CZECH</strong></a></a></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

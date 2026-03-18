@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Analytics Suite </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Analytics Suite ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../TOC.html">
+    <meta property="docfx:tocrel" content="TOC.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="png" src="../logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="analytics-suite---power-bi-solution-for-dynamics-365-business-central" sourcefile="StreamlineTools/analytics-suite.md" sourcestartlinenumber="12">Analytics Suite - Power BI solution for Dynamics 365 Business Central</h1>
+
+<blockquote sourcefile="StreamlineTools/analytics-suite.md" sourcestartlinenumber="14">
+<p sourcefile="StreamlineTools/analytics-suite.md" sourcestartlinenumber="14">Updated: 01/06/2025</p>
+</blockquote>
+<p sourcefile="StreamlineTools/analytics-suite.md" sourcestartlinenumber="16">Analytics Suite provides companies with a powerful tool for data analysis and visualization of key indicators. It allows easy connection, filtering, and analysis of financial, sales, and operational data, leading to faster and more efficient decision-making. With interactive dashboards and automated reports, you gain better insight into company performance and uncover new business opportunities.</p>
+<p sourcefile="StreamlineTools/analytics-suite.md" sourcestartlinenumber="18"><img src="media/analytics-suite-bc.png" sourcefile="StreamlineTools/analytics-suite.md" sourcestartlinenumber="18" alt="Analytics Suite" title="Analytics Suite - Power BI solution for Dynamics 365 Business Central"></p>
+<h2 id="covered-areas" sourcefile="StreamlineTools/analytics-suite.md" sourcestartlinenumber="20">Covered Areas</h2>
+<ul sourcefile="StreamlineTools/analytics-suite.md" sourcestartlinenumber="22">
+<li sourcefile="StreamlineTools/analytics-suite.md" sourcestartlinenumber="22">Finance</li>
+<li sourcefile="StreamlineTools/analytics-suite.md" sourcestartlinenumber="23">Banks</li>
+<li sourcefile="StreamlineTools/analytics-suite.md" sourcestartlinenumber="24">Purchase and Payables</li>
+<li sourcefile="StreamlineTools/analytics-suite.md" sourcestartlinenumber="25">Sales and Receivables</li>
+<li sourcefile="StreamlineTools/analytics-suite.md" sourcestartlinenumber="26">Inventory</li>
+</ul>
+<p sourcefile="StreamlineTools/analytics-suite.md" sourcestartlinenumber="28"><img src="media/analytics-suite-navigator.png" sourcefile="StreamlineTools/analytics-suite.md" sourcestartlinenumber="28" alt="alt text"></p>
+<h2 id="business-processes-and-performance-under-control-with-bi" sourcefile="StreamlineTools/analytics-suite.md" sourcestartlinenumber="30">Business Processes and Performance Under Control with BI</h2>
+<p sourcefile="StreamlineTools/analytics-suite.md" sourcestartlinenumber="32">Business Intelligence (BI) tools help companies effectively manage key processes, reduce costs, optimize sales volume, and select development projects correctly. They enable detailed analysis of project profitability, identification of funds tied up in inventory or receivables, and their efficient release. Advanced data handling helps uncover untapped market potential, recognize trends, and optimize resource utilization.</p>
+<p sourcefile="StreamlineTools/analytics-suite.md" sourcestartlinenumber="34">The system provides an overview of receivables data and allows detailed analysis. It offers the possibility to compare data over different time periods and interactive reports that ensure immediate feedback and the ability to analyze data from various perspectives.</p>
+<p sourcefile="StreamlineTools/analytics-suite.md" sourcestartlinenumber="36">Thanks to a ready-made solution that can be easily customized to individual needs, deployment is quick and does not require additional investments. Users can connect and supplement additional data sources, adjust the data model according to specific requirements, and create their own dashboards and reports, for example, by linking with payroll systems or budgets in Excel.</p>
+<p sourcefile="StreamlineTools/analytics-suite.md" sourcestartlinenumber="38">The system is fully integrated with Business Central, allowing easy connection with company data and efficient real-time process management.</p>
+<h2 id="finance" sourcefile="StreamlineTools/analytics-suite.md" sourcestartlinenumber="40">Finance</h2>
+<p sourcefile="StreamlineTools/analytics-suite.md" sourcestartlinenumber="42">Analytics Suite for finance provides a comprehensive overview of key financial indicators such as revenues, costs, and profitability. It enables detailed budget analysis, trend monitoring, and deviation identification, facilitating financial management optimization and strategic planning.</p>
+<p sourcefile="StreamlineTools/analytics-suite.md" sourcestartlinenumber="44">The solution is fully integrated with Financial Statements defined in Business Central and allows users to create interactive reports on financial data. It offers analyses of payroll costs, revenue comparisons by centers, or other dimensions defined in Business Central. With intuitive controls and customizable visualizations, you gain an immediate overview of the company's financial performance and support effective decision-making.</p>
+<h3 id="banks" sourcefile="StreamlineTools/analytics-suite.md" sourcestartlinenumber="46">Banks</h3>
+<p sourcefile="StreamlineTools/analytics-suite.md" sourcestartlinenumber="48">Analytics Suite for banking data provides a comprehensive overview of financial transactions, account balances, and cash flow. It allows monitoring of payment operations and managing liquidity with higher accuracy, quickly responding to changes in financial flows.</p>
+<p sourcefile="StreamlineTools/analytics-suite.md" sourcestartlinenumber="50">Users can easily analyze incoming and outgoing payments, monitor account balance developments, and identify potential financial risks. The module also allows comparison of historical data with current trends, supporting better decision-making in finance and banking operations.</p>
+<h3 id="receivables" sourcefile="StreamlineTools/analytics-suite.md" sourcestartlinenumber="52">Receivables</h3>
+<p sourcefile="StreamlineTools/analytics-suite.md" sourcestartlinenumber="54">Receivables management provides an overview of customer payment behavior, helping to identify the risk of unpaid invoices. Advanced analytical tools allow monitoring receivables development over time and optimizing their collection process.</p>
+<p sourcefile="StreamlineTools/analytics-suite.md" sourcestartlinenumber="56">A key indicator is the turnover of receivables, which expresses how quickly receivables are converted into cash. It is measured by the ratio of the volume of owed money to the average collection period and helps identify potential liquidity problems.</p>
+<p sourcefile="StreamlineTools/analytics-suite.md" sourcestartlinenumber="58">Interactive analytical overviews allow a detailed view of the receivables structure, identification of overdue invoices, and categorization of owed amounts by time intervals (e.g., 30, 60, 90 days). Visualization of this data enables quick response to risky situations and more efficient financial management.</p>
+<p sourcefile="StreamlineTools/analytics-suite.md" sourcestartlinenumber="60"><img src="media/analytics-suite-receivables-bal.png" sourcefile="StreamlineTools/analytics-suite.md" sourcestartlinenumber="60" alt="Analytics Suite - Receivable Overview" title="Analytics Suite - Receivable Overview"></p>
+<h2 id="sales" sourcefile="StreamlineTools/analytics-suite.md" sourcestartlinenumber="62">Sales</h2>
+<p sourcefile="StreamlineTools/analytics-suite.md" sourcestartlinenumber="64">Analytics Suite for sales provides a detailed overview of sales results from various perspectives, including customers, products, locations, or individual salespeople. It allows analysis of customer behavior, identification of the most profitable products and markets, and optimization of sales strategies for maximum revenue growth.</p>
+<p sourcefile="StreamlineTools/analytics-suite.md" sourcestartlinenumber="66">Advanced analytical tools enable monitoring of key indicators over time, such as sales development from the beginning of the year or their comparison with the previous period. This allows effective evaluation of sales trends, identification of seasonal fluctuations, and adjustment of business strategy to current market conditions.</p>
+<p sourcefile="StreamlineTools/analytics-suite.md" sourcestartlinenumber="68"><img src="media/analytics-suite-sales-dashboard.png" sourcefile="StreamlineTools/analytics-suite.md" sourcestartlinenumber="68" alt="Analytics Suite - Sales Dashboard" title="Analytics Suite - Sales Dashboard"></p>
+<h2 id="inventory" sourcefile="StreamlineTools/analytics-suite.md" sourcestartlinenumber="70">Inventory</h2>
+<p sourcefile="StreamlineTools/analytics-suite.md" sourcestartlinenumber="72">Inventory management provides a detailed overview of stock levels, product turnover, and supply chain efficiency. It helps minimize excess inventory, optimize orders, and reduce storage costs.</p>
+<p sourcefile="StreamlineTools/analytics-suite.md" sourcestartlinenumber="74">Product turnover is a key indicator of warehouse management efficiency. Analysis of product turnover allows better planning of purchases, optimization of warehouse capacities, and efficient cash flow management.</p>
+<p sourcefile="StreamlineTools/analytics-suite.md" sourcestartlinenumber="76"><img src="media/analytics-suite-inventory.png" sourcefile="StreamlineTools/analytics-suite.md" sourcestartlinenumber="76" alt="Analytics Suite - Inventory" title="Analytics Suite - Inventory"></p>
+<h2 id="benefits" sourcefile="StreamlineTools/analytics-suite.md" sourcestartlinenumber="78">Benefits</h2>
+<ul sourcefile="StreamlineTools/analytics-suite.md" sourcestartlinenumber="80">
+<li sourcefile="StreamlineTools/analytics-suite.md" sourcestartlinenumber="80">Immediate access to financial, sales, and other data, even for multiple companies in one view, facilitates effective decision-making and management.</li>
+<li sourcefile="StreamlineTools/analytics-suite.md" sourcestartlinenumber="81">Interactive dashboards provide a basis for strategic management and allow better insight into company performance.</li>
+<li sourcefile="StreamlineTools/analytics-suite.md" sourcestartlinenumber="82">Mobile device support simplifies access to data and reports from anywhere, increasing flexibility and information availability.</li>
+<li sourcefile="StreamlineTools/analytics-suite.md" sourcestartlinenumber="83">Easy data connection with Business Central without complex integration speeds up deployment and usage.</li>
+<li sourcefile="StreamlineTools/analytics-suite.md" sourcestartlinenumber="84">The ability to connect additional data sources and adjust the data model according to specific requirements gives companies high flexibility.</li>
+<li sourcefile="StreamlineTools/analytics-suite.md" sourcestartlinenumber="85">User-friendly interface ensures intuitive control and allows easy creation and modification of reports, dashboards, and other visualizations according to company needs.</li>
+</ul>
+<h2 id="start-your-journey-to-higher-productivity-today" sourcefile="StreamlineTools/analytics-suite.md" sourcestartlinenumber="87">Start Your Journey to Higher Productivity Today!</h2>
+<p sourcefile="StreamlineTools/analytics-suite.md" sourcestartlinenumber="89">Do you want a tool in your company that provides immediate access to important data, increases decision-making efficiency, and facilitates strategic management? Contact us for a non-binding consultation and find out how Power BI Analytics Suite for Dynamics 365 Business Central can bring you a competitive advantage.</p>
+<h2 id="see-also" sourcefile="StreamlineTools/analytics-suite.md" sourcestartlinenumber="91">See Also</h2>
+<p sourcefile="StreamlineTools/analytics-suite.md" sourcestartlinenumber="92"><a href="../index.html" sourcefile="StreamlineTools/analytics-suite.md" sourcestartlinenumber="92">ARICOMA Solutions</a><br>
+<a href="streamlinetools.html" sourcefile="StreamlineTools/analytics-suite.md" sourcestartlinenumber="93">Streamline Tools</a></p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/ARICOMA-D365BC/AC-IB-dynamics365smb-docs/blob/master/business-central/StreamlineTools/analytics-suite.md/#L1" class="contribution-link">Improve this document</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+           <span><a href="https://www.aricoma.com/docs/en-us/dynamics365/business-central/Solutions/solutions.html"><strong>ENGLISH</strong><strong>/</strong><a href="https://www.aricoma.com/docs/cs-cz/dynamics365/business-central/Solutions/solutions.html"><strong>CZECH</strong></a></a></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
