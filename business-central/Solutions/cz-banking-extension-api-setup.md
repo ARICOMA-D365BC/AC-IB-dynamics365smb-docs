@@ -156,13 +156,13 @@ When registering, fill in the required information about your company, see [Regi
 
 You need to create a new "application" in your organization and connect it to the bank, see [procedure](https://developers.erstegroup.com/docs/guides/general-user-manual-application/#p-ipojen-k-bance). Fill in the following parameters:
 
-| Property         | Value           |
-| ---------------  | --------------- |
+| Property         | Value                       |
+| ---------------  | ---------------             |
 | Application name | Aricoma Erste API Connector |
-| Type             | Web             |
-| Platform         | Server          |
-| Language         | Other           |
-| Application use  | Final API Consumer |
+| Type             | Web                         |
+| Platform         | Server                      |
+| Language         | Other                       |
+| Application use  | Final API Consumer          |
 
 Banks:
 
@@ -172,6 +172,16 @@ Connecting to the API:
 
 - Select *Premium - Accounts API* and *Premium - Payments API*
 - Enable OAuth2
+
+| Property                      | Value                                                   |
+| ---------------               | ---------------                                         |
+| Redirect URIs - Sandbox       | `https://businesscentral.dynamics.com/OAuthLanding.htm` |
+| Redirect URIs - Production    | `https://businesscentral.dynamics.com/OAuthLanding.htm` |
+| Refresh token expiration time | 3600 seconds                                            |
+| Grant Type                    | Code                                                    |
+
+> [!IMPORTANT]
+> For Business Central on-premises, the Redirect URI is in the format `https://<MyServer>/<MyInstance>/OAuthLanding.htm`.
 
 **Request for access to the production environment**  
 
