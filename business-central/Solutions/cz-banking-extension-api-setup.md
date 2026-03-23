@@ -9,7 +9,7 @@ ms.search.keywords: banking, finance, czech, API
 ---
 # API connector settings
 
-> Update 10.01.2026
+> Update 18.03.2026
 
 ## CSOB API connector
 

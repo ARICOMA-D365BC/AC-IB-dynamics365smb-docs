@@ -9,7 +9,7 @@ ms.search.keywords: banking, finance, czech, API
 ---
 # CZ Banking Extension
 
-> Update 10.01.2026
+> Update 18.03.2026
 
 The module extends the functionality "Banking documents for Czech Republic (extension)", which is part of the Czech local functionality of D365 Business Central (hereinafter referred to as BC).
 
@@ -179,12 +179,17 @@ This feature combines payment lines for suppliers or customers who are allowed t
 8. Confirm the Issue selection with the **OK** button.
 9. Select **Yes** to confirm opening the Issued Payment Order tab.
 10. Select *Cumulative lines* to open the list of cumulative lines and verify that the result corresponds to the expected method of accumulation. If you want to change the result, change the settings and run the *Update Cumulative payments* action.
-11. To export the order, run the *Export payment order...* action.
 
-> [!NOTE]
-> If accumulation is not performed according to symbols, the merged lines will be created with a variable symbol from the number series, and SS and KS will be taken from the first merged line of the order. The lowest date of maturity from the merged lines will be used.
-> [!IMPORTANT]
-> The Issue function on the bank statement checks each line to see if it was created by accumulation. If so, it resets the amount to zero and adds the original lines from the order to it.
+    > [!NOTE]
+    > If accumulation is not performed according to symbols, the merged lines will be created with a variable symbol from the number series, and SS and KS will be taken from the first merged line of the order. The lowest date of maturity from the merged lines will be used.
+    > [!IMPORTANT]
+    > The Issue function on the bank statement checks each line to see if it was created by accumulation. If so, it resets the amount to zero and adds the original lines from the order to it.
+
+11. To export the order, run the *Export payment order...* action.
+12. To send a payment notice to all affected companies at once, run the *Print Payment Notice* action.
+
+    > [!NOTE]
+    > The Payment Notice report is intended to be sent via email, and the necessary [settings](cz-banking-extension-setup#document-layout-settings-for-sending-payment-notifications-via-email) for this method are described there. However, you can also choose to export to a PDF file (the result is a ZIP file containing the corresponding number of PDF files), which can be sent manually, printed, etc.
 
 **See also**  
 
