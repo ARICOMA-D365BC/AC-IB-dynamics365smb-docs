@@ -9,7 +9,7 @@ ms.search.keywords: banking, finance, czech, API
 ---
 # API connector settings
 
-> Update 18.03.2026
+> Update 30.04.2026
 
 ## CSOB API connector
 
@@ -42,7 +42,7 @@ The certificate can also be obtained directly from the bank, which can be done i
   - obtaining a communication certificate (chapter 3).
 
 > [!TIP]
-> The CSOB Business Connector application will not be used for normal work. However, it is recommended to set up a certificate expiry notification (see the guide in the chapter Renewing the communication certificate).
+> 15 days before the certificate expires, users will begin to receive notifications about this (e.g., in the Central Stack or when manually initiating a statement import) until they renew it.
 
 **Certificate registration**  
 
@@ -112,7 +112,7 @@ The basic steps to make the API interface operational are:
 - The company sets up the module in Business Central
 - The company gives consent to the Business Central application to download data from KB and selects the bank accounts to which Business Central will have access
 
-**Obtaining the Authorization Key**
+**Obtaining the Authorization Key** (valid until BC26 version)
 Contact us by email at <bc_sales@aricoma.com>. All we need is your company name, and we will send you an Authorization Key in reply. This is for your company's use only and must not be used by anyone else.
 
 **Setting up the module in BC**
@@ -127,6 +127,8 @@ The next step is to set up access in Business Central:
 
 > [!WARNING]
 > Only use the **Enable activity log** option in justified cases for a limited period of time, as the log contains sensitive data and may be accessed by users who should not see it.
+> [!TIP]
+> 15 days before authorization expires, users will begin to receive notifications about this (e.g., in the Central Stack or when manually importing a bank statement) until they reauthorize.
 
 **Granting consent**  
 
@@ -203,6 +205,8 @@ The next step is to set up access in Business Central:
 
 > [!WARNING]
 > Only use the **Enable activity log** option in justified cases for a limited period of time, as the log contains sensitive data and may be accessed by users who should not see it.
+> [!TIP]
+> 15 days before authorization expires, users will begin to receive notifications about this (e.g., in the Central Stack or when manually importing a bank statement) until they reauthorize.
 
 ## Raiffeisen API connector
 
@@ -226,6 +230,9 @@ In the banking application, in the Settings section (gear icon), you can create 
     - Confirm your agreement with the terms of use of the certificate and select *Continue*.
 3. On the *Generate Certificate* form, click the *Sign* button to start the approval process via the mobile app.
 4. After approval on the *Certificate Generated* page, start the *Download Certificate* action.
+
+> [!TIP]
+> 15 days before the certificate expires, users will begin to receive notifications about this (e.g., in the Central Stack or when manually initiating a statement import) until they renew it.
 
 **Setting up a client application in Business Central**  
 

@@ -9,7 +9,7 @@ ms.search.keywords: banking, finance, czech, API
 ---
 # CZ Banking Extension Setup
 
-> Update 18.03.2026
+> Update 22.04.2026
 
 The CZ Banking Extension module needs to be activated, in the production environment the user will be asked to activate the subscription (see [documentation on monetization](https://www.aricoma.com/docs/en-us/dynamics365/business-central/ProductivityPack/monetization.html)).
 
@@ -18,6 +18,14 @@ The CZ Banking Extension module needs to be activated, in the production environ
 
 > [!TIP]
 > Important: Before setting up, run the Assisted Setup for this module, which can be found in Assisted Setup -> Set up ARICOMA extensions. This will allow you to upload a configuration package and use it to add the sample settings, which are referenced in the scenarios in the following chapters, among others.
+
+## Permisions
+To prevent users from encountering issues when using Business Central, be sure to configure the module’s permissions before activating its functionality.
+The following permission sets are available upon installation of the module: 
+|Set Name|Description|
+|-|-|
+| CZBANKEXTREAD_ACB | For general use|
+| CZBANKEXTEDIT_ACB | For configuring the module’s behavior |
 
 ## Bank statement and payment order formats
 

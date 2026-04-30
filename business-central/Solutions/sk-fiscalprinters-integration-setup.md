@@ -9,20 +9,19 @@ ms.search.keywords: Czech, Slovak, SK Fiscal Printers Integration, Streamline To
 ---
 # SK Fiscal Printers Integration Setup
 
-> Update 31.07.2025
+> Update 30.04.2026
 
-The integration with VAROS fiscal printers
-is based on the functionality of the VAROS Print Manager. This is
-to be installed in the company environment (see [Manuals](http://www.varos.sk/manualy.php)) directly on the computer to which the printer is connected (typically via USB).
-Each fiscal printer must also be connected to the Internet via LAN (or
-via Wifi).
+The integration with VAROS fiscal printers is based on the functionality of the VAROS Print Manager. This is to be installed in the company environment (see [Manuals](http://www.varos.sk/manualy.php)) directly on the computer to which the printer is connected (typically via USB). Each fiscal printer must also be connected to the Internet via LAN (or via Wifi).
 
 ## Setting user permissions
 
-Permission sets:
+To prevent users from encountering issues when using Business Central, be sure to configure the module’s permissions before activating its functionality.
+The following permission sets are available upon installation of the module:
 
-- FP_BASIC_ACC: Fiscal Printers - Basic
-- FP_SETUP_ACC: Fiscal printers - Settings
+|Set Name      |Description                            |
+|-             |-                                      |
+| FP_BASIC_ACC | For general use                       |
+| FP_SETUP_ACC | For configuring the module’s behavior |
 
 ## Setting up fiscal printers
 
