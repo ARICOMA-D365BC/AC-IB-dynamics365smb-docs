@@ -107,7 +107,6 @@ The following parameters must be added to the Advanced Settings if you want to u
 In order to use the [API Business suite](https://www.kb.cz/cs/kbapi/sluzby-kb-api/api-business-suite) service from Komerční banka, you must have activated the selected internet banking application (*Moje Banka Business*, or *Profibanka*, or *Mobilní banka Business*).
 The basic steps to make the API interface operational are:
 
-- The company activates the API Business Suite service in KB
 - The company applies to Aricoma for an Authorization Key, which will be generated specifically for the company and thanks to which Aricoma will register the KB API connector with KB.
 - The company sets up the module in Business Central
 - The company gives consent to the Business Central application to download data from KB and selects the bank accounts to which Business Central will have access
