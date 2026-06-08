@@ -8,7 +8,7 @@ ms.search.keywords: GP Tom Integration, Streamline Tools, Global Payments, setti
 ---
 # Setup GP tom integration
 
-> Update 03.02.2026
+> Update 22.04.2026
 
 ## Setup
 
@@ -20,6 +20,16 @@ In the next steps, the user is guided through the registration of the first paym
 1. Choose the ![Lightbulb that opens the Tell Me feature.](media/ui-search/search_small.png "Tell me what you want to do") icon, enter **Payment Terminals Setup** and then select the related link.
 2. On the **Payment Terminals Setup** page, run the Set API Endpoint action.
 3. Enter the API key obtained by activating it in the terminal.
+
+> [!IMPORTANT]
+> To prevent users from encountering issues when using Business Central, be sure to configure the module’s permissions before activating its functionality.
+> The following permission sets are available upon installation of the module:
+>
+> |Set Name         |Description                            |
+> |-                |-                                      |
+> | GPTOM_READ_ACC  | For read only                         |
+> | GPTOM_EDIT_ACC  | For general use                       |
+> | GPTOM_SETUP_ACC | For configuring the module’s behavior |
 
 ### Terminal settings
 

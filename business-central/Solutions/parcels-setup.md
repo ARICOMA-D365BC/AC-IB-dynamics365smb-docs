@@ -13,12 +13,13 @@ ms.author: v-makune
 ---
 
 # Setup - Parcels - Balíkobot Integration
-> Update: 08.04.2022
 
+> Update: 22.04.2026
 
 There are several areas that need to be set up for the AC Parcel addon to work properly. The addon is initially set up using the wizard and then the settings can be changed manually.
 
-## Addon settings areas:
+## Addon settings areas
+
 - Numbered series
 - Expedition places
 - Parcels settings
@@ -30,8 +31,19 @@ There are several areas that need to be set up for the AC Parcel addon to work p
 - Automatic updates
 - Settings in the Sandbox environment
 
-
 Other code lists (Carrier Services, Handling Units and Carrier Branches) are downloaded from the Balíkobot API.
+
+> [!IMPORTANT]
+> To prevent users from encountering issues when using Business Central, be sure to configure the module’s permissions before activating its functionality.
+> The following permission sets are available upon installation of the module:
+>
+> |Set Name           |Description                            |
+> |-                  |-                                      |
+> | PARCELS_READ_ACC  | For read only                         |
+> | PARCELS_EDIT_ACC  | For general use                       |
+> | PARCELS_SETUP_ACC | For configuring the module’s behavior |
+> | PARCELS_ADMIN_ACC | For general use and also configuring  |
+
 ## Setting up Parcels using the wizard
 
 1. Choose the ![Lightbulb that opens the Tell Me feature.](media/ui-search/search_small.png "Tell me what you want to do") icon, enter **Assisted Setup** and then choose the related link.
@@ -62,6 +74,7 @@ Other code lists (Carrier Services, Handling Units and Carrier Branches) are dow
 12. Once you have filled in everything and clicked **Finish**, the assisted guide will close and the master data will begin to synchronize.
 
 ## Manual adjustment of settings
+
 ### Expedition places
 
 The Expedition Places are locations of your warehouses from where shipments are dispatched. A user can have several expedition places. A different API is required for each expedition place, and the expedition place is associated with one location of your company.
@@ -74,6 +87,7 @@ The Expedition Places are locations of your warehouses from where shipments are 
 ![Parcels settings](media/BB_exp_pl.png)
 
 ### Location Settings
+
 On the tab of the given location it is necessary to select the dispatch place that is connected with the given API. If there are more locations, it is necessary to set the appropriate dispatch point for each. This serves to reduce the error rate of users so that they cannot combine documents with different shipping points into the shipment.
 
 To assign a shipping location to a location, you need to set the **Expedition Places Code**.
@@ -83,12 +97,14 @@ To assign a shipping location to a location, you need to set the **Expedition Pl
 3. Fill in **Expedition Places Code** field on the General tab
 
 ![Parcels settings](media/BB_lokace.png)
+
 ### Parcels settings
 
 Basic Package Setup must be made on the **Parcels Settings**page.
 ![Parcels settings](media/BB_setup.png)
 
 Parcels Management Setup page contain:
+
 - **Parcels No.** - Specifies the No. Series for parcels.
 - **Default Expediton Place Code** - Specifies the API credentials and shipment location from where the parcel will be shipped.
 - **Print Handover After Order** – Automatic print of Handover protocols after collection order.
@@ -99,21 +115,24 @@ Parcels Management Setup page contain:
 - **Automatic master data synchronization** - Runs a procedure on the job queue that updates all data from the Package in a certain time period.
 - **Automatic Transportation Status Update** - Runs a procedure on the job queue that updates the shipment transfer status for the last month in a specific time period.
 
-
 Basic settings are made using the application setup wizard.
 The other tables are downloaded and filled after master data synchronization is enabled.
 These data are updated manually using the "Resynchronize master data" function.
+
 #### Basic settings of Parcels - Balíkobot integration
+
 To start the balíkobot functions, you need to make the following settings:
 
 1. Choose the ![Lightbulb that opens the Tell Me feature.](media/ui-search/search_small.png "Tell me what you want to do") icon, enter **Parcels setup** and then choose the related link.
 2. Select a number series for shipments
-4. Select default Expedition Places
-5. Enable or disable automatic printing of collection reports
-6. Enable or disable Activity Log
+3. Select default Expedition Places
+4. Enable or disable automatic printing of collection reports
+5. Enable or disable Activity Log
 
 ### Shipping Agents setup
+
 The basic codebook is loaded using the RapidStart package for Business Central. This package contains data that is not downloaded from the Balíkobot API:
+
 #### Table of Shipping Agents
 
 Other tables are downloaded and filled after synchronization of master data and in the Shipping Agent table.
@@ -121,7 +140,9 @@ The update of this data is done manually using the "Resynchronization of master 
 ![Balíkobot setup](media/BB_shipping-agents.png)
 
 The overview also includes carriers that you do not have configured with Balíkobot. Additional data is not imported for such data (see below).
-### On the carrier overview, there are several fields to set up:
+
+### On the carrier overview, there are several fields to set up
+
 - Integration Service**Integrační služba** – Determines through which integration service the shipping agent is used (in this case Balikobot.cz)
 - **Enable master data synchronization** – Master data may become available after switching on
 - **Last master data synchronization** – Date of last master data synchronization
@@ -131,7 +152,9 @@ The overview also includes carriers that you do not have configured with Balíko
 - **Number of handling units** - For pallet transport it is possible to set more handling units.
 - **Branch only** – Specifies that the carrier serves only as a pickup point.
 - **Maximum address length** – set the address length for the selected carrier.
+
 ### Functions over shipping agents
+
 - **Connection Test** – Test communication between the integration service and Business Central
 - **Master data synchronization** – Starts master data synchronization
 - **Shipping Agent Services** - Table of services of individual shipping agent
@@ -140,15 +163,18 @@ The overview also includes carriers that you do not have configured with Balíko
 - **ADR units of the carrier** – Table of ADR units of the carrier
 
 If you add a carrier after the first setup has been made using assisted setup, you must fill in the fields correctly:
+
 - Code
 - Package Tracking URL
 - Integration service
 - Balíkobot code
 
 Then you need to use **the Synronization function of master data**!
+
 ### Set up Shipping Agent Services
 
 Shipping Agent Services are downloaded automatically using the Balikobot API. It is possible to force certain settings for individual Shipping Agents services. To set it up, you must:
+
 1. Choose the ![Lightbulb that opens the Tell Me feature.](media/ui-search/search_small.png "Tell me what you want to do") icon, enter **Shipping Agents** and then choose the related link.
 2. Select the desired carrier from the list and select **Shipping Agent Services** feature
 3. Fill in the fields on the following page as needed:
@@ -162,15 +188,11 @@ Shipping Agent Services are downloaded automatically using the Balikobot API. It
    - **Services of ČP** – Only for Czech Post service - a long text string of postal services above the parcel
       o	https://www.balikobot.cz/dokumentace/cp_ciselnik_sluzeb.pdf
 
-
 ### Balikobot API settings
 
 This system table allows you to configure extended carrier settings. These are settings for API communication, where you can select communication versions and more for selected carriers.
 
 From an admin point of view, there is an option to set the shipping agent code for communication in case of changes from Balíkobot (Shipping Agent API Code) when the API shipper name is longer than 10 characters (for example DHL Freight EuroConnect, which had the API name "dhlfreight" and now uses "dhlfreightec").
-
-
-
 
 ## Shipment parameters
 
@@ -183,16 +205,23 @@ To set up and use the cash on delivery function, it is necessary to set up booea
 1. Choose the ![Lightbulb that opens the Tell Me feature.](media/ui-search/search_small.png "Tell me what you want to do") icon, enter **Payment Method** and then choose the related link.
 2. In the overview, check the **Cash on delivery** option.
 3. Close the payment method overview.
+
 ## Print Settings
+
 ### PDF reader
+
 You need to have a PDF reader installed to print labels. To work with labels, we recommend Foxit pdf and also have it set as the default program for PDF files.
+
 ### Print Format Selection - Client Zone
+
 The basic step in setting up label printing is to define how the PDF with labels will be generated by Package. In the client zone (https://client.balikobot.cz/), the user must set whether to print in full page format or according to positions on A4 size paper. It all depends on what printer it will be printed on. The label printing position does not need to be selected for printing to the label printer.
 
 ### Printer selection
+
 To set up label printing, you need to set the report ID and assign a printer to the user. The Print Labels feature is set to print to a defined printer.
 
 To define a printer, it is necessary:
+
 1. Choose the ![Lightbulb that opens the Tell Me feature.](media/ui-search/search_small.png "Tell me what you want to do") icon, enter **Printer Selections** and then choose the related link.
 2. Choose **New**.
 3. Select User ID, Report ID 52068430, and Printer Name
@@ -202,29 +231,35 @@ Printing of the handover protocol is printed automatically after ordering the co
 ## Automatic updates
 
 ### Automatic master data update
+
 The automatic update of the master data starts a procedure on the job queue, which updates all data from Balikobot in a certain period of time (By default on Sunday at 14:00).
 
 To turn on this feature, follow these steps:
+
 1. Choose the ![Lightbulb that opens the Tell Me feature.](media/ui-search/search_small.png "Tell me what you want to do") icon, enter **Parcels setup** and then choose the related link.
 2. In Parcels Management Setup, turn on "Run Master Data Sync. Task".
 3. The user will be prompted to create and open a new job queue item that will be in the "Ready" state.
 4. After that, you can close the settings.
 
 ### Automatic update of the transport status
+
 Automatic shipment status update triggers a procedure on the job queue that updates the shipment shipment status for the last month over a period of time.
 
 To turn on this feature, follow these steps:
+
 1. Choose the ![Lightbulb that opens the Tell Me feature.](media/ui-search/search_small.png "Tell me what you want to do") icon, enter **Parcels setup** and then choose the related link.
 2. In Parcels Management Setup, turn on "Run Track Status Update Task".
 3. The user will be prompted to create and open a new job queue item that will be in the "Ready" state.
 4. After that, you can close the settings.
 
 ## Settings in the Sandbox environment
+
 ### Runtime deadlock
 
 When setting up the add-on with assistance, the message "*The request was blocked by the runtime*" may be displayed.
 
 To resolve this issue, follow these steps:
+
 1. Choose the ![Lightbulb that opens the Tell Me feature.](media/ui-search/search_small.png "Tell me what you want to do") icon, enter **Extension Management** and then choose the related link.
 2. **The Installed Extensions** page opens.
 3. Select the line extension **Parcels** and then use the action **Configuration**.
@@ -255,9 +290,8 @@ In the case of creating a shipment from a billed sales invoice, it is possible t
 3. To turn on automatic PLT document creation, select the **Create PLT Document**field.
 4. Once set up, you can close the page.
 
-
-
 ## See also
+
 [Parcels](parcels.md)  
 [Productivity Pack](productivity-pack.md)  
 [ARICOMA Solutions](solutions.md)

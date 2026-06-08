@@ -9,7 +9,7 @@ ms.search.keywords: banking, finance, czech, API
 ---
 # CZ Banking Extension Setup
 
-> Update: 31.01.2026
+> Update 22.04.2026
 
 The CZ Banking Extension module needs to be activated, in the production environment the user will be asked to activate the subscription (see [documentation on monetization](https://www.aricoma.com/docs/en-us/dynamics365/business-central/ProductivityPack/monetization.html)).
 
@@ -18,6 +18,14 @@ The CZ Banking Extension module needs to be activated, in the production environ
 
 > [!TIP]
 > Important: Before setting up, run the Assisted Setup for this module, which can be found in Assisted Setup -> Set up ARICOMA extensions. This will allow you to upload a configuration package and use it to add the sample settings, which are referenced in the scenarios in the following chapters, among others.
+
+## Permisions
+To prevent users from encountering issues when using Business Central, be sure to configure the module’s permissions before activating its functionality.
+The following permission sets are available upon installation of the module: 
+|Set Name|Description|
+|-|-|
+| CZBANKEXTREAD_ACB | For general use|
+| CZBANKEXTEDIT_ACB | For configuring the module’s behavior |
 
 ## Bank statement and payment order formats
 
@@ -231,6 +239,32 @@ When "Issuing" a bank statement, the function checks if the statement turnover m
     - Field **Group Per Variable Symbol** – cumulation after VS
     - Field **Group Per Constant Symbol** – accumulates for KS
     - Field **Group Per Specific Symbol** – accumulates after SS
+
+### Configuring the Document Layout for Sending Payment Notifications via Email
+
+First, verify that the report is defined in the Report Selections for Purchasing (or Sales):
+
+1. Choose the ![Lightbulb that opens the Tell Me feature.](media/ui-search/search_small.png "Tell me what you want to do") icon, enter **Report Selection - Purchase**, and then choose the related link.
+2. On the Report Selection - Purchase page, select "Payment Notice" in the **Usage** field.
+3. Verify that there is (or add) at least one row with a **Report ID** equal to XXX 
+4. Verify that the value in both the **Use for Email Body** field and the **Use for Email Attachment** field is "Yes".
+5. Verify that the value in the **Email Body Layout** field is "Payment Notice Email (Word)".
+6. Verify that the value in the **Report Layout** field is "Payment Notice (Word)".
+7. Repeat the above procedure on the **Report Selections - Sales** page.
+
+> [!NOTE]
+> For more information on defining custom layouts, visit [the Microsoft website](https://learn.microsoft.com/en-us/dynamics365/business-central/ui-how-add-fields-word-report-layout).
+
+Next, you need to enter specific details for the particular vendor (typically an email address):
+
+1. Choose the ![Lightbulb that opens the Tell Me feature.](media/ui-search/search_small.png "Tell me what you want to do") icon, enter **Vendors**, and then choose the related link.
+2. Open the vendor card for whom you want to set up report sending.
+3. On the Vendor card page, launch the *Document Layouts* action.
+4. On the Document Layouts page, launch the *Copy from Report Selection* action, which will fill in any missing rows.
+5. Go to the row with the value *Payment Notice* in the **Usage** field, and enter the email address where the notice should be sent in the **Send to Email** field.
+
+> [!NOTE]
+> You can make the same settings on the Customer card page. For information on defining document layouts for customers and vendors, visit [Microsoft's website](https://learn.microsoft.com/en-us/dynamics365/business-central/ui-define-customer-vendor-document-layouts).
 
 ## Custom modifications
 
