@@ -8,12 +8,12 @@ ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.search.keywords: VAT, finance, receivables, rounding, no. series, czech
-ms.date: 01/23/2026
+ms.date: 07/03/2026
 ms.author: Jitka Urxová
 ---
 # Application extension set - Settings
 
-> Update: 23.01.2026
+> Update: 03.07.2026
 
 ## VAT extensions setup
 
@@ -98,7 +98,17 @@ In the case of using a currency other than the local currency in the country of 
 >[!NOTE]
 >Combinations with the OSS = No flag must be defined for cases when it is necessary to disable the OSS mode on a sales document.
 
+## Set up advance overpayment posting
+
 ### Set up purchase advance overpayment posting
+
+The described automation when posting the final invoice is turned on in the VAT posting settings for selected combinations of posting groups. If this behavior is appropriate only for certain cases, you need a specific VAT group (item) defined for them.
+
+1. Choose the ![Lightbulb that opens the Tell Me feature.](media/ui-search/search_small.png "Tell me what you want to do") icon, enter **VAT Posting Setup** and then choose the related link.
+2. On the VAT posting setup page, find the record for which you want to turn it on and choose the Edit feature.
+3. On the VAT Posting Setup Card page, set the Intended to return the deposit flag.
+
+### Set up sales advance overpayment posting
 
 The described automation when posting the final invoice is turned on in the VAT posting settings for selected combinations of posting groups. If this behavior is appropriate only for certain cases, you need a specific VAT group (item) defined for them.
 
