@@ -8,13 +8,13 @@ ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.search.keywords: VAT, finance, receivables, rounding, no. series, czech
-ms.date: 09/21/2025
-ms.author: Robert Jelen
+ms.date: 07/03/2026
+ms.author: Jitka Urxová
 ---
 
 # Application extension set
 
-> Update: 31.01.2026
+> Update: 03.07.2026
 
 Add-on module **Application extension set** contains common features to support the operation of the other add-on modules of the Finance Extension Pack. The list of functions can be found on the right side of the page.
 
@@ -148,6 +148,8 @@ Quarterly, you need to prepare supporting documents and pay VAT to the tax offic
 The system includes a Calculate and Account for VAT OSS Settlement function that will close the VAT entries that fall within the filter. However, unlike the standard function, it recharges the items in OSS mode to the specified OSS Settlement Account. This is important for the subsequent posting of the payment to the specialised tax office in charge of this agenda.  
 Thus, both modes are processed simultaneously as part of the activities related to the production of the VAT statement.
 
+## Accounting of advance overpayment refund
+
 ### Accounting purchase of purchase advances
 
 In connection with the introduction of the Control Report from 1 January 2016, there was a need to address the overpayment of the purchase deposit under one document number, the same date and the same exchange rate.
@@ -168,6 +170,17 @@ The posting of such an invoice will also result in the amount of the overpayment
 After creating the final purchase invoice and assigning the paid purchase deposit, in case of an over-payment on the deposit, it is possible to insert another line with the overpayment amount and the Intended for return refund flag (the flag is also on the posted invoice line).
 
 By posting the invoice, an item of the Vendor type is created for each such line with overpayment. The return of the money by the supplier (Refund) is then settled by the user with these created items.
+
+> [!NOTE]
+> When using the Derecognize assigned down payment function (from the Down Payment Document tab), these overpayment settlements will be derecognized by analogy.
+
+#### Sales advance overpayment refund
+
+As with purchases, overpayments can also be posted on the sales side.
+
+After creating the final sales invoice in case of an over-payment, it is possible to insert another line with the overpayment amount and the Designed for Prepm. Refund flag (the flag is also on the posted invoice line).
+
+By posting the invoice, an Cust. Ledger Entry is created for each such line with overpayment. The return of the money by the (Refund) is then settled by the user with these created entries.
 
 > [!NOTE]
 > When using the Derecognize assigned down payment function (from the Down Payment Document tab), these overpayment settlements will be derecognized by analogy.
