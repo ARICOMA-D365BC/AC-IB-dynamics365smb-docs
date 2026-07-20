@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>ARICOMA SOLUTIONS | Microsoft Docs </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="ARICOMA SOLUTIONS | Microsoft Docs ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../TOC.html">
+    <meta property="docfx:tocrel" content="TOC.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="png" src="../logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="support" sourcefile="Solutions/support.md" sourcestartlinenumber="14">Support</h1>
+
+<p sourcefile="Solutions/support.md" sourcestartlinenumber="16"><img src="media/support.png" sourcefile="Solutions/support.md" sourcestartlinenumber="16" alt="Support"></p>
+<p sourcefile="Solutions/support.md" sourcestartlinenumber="18"><strong sourcefile="Solutions/support.md" sourcestartlinenumber="18">Applications for our solutions</strong> can be found on GitHub <a href="https://github.com/ARICOMA-D365BC/ARICOMA-SOLUTIONS" sourcefile="Solutions/support.md" sourcestartlinenumber="18">ARICOMA Solutions</a>.</p>
+<p sourcefile="Solutions/support.md" sourcestartlinenumber="20"><strong sourcefile="Solutions/support.md" sourcestartlinenumber="20">Documentation on our solutions</strong> can be found on our website <a href="https://www.aricoma.com/docs/en-us/dynamics365/business-central/Solutions/solutions.html" sourcefile="Solutions/support.md" sourcestartlinenumber="20">ARICOMA Solutions</a>.</p>
+<p sourcefile="Solutions/support.md" sourcestartlinenumber="22"><strong sourcefile="Solutions/support.md" sourcestartlinenumber="22">Our apps</strong> for Business Central online can also be found at <a href="https://appsource.microsoft.com/en-us/marketplace/apps?page=1&amp;search=aricoma&amp;product=dynamics-365-business-central" sourcefile="Solutions/support.md" sourcestartlinenumber="22">Microsoft Appsource</a>.</p>
+<p sourcefile="Solutions/support.md" sourcestartlinenumber="24"><strong sourcefile="Solutions/support.md" sourcestartlinenumber="24">Documentation on changes to our apps (changelog)</strong> can be found on the GitHub site <a href="https://aricoma-d365bc.github.io/ARICOMA-SOLUTIONS/" sourcefile="Solutions/support.md" sourcestartlinenumber="24">ARICOMA Apps Update</a>.</p>
+<h2 id="contact" sourcefile="Solutions/support.md" sourcestartlinenumber="26">Contact</h2>
+<p sourcefile="Solutions/support.md" sourcestartlinenumber="28">Comments, suggestions, or bugs can be reported via <a href="https://github.com/ARICOMA-D365BC/AC-Solutions/issues" sourcefile="Solutions/support.md" sourcestartlinenumber="28">Issues</a> on the GitHub site or by email bc_support@aricoma.com.</p>
+<p sourcefile="Solutions/support.md" sourcestartlinenumber="30">For business information and requirements, please use <a href="https://www.aricoma.com/cs/co-delame/podnikove-aplikace/informacni-systemy-microsoft/erp-pro-stredni-a-mensi-firmy#contact" sourcefile="Solutions/support.md" sourcestartlinenumber="30">Contact</a>.</p>
+<h2 id="see-also" sourcefile="Solutions/support.md" sourcestartlinenumber="32">See Also</h2>
+<p sourcefile="Solutions/support.md" sourcestartlinenumber="33"><a href="solutions.html" sourcefile="Solutions/support.md" sourcestartlinenumber="33">ARICOMA Solutions</a></p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/ARICOMA-D365BC/AC-IB-dynamics365smb-docs/blob/master/business-central/Solutions/support.md/#L1" class="contribution-link">Improve this document</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+           <span><a href="https://www.aricoma.com/docs/en-us/dynamics365/business-central/Solutions/solutions.html"><strong>ENGLISH</strong><strong>/</strong><a href="https://www.aricoma.com/docs/cs-cz/dynamics365/business-central/Solutions/solutions.html"><strong>CZECH</strong></a></a></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

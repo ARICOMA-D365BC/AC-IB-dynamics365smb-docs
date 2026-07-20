@@ -1,0 +1,161 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>General parameters | Microsoft Docs </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="General parameters | Microsoft Docs ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../TOC.html">
+    <meta property="docfx:tocrel" content="TOC.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="png" src="../logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="general-parameters">General Parameters</h1>
+
+<blockquote>
+<p>Update 17.03.2022</p>
+</blockquote>
+<p>The <strong>General Parameters</strong> add-on module allows you to add an unlimited number of new parameters to <strong>Item</strong> and <strong>Fixed Assest</strong> in Dynamics 365 Business Central for detailed sorting and filtering. Parameters can be grouped into templates according to the purpose. The module contains a wizard for easy entry of parameter values by manually entering or selecting from the prepared lists.</p>
+<h2 id="preview-of-general-record-parameters">Preview of general record parameters</h2>
+<p>To view a list of saved general parameters for a given record (in this case, fixed assets) with a filter on a given entity, do the following:</p>
+<ol>
+<li>Choose the <img src="media/ui-search/search_small.png" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong>Fixed Assets</strong> and then choose the related link.</li>
+<li>In the overview, select the specific fixed asset for which you want to view parameters.</li>
+<li>In the Related section, in the <strong>Fixed assets</strong> group, select <strong>General Parameters</strong> function.</li>
+<li>A window will open where you can see the name of the template.</li>
+<li>At the bottom you will see a list of parameters and their values.
+<img src="media/general_parameters_fa.png" alt="General parameters of the card"></li>
+<li>If a card has multiple parameter templates set up, you can switch between them, or view all values by deleting the filter on the report.</li>
+</ol>
+<h2 id="insert-and-change-general-parameters">Insert and change General Parameters</h2>
+<p>To insert general parameters to an item or fixed asset, the <strong>Insert General Parameters</strong> action is used. A <strong>wizard</strong>will appear, which will select a template (if more than one is defined for a given entity), mandatory and optional parameters for a particular tab, and set the values ​​of these parameters.</p>
+<p>To insert or edit general parameters, do the following:</p>
+<ol>
+<li>Choose the <img src="media/ui-search/search_small.png" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong>Fixed Assets</strong> and then choose the related link.</li>
+<li>On the list in the Actions section, use the <strong>Insert General Parameters</strong>function.</li>
+<li>The Insertion Wizard starts.</li>
+</ol>
+<h3 id="general-parameters-insertion-wizard">General Parameters Insertion Wizard</h3>
+<ol>
+<li>n the first step of the wizard, you will be prompted to select <strong>Template</strong>. Subsequently, to fill in the lines, i.e. to enter <strong>Mandatory General Parameters</strong>.</li>
+<li>You fill in the values in the fields of the wizard line. Fill in the <strong>General Parameters Template</strong> first, then the <strong>Value</strong>, and finally the <strong>Description</strong>.</li>
+<li>Click <strong>Next</strong> in the next step.</li>
+<li>Now in the next window you can fill in the <strong>Optional general parameters</strong> in a similar way as for the mandatory ones.</li>
+<li>After entering the parameters, click on the <strong>Finish</strong>button to save the settings.</li>
+</ol>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The same procedure is used both for inserting and for changing parameters or values ​​of general parameters of a given record.</p>
+</div>
+<h2 id="searching-records-by-general-parameters">Searching records by General Parameters</h2>
+<p>The functionality of general parameters can be used to search for &quot;similar&quot; records. In other words, finding those records of a given entity that have, for example, the same parameters assigned to them or have the same values ​​of some parameters.</p>
+<p>To search by parameters for fixed assets, continue as follows:</p>
+<ol>
+<li>Choose the <img src="media/ui-search/search_small.png" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong>Fixed Assets</strong> and then choose the related link.</li>
+<li>In the overview, in the Actions section, select <strong>Filter by General Parameters</strong> function.</li>
+<li>A window will open where in the first step you will select <strong>Parameter Template</strong>.</li>
+<li>The next step is to select by which parameters the system will filter. To do this, click on the <strong>three dots</strong> in the line next to the General Parameters Filter.</li>
+<li>In the next dialog box, select the parameters you want to filter by.</li>
+<li>Use <strong>OK</strong> to start filtering.</li>
+</ol>
+<p>To <strong>clear the search filter</strong>, click <strong>Clear General Parameters Filters</strong>in the Actions section of the report.</p>
+<h2 id="see-also">See also</h2>
+<p><a href="general-parameters-setup.html">General Parameters - Setup</a><br>
+<a href="productivity-pack.html">Productivity Pack</a></p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/ARICOMA-D365BC/AC-IB-dynamics365smb-docs/blob/master/business-central/Solutions/general-parameters.md/#L1" class="contribution-link">Improve this document</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+           <span><a href="https://www.aricoma.com/docs/en-us/dynamics365/business-central/Solutions/solutions.html"><strong>ENGLISH</strong><strong>/</strong><a href="https://www.aricoma.com/docs/cs-cz/dynamics365/business-central/Solutions/solutions.html"><strong>CZECH</strong></a></a></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

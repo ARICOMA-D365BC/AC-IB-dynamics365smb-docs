@@ -1,0 +1,268 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Production tools | Microsoft Docs </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Production tools | Microsoft Docs ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../TOC.html">
+    <meta property="docfx:tocrel" content="TOC.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="png" src="../logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="production-tools">Production Tools</h1>
+
+<blockquote>
+<p>Updated: December 1, 2024</p>
+</blockquote>
+<p>Gain full control over your tools and equipment with a smart solution that is directly integrated into Business Central. Track tool movements, minimize losses, and extend tool life with an easy overview of records, loans, inspections, and maintenance. Our <strong>Production Tools</strong> module solves the problem of recording tools, equipment, molds, and other supplies that are usually recorded using the system's inventory records. This module is based on asset records and unifies records for the purposes of tracking fixed assets and production records, including the lending of tools and equipment.</p>
+<p><img src="media/production-tools-tool-card.png" alt="Tool card"></p>
+<h2 id="key-features-of-the-module">Key features of the module</h2>
+<ul>
+<li><strong>Tool receipt:</strong> Allows easy registration of each new tool. You get an overview of the availability of equipment from the very beginning.</li>
+<li><strong>Tool lending:</strong> Facilitates the management of loans, whether for short-term or long-term use. You can track who currently has tools on loan.</li>
+<li><strong>Tool return:</strong> Provides an overview of the condition of tools upon return and allows for immediate updating of the records.</li>
+<li><strong>Tool disposal:</strong> Allows for easy disposal of damaged or obsolete tools, creating space for new equipment.</li>
+</ul>
+<h3 id="tool-usage-process">Tool usage process</h3>
+<p>Tools are used according to the following scheme:</p>
+<p><img src="media/production-tools-process_720.png" alt="Tool and equipment records - diagram"></p>
+<h3 id="scenarios-for-using-the-tool-and-equipment-register">Scenarios for using the tool and equipment register</h3>
+<p>To make your work easier, we have compiled an overview of the most common scenarios you may encounter in everyday practice:</p>
+<ul>
+<li><strong>Introducing a new tool</strong></li>
+<li><strong>Receiving tools into stock</strong></li>
+<li><strong>Loaning tools</strong></li>
+<li><strong>Returning tools</strong></li>
+<li><strong>Issuing tools</strong></li>
+</ul>
+<h3 id="introducing-a-new-tool">Introducing a new tool</h3>
+<ol>
+<li><p>Select the <img src="media/ui-search/search_small.png" alt="Light bulb icon, which opens the Tell me function" title="Tell me what you want to do"> and enter <strong>Tool inventory overview</strong> in the search engine, then select the relevant link</p>
+</li>
+<li><p>On the <strong>Tool inventory overview</strong> page, select the <strong>New</strong> action.
+<img src="media/production-tools-tool-list-new.png" alt="Tool inventory overview - New"></p>
+</li>
+<li><p>After selecting the <strong>New</strong> action, the <strong>Tool Record Card</strong> will open</p>
+<p><strong>Each tool record card contains the following fields:</strong></p>
+<ul>
+<li><strong>Number</strong> – select a number series for tool records</li>
+<li><strong>Description</strong> – name of the tool</li>
+<li><strong>Serial number</strong> – serial number of the tool</li>
+<li><strong>Main asset/component</strong> – specifies the main data source of the tool</li>
+<li><strong>Main data source component</strong> – specifies the component of the main data source</li>
+<li><strong>Search description</strong> – description used to search for the tool</li>
+<li><strong>Inactive</strong> – determines whether the tool is active</li>
+<li><strong>Closed</strong> – determines whether the tool is blocked
+<img src="media/production-tools-tool-card-general.png" alt="Tool card - general"></li>
+</ul>
+</li>
+<li><p>After filling in the fields in the <strong>Tool Record Card</strong>, the tool will be saved in our <strong>Tool Records</strong>.</p>
+<p><strong>From the card, you can also use the Related action in the Fixed Assets section</strong></p>
+<ul>
+<li><strong>Overview</strong>: Displays a summary view of the currently selected fixed assets. This overview includes key information such as the description of the asset, its accounting category, current balances, and other relevant data.</li>
+<li><strong>Depreciation books</strong>: Provides access to an overview of depreciation books associated with the asset (instrument). Here you can track the history of depreciation, depreciation methods used, and other information about accounting movements of the asset</li>
+<li><strong>Notes</strong>: Used to add and manage notes related to specific fixed assets. For example, it allows you to record specific details that are not normally recorded in other parts of the system.</li>
+<li><strong>Image</strong>: This feature allows you to attach or view images associated with fixed assets. Images can be useful, for example, for visual identification of assets or documentation.</li>
+<li><strong>Maintenance records</strong>: Access to maintenance records for a given fixed asset. This feature is designed to track service interventions, repairs, and other maintenance activities. It helps ensure that assets are kept in working order.</li>
+<li><strong>Asset components</strong>: Displays an overview of the components that make up the main asset. This feature is particularly relevant for complex assets that include multiple sub-parts.</li>
+<li><strong>Copy DM</strong>: Allows you to create a copy of the current fixed asset record. This feature saves time when creating a new asset with similar parameters to an existing item.</li>
+<li><strong>Main asset statistics</strong>: Provides a statistical overview of fixed assets, including, for example, an overview of asset value, depreciation, and balances. This data is useful for financial analysis and planning.</li>
+<li><strong>Overview of asset accounting types</strong>: This function displays an overview of all accounting types that have been used for a given fixed asset. It allows you to quickly check how the asset is accounted for.</li>
+<li><strong>Total insured amount</strong>: Provides information about the total value of insurance that applies to the asset. This feature helps verify that the asset is adequately insured.</li>
+<li><strong>Change log items</strong>: Allows you to view the history of changes made to fixed asset records. This feature is useful for auditing purposes or tracking changes.</li>
+</ul>
+</li>
+</ol>
+<p><img src="media/production-tools-tool-card-related-fa.png" alt="Tool card - related"></p>
+<h3 id="accessing-the-tool">Accessing the tool</h3>
+<ol>
+<li>Choose the <img src="media/ui-search/search_small.png" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong>Tool Log</strong> in the search engine, then select the relevant link.</li>
+<li>Select the template that best suits your needs.</li>
+<li>Enter the <strong>external document number</strong> in the appropriate field.</li>
+<li>For <strong>Item Type</strong>, select <strong>Receipt</strong> and select the tool you want to register.</li>
+<li>Fill in the <strong>Employee Number</strong> field for the person responsible for receiving the tools.</li>
+<li>Enter the required values in the <strong>Quantity</strong> and <strong>Price</strong> fields.</li>
+<li>Enter the <strong>Registration Number</strong> of the tool so that individual tools can be clearly identified in future operations.</li>
+<li>If you use barcode readers, you can also enter the <strong>EAN code</strong>.</li>
+<li>Click the <strong>Account</strong> button to save the item to the register.</li>
+<li>All created items can be viewed on the <strong>tool register items</strong> page.</li>
+</ol>
+<p><strong>Illustration using images:</strong></p>
+<p><img src="media/resized_production-tools-journal-templatelist2.png" alt="Tool Journal - Templates"></p>
+<p><strong>Tool Journal Lines:</strong>
+<img src="media/production-tools-tool-journal-positiveadjustment.png" alt="Tool Journal - Receipt"></p>
+<div class="IMPORTANT">
+<h5>Important</h5>
+<p>Required fields for <strong>Item type</strong> <strong>Receipt</strong>: <strong>External document number</strong>, <strong>Employee number</strong>, <strong>Registration number</strong>, <strong>Price</strong>.</p>
+</div>
+<h3 id="tool-loan">Tool Loan</h3>
+<ol>
+<li>Choose the <img src="media/ui-search/search_small.png" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong>Tool Journal</strong> in the search engine, then select the relevant link.</li>
+<li>Select the template that best suits your needs.</li>
+<li>Fill in the <strong>DM Number</strong> field.</li>
+<li>In the <strong>Employee Number</strong> field, select the employee borrowing the tool.</li>
+<li>Fill in the <strong>Quantity</strong> field.</li>
+<li>Fill in the <strong>Registration number</strong> field, i.e., the specific tool to be borrowed.</li>
+<li>If you use barcode readers, you can also enter the <strong>EAN code</strong>.</li>
+<li>Click the <strong>Charge</strong> button to save the item in the register.</li>
+<li>All created items can be viewed on the <strong>tool inventory items</strong> page.</li>
+</ol>
+<p><strong>Example using images:</strong></p>
+<p><img src="media/resized_production-tools-journal-templatelist2.png" alt="Tool Journal - Templates"></p>
+<p><strong>Tool Journal Lines:</strong>
+<img src="media/production-tools-tool-journal-lend.png" alt="Tool Journal - Loan"></p>
+<div class="IMPORTANT">
+<h5>Important</h5>
+<p>Required fields for <strong>Item Type</strong> <strong>Loan</strong>: <strong>Employee Number</strong>, <strong>Registration Number</strong>.</p>
+</div>
+<h3 id="returning-a-tool">Returning a tool</h3>
+<ol>
+<li>Choose the <img src="media/ui-search/search_small.png" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong>Tool Log</strong> in the search box, then select the relevant link.</li>
+<li>Select the template that best suits your needs.</li>
+<li>For <strong>Item Type</strong>, select <strong>Return</strong>.</li>
+<li>In the <strong>DM Number</strong> field, select the tool you want to return.</li>
+<li>Fill in the <strong>Employee Number</strong> field for the employee returning the tool.</li>
+<li>Enter the value in the <strong>Quantity</strong> field corresponding to the number of tools being returned.</li>
+<li>Enter a value in the <strong>Registration Number</strong> field to uniquely identify the specific tool.</li>
+<li>Fill in the <strong>Damage Code</strong> field, if applicable.</li>
+<li>If you use barcode readers, you can also enter the <strong>EAN code</strong>.</li>
+<li>Click the <strong>Account</strong> button to save the item in the records.</li>
+<li>All created items can be viewed on the <strong>Tool Record Items</strong> page.</li>
+</ol>
+<p><strong>Example using images:</strong></p>
+<p><img src="media/resized_production-tools-journal-templatelist2.png" alt="Tool Journal - Templates"></p>
+<p><strong>Tool Journal Lines:</strong>
+<img src="media/production-tools-tool-journal-return.png" alt="Tool Journal - Return"></p>
+<div class="IMPORTANT">
+<h5>Important</h5>
+<p>Required fields for <strong>Item Type</strong> <strong>Return</strong>: <strong>Employee Number</strong>, <strong>Damage Code</strong>, <strong>Registration Number</strong>.</p>
+</div>
+<h3 id="tool-issuance">Tool Issuance</h3>
+<ol>
+<li>Choose the <img src="media/ui-search/search_small.png" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong>Tool Log</strong> in the search engine, then select the relevant link.</li>
+<li>Select the template that best suits your needs.</li>
+<li>For <strong>Item Type</strong>, select <strong>Issue</strong>.</li>
+<li>In the <strong>DM Number</strong> field, select the tool you want to issue.</li>
+<li>Fill in the <strong>Employee Number</strong> field with the number of the person performing the action.</li>
+<li>Enter a value in the <strong>Registration Number</strong> field to uniquely identify the specific tool.</li>
+<li>Fill in the <strong>Damage Code</strong> field, if relevant.</li>
+<li>If you use barcode readers, you can also enter the <strong>EAN code</strong>.</li>
+<li>Click the <strong>Account</strong> button to save the item in the records.</li>
+<li>All created items can be viewed on the <strong>Tool Record Items</strong> page.</li>
+</ol>
+<p><strong>Example using images:</strong></p>
+<p><img src="media/resized_production-tools-journal-templatelist2.png" alt="Tool Journal - Templates"></p>
+<p><strong>Tool Journal Lines:</strong>
+<img src="media/production-tools-tool-journal-negativeadjustment.png" alt="Tool Journal - Issue"></p>
+<div class="IMPORTANT">
+<h5>Important</h5>
+<p>Required fields for <strong>Item Type</strong> <strong>Issue</strong>: <strong>Employee Number</strong>, <strong>Damage Code</strong>, <strong>Registration Number</strong>.</p>
+</div>
+<h3 id="tool-inventory-items">Tool inventory items</h3>
+<p>As mentioned above, all created items can be viewed on the <strong>Tool inventory items</strong> tab. Here is how to display this page:</p>
+<ol>
+<li>Choose the <img src="media/ui-search/search_small.png" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enterChoose the <img src="media/ui-search/search_small.png" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong>Tool inventory items</strong> in the search engine, then select the relevant link.</li>
+<li>The <strong>Tool Ledger Entries</strong> page will appear, where you can view all entries that have been created.</li>
+</ol>
+<p><img src="media/production-tools-tool-ledger-entries.png" alt="Tool Ledger Entries - Display"></p>
+<p><strong>See also</strong></p>
+<p><a href="production-tools-setup.html">Production Tools setup</a><br>
+<a href="productivity-pack.html">Productivity Pack</a></p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/ARICOMA-D365BC/AC-IB-dynamics365smb-docs/blob/master/business-central/Solutions/production-tools.md/#L1" class="contribution-link">Improve this document</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+           <span><a href="https://www.aricoma.com/docs/en-us/dynamics365/business-central/Solutions/solutions.html"><strong>ENGLISH</strong><strong>/</strong><a href="https://www.aricoma.com/docs/cs-cz/dynamics365/business-central/Solutions/solutions.html"><strong>CZECH</strong></a></a></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
