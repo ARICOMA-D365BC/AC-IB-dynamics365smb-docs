@@ -9,7 +9,7 @@ ms.search.keywords: banking, finance, czech, API
 ---
 # CZ Banking Extension Setup
 
-> Update 10.01.2026
+> Update 22.04.2026
 
 The CZ Banking Extension module needs to be activated, in the production environment the user will be asked to activate the subscription (see [documentation on monetization](https://www.aricoma.com/docs/en-us/dynamics365/business-central/ProductivityPack/monetization.html)).
 
@@ -18,6 +18,14 @@ The CZ Banking Extension module needs to be activated, in the production environ
 
 > [!TIP]
 > Important: Before setting up, run the Assisted Setup for this module, which can be found in Assisted Setup -> Set up ARICOMA extensions. This will allow you to upload a configuration package and use it to add the sample settings, which are referenced in the scenarios in the following chapters, among others.
+
+## Permisions
+To prevent users from encountering issues when using Business Central, be sure to configure the module’s permissions before activating its functionality.
+The following permission sets are available upon installation of the module: 
+|Set Name|Description|
+|-|-|
+| CZBANKEXTREAD_ACB | For general use|
+| CZBANKEXTEDIT_ACB | For configuring the module’s behavior |
 
 ## Bank statement and payment order formats
 
@@ -42,9 +50,32 @@ If your bank supports electronic statements that contain multiple transactions f
 > [!TIP]
 > Enable the Support ZIP files field to allow importing multiple dump files at once within a single zip file.
 
+The import method you have set up must be entered on the Bank Account tab:
+
+1. Choose the ![Lightbulb that opens the Tell Me feature.](media/ui-search/search_small.png "Tell me what you want to do") icon, enter **Bank Accounts**, and then choose the related link.
+2. Select the appropriate account and start the *Edit* action.
+3. On the Transfer tab, select the export method (e.g., "CZBE_ABO-IMP-LOCAL") in the **Statement Import Format** field.
+
+> [!NOTE]
+> The *Import* function on the Bank Statement tab will work, but logically without additional functions for processing multiple files.
+
 #### Import encoding settings
 
-In case of incorrect characters in the imported statement, you need to adjust the encoding used. Set the correct encoding in the Content Encoding field. To verify the functionality of the set encoding, we recommend using the Test Content Encoding action on the Statements Import Extended Setup page.
+In case of incorrect characters in the imported statement, you need to adjust the encoding used. Set the correct encoding in the Content Encoding field. To verify the functionality of the set encoding, we recommend using the *Test Content Encoding* action on the Statements Import Extended Setup page.
+
+### Settings for manual export of payment orders
+
+1. Choose the ![Lightbulb that opens the Tell Me feature.](media/ui-search/search_small.png "Tell me what you want to do") icon, enter **Bank export/import settings** and then choose the related link.
+2. Go to the selected row (e.g., with the code "CZBE_ABO-EXP-LOCAL").
+3. Check that the **Processing Codeunit ID** field contains the value 52057437, which allows you to export statements using the *Export* action on the Issued Payment Order tab.
+4. Run the *Advanced settings* action.
+5. On the Payment Export Extended Setup page, verify that the **Processing Codeunit ID** field contains the value 52057438, which is used to create a file in ABO format.
+
+The set export method must be entered on the Bank Account tab:
+
+1. Choose the ![Lightbulb that opens the Tell Me feature.](media/ui-search/search_small.png "Tell me what you want to do") icon, enter **Bank Accounts**, and then choose the related link.
+2. Select the appropriate account and start the Edit action.
+3. On the Transfer tab, select the export method in the **Payment export format** field (e.g., "CZBE_ABO-EXP-LOCAL" or "CZBE_SEPA-EXP-LOCAL").
 
 ### Settings for manual import of bank statements via API
 
@@ -137,7 +168,11 @@ We recommend that you continuously delete the already processed records in the C
 
 ### Automatic account number formatting (optional)
 
-Enabling this feature will automatically format bank account numbers in BC, eliminating problems with importing bank statements.
+Enabling this feature will automatically format bank account numbers in BC, eliminating problems with importing bank statements. Formatting is performed on:
+
+- Bank account
+- Customer bank account
+- Vendor bank account
 
 1. Choose the ![Lightbulb that opens the Tell Me feature.](media/ui-search/search_small.png "Tell me what you want to do") icon, enter **Company Information** and then choose the related link.
 2. Activate the **Format Account Number** field.
@@ -204,6 +239,32 @@ When "Issuing" a bank statement, the function checks if the statement turnover m
     - Field **Group Per Variable Symbol** – cumulation after VS
     - Field **Group Per Constant Symbol** – accumulates for KS
     - Field **Group Per Specific Symbol** – accumulates after SS
+
+### Configuring the Document Layout for Sending Payment Notifications via Email
+
+First, verify that the report is defined in the Report Selections for Purchasing (or Sales):
+
+1. Choose the ![Lightbulb that opens the Tell Me feature.](media/ui-search/search_small.png "Tell me what you want to do") icon, enter **Report Selection - Purchase**, and then choose the related link.
+2. On the Report Selection - Purchase page, select "Payment Notice" in the **Usage** field.
+3. Verify that there is (or add) at least one row with a **Report ID** equal to XXX 
+4. Verify that the value in both the **Use for Email Body** field and the **Use for Email Attachment** field is "Yes".
+5. Verify that the value in the **Email Body Layout** field is "Payment Notice Email (Word)".
+6. Verify that the value in the **Report Layout** field is "Payment Notice (Word)".
+7. Repeat the above procedure on the **Report Selections - Sales** page.
+
+> [!NOTE]
+> For more information on defining custom layouts, visit [the Microsoft website](https://learn.microsoft.com/en-us/dynamics365/business-central/ui-how-add-fields-word-report-layout).
+
+Next, you need to enter specific details for the particular vendor (typically an email address):
+
+1. Choose the ![Lightbulb that opens the Tell Me feature.](media/ui-search/search_small.png "Tell me what you want to do") icon, enter **Vendors**, and then choose the related link.
+2. Open the vendor card for whom you want to set up report sending.
+3. On the Vendor card page, launch the *Document Layouts* action.
+4. On the Document Layouts page, launch the *Copy from Report Selection* action, which will fill in any missing rows.
+5. Go to the row with the value *Payment Notice* in the **Usage** field, and enter the email address where the notice should be sent in the **Send to Email** field.
+
+> [!NOTE]
+> You can make the same settings on the Customer card page. For information on defining document layouts for customers and vendors, visit [Microsoft's website](https://learn.microsoft.com/en-us/dynamics365/business-central/ui-define-customer-vendor-document-layouts).
 
 ## Custom modifications
 
