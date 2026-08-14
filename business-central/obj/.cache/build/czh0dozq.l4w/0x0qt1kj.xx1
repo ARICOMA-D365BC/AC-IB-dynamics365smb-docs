@@ -1,0 +1,227 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>HelpDesk - Setup </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="HelpDesk - Setup ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../TOC.html">
+    <meta property="docfx:tocrel" content="TOC.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="png" src="../logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="helpdesk---setup">HelpDesk - Setup</h1>
+
+<p>The Helpdesk module is used to centrally enter, record, process and evaluate various user requests in the Microsoft Dynamics 365 Business Central system. Users can enter requests for service operations, for providing support, modifying or supplementing functionality, register complaints and so on. It also allows you to categorize requests, set priorities, and manage processing by assigned solvers. There is also a history of closed HelpDesk requests.</p>
+<p>In order to enter requests into the HelpDesk, it is necessary to make some settings in advance:</p>
+<ul>
+<li>HelpDesk Setup.</li>
+<li>Create a number series for HelpDesk requirements.</li>
+<li>Create user categories.</li>
+<li>Enter authorized persons and assign them to categories.</li>
+<li>Populate the requirements priority table.</li>
+<li>Create request categories (optionally if they are tracked).</li>
+<li>Populate the table of ways to solve.</li>
+<li>Create a workflow template for the Helpdesk.</li>
+<li>Set up workflow for HelpDesk.</li>
+</ul>
+<h2 id="helpdesk-settings">HelpDesk settings</h2>
+<ul>
+<li>Choose the <img src="media/ui-search/search_small.png" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong>Helpdesk Setup</strong> and then choose the related link.</li>
+</ul>
+<p>On the <strong>Helpdesk Settings</strong> page, on the <strong>General</strong> tab, you can choose whether to fill in request categories 1-3, the default priority, and whether you need to enter new requests using the wizard.</p>
+<p><img src="media/hd_general_setup.png" alt="Helpdesk settings - General tab"></p>
+<p>On the <strong>Numbering</strong> tab, in the <strong>Request Nos.</strong> field, select a number series for newly created Helpdesk requests.</p>
+<h3 id="create-a-number-series-for-helpdesk-requests">Create a number series for HelpDesk requests</h3>
+<ol>
+<li>Choose the <img src="media/ui-search/search_small.png" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong>No. Series</strong> and then choose the related link.</li>
+<li>On the <strong>Number Series</strong> page, click <strong>New</strong> to create a new number series.</li>
+<li>Enter the Code, Description, and Starting No. of the number sequence.</li>
+<li>Select the Default Nos. for autofilling numbers when entering new requests check box.</li>
+</ol>
+<p>Example of a created number series:</p>
+<p><img src="media/hd_serial_no.png" alt="Helpdesk settings - number series"></p>
+<h2 id="set-up-a-user-categories">Set up a User Categories</h2>
+<p>User categories are groups of users. User groups are assigned a certain weight (level of importance), which is one of the factors in the automatic request priority calculation The user category contains the Code, Description, and Weight fields</p>
+<ol>
+<li>Choose the <img src="media/ui-search/search_small.png" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong>User Categories</strong> and then choose the related link.</li>
+<li>On the <strong>User Category</strong> page, choose <strong>New</strong> action, and then enter <strong>Code</strong>, <strong>Description</strong>, and <strong>Weight</strong>.</li>
+<li>The Weight field can take values ​​0-1 in terms of percentages (0 = 0%, 1 = 100%).</li>
+</ol>
+<h2 id="set-up-an-entitled-persons">Set up an Entitled Persons</h2>
+<p>For each Authorized Person, the appropriate User Category is selected, according to which the program automatically pre-populates the Request Weight for that person. The pre-filled value of the <strong>Weight</strong> field can be adjusted individually for each person. The program then uses this value to calculate the overall priority of the request.</p>
+<ol>
+<li>Choose the <img src="media/ui-search/search_small.png" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong>Entitled Person List</strong> and then choose the related link.</li>
+<li>A table will appear with all authorized persons entered so far.</li>
+<li>On the <strong>Entitled Person List</strong> choose <strong>the New</strong> action and fill in the new authorized person fields as needed.</li>
+</ol>
+<p>On the <strong>Communication</strong> tab, you can add more detailed contact information for the given person (<strong>Address</strong>, <strong>Phone No.</strong>, <strong>Fax</strong>, <strong>Mobile Phone No.</strong>, <strong>E-mail</strong>).</p>
+<p>When the corresponding login name of the authorized person is filled in the <strong>User ID</strong> field, the code of the authorized person who enters the request will be automatically offered to the HelpDesk when making a request.</p>
+<p>The <strong>User Change Allowed</strong> field entitles you to change the Authorized Person (poIe Helpdesk Identification) when entering a new request into the HelpDesk. The selected <strong>Default priority</strong> will be automatically offered in the newly purchased request.</p>
+<h2 id="request-priority-setup">Request Priority Setup</h2>
+<p>In order to evaluate requirements according to their urgency, it is necessary to fill in <strong>Requirements Priorities</strong>:</p>
+<ol>
+<li>Choose the <img src="media/ui-search/search_small.png" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong>Request Priorities</strong> and then choose the related link.</li>
+<li>On the Request Priorities page, choose <strong>the New</strong> action.</li>
+<li>Enter the <strong>Code</strong> and <strong>Description</strong> fields.</li>
+<li>Enter the appropriate value in the <strong>Weight</strong> field to calculate the resulting request priority.</li>
+</ol>
+<ul>
+<li>The Weight field can take values ​​0-1 in terms of percentages (0 = 0%, 1 = 100%). Weights can be set arbitrarily, depending on local conditions and customs (usually, the more severe the requirement, the higher the weight).</li>
+</ul>
+<ol start="5">
+<li>Enter the <strong>Response Date Calculation</strong>, <strong>Solution Date Calculate</strong> using a formula to calculate fields.</li>
+</ol>
+<ul>
+<li>Integers can be entered in the fields with the abbreviation of the unit of time (e.g. D = day, M = month, Q = quarter, Y = year). The resulting date, when entering a new request, is calculated from the date when the request was entered (the date can then be edited).</li>
+</ul>
+<p>After specifying request priorities, the table can look like this:
+<img src="media/hd_request_priorities.png" alt="Helpdesk Setup - Request Priorities"></p>
+<h2 id="request-category-settings">Request Category Settings</h2>
+<p>To monitor requirements from points of view other than severity, it is possible to define categories of requirements, up to 3 levels for which the tree decay applies (i.e. they are in a hierarchical subordination relationship, i.e. the Category 1 option determines which Category 2 will be offered, which in turn will affect the Category 3 offer).</p>
+<ol>
+<li><p>Choose the <img src="media/ui-search/search_small.png" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong>Request Categories</strong> and then choose the related link.</p>
+</li>
+<li><p>On the <strong>Request Categories 1</strong> page, choose the <strong>New</strong> action.</p>
+</li>
+<li><p>Fill in the appropriate fields in the Category Code (max. 10 characters) and <strong>Description</strong> (max. 50 characters) rows.</p>
+</li>
+<li><p>To create multiple subcategories (level 2 categories) for a given category, choose <strong>Request Categories 2</strong> action on the <strong>Request Categories 1</strong> page.</p>
+</li>
+<li><p>Repeat steps 2 and 3 to complete Requirement Category 2.</p>
+</li>
+<li><p>To create multiple subcategories (level 3 categories) for a given category, choose <strong>Request Categories 3</strong> action on the <strong>Request Categories 2</strong> page.</p>
+</li>
+<li><p>Repeat steps 2 and 3 to complete Requirement Category 3.</p>
+</li>
+</ol>
+<h2 id="set-up-a-request-solution">Set up a Request Solution</h2>
+<p>In this setting, it is possible to define individual ways of solving requests.</p>
+<ol>
+<li>Choose the <img src="media/ui-search/search_small.png" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong>Solutions</strong> and then choose the related link.</li>
+<li>On the <strong>Solution</strong> page, choose the <strong>New</strong> action.</li>
+<li>Fill in the appropriate fields in the Code (max. 10 characters) and <strong>Description</strong> (max. 50 characters) rows.</li>
+</ol>
+<h2 id="create-a-status-management-template-for-helpdesk">Create a Status Management template for Helpdesk</h2>
+<p>To set up a workflow, the <strong>Status Management addon</strong> is required, which you must have installed.</p>
+<ol>
+<li><p>Choose the <img src="media/ui-search/search_small.png" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong>Status Management Templates</strong> and then choose the related link.</p>
+</li>
+<li><p>On <strong>the Status Management Templates</strong> page, fill in the fields in the <strong>Code</strong>, <strong>Description</strong>, and <strong>Table Number (52068298) rows</strong>.</p>
+</li>
+<li><p>In the function panels, click <strong>Status Management Statuses</strong> to set each state.</p>
+<ul>
+<li>For workflow status, you need to define <strong>Code</strong>, <strong>Description</strong>, and <strong>Next status filter</strong>, which determines what other states can be accessed from that state. One of the states must be marked as <strong>Default State</strong> – this is filled in when a new helpdesk request is created. Some states may be referred to as <strong>the Final Status</strong>, from which no further state is continued.</li>
+</ul>
+</li>
+<li><p>When you have defined Status Management Statuses, use the <strong>OK</strong> button to confirm them.</p>
+</li>
+</ol>
+<p>For more information about setting up and setting up Status Management, see <a href="workflow-status-management-setup.html">Status Management Settings</a>.</p>
+<h2 id="status-management-settings-for-helpdesk">Status Management settings for HelpDesk</h2>
+<p>After you create a template, you must set up the template on the <strong>Status Management Settings</strong> page.</p>
+<ol>
+<li>Select the <img src="media/ui-search/search_small.png" alt="Light Bulb icon that opens Tell Me feature." title=" me what you want to do">, enter <strong>Status Control Settings</strong>, and then select the related link.</li>
+<li>On <strong>Status Management Setup</strong> page, in the <strong>Table number</strong> field, type the 52068298 number that indicates the Request Helpdesk table.</li>
+<li>In the <strong>Status Management templates</strong>field, select the appropriate template for status control for HelpDesk requests.</li>
+</ol>
+<h2 id="see-also">See also</h2>
+<p><a href="helpdesk.html">HelpDesk</a><br>
+<a href="productivity-pack.html">Productivity Pack</a></p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/ARICOMA-D365BC/AC-IB-dynamics365smb-docs/blob/master/business-central/Solutions/helpdesk-setup.md/#L1" class="contribution-link">Improve this document</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+           <span><a href="https://www.aricoma.com/docs/en-us/dynamics365/business-central/Solutions/solutions.html"><strong>ENGLISH</strong><strong>/</strong><a href="https://www.aricoma.com/docs/cs-cz/dynamics365/business-central/Solutions/solutions.html"><strong>CZECH</strong></a></a></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

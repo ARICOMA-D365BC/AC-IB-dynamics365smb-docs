@@ -1,0 +1,192 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Solutions </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Solutions ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../TOC.html">
+    <meta property="docfx:tocrel" content="TOC.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="png" src="../logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="solutions"><a href="../Solutions/solutions.html">Solutions</a></h1>
+
+<h1 id="financial-pack"><a href="../FinancialPack/finance-pack.html">Financial Pack</a></h1>
+<h2 id="application-extension-set"><a href="../FinancialPack/controling-basic.html">Application extension set</a></h2>
+<h3 id="settings---application-extension-set"><a href="../FinancialPack/controling-basic-setup.html">Settings - Application extension set</a></h3>
+<h2 id="insolvency-register"><a href="../FinancialPack/insolvence-register.html">Insolvency Register</a></h2>
+<h3 id="settings---insolvency-register"><a href="../FinancialPack/insolvence-register-setup.html">Settings - Insolvency Register</a></h3>
+<h2 id="factoring"><a href="../FinancialPack/factoring.html">Factoring</a></h2>
+<h3 id="settings---factoring"><a href="../FinancialPack/factoring-setup.html">Settings - Factoring</a></h3>
+<h2 id="multiple-payment-methods"><a href="../FinancialPack/multiple-payment-methods.html">Multiple Payment Methods</a></h2>
+<h3 id="settings---multiple-payment-methods"><a href="../FinancialPack/multiple-payment-methods-setup.html">Settings - Multiple Payment Methods</a></h3>
+<h2 id="fiscal-printers"><a href="../FinancialPack/fiscal-printers.html">Fiscal printers</a></h2>
+<h3 id="settings---fiscal-printers"><a href="../FinancialPack/fiscal-printers-setup.html">Settings - Fiscal Printers</a></h3>
+<h2 id="packaging-records"><a href="../FinancialPack/pack-tracking-basic.html">Packaging records</a></h2>
+<h3 id="settings---packaging-records"><a href="../FinancialPack/pack-tracking-basic-setup.html">Settings - Packaging records</a></h3>
+<h2 id="returnable-packaging-records"><a href="../FinancialPack/pack-tracking-return-packing.html">Returnable Packaging records</a></h2>
+<h3 id="settings---returnable-packaging-records"><a href="../FinancialPack/pack-tracking-return-packing-setup.html">Settings - Returnable Packaging records</a></h3>
+<h2 id="deprecated-features"><a href="../FinancialPack/fp-deprecated-features.html">Deprecated features</a></h2>
+<h1 id="productivity-pack"><a href="../ProductivityPack/productivity-pack.html">Productivity Pack</a></h1>
+<h2 id="electronic-invoicing"><a href="../ProductivityPack/elektronic-dokuments.html">Electronic invoicing</a></h2>
+<h3 id="settings---electronic-invoicing"><a href="../ProductivityPack/elektronic-dokuments-setup.html">Settings - Electronic invoicing</a></h3>
+<h2 id="data-boxes"><a href="../ProductivityPack/data-boxes.html">Data boxes</a></h2>
+<h3 id="settings---data-boxes"><a href="../ProductivityPack/data-boxes-setup.html">Settings - Data Boxes</a></h3>
+<h2 id="mail-records"><a href="../ProductivityPack/incoming-mail.html">Mail records</a></h2>
+<h3 id="settings---mail-records"><a href="../ProductivityPack/incoming-mail-setup.html">Settings - Mail records</a></h3>
+<h2 id="general-parameters"><a href="../ProductivityPack/general-parameters.html">General parameters</a></h2>
+<h3 id="settings---general-parameters"><a href="../ProductivityPack/general-parameters-setup.html">Settings - General Parameters</a></h3>
+<h2 id="sharepoint-publishing"><a href="../ProductivityPack/sharepoint-publisher.html">SharePoint publishing</a></h2>
+<h3 id="settings---sharepoint-publishing"><a href="../ProductivityPack/sharepoint-publisher-setup.html">Settings - SharePoint Publishing</a></h3>
+<h2 id="job-queue-extension"><a href="../ProductivityPack/job-queue-extension.html">Job Queue Extension</a></h2>
+<h3 id="settings---job-queue-extension"><a href="../ProductivityPack/job-queue-extension-setup.html">Settings - Job Queue Extension</a></h3>
+<h2 id="publishing-templates"><a href="../ProductivityPack/publication-template.html">Publishing templates</a></h2>
+<h3 id="settings---publishing-templates"><a href="../ProductivityPack/publication-template-setup.html">Settings - Publishing Templates</a></h3>
+<h2 id="publication-tasks"><a href="../ProductivityPack/publication-tasks.html">Publication Tasks</a></h2>
+<h3 id="settings---publication-tasks"><a href="../ProductivityPack/publication-tasks-setup.html">Settings - Publication Tasks</a></h3>
+<h2 id="transport---basic"><a href="../ProductivityPack/transport-basic.html">Transport - Basic</a></h2>
+<h3 id="settings---transport---basic"><a href="../ProductivityPack/transport-basic-setup.html">Settings - Transport - Basic</a></h3>
+<h2 id="transport---planning"><a href="../ProductivityPack/transport-planning.html">Transport - Planning</a></h2>
+<h3 id="settings---transport---planning"><a href="../ProductivityPack/transport-planning-setup.html">Settings - Transport - Planning</a></h3>
+<h2 id="workflow---state-control"><a href="../ProductivityPack/workflow-status-management.html">WorkFlow - state control</a></h2>
+<h3 id="settings---workflow---linker-tables"><a href="../ProductivityPack/workflow-status-management-setup.html">Settings - WorkFlow - Linker Tables</a></h3>
+<h2 id="workflow---linker-tables"><a href="../ProductivityPack/workflow-linker-tables.html">WorkFlow - Linker Tables</a></h2>
+<h3 id="settings---workflow---linker-tables-1"><a href="../ProductivityPack/workflow-status-management-setup.html">Settings - WorkFlow - Linker Tables</a></h3>
+<h2 id="notifications"><a href="../ProductivityPack/notifications.html">Notifications</a></h2>
+<h3 id="settings---notifications"><a href="../ProductivityPack/notifications-setup.html">Settings - Notifications</a></h3>
+<h2 id="complaints-management"><a href="../ProductivityPack/complaints-management.html">Complaints Management</a></h2>
+<h3 id="settings---complaints-management"><a href="../ProductivityPack/complaints-management-setup.html">Settings - Complaints Management</a></h3>
+<h2 id="helpdesk"><a href="../ProductivityPack/helpdesk.html">HelpDesk</a></h2>
+<h3 id="settings---helpdesk"><a href="../ProductivityPack/helpdesk-setup.html">Settings - HelpDesk</a></h3>
+<h2 id="central-database"><a href="../ProductivityPack/centraldatabase.html">Central Database</a></h2>
+<h3 id="settings---central-database"><a href="../ProductivityPack/centraldatabase-setup.html">Settings - Central Database</a></h3>
+<h2 id="spooler"><a href="../ProductivityPack/spooler.html">Spooler</a></h2>
+<h3 id="settings---spooler"><a href="../ProductivityPack/spooler-setup.html">Settings - Spooler</a></h3>
+<h2 id="exchange-shared-mailbox"><a href="../ProductivityPack/exchange-shared-mailboxes.html">Exchange Shared Mailbox</a></h2>
+<h3 id="settings---exchange-shared-mailbox"><a href="../ProductivityPack/exchange-shared-mailboxes-setup.html">Settings - Exchange Shared Mailbox</a></h3>
+<h2 id="production-tools"><a href="../ProductivityPack/production-tools.html">Production Tools</a></h2>
+<h3 id="settings---production-tools"><a href="../ProductivityPack/production-tools-setup.html">Settings - Production Tools</a></h3>
+<h2 id="parcels"><a href="../ProductivityPack/parcels.html">Parcels</a></h2>
+<h3 id="settings---parcels"><a href="../ProductivityPack/parcels-setup.html">Settings - Parcels</a></h3>
+<h2 id="edi-connector-base"><a href="../ProductivityPack/edi-connector-basic.html">EDI connector base</a></h2>
+<h3 id="settings---edi-connector-base"><a href="../ProductivityPack/edi-connector-basic-setup.html">Settings - EDI connector base</a></h3>
+<h2 id="ac-monetization"><a href="../ProductivityPack/monetization.html">AC Monetization</a></h2>
+<h1 id="slovak-legislative-pack"><a href="../SK/sk-legislative-pack.html">Slovak Legislative Pack</a></h1>
+<h2 id="slovak-language-for-business-central"><a href="../SK/sk-language.html">Slovak language for Business Central</a></h2>
+<h2 id="export-vat-statement"><a href="../SK/sk-vat-statement-export.html">Export VAT Statement</a></h2>
+<h3 id="settings---export-vat-statement"><a href="../SK/sk-vat-statement-setup.html">Settings - Export VAT Statement</a></h3>
+<h2 id="settings---vies-and-intrastat-export"><a href="../SK/sk-vies.html">Settings - VIES and Intrastat export.</a></h2>
+<h2 id="balance-sheet-and-income-statement"><a href="../SK/sk-balance-sheet-income-statement.html">Balance sheet and income statement</a></h2>
+<h2 id="settings---statutory-statements"><a href="../SK/sk-balance-sheet-income-statement-setup.html">Settings - Statutory statements</a></h2>
+<h2 id="vat-statement"><a href="../SK/sk-vat-statement-export.html">VAT Statement</a></h2>
+<h3 id="settings---vat-statement"><a href="../SK/sk-vat-statement-setup.html">Settings - VAT Statement</a></h3>
+<h2 id="vat-control-report"><a href="../SK/sk-vat-check-report-export.html">VAT Control Report</a></h2>
+<h3 id="settings---vat-control-statement"><a href="../SK/sk-vat-check-report-setup.html">Settings - VAT Control Statement</a></h3>
+<h2 id="intrastat"><a href="../SK/sk-intrastat.html">Intrastat</a></h2>
+<h2 id="vies"><a href="../SK/sk-vies.html">VIES</a></h2>
+<h2 id="sepa-payments"><a href="../SK/sk-sepa.html">SEPA payments</a></h2>
+<h2 id="institute-of-the-payers-unreliability"><a href="../SK/sk-unreability-payer.html">Institute of the payer's unreliability</a></h2>
+<h2 id="balance-reconciliation"><a href="../SK/sk-balance-reconciliation.html">Balance reconciliation</a></h2>
+<h2 id="tax-depreciation"><a href="../SK/sk-tax-depreciation.html">Tax depreciation</a></h2>
+<h2 id="import-of-exchange-rates"><a href="../SK/sk-ECB.html">Import of exchange rates</a></h2>
+<h1 id="streamline-tools"><a href="streamlinetools.html">Streamline Tools</a></h1>
+<h2 id="attribute-tool"><a href="attribute-tool.html">Attribute Tool</a></h2>
+<h1 id="support"><a href="../support/support.html">Support</a></h1>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/ARICOMA-D365BC/AC-IB-dynamics365smb-docs/blob/master/business-central/StreamlineTools/TOC_OLD.md/#L1" class="contribution-link">Improve this document</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+           <span><a href="https://www.aricoma.com/docs/en-us/dynamics365/business-central/Solutions/solutions.html"><strong>ENGLISH</strong><strong>/</strong><a href="https://www.aricoma.com/docs/cs-cz/dynamics365/business-central/Solutions/solutions.html"><strong>CZECH</strong></a></a></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
