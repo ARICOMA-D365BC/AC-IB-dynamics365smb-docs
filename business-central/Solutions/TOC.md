@@ -16,6 +16,7 @@
 ### [Settings - Data Boxes](data-boxes-setup.md)
 ## [Document Links (Sharepoint)](document-links.md)
 ### [Settings - Document Links (Sharepoint)](document-links-setup.md)
+## [e-Connect360](e-connect360.md)
 ## [EDI connector base](edi-connector-basic.md)
 ### [Settings - EDI connector base](edi-connector-basic-setup.md)
 ## [Electronic Document Sending](electronic-documents.md)
