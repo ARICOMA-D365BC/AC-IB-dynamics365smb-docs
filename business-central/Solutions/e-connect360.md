@@ -26,3 +26,4 @@ Whether you need to exchange electronic documents, automate EDI communication, s
 
 ## See also
 [ARICOMA Solution](solutions.md)  
+[Productivity Pack](productivity-pack.md)
