@@ -9,7 +9,7 @@ ms.search.keywords: Czech, Slovak, SK Fiscal Printers Integration, Streamline To
 ---
 # SK Fiscal Printers Integration for Dynamics 365 Business Central
 
-> Update 31.07.2025
+> Update 23.03.2026
 
 **SK Fiscal Printers Integration** is an extension for the Microsoft Dynamics 365 Business Central information system that provides direct integration with fiscal printers from VAROS, specifically the [eKASA FT5000](http://www.varos.sk/vyrobky-FT5000) series. This solution is designed to fully comply with Slovak legislative requirements according to Act 289/2008 Z.z., which regulates the recording of sales from goods and services in cash or other methods (e.g., payment cards, meal vouchers, or checks).
 
@@ -38,8 +38,8 @@ The following text describes the scenarios supported by the Fiscal Printers Inte
 2. On the Sales Invoices page, click *New* to create a new sales invoice.
 3. Complete the lines of the document as needed.
 
-> [!IMPORTANT]
-> The sales receipt must be set to **Prices incl. VAT** must be set to Yes. The system will notify the user of this when entering the Payment Method Code with the **Fiscal Tax Document** flag enabled.
+    > [!IMPORTANT]
+    > The sales receipt must be set to **Prices incl. VAT** must be set to Yes. The system will notify the user of this when entering the Payment Method Code with the **Fiscal Tax Document** flag enabled.
 
 4. In the **Payment Method Code** field, select the payment method linked to a fiscal printer (see [Setting payment methods](SK-FiscalPrinters-Integration-setup.md#payment-methods-settings) with the **Fiscal Tax Document** flag enabled).
 5. Post the document.
@@ -125,16 +125,29 @@ Other functions eKASA and Sales Overviews (Daily closing, Monthly...) are availa
 All the above cash operations (Tax Document, Deposit, Withdrawal, Invoice Payment, Invoice Cancellation, Coinage) can be done manually in the Print Manager software.
 Additionally, it is possible to perform the corresponding operations in the Business Central with the fiscal printer switched off and the created fiscal ledger entries are additionally manually marked as “Registered” (see below).
 
+### Manual Receipt
+
+If a printer connection error occurs while posting a document, the document is posted and a fiscal item is created. This item must be registered once the fiscal printer is operational.
+If a user creates a manual receipt, it must be registered under the manual document number along with the date and time of issuance. The *Register Entry* function is used for this purpose (see [Registering entries](#registering-entries) below).
+
 ### Other operations with Fiscal Ledger Entries
 
 #### Registering entries
 
 If the fiscal document does not print, the problem (apart from the problem with the printer itself) may be that for some reason the so-called “registration” of the item has failed. The Fiscal Ledger Entry carries the registration information - see the **Registered** and **Registration DateTime** columns.
 
-If it makes sense to re-register the entry (printer was turned off, etc.), the user can register the entry additionally:
+In cases where the user has issued a manual receipt (sales slip), the user must register the item retroactively:
 
 1. Choose the ![Lightbulb that opens the Tell Me feature.](media/ui-search/search_small.png "Tell me what you want to do") icon, enter **Fiscal Ledger Entries** and then choose the related link.
 2. On the **Fiscal Ledger Entries** page, locate the appropriate record and run the *Register Entry* action.
+3. Enter the receipt number in the **Receipt No.** field.
+4. Enter the date and time the receipt was issued in the **Issued date and time** field, then click OK.
+
+In cases where the user is able to resolve the issue (e.g., the printer was turned off), the user should register the item retroactively:
+
+1. Choose the ![Lightbulb that opens the Tell Me feature.](media/ui-search/search_small.png "Tell me what you want to do") icon, enter **Fiscal Ledger Entries** and then choose the related link.
+2. On the **Fiscal Ledger Entries** page, locate the appropriate record and run the *Register Entry* action.
+3. Leave all fields blank and click OK.
 
 > [!NOTE]
 > In practice, using the Find Items action on a posted sales receipt is often a more convenient way to find the correct Fiscal Item.

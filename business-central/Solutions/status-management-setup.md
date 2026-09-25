@@ -12,6 +12,7 @@ ms.author: v-pejano
 ms.date: 07/18/2023
 ---
 # Status Management - Setup
+> Update: 30.04.2026
 
 ## Set up a Status Management Template
 
@@ -23,6 +24,15 @@ ms.date: 07/18/2023
     ![Status Management - Status Management Templates](media/WF_Templates.png)
 
 5. To specify individual states for the newly created State Management, click on the  **Statuses**.
+
+> [!IMPORTANT]
+> To prevent users from encountering issues when using Business Central, be sure to configure the module’s permissions before activating its functionality.
+> The following permission sets are available upon installation of the module:
+>
+> |Set Name              |Description                    |
+> |-                     |-                              |
+> | ARSTATUSMGTUSAGE_ACH | For general use               |
+> | ARSTATUSMGTSETUP_ACH | For module configuration only |
 
 For each Status management state, you must define a **Code**, **Description**, and **Next status filter** that determines what other states can be accessed from that state. Just one of the states must be marked as **Default Status** (by checking the Default Status button). This state is then automatically filled in when a new row is created in the table with which the state control works (document, request, etc.).
 

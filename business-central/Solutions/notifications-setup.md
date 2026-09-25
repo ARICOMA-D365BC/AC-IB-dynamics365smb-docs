@@ -11,9 +11,18 @@ ms.search.keywords: Czech, Notification setup, additional functions
 ms.author: v-makune
 ---
 # Notifications - Settings
-> Update: 12.12.2024
+> Update: 30.04.2026
 
 The **Notifications** module enables **system notifications** for data and process statuses recorded in Microsoft Dynamics 365 Business Central. Notification works both internally in the system environment and externally in the form of an e-mail. The module can work off-line, as it does not respond to an immediate change in the data, but **sends information at scheduled intervals**. In addition to tracking the current event, it is also possible to monitor the development of the event over time.
+
+> [!IMPORTANT]
+> To prevent users from encountering issues when using Business Central, be sure to configure the module’s permissions before activating its functionality.
+> The following permission sets are available upon installation of the module:
+>
+> |Set Name        |Description                    |
+> |-               |-                              |
+> | EVNT_USAGE_ACH | For general use               |
+> | EVNT_ADMIN_ACH | For module configuration only |
 
 ## Create and edit Event Template Card
 

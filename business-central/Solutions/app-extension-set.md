@@ -387,16 +387,9 @@ For more information, visit the [Setup](app-extension-set-setup#rounding-setup-a
 
 ## Universal Permission
 
-The Universal Permission functionality allows for maximum control over data editing.  The main benefit is preventing unwanted changes to important data on documents when multiple users collaborate. The advantage is the precise setting of editing permissions at the level of individual Fields. With universal permissions, you can be sure that key information will not be overwritten and the data will remain protected.
+The Universal Permissions feature allows you to define permissions for individual users at the field level in tables. There are situations where a user should only be able to edit selected fields, for example. However, all types of operations (RIMD) can be set.
 
-To enable the Universal Permissions functionality, follow these steps:
-
-1. Choose the ![Lightbulb that opens the Tell Me feature.](media/ui-search/search_small.png "Tell me what you want to do") icon, enter **General Ledger Setup** and then choose the related link.
-2. On the **General Ledger Setup** page, on the Application Extension Set From Aricoma FastTab, choose the **Universal Permission Allowed** check box, used to enable Universal Permission Allowed functionality.
-
-![General Ledger Setup](media/up-general-ledger-setup.png)
-
-For more information, visit the [Setup](app-extension-set-setup#universal-permission-setup).
+For more information, visit the [Universal Permission Setup](app-extension-set-setup#universal-permission-setup).
 
 ## Other functionalities
 

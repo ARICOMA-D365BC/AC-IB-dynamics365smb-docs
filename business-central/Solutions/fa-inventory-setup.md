@@ -10,6 +10,8 @@ ms.search.keywords: Aricoma, Finance, Fixed Assets, Inventory, Physical Inventor
 
 # Fixed Assets Inventory - Setup
 
+> Update: 22.04.2026
+
 The **Fixed Assets Inventory** application needs to be set up according to the following description.
 
 ## FA Inventory Setup
@@ -22,6 +24,15 @@ The **Fixed Assets Inventory** application needs to be set up according to the f
   - Set automatic saving of GPS location when scanning - **Other** section.
 
 ![FA Inventory Setup](media/fa-inventory-setup.png)  
+
+> [!IMPORTANT]
+> To prevent users from encountering issues when using Business Central, be sure to configure the module’s permissions before activating its functionality.
+> The following permission sets are available upon installation of the module:
+>
+> |Set Name              |Description                            |
+> |-                     |-                                      |
+> | FAINVENTORYUSAGE_ACB | For general use                       |
+> | FAINVENTORYSETUP_ACB | For configuring the module’s behavior |
 
 ## FA Inventory Journal Templates Setup
 
