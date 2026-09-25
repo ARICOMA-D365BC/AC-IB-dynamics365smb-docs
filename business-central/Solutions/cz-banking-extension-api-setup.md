@@ -9,7 +9,7 @@ ms.search.keywords: banking, finance, czech, API
 ---
 # API connector settings
 
-> Update 30.04.2026
+> Update 23.09.2026
 
 ## CSOB API connector
 
@@ -107,12 +107,8 @@ The following parameters must be added to the Advanced Settings if you want to u
 In order to use the [API Business suite](https://www.kb.cz/cs/kbapi/sluzby-kb-api/api-business-suite) service from Komerční banka, you must have activated the selected internet banking application (*Moje Banka Business*, or *Profibanka*, or *Mobilní banka Business*).
 The basic steps to make the API interface operational are:
 
-- The company applies to Aricoma for an Authorization Key, which will be generated specifically for the company and thanks to which Aricoma will register the KB API connector with KB.
 - The company sets up the module in Business Central
 - The company gives consent to the Business Central application to download data from KB and selects the bank accounts to which Business Central will have access
-
-**Obtaining the Authorization Key** (valid until BC26 version)
-Contact us by email at <bc_sales@aricoma.com>. All we need is your company name, and we will send you an Authorization Key in reply. This is for your company's use only and must not be used by anyone else.
 
 **Setting up the module in BC**
 The next step is to set up access in Business Central:
@@ -121,9 +117,10 @@ The next step is to set up access in Business Central:
 2. On the KB API Clients page, enter "KB" in the **Code** field on the new line.
 3. For example, type "KB API" in the **Description** field.
 4. Leave the value "Production environment" in the **API** field.
-5. In the **Authorization Key** field, enter the value you received from Aricoma (see previous paragraph).
-6. Run the *Authorize Client* action; success will be indicated by a change in the **Client Is Authorized** flag.
+5. Run the *Authorize Client* action; success will be indicated by a change in the **Client Is Authorized** flag.
 
+> [!IMPORTANT]
+> If you see the **Authorization Key** field and it is empty, please contact us by email at <bc_sales@aricoma.com>. All we need is your company name; we will send you the Authorization Key in our reply. This applies to versions earlier than 28 CU5.
 > [!WARNING]
 > Only use the **Enable activity log** option in justified cases for a limited period of time, as the log contains sensitive data and may be accessed by users who should not see it.
 > [!TIP]
