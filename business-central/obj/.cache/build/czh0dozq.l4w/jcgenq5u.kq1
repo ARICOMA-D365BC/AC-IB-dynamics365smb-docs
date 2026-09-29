@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Insolvence register </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Insolvence register ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../TOC.html">
+    <meta property="docfx:tocrel" content="TOC.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="png" src="../logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="insolvency-register" sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="10">Insolvency Register</h1>
+
+<blockquote sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="12">
+<p sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="12">Update: 30.11.2025</p>
+</blockquote>
+<p sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="14"><strong sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="14">Insolvency Register</strong> is an extension for Microsoft Dynamics 365 Business Central that enables automatic verification of payment capability of customers and vendors based on data downloaded from the official Insolvency Register of the Czech Republic <a href="https://isir.justice.cz" sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="14">https://isir.justice.cz</a>. <strong sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="14">Insolvency Register (ISIR)</strong> is a publicly available online database managed by the <strong sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="14">Ministry of Justice of the Czech Republic</strong>, which records information about insolvency proceedings of natural and legal persons.</p>
+<p sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="16">The database contains:</p>
+<ul sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="18">
+<li sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="18">Insolvency court decisions (proceeding commencement, bankruptcy, debt relief, etc.)</li>
+<li sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="19">Creditor claim registrations</li>
+<li sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="20">Insolvency administrator reports</li>
+<li sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="21">Debtor identification data (name, Company ID, date of birth)</li>
+<li sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="22">Proceeding file documentation in chronological order</li>
+</ul>
+<p sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="24">The register is important for:</p>
+<ul sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="26">
+<li sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="26"><strong sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="26">Creditors</strong> – for claim registration</li>
+<li sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="27"><strong sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="27">Debtors</strong> – for monitoring proceeding progress</li>
+<li sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="28"><strong sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="28">Entrepreneurs</strong> – for verifying business partners</li>
+<li sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="29"><strong sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="29">Public</strong> – for verifying financial reliability of persons and companies</li>
+</ul>
+<p sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="31">Records remain in the register <strong sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="31">3 years after proceeding completion</strong>.</p>
+<p sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="33"><strong sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="33">The Insolvency Register application</strong> for Business Central makes this public data available directly in Business Central so that the company has this information directly integrated into business processes. When a company enters a new partner (customer, vendor, contact) with a record in ISIR into the system, or if an existing partner subsequently appears in ISIR, the system user is informed of this fact.</p>
+<h2 id="key-features" sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="35">Key Features</h2>
+<ul sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="37">
+<li sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="37">Display of insolvency proceeding information on customer, vendor, contact cards and Company Information</li>
+<li sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="38">User warnings when working with sales or service documents</li>
+<li sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="39">Setting to prevent document posting</li>
+<li sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="40">Ability to disable insolvency testing for a specific partner (customer, vendor)</li>
+<li sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="41">Allow posting during insolvency for a specific document</li>
+<li sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="42">Complete information about ongoing and completed insolvency proceedings of partners directly in Business Central</li>
+</ul>
+<h3 id="cloud-version-and-server-architecture" sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="44">Cloud Version and Server Architecture</h3>
+<p sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="46">For cloud versions of Business Central, a <strong sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="46">server application component</strong> is used, which provides:</p>
+<ul sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="48">
+<li sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="48">Centralized loading of all records from ISIR (Insolvency Register)</li>
+<li sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="49">API provision for queries from the IR client part</li>
+<li sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="50">Automatic data synchronization between server and client applications</li>
+</ul>
+<p sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="52">The server architecture eliminates the need for each Business Central instance to download complete data from ISIR, which significantly increases service performance and reliability.</p>
+<p sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="54">For <strong sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="54">On-Premises versions</strong> of Business Central, you can choose between two implementation methods:</p>
+<ul sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="56">
+<li sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="56"><strong sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="56">Server variant</strong> - uses a centralized server for downloading data from ISIR, same as the cloud version. This variant reduces database size as only data of entities that are recorded in the given Business Central instance as customers, vendors, or contacts are downloaded.</li>
+<li sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="57"><strong sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="57">Direct download</strong> - complete data is downloaded from ISIR directly to the database of the specific Business Central instance without using a central server. This approach is suitable for organizations that prefer full control over their data and do not use cloud services.</li>
+</ul>
+<h2 id="usage" sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="59">Usage</h2>
+<h3 id="displaying-partner-insolvency-information" sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="61">Displaying Partner Insolvency Information</h3>
+<ul sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="63">
+<li sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="63">Choose the <img src="media/ui-search/search_small.png" sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="63" alt="Lightbulb that opens the Tell Me feature" title="Tell me what you want to do"> icon, enter <strong sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="63">Customers</strong>, then choose the related link.</li>
+<li sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="64">Navigate to a customer record with an entry in the insolvency register.</li>
+<li sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="65">Choose <strong sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="65">Related &gt; Customer &gt; Insolvency Register</strong>. Alternatively, you can use the Insolvency Register FactBox, which displays the number of open Insolvency Register records.</li>
+<li sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="66">On the Insolvency Register Cases List page, you can see a list of open and closed customer insolvencies.</li>
+</ul>
+<p sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="68"><img src="media/ir-customer-card2.png" sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="68" alt="ir-customer-card2.png"></p>
+<p sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="70"><img src="media/ir-customer-ir-events.png" sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="70" alt="ir-customer-ir-events.png"></p>
+<p sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="72">The same information is also available on <strong sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="72">Vendor</strong> and <strong sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="72">Contact</strong> cards. Information about insolvencies against your own organization is available on the <strong sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="72">Company Information</strong> page.</p>
+<h3 id="insolvency-register-case-card" sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="74">Insolvency Register Case Card</h3>
+<p sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="76"><strong sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="76">The Insolvency Register Case Card</strong> provides a detailed view of a specific insolvency proceeding and serves to:</p>
+<ul sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="78">
+<li sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="78"><strong sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="78">Display complete information</strong> about the insolvency proceeding including file number, commencement date, proceeding status, and proceeding type</li>
+<li sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="79"><strong sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="79">Track progress</strong> of the insolvency proceeding with a chronological overview of all significant events</li>
+<li sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="80"><strong sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="80">Identify the subject</strong> - displays complete information about the debtor (name, Company ID, address, legal form)</li>
+<li sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="81"><strong sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="81">Overview of documents</strong> attached to the insolvency proceeding</li>
+<li sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="82"><strong sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="82">Monitor changes</strong> in proceeding status over time</li>
+<li sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="83"><strong sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="83">Access detailed information</strong> about the insolvency administrator and creditors</li>
+</ul>
+<p sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="85">The card is automatically updated when downloading new data from ISIR and provides users with current information about the development of insolvency proceedings of their business partners.</p>
+<p sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="87"><img src="media/ir-event-card.png" sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="87" alt="Insolvency Register Card"></p>
+<p sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="89">From the Insolvency Register Case Card, it is also possible to display detailed information about the <strong sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="89">subject</strong> of the insolvency proceeding by clicking on <strong sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="89">Persons</strong>. For the subject, it is also possible to display address information by clicking on <strong sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="89">Addresses</strong>.</p>
+<p sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="91"><img src="media/ir-event-card-person.png" sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="91" alt="Insolvency Register Subject"></p>
+<h3 id="sales-document-notifications" sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="93">Sales Document Notifications</h3>
+<p sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="95">If <strong sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="95">Insolvency Check in Sales</strong> is enabled in <strong sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="95">Insolvency Register Setup</strong>, then when inserting a customer on a sales document (quote, order, invoice), if the customer has any record in the insolvency register, a <strong sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="95">notification</strong> will be displayed. From it, the user can directly open the <strong sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="95">Insolvency Register Cases List</strong>.</p>
+<h3 id="sales-document-posting-check" sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="97">Sales Document Posting Check</h3>
+<p sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="99">When running the Post action on a sales order or invoice, according to the insolvency check in sales settings, a check is performed for <strong sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="99">open cases in the insolvency register</strong>. If such a record is found, the user is not allowed to perform posting. In the Insolvency Register Setup, you can specify the <strong sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="99">Block Sales Posting on Insolvency</strong> option: <strong sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="99">Shipment, Invoice, All, and blank (does not block posting)</strong>.</p>
+<h3 id="disabling-customer-insolvency-check" sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="101">Disabling Customer Insolvency Check</h3>
+<p sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="103">A user with special permission can disable insolvency register testing for a customer on the customer card. A side effect is that insolvency records are not displayed for this customer (e.g., the Insolvency Register action on the customer card).</p>
+<ul sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="105">
+<li sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="105">Choose the <img src="media/ui-search/search_small.png" sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="105" alt="Lightbulb that opens the Tell Me feature" title="Tell me what you want to do"> icon, enter <strong sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="105">Customers</strong>, then choose the related link.</li>
+<li sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="106">Navigate to a customer with a record in the insolvency register.</li>
+<li sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="107">On the <strong sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="107">Invoicing</strong> tab, enable <strong sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="107">Disable Insolvency Test</strong>.</li>
+<li sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="108">Verify that the Insolvency Register action displays an empty list. For immediate effect, you need to refresh the page, e.g., with the F5 key.</li>
+</ul>
+<p sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="110"><img src="media/ir-customer-card1.png" sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="110" alt="ir-customer-card1.png"></p>
+<p sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="112">The same setting is also available on the vendor card (Invoicing tab) and Contact (Foreign Trade tab). In these cases, records about these companies are not displayed in overviews and reports for insolvency register checking.</p>
+<h3 id="one-time-posting-check-disable-on-sales-and-service-documents" sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="114">One-time Posting Check Disable on Sales and Service Documents</h3>
+<p sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="116">A user with special permission can disable posting restrictions based on the existence of an open insolvency proceeding on a sales document card (or service document). Then the document can be posted.</p>
+<ul sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="118">
+<li sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="118">Choose the <img src="media/ui-search/search_small.png" sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="118" alt="Lightbulb that opens the Tell Me feature" title="Tell me what you want to do"> icon, enter <strong sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="118">Sales Orders</strong>, then choose the related link.</li>
+<li sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="119">Navigate to an order record for a customer with open insolvency and run the Edit action.</li>
+<li sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="120">On the <em sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="120">Shipping and Billing</em> tab, enable <strong sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="120">Allow Posting on Insolvency</strong>.</li>
+<li sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="121">Run the Post action.</li>
+<li sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="122">Close the page.</li>
+</ul>
+<p sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="124"><img src="media/ir-sales-order-allow-posting.png" sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="124" alt="Allow Posting on Insolvency"></p>
+<h3 id="insolvency-register-check-report" sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="126">Insolvency Register Check Report</h3>
+<p sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="128">The report automatically alerts about business partner (contact/customer/vendor) entry into insolvency proceedings or about filing an insolvency proceeding proposal against your own company.</p>
+<ul sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="130">
+<li sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="130">Choose the <img src="media/ui-search/search_small.png" sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="130" alt="Lightbulb that opens the Tell Me feature" title="Tell me what you want to do"> icon, enter <strong sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="130">Insolvency Register Check</strong>, then choose the related link.</li>
+<li sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="131">On the Insolvency Register Check page, define the execution parameters in options:
+<ul sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="132">
+<li sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="132">In the <strong sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="132">Back by</strong> field, enter for example &quot;5D&quot; to have the system search for records from the last 5 days</li>
+<li sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="133">Use other flags to define whether information about your own company, contacts, customers, or vendors should or should not be printed.</li>
+<li sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="134">Run the report with the <strong sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="134">Preview</strong> button.</li>
+</ul>
+</li>
+</ul>
+<p sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="136"><img src="media/ir-check-report-setup.png" sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="136" alt="Insolvency Register Check Report - setup"></p>
+<p sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="138"><img src="media/ir-check-report.png" sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="138" alt="Insolvency Register Check Report"></p>
+<div class="NOTE" sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="140">
+<h5>Note</h5>
+<p sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="141">You can set up regular user notifications to run the report and resolve issues. This can be set up through <strong sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="141"><a href="https://learn.microsoft.com/en-us/dynamics365/business-central/across-user-tasks" sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="141">User Tasks</a></strong>. Another option is to set up <strong sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="141">Report Inbox Schedule</strong>.</p>
+</div>
+<h3 id="insolvency-sales-documents-report" sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="143">Insolvency Sales Documents Report</h3>
+<p sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="145">The report automatically alerts about the existence of documents in the system where the customer has a record in the insolvency register. These are the following documents and entries:</p>
+<ul sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="147">
+<li sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="147">Sales orders, invoices, quotes</li>
+<li sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="148">Reminders, Finance charge memos</li>
+<li sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="149">Open customer ledger entries of all types (invoice, payment, credit memo, reminder, finance charge memo)</li>
+</ul>
+<p sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="151">Running the Insolvency Sales Documents report:</p>
+<ul sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="153">
+<li sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="153">Choose the <img src="media/ui-search/search_small.png" sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="153" alt="Lightbulb that opens the Tell Me feature" title="Tell me what you want to do"> icon, enter <strong sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="153">Insolvency Sales Documents</strong>, then choose the related link.</li>
+<li sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="154">On the Insolvency Sales Documents page, define in options whether the report should include closed insolvency proceedings.</li>
+<li sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="155">Run the report with the <strong sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="155">Preview</strong> button.</li>
+</ul>
+<p sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="157"><img src="media/ir-sales-doc-report-setup.png" sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="157" alt="Insolvency Sales Documents report - setup"></p>
+<p sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="159"><img src="media/ir-sales-doc-report.png" sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="159" alt="Insolvency Sales Documents report"></p>
+<h2 id="related-information" sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="161">Related Information</h2>
+<p sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="163"><a href="insolvence-register-setup.html" sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="163">Setup - Insolvency Register</a><br>
+<a href="solutions.html" sourcefile="Solutions/insolvence-register.md" sourcestartlinenumber="164">ARICOMA Solutions</a></p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/ARICOMA-D365BC/AC-IB-dynamics365smb-docs/blob/master/business-central/Solutions/insolvence-register.md/#L1" class="contribution-link">Improve this document</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+           <span><a href="https://www.aricoma.com/docs/en-us/dynamics365/business-central/Solutions/solutions.html"><strong>ENGLISH</strong><strong>/</strong><a href="https://www.aricoma.com/docs/cs-cz/dynamics365/business-central/Solutions/solutions.html"><strong>CZECH</strong></a></a></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

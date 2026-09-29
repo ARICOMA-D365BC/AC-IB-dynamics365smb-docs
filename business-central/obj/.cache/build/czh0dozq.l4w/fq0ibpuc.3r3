@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>EDI Connector </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="EDI Connector ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../TOC.html">
+    <meta property="docfx:tocrel" content="TOC.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="png" src="../logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="edi-connector" sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="13">EDI connector</h1>
+
+<p sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="15">The <strong sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="15">EDI connector</strong> add-on module adds a framework for the electronic exchange of documents (EDI) with business partners – customers, vendors and shipping agents – to Microsoft Dynamics 365 Business Central. The module itself does not contain any specific message format; it is a general framework that, for each combination of <em sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="15">partner – document – communication direction</em>, runs the assigned object (report, codeunit or XMLport) which creates or reads the data message in the form required by the given EDI provider.</p>
+<p sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="17">In particular, the module provides:</p>
+<ul sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="19">
+<li sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="19">a register of EDI partners and their EAN (GLN) identifiers,</li>
+<li sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="20">EDI communication setup cards that define what is sent, to whom, by which object and where,</li>
+<li sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="21">tracking of the document processing status through <strong sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="21">EDI Entries</strong> and <strong sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="21">Detailed EDI Entries</strong>, including archiving of the message itself,</li>
+<li sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="22">a connection to the <strong sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="22">Spooler</strong> module, which handles the actual transfer of messages to the provider (HTTP, web service, API, e-mail).</li>
+</ul>
+<p sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="24">The EDI connector is above all about correct setup. Without a filled-in <strong sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="24">EDI Setup</strong> card with the <strong sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="24">Enabled</strong> field selected, the functions of the module cannot be run – the system reports that the EDI Connector functionality is not enabled.</p>
+<h2 id="which-documents-edi-supports" sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="26">Which documents EDI supports</h2>
+<p sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="28">The module works with the following source documents (the <strong sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="28">Document Source Type</strong> field on the EDI communication setup card):</p>
+<table sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="30">
+<thead>
+<tr sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="30">
+<th sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="30">Table</th>
+<th sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="30">Document</th>
+<th sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="30">Source Type</th>
+<th sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="30">Usual direction</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="32">
+<td sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="32">36</td>
+<td sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="32">Sales Header (quote, order, invoice, credit memo, blanket order, return order)</td>
+<td sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="32">Customer</td>
+<td sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="32">Import</td>
+</tr>
+<tr sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="33">
+<td sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="33">38</td>
+<td sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="33">Purchase Header (quote, order, invoice, credit memo, blanket order, return order)</td>
+<td sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="33">Vendor</td>
+<td sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="33">Export</td>
+</tr>
+<tr sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="34">
+<td sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="34">110</td>
+<td sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="34">Sales Shipment (posted)</td>
+<td sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="34">Customer</td>
+<td sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="34">Export</td>
+</tr>
+<tr sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="35">
+<td sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="35">112</td>
+<td sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="35">Sales Invoice (posted)</td>
+<td sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="35">Customer</td>
+<td sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="35">Export</td>
+</tr>
+<tr sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="36">
+<td sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="36">114</td>
+<td sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="36">Sales Credit Memo (posted)</td>
+<td sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="36">Customer</td>
+<td sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="36">Export</td>
+</tr>
+<tr sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="37">
+<td sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="37">5740</td>
+<td sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="37">Transfer Header</td>
+<td sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="37">Shipping Agent</td>
+<td sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="37">Export</td>
+</tr>
+</tbody>
+</table>
+<p sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="39">The communication direction is pre-filled automatically when the document source type is selected: the sales header (36) is set to <strong sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="39">Import</strong>, the other documents to <strong sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="39">Export</strong>. The value can then be changed to <strong sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="39">Export</strong>, <strong sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="39">Confirmed Export</strong> or <strong sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="39">Import</strong>.</p>
+<div class="NOTE" sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="41">
+<h5>Note</h5>
+<p sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="42">The <strong sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="42">Confirmed Export</strong> option means that only documents with the <strong sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="42">Confirmed for EDI Export</strong> field selected are included in the export. With the <strong sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="42">Export</strong> option, the filter on this field is not applied.</p>
+</div>
+<h2 id="which-messages-arise-from-the-communication" sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="44">Which messages arise from the communication</h2>
+<p sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="46">The processing status of a document in EDI is kept in the <strong sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="46">Status</strong> field on the EDI entries and corresponds to the type of message that was exchanged:</p>
+<table sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="48">
+<thead>
+<tr sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="48">
+<th sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="48">Status</th>
+<th sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="48">Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="50">
+<td sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="50">ORDERS (Order)</td>
+<td sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="50">Order (received from a customer or sent to a vendor)</td>
+</tr>
+<tr sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="51">
+<td sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="51">DESADV (Despatch Advice)</td>
+<td sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="51">Despatch advice (shipment note)</td>
+</tr>
+<tr sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="52">
+<td sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="52">Shipped/Received</td>
+<td sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="52">The document has been shipped or received</td>
+</tr>
+<tr sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="53">
+<td sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="53">RECADV (Receiving Advice)</td>
+<td sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="53">Receiving advice from the partner</td>
+</tr>
+<tr sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="54">
+<td sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="54">DESADV canceled (Despatch Advice Canceled)</td>
+<td sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="54">Cancellation of the despatch advice (arises when a sales shipment is undone)</td>
+</tr>
+<tr sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="55">
+<td sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="55">INVOIC (Invoice)</td>
+<td sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="55">Invoice</td>
+</tr>
+<tr sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="56">
+<td sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="56">COMDIS3 (Commercial Dispute - Conditionaly)</td>
+<td sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="56">Commercial dispute – conditionally accepted</td>
+</tr>
+<tr sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="57">
+<td sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="57">COMDIS1 (Commercial Dispute - OK)</td>
+<td sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="57">Commercial dispute – OK</td>
+</tr>
+<tr sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="58">
+<td sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="58">COMDIS8 (Commercial Dispute - Refused)</td>
+<td sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="58">Commercial dispute – refused</td>
+</tr>
+<tr sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="59">
+<td sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="59">INVOIC canceled (Invoice Canceled)</td>
+<td sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="59">Invoice cancellation</td>
+</tr>
+</tbody>
+</table>
+<p sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="61">In addition to the status, the <strong sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="61">Data Acceptance</strong> field is tracked on the entries, with the values <em sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="61">EDI Provider</em> and <em sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="61">Market</em>, which distinguishes at which level the message was accepted by the counterparty.</p>
+<p sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="63">The text of the exchanged message itself is stored as an appendix of the detailed EDI entry and can be downloaded at any time with the <strong sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="63">Export Document</strong> action on the <strong sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="63">Detailed EDI Entries</strong> page.</p>
+<p sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="65">Errors that occur during communication are logged according to the selected transfer method:</p>
+<ul sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="67">
+<li sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="67">in the <strong sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="67">EDI Invoicing Protocol</strong> – for invoicing messages it contains the error texts of the whole message, the error line number, the action code and description, the COMDIS message number and the message status,</li>
+<li sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="68">in the <strong sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="68">Spooler Log Entries</strong> – for messages transferred by the Spooler (connection and authentication errors, provider responses).</li>
+</ul>
+<h2 id="edi-entries-and-detailed-edi-entries" sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="70">EDI Entries and Detailed EDI Entries</h2>
+<p sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="72">There is exactly one <strong sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="72">EDI Entry</strong> for each combination of source table, subtype and document number, and it always carries the current (latest) status. A <strong sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="72">Detailed EDI Entry</strong> is created for each individual communication and thus forms the history of the document. In addition, the detailed entry contains the version number, the number of document no. appearances, the posting number, the external document number, the cancellation flag, the direction, the buffer entry number, the file name and the appendix with the message.</p>
+<p sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="74">The entries are linked by the <strong sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="74">Main EDI Entry No.</strong> field, so you can display both the history of a single document and the history of the whole chain of linked documents (order → shipment → invoice).</p>
+<h2 id="using-edi-in-sales" sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="76">Using EDI in sales</h2>
+<p sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="78">The sales side is typically bidirectional and runs in the following sequence:</p>
+<ol sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="80">
+<li sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="80"><strong sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="80">Receiving the order (ORDERS).</strong> The <strong sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="80">Import EDI Documents</strong> report goes through the active EDI communication setup cards with the <em sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="80">Import</em> direction and, for each of them, runs the assigned object that creates the sales order. Items are looked up by the EAN from the received message and the EAN is written to the <strong sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="80">EDI EAN</strong> field on the sales line. An EDI entry with the <em sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="80">ORDERS</em> status is created.</li>
+<li sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="81"><strong sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="81">Checking and processing the order.</strong> An overview of all EDI orders is offered by the <strong sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="81">EDI Sales List</strong> page, where, in addition to the standard fields, the <strong sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="81">EDI Status</strong>, <strong sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="81">EDI Data Acceptance</strong>, <strong sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="81">Advice with Error</strong>, <strong sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="81">Confirmed for EDI Export</strong>, <strong sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="81">Invoice No.</strong>, <strong sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="81">EDI Shipment No.</strong> and <strong sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="81">EDI Shipment Date</strong> fields are also visible.</li>
+<li sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="82"><strong sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="82">Shipping and despatch advice (DESADV).</strong> When the shipment is posted, the document is automatically marked as confirmed for EDI export and an EDI entry for the sales shipment is created. The message itself is created by the <strong sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="82">Export EDI Shipment Documents</strong> report. When a sales shipment line is undone, the shipment is marked with the <strong sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="82">EDI Cancelled</strong> flag and an entry with the <em sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="82">DESADV canceled</em> status is created; if only a part of the shipment is undone, the system notifies you with a confirmation.</li>
+<li sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="83"><strong sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="83">Invoicing (INVOIC).</strong> When the invoice (or credit memo) is posted, an EDI entry for the posted invoice is created and the message is created by the <strong sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="83">Export EDI Invoice Documents</strong> report (or the <strong sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="83">Export EDI Credit Memo Documents</strong> report).</li>
+<li sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="84"><strong sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="84">Invoice cancellation.</strong> The <strong sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="84">Cancel EDI Invoice</strong> function marks the existing detailed entries with the <em sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="84">INVOIC</em> status as cancelled, creates an entry with the <em sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="84">INVOIC canceled</em> status, clears the <strong sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="84">Confirmed for EDI Export</strong> and <strong sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="84">Advice with Error</strong> flags and releases any lock on the document.</li>
+</ol>
+<p sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="86">Before a document is confirmed for EDI export, the system checks that the <strong sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="86">EDI Shipment No.</strong> and <strong sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="86">EDI Shipment Date</strong> fields are filled in and that all lines of the <em sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="86">Item</em> type have the shipped quantity equal to the ordered quantity. The check of the EDI status and of the data acceptance can be tightened further by check lines on the EDI communication setup card.</p>
+<p sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="88">The confirmation function can also be run in a batch from the <strong sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="88">EDI Sales List</strong> with the <strong sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="88">Confirm Invoice Export</strong> action, which first releases the document and then selects <strong sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="88">Confirmed for EDI Export</strong>.</p>
+<h2 id="using-edi-in-purchases" sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="90">Using EDI in purchases</h2>
+<p sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="92">The purchase side is typically unidirectional – the order is sent to the vendor:</p>
+<ol sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="94">
+<li sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="94">The purchase order must be <strong sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="94">released</strong> first.</li>
+<li sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="95">On the purchase order card, run the <strong sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="95">EDI Document</strong> action. The function verifies that the vendor has the <strong sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="95">GLN</strong> or <strong sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="95">EAN for EDI</strong> field filled in, finds the corresponding EDI communication setup card (by the vendor and the order address code) and creates an EDI entry with the <em sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="95">ORDERS</em> status.</li>
+<li sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="96">The message itself is created by the <strong sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="96">Export EDI Purchase Documents</strong> report, which processes only released orders whose EDI entry has a blank status or the <em sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="96">ORDERS</em> status.</li>
+<li sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="97">On the purchase order card, the communication status is visible in the <strong sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="97">EDI Status</strong> field.</li>
+</ol>
+<p sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="99">The <strong sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="99">EDI EAN</strong> field is available on the purchase lines and the <strong sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="99">Merge Lines by EDI EAN</strong> field on the header, which makes it possible to combine several lines with the same EAN into one item of the sent message.</p>
+<h2 id="transfer-orders" sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="101">Transfer orders</h2>
+<p sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="103">The Transfer Order (table 5740) with the <strong sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="103">Confirmed for EDI Export</strong> field and the <strong sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="103">Export EDI Transfer Documents</strong> report is intended for shipping agents (the <em sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="103">Shipping Agent</em> source type).</p>
+<h2 id="edi-invoicing-protocol" sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="105">EDI Invoicing Protocol</h2>
+<p sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="107">The <strong sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="107">EDI Invoicing Protocol</strong> page serves as a history log of invoicing messages. For each record you can see the order number, the customer number, the bill-to customer number, the EDI invoice number, the date and time, the invoice status, the user ID and a flag indicating whether the status was changed manually. The protocol records cannot be edited on the page.</p>
+<h2 id="edi-table-lock-entries" sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="109">EDI Table Lock Entries</h2>
+<p sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="111">So that a user cannot change a document that is currently going through EDI processing, the module keeps its own <strong sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="111">EDI Table Lock Entries</strong>. An attempt to change a locked record ends with a message that the record cannot be changed because it is locked by another user. The check is also applied to the lines of linked documents (sales and purchase lines, service, transfer, warehouse receipt and shipment lines, journals).</p>
+<h2 id="communication-with-the-edi-provider" sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="113">Communication with the EDI provider</h2>
+<p sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="115">The actual transfer of messages to the provider is not handled by the EDI connector itself, but by the <strong sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="115">Spooler</strong> module, which is part of the same application (IB-EConnect360). On the EDI communication setup card, communication through the Spooler is turned on with the <strong sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="115">Communicate by Spooler</strong> field and is linked to the <strong sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="115">Spooler Task ID</strong> and the <strong sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="115">Destination System ID</strong>. Incoming messages are stored in the <strong sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="115">IN Buffer</strong>, outgoing ones in the <strong sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="115">OUT Buffer</strong>.</p>
+<p sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="117">The Spooler supports the following interaction methods: <strong sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="117">HTTP</strong>, <strong sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="117">E-Mail</strong> (including an Exchange mailbox), <strong sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="117">Web Service</strong>, <strong sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="117">Spooler API</strong>, <strong sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="117">Spooler SOAP Web Service</strong> and <strong sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="117">Spooler OData Web Service</strong>, with authentication through OAuth 2.0.</p>
+<div class="NOTE" sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="119">
+<h5>Note</h5>
+<p sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="120">The EDI connector module itself does not contain any object bound to a specific provider. The provider is always added to the solution by a separate application or a set of conversion objects, which are linked in the setup by the <strong sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="120">Object ID</strong> field.</p>
+</div>
+<p sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="122"><strong sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="122">See also</strong></p>
+<p sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="124"><a href="edi-connector-basic-setup.html" sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="124">EDI connector - Setup</a><br>
+<a href="productivity-pack.html" sourcefile="Solutions/edi-connector-basic.md" sourcestartlinenumber="125">Productivity Pack</a></p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/ARICOMA-D365BC/AC-IB-dynamics365smb-docs/blob/master/business-central/Solutions/edi-connector-basic.md/#L1" class="contribution-link">Improve this document</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+           <span><a href="https://www.aricoma.com/docs/en-us/dynamics365/business-central/Solutions/solutions.html"><strong>ENGLISH</strong><strong>/</strong><a href="https://www.aricoma.com/docs/cs-cz/dynamics365/business-central/Solutions/solutions.html"><strong>CZECH</strong></a></a></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
