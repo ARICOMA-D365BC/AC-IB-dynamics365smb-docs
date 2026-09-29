@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Incoming mail | Microsoft Docs </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Incoming mail | Microsoft Docs ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../TOC.html">
+    <meta property="docfx:tocrel" content="TOC.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="png" src="../logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="mail-record" sourcefile="Solutions/incoming-mail.md" sourcestartlinenumber="13">Mail Record</h1>
+
+<p sourcefile="Solutions/incoming-mail.md" sourcestartlinenumber="15">The <strong sourcefile="Solutions/incoming-mail.md" sourcestartlinenumber="15">Mail record</strong> extends <strong sourcefile="Solutions/incoming-mail.md" sourcestartlinenumber="15">the Purchase</strong> and <strong sourcefile="Solutions/incoming-mail.md" sourcestartlinenumber="15">Sales</strong> modules of the Microsoft Dynamics 365 Business Central system to support the registration of incoming and outgoing mail. Registered mail can be processed in a controlled manner using the <strong sourcefile="Solutions/incoming-mail.md" sourcestartlinenumber="15">Workflow module (Status Management),</strong> linked to purchase or sales documents, and through the <strong sourcefile="Solutions/incoming-mail.md" sourcestartlinenumber="15">SharePoint Publishing</strong> module or <strong sourcefile="Solutions/incoming-mail.md" sourcestartlinenumber="15">Incoming Documents</strong> module to attach a scanned or electronically received document to the registered mail card. Another option is to link the mail records card with the record in the <strong sourcefile="Solutions/incoming-mail.md" sourcestartlinenumber="15">Data Boxes</strong> module.</p>
+<h2 id="create-a-new-mail-record-card" sourcefile="Solutions/incoming-mail.md" sourcestartlinenumber="17">Create a new Mail Record Card</h2>
+<p sourcefile="Solutions/incoming-mail.md" sourcestartlinenumber="18">After making the necessary settings, you can create Mail Record documents. Documents can be created manually by:</p>
+<ol sourcefile="Solutions/incoming-mail.md" sourcestartlinenumber="19">
+<li sourcefile="Solutions/incoming-mail.md" sourcestartlinenumber="19">Choose the <img src="media/ui-search/search_small.png" sourcefile="Solutions/incoming-mail.md" sourcestartlinenumber="19" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong sourcefile="Solutions/incoming-mail.md" sourcestartlinenumber="19">Mail Record</strong> and then choose the related link.</li>
+<li sourcefile="Solutions/incoming-mail.md" sourcestartlinenumber="20">On the <strong sourcefile="Solutions/incoming-mail.md" sourcestartlinenumber="20">Mail Record Templates</strong> page select the code for the correct Mail Record Template.
+<img src="media/im-mail-record-templates.png" sourcefile="Solutions/incoming-mail.md" sourcestartlinenumber="21" alt="Mail Record Template">
+<img src="media/im-incoming-mail.png" sourcefile="Solutions/incoming-mail.md" sourcestartlinenumber="22" alt="Mail Record"></li>
+<li sourcefile="Solutions/incoming-mail.md" sourcestartlinenumber="23">In the <strong sourcefile="Solutions/incoming-mail.md" sourcestartlinenumber="23">Mail Records list,</strong> select <strong sourcefile="Solutions/incoming-mail.md" sourcestartlinenumber="23">New</strong> feature.</li>
+<li sourcefile="Solutions/incoming-mail.md" sourcestartlinenumber="24">Create a new Mail Record document.
+<img src="media/im-incoming-mail-card.png" sourcefile="Solutions/incoming-mail.md" sourcestartlinenumber="25" alt="Mail Record Card"></li>
+</ol>
+<p sourcefile="Solutions/incoming-mail.md" sourcestartlinenumber="27"><strong sourcefile="Solutions/incoming-mail.md" sourcestartlinenumber="27">Mail Record Card</strong> displays relevant information related to the document. The <strong sourcefile="Solutions/incoming-mail.md" sourcestartlinenumber="27">Number</strong> field is automatically populated with another number from the number series <strong sourcefile="Solutions/incoming-mail.md" sourcestartlinenumber="27">Contact Type</strong> and <strong sourcefile="Solutions/incoming-mail.md" sourcestartlinenumber="27">Contact No.</strong> specify which document it is - Vendor, Customer, Contact (to be filled in if the Supplier or Customer does not yet exist).</p>
+<p sourcefile="Solutions/incoming-mail.md" sourcestartlinenumber="29">All data in the white fields can be edited (it is therefore possible to fill in the <strong sourcefile="Solutions/incoming-mail.md" sourcestartlinenumber="29">Description</strong> field, all date fields, <strong sourcefile="Solutions/incoming-mail.md" sourcestartlinenumber="29">Payment Terms</strong>, <strong sourcefile="Solutions/incoming-mail.md" sourcestartlinenumber="29">Salesperson/Purchaser code, Currency Code, External Document Number,</strong> etc., which are then taken over into the created document. You can also enter the fields <strong sourcefile="Solutions/incoming-mail.md" sourcestartlinenumber="29">Amount including VAT</strong> and <strong sourcefile="Solutions/incoming-mail.md" sourcestartlinenumber="29">Amount excluding VAT</strong>.
+<img src="media/im-incoming-card-mail.png" sourcefile="Solutions/incoming-mail.md" sourcestartlinenumber="30" alt="Mail Record Card">
+In the  <strong sourcefile="Solutions/incoming-mail.md" sourcestartlinenumber="31">Status</strong> a new record will appear after creation with the default status as defined in the status control template. It is also possible to fill in - <strong sourcefile="Solutions/incoming-mail.md" sourcestartlinenumber="31">Additional responsible person</strong> (either from Users or from the Employees module) and the <strong sourcefile="Solutions/incoming-mail.md" sourcestartlinenumber="31">Status Description</strong> text field.</p>
+<p sourcefile="Solutions/incoming-mail.md" sourcestartlinenumber="33">On the <strong sourcefile="Solutions/incoming-mail.md" sourcestartlinenumber="33">Related Incoming Document</strong> tab, you can create or attach or disconnect the Incoming Document. This is a link to the <strong sourcefile="Solutions/incoming-mail.md" sourcestartlinenumber="33">Incoming Mail module (for more details, see the Inbox module)</strong>.</p>
+<p sourcefile="Solutions/incoming-mail.md" sourcestartlinenumber="35"><img src="media/im-data_record.png" sourcefile="Solutions/incoming-mail.md" sourcestartlinenumber="35" alt="Record of Data Boxes">
+If it is a document created from the Data Box, it is possible to have the original document displayed via the function - <strong sourcefile="Solutions/incoming-mail.md" sourcestartlinenumber="36">Process / Data recording. mailboxes (for more details, see the module - Data mailboxes)</strong>.</p>
+<p sourcefile="Solutions/incoming-mail.md" sourcestartlinenumber="38"><strong sourcefile="Solutions/incoming-mail.md" sourcestartlinenumber="38">Dimensions</strong> are automatically filled in when filling in individual fields on the mail records card, i.e. based on filling in <strong sourcefile="Solutions/incoming-mail.md" sourcestartlinenumber="38">Contact Number</strong>, <strong sourcefile="Solutions/incoming-mail.md" sourcestartlinenumber="38">Salesperson/Purchaser Code</strong>. If the user wants to edit or change these dimensions, there is the <strong sourcefile="Solutions/incoming-mail.md" sourcestartlinenumber="38">Mail/Dimensions</strong> function.</p>
+<p sourcefile="Solutions/incoming-mail.md" sourcestartlinenumber="40">After filling in all the necessary data, it is advisable to approve the document and prevent its changes. This is the <strong sourcefile="Solutions/incoming-mail.md" sourcestartlinenumber="40">Process/Issue</strong> function.</p>
+<h3 id="request-comments" sourcefile="Solutions/incoming-mail.md" sourcestartlinenumber="42">Request Comments</h3>
+<p sourcefile="Solutions/incoming-mail.md" sourcestartlinenumber="43">Users can enter comment lines available as <strong sourcefile="Solutions/incoming-mail.md" sourcestartlinenumber="43">Related/Mail/Comments</strong>. These are Request Comment Line on the request card—these structured notes contain the Date, Note (100 characters), and Code fields.
+<img src="media/im-sheet.png" sourcefile="Solutions/incoming-mail.md" sourcestartlinenumber="44" alt="Mail Record Comment Sheet"></p>
+<h3 id="documents" sourcefile="Solutions/incoming-mail.md" sourcestartlinenumber="45">Documents</h3>
+<p sourcefile="Solutions/incoming-mail.md" sourcestartlinenumber="46">If <strong sourcefile="Solutions/incoming-mail.md" sourcestartlinenumber="46">the SharePoint Publishing</strong> module is installed, then it is possible to publish a document using the <strong sourcefile="Solutions/incoming-mail.md" sourcestartlinenumber="46">Documents/Publish</strong> function for each Mail Registration Card and view the published document using the <strong sourcefile="Solutions/incoming-mail.md" sourcestartlinenumber="46">View</strong> function <strong sourcefile="Solutions/incoming-mail.md" sourcestartlinenumber="46">(for more details, see module - SharePoint)</strong>.
+<img src="media/im-doc_publish.png" sourcefile="Solutions/incoming-mail.md" sourcestartlinenumber="47" alt="Documents"></p>
+<h3 id="attached-documents" sourcefile="Solutions/incoming-mail.md" sourcestartlinenumber="48">Attached documents</h3>
+<p sourcefile="Solutions/incoming-mail.md" sourcestartlinenumber="49">Using <strong sourcefile="Solutions/incoming-mail.md" sourcestartlinenumber="49">the Related/Mail/Attachments</strong> function, any document can be attached to the card, which is then stored in a Microsoft Dynamics 365 Business Central table.
+<img src="media/im-doc_attached.png" sourcefile="Solutions/incoming-mail.md" sourcestartlinenumber="50" alt="Attached documents"></p>
+<h3 id="printing" sourcefile="Solutions/incoming-mail.md" sourcestartlinenumber="51">Printing</h3>
+<p sourcefile="Solutions/incoming-mail.md" sourcestartlinenumber="52">Using the <strong sourcefile="Solutions/incoming-mail.md" sourcestartlinenumber="52">Reports/Print</strong> function on the <strong sourcefile="Solutions/incoming-mail.md" sourcestartlinenumber="52">Mail Records Card</strong> page, the <strong sourcefile="Solutions/incoming-mail.md" sourcestartlinenumber="52">Mail Records</strong> report is launched (the number of the currently displayed request is offered to the input filter, the print range can then be specified in more detail through filters and parameters.</p>
+<h2 id="processing-of-requests" sourcefile="Solutions/incoming-mail.md" sourcestartlinenumber="54">Processing of requests</h2>
+<p sourcefile="Solutions/incoming-mail.md" sourcestartlinenumber="55">After creating the Mail Registration Card, the document can be further processed.</p>
+<h3 id="request-approval" sourcefile="Solutions/incoming-mail.md" sourcestartlinenumber="56">Request approval</h3>
+<p sourcefile="Solutions/incoming-mail.md" sourcestartlinenumber="57">If the Incoming Document Exchange workflow is created and enabled and the Approval user settings are created, you can Send request for approval – <strong sourcefile="Solutions/incoming-mail.md" sourcestartlinenumber="57">Action/Send request for approval function (for more details, see module – Approval)</strong>. If the mail card has not been approved, you cannot create a document.
+<img src="media/im-send_request.png" sourcefile="Solutions/incoming-mail.md" sourcestartlinenumber="58" alt="Send request for approval">
+The approval request can be approved using the function - <strong sourcefile="Solutions/incoming-mail.md" sourcestartlinenumber="59">Related/Post/Approval</strong> or cancelled using the function - <strong sourcefile="Solutions/incoming-mail.md" sourcestartlinenumber="59">Action/Cancel Approval Request</strong></p>
+<h3 id="creating-an-interaction" sourcefile="Solutions/incoming-mail.md" sourcestartlinenumber="61">Creating an interaction</h3>
+<p sourcefile="Solutions/incoming-mail.md" sourcestartlinenumber="62">After select <strong sourcefile="Solutions/incoming-mail.md" sourcestartlinenumber="62">Create Interaction</strong> function, the corresponding Interaction Log Entry is created for the Contact Card according to <strong sourcefile="Solutions/incoming-mail.md" sourcestartlinenumber="62">Interaction Template Setup</strong> for <strong sourcefile="Solutions/incoming-mail.md" sourcestartlinenumber="62">Incoming</strong> and <strong sourcefile="Solutions/incoming-mail.md" sourcestartlinenumber="62">Outgoing Mail (for more details, see module - Marketing)</strong>.</p>
+<h3 id="creating-a-documents" sourcefile="Solutions/incoming-mail.md" sourcestartlinenumber="63">Creating a documents</h3>
+<p sourcefile="Solutions/incoming-mail.md" sourcestartlinenumber="64">You can use the <strong sourcefile="Solutions/incoming-mail.md" sourcestartlinenumber="64">Create Document</strong> function. The user is asked which document to create and after creation, the new document tab is automatically displayed.</p>
+<p sourcefile="Solutions/incoming-mail.md" sourcestartlinenumber="66"><img src="media/im-doc_create.png" sourcefile="Solutions/incoming-mail.md" sourcestartlinenumber="66" alt="Create a document"></p>
+<p sourcefile="Solutions/incoming-mail.md" sourcestartlinenumber="68">All data from the Mail Record Card are transferred to the header of the created document. If dimensions are filled in on the Mail Records card and the Transfer dimensions to document check box is selected in the Mail Registration Template, the dimensions will also be transferred to the created document. This document can be opened by the standard Navigation functionality, via the navigation function or Mail Related documents.</p>
+<h3 id="contact-orders" sourcefile="Solutions/incoming-mail.md" sourcestartlinenumber="69">Contact orders</h3>
+<p sourcefile="Solutions/incoming-mail.md" sourcestartlinenumber="70">Use the <strong sourcefile="Solutions/incoming-mail.md" sourcestartlinenumber="70">Contact's Orders</strong> feature to view an overview of Purchase or Sales Lines by Contact type. Rows are filtered:</p>
+<ul sourcefile="Solutions/incoming-mail.md" sourcestartlinenumber="71">
+<li sourcefile="Solutions/incoming-mail.md" sourcestartlinenumber="71"><strong sourcefile="Solutions/incoming-mail.md" sourcestartlinenumber="71">Purchase order</strong> or <strong sourcefile="Solutions/incoming-mail.md" sourcestartlinenumber="71">Purchase Return Order lines</strong> to the specified Vendor number.</li>
+<li sourcefile="Solutions/incoming-mail.md" sourcestartlinenumber="72">lines <strong sourcefile="Solutions/incoming-mail.md" sourcestartlinenumber="72">Sales Orders</strong> or <strong sourcefile="Solutions/incoming-mail.md" sourcestartlinenumber="72">Sales Return Order Lines</strong> to the Customer number entered.
+<img src="media/im-order.png" sourcefile="Solutions/incoming-mail.md" sourcestartlinenumber="73" alt="Contact orders"></li>
+</ul>
+<h3 id="navigate-mail-related-documents" sourcefile="Solutions/incoming-mail.md" sourcestartlinenumber="74">Navigate (Mail Related Documents)</h3>
+<p sourcefile="Solutions/incoming-mail.md" sourcestartlinenumber="75">The standard <strong sourcefile="Solutions/incoming-mail.md" sourcestartlinenumber="75">Navigate</strong> feature displays the Mail Records tab and <strong sourcefile="Solutions/incoming-mail.md" sourcestartlinenumber="75">the Related Mail Documents tab</strong>.
+<img src="media/im-navigate.png" sourcefile="Solutions/incoming-mail.md" sourcestartlinenumber="76" alt="Navigate">
+Using the <strong sourcefile="Solutions/incoming-mail.md" sourcestartlinenumber="77">Mail Related Documents</strong> function or the <strong sourcefile="Solutions/incoming-mail.md" sourcestartlinenumber="77">View Related Items</strong> function within Navigation, you will see a detailed overview of all related documents for the selected mail records tab.
+<img src="media/im-related_item.png" sourcefile="Solutions/incoming-mail.md" sourcestartlinenumber="78" alt="Related Entries"></p>
+<h2 id="mail-record-board" sourcefile="Solutions/incoming-mail.md" sourcestartlinenumber="79">Mail Record Board</h2>
+<p sourcefile="Solutions/incoming-mail.md" sourcestartlinenumber="80">Mail Record Board is available as follows.</p>
+<ul sourcefile="Solutions/incoming-mail.md" sourcestartlinenumber="81">
+<li sourcefile="Solutions/incoming-mail.md" sourcestartlinenumber="81">Choose the <img src="media/ui-search/search_small.png" sourcefile="Solutions/incoming-mail.md" sourcestartlinenumber="81" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong sourcefile="Solutions/incoming-mail.md" sourcestartlinenumber="81">Mail Record Board</strong> and then choose the related link.</li>
+</ul>
+<p sourcefile="Solutions/incoming-mail.md" sourcestartlinenumber="83">This page provides a summary view of unclosed mail records cards. It offers an overview view of requirements with preset optional filters in the header for easier searching and orientation. First of all, it is necessary to choose which cards of mail records it is, i.e. the template of mail records. Furthermore, requests can be filtered by, for example, <strong sourcefile="Solutions/incoming-mail.md" sourcestartlinenumber="83">Customer</strong> or <strong sourcefile="Solutions/incoming-mail.md" sourcestartlinenumber="83">Vendors</strong>, <strong sourcefile="Solutions/incoming-mail.md" sourcestartlinenumber="83">Status</strong>, <strong sourcefile="Solutions/incoming-mail.md" sourcestartlinenumber="83">Responsible Person</strong> or <strong sourcefile="Solutions/incoming-mail.md" sourcestartlinenumber="83">Mail Type</strong>. In addition, the displayed list of requirements can be sorted by different keys, especially by number, customer or supplier, date or responsible person. At the bottom of the list of cards there is additional information about <strong sourcefile="Solutions/incoming-mail.md" sourcestartlinenumber="83">Request Status</strong>, <strong sourcefile="Solutions/incoming-mail.md" sourcestartlinenumber="83">Amout of document</strong>, <strong sourcefile="Solutions/incoming-mail.md" sourcestartlinenumber="83">Amount to Approve</strong> and <strong sourcefile="Solutions/incoming-mail.md" sourcestartlinenumber="83">Approved Amount</strong>.</p>
+<p sourcefile="Solutions/incoming-mail.md" sourcestartlinenumber="85">The selected request can then be displayed by selecting <strong sourcefile="Solutions/incoming-mail.md" sourcestartlinenumber="85">Card</strong>. There are also functions for <strong sourcefile="Solutions/incoming-mail.md" sourcestartlinenumber="85">Create Interaction</strong>, <strong sourcefile="Solutions/incoming-mail.md" sourcestartlinenumber="85">Download Messages from Data Box</strong>, <strong sourcefile="Solutions/incoming-mail.md" sourcestartlinenumber="85">Navigate</strong> or Add <strong sourcefile="Solutions/incoming-mail.md" sourcestartlinenumber="85">Notes</strong>, or view attached <strong sourcefile="Solutions/incoming-mail.md" sourcestartlinenumber="85">Documents</strong>.
+<img src="media/im-mail.png" sourcefile="Solutions/incoming-mail.md" sourcestartlinenumber="86" alt="Displayed request"></p>
+<h2 id="closed-mail-record" sourcefile="Solutions/incoming-mail.md" sourcestartlinenumber="87">Closed Mail Record</h2>
+<p sourcefile="Solutions/incoming-mail.md" sourcestartlinenumber="88">Closed mail records are available:</p>
+<ul sourcefile="Solutions/incoming-mail.md" sourcestartlinenumber="89">
+<li sourcefile="Solutions/incoming-mail.md" sourcestartlinenumber="89">Choose the <img src="media/ui-search/search_small.png" sourcefile="Solutions/incoming-mail.md" sourcestartlinenumber="89" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong sourcefile="Solutions/incoming-mail.md" sourcestartlinenumber="89">Closed Mail Record</strong> and then choose the related link.
+Viewing the <strong sourcefile="Solutions/incoming-mail.md" sourcestartlinenumber="90">Closed Mail Record</strong> page displays closed requests, that is, requests that have already been processed. Requests are closed manually through the Close Mail Records feature.
+The selected request can then be displayed by selecting <strong sourcefile="Solutions/incoming-mail.md" sourcestartlinenumber="91">View</strong>. There are also functions for displaying ** Related Mail Documents** and <strong sourcefile="Solutions/incoming-mail.md" sourcestartlinenumber="91">Data Box Record</strong>.
+<img src="media/im-closed_mail.png" sourcefile="Solutions/incoming-mail.md" sourcestartlinenumber="92" alt="Closed Mail Record"></li>
+</ul>
+<h2 id="see-also" sourcefile="Solutions/incoming-mail.md" sourcestartlinenumber="98">See also</h2>
+<p sourcefile="Solutions/incoming-mail.md" sourcestartlinenumber="99"><a href="incoming-mail-setup.html" sourcefile="Solutions/incoming-mail.md" sourcestartlinenumber="99">Mail Record - Setup</a><br>
+<a href="productivity-pack.html" sourcefile="Solutions/incoming-mail.md" sourcestartlinenumber="100">Productivity Pack</a></p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/ARICOMA-D365BC/AC-IB-dynamics365smb-docs/blob/master/business-central/Solutions/incoming-mail.md/#L1" class="contribution-link">Improve this document</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+           <span><a href="https://www.aricoma.com/docs/en-us/dynamics365/business-central/Solutions/solutions.html"><strong>ENGLISH</strong><strong>/</strong><a href="https://www.aricoma.com/docs/cs-cz/dynamics365/business-central/Solutions/solutions.html"><strong>CZECH</strong></a></a></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

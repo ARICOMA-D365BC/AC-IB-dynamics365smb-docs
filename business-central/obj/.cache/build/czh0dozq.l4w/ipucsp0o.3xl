@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>CZ Banking Extension - Setup </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="CZ Banking Extension - Setup ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../TOC.html">
+    <meta property="docfx:tocrel" content="TOC.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="png" src="../logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="cz-banking-extension-setup" sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="10">CZ Banking Extension Setup</h1>
+
+<blockquote sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="12">
+<p sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="12">Update 22.04.2026</p>
+</blockquote>
+<p sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="14">The CZ Banking Extension module needs to be activated, in the production environment the user will be asked to activate the subscription (see <a href="https://www.aricoma.com/docs/en-us/dynamics365/business-central/ProductivityPack/monetization.html" sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="14">documentation on monetization</a>).</p>
+<ol sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="16">
+<li sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="16">Choose the <img src="media/ui-search/search_small.png" sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="16" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="16">CZ Banking Extension Settings</strong> and then choose the related link.</li>
+<li sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="17">Activate <em sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="17">Enabled</em> to enable the functionality.</li>
+</ol>
+<div class="TIP" sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="19">
+<h5>Tip</h5>
+<p sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="20">Important: Before setting up, run the Assisted Setup for this module, which can be found in Assisted Setup -&gt; Set up ARICOMA extensions. This will allow you to upload a configuration package and use it to add the sample settings, which are referenced in the scenarios in the following chapters, among others.</p>
+</div>
+<h2 id="permisions" sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="22">Permisions</h2>
+<p sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="23">To prevent users from encountering issues when using Business Central, be sure to configure the module’s permissions before activating its functionality.
+The following permission sets are available upon installation of the module:
+|Set Name|Description|
+|-|-|
+| CZBANKEXTREAD_ACB | For general use|
+| CZBANKEXTEDIT_ACB | For configuring the module’s behavior |</p>
+<h2 id="bank-statement-and-payment-order-formats" sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="30">Bank statement and payment order formats</h2>
+<p sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="32">The Extended CZ Banking module is designed primarily to optimise work with statements and orders, but it also includes a universal import of bank statements in ABO format (*.gpc), which is supported in its basic form by most banks in the Czech Republic. It also allows you to export payment orders in ABO format (*.kpc). The module now also supports the SEPA format (*.xml).</p>
+<div class="TIP" sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="34">
+<h5>Tip</h5>
+<p sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="35">Use one of the add-ons to this addon for API communication with your bank.</p>
+</div>
+<div class="TIP" sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="36">
+<h5>Tip</h5>
+<p sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="37">For Slovak customers, it may be useful to use the SEPA format with payment cumulation on payment orders.</p>
+</div>
+<h3 id="settings-for-manual-batch-import-of-statements" sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="39">Settings for manual batch import of statements</h3>
+<p sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="41">If your bank supports electronic statements that contain multiple transactions for multiple accounts, this can be used to create multiple statements at once (within a single company).</p>
+<ol sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="43">
+<li sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="43">Choose the <img src="media/ui-search/search_small.png" sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="43" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="43">CZ Banking Extension Settings</strong> and then choose the related link.</li>
+<li sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="44">Go to the selected line (e.g. with the code &quot;ABO_LOCAL&quot;).</li>
+<li sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="45">Verify that the <strong sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="45">Processing Codeunit ID</strong> field contains the value 52057427 to allow you to import statements via the Import Bank Statements action.</li>
+<li sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="46">Run the <em sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="46">Extended Setup</em> action.</li>
+<li sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="47">Verify that the <strong sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="47">Batch Import Enabled</strong> flag is set to Yes.</li>
+<li sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="48">Verify that the <strong sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="48">Processing Codeunit ID</strong> field contains the value 52057431 for processing ABO format files.</li>
+</ol>
+<div class="TIP" sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="50">
+<h5>Tip</h5>
+<p sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="51">Enable the Support ZIP files field to allow importing multiple dump files at once within a single zip file.</p>
+</div>
+<p sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="53">The import method you have set up must be entered on the Bank Account tab:</p>
+<ol sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="55">
+<li sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="55">Choose the <img src="media/ui-search/search_small.png" sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="55" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="55">Bank Accounts</strong>, and then choose the related link.</li>
+<li sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="56">Select the appropriate account and start the <em sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="56">Edit</em> action.</li>
+<li sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="57">On the Transfer tab, select the export method (e.g., &quot;CZBE_ABO-IMP-LOCAL&quot;) in the <strong sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="57">Statement Import Format</strong> field.</li>
+</ol>
+<div class="NOTE" sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="59">
+<h5>Note</h5>
+<p sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="60">The <em sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="60">Import</em> function on the Bank Statement tab will work, but logically without additional functions for processing multiple files.</p>
+</div>
+<h4 id="import-encoding-settings" sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="62">Import encoding settings</h4>
+<p sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="64">In case of incorrect characters in the imported statement, you need to adjust the encoding used. Set the correct encoding in the Content Encoding field. To verify the functionality of the set encoding, we recommend using the <em sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="64">Test Content Encoding</em> action on the Statements Import Extended Setup page.</p>
+<h3 id="settings-for-manual-export-of-payment-orders" sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="66">Settings for manual export of payment orders</h3>
+<ol sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="68">
+<li sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="68">Choose the <img src="media/ui-search/search_small.png" sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="68" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="68">Bank export/import settings</strong> and then choose the related link.</li>
+<li sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="69">Go to the selected row (e.g., with the code &quot;CZBE_ABO-EXP-LOCAL&quot;).</li>
+<li sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="70">Check that the <strong sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="70">Processing Codeunit ID</strong> field contains the value 52057437, which allows you to export statements using the <em sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="70">Export</em> action on the Issued Payment Order tab.</li>
+<li sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="71">Run the <em sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="71">Advanced settings</em> action.</li>
+<li sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="72">On the Payment Export Extended Setup page, verify that the <strong sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="72">Processing Codeunit ID</strong> field contains the value 52057438, which is used to create a file in ABO format.</li>
+</ol>
+<p sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="74">The set export method must be entered on the Bank Account tab:</p>
+<ol sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="76">
+<li sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="76">Choose the <img src="media/ui-search/search_small.png" sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="76" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="76">Bank Accounts</strong>, and then choose the related link.</li>
+<li sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="77">Select the appropriate account and start the Edit action.</li>
+<li sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="78">On the Transfer tab, select the export method in the <strong sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="78">Payment export format</strong> field (e.g., &quot;CZBE_ABO-EXP-LOCAL&quot; or &quot;CZBE_SEPA-EXP-LOCAL&quot;).</li>
+</ol>
+<h3 id="settings-for-manual-import-of-bank-statements-via-api" sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="80">Settings for manual import of bank statements via API</h3>
+<p sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="82">If you have purchased an add-on from Aricoma for API communication with your bank and you do not want to use the automation processing support, then you need to adjust the settings. A detailed description of all the steps is in the documentation for each add-on, however the import itself is set up as follows in the case of ABO format:</p>
+<ol sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="84">
+<li sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="84">Choose the <img src="media/ui-search/search_small.png" sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="84" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="84">Bank Export/Import Settings</strong> and then choose the related link.</li>
+<li sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="85">Navigate to the selected line (e.g. with the code &quot;CZBE_ABO-IMP-LOCAL&quot;)</li>
+<li sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="86">Select the line, press Ctrl+C, navigate to the new line and press Ctrl+V.</li>
+<li sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="87">Rename the Code field to e.g &quot;CZBE_ABO-IMP-API&quot;</li>
+<li sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="88">Check that the <strong sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="88">Processing Procedure ID</strong> field contains the value 52057427 to allow importing statements via the Import Bank Statements action.</li>
+<li sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="89">Run the <em sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="89">Advanced Settings</em> action.</li>
+<li sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="90">On the Statements Import Extended Setup, run the <em sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="90">New</em> action.</li>
+<li sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="91">In the <strong sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="91">Description</strong> field, you can edit the pre-filled text.</li>
+<li sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="92">Add parameters for the API connector - see the <a href="ext-banking-API-setup.md" sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="92">documentation</a> for the specific API.</li>
+</ol>
+<div class="IMPORTANT" sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="94">
+<h5>Important</h5>
+<p sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="95">If you use the bank import settings created in this way on the Bank Account card, then the user will start communicating with the bank's API every time the Import button is pressed on the Bank Statement card or when the Bank Statement Import function is started. This may not always be desirable, banks usually have set limits on the number of queries (e.g. per 10 minutes).</p>
+</div>
+<h2 id="setting-up-automation-of-import-and-processing-of-bank-statements-via-the-central-stack" sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="97">Setting up automation of import and processing of bank statements via the central stack</h2>
+<p sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="99">Automation can only be set up for methods where no user intervention is required. It is therefore not possible for importing from a local repository, but instead is typically suitable for API communication with the bank.</p>
+<h3 id="setting-the-download-to-the-central-stack" sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="101">Setting the download to the Central Stack</h3>
+<p sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="103">The following procedure follows the result of the settings from the chapter <a href="#settings-for-manual-import-of-bank-statements-via-api" sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="103">Settings for manual import of bank statements via API</a>.</p>
+<ol sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="105">
+<li sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="105">Choose the <img src="media/ui-search/search_small.png" sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="105" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="105">Bank Export/Import Settings</strong> and then choose the related link.</li>
+<li sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="106">Navigate to the line with the code &quot;CZBE_ABO-IMP-API&quot;.</li>
+<li sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="107">Run the <em sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="107">Advanced Settings</em> action.</li>
+<li sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="108">On the Statements Import Extended Setup, set the <em sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="108">Enabled for the Central Stack</em> field to Yes.</li>
+</ol>
+<h3 id="automatic-downloading-of-statements-to-the-central-stack" sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="110">Automatic downloading of statements to the Central Stack</h3>
+<p sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="112">You only need to enable automatic downloading of statements to the Central Stack in one company. The function then goes through all the advanced settings for importing statements in this company, where the Enabled for Central Stack field is set to Yes. According to these settings, it will import the listings available on the interface that allows import without user intervention (typically the API).</p>
+<ol sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="114">
+<li sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="114">Choose the <img src="media/ui-search/search_small.png" sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="114" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="114">Extended CZ Banking Setup</strong> and then choose the related link.</li>
+<li sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="115">Set the <strong sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="115">Automatically Download Statements To Central Stack</strong> flag.</li>
+</ol>
+<div class="NOTE" sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="117">
+<h5>Note</h5>
+<p sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="118">The created job queue entry is set to run at 6:00 AM on weekdays by default.</p>
+</div>
+<div class="TIP" sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="119">
+<h5>Tip</h5>
+<p sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="120">If you want to restrict the settings by which the automated import will be performed (see above), you can set the filter to a code in the Parameter String field on the Job Queue Items tab (for example, &quot;CZBE_ABO*&quot;).</p>
+</div>
+<h3 id="setting-up-import-from-the-central-tray" sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="122">Setting up import from the central tray</h3>
+<p sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="124">The following procedure walks through the key settings included with the sample data.</p>
+<ol sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="126">
+<li sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="126">Select the icon , enter Bank Export/Import Settings, and then select the associated link.</li>
+<li sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="127">Navigate to the line with the code &quot;CZBE_ABO-IMP-CENTRAL&quot;.</li>
+<li sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="128">Make sure the <strong sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="128">Processing Procedure ID</strong> field has the value 52057427.</li>
+<li sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="129">Run the <em sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="129">Advanced Settings</em> action.</li>
+<li sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="130">In the <strong sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="130">Bank Statement Provider</strong> field, select the value &quot;Central Stack&quot;.</li>
+<li sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="131">Check that the <strong sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="131">Processing Procedure ID</strong> field contains the value 52057429 for processing ABO format files.</li>
+</ol>
+<h3 id="setting-up-bank-accounts-for-automation" sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="133">Setting up bank accounts for automation</h3>
+<p sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="135">For central processing and the resulting possibilities of automating processing, it is necessary to clearly define which companies own which bank accounts. The table Bank Statement Processing Setup is used for this purpose. All account numbers that contained files imported into the Central bank statement stack are automatically entered into this table. You then need to assign the account to one of the companies in BC.</p>
+<ol sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="137">
+<li sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="137">Choose the <img src="media/ui-search/search_small.png" sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="137" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="137">Bank Statement Processing Settings</strong> and then choose the related link.</li>
+<li sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="138">Select the line with the account number you are setting up.</li>
+<li sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="139">If the account is in a foreign currency, select the appropriate code in the <strong sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="139">Currency Code</strong> field.</li>
+<li sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="140">At the bottom of the page in the Settings section, fill in the <strong sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="140">Statement Start Date</strong> field for the appropriate Company from which to process statements. This date refers to the Listing Date.</li>
+</ol>
+<div class="IMPORTANT" sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="142">
+<h5>Important</h5>
+<p sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="143">The number of records in this table with the Statement Start Date filled in is the determinant for controlling the number of accounts in the subscription. If a number greater than the number valid in the subscription is defined, the Central Stack cannot be opened and the number of valid records in this setting must first be reduced. Disabling the import is possible by setting the <strong sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="143">Processing disabled</strong> flag.</p>
+</div>
+<div class="TIP" sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="144">
+<h5>Tip</h5>
+<p sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="145">If you have a new bank account but no statement has been imported yet, you can also make the setting in advance by manually entering the account number.</p>
+</div>
+<h3 id="automatic-processing-of-the-extract-from-the-central-stack" sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="147">Automatic processing of the extract from the central stack</h3>
+<p sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="149">You only need to enable automatic processing of statements from the Central Stack in one company.</p>
+<ol sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="151">
+<li sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="151">Choose the <img src="media/ui-search/search_small.png" sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="151" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="151">Extended CZ Banking Setup</strong> and then choose the related link.</li>
+<li sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="152">Set the <strong sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="152">Automatically Create Bank Statements</strong> flag.</li>
+</ol>
+<div class="NOTE" sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="154">
+<h5>Note</h5>
+<p sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="155">The created job queue entry is set to run at 6:00 AM on weekdays by default.</p>
+</div>
+<h3 id="cleaning-processed-statements-from-the-central-bank-statement-stack" sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="157">Cleaning processed statements from the Central Bank Statement Stack</h3>
+<p sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="159">We recommend that you continuously delete the already processed records in the Central Bank Statement Stack table, preferably with an automated task in one company:</p>
+<ol sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="161">
+<li sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="161">Choose the <img src="media/ui-search/search_small.png" sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="161" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="161">Extended CZ Banking Setup</strong> and then choose the related link.</li>
+<li sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="162">Set the <strong sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="162">Automatically Clean Central Stack</strong> flag.</li>
+</ol>
+<div class="NOTE" sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="164">
+<h5>Note</h5>
+<p sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="165">The created job queue entry is set to run at 6:00 AM on weekdays by default. The automatic batch by default deletes statements older than 14 days, but can be overridden in the report dialog (the &quot;Date formula&quot; field).</p>
+</div>
+<h2 id="support-settings-for-importing-statements" sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="167">Support settings for importing statements</h2>
+<h3 id="automatic-account-number-formatting-optional" sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="169">Automatic account number formatting (optional)</h3>
+<p sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="171">Enabling this feature will automatically format bank account numbers in BC, eliminating problems with importing bank statements. Formatting is performed on:</p>
+<ul sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="173">
+<li sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="173">Bank account</li>
+<li sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="174">Customer bank account</li>
+<li sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="175">Vendor bank account</li>
+</ul>
+<ol sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="177">
+<li sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="177">Choose the <img src="media/ui-search/search_small.png" sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="177" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="177">Company Information</strong> and then choose the related link.</li>
+<li sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="178">Activate the <strong sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="178">Format Account Number</strong> field.</li>
+</ol>
+<h3 id="bank-account-number-on-bank-statement-optional" sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="180">Bank account number on bank statement (optional)</h3>
+<p sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="182">This is used to specify the exact format of the bank account number that is in the statement files if it differs from the value entered by default in the Bank Account Number field.</p>
+<ol sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="184">
+<li sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="184">Choose the <img src="media/ui-search/search_small.png" sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="184" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="184">Bank Accounts</strong> and then choose the related link.</li>
+<li sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="185">Complete the <strong sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="185">Bank account number on bank statement</strong> field.</li>
+</ol>
+<h2 id="support-settings-for-automatic-processing-of-statements" sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="187">Support settings for automatic processing of statements</h2>
+<h3 id="last-level-of-batch-processing-mandatory" sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="189">Last level of batch processing (mandatory)</h3>
+<p sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="191">Specifies the last level of automatic processing of bank statements. The actual processing of the bank statement is carried out using the standard process: Bank statement / Issued bank statement / Journal / Payment posting.</p>
+<ol sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="193">
+<li sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="193">Choose the <img src="media/ui-search/search_small.png" sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="193" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="193">Bank Accounts</strong> and then choose the related link.</li>
+<li sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="194">Select the desired value in the &quot;Last Bank Statement Level&quot; field:
+<ul sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="195">
+<li sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="195">Bank Statement (default value)</li>
+<li sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="196">Issued bank statement</li>
+<li sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="197">Journal</li>
+<li sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="198">Post Journal</li>
+</ul>
+</li>
+</ol>
+<div class="TIP" sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="200">
+<h5>Tip</h5>
+<p sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="201">Usually the value <em sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="201">Journal</em> is set. The <em sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="201">Bank Statement</em> value is set when a payment advice needs to be manually imported for the imported bank statement.</p>
+</div>
+<div class="NOTE" sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="202">
+<h5>Note</h5>
+<p sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="203">If you select Post Journal, the statement will only be posted if account numbers (customer, supplier, employee, financial account) are entered on all lines of the statement. Another rule is that the financial account number must not be the same as the account set in the <strong sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="203">Unassigned Payments Account</strong> field on the bank account card.</p>
+</div>
+<h3 id="number-series-optional" sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="205">Number Series (optional)</h3>
+<p sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="207">The bank statement processing function can automatically number both unissued and issued bank statements in Business Central by inserting the year and serial number assigned by the bank according to a template.</p>
+<p sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="209">It is necessary to set the same number series for unissued and issued bank statements on the Bank Account Card.
+This number series must have Manual Numbering enabled and a Mask filled in. The mask must contain at least 2 characters for the year (yy) and a free number (ccc).</p>
+<h3 id="check-bank-statement-turnover-optional" sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="212">Check bank statement turnover (optional)</h3>
+<p sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="214">When &quot;Issuing&quot; a bank statement, the function checks if the statement turnover matches the difference between the Starting and Ending balance of the statement as shown on the bank statement header. The Starting and Ending balance of the statement is imported from the Bank Statement file.</p>
+<ol sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="216">
+<li sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="216">Choose the <img src="media/ui-search/search_small.png" sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="216" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="216">Bank Accounts</strong> and then choose the related link.</li>
+<li sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="217">Activate the <strong sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="217">Check Bank Statement Turnover</strong> field.</li>
+</ol>
+<h2 id="payment-cumulation-settings" sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="219">Payment cumulation settings</h2>
+<h3 id="vendor-settings-for-payment-cumulation" sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="221">Vendor settings for payment cumulation</h3>
+<ol sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="223">
+<li sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="223">Choose the <img src="media/ui-search/search_small.png" sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="223" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="223">Vendors</strong> and then choose the related link.</li>
+<li sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="224">Open the vendor card for which you want to allow payment cumulation.</li>
+<li sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="225">On the Vendor Card page, on the Payments tab, set <strong sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="225">Cumulate Payments</strong>.</li>
+</ol>
+<div class="NOTE" sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="227">
+<h5>Note</h5>
+<p sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="228">The same setup you can do on the Customer Card page.</p>
+</div>
+<h3 id="setting-the-cumulation-parameters-on-the-bank-account" sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="230">Setting the cumulation parameters on the bank account</h3>
+<ol sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="232">
+<li sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="232"><p sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="232">Choose the <img src="media/ui-search/search_small.png" sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="232" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="232">Banks</strong> and then choose the related link.</p>
+</li>
+<li sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="233"><p sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="233">Open the bank account tab for which you want to set up payment cumulation.</p>
+</li>
+<li sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="234"><p sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="234">On the Bank Account Card page, in the CZ Banking Extension tab, set the cumulation of payments as required:</p>
+<ul sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="236">
+<li sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="236">Field <strong sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="236">Cumulate payment orders lines</strong> – enables / disables cumulation</li>
+<li sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="237">Field <strong sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="237">Cumulative Variable Symbol Nos.</strong> – if it is not accumulated according to VS, KS or SS, then the number according to the number series set here is added to the VS field (SS and KS are taken from the first merged line of the command)</li>
+<li sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="238">Field <strong sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="238">Cumulative Line Description</strong> – description for the created cumulative line</li>
+<li sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="239">Field <strong sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="239">Group Per Variable Symbol</strong> – cumulation after VS</li>
+<li sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="240">Field <strong sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="240">Group Per Constant Symbol</strong> – accumulates for KS</li>
+<li sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="241">Field <strong sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="241">Group Per Specific Symbol</strong> – accumulates after SS</li>
+</ul>
+</li>
+</ol>
+<h3 id="configuring-the-document-layout-for-sending-payment-notifications-via-email" sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="243">Configuring the Document Layout for Sending Payment Notifications via Email</h3>
+<p sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="245">First, verify that the report is defined in the Report Selections for Purchasing (or Sales):</p>
+<ol sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="247">
+<li sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="247">Choose the <img src="media/ui-search/search_small.png" sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="247" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="247">Report Selection - Purchase</strong>, and then choose the related link.</li>
+<li sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="248">On the Report Selection - Purchase page, select &quot;Payment Notice&quot; in the <strong sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="248">Usage</strong> field.</li>
+<li sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="249">Verify that there is (or add) at least one row with a <strong sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="249">Report ID</strong> equal to XXX</li>
+<li sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="250">Verify that the value in both the <strong sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="250">Use for Email Body</strong> field and the <strong sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="250">Use for Email Attachment</strong> field is &quot;Yes&quot;.</li>
+<li sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="251">Verify that the value in the <strong sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="251">Email Body Layout</strong> field is &quot;Payment Notice Email (Word)&quot;.</li>
+<li sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="252">Verify that the value in the <strong sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="252">Report Layout</strong> field is &quot;Payment Notice (Word)&quot;.</li>
+<li sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="253">Repeat the above procedure on the <strong sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="253">Report Selections - Sales</strong> page.</li>
+</ol>
+<div class="NOTE" sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="255">
+<h5>Note</h5>
+<p sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="256">For more information on defining custom layouts, visit <a href="https://learn.microsoft.com/en-us/dynamics365/business-central/ui-how-add-fields-word-report-layout" sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="256">the Microsoft website</a>.</p>
+</div>
+<p sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="258">Next, you need to enter specific details for the particular vendor (typically an email address):</p>
+<ol sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="260">
+<li sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="260">Choose the <img src="media/ui-search/search_small.png" sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="260" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="260">Vendors</strong>, and then choose the related link.</li>
+<li sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="261">Open the vendor card for whom you want to set up report sending.</li>
+<li sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="262">On the Vendor card page, launch the <em sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="262">Document Layouts</em> action.</li>
+<li sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="263">On the Document Layouts page, launch the <em sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="263">Copy from Report Selection</em> action, which will fill in any missing rows.</li>
+<li sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="264">Go to the row with the value <em sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="264">Payment Notice</em> in the <strong sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="264">Usage</strong> field, and enter the email address where the notice should be sent in the <strong sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="264">Send to Email</strong> field.</li>
+</ol>
+<div class="NOTE" sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="266">
+<h5>Note</h5>
+<p sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="267">You can make the same settings on the Customer card page. For information on defining document layouts for customers and vendors, visit <a href="https://learn.microsoft.com/en-us/dynamics365/business-central/ui-define-customer-vendor-document-layouts" sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="267">Microsoft's website</a>.</p>
+</div>
+<h2 id="custom-modifications" sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="269">Custom modifications</h2>
+<h3 id="custom-format-for-import" sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="271">Custom format for import</h3>
+<p sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="273">If you download statements in a different format or if you need a specifically customized import, your partner must create a custom process codeunit to import bank statements into the bank statement stack.
+The stack should be populated with unformatted data as it is directly in the bank statement file of the appropriate format (the formatting and validation of the data is handled by the bank statement creation function).</p>
+<pre><code sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="276">codeunit xxx &quot;Bank Stmt.Imp.-MyFormat&quot;
+
+TableNo = &quot;Bank Stmt. Import Request Acb&quot;;
+
+trigger OnRun()
+var
+    DotNetStreamReader: Codeunit DotNet_StreamReader;
+    InStream: InStream;
+   TempCentralBankStmtBufferAcb: Record &quot;Central Bank Stmt. Buffer Acb&quot; temporary;
+    TempBankStmtLineBufferAcb: Record &quot;Bank Stmt. Line Buffer Acb&quot; temporary;
+
+begin
+    //StreamReader initialization to read the contents of the dump file:
+    Rec.CreateStreamReader(InStream, DotNetStreamReader); 
+
+    //Where to populate the contents of the StreamReader dump into temporary tables - see examples below
+
+    //Example of header filling:
+    NextBufferNo += 1;
+    TempCentralBankStmtBufferAcb.Init();
+    TempCentralBankStmtBufferAcb.&quot;No.&quot; := NextBufferNo;
+    TempCentralBankStmtBufferAcb.&quot;Account No.&quot; :=  ;    //our account no.
+    TempCentralBankStmtBufferAcb.&quot;Statement No.&quot; := ;
+    TempCentralBankStmtBufferAcb.&quot;Statement Date&quot; := ;
+    TempCentralBankStmtBufferAcb.&quot;Starting Balance&quot; := ;
+    TempCentralBankStmtBufferAcb.&quot;Ending Balance&quot; := ;
+    TempCentralBankStmtBufferAcb.Insert();
+
+    //Example of filling rows:
+    TempBankStmtLineBufferAcb.Init();
+    TempBankStmtLineBufferAcb.&quot;Buffer No.&quot; := NextBufferNo;
+    TempBankStmtLineBufferAcb.&quot;Line No.&quot; := NextLineNo;
+    TempBankStmtLineBufferAcb.&quot;Variable Symbol&quot; := ;
+    TempBankStmtLineBufferAcb.&quot;Constant Symbol&quot; := ;
+    TempBankStmtLineBufferAcb.&quot;Specific Symbol&quot; := ;
+    TempBankStmtLineBufferAcb.&quot;Account No.&quot; := ;   //account no. in 16+4 format
+    TempBankStmtLineBufferAcb.Description := ;
+    TempBankStmtLineBufferAcb.Amount := ;
+    TempBankStmtLineBufferAcb.Insert();
+    NextLineNo += 1;
+
+    //Save the result of processing:
+    Rec.SetData(TempCentralBankStmtBufferAcb, TempBankStmtLineBufferAcb); 
+end;
+</code></pre>
+<p sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="321"><strong sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="321">See also</strong></p>
+<p sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="323"><a href="cz-banking-extension-api-setup.html" sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="323">CZ Banking Extension APIs Setup</a><br>
+<a href="cz-banking-extension.html" sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="324">CZ Banking Extension</a><br>
+<a href="finance-pack.html" sourcefile="Solutions/cz-banking-extension-setup.md" sourcestartlinenumber="325">Financial Pack</a></p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/ARICOMA-D365BC/AC-IB-dynamics365smb-docs/blob/master/business-central/Solutions/cz-banking-extension-setup.md/#L1" class="contribution-link">Improve this document</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+           <span><a href="https://www.aricoma.com/docs/en-us/dynamics365/business-central/Solutions/solutions.html"><strong>ENGLISH</strong><strong>/</strong><a href="https://www.aricoma.com/docs/cs-cz/dynamics365/business-central/Solutions/solutions.html"><strong>CZECH</strong></a></a></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

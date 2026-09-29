@@ -1,0 +1,151 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>AC - Financial pack -  Factoring | Microsoft Docs </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="AC - Financial pack -  Factoring | Microsoft Docs ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../TOC.html">
+    <meta property="docfx:tocrel" content="TOC.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="png" src="../logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="factoring">Factoring</h1>
+
+<p>The Factoring add-on module extends the capabilities of the Finance Management area of the Dynamics 365 Business Central system with the possibility of recording and accounting for assignments of receivables and creating factoring contracts. The regression factoring variant is also supported, where the factor can return the receivable/liability.</p>
+<p>The functionality of the add-on module is integrated with the add-on module Connection to MS Word. By using this integration, you can create factoring contracts from Dynamics 365 Business Central to Microsoft Word documents based on defined templates.</p>
+<h2 id="setting-up-of-a-factoring-document">Setting up of a factoring document</h2>
+<ol>
+<li>Choose the <img src="media/ui-search/search_small.png" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong>Factoring List</strong> and then choose the related link.</li>
+<li>On the list, click <strong>New</strong>.</li>
+<li>Fill in the <strong>Customer</strong> and <strong>Posting date</strong> information in the header on the Factoring document tab.</li>
+<li>You can select the specific items/payables to be undertaken by using <strong>Item type</strong> and <strong>Item number</strong> fields. If it is regressive factoring, the factor can return the receivable/payables, the <strong>Regression factoring</strong> field on the document line must be checked.</li>
+</ol>
+<p><img src="media/faktoring_card.png" alt="Fakctoring card"></p>
+<h2 id="faktoring-posting">Faktoring posting</h2>
+<p>To post factoring, follow these steps:</p>
+<ol>
+<li>Before you can post a factoring document, you must <strong>Issue</strong> the document.</li>
+<li>Use the <strong>Posting</strong> feature to post.</li>
+<li>Posting the document creates the <strong>Posted Factoring</strong> document.</li>
+</ol>
+<p>Posted factoring document lines are divided into <strong>three tabs</strong>:</p>
+<ul>
+<li><strong>Receivables</strong> - Assigned items.</li>
+<li><strong>Receivable factoring</strong> - newly created customer items to the factor.</li>
+<li><strong>Platby</strong> – položky typu platba, které vyrovnávají faktoringové pohledávky.</li>
+</ul>
+<p><img src="media/faktoring_lines.png" alt="Factoring tabs"></p>
+<p>By posting factoring, the original customer/vendor entries are closed and new receivables are posted to the factor.</p>
+<p>Financial posting is determined by the <strong>Factoring Posting Group</strong> from Factoring Settings:</p>
+<p><img src="media/faktoring_customer_entries.png" alt="Cust. Ledger Entry"></p>
+<p>If  <strong>Orig. Entry Advanced Posting</strong>, is turned on in Factoring Settings, a new customer/vendor item is created for the original customer/vendor. This allows you to monitor the balance of the original customers / vendors, including the transferred documents. Financial posting is determined by  <strong>Adv. Posting Group</strong> from Factoring Settings. In the Customer posting group settings, a off-balance sheet account should be set up for this posting group. The off-balance-sheet item is closed at the time of the conclusion of the factoring receivable.</p>
+<h2 id="return-of-factoring-receivable">Return of factoring receivable</h2>
+<p>If it is regression factoring (the factor can return the receivable), the document must be posted with the Regression factoring field checked on the document line.</p>
+<ol>
+<li>Choose the <img src="media/ui-search/search_small.png" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong>Posted Factoring list</strong> and then choose the related link.</li>
+<li>Select the posted document that you want to process.</li>
+<li>On the page Posted Factoring List use the function <strong>Return Factoring Receivable</strong>
+<img src="media/faktoring_reverse.png" alt="Refund factoring"></li>
+<li>After this command, the system derecognises the newly created factoring item and charges it back to the customer / vendor.</li>
+</ol>
+<p><strong>See also</strong></p>
+<p><a href="factoring-setup.html">Factoring Setup</a><br>
+<a href="finance-pack.html">Financial Pack</a></p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/ARICOMA-D365BC/AC-IB-dynamics365smb-docs/blob/master/business-central/Solutions/factoring.md/#L1" class="contribution-link">Improve this document</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+           <span><a href="https://www.aricoma.com/docs/en-us/dynamics365/business-central/Solutions/solutions.html"><strong>ENGLISH</strong><strong>/</strong><a href="https://www.aricoma.com/docs/cs-cz/dynamics365/business-central/Solutions/solutions.html"><strong>CZECH</strong></a></a></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

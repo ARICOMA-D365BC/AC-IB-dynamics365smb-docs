@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Transport Operation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Transport Operation ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../TOC.html">
+    <meta property="docfx:tocrel" content="TOC.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="png" src="../logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="transport-operations" sourcefile="Solutions/transport-operation.md" sourcestartlinenumber="9">Transport Operations</h1>
+
+<p sourcefile="Solutions/transport-operation.md" sourcestartlinenumber="11"><strong sourcefile="Solutions/transport-operation.md" sourcestartlinenumber="11">The Transport Operations app</strong> extends Microsoft Dynamics 365 Business Central with a comprehensive set of tools for managing a company fleet, drivers, fuel consumption, and transport planning.</p>
+<p sourcefile="Solutions/transport-operation.md" sourcestartlinenumber="13">It is designed for organizations operating their own vehicles, from a few company cars to a large transport fleet. The app provides a single integrated solution for recording vehicle trips, tracking fuel and maintenance costs, and coordinating and dispatching transport requests.</p>
+<h2 id="definition-of-drivers" sourcefile="Solutions/transport-operation.md" sourcestartlinenumber="15">Definition of drivers</h2>
+<p sourcefile="Solutions/transport-operation.md" sourcestartlinenumber="16">The driver card defines the person being tracked and the information associated with them.</p>
+<p sourcefile="Solutions/transport-operation.md" sourcestartlinenumber="18">To create a new driver, follow these steps:</p>
+<ol sourcefile="Solutions/transport-operation.md" sourcestartlinenumber="19">
+<li sourcefile="Solutions/transport-operation.md" sourcestartlinenumber="19">Choose the <img src="media/ui-search/search_small.png" sourcefile="Solutions/transport-operation.md" sourcestartlinenumber="19" alt="Lightbulb that opens the Tell Me feature" title="Tell me what you want to do"> icon, enter <strong sourcefile="Solutions/transport-operation.md" sourcestartlinenumber="19">Driver List</strong>, and then choose the related link.</li>
+<li sourcefile="Solutions/transport-operation.md" sourcestartlinenumber="20">In the list, select <strong sourcefile="Solutions/transport-operation.md" sourcestartlinenumber="20">New</strong>.</li>
+<li sourcefile="Solutions/transport-operation.md" sourcestartlinenumber="21">On the driver card, fill in the required information.</li>
+</ol>
+<p sourcefile="Solutions/transport-operation.md" sourcestartlinenumber="23"><img src="media/transport_drivercard.png" sourcefile="Solutions/transport-operation.md" sourcestartlinenumber="23" alt="Driver Card"></p>
+<p sourcefile="Solutions/transport-operation.md" sourcestartlinenumber="25">You can store the driver's <strong sourcefile="Solutions/transport-operation.md" sourcestartlinenumber="25">qualifications</strong>, such as driving licences and special permits, and set their validity periods. You can find the qualification codes in the navigation section of the driver card.
+<img src="media/transport_driver_zp.png" sourcefile="Solutions/transport-operation.md" sourcestartlinenumber="26" alt="Driver Qualifications"></p>
+<h2 id="definition-of-vehicles" sourcefile="Solutions/transport-operation.md" sourcestartlinenumber="28">Definition of vehicles</h2>
+<p sourcefile="Solutions/transport-operation.md" sourcestartlinenumber="29">Vehicles are defined for consumption monitoring and maintenance. For each vehicle, you can record whether it is company-owned, link an assigned payment card for importing fuel transactions, assign a default driver, and link to other records such as a fixed asset or resource.</p>
+<p sourcefile="Solutions/transport-operation.md" sourcestartlinenumber="31">To create a vehicle card, follow these steps:</p>
+<ol sourcefile="Solutions/transport-operation.md" sourcestartlinenumber="32">
+<li sourcefile="Solutions/transport-operation.md" sourcestartlinenumber="32">Choose the <img src="media/ui-search/search_small.png" sourcefile="Solutions/transport-operation.md" sourcestartlinenumber="32" alt="Lightbulb that opens the Tell Me feature" title="Tell me what you want to do"> icon, enter <strong sourcefile="Solutions/transport-operation.md" sourcestartlinenumber="32">Vehicle List</strong>, and then choose the related link.</li>
+<li sourcefile="Solutions/transport-operation.md" sourcestartlinenumber="33">In the list, select <strong sourcefile="Solutions/transport-operation.md" sourcestartlinenumber="33">New</strong>.</li>
+<li sourcefile="Solutions/transport-operation.md" sourcestartlinenumber="34">On the vehicle card, fill in the required information.</li>
+</ol>
+<p sourcefile="Solutions/transport-operation.md" sourcestartlinenumber="36"><img src="media/transport_vehiclecard.png" sourcefile="Solutions/transport-operation.md" sourcestartlinenumber="36" alt="Vehicle Card"></p>
+<p sourcefile="Solutions/transport-operation.md" sourcestartlinenumber="38">You can define additional vehicle data:</p>
+<ul sourcefile="Solutions/transport-operation.md" sourcestartlinenumber="39">
+<li sourcefile="Solutions/transport-operation.md" sourcestartlinenumber="39"><strong sourcefile="Solutions/transport-operation.md" sourcestartlinenumber="39">Equipment</strong> – equipment assigned to each vehicle.</li>
+<li sourcefile="Solutions/transport-operation.md" sourcestartlinenumber="40"><strong sourcefile="Solutions/transport-operation.md" sourcestartlinenumber="40">Units of measure</strong> – units used with the vehicle.</li>
+<li sourcefile="Solutions/transport-operation.md" sourcestartlinenumber="41"><strong sourcefile="Solutions/transport-operation.md" sourcestartlinenumber="41">Cost</strong> – standard costs or prices for each operation type.</li>
+<li sourcefile="Solutions/transport-operation.md" sourcestartlinenumber="42"><strong sourcefile="Solutions/transport-operation.md" sourcestartlinenumber="42">Consumption</strong> – standard vehicle consumption for each operation type.</li>
+<li sourcefile="Solutions/transport-operation.md" sourcestartlinenumber="43"><strong sourcefile="Solutions/transport-operation.md" sourcestartlinenumber="43">Maintenance records</strong> – vehicle maintenance tracking, including the next maintenance dates.</li>
+</ul>
+<h2 id="refuelling-statement" sourcefile="Solutions/transport-operation.md" sourcestartlinenumber="45">Refuelling Statement</h2>
+<p sourcefile="Solutions/transport-operation.md" sourcestartlinenumber="46">Use the Refuelling Statement to enter fuel consumption for vehicles. Statements can be imported from a vendor file or entered manually.</p>
+<p sourcefile="Solutions/transport-operation.md" sourcestartlinenumber="49">To create a Refuelling Statement, follow these steps:</p>
+<ol sourcefile="Solutions/transport-operation.md" sourcestartlinenumber="50">
+<li sourcefile="Solutions/transport-operation.md" sourcestartlinenumber="50">Choose the <img src="media/ui-search/search_small.png" sourcefile="Solutions/transport-operation.md" sourcestartlinenumber="50" alt="Lightbulb that opens the Tell Me feature" title="Tell me what you want to do"> icon, enter <strong sourcefile="Solutions/transport-operation.md" sourcestartlinenumber="50">Refuelling Statement</strong>, and then choose the related link.</li>
+<li sourcefile="Solutions/transport-operation.md" sourcestartlinenumber="51">In the list, select <strong sourcefile="Solutions/transport-operation.md" sourcestartlinenumber="51">New</strong>.</li>
+<li sourcefile="Solutions/transport-operation.md" sourcestartlinenumber="52">Fill in the required information on the card.</li>
+<li sourcefile="Solutions/transport-operation.md" sourcestartlinenumber="53">Fill in the individual lines and issue the document.</li>
+</ol>
+<p sourcefile="Solutions/transport-operation.md" sourcestartlinenumber="55"><img src="media/transport_phm_phmv.png" sourcefile="Solutions/transport-operation.md" sourcestartlinenumber="55" alt="Refuelling Statement"></p>
+<ol start="5" sourcefile="Solutions/transport-operation.md" sourcestartlinenumber="57">
+<li sourcefile="Solutions/transport-operation.md" sourcestartlinenumber="57"><p sourcefile="Solutions/transport-operation.md" sourcestartlinenumber="57">The next step is to issue the statement. You can then use the following functions on the issued statement:
+<img src="media/transport_phm_phm_release.png" sourcefile="Solutions/transport-operation.md" sourcestartlinenumber="58" alt="Issued Refuelling Statement"></p>
+<ul sourcefile="Solutions/transport-operation.md" sourcestartlinenumber="59">
+<li sourcefile="Solutions/transport-operation.md" sourcestartlinenumber="59"><strong sourcefile="Solutions/transport-operation.md" sourcestartlinenumber="59">Create Fuel Journal</strong> – to record fuel transactions for a vehicle.</li>
+<li sourcefile="Solutions/transport-operation.md" sourcestartlinenumber="60"><strong sourcefile="Solutions/transport-operation.md" sourcestartlinenumber="60">Create Purchase Invoice</strong> – to create a purchase invoice based on the fuel transactions.</li>
+</ul>
+</li>
+<li sourcefile="Solutions/transport-operation.md" sourcestartlinenumber="62"><p sourcefile="Solutions/transport-operation.md" sourcestartlinenumber="62">The final step is to post the Fuel Journal:
+<img src="media/transport_phm_journal.png" sourcefile="Solutions/transport-operation.md" sourcestartlinenumber="63" alt="Fuel Journal"></p>
+</li>
+</ol>
+<h2 id="drive-journal" sourcefile="Solutions/transport-operation.md" sourcestartlinenumber="65">Drive Journal</h2>
+<p sourcefile="Solutions/transport-operation.md" sourcestartlinenumber="66">Use the Drive Journal to record vehicle operations.</p>
+<p sourcefile="Solutions/transport-operation.md" sourcestartlinenumber="68">To fill in the Drive Journal, follow these steps:</p>
+<ol sourcefile="Solutions/transport-operation.md" sourcestartlinenumber="69">
+<li sourcefile="Solutions/transport-operation.md" sourcestartlinenumber="69">Choose the <img src="media/ui-search/search_small.png" sourcefile="Solutions/transport-operation.md" sourcestartlinenumber="69" alt="Lightbulb that opens the Tell Me feature" title="Tell me what you want to do"> icon, enter <strong sourcefile="Solutions/transport-operation.md" sourcestartlinenumber="69">Drive Journal</strong>, and then choose the related link.</li>
+<li sourcefile="Solutions/transport-operation.md" sourcestartlinenumber="70">Fill in the lines as needed, including the drive type, vehicle number, description, driver number, and operation type.</li>
+<li sourcefile="Solutions/transport-operation.md" sourcestartlinenumber="71">Post the journal.</li>
+</ol>
+<p sourcefile="Solutions/transport-operation.md" sourcestartlinenumber="73"><img src="media/transport_rides_journal.png" sourcefile="Solutions/transport-operation.md" sourcestartlinenumber="73" alt="Drive Journal"></p>
+<p sourcefile="Solutions/transport-operation.md" sourcestartlinenumber="75">If you use the extended transport planning functionality, you can generate Drive Journal entries based on issued drive orders.</p>
+<h2 id="transport-planning" sourcefile="Solutions/transport-operation.md" sourcestartlinenumber="77">Transport planning</h2>
+<p sourcefile="Solutions/transport-operation.md" sourcestartlinenumber="79">Planning uses a <strong sourcefile="Solutions/transport-operation.md" sourcestartlinenumber="79">Transport request</strong>, which records expected transport. You can create requests from <strong sourcefile="Solutions/transport-operation.md" sourcestartlinenumber="79">Sales orders</strong>, <strong sourcefile="Solutions/transport-operation.md" sourcestartlinenumber="79">Purchase orders</strong>, and <strong sourcefile="Solutions/transport-operation.md" sourcestartlinenumber="79">Transfer orders</strong> by using the <strong sourcefile="Solutions/transport-operation.md" sourcestartlinenumber="79">Create shipping request</strong> function.</p>
+<p sourcefile="Solutions/transport-operation.md" sourcestartlinenumber="81">To create a request from a purchase order, follow these steps:</p>
+<ol sourcefile="Solutions/transport-operation.md" sourcestartlinenumber="82">
+<li sourcefile="Solutions/transport-operation.md" sourcestartlinenumber="82">Choose the <img src="media/ui-search/search_small.png" sourcefile="Solutions/transport-operation.md" sourcestartlinenumber="82" alt="Lightbulb that opens the Tell Me feature" title="Tell me what you want to do"> icon, enter <strong sourcefile="Solutions/transport-operation.md" sourcestartlinenumber="82">Purchase Orders</strong>, and then choose the related link.</li>
+<li sourcefile="Solutions/transport-operation.md" sourcestartlinenumber="83">Open an existing order or create a new one.</li>
+<li sourcefile="Solutions/transport-operation.md" sourcestartlinenumber="84">Select <strong sourcefile="Solutions/transport-operation.md" sourcestartlinenumber="84">Create shipping request</strong>.</li>
+<li sourcefile="Solutions/transport-operation.md" sourcestartlinenumber="85">Complete the Shipping Request Wizard.</li>
+</ol>
+<p sourcefile="Solutions/transport-operation.md" sourcestartlinenumber="87">The wizard prepopulates as much information as possible from the source document. It is intended for users who process these documents.</p>
+<p sourcefile="Solutions/transport-operation.md" sourcestartlinenumber="89"><img src="media/transport_planning.png" sourcefile="Solutions/transport-operation.md" sourcestartlinenumber="89" alt="Create Transport Request"></p>
+<p sourcefile="Solutions/transport-operation.md" sourcestartlinenumber="91">The next phase is <strong sourcefile="Solutions/transport-operation.md" sourcestartlinenumber="91">Transport Planning</strong> on the <strong sourcefile="Solutions/transport-operation.md" sourcestartlinenumber="91">Transport Dispatcher Board</strong> page. The responsible employee can review and process individual requests, schedule dates, assign vehicles and drivers, and combine requests based on available capacity.</p>
+<p sourcefile="Solutions/transport-operation.md" sourcestartlinenumber="93">The request statuses used in planning are:</p>
+<ul sourcefile="Solutions/transport-operation.md" sourcestartlinenumber="94">
+<li sourcefile="Solutions/transport-operation.md" sourcestartlinenumber="94">New – the request has been created.</li>
+<li sourcefile="Solutions/transport-operation.md" sourcestartlinenumber="95">Scheduled – a drive order has been created.</li>
+<li sourcefile="Solutions/transport-operation.md" sourcestartlinenumber="96">Closed – transport has been completed.</li>
+</ul>
+<p sourcefile="Solutions/transport-operation.md" sourcestartlinenumber="98"><img src="media/transport_planing.png" sourcefile="Solutions/transport-operation.md" sourcestartlinenumber="98" alt="Transport Planning" title="Transport Planning"></p>
+<p sourcefile="Solutions/transport-operation.md" sourcestartlinenumber="100"><strong sourcefile="Solutions/transport-operation.md" sourcestartlinenumber="100">See also</strong></p>
+<p sourcefile="Solutions/transport-operation.md" sourcestartlinenumber="102"><a href="transport-operations-setup.html" sourcefile="Solutions/transport-operation.md" sourcestartlinenumber="102">Transport Operations - Setup</a></p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/ARICOMA-D365BC/AC-IB-dynamics365smb-docs/blob/master/business-central/Solutions/transport-operation.md/#L1" class="contribution-link">Improve this document</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+           <span><a href="https://www.aricoma.com/docs/en-us/dynamics365/business-central/Solutions/solutions.html"><strong>ENGLISH</strong><strong>/</strong><a href="https://www.aricoma.com/docs/cs-cz/dynamics365/business-central/Solutions/solutions.html"><strong>CZECH</strong></a></a></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

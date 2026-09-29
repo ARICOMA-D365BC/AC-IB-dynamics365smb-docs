@@ -1,0 +1,168 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Incoming mail Setup | Microsoft Docs </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Incoming mail Setup | Microsoft Docs ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../TOC.html">
+    <meta property="docfx:tocrel" content="TOC.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="png" src="../logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="mail-records---setup">Mail records - Setup</h1>
+
+<h2 id="mail-record-templates">Mail Record Templates</h2>
+<p>After installations of the module, it is necessary to create the Mail Record Templates on the page – <strong>Mail Record Templates</strong>.</p>
+<ul>
+<li>Choose the <img src="media/ui-search/search_small.png" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong>Mail Record Templates</strong> and then choose the related link.</li>
+</ul>
+<p>On the <strong>Mail Record Templates</strong> page select the code for the correct Mail Record Template. It is also possible to check whether to <strong>External document number Unique</strong>, <strong>Open document card after creation</strong>, <strong>Only one document</strong>, <strong>Create incoming document</strong> or <strong>Copy dimensions to document</strong>.</p>
+<p><img src="media/im-layout.png" alt="Template setup"></p>
+<p>In the <strong>No. Series</strong> field, a number sequence is selected for the newly created documents, which we must prepare in advance if we have not already done so. The number series is formed in the same way as for other agendas:</p>
+<ol>
+<li>Choose the <img src="media/ui-search/search_small.png" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong>No. Series</strong> and then choose the related link.</li>
+<li>On the <strong>Number Series</strong> page, click <strong>New</strong> to create a new number series.</li>
+<li>Enter the <strong>Code</strong>, <strong>Description</strong>, and <strong>Starting number</strong> of the number series.</li>
+<li>Select the <strong>Default Nos.</strong> for autofilling numbers when entering new requests check box.</li>
+</ol>
+<p>An example of a created number sequence (<em>for more details, see Number series</em>):</p>
+<p><img src="media/im-no-series.png" alt="Overview of No. Series"></p>
+<h2 id="status-management">Status management</h2>
+<p>If you want to use <strong>the Mail Records</strong> module, it is also necessary to set up the <strong>Workflow module (status management)</strong> correctly.</p>
+<h3 id="set-up-a-state-management-template">Set up a state management template</h3>
+<p>First, you need to set up a state control template <em>(for more details, see module - Workflow)</em>.</p>
+<ol>
+<li>Choose the <img src="media/ui-search/search_small.png" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong>Status Management Templates</strong> and then choose the related link.</li>
+<li>On the <strong>Status Management Templates</strong> page choose <strong>New</strong> funciton.</li>
+<li>Enter the <strong>Code</strong> and <strong>Description</strong> fields.</li>
+<li>In the <strong>Table Number</strong> field, enter the number <strong>52067961</strong> (the number of the Mail Record,).</li>
+<li>If you want changes to be automatically logged, select the <strong>Log changes</strong> check box.</li>
+<li>To specify individual states for the newly created state control, click <strong>Template function → Status Management Statuses</strong>.</li>
+</ol>
+<p><img src="media/im-status-mgt-setup.png" alt="Status management Templates"></p>
+<p>For each state control state, you must define a <strong>Code</strong>, <strong>Description</strong>, and <strong>Next status filter</strong> that specifies what other states can be accessed from that state. Just one of the states must be marked as <strong>Default Status</strong> (by checking the <strong>Default Status check box</strong>). The status marked in this way is filled in when creating a new Mail Record document.</p>
+<p>Some states may be labeled as <strong>Final Status</strong>, from which no further state is progressed.</p>
+<p>For the active row, you can specify <strong>State Control Actions</strong>, <strong>Checked Fields</strong>, and <strong>Set Fields</strong>.</p>
+<p><img src="media/im-mail-records.png" alt="Status management states - Mail"></p>
+<h3 id="settings-status-management-for-mail-records">Settings status management for Mail Records</h3>
+<ol>
+<li>Select the <img src="media/ui-search/search_small.png" alt="Light Bulb icon that opens Tell Me feature." title=" me what you want to do">, enter <strong>Status Control Settings</strong>, and then select the related link.</li>
+<li>On the <strong>Status Mgt. Setup</strong> page enter 52067961 in the <strong>Table Number</strong> field, which identifies the Mail Record table.</li>
+<li>In the <strong>Status management template</strong> field select the appropriate status management template for Mail Records.</li>
+</ol>
+<p><img src="media/im-mail-mgt-setup.png" alt="Status management Templates"></p>
+<h2 id="interaction-template-setup">Interaction Template Setup</h2>
+<p>If you want to use <strong>Mail Records</strong> module in the <strong>Marketing</strong> module, you also need to set up the interaction templates correctly. The settings are then used when you start <strong>Create Interaction</strong> function on the Mail Record Card, when the corresponding Interaction Rec. Entry is created for the Contact Card <em>(for more details, see. module - Marketing)</em>.</p>
+<p><img src="media/im-interaction-template-setup.png" alt="Set up interaction templates"></p>
+<h3 id="interaction-template-setup-1">Interaction Template Setup</h3>
+<ol>
+<li>Select the <img src="media/ui-search/search_small.png" alt="Light Bulb icon that opens Tell Me feature." title=" me what you want to do">, enter <strong>Interaction Template Setup</strong>, and then select the related link.</li>
+<li>On the <strong>Interaction Template Setup</strong> page, in the <strong>Incoming Mail</strong> and <strong>Outgoing Mail</strong> select correct interaction templates.</li>
+</ol>
+<h3 id="nteraction-template">nteraction Template</h3>
+<ol>
+<li>Select the <img src="media/ui-search/search_small.png" alt="Light Bulb icon that opens Tell Me feature." title=" me what you want to do">, enter <strong>Interaction Templates</strong>, and then select the related link.</li>
+<li>On the <strong>Interaction Templates</strong> page, enter the code for the correct interaction group.</li>
+</ol>
+<p><img src="media/im-interaction-templates.png" alt="Interaction Template"></p>
+<h2 id="see-also">See also</h2>
+<p><a href="incoming-mail.html">Mail Record</a><br>
+<a href="productivity-pack.html">Productivity Pack</a></p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/ARICOMA-D365BC/AC-IB-dynamics365smb-docs/blob/master/business-central/Solutions/incoming-mail-setup.md/#L1" class="contribution-link">Improve this document</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+           <span><a href="https://www.aricoma.com/docs/en-us/dynamics365/business-central/Solutions/solutions.html"><strong>ENGLISH</strong><strong>/</strong><a href="https://www.aricoma.com/docs/cs-cz/dynamics365/business-central/Solutions/solutions.html"><strong>CZECH</strong></a></a></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

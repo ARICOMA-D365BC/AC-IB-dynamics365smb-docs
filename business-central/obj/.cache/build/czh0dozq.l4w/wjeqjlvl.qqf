@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Incoming mail Setup | Microsoft Docs </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Incoming mail Setup | Microsoft Docs ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../TOC.html">
+    <meta property="docfx:tocrel" content="TOC.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="png" src="../logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="mail-records---setup" sourcefile="Solutions/incoming-mail-setup.md" sourcestartlinenumber="13">Mail records - Setup</h1>
+
+<h2 id="mail-record-templates" sourcefile="Solutions/incoming-mail-setup.md" sourcestartlinenumber="14">Mail Record Templates</h2>
+<p sourcefile="Solutions/incoming-mail-setup.md" sourcestartlinenumber="15">After installations of the module, it is necessary to create the Mail Record Templates on the page – <strong sourcefile="Solutions/incoming-mail-setup.md" sourcestartlinenumber="15">Mail Record Templates</strong>.</p>
+<ul sourcefile="Solutions/incoming-mail-setup.md" sourcestartlinenumber="17">
+<li sourcefile="Solutions/incoming-mail-setup.md" sourcestartlinenumber="17">Choose the <img src="media/ui-search/search_small.png" sourcefile="Solutions/incoming-mail-setup.md" sourcestartlinenumber="17" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong sourcefile="Solutions/incoming-mail-setup.md" sourcestartlinenumber="17">Mail Record Templates</strong> and then choose the related link.</li>
+</ul>
+<p sourcefile="Solutions/incoming-mail-setup.md" sourcestartlinenumber="19">On the <strong sourcefile="Solutions/incoming-mail-setup.md" sourcestartlinenumber="19">Mail Record Templates</strong> page select the code for the correct Mail Record Template. It is also possible to check whether to <strong sourcefile="Solutions/incoming-mail-setup.md" sourcestartlinenumber="19">External document number Unique</strong>, <strong sourcefile="Solutions/incoming-mail-setup.md" sourcestartlinenumber="19">Open document card after creation</strong>, <strong sourcefile="Solutions/incoming-mail-setup.md" sourcestartlinenumber="19">Only one document</strong>, <strong sourcefile="Solutions/incoming-mail-setup.md" sourcestartlinenumber="19">Create incoming document</strong> or <strong sourcefile="Solutions/incoming-mail-setup.md" sourcestartlinenumber="19">Copy dimensions to document</strong>.</p>
+<p sourcefile="Solutions/incoming-mail-setup.md" sourcestartlinenumber="21"><img src="media/im-layout.png" sourcefile="Solutions/incoming-mail-setup.md" sourcestartlinenumber="21" alt="Template setup"></p>
+<p sourcefile="Solutions/incoming-mail-setup.md" sourcestartlinenumber="23">In the <strong sourcefile="Solutions/incoming-mail-setup.md" sourcestartlinenumber="23">No. Series</strong> field, a number sequence is selected for the newly created documents, which we must prepare in advance if we have not already done so. The number series is formed in the same way as for other agendas:</p>
+<ol sourcefile="Solutions/incoming-mail-setup.md" sourcestartlinenumber="25">
+<li sourcefile="Solutions/incoming-mail-setup.md" sourcestartlinenumber="25">Choose the <img src="media/ui-search/search_small.png" sourcefile="Solutions/incoming-mail-setup.md" sourcestartlinenumber="25" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong sourcefile="Solutions/incoming-mail-setup.md" sourcestartlinenumber="25">No. Series</strong> and then choose the related link.</li>
+<li sourcefile="Solutions/incoming-mail-setup.md" sourcestartlinenumber="26">On the <strong sourcefile="Solutions/incoming-mail-setup.md" sourcestartlinenumber="26">Number Series</strong> page, click <strong sourcefile="Solutions/incoming-mail-setup.md" sourcestartlinenumber="26">New</strong> to create a new number series.</li>
+<li sourcefile="Solutions/incoming-mail-setup.md" sourcestartlinenumber="27">Enter the <strong sourcefile="Solutions/incoming-mail-setup.md" sourcestartlinenumber="27">Code</strong>, <strong sourcefile="Solutions/incoming-mail-setup.md" sourcestartlinenumber="27">Description</strong>, and <strong sourcefile="Solutions/incoming-mail-setup.md" sourcestartlinenumber="27">Starting number</strong> of the number series.</li>
+<li sourcefile="Solutions/incoming-mail-setup.md" sourcestartlinenumber="28">Select the <strong sourcefile="Solutions/incoming-mail-setup.md" sourcestartlinenumber="28">Default Nos.</strong> for autofilling numbers when entering new requests check box.</li>
+</ol>
+<p sourcefile="Solutions/incoming-mail-setup.md" sourcestartlinenumber="30">An example of a created number sequence (<em sourcefile="Solutions/incoming-mail-setup.md" sourcestartlinenumber="30">for more details, see Number series</em>):</p>
+<p sourcefile="Solutions/incoming-mail-setup.md" sourcestartlinenumber="32"><img src="media/im-no-series.png" sourcefile="Solutions/incoming-mail-setup.md" sourcestartlinenumber="32" alt="Overview of No. Series"></p>
+<h2 id="status-management" sourcefile="Solutions/incoming-mail-setup.md" sourcestartlinenumber="33">Status management</h2>
+<p sourcefile="Solutions/incoming-mail-setup.md" sourcestartlinenumber="35">If you want to use <strong sourcefile="Solutions/incoming-mail-setup.md" sourcestartlinenumber="35">the Mail Records</strong> module, it is also necessary to set up the <strong sourcefile="Solutions/incoming-mail-setup.md" sourcestartlinenumber="35">Workflow module (status management)</strong> correctly.</p>
+<h3 id="set-up-a-state-management-template" sourcefile="Solutions/incoming-mail-setup.md" sourcestartlinenumber="37">Set up a state management template</h3>
+<p sourcefile="Solutions/incoming-mail-setup.md" sourcestartlinenumber="39">First, you need to set up a state control template <em sourcefile="Solutions/incoming-mail-setup.md" sourcestartlinenumber="39">(for more details, see module - Workflow)</em>.</p>
+<ol sourcefile="Solutions/incoming-mail-setup.md" sourcestartlinenumber="41">
+<li sourcefile="Solutions/incoming-mail-setup.md" sourcestartlinenumber="41">Choose the <img src="media/ui-search/search_small.png" sourcefile="Solutions/incoming-mail-setup.md" sourcestartlinenumber="41" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong sourcefile="Solutions/incoming-mail-setup.md" sourcestartlinenumber="41">Status Management Templates</strong> and then choose the related link.</li>
+<li sourcefile="Solutions/incoming-mail-setup.md" sourcestartlinenumber="42">On the <strong sourcefile="Solutions/incoming-mail-setup.md" sourcestartlinenumber="42">Status Management Templates</strong> page choose <strong sourcefile="Solutions/incoming-mail-setup.md" sourcestartlinenumber="42">New</strong> funciton.</li>
+<li sourcefile="Solutions/incoming-mail-setup.md" sourcestartlinenumber="43">Enter the <strong sourcefile="Solutions/incoming-mail-setup.md" sourcestartlinenumber="43">Code</strong> and <strong sourcefile="Solutions/incoming-mail-setup.md" sourcestartlinenumber="43">Description</strong> fields.</li>
+<li sourcefile="Solutions/incoming-mail-setup.md" sourcestartlinenumber="44">In the <strong sourcefile="Solutions/incoming-mail-setup.md" sourcestartlinenumber="44">Table Number</strong> field, enter the number <strong sourcefile="Solutions/incoming-mail-setup.md" sourcestartlinenumber="44">52067961</strong> (the number of the Mail Record,).</li>
+<li sourcefile="Solutions/incoming-mail-setup.md" sourcestartlinenumber="45">If you want changes to be automatically logged, select the <strong sourcefile="Solutions/incoming-mail-setup.md" sourcestartlinenumber="45">Log changes</strong> check box.</li>
+<li sourcefile="Solutions/incoming-mail-setup.md" sourcestartlinenumber="46">To specify individual states for the newly created state control, click <strong sourcefile="Solutions/incoming-mail-setup.md" sourcestartlinenumber="46">Template function → Status Management Statuses</strong>.</li>
+</ol>
+<p sourcefile="Solutions/incoming-mail-setup.md" sourcestartlinenumber="48"><img src="media/im-status-mgt-setup.png" sourcefile="Solutions/incoming-mail-setup.md" sourcestartlinenumber="48" alt="Status management Templates"></p>
+<p sourcefile="Solutions/incoming-mail-setup.md" sourcestartlinenumber="50">For each state control state, you must define a <strong sourcefile="Solutions/incoming-mail-setup.md" sourcestartlinenumber="50">Code</strong>, <strong sourcefile="Solutions/incoming-mail-setup.md" sourcestartlinenumber="50">Description</strong>, and <strong sourcefile="Solutions/incoming-mail-setup.md" sourcestartlinenumber="50">Next status filter</strong> that specifies what other states can be accessed from that state. Just one of the states must be marked as <strong sourcefile="Solutions/incoming-mail-setup.md" sourcestartlinenumber="50">Default Status</strong> (by checking the <strong sourcefile="Solutions/incoming-mail-setup.md" sourcestartlinenumber="50">Default Status check box</strong>). The status marked in this way is filled in when creating a new Mail Record document.</p>
+<p sourcefile="Solutions/incoming-mail-setup.md" sourcestartlinenumber="52">Some states may be labeled as <strong sourcefile="Solutions/incoming-mail-setup.md" sourcestartlinenumber="52">Final Status</strong>, from which no further state is progressed.</p>
+<p sourcefile="Solutions/incoming-mail-setup.md" sourcestartlinenumber="54">For the active row, you can specify <strong sourcefile="Solutions/incoming-mail-setup.md" sourcestartlinenumber="54">State Control Actions</strong>, <strong sourcefile="Solutions/incoming-mail-setup.md" sourcestartlinenumber="54">Checked Fields</strong>, and <strong sourcefile="Solutions/incoming-mail-setup.md" sourcestartlinenumber="54">Set Fields</strong>.</p>
+<p sourcefile="Solutions/incoming-mail-setup.md" sourcestartlinenumber="56"><img src="media/im-mail-records.png" sourcefile="Solutions/incoming-mail-setup.md" sourcestartlinenumber="56" alt="Status management states - Mail"></p>
+<h3 id="settings-status-management-for-mail-records" sourcefile="Solutions/incoming-mail-setup.md" sourcestartlinenumber="57">Settings status management for Mail Records</h3>
+<ol sourcefile="Solutions/incoming-mail-setup.md" sourcestartlinenumber="59">
+<li sourcefile="Solutions/incoming-mail-setup.md" sourcestartlinenumber="59">Select the <img src="media/ui-search/search_small.png" sourcefile="Solutions/incoming-mail-setup.md" sourcestartlinenumber="59" alt="Light Bulb icon that opens Tell Me feature." title=" me what you want to do">, enter <strong sourcefile="Solutions/incoming-mail-setup.md" sourcestartlinenumber="59">Status Control Settings</strong>, and then select the related link.</li>
+<li sourcefile="Solutions/incoming-mail-setup.md" sourcestartlinenumber="60">On the <strong sourcefile="Solutions/incoming-mail-setup.md" sourcestartlinenumber="60">Status Mgt. Setup</strong> page enter 52067961 in the <strong sourcefile="Solutions/incoming-mail-setup.md" sourcestartlinenumber="60">Table Number</strong> field, which identifies the Mail Record table.</li>
+<li sourcefile="Solutions/incoming-mail-setup.md" sourcestartlinenumber="61">In the <strong sourcefile="Solutions/incoming-mail-setup.md" sourcestartlinenumber="61">Status management template</strong> field select the appropriate status management template for Mail Records.</li>
+</ol>
+<p sourcefile="Solutions/incoming-mail-setup.md" sourcestartlinenumber="63"><img src="media/im-mail-mgt-setup.png" sourcefile="Solutions/incoming-mail-setup.md" sourcestartlinenumber="63" alt="Status management Templates"></p>
+<h2 id="interaction-template-setup" sourcefile="Solutions/incoming-mail-setup.md" sourcestartlinenumber="64">Interaction Template Setup</h2>
+<p sourcefile="Solutions/incoming-mail-setup.md" sourcestartlinenumber="66">If you want to use <strong sourcefile="Solutions/incoming-mail-setup.md" sourcestartlinenumber="66">Mail Records</strong> module in the <strong sourcefile="Solutions/incoming-mail-setup.md" sourcestartlinenumber="66">Marketing</strong> module, you also need to set up the interaction templates correctly. The settings are then used when you start <strong sourcefile="Solutions/incoming-mail-setup.md" sourcestartlinenumber="66">Create Interaction</strong> function on the Mail Record Card, when the corresponding Interaction Rec. Entry is created for the Contact Card <em sourcefile="Solutions/incoming-mail-setup.md" sourcestartlinenumber="66">(for more details, see. module - Marketing)</em>.</p>
+<p sourcefile="Solutions/incoming-mail-setup.md" sourcestartlinenumber="68"><img src="media/im-interaction-template-setup.png" sourcefile="Solutions/incoming-mail-setup.md" sourcestartlinenumber="68" alt="Set up interaction templates"></p>
+<h3 id="interaction-template-setup-1" sourcefile="Solutions/incoming-mail-setup.md" sourcestartlinenumber="70">Interaction Template Setup</h3>
+<ol sourcefile="Solutions/incoming-mail-setup.md" sourcestartlinenumber="72">
+<li sourcefile="Solutions/incoming-mail-setup.md" sourcestartlinenumber="72">Select the <img src="media/ui-search/search_small.png" sourcefile="Solutions/incoming-mail-setup.md" sourcestartlinenumber="72" alt="Light Bulb icon that opens Tell Me feature." title=" me what you want to do">, enter <strong sourcefile="Solutions/incoming-mail-setup.md" sourcestartlinenumber="72">Interaction Template Setup</strong>, and then select the related link.</li>
+<li sourcefile="Solutions/incoming-mail-setup.md" sourcestartlinenumber="73">On the <strong sourcefile="Solutions/incoming-mail-setup.md" sourcestartlinenumber="73">Interaction Template Setup</strong> page, in the <strong sourcefile="Solutions/incoming-mail-setup.md" sourcestartlinenumber="73">Incoming Mail</strong> and <strong sourcefile="Solutions/incoming-mail-setup.md" sourcestartlinenumber="73">Outgoing Mail</strong> select correct interaction templates.</li>
+</ol>
+<h3 id="nteraction-template" sourcefile="Solutions/incoming-mail-setup.md" sourcestartlinenumber="75">nteraction Template</h3>
+<ol sourcefile="Solutions/incoming-mail-setup.md" sourcestartlinenumber="77">
+<li sourcefile="Solutions/incoming-mail-setup.md" sourcestartlinenumber="77">Select the <img src="media/ui-search/search_small.png" sourcefile="Solutions/incoming-mail-setup.md" sourcestartlinenumber="77" alt="Light Bulb icon that opens Tell Me feature." title=" me what you want to do">, enter <strong sourcefile="Solutions/incoming-mail-setup.md" sourcestartlinenumber="77">Interaction Templates</strong>, and then select the related link.</li>
+<li sourcefile="Solutions/incoming-mail-setup.md" sourcestartlinenumber="78">On the <strong sourcefile="Solutions/incoming-mail-setup.md" sourcestartlinenumber="78">Interaction Templates</strong> page, enter the code for the correct interaction group.</li>
+</ol>
+<p sourcefile="Solutions/incoming-mail-setup.md" sourcestartlinenumber="80"><img src="media/im-interaction-templates.png" sourcefile="Solutions/incoming-mail-setup.md" sourcestartlinenumber="80" alt="Interaction Template"></p>
+<h2 id="see-also" sourcefile="Solutions/incoming-mail-setup.md" sourcestartlinenumber="86">See also</h2>
+<p sourcefile="Solutions/incoming-mail-setup.md" sourcestartlinenumber="88"><a href="incoming-mail.html" sourcefile="Solutions/incoming-mail-setup.md" sourcestartlinenumber="88">Mail Record</a><br>
+<a href="productivity-pack.html" sourcefile="Solutions/incoming-mail-setup.md" sourcestartlinenumber="89">Productivity Pack</a></p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/ARICOMA-D365BC/AC-IB-dynamics365smb-docs/blob/master/business-central/Solutions/incoming-mail-setup.md/#L1" class="contribution-link">Improve this document</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+           <span><a href="https://www.aricoma.com/docs/en-us/dynamics365/business-central/Solutions/solutions.html"><strong>ENGLISH</strong><strong>/</strong><a href="https://www.aricoma.com/docs/cs-cz/dynamics365/business-central/Solutions/solutions.html"><strong>CZECH</strong></a></a></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

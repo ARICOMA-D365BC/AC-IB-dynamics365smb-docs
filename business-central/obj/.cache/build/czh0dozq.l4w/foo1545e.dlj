@@ -1,0 +1,190 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Returnable Packaging records - Setup </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Returnable Packaging records - Setup ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../TOC.html">
+    <meta property="docfx:tocrel" content="TOC.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="png" src="../logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="returnable-packaging-records---setup">Returnable Packaging records - Setup</h1>
+
+<blockquote>
+<p>Update: 01.01.2025</p>
+</blockquote>
+<p>The Returnable Packaging Management module is an extension of the Inventory module. It enables tracking the circulation of returnable packaging and pallet management. The module allows monitoring packaging balances of business partners, linked to relevant business transactions (Purchase, Sale, Positive Adjustment, Negative Adjustment, Transfer, Consumption, and Production) as well as tracking the current value of the packaging.</p>
+<p>To ensure the proper functionality of the Returnable Packaging Management module, certain settings must be configured in advance:</p>
+<ul>
+<li><strong>Configure calculation formulas</strong></li>
+<li><strong>Set up No. series</strong></li>
+<li><strong>Create returnable packaging categories</strong></li>
+<li><strong>Create returnable packaging journal templates</strong></li>
+</ul>
+<h2 id="setting-up-expiration-date-formulas-and-no-series">Setting Up Expiration Date Formulas and No. Series</h2>
+<ol>
+<li>Select the icon <img src="media/ui-search/search_small.png" alt="Magnifying glass icon that opens &quot;Tell Me&quot; feature" title="Tell me what you want to do">, enter <strong>Return. Packing Setup</strong> and then select the related link.</li>
+<li>On the <strong>Return. Packing Setup</strong> page, under the <strong>General</strong> tab, you need to configure the relevant formulas, such as <strong>Expir. Date Form. in Sale</strong>, <strong>Expir. Date Form. in Purchase</strong>, and <strong>Safety Return Time</strong>.</li>
+</ol>
+<p><img src="media/return-packing-setup.png" alt="Return. Packing Setup"></p>
+<p>The General tab includes the following fields:</p>
+<ul>
+<li><strong>Expir. Date Form. in Sale</strong> – Enter the period within which the customer is obligated to return the returnable packaging.</li>
+<li><strong>Expir. Date Form. in Purchase</strong> – Enter the period within which you are obligated to return the returnable packaging to the supplier.</li>
+<li><strong>Safety Return Time</strong> – This feature allows setting an additional time frame to the standard return period for returnable packaging. After this &quot;safety period&quot; expires, the system will notify you about packaging that was not returned on time.</li>
+<li><strong>Mark Undo as Correction</strong> - Enables marking undo actions as corrections.</li>
+<li><strong>Applies not Sale. Entry</strong> – If this option is enabled, automatic reconciliation of returnable packaging entries during crediting (sales) is disabled.</li>
+<li><strong>Applies not Purch. Entry</strong> – If this option is enabled, automatic reconciliation of returnable packaging entries during crediting (purchases) is disabled.</li>
+<li><strong>Applies Wickedly Bill-to</strong> – This option sets the reconciliation of returnable packaging entries according to the bill-to customer specified on the sales document. If unchecked, reconciliation is performed based on the customer.</li>
+<li><strong>Applies Wickedly Pay-to</strong> – This option sets the reconciliation of returnable packaging entries according to the pay-to vendor specified on the purchase document. If unchecked, reconciliation is performed based on the supplier.</li>
+<li><strong>Applies Wickedly Item</strong> – This option sets the reconciliation of returnable packaging entries according to the item associated with the returnable packaging. If unchecked, reconciliation is performed based on the returnable packaging itself.</li>
+</ul>
+<ol start="3">
+<li>For proper functionality, it is also necessary to configure the number series for returnable packaging on the <strong>Return. Packing Setup</strong> page under the <strong>Numbering</strong> tab.</li>
+</ol>
+<p><img src="media/return-packing-setup-numbering.png" alt="Setting Up Numbering for Returnable Packaging"></p>
+<ol start="4">
+<li>If you do not have a number series created for returnable packaging, expand the Return. Packing Nos. line, click the New function, and create a new number series.</li>
+<li>Enter the <strong>Code</strong>, <strong>Description</strong>, <strong>Starting No.</strong>, and <strong>Ending No.</strong> of the number series.</li>
+<li>Check the <strong>Default Nos.</strong> box to enable automatic number assignment when entering new requests.</li>
+</ol>
+<p><img src="media/return-packing-no-series.png" alt="Number Series for Returnable Packaging"></p>
+<h2 id="setting-up-returnable-packaging-categories">Setting Up Returnable Packaging Categories</h2>
+<p>The next step is setting up returnable packaging categories. These categories are used for filtering in overview functions and print reports.</p>
+<ol>
+<li>Select the icon <img src="media/ui-search/search_small.png" alt="Magnifying glass icon that opens &quot;Tell Me&quot; feature" title="Tell me what you want to do">, enter <strong>Return. Packing Categories</strong> and then select the related link.</li>
+<li>On the <strong>Return. Packing Categories</strong> page, select the <strong>New</strong> action and then enter the <strong>Code</strong> and <strong>Description</strong>.</li>
+</ol>
+<p><img src="media/return-packing-categories.png" alt="Return. Packing Categories"></p>
+<h2 id="setup-of-returnable-packaging-journal-templates">Setup of Returnable Packaging Journal Templates</h2>
+<p>Journal templates are used to predefine journals for accounting for returnable packaging (similar functionality to item journal templates).</p>
+<ol>
+<li>Select the icon <img src="media/ui-search/search_small.png" alt="Magnifying glass icon that opens &quot;Tell Me&quot; feature" title="Tell me what you want to do">, enter <strong>Return. Packing Journal Templ.</strong> and then select the related link.</li>
+<li>On the <strong>Returnable Packaging Journal Template</strong> page, select the <strong>New</strong> action and then enter the <strong>Name</strong>, <strong>Description</strong>, <strong>No. Series</strong>, <strong>Posting No. Series</strong>, and <strong>Source Code</strong>.</li>
+</ol>
+<p><img src="media/return-packing-journal-template.png" alt="Returnable Packaging Journal Template"></p>
+<h2 id="setting-up-returnable-packaging-cards">Setting Up Returnable Packaging Cards</h2>
+<ol>
+<li>Select the icon <img src="media/ui-search/search_small.png" alt="Magnifying glass icon that opens &quot;Tell Me&quot; feature" title="Tell me what you want to do">, enter <strong>Return. Packing List</strong> and then select the related link.</li>
+<li>On the <strong>Return. Packing List</strong> page, select the <strong>New</strong> action.</li>
+</ol>
+<p><img src="media/return-packing-list.png" alt="Return. Packing List"></p>
+<ol start="3">
+<li>After selecting the <strong>New</strong> action, the <strong>Return. Packing Card</strong> opens.</li>
+</ol>
+<p><img src="media/return-packing-card.png" alt="Return. Packing Card"></p>
+<p>Each <strong>Returnable Packaging Card</strong> contains the following fields:</p>
+<ul>
+<li><strong>No.</strong> – Select the number series for returnable packaging.</li>
+<li><strong>Description</strong> – Name of the returnable packaging.</li>
+<li><strong>Return. Packing Category Code</strong> – Identification of the returnable packaging category.</li>
+<li><strong>Search Description</strong> - A description used for search purposes.</li>
+<li><strong>Net Change</strong> – A non-editable field with a link to the &quot;<strong>Return. Packing Ledger Entries</strong>&quot; table. The displayed value indicates the balance status of the returnable packaging.</li>
+<li><strong>Expir. Date Form. in Sale</strong> – Enter the period within which the customer is obligated to return the returnable packaging.</li>
+<li><strong>Expir. Date Form. in Purchase</strong> – Enter the period within which you are obligated to return the returnable packaging to the supplier.</li>
+<li><strong>Blocked</strong> – A field to block (prevent) further use of the specific returnable packaging card.</li>
+</ul>
+<p>If specific values are set, they take precedence over general settings.</p>
+<p>From the card, you can also use the Related action to view <strong>Return. Packing Ledger Entries</strong> and <strong>Comments</strong>.</p>
+<p><strong>See also</strong></p>
+<p><a href="pack-tracking-return-packing.html">Returnable Packaging records</a><br>
+<a href="finance-pack.html">Financial Pack</a></p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/ARICOMA-D365BC/AC-IB-dynamics365smb-docs/blob/master/business-central/FinancialPack/pack-tracking-return-packing-setup.md/#L1" class="contribution-link">Improve this document</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+           <span><a href="https://www.aricoma.com/docs/en-us/dynamics365/business-central/Solutions/solutions.html"><strong>ENGLISH</strong><strong>/</strong><a href="https://www.aricoma.com/docs/cs-cz/dynamics365/business-central/Solutions/solutions.html"><strong>CZECH</strong></a></a></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

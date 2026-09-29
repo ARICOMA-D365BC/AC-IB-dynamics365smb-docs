@@ -85,4 +85,4 @@ If you use fuel journals, set the following information on the vendor card:
 
 **See also**
 
-[Transport Operations](transport-operation.md)
+[Transport Operations](transport-operations.md)

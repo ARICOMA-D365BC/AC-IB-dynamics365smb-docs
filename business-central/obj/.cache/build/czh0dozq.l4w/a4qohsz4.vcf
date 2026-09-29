@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>ARICOMA SOLUTIONS - Parcels - Balikobot integration - setup | Microsoft Docs </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="ARICOMA SOLUTIONS - Parcels - Balikobot integration - setup | Microsoft Docs ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../TOC.html">
+    <meta property="docfx:tocrel" content="TOC.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="png" src="../logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="setup---parcels---balíkobot-integration" sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="15">Setup - Parcels - Balíkobot Integration</h1>
+
+<blockquote sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="17">
+<p sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="17">Update: 23.09.2026</p>
+</blockquote>
+<p sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="19">There are several areas that need to be set up for the AC Parcel addon to work properly. The addon is initially set up using the wizard and then the settings can be changed manually.</p>
+<h2 id="addon-settings-areas" sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="21">Addon settings areas</h2>
+<ul sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="23">
+<li sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="23">Numbered series</li>
+<li sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="24">Expedition places</li>
+<li sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="25">Parcels settings</li>
+<li sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="26">Shipping agents</li>
+<li sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="27">Location Settings</li>
+<li sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="28">Shipment parameters</li>
+<li sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="29">Print Settings</li>
+<li sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="30">Payment settings (COD)</li>
+<li sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="31">Automatic updates</li>
+<li sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="32">Settings in the Sandbox environment</li>
+</ul>
+<p sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="34">Other code lists (Carrier Services, Handling Units and Carrier Branches) are downloaded from the Balíkobot API.</p>
+<div class="IMPORTANT" sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="36">
+<h5>Important</h5>
+<p sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="37">To prevent users from encountering issues when using Business Central, be sure to configure the module’s permissions before activating its functionality.
+The following permission sets are available upon installation of the module:</p>
+<table sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="40">
+<thead>
+<tr sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="40">
+<th sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="40">Set Name</th>
+<th sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="40">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="42">
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="42">PARCELS_READ_ACC</td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="42">For read only</td>
+</tr>
+<tr sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="43">
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="43">PARCELS_EDIT_ACC</td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="43">For general use</td>
+</tr>
+<tr sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="44">
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="44">PARCELS_SETUP_ACC</td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="44">For configuring the module’s behavior</td>
+</tr>
+<tr sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="45">
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="45">PARCELS_ADMIN_ACC</td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="45">For general use and also configuring</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="setting-up-parcels-using-the-wizard" sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="47">Setting up Parcels using the wizard</h2>
+<ol sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="49">
+<li sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="49">Choose the <img src="media/ui-search/search_small.png" sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="49" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="49">Assisted Setup</strong> and then choose the related link.</li>
+<li sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="50">Select Shipment Settings</li>
+<li sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="51">After reading the instructions, click <strong sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="51">Next</strong>.</li>
+<li sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="52">If you want you can import the RapidStart package manually, or you can click <strong sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="52">Next and the package will download and import itself</strong>.</li>
+<li sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="53">Next, create a new shipping location using the <strong sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="53">New</strong> button and fill in the fields:
+<ul sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="54">
+<li sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="54">Code</li>
+<li sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="55">Username</li>
+<li sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="56">Password</li>
+</ul>
+</li>
+<li sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="57">You can also fill in additional information:
+<ul sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="58">
+<li sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="58">Description</li>
+<li sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="59">Name</li>
+<li sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="60">Address</li>
+<li sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="61">City</li>
+<li sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="62">Postcode</li>
+</ul>
+</li>
+<li sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="63">In the <strong sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="63">Expedition Places</strong>, select the newly created record.</li>
+<li sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="64">In the next step, select the location created by the shipping location and click Next.</li>
+<li sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="65">Create a new Shipping Agent using the fields:
+<ul sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="66">
+<li sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="66">Code</li>
+<li sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="67">Name</li>
+<li sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="68">Integration services: Balíkobot.cz</li>
+<li sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="69">Balíkobot code</li>
+<li sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="70">Allow multiple packages - YES</li>
+<li sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="71">Master data synchronization - YES</li>
+</ul>
+</li>
+<li sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="72">Select the <strong sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="72">Synchronize master data</strong>function.</li>
+<li sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="73">In the Number Series field, select the appropriate number series for shipments.</li>
+<li sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="74">Once you have filled in everything and clicked <strong sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="74">Finish</strong>, the assisted guide will close and the master data will begin to synchronize.</li>
+</ol>
+<h2 id="manual-adjustment-of-settings" sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="76">Manual adjustment of settings</h2>
+<h3 id="expedition-places" sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="78">Expedition places</h3>
+<p sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="80">The Expedition Places are locations of your warehouses from where shipments are dispatched. A user can have several expedition places. A different API is required for each expedition place, and the expedition place is associated with one location of your company.</p>
+<ol sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="82">
+<li sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="82">Choose the <img src="media/ui-search/search_small.png" sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="82" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="82">Expedition Places</strong> and then choose the related link.</li>
+<li sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="83">Choose the function <strong sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="83">New</strong>.</li>
+<li sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="84">Insert <strong sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="84">Code</strong> for expedition place, description, address and <strong sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="84">User Name and password</strong> to yours API.</li>
+<li sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="85">Close the list of Expedition places.</li>
+</ol>
+<p sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="87"><img src="media/bb_exp_pl.png" sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="87" alt="Parcels settings"></p>
+<h3 id="location-settings" sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="89">Location Settings</h3>
+<p sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="91">On the tab of the given location it is necessary to select the dispatch place that is connected with the given API. If there are more locations, it is necessary to set the appropriate dispatch point for each. This serves to reduce the error rate of users so that they cannot combine documents with different shipping points into the shipment.</p>
+<p sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="93">To assign a shipping location to a location, you need to set the <strong sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="93">Expedition Places Code</strong>.</p>
+<ol sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="95">
+<li sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="95">Choose the <img src="media/ui-search/search_small.png" sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="95" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="95">Locations</strong> and then choose the related link.</li>
+<li sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="96">Open the desired location tab</li>
+<li sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="97">Fill in <strong sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="97">Expedition Places Code</strong> field on the General tab</li>
+</ol>
+<p sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="99"><img src="media/bb_lokace.png" sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="99" alt="Parcels settings"></p>
+<h3 id="parcels-settings" sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="101">Parcels settings</h3>
+<p sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="103">Basic Package Setup must be made on the <strong sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="103">Parcels Settings</strong>page.
+<img src="media/bb_setup.png" sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="104" alt="Parcels settings"></p>
+<p sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="106">Parcels Management Setup page contains:</p>
+<ul sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="108">
+<li sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="108"><strong sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="108">Parcels No.</strong> - Specifies the No. Series for parcels.</li>
+<li sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="109"><strong sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="109">Default Expediton Place Code</strong> - Specifies the API credentials and shipment location from where the parcel will be shipped.</li>
+<li sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="110"><strong sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="110">Print Handover After Order</strong> – Automatic print of Handover protocols after collection order.</li>
+<li sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="111"><strong sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="111">Default Printer Name</strong> – Specifies the printer for printing labels</li>
+<li sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="112"><strong sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="112">Limit Response Time</strong> – Specifies the timeout of communication.</li>
+<li sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="113"><strong sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="113">Activity Log Enabled</strong> - Starts activity log tracking.</li>
+<li sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="114"><strong sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="114">Debug Mode</strong> – Allows you to intercept messages in communication with the service</li>
+<li sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="115"><strong sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="115">Automatic master data synchronization</strong> - Runs a procedure on the job queue that updates all data from the Package in a certain time period.</li>
+<li sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="116"><strong sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="116">Automatic Transportation Status Update</strong> - Runs a procedure on the job queue that updates the shipment transfer status for the last month in a specific time period.</li>
+</ul>
+<p sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="118">Basic settings are made using the application setup wizard.
+The other tables are downloaded and filled after master data synchronization is enabled.
+These data are updated manually using the &quot;Resynchronize master data&quot; function.</p>
+<h4 id="basic-settings-of-parcels---balíkobot-integration" sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="122">Basic settings of Parcels - Balíkobot integration</h4>
+<p sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="124">To start the balíkobot functions, you need to make the following settings:</p>
+<ol sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="126">
+<li sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="126">Choose the <img src="media/ui-search/search_small.png" sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="126" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="126">Parcels setup</strong> and then choose the related link.</li>
+<li sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="127">Select a number series for shipments</li>
+<li sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="128">Select default Expedition Places</li>
+<li sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="129">Enable or disable automatic printing of collection reports</li>
+<li sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="130">Enable or disable Activity Log</li>
+</ol>
+<h3 id="shipping-agents-setup" sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="132">Shipping Agents setup</h3>
+<p sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="134">The basic codebook is loaded using the RapidStart package for Business Central. This package contains data that is not downloaded from the Balíkobot API:</p>
+<h4 id="table-of-shipping-agents" sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="136">Table of Shipping Agents</h4>
+<p sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="138">Other tables are downloaded and filled after synchronization of master data and in the Shipping Agent table.
+The update of this data is done manually using the &quot;Resynchronization of master data&quot; function.
+<img src="media/bb_shipping-agents.png" sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="140" alt="Balíkobot setup"></p>
+<p sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="142">The overview also includes carriers that you do not have configured with Balíkobot. Additional data is not imported for such data (see below).</p>
+<h3 id="on-the-carrier-overview-there-are-several-fields-to-set-up" sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="144">On the carrier overview, there are several fields to set up</h3>
+<ul sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="146">
+<li sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="146">Integration Service<strong sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="146">Integrační služba</strong> – Determines through which integration service the shipping agent is used (in this case Balikobot.cz)</li>
+<li sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="147"><strong sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="147">Enable master data synchronization</strong> – Master data may become available after switching on</li>
+<li sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="148"><strong sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="148">Last master data synchronization</strong> – Date of last master data synchronization</li>
+<li sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="149"><strong sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="149">Enabled for Balíkobot</strong> - Carrier is enabled and can be used</li>
+<li sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="150"><strong sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="150">Allow multiple packages</strong> - When creating a shipment, the feature allows you to create multiple packages within one shipment.</li>
+<li sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="151"><strong sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="151">Pallet transport</strong></li>
+<li sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="152"><strong sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="152">Number of handling units</strong> - For pallet transport it is possible to set more handling units.</li>
+<li sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="153"><strong sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="153">Branch only</strong> – Specifies that the carrier serves only as a pickup point.</li>
+<li sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="154"><strong sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="154">Maximum address length</strong> – set the address length for the selected carrier.</li>
+</ul>
+<h3 id="functions-over-shipping-agents" sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="156">Functions over shipping agents</h3>
+<ul sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="158">
+<li sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="158"><strong sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="158">Connection Test</strong> – Test communication between the integration service and Business Central</li>
+<li sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="159"><strong sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="159">Master data synchronization</strong> – Starts master data synchronization</li>
+<li sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="160"><strong sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="160">Shipping Agent Services</strong> - Table of services of individual shipping agent</li>
+<li sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="161"><strong sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="161">Shipping Agent Branches</strong> - Table of locations, where customers can take goods from the carrier</li>
+<li sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="162"><strong sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="162">Handling units</strong> - Table of pallet handling units</li>
+<li sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="163"><strong sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="163">ADR units of the carrier</strong> – Table of ADR units of the carrier</li>
+</ul>
+<p sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="165">If you add a carrier after the first setup has been made using assisted setup, you must fill in the fields correctly:</p>
+<ul sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="167">
+<li sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="167">Code</li>
+<li sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="168">Package Tracking URL</li>
+<li sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="169">Integration service</li>
+<li sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="170">Balíkobot code</li>
+</ul>
+<p sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="172">Then you need to use <strong sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="172">the Synronization function of master data</strong>!</p>
+<h3 id="set-up-shipping-agent-services" sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="174">Set up Shipping Agent Services</h3>
+<p sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="176">Shipping Agent Services are downloaded automatically using the Balikobot API. It is possible to force certain settings for individual Shipping Agents services. To set it up, you must:</p>
+<ol sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="178">
+<li sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="178">Choose the <img src="media/ui-search/search_small.png" sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="178" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="178">Shipping Agents</strong> and then choose the related link.</li>
+<li sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="179">Select the desired carrier from the list and select <strong sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="179">Shipping Agent Services</strong> feature</li>
+<li sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="180">Fill in the fields on the following page as needed:
+<ul sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="181">
+<li sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="181"><strong sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="181">Enabled for Balikobot</strong> - The service can be used (enabled by default)</li>
+<li sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="182"><strong sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="182">Enforce Shipment Weight</strong></li>
+<li sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="183"><strong sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="183">Force shipment volume</strong></li>
+<li sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="184"><strong sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="184">Enforce Shipment Price</strong></li>
+<li sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="185"><strong sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="185">Force cash on delivery</strong></li>
+<li sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="186"><strong sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="186">Enforce shipment variable symbol</strong></li>
+<li sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="187"><strong sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="187">Weight on line</strong> - Weight must be filled in the shipment line</li>
+<li sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="188"><strong sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="188">Services of ČP</strong> – <a href="https://www.balikobot.cz/dokumentace/cp_ciselnik_sluzeb.pdf" sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="188">Only for Czech Post service</a> - a long text string of postal services above the parcel</li>
+</ul>
+</li>
+</ol>
+<h3 id="balikobot-api-settings" sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="190">Balikobot API settings</h3>
+<p sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="192">This system table allows you to configure extended carrier settings. These are settings for API communication, where you can select communication versions and more for selected carriers.</p>
+<p sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="194">From an admin point of view, there is an option to set the shipping agent code for communication in case of changes from Balíkobot (Shipping Agent API Code) when the API shipper name is longer than 10 characters (for example DHL Freight EuroConnect, which had the API name &quot;dhlfreight&quot; and now uses &quot;dhlfreightec&quot;).</p>
+<h2 id="shipment-parameters" sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="196">Shipment parameters</h2>
+<p sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="198">Parameters for individual shipping agents are downloaded from the package package API</p>
+<h3 id="payment-method-settings---cash-on-delivery" sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="200">Payment method settings - Cash on delivery</h3>
+<p sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="202">To set up and use the cash on delivery function, it is necessary to set up booeal <strong sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="202">Cash on delivery</strong> on the payment method.</p>
+<ol sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="204">
+<li sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="204">Choose the <img src="media/ui-search/search_small.png" sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="204" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="204">Payment Method</strong> and then choose the related link.</li>
+<li sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="205">In the overview, check the <strong sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="205">Cash on delivery</strong> option.</li>
+<li sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="206">Close the payment method overview.</li>
+</ol>
+<h2 id="print-settings" sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="208">Print Settings</h2>
+<h3 id="pdf-reader" sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="210">PDF reader</h3>
+<p sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="212">You need to have a PDF reader installed to print labels. To work with labels, we recommend Foxit pdf and also have it set as the default program for PDF files.</p>
+<h3 id="print-format-selection---client-zone" sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="214">Print Format Selection - Client Zone</h3>
+<p sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="216">The basic step in setting up label printing is to define how the PDF with labels will be generated by Package. In the client zone (<code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="216">https://client.balikobot.cz/</code>), the user must set whether to print in full page format or according to positions on A4 size paper. It all depends on what printer it will be printed on. The label printing position does not need to be selected for printing to the label printer.</p>
+<h3 id="printer-selection" sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="218">Printer selection</h3>
+<p sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="220">To set up label printing, you need to set the report ID and assign a printer to the user. The Print Labels feature is set to print to a defined printer.</p>
+<p sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="222">To define a printer, it is necessary:</p>
+<ol sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="224">
+<li sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="224">Choose the <img src="media/ui-search/search_small.png" sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="224" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="224">Printer Selections</strong> and then choose the related link.</li>
+<li sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="225">Choose <strong sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="225">New</strong>.</li>
+<li sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="226">Select User ID, Report ID 52068430, and Printer Name</li>
+</ol>
+<p sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="228">Printing of the handover protocol is printed automatically after ordering the collection. If the user does not want automatic printing, just turn off Boolean - Printing handover protocols in the Balíkobot Settings. Printing is done from the Default Printer according to your device. Alternatively, if you have the default printer set in <strong sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="228">Printer Selections</strong> as the rest of your print reports.</p>
+<h2 id="automatic-updates" sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="230">Automatic updates</h2>
+<h3 id="automatic-master-data-update" sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="232">Automatic master data update</h3>
+<p sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="234">The automatic update of the master data starts a procedure on the job queue, which updates all data from Balikobot in a certain period of time (By default on Sunday at 14:00).</p>
+<p sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="236">To turn on this feature, follow these steps:</p>
+<ol sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="238">
+<li sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="238">Choose the <img src="media/ui-search/search_small.png" sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="238" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="238">Parcels setup</strong> and then choose the related link.</li>
+<li sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="239">In Parcels Management Setup, turn on &quot;Run Master Data Sync. Task&quot;.</li>
+<li sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="240">The user will be prompted to create and open a new job queue item that will be in the &quot;Ready&quot; state.</li>
+<li sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="241">After that, you can close the settings.</li>
+</ol>
+<h3 id="automatic-update-of-the-transport-status" sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="243">Automatic update of the transport status</h3>
+<p sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="245">Automatic shipment status update triggers a procedure on the job queue that updates the shipment shipment status for the last month over a period of time.</p>
+<p sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="247">To turn on this feature, follow these steps:</p>
+<ol sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="249">
+<li sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="249">Choose the <img src="media/ui-search/search_small.png" sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="249" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="249">Parcels setup</strong> and then choose the related link.</li>
+<li sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="250">In Parcels Management Setup, turn on &quot;Run Track Status Update Task&quot;.</li>
+<li sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="251">The user will be prompted to create and open a new job queue item that will be in the &quot;Ready&quot; state.</li>
+<li sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="252">After that, you can close the settings.</li>
+</ol>
+<h2 id="settings-in-the-sandbox-environment" sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="254">Settings in the Sandbox environment</h2>
+<h3 id="runtime-deadlock" sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="256">Runtime deadlock</h3>
+<p sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="258">When setting up the add-on with assistance, the message &quot;<em sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="258">The request was blocked by the runtime</em>&quot; may be displayed.</p>
+<p sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="260">To resolve this issue, follow these steps:</p>
+<ol sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="262">
+<li sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="262">Choose the <img src="media/ui-search/search_small.png" sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="262" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="262">Extension Management</strong> and then choose the related link.</li>
+<li sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="263"><strong sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="263">The Installed Extensions</strong> page opens.</li>
+<li sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="264">Select the line extension <strong sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="264">Parcels</strong> and then use the action <strong sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="264">Configuration</strong>.</li>
+<li sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="265">On the <strong sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="265">Extension Configuration</strong> page, enable the <strong sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="265">Enable HttpClient requests</strong> switch.</li>
+<li sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="266">You can then close the page and run the Guided Wizard again.</li>
+</ol>
+<h2 id="paperless-trade-settings" sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="268">PaperLess Trade settings</h2>
+<h3 id="turn-on-paperless-trade-at-the-carrier" sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="270">Turn on Paperless Trade at the carrier</h3>
+<p sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="272">Paperless Trade is used to send an electronic invoice (in the case of a pro-forma invoice) for customs clearance.</p>
+<p sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="274">To set it up correctly, follow these steps:</p>
+<ol sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="276">
+<li sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="276">Choose the <img src="media/ui-search/search_small.png" sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="276" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="276">Shipping Agents</strong> and then choose the related link.</li>
+<li sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="277">On the carriers overview, select the carrier for which you want to turn on the service.</li>
+<li sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="278">To turn on the service, select the <strong sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="278">Paperless Trade</strong> field.</li>
+<li sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="279">After setup, you can close the page</li>
+</ol>
+<h3 id="automatically-attach-an-invoice-to-a-shipment" sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="281">Automatically attach an invoice to a shipment</h3>
+<p sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="283">For Paperless Trade to work properly, you must attach a PDF file of the invoice (pro-forma invoice) to the shipment.</p>
+<p sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="285">In the case of creating a shipment from a billed sales invoice, it is possible to generate a document and attach it automatically when creating the shipment. To make the correct settings, proceed as follows:</p>
+<ol sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="287">
+<li sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="287">Choose the <img src="media/ui-search/search_small.png" sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="287" alt="Lightbulb that opens the Tell Me feature." title="Tell me what you want to do"> icon, enter <strong sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="287">Shipping Agents</strong> and then choose the related link.</li>
+<li sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="288">In the carriers overview, select the carrier for which you want to turn on automatic document creation.</li>
+<li sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="289">To turn on automatic PLT document creation, select the <strong sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="289">Create PLT Document</strong>field.</li>
+<li sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="290">Once set up, you can close the page.</li>
+</ol>
+<h2 id="balikobot-integration-events" sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="292">Balikobot Integration Events</h2>
+<p sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="294">The Codeunit 52068440 <code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="294">BalikobotAPIv2Events_aci</code> publishes integration events (<code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="294">IntegrationEvent</code>) that allow modifying request/response data when calling the Balikobot API v2 and adding custom logic.</p>
+<h3 id="requestresponse-events-for-api-methods" sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="296">Request/Response events for API methods</h3>
+<p sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="298">Each operation has a pair of events:</p>
+<ul sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="300">
+<li sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="300"><strong sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="300">OnRequest</strong> – called before sending the request, allows modifying the JSON object in <code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="300">RequestJsonData</code></li>
+<li sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="301"><strong sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="301">OnResponse</strong> – called after receiving the response, allows reading the JSON object <code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="301">ResponseJsonData</code>
+| Event | Parameters | When it is called |
+|---|---|---|
+| <code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="304">OnCheckRequest</code> | <code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="304">var PackageData: Record BalikobotPackageData_aci</code><br><code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="304">var RequestJsonData: JsonToken</code> | Before sending the request of the <strong sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="304">CHECK</strong> method – allows modifying/supplementing the data being sent. |
+| <code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="305">OnCheckResponse</code> | <code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="305">var PackageData: Record BalikobotPackageData_aci</code><br><code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="305">ResponseJsonData: JsonToken</code> | After receiving the response of the <strong sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="305">CHECK</strong> method. |
+| <code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="306">OnAddRequest</code> | <code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="306">var PackageData: Record BalikobotPackageData_aci</code><br><code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="306">var RequestJsonData: JsonToken</code> | Before sending the request of the <strong sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="306">ADD</strong> method – allows modifying/supplementing the data being sent (e.g. adding carrier-specific attributes). |
+| <code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="307">OnAddResponse</code> | <code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="307">var PackageData: Record BalikobotPackageData_aci</code><br><code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="307">ResponseJsonData: JsonToken</code> | After receiving the response of the <strong sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="307">ADD</strong> method (shipment created). |
+| <code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="308">OnDropRequest</code> | <code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="308">var PackageData: Record BalikobotPackageData_aci</code><br><code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="308">var RequestJsonData: JsonToken</code> | Before sending the request of the <strong sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="308">DROP</strong> method (shipment cancellation). |
+| <code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="309">OnDropResponse</code> | <code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="309">var PackageData: Record BalikobotPackageData_aci</code><br><code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="309">ResponseJsonData: JsonToken</code> | After receiving the response of the <strong sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="309">DROP</strong> method. |
+| <code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="310">OnOrderRequest</code> | <code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="310">var PackageData: Record BalikobotPackageData_aci</code><br><code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="310">var RequestJsonData: JsonToken</code> | Before sending the request of the <strong sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="310">ORDER</strong> method (pickup order). |
+| <code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="311">OnOrderResponse</code> | <code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="311">var PackageData: Record BalikobotPackageData_aci</code><br><code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="311">ResponseJsonData: JsonToken</code> | After receiving the response of the <strong sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="311">ORDER</strong> method. |
+| <code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="312">OnLabelsRequest</code> | <code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="312">var PackageData: Record BalikobotPackageData_aci</code><br><code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="312">var RequestJsonData: JsonToken</code> | Before sending the request of the <strong sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="312">LABELS</strong> method (bulk PDF with labels). |
+| <code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="313">OnLabelsResponse</code> | <code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="313">var PackageData: Record BalikobotPackageData_aci</code><br><code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="313">ResponseJsonData: JsonToken</code> | After receiving the response of the <strong sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="313">LABELS</strong> method. |
+| <code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="314">OnB2ARequest</code> | <code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="314">var PackageData: Record BalikobotPackageData_aci</code><br><code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="314">var RequestJsonData: JsonToken</code> | Before sending the request of the <strong sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="314">B2A</strong> method (return/collection shipment). |
+| <code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="315">OnB2AResponse</code> | <code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="315">var PackageData: Record BalikobotPackageData_aci</code><br><code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="315">ResponseJsonData: JsonToken</code> | After receiving the response of the <strong sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="315">B2A</strong> method. |
+| <code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="316">OnTrackV2Request</code> | <code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="316">var PackageData: Record BalikobotPackageData_aci</code><br><code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="316">var RequestJsonData: JsonToken</code> | Before sending the request of the <strong sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="316">TRACK v2</strong> method. |
+| <code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="317">OnTrackV2Response</code> | <code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="317">var PackageData: Record BalikobotPackageData_aci</code><br><code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="317">ResponseJsonData: JsonToken</code><br><code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="317">var StatusMessage: Record &quot;Activity Log&quot; temporary</code> | After receiving the response of the <strong sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="317">TRACK v2</strong> method – additionally contains a temporary table with the recorded tracking statuses (<code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="317">StatusMessage</code>). |
+| <code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="318">OnTrackStatusRequest</code> | <code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="318">var PackageData: Record BalikobotPackageData_aci</code><br><code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="318">var RequestJsonData: JsonToken</code> | Before sending the request of the <strong sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="318">TRACKSTATUS</strong> method. |
+| <code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="319">OnTrackStatusResponse</code> | <code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="319">var PackageData: Record BalikobotPackageData_aci</code><br><code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="319">ResponseJsonData: JsonToken</code> | After receiving the response of the <strong sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="319">TRACKSTATUS</strong> method. |</li>
+</ul>
+<h3 id="events-for-updating-the-shipment" sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="321">Events for updating the shipment</h3>
+<p sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="323">Called after the result of the API call is written back to <code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="323">ParcelHeader_aci</code>/<code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="323">ParcelLine_aci</code> – suitable for follow-up business logic processing the responses from the Balikobot API.</p>
+<table sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="325">
+<thead>
+<tr sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="325">
+<th sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="325">Event</th>
+<th sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="325">Parameters</th>
+<th sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="325">When it is called</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="327">
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="327"><code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="327">OnAfterUpdateParcelAfterAdd</code></td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="327"><code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="327">var ParcelHeader: Record ParcelHeader_aci</code><br><code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="327">var ParcelLine: Record ParcelLine_aci</code><br><code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="327">var PackageData: Record BalikobotPackageData_aci</code></td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="327">After updating <code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="327">ParcelHeader</code>/<code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="327">ParcelLine</code> with data from the <strong sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="327">ADD</strong> method response.</td>
+</tr>
+<tr sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="328">
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="328"><code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="328">OnAfterUpdateParcelAfterDrop</code></td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="328"><code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="328">var ParcelHeader: Record ParcelHeader_aci</code><br><code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="328">var ParcelLine: Record ParcelLine_aci</code><br><code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="328">var PackageData: Record BalikobotPackageData_aci</code></td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="328">After updating <code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="328">ParcelHeader</code>/<code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="328">ParcelLine</code> with data from the <strong sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="328">DROP</strong> method response.</td>
+</tr>
+<tr sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="329">
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="329"><code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="329">OnAfterUpdateParcelAfterOrder</code></td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="329"><code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="329">var ParcelHeader: Record ParcelHeader_aci</code><br><code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="329">var ParcelLine: Record ParcelLine_aci</code><br><code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="329">var PackageData: Record BalikobotPackageData_aci</code></td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="329">After updating <code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="329">ParcelHeader</code>/<code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="329">ParcelLine</code> with data from the <strong sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="329">ORDER</strong> method response.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="usage-notes" sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="331">Usage notes</h3>
+<ul sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="333">
+<li sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="333"><code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="333">RequestJsonData</code> is passed as <code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="333">var JsonToken</code> – a subscriber can replace/modify it before the HTTP request is sent (it typically contains a <code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="333">JsonObject</code>/<code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="333">JsonArray</code> with the <code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="333">&quot;packages&quot;</code> key).</li>
+<li sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="334"><code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="334">ResponseJsonData</code> is read-only – used to react to the result of the call, not to modify it.</li>
+<li sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="335"><code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="335">PackageData</code> is always available as <code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="335">var Record BalikobotPackageData_aci</code> – contains the currently processed shipment/shipments data.</li>
+</ul>
+<h2 id="list-of-balikobot-attributes-not-supported-in-the-parcels-application" sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="337">List of Balikobot Attributes Not Supported in the Parcels Application</h2>
+<p sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="339"><em sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="339">(as of 1 Sept 2026)</em></p>
+<table sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="341">
+<thead>
+<tr sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="341">
+<th sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="341">Attribute</th>
+<th sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="341">Data Type</th>
+<th sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="341">Description</th>
+<th sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="341">Carriers</th>
+</tr>
+</thead>
+<tbody>
+<tr sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="343">
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="343"><code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="343">account_number_duties</code></td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="343">string</td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="343">FedEx account of the duty/tax payer. Required for third-party customs cases CPT/FCA.</td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="343">fedex</td>
+</tr>
+<tr sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="344">
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="344"><code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="344">account_number_shipping_charges</code></td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="344">string</td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="344">FedEx account of the freight payer. Required for third-party freight cases FCA/EXW.</td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="344">fedex</td>
+</tr>
+<tr sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="345">
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="345"><code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="345">adr_content.adr_accessibility</code></td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="345">string</td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="345">Whether the dangerous goods are accessible during transport (ACCESSIBLE/INACCESSIBLE). Required for DOT, IATA, ORMD.</td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="345">fedex</td>
+</tr>
+<tr sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="346">
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="346"><code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="346">adr_content.adr_battery</code></td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="346">bool</td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="346">Battery shipment flag.</td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="346">fedex</td>
+</tr>
+<tr sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="347">
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="347"><code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="347">adr_content.adr_cargo_aircraft</code></td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="347">bool</td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="347">Cargo aircraft only (CAO).</td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="347">fedex</td>
+</tr>
+<tr sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="348">
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="348"><code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="348">adr_content.adr_hazardous</code></td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="348">string/bool</td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="348">Hazardous materials.</td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="348">fedex; tnt</td>
+</tr>
+<tr sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="349">
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="349"><code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="349">adr_content.adr_name_en</code></td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="349">string</td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="349">English name of the hazardous substance (supplement to <code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="349">adr_name</code>).</td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="349">dachser</td>
+</tr>
+<tr sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="350">
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="350"><code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="350">adr_content.adr_other</code></td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="350">bool</td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="350">Other regulated materials.</td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="350">fedex</td>
+</tr>
+<tr sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="351">
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="351"><code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="351">adr_content.adr_package_type</code></td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="351">string</td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="351">Packaging type for dangerous goods (ADR) – not described in detail in the specification.</td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="351">dbschenker</td>
+</tr>
+<tr sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="352">
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="352"><code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="352">adr_content.adr_regulation</code></td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="352">string</td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="352">Type of dangerous goods regulation: ADR (EU road transport), DOT (US Dept. of Transportation), IATA (air transport), ORMD (Other Regulated Materials–Domestic).</td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="352">fedex</td>
+</tr>
+<tr sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="353">
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="353"><code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="353">adr_content.adr_reportable_quantities</code></td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="353">bool</td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="353">Reportable quantities.</td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="353">fedex</td>
+</tr>
+<tr sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="354">
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="354"><code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="354">adr_content.adr_small_quantity</code></td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="354">bool</td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="354">Small quantity exception. Applies only to shipments with a single piece (<code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="354">order_number = 1</code>).</td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="354">fedex</td>
+</tr>
+<tr sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="355">
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="355"><code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="355">battery_data</code> (object)</td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="355">array</td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="355">Required when shipping batteries – contains <code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="355">battery_packing_type</code>, <code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="355">battery_regulatory_type</code>, <code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="355">battery_material_type</code>.</td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="355">fedex</td>
+</tr>
+<tr sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="356">
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="356"><code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="356">battery_data.battery_material_type</code></td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="356">string</td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="356">Battery material (e.g. LITHIUM_METAL).</td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="356">fedex</td>
+</tr>
+<tr sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="357">
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="357"><code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="357">battery_data.battery_packing_type</code></td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="357">string</td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="357">Battery packing type (example value: LOOSE).</td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="357">fedex</td>
+</tr>
+<tr sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="358">
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="358"><code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="358">battery_data.battery_regulatory_type</code></td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="358">string</td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="358">Battery regulatory type (e.g. IATA_SECTION_II).</td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="358">fedex</td>
+</tr>
+<tr sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="359">
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="359"><code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="359">branch_type</code></td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="359">string</td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="359">Required attribute when <code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="359">branch_id</code> is filled in. Type of pickup point — allowed values: <code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="359">packstation</code>, <code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="359">filialedirekt</code> (also <code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="359">filialedirect</code>). Germany shipments only.</td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="359">dhlde</td>
+</tr>
+<tr sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="360">
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="360"><code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="360">consign_password</code></td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="360">bool</td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="360">Sending <code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="360">true</code>/<code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="360">&quot;1&quot;</code> makes the API return, in the ADD response, a password for placing the shipment into the box. Can be set as default for all shipments in the client zone.</td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="360">zasilkovna</td>
+</tr>
+<tr sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="361">
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="361"><code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="361">content_data.content_eori</code></td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="361">string</td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="361">EORI number related to the given content item of the shipment (customs data).</td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="361">zasilkovna</td>
+</tr>
+<tr sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="362">
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="362"><code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="362">content_data.content_food_or_book</code></td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="362">bool</td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="362">Indicates whether the content is food or a book (different customs/tax treatment).</td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="362">zasilkovna</td>
+</tr>
+<tr sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="363">
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="363"><code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="363">content_data.content_price_eur</code></td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="363">float</td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="363">Price of the content item in EUR – used as the sum for <code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="363">price</code> on shipments to Ukraine.</td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="363">zasilkovna</td>
+</tr>
+<tr sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="364">
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="364"><code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="364">content_data.content_quantity</code></td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="364">int</td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="364">Number of pieces of the given content item.</td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="364">fedex</td>
+</tr>
+<tr sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="365">
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="365"><code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="365">content_data.content_quantity_unit</code></td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="365">string</td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="365">Unit of measure for <code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="365">content_quantity</code>.</td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="365">fedex</td>
+</tr>
+<tr sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="366">
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="366"><code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="366">content_data.content_volatile</code></td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="366">bool</td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="366">Indicates a volatile/flammable substance in the shipment content.</td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="366">zasilkovna</td>
+</tr>
+<tr sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="367">
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="367"><code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="367">content_produce_code</code></td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="367">string</td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="367">Required parameter for international shipments, e.g. <code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="367">&quot;999&quot;</code>.</td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="367">magyarposta</td>
+</tr>
+<tr sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="368">
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="368"><code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="368">country_reference</code></td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="368">string</td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="368">Reference number of the recipient's country. For Dachser/DB Schenker for PL, RO, BH, HU; for Raben only for RO. Max 35 (Dachser) / 99 characters (Raben).</td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="368">dachser; dbschenker; raben</td>
+</tr>
+<tr sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="369">
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="369"><code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="369">country_reference_type</code></td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="369">string</td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="369">Type of the reference number (for Raben, fixed value <code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="369">&quot;UIT&quot;</code> for RO).</td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="369">dachser; dbschenker; raben</td>
+</tr>
+<tr sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="370">
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="370"><code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="370">customs_indicator</code></td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="370">bool</td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="370">Customs indicator – whether the shipment is under a customs regime (default <code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="370">false</code> for EU, default <code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="370">true</code> outside EU).</td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="370">dachser</td>
+</tr>
+<tr sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="371">
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="371"><code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="371">date_delivery</code></td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="371">string</td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="371">Planned delivery date of the shipment (format YYYY-MM-DD). Required for the additional &quot;in time service!&quot;.</td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="371">gw; gwcz</td>
+</tr>
+<tr sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="372">
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="372"><code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="372">dcl_pdf</code></td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="372">string</td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="372">Customs declaration – required when shipping outside the EU if the goods are not customs-cleared by the carrier. Base64-encoded PDF.</td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="372">dhlde</td>
+</tr>
+<tr sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="373">
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="373"><code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="373">del_exworks_account_number</code></td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="373">string</td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="373">Account of the duty/freight payer for EXWORKS shipments (DHL Express: Billing Account Number; UPS: UPS Account ID; TNT: freight payment account; FedEx: duty/tax/freight payer account).</td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="373">dhl; fedex; tnt; ups</td>
+</tr>
+<tr sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="374">
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="374"><code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="374">eori</code></td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="374">string</td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="374">EORI number.</td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="374">spring</td>
+</tr>
+<tr sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="375">
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="375"><code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="375">eu_eori</code></td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="375">string</td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="375">EU EORI number.</td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="375">spring</td>
+</tr>
+<tr sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="376">
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="376"><code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="376">export_customs_declarant</code> (object)</td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="376">array</td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="376">Details of the export customs declarant – who handles export customs clearance on the sender's side. Required if the shipment requires customs clearance.</td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="376">dbschenker</td>
+</tr>
+<tr sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="377">
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="377"><code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="377">export_customs_declarant.ecd_info</code> (object)</td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="377">array</td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="377">Nested object with the declarant's full contact details – required if <code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="377">ecd_type = other</code>.</td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="377">dbschenker</td>
+</tr>
+<tr sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="378">
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="378"><code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="378">export_customs_declarant.ecd_type</code></td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="378">string</td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="378">Values: <code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="378">notrequired</code>, <code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="378">dbschenker</code>, <code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="378">other</code>.</td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="378">dbschenker</td>
+</tr>
+<tr sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="379">
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="379"><code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="379">gb_eori</code></td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="379">string</td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="379">UK EORI number.</td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="379">spring</td>
+</tr>
+<tr sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="380">
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="380"><code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="380">generate_invoice</code></td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="380">bool</td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="380">To generate an invoice with the carrier (from the sent data), send <code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="380">&quot;1&quot;</code> or <code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="380">TRUE</code>. For FedEx, does not apply to domestic services and is incompatible with <code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="380">invoice_pdf</code>.</td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="380">dhl; fedex</td>
+</tr>
+<tr sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="381">
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="381"><code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="381">import_customs_declarant</code> (object)</td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="381">array</td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="381">Determines who handles import customs clearance on the recipient's side. Required if the shipment requires customs clearance.</td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="381">dbschenker</td>
+</tr>
+<tr sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="382">
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="382"><code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="382">import_customs_declarant.icd_info</code> (object)</td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="382">array</td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="382">Nested object with the declarant's full contact details – required if <code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="382">icd_type = other</code>.</td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="382">dbschenker</td>
+</tr>
+<tr sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="383">
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="383"><code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="383">import_customs_declarant.icd_type</code></td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="383">string</td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="383">Values: <code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="383">notrequired</code>, <code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="383">dbschenker</code>, <code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="383">other</code>.</td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="383">dbschenker</td>
+</tr>
+<tr sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="384">
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="384"><code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="384">invoice_type</code></td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="384">string</td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="384">Invoice type when sending a custom PDF invoice (<code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="384">PRO_FORMA_INVOICE</code> or <code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="384">COMMERCIAL_INVOICE</code>). If not sent, the default value from the client zone is used.</td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="384">fedex</td>
+</tr>
+<tr sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="385">
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="385"><code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="385">is_dutiable</code></td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="385">bool</td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="385">Indicates whether the shipment is subject to customs duty (not described in detail in the specification).</td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="385">dhl</td>
+</tr>
+<tr sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="386">
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="386"><code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="386">is_lockers</code></td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="386">bool</td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="386">Indicates delivery to a parcel locker/box (not described in detail in the specification).</td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="386">airway; liftago</td>
+</tr>
+<tr sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="387">
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="387"><code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="387">loading_length_pallets</code></td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="387">float</td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="387">Loading length in number of pallets. If not specified, the default value from the carrier configuration in the client zone is used.</td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="387">raben</td>
+</tr>
+<tr sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="388">
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="388"><code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="388">mu_sub_count</code></td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="388">int</td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="388">Number of pieces of the given <code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="388">mu_sub_type</code>. Required only if <code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="388">mu_sub_type = YA</code>.</td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="388">geis</td>
+</tr>
+<tr sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="389">
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="389"><code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="389">mu_sub_type</code></td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="389">string</td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="389">Handling unit subtype – used when stacking units on top of each other (pallets on pallets). Values: <code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="389">SE</code>, <code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="389">SF</code>, <code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="389">DF</code>, <code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="389">KH</code>, <code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="389">PEP</code>, <code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="389">FP</code>, <code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="389">PFP</code>, <code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="389">PC</code>, <code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="389">YA</code>.</td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="389">geis</td>
+</tr>
+<tr sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="390">
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="390"><code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="390">p_o_number</code></td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="390">string</td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="390">P_O_NUMBER reference (max 30 characters).</td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="390">fedex</td>
+</tr>
+<tr sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="391">
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="391"><code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="391">payer</code></td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="391">string</td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="391">Shipment payer. Values: <code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="391">1</code> – customer, <code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="391">2</code> – sender, <code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="391">3</code> – recipient.</td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="391">fofr</td>
+</tr>
+<tr sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="392">
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="392"><code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="392">rec_block</code></td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="392">string</td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="392">Block identifier (BG Speedy only).</td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="392">pbh</td>
+</tr>
+<tr sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="393">
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="393"><code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="393">rec_branch_id</code></td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="393">string</td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="393">ID of the recipient's branch/pickup point (not described in detail in the specification).</td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="393">dhlparcel</td>
+</tr>
+<tr sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="394">
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="394"><code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="394">rec_contact</code></td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="394">string</td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="394">Recipient contact information (additional contact field, not described in detail in the specification).</td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="394">balikovna; ceskaposta; cp; dhl; geis; sp; toptrans; zasilkovna</td>
+</tr>
+<tr sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="395">
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="395"><code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="395">rec_entrance</code></td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="395">string</td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="395">Entrance number (BG Speedy only).</td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="395">pbh</td>
+</tr>
+<tr sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="396">
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="396"><code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="396">rec_flat_number</code></td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="396">string</td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="396">Flat/apartment number (BG Speedy only).</td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="396">pbh</td>
+</tr>
+<tr sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="397">
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="397"><code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="397">rec_floor</code></td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="397">string</td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="397">Floor number (BG Speedy only).</td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="397">gwcz; pbh</td>
+</tr>
+<tr sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="398">
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="398"><code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="398">rec_house_number</code></td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="398">string</td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="398">House number + orientation number. If not sent, it is extracted from <code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="398">rec_street</code>.</td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="398">gls; pbh; sds; zasilkovna</td>
+</tr>
+<tr sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="399">
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="399"><code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="399">rec_id</code></td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="399">string</td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="399">For shipping to German pickup boxes (Packstation/Postfiliale), the recipient must register on the DHL website and obtain a unique &quot;Post Number&quot;.</td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="399">dhlde; pbh; ppl</td>
+</tr>
+<tr sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="400">
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="400"><code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="400">rec_tin</code> (object)</td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="400">object</td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="400">Recipient details for customs clearance purposes – contains <code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="400">tin_number</code> and <code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="400">tin_type</code>.</td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="400">fedex</td>
+</tr>
+<tr sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="401">
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="401"><code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="401">rec_tin.tin_number</code></td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="401">string</td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="401">Tax identification number.</td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="401">fedex</td>
+</tr>
+<tr sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="402">
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="402"><code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="402">rec_tin.tin_type</code></td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="402">string</td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="402">Type of tax ID (e.g. BUSINESS_UNION).</td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="402">fedex</td>
+</tr>
+<tr sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="403">
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="403"><code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="403">return_barcode</code></td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="403">bool</td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="403">If used, returns the carrier's barcode information in the ADD response.</td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="403">dpd; gls; ppl</td>
+</tr>
+<tr sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="404">
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="404"><code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="404">return_final_carrier_id</code></td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="404">bool</td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="404">To return the shipment ID within the final carrier (<code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="404">carrier_id_final</code>, and for Zásilkovna also <code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="404">track_url_final</code>) in the ADD response, send <code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="404">TRUE</code>/<code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="404">&quot;1&quot;</code>.</td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="404">ppl; spring; zasilkovna</td>
+</tr>
+<tr sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="405">
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="405"><code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="405">rma_association</code></td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="405">string</td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="405">The RMA_ASSOCIATION value will be printed on the label as a barcode for the return shipment (max 20 characters).</td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="405">fedex</td>
+</tr>
+<tr sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="406">
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="406"><code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="406">service_type_number</code></td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="406">string</td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="406">Numeric subtype/variant of the service type (not described in detail in the specification).</td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="406">geis; ppl</td>
+</tr>
+<tr sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="407">
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="407"><code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="407">shipper_vat</code></td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="407">string</td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="407">Payer's tax identification number (VAT).</td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="407">spring</td>
+</tr>
+<tr sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="408">
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="408"><code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="408">size</code></td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="408">string</td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="408">Required parameter for delivery to a parcel terminal/locker.</td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="408">magyarposta; messenger</td>
+</tr>
+<tr sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="409">
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="409"><code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="409">sm1_service</code></td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="409">bool</td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="409">SMS service (SM1) – notification with the option to send custom text (<code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="409">sm1_text</code>).</td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="409">gls</td>
+</tr>
+<tr sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="410">
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="410"><code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="410">sm1_text</code></td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="410">string</td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="410">SMS text for the notification via <code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="410">sm1_service</code> (max 160 characters, the variable <code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="410">#ParcelNr#</code> can be used). If not sent, the text from the client zone is used.</td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="410">gls</td>
+</tr>
+<tr sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="411">
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="411"><code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="411">sm2_service</code></td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="411">bool</td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="411">PreAdvice Service (SM2) – SMS notification before shipment delivery.</td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="411">gls</td>
+</tr>
+<tr sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="412">
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="412"><code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="412">tax_country</code></td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="412">string</td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="412">Country of origin of the goods; required for the Romanian logistics tax if <code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="412">tax_subject = true</code>.</td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="412">zasilkovna</td>
+</tr>
+<tr sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="413">
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="413"><code sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="413">tax_subject</code></td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="413">bool</td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="413">Indicates whether the shipped goods are subject to the logistics tax (Romanian law effective from 1 Jan 2026).</td>
+<td sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="413">zasilkovna</td>
+</tr>
+</tbody>
+</table>
+<h2 id="see-also" sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="415">See also</h2>
+<p sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="417"><a href="parcels.html" sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="417">Parcels</a><br>
+<a href="productivity-pack.html" sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="418">Productivity Pack</a><br>
+<a href="solutions.html" sourcefile="Solutions/parcels-setup.md" sourcestartlinenumber="419">ARICOMA Solutions</a></p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/ARICOMA-D365BC/AC-IB-dynamics365smb-docs/blob/master/business-central/Solutions/parcels-setup.md/#L1" class="contribution-link">Improve this document</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+           <span><a href="https://www.aricoma.com/docs/en-us/dynamics365/business-central/Solutions/solutions.html"><strong>ENGLISH</strong><strong>/</strong><a href="https://www.aricoma.com/docs/cs-cz/dynamics365/business-central/Solutions/solutions.html"><strong>CZECH</strong></a></a></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
