@@ -53,10 +53,8 @@
 ### [Settings - Spooler](spooler-setup.md)
 ## [Status Management](status-management.md)
 ### [Settings - Status Management](status-management-setup.md)
-## [Transport - Basic](transport-basic.md)
-### [Settings - Transport - Basic](transport-basic-setup.md)
-## [Transport - Planning](transport-planning.md)
-### [Settings - Transport - Planning](transport-planning-setup.md)
+## [Transport Operations](transport-operations.md)
+### [Settings - Transport Operations](transport-operations-setup.md)
 
 # [Slovak Localization](sk-legislative-pack.md)
 ## [Balance reconciliation](sk-balance-reconciliation.md)
