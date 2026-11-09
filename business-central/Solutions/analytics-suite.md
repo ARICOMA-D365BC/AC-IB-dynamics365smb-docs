@@ -11,7 +11,7 @@ ms.search.keywords: Czech, Analytics Suite, Streamline Tools
 
 # Analytics Suite - Power BI solution for Dynamics 365 Business Central
 
-> Updated: 01/06/2025
+> Updated: 09.11.2026
 
 Analytics Suite provides companies with a powerful tool for data analysis and visualization of key indicators. It allows easy connection, filtering, and analysis of financial, sales, and operational data, leading to faster and more efficient decision-making. With interactive dashboards and automated reports, you gain better insight into company performance and uncover new business opportunities.
 
@@ -20,12 +20,12 @@ Analytics Suite provides companies with a powerful tool for data analysis and vi
 ## Covered Areas
 
 - Finance
-- Banks  
-- Purchase and Payables
-- Sales and Receivables
+- Banks
+- Receivables
+- Sales
 - Inventory
 
-![alt text](media/analytics-suite-navigator.png)
+![Analytics Suite - Navigator](media/analytics-suite-navigator.png)
 
 ## Business Processes and Performance Under Control with BI
 
@@ -43,21 +43,23 @@ Analytics Suite for finance provides a comprehensive overview of key financial i
 
 The solution is fully integrated with Financial Statements defined in Business Central and allows users to create interactive reports on financial data. It offers analyses of payroll costs, revenue comparisons by centers, or other dimensions defined in Business Central. With intuitive controls and customizable visualizations, you gain an immediate overview of the company's financial performance and support effective decision-making.
 
+![Analytics Suite - Finance](media/analytics-suite-fin-rep-1.png "Analytics Suite - Finance")
+
 ### Banks
 
 Analytics Suite for banking data provides a comprehensive overview of financial transactions, account balances, and cash flow. It allows monitoring of payment operations and managing liquidity with higher accuracy, quickly responding to changes in financial flows.
 
 Users can easily analyze incoming and outgoing payments, monitor account balance developments, and identify potential financial risks. The module also allows comparison of historical data with current trends, supporting better decision-making in finance and banking operations.
 
+![Analytics Suite - Banks](media/analytics-suite-bank-acc.png "Analytics Suite - Banks")
+
 ### Receivables
 
 Receivables management provides an overview of customer payment behavior, helping to identify the risk of unpaid invoices. Advanced analytical tools allow monitoring receivables development over time and optimizing their collection process.
 
-A key indicator is the turnover of receivables, which expresses how quickly receivables are converted into cash. It is measured by the ratio of the volume of owed money to the average collection period and helps identify potential liquidity problems.
-
 Interactive analytical overviews allow a detailed view of the receivables structure, identification of overdue invoices, and categorization of owed amounts by time intervals (e.g., 30, 60, 90 days). Visualization of this data enables quick response to risky situations and more efficient financial management.
 
-![Analytics Suite - Receivable Overview](media/analytics-suite-receivables-bal.png "Analytics Suite - Receivable Overview")
+![Analytics Suite - Receivables Balance](media/analytics-suite-receivables-bal.png "Analytics Suite - Receivables Balance")
 
 ## Sales
 
@@ -89,5 +91,6 @@ Product turnover is a key indicator of warehouse management efficiency. Analysis
 Do you want a tool in your company that provides immediate access to important data, increases decision-making efficiency, and facilitates strategic management? Contact us for a non-binding consultation and find out how Power BI Analytics Suite for Dynamics 365 Business Central can bring you a competitive advantage.
 
 ## See Also
+[Analytics Suite - Setup](analytics-suite-setup.md)  
 [ARICOMA Solutions](solutions.md)  
 [Streamline Tools](streamlinetools.md)
