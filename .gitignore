@@ -3,3 +3,4 @@
 Translations/*.g.xlf
 .business-central\obj\.cache\*
 .business-central/obj/*
+/.vs
